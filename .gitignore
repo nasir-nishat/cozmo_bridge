@@ -1,14 +1,2 @@
 ﻿node_modules/
-wa_msgs/
-logs/
-*.mp4
-*.jpg
-*.jpeg
-*.webp
-*.tgz
-.env
-src/config/google-credentials.json
-src/config/google-token.json
-Claude-Code-Usage-Monitor/
-.claude/
-admin-ui/
+
