@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COZMO — Feature Map</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #f8f9fa;
+      color: #1a1a1a;
+      padding: 32px 24px;
+      min-height: 100vh
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px
+    }
+
+    .header h1 {
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: -.3px;
+      color: #111;
+      margin-bottom: 6px
+    }
+
+    .header p {
+      font-size: 12px;
+      color: #666;
+      letter-spacing: .05em;
+      text-transform: uppercase
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 148px 1fr;
+      gap: 16px;
+      align-items: start
+    }
+
+    .col-head {
+      font-size: 10px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 16px;
+      font-weight: 600;
+      padding-left: 4px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 12px;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+      transition: transform .15s, box-shadow .15s
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      letter-spacing: .04em;
+      font-family: 'DM Mono', monospace;
+      text-transform: uppercase;
+    }
+
+    .card-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      line-height: 1.3;
+      color: #111;
+    }
+
+    .card-sub {
+      font-size: 12px;
+      line-height: 1.55;
+      color: #555;
+    }
+
+    .tag-row {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .tag {
+      font-size: 9px;
+      font-family: 'DM Mono', monospace;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: #f0f0f0;
+      color: #555;
+      letter-spacing: .03em;
+    }
+
+    .tag.wa  { background: #e8f5e9; color: #2e7d32; }
+    .tag.line { background: #e3f2fd; color: #1565c0; }
+    .tag.kakao { background: #fffde7; color: #f57f17; }
+    .tag.wechat { background: #fce4ec; color: #880e4f; }
+    .tag.tg  { background: #e8eaf6; color: #283593; }
+    .tag.jandi { background: #f3e5f5; color: #4a148c; }
+    .tag.sheets { background: #e0f2f1; color: #00695c; }
+    .tag.cal { background: #fff3e0; color: #e65100; }
+
+    .done {
+      border-left: 4px solid #27ae60;
+    }
+    .done .badge {
+      background: #e8f5e9;
+      color: #1b5e20;
+    }
+
+    .now {
+      border-left: 4px solid #eb5757;
+    }
+    .now .badge {
+      background: #fff0f0;
+      color: #c0392b;
+    }
+
+    .later {
+      border-left: 4px solid #d1d1d1;
+      background: #fcfcfc;
+    }
+    .later .badge {
+      background: #f0f0f0;
+      color: #777;
+    }
+    .later .card-title { color: #666; }
+    .later .card-sub { color: #888; }
+
+    .brain {
+      background: #ffffff;
+      border: 1px solid #dcd6f7;
+      border-radius: 16px;
+      padding: 22px 12px;
+      text-align: center;
+      position: sticky;
+      top: 20px;
+      box-shadow: 0 10px 25px rgba(103, 58, 183, 0.08);
+    }
+
+    .brain-label {
+      font-size: 9px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: #9b89d9;
+      margin-bottom: 12px;
+      font-weight: 600
+    }
+
+    .brain-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #5e35b1;
+      margin-bottom: 4px
+    }
+
+    .brain-sub {
+      font-size: 11px;
+      color: #7e57c2;
+      margin-bottom: 16px;
+      line-height: 1.5;
+      font-weight: 500;
+    }
+
+    .pill {
+      display: inline-block;
+      font-size: 10px;
+      padding: 4px 9px;
+      border-radius: 6px;
+      background: #f3f0ff;
+      color: #673ab7;
+      border: 1px solid #e1d8ff;
+      margin: 3px 1px;
+      font-family: 'DM Mono', monospace;
+      font-weight: 600;
+    }
+
+    .divider-line {
+      border: none;
+      border-top: 1px solid #f0edf5;
+      margin: 14px 0
+    }
+
+    .flow {
+      font-size: 11px;
+      color: #9e95b5;
+      text-align: center;
+      margin-top: 14px;
+      line-height: 1.8;
+      font-weight: 500;
+    }
+
+    .legend {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #eee;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: #666;
+      font-weight: 500;
+    }
+
+    .ldot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="header">
+      <h1>COZMO — What it does</h1>
+      <p>Feature map · Guest experience & Office automation</p>
+    </div>
+
+    <div class="grid">
+      <!-- LEFT: Guest experience -->
+      <div>
+        <p class="col-head">Guest experience</p>
+
+        <div class="card done">
+          <span class="badge">✓ Done</span>
+          <p class="card-title">Group setup & welcome message</p>
+          <p class="card-sub">WhatsApp group is created automatically when a booking is confirmed — property photo, welcome message, brand info all sent. LINE, Kakao, and WeChat groups are linked manually by staff then auto-welcomed.</p>
+          <div class="tag-row">
+            <span class="tag wa">WA auto</span>
+            <span class="tag line">LINE manual</span>
+            <span class="tag kakao">Kakao manual</span>
+            <span class="tag wechat">WeChat manual</span>
+          </div>
+        </div>
+
+        <div class="card done">
+          <span class="badge">✓ Done</span>
+          <p class="card-title">Guest request → staff alert</p>
+          <p class="card-sub">When a guest writes something that needs action (late checkout, towels, issue), COZMO detects it automatically and alerts staff via Telegram and JANDI. No manual monitoring needed.</p>
+          <div class="tag-row">
+            <span class="tag wa">WhatsApp</span>
+            <span class="tag line">LINE</span>
+            <span class="tag kakao">KakaoTalk</span>
+            <span class="tag tg">Telegram</span>
+            <span class="tag jandi">JANDI</span>
+          </div>
+        </div>
+
+        <div class="card done">
+          <span class="badge">✓ Done</span>
+          <p class="card-title">Check-in day messages</p>
+          <p class="card-sub">3:00 PM — breakfast spots, food ordering, van taxi guide sent to guests checking in that day. 7:00 PM — house rules. Both sent in the guest's language automatically.</p>
+          <div class="tag-row">
+            <span class="tag wa">WhatsApp</span>
+            <span class="tag line">LINE</span>
+            <span class="tag kakao">KakaoTalk</span>
+            <span class="tag wechat">WeChat</span>
+          </div>
+        </div>
+
+        <div class="card done">
+          <span class="badge">✓ Done</span>
+          <p class="card-title">Checkout day messages</p>
+          <p class="card-sub">9:00 PM night before: checkout steps + expense summary + payment options. 7:00 AM checkout morning: final bill if new charges were added. 3:00 PM: farewell. All automatic.</p>
+          <div class="tag-row">
+            <span class="tag wa">WhatsApp</span>
+            <span class="tag line">LINE</span>
+            <span class="tag kakao">KakaoTalk</span>
+            <span class="tag wechat">WeChat</span>
+          </div>
+        </div>
+
+        <div class="card done">
+          <span class="badge">✓ Done</span>
+          <p class="card-title">Auto translation in group</p>
+          <p class="card-sub">Staff type in English, guests see their language. Guest replies are translated back for staff. Works silently inside the group chat — no app-switching needed.</p>
+          <div class="tag-row">
+            <span class="tag line">LINE</span>
+            <span class="tag wechat">WeChat</span>
+            <span class="tag">KR · JP · ZH · EN</span>
+          </div>
+        </div>
+
+        <div class="card later">
+          <span class="badge">Later</span>
+          <p class="card-title">Property Q&A auto-reply</p>
+          <p class="card-sub">Guest asks "where do I park?" → COZMO pulls property info and replies in their language. Staff does nothing.</p>
+        </div>
+
+      </div>
+
+      <!-- CENTER: Brain -->
+      <div class="brain">
+        <p class="brain-label">The brain</p>
+        <p class="brain-title">COZMO AI</p>
+        <p class="brain-sub">Reads · Detects · Routes</p>
+        <hr class="divider-line">
+        <div>
+          <span class="pill">EN</span>
+          <span class="pill">KR</span>
+          <span class="pill">ZH</span>
+          <span class="pill">JP</span>
+        </div>
+        <div style="margin-top:10px">
+          <span class="pill">WA</span>
+          <span class="pill">LINE</span>
+          <span class="pill">Kakao</span>
+          <span class="pill">WeChat</span>
+        </div>
+        <div style="margin-top:10px">
+          <span class="pill">Local AI</span>
+          <span class="pill">24/7</span>
+        </div>
+        <hr class="divider-line">
+        <div>
+          <span class="pill">Telegram</span>
+          <span class="pill">JANDI</span>
+        </div>
+        <div style="margin-top:10px">
+          <span class="pill">Sheets</span>
+          <span class="pill">Calendar</span>
+        </div>
+        <div class="flow">
+          Guest msg<br>↓<br>Detect intent<br>↓<br>Route alert<br>↓<br>Staff acts
+        </div>
+      </div>
+
+      <!-- RIGHT: Office & staff automation -->
+      <div>
+        <p class="col-head">Office & staff automation</p>
+
+        <div class="card done">
+          <span class="badge">✓ Done</span>
+          <p class="card-title">Booking alerts</p>
+          <p class="card-sub">Every Hostfully event lands in Telegram and JANDI instantly — new bookings, cancellations, pin code changes, booking updates. Nothing falls through the cracks.</p>
+          <div class="tag-row">
+            <span class="tag tg">Telegram</span>
+            <span class="tag jandi">JANDI</span>
+          </div>
+        </div>
+
+        <div class="card done">
+          <span class="badge">✓ Done</span>
+          <p class="card-title">Expense logging per guest</p>
+          <p class="card-sub">Staff types <code style="font-family:monospace;background:#f4f4f4;padding:1px 5px;border-radius:3px">/exp 50000 Taxi</code> in any guest group → logged to Google Sheet instantly. VAT options (10% and 10%+4.5%) calculated automatically for cash, bank transfer, and card.</p>
+          <div class="tag-row">
+            <span class="tag wa">WhatsApp</span>
+            <span class="tag line">LINE</span>
+            <span class="tag kakao">KakaoTalk</span>
+            <span class="tag sheets">Google Sheets</span>
+          </div>
+        </div>
+
+        <div class="card done">
+          <span class="badge">✓ Done</span>
+          <p class="card-title">Expense auto-billing</p>
+          <p class="card-sub">Itemized expense summary is sent automatically to the guest before checkout — no staff action needed. Clears from the system 7 days after checkout.</p>
+          <div class="tag-row">
+            <span class="tag wa">WhatsApp</span>
+            <span class="tag line">LINE</span>
+            <span class="tag kakao">KakaoTalk</span>
+            <span class="tag wechat">WeChat</span>
+          </div>
+        </div>
+
+        <div class="card done">
+          <span class="badge">✓ Done</span>
+          <p class="card-title">Google Calendar sync</p>
+          <p class="card-sub">Every confirmed booking automatically appears on the shared Google Calendar with property code, source, guest name, and occupancy. Cancellations and updates sync instantly.</p>
+          <div class="tag-row">
+            <span class="tag cal">Google Calendar</span>
+          </div>
+        </div>
+
+        <div class="card now">
+          <span class="badge">Building</span>
+          <p class="card-title">Property → JANDI routing</p>
+          <p class="card-sub">Guest request in B09 → alert goes only to the [YT] Yeonnam JANDI topic. Right room, right people, every time — no guessing which channel to check.</p>
+          <div class="tag-row">
+            <span class="tag jandi">JANDI</span>
+          </div>
+        </div>
+
+        <div class="card later">
+          <span class="badge">Later</span>
+          <p class="card-title">JANDI instant commands</p>
+          <p class="card-sub">Type /eta /door /clean /ops in JANDI → instant answer pulled from the system. No digging through chats or Keep notes.</p>
+          <div class="tag-row">
+            <span class="tag jandi">JANDI</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="legend">
+      <div class="legend-item">
+        <div class="ldot" style="background:#27ae60"></div>Done
+      </div>
+      <div class="legend-item">
+        <div class="ldot" style="background:#eb5757"></div>Building now
+      </div>
+      <div class="legend-item">
+        <div class="ldot" style="background:#d1d1d1"></div>Future
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

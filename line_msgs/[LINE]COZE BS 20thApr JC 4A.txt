@@ -1,0 +1,943 @@
+2026.04.18 Saturday
+17:32 Jerry Hsieh Please help to check if we airport pick up on 4/20 is arranged. Thanks
+17:32 EN-TCN translator 請幫忙確認4月20日的機場接送是否已經安排好。 謝謝
+17:32 Jerry Hsieh 4/20 CI162 landing on 19:05
+17:32 EN-TCN translator 4月20日162飛機於19:05降落
+17:50 COZE_RICKY Hello, this is Ricky.
+
+Your van has already been reserved. When you arrive at the arrivals hall, you will see your driver holding a sign with your name on it.
+17:50 EN-TCN translator 你好，我是裏基。
+
+您的貨車已經被預訂了。 當你到達到達大廳時，你會看到你的司機舉着一個寫有你名字的牌子。
+17:53 COZE_RICKY Stickers
+17:53 COZE_RICKY The name on the signboard will be JC.
+Please check for it when you arrive at the arrivals hall.
+17:53 EN-TCN translator 招牌上的名字將是傑西。
+請在到達到達大廳時進行檢查。
+17:55 Jerry Hsieh Got it. 
+Please add “Hsieh “ after JC if possible 
+Thanks
+17:55 EN-TCN translator 明白了。 
+請在可能的情況下，在聯合檢查後加上"謝"。 
+謝謝
+17:56 COZE_RICKY ok
+17:56 EN-TCN translator 好
+2026.04.20 Monday
+17:23 COZE_RICKY COZE_RICKY added COZE BS GUEST to the group.
+20:25 COZE HOSPITALITY 3.0 Here is the brief info of our home and neighborhood!
+20:25 EN-TCN translator 這是我們家和社區的簡要信息！
+20:25 COZE HOSPITALITY 3.0 Address
+20:25 EN-TCN translator 地址
+20:25 COZE HOSPITALITY 3.0 서울시 종로구 세검정로 227-5
+20:25 COZE HOSPITALITY 3.0 Main Gate Key Box 0 8 0 5
+ (*please keep the key inside after use*)
+20:25 EN-TCN translator 主門鑰匙箱 0 8 0 5
+ (*使用後請將鑰匙放在裏面*)
+20:25 COZE HOSPITALITY 3.0 Front Door Pin 2 6 0 4 2 0  *
+(*please keep the main gate key inside of key box)
+20:25 EN-TCN translator 前門銷 2 6 0 4 2 0  *
+請將主門鑰匙放在鑰匙箱內。
+20:26 COZE HOSPITALITY 3.0 The below is the naver map link of our neighborhood! You can find all of town info there :)
+20:26 EN-TCN translator 以下是我們社區的地圖鏈接！ 你可以在那裏找到所有鎮上的信息 :)
+20:26 COZE HOSPITALITY 3.0 https://naver.me/I5ch6f05
+20:27 COZE HOSPITALITY 3.0 📌 基本信息
+
+地址 
+서울시 종로구 세검정로 227-5 
+227-5, Segeomjeong-ro, Jongno-gu, Seoul, Republic of Korea 03015
+
+大门钥匙盒密码 0 8 0 5 （使用后请将钥匙放回盒内）
+
+房门密码 — 入住日期（YYMMDD）+ * 示例：2025-05-10 → 250510*（全程不变）
+
+Wi-Fi 网络 
+
+1F 
+ID KT_GIGA_7FE8 
+PW 57fj23ee33 
+
+3F 
+ID JOYHASLA_BS 
+PW joyjoyjoy🌿 Horizon Spa “SUNRISE”（屋顶）— 使用须知
+
+⚠️ 安全使用由住客自行负责。
+
+🔥 芬兰桑拿 — 操作方法
+使用住客手机
+打开 Diooist 应用。
+点击 Power ON。
+点击右下角 控制 按钮。
+设置 目标温度 与 运行时间。参考温度： 儿童 60 °C · 成人 90 °C
+
+使用桑拿左侧的控制面板
+按下 Power ON。
+点击右上角 Settings。
+在 Target 中输入温度与时间。
+
+礼仪与安全
+至少预热 1 小时（目标 80–90 °C）。
+坐/躺在毛巾上；汗水用备用毛巾擦拭。
+前后补水；避免酒精与过量进食。
+每轮 ≤15 分钟；其间冷却 5–10 分钟。
+仅用小勺向石头泼水；过量会损坏加热器。
+儿童须由成人陪同，60–70 °C，≤5 分钟。
+禁止在内睡觉；为安全请不要反锁，可留缝通风。
+结束后关闭电源，并留门缝以便干燥。
+
+日光躺椅 & 取暖毯
+Horizon Spa 日光躺椅配有 电热毯2套。
+冬季也温暖；请 保持干燥 并在使用后 关闭电源。
+
+🛀 按摩浴缸 — 安全使用
+先淋浴再入池。
+最多 4 位成人（或 6 名儿童）。
+每次约 20 分钟；期间注意休息。
+禁止乳液/油类。
+儿童与老人需监护；其水温 ≤ 38 °C。
+孕期、服用嗜睡药物或心脏问题者请勿使用。
+
+🌿 Urban Garden「Breeze」— 烧烤 & 火盆
+
+位置与装备
+烧烤设备位于 1层「Breeze」花园前的露台（Weber 旁）。含：57 cm Weber 炭烤炉×2、木炭、引火物、喷火枪、手套与工具。
+火盆在下层花园。点火工具与手套放在火盆旁的收纳箱内。默认备有一套柴火（起火包）。
+
+费用
+烧烤：1台 ₩30,000 / 2台 ₩60,000
+火盆：₩30,000（含1套柴火）加柴：₩20,000（请提前告知）
+
+四季皆宜四季皆可烧烤。
+
+冬季保暖
+
+BBQ 桌上方已安装 强力远红外天花加热器。
+严寒时可开启 墙面加热器 增温。
+控制面板位于进门后右侧的客厅墙面。
+
+电源 🔛：按下电源键，开启取暖器。温度 🌡：将温度调到 10 级（最强）。使用结束 ⛔：结束使用后，务必再次按下电源键将其 关闭。
+⚠ 重要提示 这是一台 高功率电暖设备。若长时间保持开启，可能会因为 电压过载而导致整栋房屋断电跳闸。 请在使用结束后立即将设备 关闭。
+
+
+夏季提示花园环绕森林 🌳，外出前请喷 防蚊液。
+
+安全灭火器位于火盆旁。
+
+🔇 噪音 & 户外规则
+20:00后请降低 BBQ 区噪音
+严禁烟花与明火
+夜间室内聊天请关闭窗户以降低外放噪音
+
+🛒 烧烤食材 & 配送
+满 ₩30,000 机车免费配送（非常快）
+
+Lucky Discount Mart — 323-4 Pyeongchang-dong, Jongno-gu, Seoul NAVER Map: https://naver.me/xiww0hKr
+
+GS The Fresh（钟路区门店） — 94 Gugi-dong, Jongno-gu, Seoul NAVER Map: https://naver.me/5pEsSqgJ
+
+也可联系礼宾团队，我们可通过 Coupang APP 提前1天代下单。
+🚗 停车
+可停1辆（最大至现代 Staria）
+建议倒车入位
+出车：先向左贴边，再倒车驶入道路
+需更多车位？请提前1天告知，我们可登记附近付费停车场
+
+📱 提供住客手机
+免费提供韩国号码 + 无限流量与通话的智能手机1部 已预装常用应用，可作随身 Wi-Fi 热点
+
+用途 🍽️ 点餐 · 🚕 叫车 · 🌐 上网 · 🗺️ 导航
+Local Tip 打开 Naver 地图，可查看我们收藏的本地指南： 🍜 隐藏美食 · 🏪 超市/便利店 · 🏥 医院/诊所 · 💳 ATM/银行
+
+🍽️ 外卖更轻松
+在住客手机打开 Coupang Eats → 加入购物车 → 通过 WhatsApp 截图给我们 我们用卡下单，**退房时现金（或加密货币）**结算
+
+🚐 7座 MPV 商务车
+可通过 IM TAXI 代订 7座 MPV 适合 4–7人，费用约比普通出租车贵30% 如需多辆，请尽早告知
+🍳 厨房 & 家电
+配备 洗碗机、烤箱、净水器
+💧 净水器（EVERPURE）
+品牌：EVERPURE（美国）— 星巴克官方合作伙伴
+类型：直饮直出系统
+维护：每月专业维护
+使用：水槽左侧标注“净水/정수기”的小龙头
+优点：安全好喝，适合饮用与烹饪
+请像在家一样自在烹饪！
+
+☕ 胶囊咖啡 & 茶
+免费享用 illy 胶囊咖啡与茶 额外胶囊在微波炉下方抽屉
+illy 咖啡机视频 
+
+Quick Start: https://youtu.be/XEDAXZY50FM?si=uOfwquZXC6WCis_G 
+Steam Milk: https://youtu.be/bTzG7iM4dMA?si=aiEWUseiOT0as-Jo 
+Volume Settings: https://youtu.be/h2X5gLYpf_4?si=eaDtARcyGQTjddFz
+
+♻️ 厨余 & 垃圾
+厨余（下水粉碎机） 开水 → 踩脚踏开关 → 粉碎厨余 ⚠️ 禁止：骨头、贝壳、果核等硬物
+一般 & 回收 请用洗衣房垃圾桶并分类 满后换新袋（墙柜内），袋子放玄关并通知我们（上门取走）
+
+📺 智能电视 & 流媒体
+客厅电视内置 Google TV 可看韩国有线、Netflix/Disney+/YouTube 需要登录帮助请随时联系
+
+🧴 毛巾 & 洗漱用品
+约40条毛巾（面/浴/足）：浴室镜柜 & 2层更衣室
+酒店洗漱用品（牙刷、剃须刀等）：2层更衣室
+
+👶 婴儿入住套件
+1层主卧衣橱的标记抽屉内：婴儿床、餐椅、婴儿监视器、儿童马桶圈、奶瓶消毒器
+
+🔥 供暖提示
+本屋共用一套恒温器（楼层体感或有差异）
+1F：不高于 23 °C（避免厨房过热）
+主卧：踢脚线加热器约 25 °C 如需调节，请联系我们
+
+🚬 吸烟
+仅可在指定室外区域吸烟，并请使用烟灰缸
+
+📩 需要帮助？
+随时联系客服团队！
+
+✨ COZE Hospitality 3.0 All you need, All-in-one, All for you.
+20:27 EN-TCN translator 📌 Basic Information
+
+Address 
+서울시 종로구 세검정로 227-5 
+227-5 Segeomjeong-ro, Jongno-gu, Seoul, Republic of Korea 03015
+
+Door key box password 0 8 0 5 (Please put the key back into the box after use)
+
+Door password — Check-in date (YYMMDD) + * Example: 2025-05-10 → 250510* (unchanged)
+
+Wi-Fi network 
+
+1F 
+ID KT_GIGA_7FE8 
+PW 57fj23ee33 
+
+3F 
+ID JOYHASLA_BS 
+PW joyjoy 🌿 Horizon Spa "SUNRISE" (Roof) — Usage Guidelines
+
+⚠️ Safe use is the responsibility of the guest.
+
+🔥 Finnish Sauna — How to Use It
+Use the guest's phone
+Open the Diooist app.
+Click Power ON.
+Click the Control button in the lower right corner.
+Set the target temperature and runtime.Reference temperature: Children 60 °C · Adults 90 °C
+
+Use the control panel on the left side of the sauna
+Press Power ON.
+Click on Settings in the upper right corner.
+Enter the temperature and time in Target.
+
+Etiquette and Safety
+At least preheat for 1 hour (target 80–90 °C).
+Sitting/lying on a towel; wiping sweat with a backup towel.
+Hydrate before and after; avoid alcohol and overeating.
+Each round lasts ≤ 15 minutes; it cools down for 5–10 minutes.
+Simply pour water on the stone with a small spoon; excess can damage the heater.
+Children must be accompanied by an adult at 60-70 °C for ≤5 minutes.
+No sleeping inside; for safety, please do not lock the door and leave a gap for ventilation.
+Afterwards, turn off the power and leave the door crack for drying.
+
+sun loungers & heating blankets
+Horizon Spa sun loungers come with 2 sets of electric blankets.
+Winter is also warm; please keep it dry and turn off the power after use.
+
+🛀 Massage Tub — Safe Use
+Take a shower first, then enter the pool.
+Up to 4 adults (or 6 children).
+Each session is about 20 minutes; make sure to rest during this time.
+Prohibited lotions/oil products.
+Children and elderly individuals require monitoring; their water temperature should ≤ 38 °C.
+Pregnant individuals, those taking sleeping pills, or those with heart issues should not use it.
+
+🌿 Urban Garden "Breeze" — Grill & Hot Pot
+
+Location and Equipment
+The barbecue equipment is located on the terrace (next to Weber) in front of the "Breeze" garden on the first floor.Contains: 57 cm Weber charcoal oven × 2, charcoal, igniters, flamethrowers, gloves, and tools.
+The fire pit is in the lower garden. The ignition tools and gloves are placed in the storage box next to the fire pit.A set of firewood (firebox) is provided by default.
+
+Fees
+Grilling: 1 unit ₩ 30,000 / 2 units ₩ 60,000
+Fire basin: 30,000 ₩ (including 1 set of firewood) Add wood: 20,000 ₩ (please inform in advance)
+
+Suitable for all seasons, suitable for grilling in all seasons.
+
+Winter warmth
+
+BBQ The powerful far-infrared ceiling heater is installed above the table.
+In cold weather, you can turn on the wall heater to warm it up.
+The control panel is located on the living room wall to the right after entering.
+
+Power 🔛: Press the power button to turn on the heater.Temperature 🌡: Adjust the temperature to level 10 (maximum).End of Use ⛔: After ending use, make sure to press the power button again to turn it off.
+⚠ Important Notice: This is a high-power electric heating device. If left open for a long time, it may cause the entire house to lose power and trip due to voltage overload. Please turn off the device immediately after use.
+
+
+Summer tip: Gardens surround the forest 🌳 Please spray mosquito repellent before going out.
+
+Safety fire extinguishers are located next to the fire pit.
+
+🔇 Noise & Outdoor Rules
+Please reduce the noise in the BBQ area after 20:00.
+No fireworks or open flames allowed
+Please close the windows for nighttime indoor chats to reduce external noise.
+
+🛒 Grilled Ingredients & Delivery
+Free shipping ₩ 30,000 locomotives (very fast)
+
+Lucky Discount Mart — 323-4 Myeongchang-dong, Jongno-gu, Seoul NAVER Map: https://naver.me/xiww0hKr
+
+GS The Fresh (Zhonglu District Store) — 94 Gugi-dong, Jongno-gu, Seoul NAVER Map: https://naver.me/5pEsSqgJ
+
+You can also contact the concierge team, who can place your order one day in advance through the Coupang APP.
+🚗 Parking
+Parking available for 1 vehicle (up to modern Staria)
+Suggest reversing into place
+Exit the vehicle: First, press the edge to the left, then back onto the road.
+Do you need more parking spaces? Please let us know one day in advance so we can register for a nearby paid parking lot.
+
+📱 Provide guests' mobile phones
+Free Korea number + unlimited data and calling on a smartphone pre-installed with common apps for use as a portable Wi-Fi hotspot
+
+Purpose 🍽️ Ordering · 🚕 Ride-hailing · 🌐 Internet Access · 🗺️ Navigation
+Local Tip: Open Naver Maps to view our collection of local guides: 🍜 Hidden Delights · 🏪 Supermarkets/Convenience Stores · 🏥 Hospitals/Clinics · 💳 ATMs/Bank
+
+🍽️ Takeout is easier
+Open Coupang Eats → Add to Cart → Take a WhatsApp screenshot for us to place an order with your card, and settle with cash (or cryptocurrency) upon check-out.
+
+🚐 7-seat MPV商务车 M
+A 7-seat MPV suitabl...
+20:27 COZE HOSPITALITY 3.0 COZE_BS_CHECK_IN_MANUAL_Tourist-1.pdf
+20:28 COZE HOSPITALITY 3.0 🚕✨ COZE 1对1 出租车匹配服务—大家庭/大团队出行 ✨🚕
+
+
+人多到像“群聊人数”一样爆表？📱👨‍👩‍👧‍👦
+ 别再玩“打车俄罗斯方块”了🧩 用COZE的1对1 出租车匹配，全员顺顺利利一起出发——省心、省钱、零压力✨
+
+
+💡 为什么超好用
+
+
+💸 服务费 ₩0
+ 真的一分钱不收！只需支付计价器表上费用。
+
+
+🚐 大巴型出租车＋普通出租车组合
+ 每台Van Taxi最多7座。我们会根据人数＋行李量，搭配最合适的车辆组合🧳
+
+
+🛵 按本地合理价格
+ 你不用砍价，我们来处理，尽量按当地常规价格帮你安排。
+
+
+🔔 实时更新
+ 车辆确认后，我们会在聊天里第一时间发送**车牌号＋预计到达时间(ETA)**📩
+
+
+🕹️ 怎么用（超简单）
+🏠 从住宿出发：把目的地发给我们 → 我们会配好车辆数量并安排✅
+
+
+📍 在外面叫车：
+ ・打开Naver Map → 开启GPS → 显示你的位置📍
+ ・截图定位画面发给我们📸
+ ・立刻安排车辆 → 发送ETA✨
+
+
+💳 付款方式：可刷主要信用卡 / T-money 等（直接付给司机即可）
+
+
+🤝 我们的承诺：
+ 首尔交通不该影响家庭/朋友出行氛围💛
+ 我们用完全免费的方式帮你搞定车队调度，你只需要专心吃美食、拍宫殿、留下旅行回忆📸🍜
+
+20:28 COZE HOSPITALITY 3.0 🍽️ 使用宾客手机点餐指南（Coupang Eats）
+
+欢迎来到 COZE Hospitality 3.0！
+即使您的海外信用卡在韩国无法使用，也可以轻松点到您喜欢的美食 👇
+
+
+---
+
+1️⃣ 拿起已设置好的宾客专用手机 📱
+打开 Coupang Eats（已登录并设好定位）。
+
+2️⃣ 挑选美食 🍕🍜🥟
+浏览附近餐厅，自由添加想吃的菜品，尽情混搭！
+
+3️⃣ 拍下完整购物车截图 🖼️
+在点击“支付”前，从头到尾滑动并截图
+（大多数手机：电源键 + 音量下键 → “滚动截图”）。
+
+4️⃣ 发送截图给礼宾服务聊天 💬
+将图片发送到您的专属聊天窗口，我们会立即确认。
+
+5️⃣ 由我们代付 💳✨
+我们的团队会使用韩国本地信用卡帮您下单，
+美食会直接送到您门口！
+
+6️⃣ 退房时结算 💵
+退房时以现金偿还即可。
+也可使用银行卡或转账支付，但请注意这些方式会产生额外费用
+（例如双重增值税或外国卡手续费）。
+现金最简单也最划算！
+
+
+---
+
+为什么要这样操作？
+
+韩国外卖应用要求本地实名验证，因此海外信用卡无法直接支付。
+宾客专用手机可让您自由选餐，但无法用您自己的卡付款。
+COZE 的本地信用卡相当于“友好的垫付”，
+我们只代为支付餐费，不会作为 COZE 的营业收入。
+
+祝您用餐愉快，入住舒心！🍽️🏠😊
+20:28 COZE HOSPITALITY 3.0 🗑 首尔垃圾分类指南
+（供入住我们住宿的外国旅客使用）
+
+欢迎来到首尔！🌆 韩国有一套非常严格的垃圾分类制度。为了方便您在住宿期间遵守规定，我们为您准备了简单易懂的说明。请按照以下步骤操作，剩下的交给我们吧 ♻😊
+
+1️⃣ 一般垃圾（일반 쓰레기 – 不可回收物）
+🧻 可丢弃：
+
+小塑料包装、弄脏的包装袋
+
+用过的纸巾、棉签、卫生用品
+
+鸡骨头、大块鱼骨 🐔🐟
+
+橡胶手套、海绵、牙刷
+
+
+🚫 请不要自行把垃圾拿到外面丢！首尔的系统比较复杂。
+✅ 请这样做：
+
+使用室内一般垃圾桶
+
+与可回收物分开
+
+🛎 当垃圾桶满时，请告知我们的工作人员，我们会为您清理。
+
+
+2️⃣ 厨余垃圾（음식물 쓰레기 – 食物残渣）
+🥕 可丢弃：
+
+剩饭、面条、面包、水果和蔬菜
+
+蛋壳、咖啡渣 ☕
+
+小鱼骨
+
+
+🧯 处理方法：
+
+使用厨房水槽的食物粉碎机
+
+打开水龙头 💧，投入软质残渣并研磨
+⚠ 硬质或纤维质垃圾（如骨头、贝壳、洋葱皮、玉米壳）禁止投入，以免损坏机器！
+
+鸡骨和大块残渣 → 作为一般垃圾处理
+
+
+3️⃣ 可回收物（재활용 – 仅限清洁分类好的物品）
+♻ 可回收类别：
+
+塑料 🧴：瓶子、外卖盒（需冲洗）
+
+玻璃 🍾：酒瓶、罐子（不可有食物残渣）
+
+纸类 📦：报纸、压平的纸箱、干净的纸盒
+
+金属 🥫：饮料罐、食品罐（需冲洗干净）
+
+泡沫塑料 🧊：必须干净且干燥
+
+
+🗂 处理方法：
+🤢 如果脏了或沾有食物 → 算一般垃圾，不算回收！
+🛎 如果垃圾桶满了，请告诉我们，我们会帮您清理。
+
+4️⃣ 大型垃圾（대형 폐기물 – 大件物品）
+🧳 包括：
+旅行箱、家具、床垫、电器
+
+📞 丢弃前请先联系住宿管理员，我们会帮您处理。
+🚫 随意丢弃大型垃圾会被罚款。
+
+⚠ 注意事项
+🚯 乱丢垃圾 = 罚款 🧾
+🚫 切勿把可回收物、一般垃圾和厨余混在一起
+♻ 请使用正确的垃圾桶
+🙋‍♀ 如果不确定，请随时问我们！
+
+🌱 感谢您一起保持首尔的清洁与绿色！祝您旅途愉快，让我们来处理垃圾吧 😄♻
+20:29 EN-TCN translator 🍽️ Guidelines for Ordering Using Guests' Mobile Phones (Coupang Eats)
+
+Welcome to COZE Hospitality 3.0!
+Even if your overseas credit card is unavailable in Korea, you can easily order your favorite dishes 👇
+
+
+---
+
+1️⃣ Pick up the guest-only phone set up 📱
+Open Coupang Eats (logged in and location set up).
+
+2️⃣ Picking Delicious Dishes 🍕🍜🥟
+Browse nearby restaurants, freely add dishes you want to eat, and mix and match to your heart's content!
+
+3️⃣ Take a complete screenshot of the shopping cart 🖼️
+Swipe from start to finish and take a screenshot before clicking "Pay".
+(Most phones: power button + volume down key → "screenshot".)
+
+4️⃣ Send a screenshot to the concierge chat 💬
+Send the image to your dedicated chat window, and we will confirm it immediately.
+
+5️⃣ Paid by us 💳✨
+Our team will use a local credit card to place your order Korea you.
+Delicious food will be delivered directly to your doorstep!
+
+6️⃣ Check-out 💵
+Payment can be made in cash upon check-out.
+Alternatively, you can pay using a bank card or transfer, but please note that these methods may incur additional fees.
+(For example, double value-added tax or fees for foreign cards).
+Cash is the simplest and most cost-effective!
+
+
+---
+
+Why do we need to do it this way?
+
+Korea food delivery apps require local real-name verification, so overseas credit cards cannot make direct payments.
+The guest-only phone allows you to freely choose your meals, but you cannot pay with your own card.
+COZE's local credit card is equivalent to a "friendly advance payment,"
+We only cover the meal expenses and will not be considered part of COZE's revenue.
+
+Wish you a pleasant meal and a comfortable stay! 🍽️🏠😊
+20:29 EN-TCN translator 🚕✨ COZE 1-on-1 Taxi Matching Service — Family/Team Travel ✨🚕
+
+
+Is it so crowded that it's like "group chat attendance"? 📱👨‍👩‍👧‍👦
+ Stop playing "Taxi Tetris" 🧩 Match with COZE's one-on-one taxis, and everyone will depart smoothly together—saving you peace of mind, money, and zero stress ✨
+
+
+💡 Why is it so user-friendly
+
+
+💸 Service Fee: 0
+ It's truly free of charge! Just pay the fees listed on the meter.
+
+
+🚐 Bus-type taxi + regular taxi combination
+ Each Van Taxi can accommodate up to 7 seats. We will match the most suitable vehicle combination based on the number of people + luggage volume🧳
+
+
+🛵 At local reasonable prices
+ You don't need to haggle; we'll handle it and try to arrange it for you at the local regular price.
+
+
+🔔 Real-time Updates
+ After confirming the vehicle, we will send the **license plate number + estimated arrival time (ETA)**📩 as soon as possible in our chat.
+
+
+🕹️ How to Use (Super Simple)
+🏠 From accommodation: Send us your destination → We will arrange the number of vehicles and arrange them ✅
+
+
+📍 Call a taxi outside:
+ ·Open Naver Map → Enable GPS → Show Your Location 📍
+ ·Take a screenshot of the location screen and send it to us 📸
+ ·Arrange the vehicle immediately → Send ETA ✨
+
+
+💳 Payment Methods: Accepts major credit cards, T-money, etc. (pay directly to the driver)
+
+
+🤝 Our commitment:
+ Seoul's transportation should not affect the family/friend travel atmosphere💛
+ We handle your fleet scheduling completely for free, all you need to do is focus on enjoying delicious food, photographing palaces, and creating travel memories📸🍜
+20:29 EN-TCN translator 🗑 Seoul Waste Sorting Guide
+(For foreign guests staying at our accommodation)
+
+Welcome to Seoul! 🌆 Han Korea has a very strict waste sorting system. To facilitate compliance with the rules during your stay, we have prepared simple and easy-to-understand instructions for you. Please follow these steps, and the rest is up to us ♻😊
+
+1️⃣ General Waste (일반 쓰레기  – Non-Recyclable)
+🧻 Discardable:
+
+small plastic packaging, dirty bags
+
+used tissues, cotton swabs, hygiene products
+
+chicken bones, large fish bones 🐔🐟
+
+rubber gloves, sponge, toothbrush
+
+
+🚫 Please don't throw trash outside yourself! The system in Seoul is relatively complex.
+✅ Please do this:
+
+Use indoor general trash cans
+
+Separate from recyclables
+
+🛎 When the trash can is full, please inform our staff so we can clean it up for you.
+
+
+2️⃣ Food Waste (음식물 쓰레기  – Food Residues)
+🥕 Discardable:
+
+leftover food, noodles, bread, fruits, and vegetables
+
+eggshell, coffee grounds ☕
+
+Little Fishbone
+
+
+🧯 Treatment method:
+
+Food grinder using the kitchen sink
+
+Turn on the faucet 💧, add the soft residue, and grind it.
+⚠ Hard or fibrous waste (such as bones, shells, onion skins, corn husks) should not be thrown in to avoid damaging the machine!
+
+Chicken bones and large debris → for general waste disposal
+
+
+3️⃣ Recyclable Items (재활용  – Clean and Classified Items Only)
+♻ Recyclable Categories:
+
+Plastic 🧴: Bottles, Takeout Boxes (requires rinsing)
+
+Glass 🍾: Bottles, jars (no food scraps allowed)
+
+Paper 📦: newspapers, flattened cardboard boxes, clean cardboard boxes
+
+Metal 🥫: Beverage cans, food cans (must be rinsed thoroughly)
+
+Foam plastic 🧊: Must be clean and dry
+
+
+🗂 Method of Handling:
+🤢 If dirty or contaminated with food → considered general garbage, not recycling!
+🛎 If the trash can is full, please let us know, and we will help you clean it up.
+
+4️⃣ Large Waste (대형 폐기물  - Large Items)
+🧳 Including:
+suitcase, furniture, mattress, appliances
+
+📞 Please contact the accommodation manager before discarding, and we will handle it for you.
+🚫 Disposing of large amounts of trash will result in fines.
+
+⚠ Notes
+🚯 littering = fines 🧾
+🚫 Do not mix recyclables, general waste, and kitchen scraps together.
+♻ Please use the correct trash can
+🙋♀ If you're unsure, feel free to ask us!
+
+🌱 Thank you for keeping Seoul clean and green! Wish you a pleasant journey, let's deal with the trash 😄♻
+20:29 COZE HOSPITALITY 3.0 COZE HOSPITALITY 3.0 made an <u>announcement</u>.
+20:29 COZE HOSPITALITY 3.0 COZE HOSPITALITY 3.0 made an <u>announcement</u>.
+20:29 COZE HOSPITALITY 3.0 COZE HOSPITALITY 3.0 made an <u>announcement</u>.
+20:50 COZE_RICKY Almost coming
+20:50 EN-TCN translator 快來了
+21:07 COZE_RICKY [네이버지도]
+로얄호텔서울
+서울 중구 명동길 61
+https://naver.me/5YwchsgL
+21:12 COZE_RICKY [네이버지도]
+돈돼지
+서울 중구 명동9길 33 1층, 돈돼지
+https://naver.me/Gqs4F48J
+21:16 COZE_RICKY [네이버지도]
+익선동야장
+서울 종로구 돈화문로11길 33
+https://naver.me/I5caxIUG
+2026.04.21 Tuesday
+08:18 June_COZE Hello 😊
+This is the Facility Management Team at coze.
+We would like to inform you that there will be a facility inspection and maintenance work in the outdoor parking area 🚧
+Since the work will take place outside, it will not cause any inconvenience to your rest indoors 👍
+Thank you for your understanding, and please feel free to reach out if you need anything 💬
+08:18 EN-TCN translator 你好 😊
+這是科茲的設施管理團隊。
+我們想通知您，戶外停車場將進行設施檢查和維護工作 🚧
+由於工作將在室外進行，這不會給您室內的休息帶來任何不便 👍
+感謝您的理解，如果您需要任何幫助，請隨時聯繫我 💬
+11:05 COZE_Cyrus Hello 😊 I will bring the pocket Wi-Fi to the accommodation this afternoon, between 1:00 PM and 3:00 PM.
+
+If you need internet before then, please feel free to use the guest phone in the accommodation. It has unlimited data, and you can also use it as a hotspot while you are outside.
+11:05 EN-TCN translator 你好 😊 我今天下午1:00到3:00之間會把口袋無線網絡帶到住宿地點。
+
+如果您在此之前需要互聯網，請隨時使用住宿內的賓客電話。 它擁有無限的數據，你也可以在外出時將其用作熱點。
+14:02 COZE_Cyrus 😊 I have arrived at the accommodation, and I will leave the pocket Wi-Fi just inside the door.
+14:02 EN-TCN translator 😊 我已經到達住宿地點，我會把口袋裏的無線網絡放在門裏面。
+14:03 Jerry Hsieh Ok
+14:03 COZE_Cyrus Photos
+14:03 COZE_Cyrus Photos
+14:03 COZE_Cyrus Photos
+14:04 COZE_Cyrus I have left it there and just came back out.
+14:04 EN-TCN translator 我把它留在那裏，然後就出來了。
+17:35 Jerry Hsieh Got it
+17:35 EN-TCN translator 明白了
+17:36 Jerry Hsieh Please help to arrange airport transport on 4/22, 1 person
+17:36 EN-TCN translator 請幫忙安排4月22日的機場接送服務，1人。
+17:37 COZE HOSPITALITY 3.0 Normal taxi is more cheaper and economic to use?
+17:37 EN-TCN translator 普通出租車更便宜也更經濟？
+17:37 COZE HOSPITALITY 3.0 The van costs 100K KRW while taxi approx. 65K
+17:37 EN-TCN translator 這輛貨車的價格是10萬韓元，而出租車大約是6.5萬韓元。
+17:38 Jerry Hsieh Let me think 
+17:38 EN-TCN translator 讓我想想
+17:40 Jerry Hsieh Photos
+17:41 Jerry Hsieh Let’s do the van, please
+17:41 EN-TCN translator 請讓我們開那輛貨車。
+17:41 Jerry Hsieh Charge us in the last day
+17:41 EN-TCN translator 在最後一天向我們收費
+17:42 Jerry Hsieh Flight no CI0161 , ICN T2, take off 12:45 AM
+17:42 EN-TCN translator 航班號0161，國際民航組織第二班，上午12:45起飛
+17:54 COZE HOSPITALITY 3.0 let's depart at 0830AM!
+17:54 EN-TCN translator 讓我們在0830出發。早上！
+18:04 Chris NO，可以09:00在出發嗎
+18:04 EN-TCN translator NO, can we depart at 09:00?
+18:05 COZE HOSPITALITY 3.0 okay. if you like
+18:05 EN-TCN translator 好的。如果你喜歡
+18:05 Chris 08:30到機場才09:30
+18:05 EN-TCN translator 08:30 Arrived at the airport by 09:30
+18:05 Chris 太早了
+18:05 EN-TCN translator Too early
+20:31 COZE JIN COZE JIN added 변이규 to the group.
+23:38 Jerry Hsieh Photos
+23:38 Jerry Hsieh Package at the front door
+23:38 EN-TCN translator 前門的包裹
+23:39 COZE HOSPITALITY 3.0 ah. thank you! please keep it inside of main door. then we will arrange that :)
+23:39 EN-TCN translator 啊，謝謝！請把它放在主門裏面。 然後我們會安排好的 :)
+23:40 COZE HOSPITALITY 3.0 thank you so much for letting me know!
+23:40 EN-TCN translator 非常感謝你告訴我！
+23:40 Jerry Hsieh Ok
+2026.04.22 Wednesday
+02:13 Chris @EN-TCN translator 明天09:30再來接我到機場即可嘿
+02:13 EN-TCN translator Come pick me up at the airport at 09:30 tomorrow.
+07:30 COZE JIN Here we invited the pickup driver Benjamin @변이규 
+07:30 EN-TCN translator 在這裏我們邀請了接送司機本傑明@변이규
+07:31 COZE JIN Please confirm @변이규 
+07:31 EN-TCN translator 請確認@변이규
+07:32 변이규 Ok
+09:23 변이규 Arrived 
+09:24 EN-TCN translator 到達
+09:30 Chris 稍等5min
+09:30 EN-TCN translator Wait for 5 minutes
+09:31 변이규 변이규 left the group.
+16:08 Jerry Hsieh 明天我們要預約去機場
+16:08 EN-TCN translator Tomorrow we need to schedule an appointment to the airport.
+16:09 Jerry Hsieh 可以先把行李放在門口，我們16:00再回來拿嗎？
+16:09 EN-TCN translator Can we leave our luggage at the door first and come back to pick it up at 4:00 PM?
+16:19 Jerry Hsieh Photos
+17:00 COZE JIN Yes,You can pick up your luggage at 4PM after you check out at 11AM.
+
+We will arrange a van for you at 4 PM.
+17:00 EN-TCN translator 是的，您可以在上午11點退房後，在下午4點取行李。
+
+我們將在下午4點爲您安排一輛貨車。
+17:48 Jerry Hsieh 下午五點出發
+17:48 EN-TCN translator Depart at 5 PM
+17:51 COZE JIN Stickers
+18:51 COZE JIN 退房须知 – 感谢您选择入住我们！
+
+亲爱的客人，
+
+我们希望您在此度过了一个愉快的时光！随着您离店日期的临近，我们想为您提供一些退房须知，让您的退房过程顺利、轻松。
+
+⏰ 退房时间：
+请您务必在 上午11:00 前 完成退房，以便我们有充足的时间为下一位客人准备。
+
+我们始终为您的退房提供支持。
+如需 机场接送等交通服务，请至少提前 12 小时预约。
+
+
+---
+
+📌 离开前请注意：
+
+整理物品：请收拾好随身物品，确保没有遗落。
+
+垃圾处理：请将所有垃圾投入指定垃圾桶。特别提醒，您可以在厨房水槽的垃圾处理器中粉碎所有食物垃圾。
+
+餐具：请清洗使用过的餐具，或将其放入洗碗机并启动清洗程序。
+
+毛巾：请在离开前将使用过的毛巾放入洗衣机运行清洗。
+
+设备归还：请将提供的客人专用手机、随身 Wi-Fi（如有使用）放回客厅桌上。
+
+
+
+---
+
+🔑 钥匙：
+如果您的房源有大门及钥匙盒，请将大门钥匙放回钥匙盒中。
+
+
+---
+
+💳 额外费用支付：
+若您在住宿期间产生了额外费用（如旅行团费、餐饮外送费等），并已事先告知，请准备好现金并放在客厅桌上。
+
+如您希望通过 银行转账或信用卡支付，请注意需额外收取 10% 增值税（VAT）。感谢您的理解与配合。
+
+
+---
+
+📢 告知事项：
+若房间有任何损坏或需要我们注意的问题，请在退房前告知我们。
+
+
+---
+
+感谢您成为如此可爱的客人！我们真诚期待再次为您服务。祝您旅途平安！如有任何问题或需要协助，请随时与我们联系。
+
+温馨问候，
+Gaya, Guest Care Team of COZE Hospitality 3.0 
+18:51 EN-TCN translator Check-out Guidelines – Thank you for choosing to stay with us!
+
+Dear guest,
+
+We hope you had a pleasant time here! As your check-out date approaches, we would like to provide you with some check-out guidelines to ensure a smooth and hassle-free check-out process.
+
+⏰ Check-out time:
+Please make sure to check out by 11:00 AM so we have enough time to prepare for our next guest.
+
+We always provide support for your check-out.
+For airport transfers and other transportation services, please make a reservation at least 12 hours in advance.
+
+
+---
+
+📌 Please note before you leave:
+
+Organize your belongings: Please pack your belongings to ensure nothing is left behind.
+
+Waste Disposal: Please dispose of all waste in designated trash cans. Special reminder: You can crush all food waste in the kitchen sink's garbage disposal.
+
+Dishes: Please wash used dishes or put them in the dishwasher and start the washing process.
+
+Towel: Please run the used towel in the washing machine before you leave.
+
+Equipment Return: Please place the guest-only phone and portable Wi-Fi (if in use) back on the living room table.
+
+
+
+---
+
+🔑 Key:
+If your listing has a front door and a key box, please put the front door key back in the key box.
+
+
+---
+
+💳 Additional charges apply:
+If you incur additional charges during your stay (such as tour group fees or meal delivery fees) and have been informed in advance, please have cash ready and place it on the living room table.
+
+If you wish to pay by bank transfer or credit card, please note that an additional 10% value-added tax (VAT) is required. Thank you for your understanding and cooperation.
+
+
+---
+
+📢 Notice:
+If there is any damage to the room or any issues that require our attention, please let us know before check-out.
+
+
+---
+
+Thank you for being such a lovely guest! We sincerely look forward to serving you again. Wish you a safe journey! If you have any questions or need assistance, please feel free to contact us.
+
+Warm greetings,
+Gaya, Guest Care Team of COZE Hospitality 3.0
+18:56 COZE JIN *Your Expense*
+
+3 unit Van Cost : 300,000 KRW
+
+Total :300,000 KRW
+
+Please leave cash on the living room table.
+18:56 EN-TCN translator *您的費用*
+
+3輛廂式貨車費用:300,000韓元
+
+總計:300,000韓元
+
+請把現金放在客廳的桌子上。
+19:07 Jerry Hsieh 明天可以到指定的地點接我們嗎？ 讓司機帶著我們的行李16:00到我們指定的地方
+19:07 EN-TCN translator Can you pick us up at the designated location tomorrow? Let the driver bring our luggage to our designated location at 4:00 PM.
+19:18 COZE JIN Regarding the pickup location, there is an additional charge. For Myeongdong or Hongdae area, it is 30,000 KRW. For Gangnam or other long-distance locations, the fee is 50,000 KRW
+19:18 EN-TCN translator 關於取件地點，需要額外收費。 對於明洞或弘大地區，費用是30,000韓元。 對於江南或其他長途地點，費用是50,000韓元。
+19:19 COZE JIN Where would you like to be picked up tomorrow? We’d like to confirm the location in advance so we can ensure a smooth ride for you
+19:19 EN-TCN translator 您希望明天在哪裏被接走？ 我們想提前確認地點，以確保您的旅程順暢。
+19:29 Jerry Hsieh 我們明天中午再跟你確認地點
+19:29 EN-TCN translator We will confirm the location with you at noon tomorrow.
+19:33 COZE JIN Stickers
+2026.04.23 Thursday
+10:56 Jerry Hsieh Photos
+10:58 Jerry Hsieh Photos
+10:59 Jerry Hsieh Please be careful for luggage movement, there are computer inside
+10:59 EN-TCN translator 請小心行李的移動，裏面有電腦。
+11:09 COZE JIN Ok I'll be careful with them
+11:09 EN-TCN translator 好的，我會小心它們的。
+11:14 COZE BS GUEST COZE BS GUEST left the group.
+12:24 Jerry Hsieh 5點請到漢南洞接我們，我們計劃6點到機場
+12:24 EN-TCN translator Please pick us up at Han Nan Cave at 5 o'clock, and we plan to arrive at the airport by 6 o'clock.
+12:25 Jerry Hsieh Hannam-dong
+12:32 COZE JIN I don't know where Hannam Cave is. Please tell me the exact location 
+12:32 EN-TCN translator 我不知道漢南洞在哪裏。 請告訴我確切的位置。
+12:37 COZE JIN Where would be the most convenient place for you to board the van? If you have a specific building or entrance in mind, please let me know
+12:37 EN-TCN translator 您最方便登車的地方是哪裏？ 如果您有特定的建築或入口，請告訴我。
+13:13 Jerry Hsieh 好的 15:00再確認一次
+13:13 EN-TCN translator Good, confirm again at 15:00.
+13:17 COZE JIN There have been so many changes to the schedule. Just to be absolutely sure, is 3:00 PM the correct time?
+13:17 EN-TCN translator 日程已經發生了許多變化。 爲了絕對確定，下午3點是不是正確的時間？
+13:21 COZE JIN Please send me your precise location now. The driver is waiting for the information, and I need to update him immediately
+13:21 EN-TCN translator 請現在發給我您的確切位置。 司機正在等待信息，我需要立即向他更新。
+13:24 Jerry Hsieh 서울특별시 용산구 이태원로 257
+13:24 Jerry Hsieh Photos
+13:24 Jerry Hsieh Pick up at 17:00 here
+13:24 EN-TCN translator 17:00在這裏接您
+13:30 COZE JIN The pickup is confirmed for 5:00 PM. We kindly ask you to pay the city pickup fee of 30,000 KRW directly to the driver in cash. Thank you for your kind understanding
+13:30 EN-TCN translator 取件確認時間爲下午5:00。 我們懇請您直接以現金形式向司機支付30,000韓元的城市取車費。 感謝您的理解
+13:31 Jerry Hsieh Ok
+16:03 Jerry Hsieh 我們已經準備好了，可以的話司機可以提早來接我們
+16:03 EN-TCN translator We are ready, and if possible, the driver can come to pick us up early.
+16:03 Jerry Hsieh 請告訴我們司機會抵達的時間，我們在指定地點等他
+16:03 EN-TCN translator Please let us know the driver's arrival time so we can wait for him at the designated location.
+16:05 COZE JIN Ok
+16:06 COZE JIN Photos
+16:06 COZE JIN Photos
+16:07 COZE JIN The estimated arrival time is 4:50 PM. Since the road is quite narrow and difficult for the driver to park or pull over, could you please be waiting by the roadside at that time? We would appreciate your cooperation for a smooth pickup
+16:07 EN-TCN translator 預計到達時間是下午4:50。 由於道路很窄，司機停車或停車很困難，請您當時在路邊等待好嗎？ 我們感謝您的合作，以確保順利取貨。
+16:12 Jerry Hsieh 好的
+16:12 EN-TCN translator Good
+16:53 Jerry Hsieh 我們已經在集合地點了
+16:53 EN-TCN translator We are already at the meeting point.
+16:55 COZE JIN He will be arriving shortly
+16:55 EN-TCN translator 他很快就會到達。
+17:18 COZE_Cyrus Hello! 😊 
+
+We hope you’ve had a wonderful stay and created some beautiful memories during your time here. 🏡✨ 
+
+Every place—just like life—comes with a mix of comforts and little inconveniences. Although we’re not a traditional hotel, we strive to offer something warmer—a home filled with genuine care, comfort, and heart. 🌿✨
+
+Our greatest hope is that you felt at ease and enjoyed both the charm of local living and the cozy comfort we always aim to provide. 
+
+Thank you from the bottom of our hearts for staying with us. Wishing you safe travels, and we genuinely look forward to welcoming you back again soon! ✈️🌎
+
+With warmest regards, 
+Cyrus, Guest Care Team COZE Hospitality 3.0 🌿
+17:18 EN-TCN translator 你好！😊 
+
+希望您在這裏度過了美好的時光，並創造了一些美好的回憶。 🏡✨ 
+
+每個地方——就像生活一樣——都充滿了舒適和小不便。 雖然我們不是一家傳統的酒店，但我們致力於提供更溫馨的服務——一個充滿真誠關懷、舒適和心靈的家。 🌿✨
+
+我們最大的希望是您感到自在，享受當地生活的魅力以及我們始終致力於提供的溫馨舒適。 
+
+衷心感謝您的陪伴。 祝您旅途平安，我們真誠地期待不久再次歡迎您的到來！ ✈️🌎
+
+誠摯的問候， 
+賽勒斯，客服團隊 科茲酒店 3.0 🌿

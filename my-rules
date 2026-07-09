@@ -1,0 +1,22 @@
+| Task                                 | Tool               |
+| ------------------------------------ | ------------------ |
+| Reading/monitoring group chats       | Antigravity        |
+| Writing/editing code                 | Claude Code        |
+| Creating new skill files             | Claude Code        |
+| Calling skills (guest-note, routing) | Antigravity        |
+| Debugging Express bridge             | Claude Code        |
+| Planning architecture                | Claude (this chat) |
+| Running automations 24/7             | Antigravity        |
+
+**Rule of thumb:**
+
+- Antigravity = runtime agent (always on, reads, acts)
+- Claude Code = builder (sessions, writes code, then stops)
+- This chat = advisor (planning, decisions, architecture)
+
+**Never mix them.** Don't ask Claude Code to monitor chats. Don't ask Antigravity to write features.
+
+---
+
+Claude code, use this for a new session:
+Read CLAUDE.md. Then create a file called skills/\_template.md with a reusable skill format for this project.

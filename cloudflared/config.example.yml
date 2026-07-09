@@ -1,0 +1,19 @@
+# Cloudflare Tunnel → cozmo-bridge (Express :3001)
+#
+# Setup:
+# 1. Install cloudflared: https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/downloads/
+# 2. Zero Trust → Networks → Tunnels → create tunnel → copy tunnel UUID
+# 3. Save the downloaded credentials JSON in this folder (name matches credentials-file below)
+# 4. Copy this file to config.yml and replace YOUR_TUNNEL_UUID (both places)
+# 5. In Cloudflare DNS for coze.care, point webhook → tunnel (or use dashboard route wizard)
+# 6. Hostfully webhook URL: https://webhook.coze.care/webhook
+#
+# Paths below are relative to this directory (cloudflared/).
+
+tunnel: YOUR_TUNNEL_UUID
+credentials-file: ./YOUR_TUNNEL_UUID.json
+
+ingress:
+  - hostname: webhook.coze.care
+    service: http://127.0.0.1:3001
+  - service: http_status:404

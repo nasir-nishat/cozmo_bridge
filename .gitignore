@@ -1,2 +1,35 @@
-﻿node_modules/
+# Credentials
+google-credentials.json
+google-token.json
 
+# PM2 ecosystem (contains real secrets — keep on server only)
+ecosystem.config.js
+
+# WhatsApp sessions
+.wwebjs_auth/
+.wwebjs_auth_bridge/
+.wwebjs_cache/
+
+# OpenClaw internals
+.openclaw/
+.clawhub/
+
+# Memory & state
+memory/
+state/
+
+# Node
+node_modules/
+dist/
+npm-debug.log*
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store 
+Thumbs.db
+
+src/config/google-credentials.json
+src/config/google-token.json
+.baileys_auth/

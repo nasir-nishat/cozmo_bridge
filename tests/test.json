@@ -1,0 +1,5 @@
+'{
+    "event_type": "NEW_INQUIRY",
+    "lead_uid": "test",
+    "property_uid": "test"
+}' | Out-File -FilePath "C:\COZE_CORP\cozmo_bridge\test.json" -Encoding utf8

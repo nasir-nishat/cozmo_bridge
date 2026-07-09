@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* COZE owner-site palette mapped to Shadcn tokens */
+    --background: 40 43% 97%;        /* #FCF9F5 */
+    --foreground: 0 3% 15%;          /* #272525 */
+    --card: 0 0% 100%;
+    --card-foreground: 0 3% 15%;
+    --primary: 0 3% 15%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 45 30% 92%;         /* #F1EEE3 */
+    --secondary-foreground: 0 3% 15%;
+    --muted: 45 30% 92%;
+    --muted-foreground: 28 13% 47%;  /* #867970 */
+    --accent: 43 40% 88%;
+    --accent-foreground: 0 3% 15%;
+    --destructive: 4 90% 58%;        /* #ff3b30 */
+    --destructive-foreground: 0 0% 100%;
+    --border: 43 31% 83%;            /* #E2DCC6 */
+    --input: 43 31% 83%;
+    --ring: 43 68% 43%;              /* #B88E23 */
+    --radius: 0.5rem;
+
+    /* COZE brand */
+    --brand: #B88E23;
+    --brand-light: #F4EBDD;
+    --brand-dark: #856949;
+    --slate: #5C4E3D;
+    --slate-light: #F1EEE3;
+    --text-base: #272525;
+    --text-muted: #867970;
+    --bg-page: #FCF9F5;
+    /* Platform */
+    --kakao: #FAE100;
+    --green: #34c759;
+    --blue: #007aff;
+    --orange: #ff9500;
+    --red: #ff3b30;
+    --scrollbar-thumb: 43 20% 72%;
+  }
+
+  * {
+    box-sizing: border-box;
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background:
+      linear-gradient(180deg, #FFFFFF 0%, #FCF9F5 52%, #F1EEE3 100%);
+    color: hsl(var(--foreground));
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .admin-dark {
+    --background: 220 15% 8%;
+    --foreground: 36 24% 92%;
+    --card: 220 14% 11%;
+    --card-foreground: 36 24% 92%;
+    --primary: 40 54% 56%;
+    --primary-foreground: 220 15% 8%;
+    --secondary: 220 11% 16%;
+    --secondary-foreground: 36 24% 92%;
+    --muted: 220 11% 16%;
+    --muted-foreground: 35 12% 64%;
+    --accent: 220 10% 18%;
+    --accent-foreground: 36 24% 92%;
+    --border: 220 10% 21%;
+    --input: 220 10% 21%;
+    --ring: 40 54% 56%;
+    --scrollbar-thumb: 220 8% 32%;
+    background:
+      radial-gradient(circle at top left, rgba(184, 142, 35, 0.16), transparent 34rem),
+      linear-gradient(180deg, #101114 0%, #151515 58%, #0d0f12 100%);
+    color: hsl(var(--foreground));
+  }
+
+  .admin-dark main {
+    background: transparent;
+  }
+
+  .admin-dark .bg-white,
+  .admin-dark [class*="bg-[#f5f5f7]"],
+  .admin-dark [class*="bg-[#f2f2f7]"],
+  .admin-dark [class*="bg-[#F1EEE3]"],
+  .admin-dark [class*="bg-[#FCF9F5]"] {
+    background-color: #17191d !important;
+  }
+
+  .admin-dark [class*="bg-[#e5e5ea]"],
+  .admin-dark [class*="bg-[#E2DCC6]"] {
+    background-color: #24262c !important;
+  }
+
+  .admin-dark [class*="bg-[#fffbeb]"] {
+    background-color: #2a2112 !important;
+  }
+
+  .admin-dark [class*="border-[#e5e5ea]"],
+  .admin-dark [class*="border-[#E2DCC6]"],
+  .admin-dark [class*="border-[#F1EEE3]"],
+  .admin-dark [class*="border-[#f2f2f7]"],
+  .admin-dark .border-border {
+    border-color: #30333a !important;
+  }
+
+  .admin-dark [class*="text-[#1d1d1f]"],
+  .admin-dark [class*="text-[#272525]"],
+  .admin-dark [class*="text-[#5C4E3D]"] {
+    color: #f3eadb !important;
+  }
+
+  .admin-dark [class*="text-[#6e6e73]"],
+  .admin-dark [class*="text-[#8e8e93]"],
+  .admin-dark [class*="text-[#867970]"],
+  .admin-dark [class*="text-[#B9B1A4]"],
+  .admin-dark [class*="text-[#c7c7cc]"] {
+    color: #a9a39a !important;
+  }
+
+  .admin-dark [class*="text-[#B88E23]"],
+  .admin-dark [class*="text-[#AD9362]"] {
+    color: #d6ad4a !important;
+  }
+
+  .admin-dark input,
+  .admin-dark textarea,
+  .admin-dark select {
+    background-color: transparent;
+    color: #f3eadb;
+  }
+
+  .admin-dark input::placeholder,
+  .admin-dark textarea::placeholder {
+    color: #817a71;
+  }
+
+  .admin-dark table th,
+  .admin-dark table td {
+    border-color: #30333a !important;
+  }
+
+  /* Scrollbars — thin, unobtrusive, theme-aware */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--scrollbar-thumb) / 0.55) transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--scrollbar-thumb) / 0.45);
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--scrollbar-thumb) / 0.75);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}

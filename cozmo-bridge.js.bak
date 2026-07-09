@@ -1,0 +1,300 @@
+const { Client, LocalAuth, MessageMedia } = require('whatsapp-web.js');
+const qrcode = require('qrcode-terminal');
+const express = require('express');
+const axios = require('axios');
+const { google } = require('googleapis');
+const fs = require('fs');
+
+let groupCreationEnabled = false;
+
+// ─── CONFIG ───────────────────────────────────────────────────────────────────
+const CONFIG = {
+    HOSTFULLY_API_KEY: 'Jtzt22PhP4yGHb00',
+    HOSTFULLY_API_URL: 'https://api.hostfully.com/api/v3',
+    COZE_PERSONAL_NUMBER: '821097802701@c.us',
+    COZE_BUSINESS_NUMBER: '821026226935@c.us',
+    LM_STUDIO_URL: 'http://localhost:1234/v1/chat/completions',
+    LM_MODEL: 'qwen/qwen3.5-35b-a3b',
+    LLM_MAX_TOKENS: 1000,
+    LLM_TEMPERATURE: 0.7,
+    SHEET_ID: '1xzDlJ9LXIXAtz6qpJfRqlEK5Fvmok9sgEMgYVpQmpc0',
+    BUSINESS_CARD_PATH: './assets/business-card.jpg',
+    PORT: 3001,
+    GROUP_CREATION_DELAY_MS: 180000,
+    TELEGRAM_BOT_TOKEN: '8519469737:AAERhZrnwSYGsuFWbxdHxB294C1Og_eoSmU',
+    TELEGRAM_CHAT_ID: '8769782643',
+};
+
+// ─── HELPERS ──────────────────────────────────────────────────────────────────
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+const formatDate = (raw) => {
+    if (!raw) return 'TBD';
+    const d = new Date(raw);
+    return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+};
+
+// ─── GOOGLE SHEETS ────────────────────────────────────────────────────────────
+const credentials = JSON.parse(fs.readFileSync('./google-credentials.json'));
+const { client_id, client_secret } = credentials.installed;
+const oAuth2Client = new google.auth.OAuth2(client_id, client_secret, 'http://localhost:3333');
+oAuth2Client.setCredentials(JSON.parse(fs.readFileSync('./google-token.json')));
+const sheets = google.sheets({ version: 'v4', auth: oAuth2Client });
+
+async function getActiveTeamMembers() {
+    const res = await sheets.spreadsheets.values.get({
+        spreadsheetId: CONFIG.SHEET_ID,
+        range: 'team_members!A2:D',
+    });
+    return (res.data.values || [])
+        .filter(row => row[3] === 'TRUE')
+        .map(row => `${row[1].replace('+', '')}@c.us`);
+}
+
+async function getMessages(langCode = 'EN') {
+    const res = await sheets.spreadsheets.values.get({
+        spreadsheetId: CONFIG.SHEET_ID,
+        range: 'messages!A2:C',
+    });
+    const col = langCode === 'KR' ? 2 : 1;
+    const map = {};
+    (res.data.values || []).forEach(row => {
+        if (row[0]) map[row[0]] = row[col] || row[1] || '';
+    });
+    return map;
+}
+
+// ─── TELEGRAM ALERTS ──────────────────────────────────────────────────────────
+async function sendAlert(message) {
+    try {
+        await axios.post(`https://api.telegram.org/bot${CONFIG.TELEGRAM_BOT_TOKEN}/sendMessage`, {
+            chat_id: CONFIG.TELEGRAM_CHAT_ID,
+            text: message,
+            parse_mode: 'HTML'
+        });
+    } catch (e) {
+        console.error('❌ Telegram alert failed:', e.message);
+    }
+}
+
+// ─── WHATSAPP CLIENT ──────────────────────────────────────────────────────────
+const waClient = new Client({
+    authStrategy: new LocalAuth({ dataPath: '.wwebjs_auth_bridge' }),
+    puppeteer: { args: ['--no-sandbox'] }
+});
+
+waClient.on('qr', qr => {
+    console.log('📱 Scan QR to connect WhatsApp:');
+    qrcode.generate(qr, { small: true });
+});
+waClient.on('ready', () => console.log('✨ WhatsApp Client Ready!'));
+waClient.on('disconnected', reason => console.warn('⚠️ WA Disconnected:', reason));
+
+// WA initialize disabled — ban lifted needed first
+// waClient.initialize();
+
+// ─── RATE LIMITER ─────────────────────────────────────────────────────────────
+let lastGroupCreatedAt = 0;
+async function waitForRateLimit() {
+    const elapsed = Date.now() - lastGroupCreatedAt;
+    if (lastGroupCreatedAt && elapsed < CONFIG.GROUP_CREATION_DELAY_MS) {
+        const wait = CONFIG.GROUP_CREATION_DELAY_MS - elapsed;
+        console.log(`⏳ Rate limit: waiting ${Math.round(wait / 1000)}s...`);
+        await sleep(wait);
+    }
+    lastGroupCreatedAt = Date.now();
+}
+
+// ─── HOSTFULLY API ────────────────────────────────────────────────────────────
+async function fetchLead(lead_uid) {
+    const res = await axios.get(`${CONFIG.HOSTFULLY_API_URL}/leads/${lead_uid}`, {
+        headers: { 'X-HOSTFULLY-APIKEY': CONFIG.HOSTFULLY_API_KEY }
+    });
+    return res.data.lead;
+}
+
+async function fetchProperty(property_uid) {
+    const res = await axios.get(`${CONFIG.HOSTFULLY_API_URL}/properties/${property_uid}`, {
+        headers: { 'X-HOSTFULLY-APIKEY': CONFIG.HOSTFULLY_API_KEY }
+    });
+    return res.data.property;
+}
+
+// ─── LLM ─────────────────────────────────────────────────────────────────────
+async function generateWelcomeMessage(systemPrompt, userPrompt) {
+    const res = await axios.post(CONFIG.LM_STUDIO_URL, {
+        model: CONFIG.LM_MODEL,
+        messages: [
+            { role: 'system', content: systemPrompt },
+            { role: 'user', content: userPrompt }
+        ],
+        max_tokens: CONFIG.LLM_MAX_TOKENS,
+        temperature: CONFIG.LLM_TEMPERATURE
+    });
+    const raw = res.data.choices[0].message;
+    return (raw.content || raw.reasoning_content || '').trim();
+}
+
+// ─── BOOKING MESSAGES ─────────────────────────────────────────────────────────
+async function sendBookingMessages(groupId, { guest_name, property, check_in, check_out, nationality }) {
+    const langCode = nationality === 'KR' ? 'KR' : 'EN';
+    const msgs = await getMessages(langCode);
+
+    const systemPrompt = msgs['welcome_system_prompt'] || 'You are COZMO AI for COZE Hospitality 3.0.';
+    const userPrompt = (msgs['welcome_user_prompt'] || '')
+        .replace('{guest_name}', guest_name)
+        .replace('{property}', property)
+        .replace('{check_in}', check_in)
+        .replace('{check_out}', check_out);
+
+    const welcomeMessage = await generateWelcomeMessage(systemPrompt, userPrompt);
+    await waClient.sendMessage(groupId, welcomeMessage);
+    await sleep(1500);
+
+    if (msgs['brand_msg']) {
+        await waClient.sendMessage(groupId, msgs['brand_msg'].replace(/\\n/g, '\n'));
+        await sleep(1500);
+    }
+
+    if (fs.existsSync(CONFIG.BUSINESS_CARD_PATH)) {
+        const media = MessageMedia.fromFilePath(CONFIG.BUSINESS_CARD_PATH);
+        await waClient.sendMessage(groupId, media);
+        await sleep(1500);
+    }
+
+    if (msgs['intro_msg']) {
+        await waClient.sendMessage(groupId, msgs['intro_msg'].replace(/\\n/g, '\n'));
+    }
+}
+
+// ─── GROUP CREATION ───────────────────────────────────────────────────────────
+async function createBookingGroup({ guest_name, phone, property, check_in, check_out, nationality }) {
+    await waitForRateLimit();
+
+    const groupName = `COZE | ${guest_name} | ${property}`;
+    const guestPhone = phone ? `${phone.replace(/\D/g, '')}@c.us` : null;
+    const teamMembers = await getActiveTeamMembers();
+    const allMembers = [...new Set([...(guestPhone ? [guestPhone] : []), ...teamMembers])];
+
+    console.log(`👥 Creating group: ${groupName} (${allMembers.length} members)`);
+    const group = await waClient.createGroup(groupName, allMembers);
+    const groupId = group.gid._serialized;
+
+    const chat = await waClient.getChatById(groupId);
+    await sleep(4000);
+    await chat.setMessagesAdminsOnly(false);
+    await sleep(1000);
+
+    await sendBookingMessages(groupId, { guest_name, property, check_in, check_out, nationality });
+    console.log(`✅ Group created: ${groupName}`);
+    return groupId;
+}
+
+// ─── EXPRESS ──────────────────────────────────────────────────────────────────
+const app = express();
+app.use(express.json());
+
+const ALERT_EVENTS = {
+    'NEW_INQUIRY': '🔍 New Inquiry',
+    'NEW_HOLD': '⏸️ On Hold',
+    'BOOKING_CANCELLED': '❌ Booking Cancelled',
+    'NEW_BLOCKED_DATES': '📅 Calendar Blocked',
+    'NEW_BOOKING_REQUEST': '📋 Booking Request',
+    'UNIT_CHANGED': '🔄 Unit Changed',
+    'PROPERTY_AVAILABILITY_UPDATED': '🔁 Availability Updated'
+};
+
+app.post('/send', async (req, res) => {
+    const { to, message } = req.body;
+    try {
+        await waClient.sendMessage(`${to}@c.us`, message);
+        res.json({ success: true });
+    } catch (e) {
+        res.status(500).json({ success: false, error: e.message });
+    }
+});
+
+app.post('/webhook', async (req, res) => {
+    const { lead_uid, property_uid, event_type } = req.body;
+    console.log('📥 Webhook:', event_type, '| Lead:', lead_uid);
+    res.json({ success: true });
+
+    if (!lead_uid) return;
+
+    // ─── Alert-only events ────────────────────────────────────────────────────
+    if (ALERT_EVENTS[event_type]) {
+        try {
+            const [lead, property] = await Promise.all([fetchLead(lead_uid), fetchProperty(property_uid)]);
+            const info = lead.guestInformation;
+            const guest_name = `${info.firstName || ''} ${info.lastName || ''}`.trim() || 'Unknown';
+            const check_in = formatDate(lead.checkInLocalDateTime);
+            const check_out = formatDate(lead.checkOutLocalDateTime);
+
+            const alertMsg =
+                `${ALERT_EVENTS[event_type]}
+─────────────────
+👤 <b>Guest:</b> ${guest_name}
+🏠 <b>Property:</b> ${property?.name || 'Unknown'}
+📅 <b>Check-in:</b> ${check_in}
+🔚 <b>Check-out:</b> ${check_out}
+─────────────────
+<i>via COZMO · COZE Hospitality</i>`;
+
+            await sendAlert(alertMsg);
+        } catch (e) {
+            await sendAlert(`${ALERT_EVENTS[event_type]}\n─────────────────\n⚠️ Lead: <code>${lead_uid}</code>`);
+        }
+        return;
+    }
+
+    if (!['NEW_BOOKING', 'BOOKING_UPDATED'].includes(event_type)) return;
+
+    // ─── Booking events ───────────────────────────────────────────────────────
+    try {
+        const [lead, property] = await Promise.all([fetchLead(lead_uid), fetchProperty(property_uid)]);
+        const info = lead.guestInformation;
+
+        if (!['BOOKED', 'PAID_IN_FULL'].includes(lead.status)) {
+            console.log('⏭️ Skipping — status:', lead.status);
+            return;
+        }
+
+        if (!groupCreationEnabled) {
+            console.log('⏸️ Group creation disabled');
+            return;
+        }
+
+        await createBookingGroup({
+            guest_name: `${info.firstName} ${info.lastName}`,
+            phone: info.phoneNumber || info.cellPhoneNumber,
+            property: property?.name || 'COZE Property',
+            check_in: lead.checkInLocalDateTime,
+            check_out: lead.checkOutLocalDateTime,
+            nationality: info.countryCode || 'US'
+        });
+    } catch (e) {
+        console.error('❌ Webhook error:', e.stack || e.message);
+        await sendAlert(`❌ <b>Webhook Error</b>\n─────────────────\nEvent: <code>${event_type}</code>\nError: ${e.message}`);
+    }
+});
+
+app.post('/webhook-test', async (req, res) => {
+    console.log('🧪 Test webhook:', req.body);
+    res.json({ success: true });
+    try {
+        await createBookingGroup(req.body);
+    } catch (e) {
+        console.error('❌ Test error:', e.stack || e.message);
+    }
+});
+
+app.post('/admin/toggle-groups', (req, res) => {
+    const { enabled } = req.body;
+    groupCreationEnabled = enabled === true || enabled === 'true';
+    console.log(`🔧 Group creation ${groupCreationEnabled ? 'ENABLED' : 'DISABLED'}`);
+    res.json({ success: true, groupCreationEnabled });
+});
+
+app.listen(CONFIG.PORT, () => {
+    console.log(`🚀 COZE Bridge on http://localhost:${CONFIG.PORT}`);
+});

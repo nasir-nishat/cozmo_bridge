@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COZMO — Technical Architecture</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0 }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #f5f4f0;
+      color: #1a1a1a;
+      padding: 32px 24px
+    }
+
+    .page { max-width: 980px; margin: 0 auto }
+
+    .header { text-align: center; margin-bottom: 36px }
+    .header h1 { font-size: 22px; font-weight: 700; color: #111; margin-bottom: 6px }
+    .header p { font-size: 11px; color: #aaa; letter-spacing: .08em; text-transform: uppercase }
+
+    .section-title {
+      font-size: 10px; letter-spacing: .12em; text-transform: uppercase;
+      color: #bbb; margin-bottom: 14px; font-weight: 600
+    }
+
+    /* Flow cards */
+    .flow-section { margin-top: 40px }
+    .flow-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px }
+
+    .flow-card {
+      background: #fff;
+      border: 1px solid #e8e8e4;
+      border-radius: 10px;
+      padding: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,.06)
+    }
+
+    .flow-title {
+      font-size: 12px; font-weight: 600; color: #7055c8;
+      margin-bottom: 12px; padding-bottom: 8px;
+      border-bottom: 1px solid #f0f0ee
+    }
+
+    .flow-step { display: flex; gap: 10px; margin-bottom: 9px; align-items: flex-start }
+
+    .step-num {
+      font-family: 'DM Mono', monospace; font-size: 10px;
+      color: #ccc; min-width: 18px; padding-top: 1px; flex-shrink: 0
+    }
+
+    .step-text { font-size: 11px; color: #666; line-height: 1.55 }
+    .step-text strong { color: #222; font-weight: 600 }
+    .step-text code {
+      color: #7055c8; background: #f0eeff;
+      padding: 1px 5px; border-radius: 3px;
+      font-family: 'DM Mono', monospace; font-size: 10px
+    }
+
+    /* Data store cards */
+    .db-section { margin-top: 40px }
+    .schema-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 14px }
+
+    .table-card {
+      background: #fff;
+      border: 1px solid #e8e8e4;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,.06)
+    }
+
+    .table-head {
+      padding: 10px 14px;
+      border-bottom: 1px solid #f0f0ee;
+      display: flex; align-items: center; gap: 8px;
+      background: #fafaf8
+    }
+
+    .table-name { font-family: 'DM Mono', monospace; font-size: 11px; font-weight: 500 }
+    .table-desc { font-size: 10px; color: #bbb; margin-left: auto }
+
+    .table-body { padding: 0 }
+
+    .field-row {
+      display: flex; align-items: baseline; gap: 8px;
+      padding: 6px 14px;
+      border-bottom: 1px solid #f5f5f2;
+      font-family: 'DM Mono', monospace; font-size: 10.5px
+    }
+
+    .field-row:last-child { border-bottom: none }
+    .field-name { color: #7055c8; min-width: 150px; flex-shrink: 0 }
+    .field-type { color: #2d8a55; min-width: 55px; flex-shrink: 0 }
+    .field-note { color: #bbb; font-size: 9.5px }
+    .pk { color: #c4851a; margin-right: 2px; font-size: 8px; font-weight: 700 }
+    .fk { color: #4a7aaa; margin-right: 2px; font-size: 8px; font-weight: 700 }
+
+    /* Tags */
+    .tag {
+      font-size: 8.5px; padding: 1px 6px; border-radius: 3px;
+      font-family: 'DM Mono', monospace; font-weight: 600; flex-shrink: 0
+    }
+
+    .tag-guest  { background: #edfaf3; color: #2a7048; border: 1px solid #b0dfc0 }
+    .tag-staff  { background: #eef2ff; color: #3a55a0; border: 1px solid #b0c0f0 }
+    .tag-shared { background: #f4f0ff; color: #6040a8; border: 1px solid #c8b8f0 }
+
+    .legend-row { display: flex; gap: 16px; margin-bottom: 16px; flex-wrap: wrap }
+    .legend-item { display: flex; align-items: center; gap: 6px; font-size: 11px; color: #999 }
+
+    /* OpenClaw callout */
+    .oc-callout {
+      margin-top: 16px;
+      background: #fff;
+      border: 1px solid #e0dcf8;
+      border-left: 3px solid #7055c8;
+      border-radius: 8px;
+      padding: 14px 16px
+    }
+
+    .oc-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px; font-weight: 600;
+      color: #7055c8; margin-bottom: 6px;
+      text-transform: uppercase; letter-spacing: .05em
+    }
+
+    .oc-body { font-size: 11px; color: #555; line-height: 1.6 }
+    .oc-body strong { color: #5040a8 }
+    .oc-body code {
+      color: #7055c8; background: #f0eeff;
+      padding: 1px 5px; border-radius: 3px;
+      font-family: 'DM Mono', monospace; font-size: 10px
+    }
+
+    .oc-list {
+      margin-top: 8px; padding-left: 18px;
+      font-size: 11px; color: #666; line-height: 1.9
+    }
+
+    .oc-list strong { color: #5040a8 }
+    .oc-list code {
+      color: #7055c8; background: #f0eeff;
+      padding: 1px 5px; border-radius: 3px;
+      font-family: 'DM Mono', monospace; font-size: 10px
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="header">
+      <h1>COZMO — Technical Architecture</h1>
+      <p>Stack · Data model · System flows · Updated 2026-05</p>
+    </div>
+
+    <!-- ─── SVG ARCHITECTURE DIAGRAM ─── -->
+    <p class="section-title">System architecture</p>
+
+    <svg width="100%" viewBox="0 0 940 560" role="img"
+      style="display:block;border-radius:12px;box-shadow:0 2px 16px rgba(0,0,0,.10)">
+      <title>COZMO System Architecture</title>
+
+      <defs>
+        <!-- Arrow markers -->
+        <marker id="a-gray"   viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+          <path d="M1 2L8 5L1 8" fill="none" stroke="#bbb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+        <marker id="a-green"  viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+          <path d="M1 2L8 5L1 8" fill="none" stroke="#34a86a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+        <marker id="a-blue"   viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+          <path d="M1 2L8 5L1 8" fill="none" stroke="#4a80c8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+        <marker id="a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+          <path d="M1 2L8 5L1 8" fill="none" stroke="#7055c8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+
+        <!-- Drop shadow -->
+        <filter id="sh" x="-4%" y="-4%" width="108%" height="116%">
+          <feDropShadow dx="0" dy="1" stdDeviation="2.5" flood-color="#00000012"/>
+        </filter>
+      </defs>
+
+      <!-- ── Background ── -->
+      <rect width="940" height="560" fill="#f5f4f0" rx="12"/>
+
+      <!-- Zone tints -->
+      <rect x="10"  y="10" width="456" height="540" rx="8" fill="#edfaf3" opacity="0.55"/>
+      <rect x="474" y="10" width="456" height="540" rx="8" fill="#eef2ff" opacity="0.55"/>
+
+      <!-- Zone labels -->
+      <text x="22"  y="28" fill="#34a86a" font-family="DM Sans" font-size="9"  font-weight="700" letter-spacing="0.1em">GUEST FACING</text>
+      <text x="486" y="28" fill="#4a80c8" font-family="DM Sans" font-size="9"  font-weight="700" letter-spacing="0.1em">OFFICE / STAFF</text>
+
+
+      <!-- ══════════════════════════════════
+           ROW 1 — INPUT SOURCES
+           ══════════════════════════════════ -->
+
+      <!-- ── Guest Platforms box ── -->
+      <rect x="20" y="36" width="442" height="90" rx="9" fill="white" stroke="#b8e8c8" stroke-width="1" filter="url(#sh)"/>
+      <text x="241" y="54" text-anchor="middle" fill="#1d5c36" font-family="DM Sans" font-size="11" font-weight="700">Guest Platforms</text>
+
+      <!-- KakaoTalk badge -->
+      <rect x="30"  y="62" width="90" height="50" rx="6" fill="#FEE500"/>
+      <text x="75"  y="80" text-anchor="middle" fill="#2A1500" font-family="DM Sans"  font-size="9"  font-weight="700">KakaoTalk</text>
+      <text x="75"  y="93" text-anchor="middle" fill="#7A5000" font-family="DM Mono" font-size="7.5">MessengerBot R</text>
+      <text x="75" y="104" text-anchor="middle" fill="#7A5000" font-family="DM Mono" font-size="7.5">LDPlayer</text>
+
+      <!-- WhatsApp badge -->
+      <rect x="128" y="62" width="90" height="50" rx="6" fill="#25D366"/>
+      <text x="173" y="80" text-anchor="middle" fill="white"   font-family="DM Sans"  font-size="9"  font-weight="700">WhatsApp</text>
+      <text x="173" y="93" text-anchor="middle" fill="#b8ffe0" font-family="DM Mono" font-size="7.5">Evolution API</text>
+      <text x="173" y="104" text-anchor="middle" fill="#b8ffe0" font-family="DM Mono" font-size="7.5">localhost:8080</text>
+
+      <!-- LINE badge -->
+      <rect x="226" y="62" width="74" height="50" rx="6" fill="#06C755"/>
+      <text x="263" y="80" text-anchor="middle" fill="white"   font-family="DM Sans"  font-size="9"  font-weight="700">LINE</text>
+      <text x="263" y="93" text-anchor="middle" fill="#b8ffe0" font-family="DM Mono" font-size="7.5">Messaging API</text>
+      <text x="263" y="104" text-anchor="middle" fill="#b8ffe0" font-family="DM Mono" font-size="7.5">api.line.me</text>
+
+      <!-- WeChat badge -->
+      <rect x="308" y="62" width="80" height="50" rx="6" fill="#07C160"/>
+      <text x="348" y="80" text-anchor="middle" fill="white"   font-family="DM Sans"  font-size="9"  font-weight="700">WeChat</text>
+      <text x="348" y="93" text-anchor="middle" fill="#b8ffe0" font-family="DM Mono" font-size="7.5">WechatFerry</text>
+      <text x="348" y="104" text-anchor="middle" fill="#b8ffe0" font-family="DM Mono" font-size="7.5">PC client req.</text>
+
+      <!-- Telegram (dimmed — dev logs, not guest) -->
+      <rect x="397" y="62" width="56" height="50" rx="6" fill="#229ED9" opacity="0.10" stroke="#229ED9" stroke-width="0.8" stroke-dasharray="3,2"/>
+      <text x="425" y="81"  text-anchor="middle" fill="#4a80a8" font-family="DM Sans"  font-size="8.5" font-weight="600">Telegram</text>
+      <text x="425" y="93"  text-anchor="middle" fill="#aac8d8" font-family="DM Mono" font-size="7">dev/ops logs</text>
+      <text x="425" y="104" text-anchor="middle" fill="#aac8d8" font-family="DM Mono" font-size="7">not guest-facing</text>
+
+
+      <!-- ── Hostfully PMS box ── -->
+      <rect x="474" y="36" width="448" height="90" rx="9" fill="white" stroke="#a8c0e8" stroke-width="1" filter="url(#sh)"/>
+      <text x="698" y="54" text-anchor="middle" fill="#1d3a78" font-family="DM Sans" font-size="11" font-weight="700">Hostfully PMS</text>
+
+      <!-- Webhooks sub-badge -->
+      <rect x="484" y="62" width="102" height="50" rx="6" fill="#eef2ff" stroke="#b8c8f0" stroke-width="0.8"/>
+      <text x="535" y="80"  text-anchor="middle" fill="#3a55a0" font-family="DM Sans"  font-size="9"  font-weight="600">Webhooks</text>
+      <text x="535" y="93"  text-anchor="middle" fill="#8090c0" font-family="DM Mono" font-size="7.5">9 event types</text>
+      <text x="535" y="104" text-anchor="middle" fill="#8090c0" font-family="DM Mono" font-size="7.5">Cloudflare Tunnel</text>
+
+      <!-- Lead API sub-badge -->
+      <rect x="594" y="62" width="96" height="50" rx="6" fill="#eef2ff" stroke="#b8c8f0" stroke-width="0.8"/>
+      <text x="642" y="80"  text-anchor="middle" fill="#3a55a0" font-family="DM Sans"  font-size="9"  font-weight="600">Lead API</text>
+      <text x="642" y="93"  text-anchor="middle" fill="#8090c0" font-family="DM Mono" font-size="7.5">guest + booking</text>
+      <text x="642" y="104" text-anchor="middle" fill="#8090c0" font-family="DM Mono" font-size="7.5">nationality, dates</text>
+
+      <!-- Notes API sub-badge -->
+      <rect x="698" y="62" width="96" height="50" rx="6" fill="#eef2ff" stroke="#b8c8f0" stroke-width="0.8"/>
+      <text x="746" y="80"  text-anchor="middle" fill="#3a55a0" font-family="DM Sans"  font-size="9"  font-weight="600">Notes API</text>
+      <text x="746" y="93"  text-anchor="middle" fill="#8090c0" font-family="DM Mono" font-size="7.5">append-only log</text>
+      <text x="746" y="104" text-anchor="middle" fill="#8090c0" font-family="DM Mono" font-size="7.5">guest requests</text>
+
+      <!-- Property API sub-badge -->
+      <rect x="802" y="62" width="108" height="50" rx="6" fill="#eef2ff" stroke="#b8c8f0" stroke-width="0.8"/>
+      <text x="856" y="80"  text-anchor="middle" fill="#3a55a0" font-family="DM Sans"  font-size="9"  font-weight="600">Property API</text>
+      <text x="856" y="93"  text-anchor="middle" fill="#8090c0" font-family="DM Mono" font-size="7.5">wifi · door code</text>
+      <text x="856" y="104" text-anchor="middle" fill="#8090c0" font-family="DM Mono" font-size="7.5">images · address</text>
+
+
+      <!-- ── Row 1 → COZMO connectors ── -->
+      <!-- Guest messages down -->
+      <line x1="241" y1="126" x2="241" y2="140" stroke="#34a86a" stroke-width="1.5" marker-end="url(#a-green)"/>
+      <text x="145" y="136" fill="#34a86a" font-family="DM Mono" font-size="8">messages (webhook)</text>
+
+      <!-- Hostfully down -->
+      <line x1="698" y1="126" x2="698" y2="140" stroke="#4a80c8" stroke-width="1.5" marker-end="url(#a-blue)"/>
+      <text x="555" y="136" fill="#4a80c8" font-family="DM Mono" font-size="8">NEW_BOOKING, UPDATED, CANCELLED…</text>
+
+      <!-- Horizontal join line -->
+      <line x1="241" y1="140" x2="698" y2="140" stroke="#ddd" stroke-width="0.8"/>
+      <!-- Down to bridge -->
+      <line x1="470" y1="140" x2="470" y2="156" stroke="#bbb" stroke-width="1.2" marker-end="url(#a-gray)"/>
+
+
+      <!-- ══════════════════════════════════
+           ROW 2 — COZMO BRIDGE
+           ══════════════════════════════════ -->
+      <rect x="20" y="160" width="900" height="84" rx="10" fill="white" stroke="#c8b0f0" stroke-width="1.2" filter="url(#sh)"/>
+
+      <!-- Bridge title -->
+      <text x="470" y="180" text-anchor="middle" fill="#4020a0" font-family="DM Sans" font-size="15" font-weight="700">COZMO Bridge</text>
+
+      <!-- Tech pill badges -->
+      <!-- Express -->
+      <rect x="36"  y="190" width="116" height="40" rx="6" fill="#1a1a1a"/>
+      <text x="94"  y="207" text-anchor="middle" fill="white"  font-family="DM Mono" font-size="8.5" font-weight="500">Express  :3001</text>
+      <text x="94"  y="221" text-anchor="middle" fill="#666"   font-family="DM Mono" font-size="7.5">Node.js · TypeScript</text>
+
+      <!-- LM Studio -->
+      <rect x="160" y="190" width="168" height="40" rx="6" fill="#5030c0"/>
+      <text x="244" y="207" text-anchor="middle" fill="white"  font-family="DM Mono" font-size="8.5" font-weight="500">LM Studio  :1234</text>
+      <text x="244" y="221" text-anchor="middle" fill="#c8b8ff" font-family="DM Mono" font-size="7.5">Gemma 4 E4B · local LLM</text>
+
+      <!-- OpenAI -->
+      <rect x="336" y="190" width="172" height="40" rx="6" fill="#10a37f"/>
+      <text x="422" y="207" text-anchor="middle" fill="white"  font-family="DM Mono" font-size="8.5" font-weight="500">OpenAI gpt-4o-mini</text>
+      <text x="422" y="221" text-anchor="middle" fill="#a0ffe8" font-family="DM Mono" font-size="7.5">translations only (cloud)</text>
+
+      <!-- Cloudflare -->
+      <rect x="516" y="190" width="162" height="40" rx="6" fill="#F6821F"/>
+      <text x="597" y="207" text-anchor="middle" fill="white"  font-family="DM Mono" font-size="8.5" font-weight="500">Cloudflare Tunnel</text>
+      <text x="597" y="221" text-anchor="middle" fill="#ffe0c0" font-family="DM Mono" font-size="7.5">webhook.coze.care</text>
+
+      <!-- PM2 -->
+      <rect x="686" y="190" width="100" height="40" rx="6" fill="#AC2E2C"/>
+      <text x="736" y="207" text-anchor="middle" fill="white"  font-family="DM Mono" font-size="8.5" font-weight="500">PM2</text>
+      <text x="736" y="221" text-anchor="middle" fill="#ffc0c0" font-family="DM Mono" font-size="7.5">auto-restart</text>
+
+      <!-- KST Crons -->
+      <rect x="794" y="190" width="110" height="40" rx="6" fill="#2d7a50"/>
+      <text x="849" y="207" text-anchor="middle" fill="white"  font-family="DM Mono" font-size="8.5" font-weight="500">KST Crons</text>
+      <text x="849" y="221" text-anchor="middle" fill="#a0ffe0" font-family="DM Mono" font-size="7.5">node-cron · 5 schedules</text>
+
+
+      <!-- ── Bridge → Row 3 connectors ── -->
+      <line x1="470" y1="244" x2="470" y2="260" stroke="#ccc" stroke-width="0.8"/>
+      <line x1="232" y1="260" x2="708" y2="260" stroke="#ccc" stroke-width="0.8"/>
+      <!-- Down-left to Data Layer -->
+      <line x1="232" y1="260" x2="232" y2="278" stroke="#34a86a" stroke-width="1.5" marker-end="url(#a-green)"/>
+      <text x="148" y="273" fill="#34a86a" font-family="DM Mono" font-size="8">read / write</text>
+      <!-- Down-right to Staff Tools -->
+      <line x1="708" y1="260" x2="708" y2="278" stroke="#4a80c8" stroke-width="1.5" marker-end="url(#a-blue)"/>
+      <text x="578" y="273" fill="#4a80c8" font-family="DM Mono" font-size="8">JANDI alerts · Telegram logs</text>
+
+
+      <!-- ══════════════════════════════════
+           ROW 3 LEFT — DATA LAYER
+           ══════════════════════════════════ -->
+      <rect x="20" y="280" width="452" height="266" rx="10" fill="white" stroke="#b8e8c8" stroke-width="1" filter="url(#sh)"/>
+
+      <!-- Header -->
+      <text x="246" y="302" text-anchor="middle" fill="#1d5c36" font-family="DM Sans" font-size="13" font-weight="700">Data Layer</text>
+      <text x="246" y="318" text-anchor="middle" fill="#6aaa88" font-family="DM Sans" font-size="9">JSON files · Google Sheets · Hostfully API</text>
+      <line x1="36" y1="328" x2="458" y2="328" stroke="#eee" stroke-width="0.8"/>
+
+      <!-- Legend dots -->
+      <rect x="36" y="335" width="8" height="8" rx="2" fill="#4caf80"/>
+      <text x="48" y="343" fill="#888" font-family="DM Mono" font-size="8">JSON file</text>
+      <rect x="105" y="335" width="8" height="8" rx="2" fill="#2d7a50"/>
+      <text x="117" y="343" fill="#888" font-family="DM Mono" font-size="8">Google Sheets</text>
+      <rect x="196" y="335" width="8" height="8" rx="2" fill="#4a80c8"/>
+      <text x="208" y="343" fill="#888" font-family="DM Mono" font-size="8">External API</text>
+
+      <!-- ── Data items ── -->
+      <!-- group-leads.json -->
+      <rect x="36" y="354" width="8" height="8" rx="2" fill="#4caf80"/>
+      <text x="52"  y="363" fill="#1d5c36" font-family="DM Mono" font-size="9" font-weight="500">group-leads.json</text>
+      <text x="52"  y="375" fill="#aaa"    font-family="DM Mono" font-size="8">groupId → lead_uid   (WA / LINE / kakao: / wechat:)</text>
+
+      <!-- active-bookings.json -->
+      <rect x="36" y="384" width="8" height="8" rx="2" fill="#4caf80"/>
+      <text x="52"  y="393" fill="#1d5c36" font-family="DM Mono" font-size="9" font-weight="500">active-bookings.json</text>
+      <text x="52"  y="405" fill="#aaa"    font-family="DM Mono" font-size="8">checkIn/Out · property_code · nationality  (Hostfully sync)</text>
+
+      <!-- Google Sheets: expenses -->
+      <rect x="36" y="414" width="8" height="8" rx="2" fill="#2d7a50"/>
+      <text x="52"  y="423" fill="#1d5c36" font-family="DM Mono" font-size="9" font-weight="500">Google Sheets — expenses tab</text>
+      <text x="52"  y="435" fill="#aaa"    font-family="DM Mono" font-size="8">item · amount_krw · VAT 10%/14.5% · settled · logged_by</text>
+
+      <!-- Google Sheets: messages -->
+      <rect x="36" y="444" width="8" height="8" rx="2" fill="#2d7a50"/>
+      <text x="52"  y="453" fill="#1d5c36" font-family="DM Mono" font-size="9" font-weight="500">Google Sheets — 4 message tabs</text>
+      <text x="52"  y="465" fill="#aaa"    font-family="DM Mono" font-size="8">check_in_msgs · check_out_msgs · group_creation · booking_msgs</text>
+      <text x="52"  y="476" fill="#ccc"    font-family="DM Mono" font-size="7.5">columns: key | EN | KR | JA | ZH-CN | ZH-TW  (empty → EN fallback)</text>
+
+      <!-- Hostfully API -->
+      <rect x="36" y="484" width="8" height="8" rx="2" fill="#4a80c8"/>
+      <text x="52"  y="493" fill="#1d5c36" font-family="DM Mono" font-size="9" font-weight="500">Hostfully API  (source of truth)</text>
+      <text x="52"  y="505" fill="#aaa"    font-family="DM Mono" font-size="8">leads · properties · notes  —  synced daily at 15:00 + startup</text>
+
+      <!-- aux files -->
+      <rect x="36" y="514" width="8" height="8" rx="2" fill="#ccc"/>
+      <text x="52"  y="523" fill="#999"    font-family="DM Mono" font-size="8">staff-ids.json · translation-cache.json · pending-reminders.json · group-langs.json</text>
+
+
+      <!-- ══════════════════════════════════
+           ROW 3 RIGHT — STAFF TOOLS
+           ══════════════════════════════════ -->
+      <rect x="486" y="280" width="434" height="266" rx="10" fill="white" stroke="#a8c0e8" stroke-width="1" filter="url(#sh)"/>
+
+      <!-- Header -->
+      <text x="703" y="302" text-anchor="middle" fill="#1d3a78" font-family="DM Sans" font-size="13" font-weight="700">Staff Tools</text>
+      <text x="703" y="318" text-anchor="middle" fill="#6a80b8" font-family="DM Sans" font-size="9">JANDI (team summaries) · Telegram (dev logs only)</text>
+      <line x1="502" y1="328" x2="906" y2="328" stroke="#eee" stroke-width="0.8"/>
+
+      <!-- Status legend -->
+      <circle cx="504" cy="339" r="4.5" fill="#22c55e"/>
+      <text x="512" y="343" fill="#888" font-family="DM Mono" font-size="8">done</text>
+      <circle cx="546" cy="339" r="4.5" fill="#f59e0b"/>
+      <text x="554" y="343" fill="#888" font-family="DM Mono" font-size="8">building</text>
+      <circle cx="600" cy="339" r="4.5" fill="#d1d5db"/>
+      <text x="608" y="343" fill="#888" font-family="DM Mono" font-size="8">later</text>
+
+      <!-- ── Staff items ── -->
+      <!-- JANDI booking alerts — done -->
+      <circle cx="504" cy="363" r="4.5" fill="#22c55e"/>
+      <text x="516"  y="367" fill="#222" font-family="DM Sans"  font-size="10" font-weight="600">JANDI booking alerts</text>
+      <text x="516"  y="380" fill="#aaa" font-family="DM Mono" font-size="7.5">NEW_BOOKING · UPDATED · CANCELLED · CHECK-IN/OUT · NEW_INBOX_MSG</text>
+
+      <!-- Guest request → JANDI — done -->
+      <circle cx="504" cy="397" r="4.5" fill="#22c55e"/>
+      <text x="516"  y="401" fill="#222" font-family="DM Sans"  font-size="10" font-weight="600">Guest request → JANDI topic</text>
+      <text x="516"  y="414" fill="#aaa" font-family="DM Mono" font-size="7.5">LLM detects intent → saves HF note → fires JANDI alert</text>
+
+      <!-- Check-in reminders — done -->
+      <circle cx="504" cy="431" r="4.5" fill="#22c55e"/>
+      <text x="516"  y="435" fill="#222" font-family="DM Sans"  font-size="10" font-weight="600">Check-in tips &amp; rules  (auto)</text>
+      <text x="516"  y="448" fill="#aaa" font-family="DM Mono" font-size="7.5">15:00 breakfast/food/van tips (×3) · 19:00 house rules — check-in day</text>
+
+      <!-- Checkout + expense — done -->
+      <circle cx="504" cy="465" r="4.5" fill="#22c55e"/>
+      <text x="516"  y="469" fill="#222" font-family="DM Sans"  font-size="10" font-weight="600">Checkout + expense automation  (auto)</text>
+      <text x="516"  y="482" fill="#aaa" font-family="DM Mono" font-size="7.5">21:00 summary + expenses · 07:00 final bill · 15:00 farewell — checkout day</text>
+
+      <!-- /eta /door — building -->
+      <circle cx="504" cy="499" r="4.5" fill="#f59e0b"/>
+      <text x="516"  y="503" fill="#444" font-family="DM Sans"  font-size="10" font-weight="600">/eta /door /clean /ops  (JANDI commands)</text>
+      <text x="516"  y="516" fill="#aaa" font-family="DM Mono" font-size="7.5">slash commands → staff action dispatch from JANDI</text>
+
+      <!-- OpenClaw — later -->
+      <circle cx="504" cy="533" r="4.5" fill="#d1d5db"/>
+      <text x="516"  y="537" fill="#888" font-family="DM Sans"  font-size="10">OpenClaw MCP bridge  (later)</text>
+
+    </svg>
+    <!-- END SVG -->
+
+
+    <!-- ─── KEY DATA FLOWS ─── -->
+    <div class="flow-section">
+      <p class="section-title" style="margin-top:44px">Key data flows</p>
+      <div class="flow-grid">
+
+        <div class="flow-card">
+          <p class="flow-title">Guest request flow</p>
+          <div class="flow-step"><span class="step-num">1</span><span class="step-text">Guest messages in linked group chat (any platform, any language)</span></div>
+          <div class="flow-step"><span class="step-num">2</span><span class="step-text">COZMO reads → <strong>LM Studio (Gemma 4)</strong> classifies intent: request / question / cancel</span></div>
+          <div class="flow-step"><span class="step-num">3</span><span class="step-text">Service request → <strong>PATCH Hostfully note</strong> → JANDI alert fires to property topic</span></div>
+          <div class="flow-step"><span class="step-num">4</span><span class="step-text">Translation via <strong>OpenAI gpt-4o-mini</strong> if platform needs it (WeChat, LINE)</span></div>
+          <div class="flow-step"><span class="step-num">5</span><span class="step-text">Staff sees JANDI alert → acts. <strong>Never monitors raw chat.</strong></span></div>
+        </div>
+
+        <div class="flow-card">
+          <p class="flow-title">New booking flow</p>
+          <div class="flow-step"><span class="step-num">1</span><span class="step-text">Hostfully fires <strong>NEW_BOOKING</strong> → Cloudflare Tunnel → Express :3001</span></div>
+          <div class="flow-step"><span class="step-num">2</span><span class="step-text">Fetch lead + property from Hostfully API. Skip if not BOOKED / PAID_IN_FULL.</span></div>
+          <div class="flow-step"><span class="step-num">3</span><span class="step-text">Alert staff via <strong>JANDI</strong> + Telegram with platform availability (WA / Telegram)</span></div>
+          <div class="flow-step"><span class="step-num">4</span><span class="step-text">Create WA group via <strong>Evolution API</strong> → pull team from Sheets → auto-link groupId → lead_uid</span></div>
+          <div class="flow-step"><span class="step-num">5</span><span class="step-text">LLM generates welcome → send <strong>4-message sequence</strong>. Promote booked guest to group admin.</span></div>
+        </div>
+
+        <div class="flow-card">
+          <p class="flow-title">New group member flow</p>
+          <div class="flow-step"><span class="step-num">1</span><span class="step-text">Booked guest is given <strong>WA group admin</strong> on group creation</span></div>
+          <div class="flow-step"><span class="step-num">2</span><span class="step-text">Admin guest adds family / travel companions to the group</span></div>
+          <div class="flow-step"><span class="step-num">3</span><span class="step-text">COZMO detects <strong>group_participants_update</strong> join event</span></div>
+          <div class="flow-step"><span class="step-num">4</span><span class="step-text">Lookup lead_uid from <code>group-leads.json</code>, fetch property info from Hostfully</span></div>
+          <div class="flow-step"><span class="step-num">5</span><span class="step-text">Send info <strong>to new member only</strong>. No group spam.</span></div>
+        </div>
+
+        <div class="flow-card">
+          <p class="flow-title">Expense + checkout flow</p>
+          <div class="flow-step"><span class="step-num">1</span><span class="step-text">Staff types <code>/exp 50000 Airport van</code> in linked group (any platform)</span></div>
+          <div class="flow-step"><span class="step-num">2</span><span class="step-text">COZMO appends to <strong>Google Sheets expenses tab</strong> — lead_uid, item, amount, VAT, settled=false</span></div>
+          <div class="flow-step"><span class="step-num">3</span><span class="step-text"><strong>21:00 KST</strong> night before checkout → auto-query all unsettled expenses for that lead</span></div>
+          <div class="flow-step"><span class="step-num">4</span><span class="step-text">Calculate total + VAT variants (10% / 14.5%) with cash / WISE / bank transfer options</span></div>
+          <div class="flow-step"><span class="step-num">5</span><span class="step-text">Send formatted bill to guest group → auto-settle rows. <strong>07:00 KST</strong> sends final bill if new items added after 9PM.</span></div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- ─── DATA STORES ─── -->
+    <div class="db-section">
+      <p class="section-title">Data stores — current state</p>
+      <div class="legend-row">
+        <div class="legend-item"><span class="tag tag-guest">guest</span> Guest-facing data</div>
+        <div class="legend-item"><span class="tag tag-staff">staff</span> Staff / ops data</div>
+        <div class="legend-item"><span class="tag tag-shared">shared</span> Shared / config</div>
+      </div>
+
+      <div class="schema-grid">
+
+        <div class="table-card">
+          <div class="table-head">
+            <span class="table-name" style="color:#2d8a55">group-leads.json</span>
+            <span class="tag tag-shared" style="margin-left:8px">shared</span>
+            <span class="table-desc">Platform group → booking map</span>
+          </div>
+          <div class="table-body">
+            <div class="field-row"><span class="pk">KEY</span><span class="field-name">group_id</span><span class="field-type">string</span><span class="field-note">WA JID · line:id · kakao:id · wechat:id</span></div>
+            <div class="field-row"><span class="field-name">lead_uid</span><span class="field-type">string</span><span class="field-note">Hostfully lead UID</span></div>
+            <div class="field-row"><span class="field-name">group-langs.json</span><span class="field-type">—</span><span class="field-note">per-group translation language override</span></div>
+            <div class="field-row"><span class="field-name">kakao-chat-names.json</span><span class="field-type">—</span><span class="field-note">sourceId → chat name (kakaocli enrichment)</span></div>
+          </div>
+        </div>
+
+        <div class="table-card">
+          <div class="table-head">
+            <span class="table-name" style="color:#2d8a55">active-bookings.json</span>
+            <span class="tag tag-shared" style="margin-left:8px">shared</span>
+            <span class="table-desc">Daily booking ledger</span>
+          </div>
+          <div class="table-body">
+            <div class="field-row"><span class="pk">KEY</span><span class="field-name">lead_uid</span><span class="field-type">string</span></div>
+            <div class="field-row"><span class="field-name">checkIn / checkOut</span><span class="field-type">date</span><span class="field-note">YYYY-MM-DD KST</span></div>
+            <div class="field-row"><span class="field-name">property_code</span><span class="field-type">string</span><span class="field-note">BS, JT, B9…</span></div>
+            <div class="field-row"><span class="field-name">nationality</span><span class="field-type">string</span><span class="field-note">KR / JP / CN → language selection</span></div>
+            <div class="field-row"><span class="field-name">synced_at</span><span class="field-type">timestamp</span><span class="field-note">refreshed daily 15:00 KST + startup</span></div>
+          </div>
+        </div>
+
+        <div class="table-card">
+          <div class="table-head">
+            <span class="table-name" style="color:#7055c8">Google Sheets — expenses</span>
+            <span class="tag tag-staff" style="margin-left:8px">staff</span>
+            <span class="table-desc">Per-guest charge ledger</span>
+          </div>
+          <div class="table-body">
+            <div class="field-row"><span class="field-name">lead_uid</span><span class="field-type">string</span><span class="field-note">Hostfully lead UID</span></div>
+            <div class="field-row"><span class="field-name">item</span><span class="field-type">string</span><span class="field-note">Airport van, food, mutan…</span></div>
+            <div class="field-row"><span class="field-name">amount_krw</span><span class="field-type">integer</span></div>
+            <div class="field-row"><span class="field-name">VAT_10% / VAT_14.5%</span><span class="field-type">integer</span><span class="field-note">auto-calculated columns</span></div>
+            <div class="field-row"><span class="field-name">logged_by</span><span class="field-type">string</span><span class="field-note">staff name via staff-ids.json</span></div>
+            <div class="field-row"><span class="field-name">platform</span><span class="field-type">string</span><span class="field-note">wa / line / kakao / wechat</span></div>
+            <div class="field-row"><span class="field-name">settled</span><span class="field-type">boolean</span><span class="field-note">auto-settled at 21:00 send. 7-day cleanup.</span></div>
+          </div>
+        </div>
+
+        <div class="table-card">
+          <div class="table-head">
+            <span class="table-name" style="color:#7055c8">Google Sheets — messages</span>
+            <span class="tag tag-guest" style="margin-left:8px">guest</span>
+            <span class="table-desc">All message templates · 4 tabs</span>
+          </div>
+          <div class="table-body">
+            <div class="field-row"><span class="field-name">check_in_msgs</span><span class="field-type">tab</span><span class="field-note">breakfast_tips · food_tips · van_tips · guest_rules</span></div>
+            <div class="field-row"><span class="field-name">check_out_msgs</span><span class="field-type">tab</span><span class="field-note">checkout_reminder · payment_reminder · farewell · final_bill</span></div>
+            <div class="field-row"><span class="field-name">group_creation_msgs</span><span class="field-type">tab</span><span class="field-note">brand_msg · intro_msg · business_card_url</span></div>
+            <div class="field-row"><span class="field-name">booking_msgs</span><span class="field-type">tab</span><span class="field-note">HF inbox confirmation message</span></div>
+            <div class="field-row"><span class="field-name">columns</span><span class="field-type">—</span><span class="field-note">key | EN | KR | JA | ZH-CN | ZH-TW</span></div>
+            <div class="field-row"><span class="field-name">fallback</span><span class="field-type">—</span><span class="field-note">empty translation cell → EN returned automatically</span></div>
+          </div>
+        </div>
+
+        <div class="table-card">
+          <div class="table-head">
+            <span class="table-name" style="color:#3a5fa8">Hostfully API</span>
+            <span class="tag tag-shared" style="margin-left:8px">shared</span>
+            <span class="table-desc">Source of truth for all bookings</span>
+          </div>
+          <div class="table-body">
+            <div class="field-row"><span class="field-name">leads</span><span class="field-type">—</span><span class="field-note">uid · checkIn/Out · status · nationality · guestPhone · propertyUid</span></div>
+            <div class="field-row"><span class="field-name">properties</span><span class="field-type">—</span><span class="field-note">uid · name · brand · images</span></div>
+            <div class="field-row"><span class="field-name">notes</span><span class="field-type">—</span><span class="field-note">append-only guest request log per lead</span></div>
+            <div class="field-row"><span class="field-name">webhooks (9 events)</span><span class="field-type">—</span><span class="field-note">NEW_BOOKING · UPDATED · CANCELLED · CHECK_IN · CHECKOUT…</span></div>
+          </div>
+        </div>
+
+        <div class="table-card">
+          <div class="table-head">
+            <span class="table-name" style="color:#7055c8">staff-ids.json</span>
+            <span class="tag tag-staff" style="margin-left:8px">staff</span>
+            <span class="table-desc">Platform sender → staff name</span>
+          </div>
+          <div class="table-body">
+            <div class="field-row"><span class="field-name">platform</span><span class="field-type">string</span><span class="field-note">wa / line / kakao / wechat</span></div>
+            <div class="field-row"><span class="field-name">sender_id</span><span class="field-type">string</span><span class="field-note">phone / LINE uid / kakao id / wxid</span></div>
+            <div class="field-row"><span class="field-name">name</span><span class="field-type">string</span><span class="field-note">shown on expense log and JANDI alert</span></div>
+            <div class="field-row"><span class="field-name">pending-reminders.json</span><span class="field-type">—</span><span class="field-note">groupId → { message, fire_at } queue</span></div>
+            <div class="field-row"><span class="field-name">translation-cache.json</span><span class="field-type">—</span><span class="field-note">OpenAI gpt-4o-mini response cache (206KB)</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- OpenClaw TODO callout -->
+      <div class="oc-callout">
+        <div class="oc-label">TODO — OpenClaw MCP bridge</div>
+        <p class="oc-body">
+          <strong>OpenClaw</strong> is a self-hosted AI agent gateway installed on the Mac Mini
+          (auto-starts via LaunchAgent, gateway at <code>localhost:18789</code>).
+          It has a configured Telegram bot (<code>@nishat_coze_bot</code>) and bridges local LLMs (Ollama/Gemma)
+          to chat platforms via WebSocket. It also exposes an MCP stdio server via <code>openclaw mcp serve</code>.
+        </p>
+        <ul class="oc-list">
+          <li><strong>Kakao send</strong> — handled by MessengerBot R on LDPlayer (inline HTTP response). OpenClaw not needed for this.</li>
+          <li><strong>MCP bridge</strong> — <code>openclaw mcp serve</code> exposes Telegram send capability
+              to Claude Code or any MCP client directly</li>
+          <li><strong>Staff Telegram agent</strong> — Nasir can send a DM to OpenClaw bot
+              → it triggers COZMO actions (checkout reminder, expense log, etc.) via the ACP protocol</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+{
+  "editor.fontFamily": "Menlo, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.fontWeight": "500",
+  "editor.fontLigatures": true,
+  "window.zoomLevel": 0,
+  "terminal.integrated.fontFamily": "Menlo, 'Courier New', monospace",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": "500",
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null,
+    "editor.formatOnPaste": false
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true
+  }
+}

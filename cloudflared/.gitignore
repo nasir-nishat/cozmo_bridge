@@ -1,0 +1,3 @@
+# Local tunnel config and credentials (never commit)
+config.yml
+*.json

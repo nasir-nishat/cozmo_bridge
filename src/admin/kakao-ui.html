@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>COZMO · KakaoTalk Expense Recovery</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f0f; color: #e0e0e0; padding: 20px; }
+  h1 { font-size: 18px; font-weight: 600; color: #fff; margin-bottom: 4px; }
+  .subtitle { font-size: 12px; color: #666; margin-bottom: 20px; }
+  .toolbar { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; align-items: center; }
+  button { padding: 8px 16px; border: none; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 500; transition: opacity 0.15s; }
+  button:hover { opacity: 0.85; }
+  button:disabled { opacity: 0.4; cursor: not-allowed; }
+  .btn-primary { background: #FFE812; color: #000; }
+  .btn-secondary { background: #2a2a2a; color: #e0e0e0; border: 1px solid #333; }
+  .btn-danger { background: #c0392b; color: #fff; }
+  .btn-sm { padding: 4px 10px; font-size: 11px; }
+  .status-bar { font-size: 12px; color: #888; padding: 6px 0; }
+  .status-bar.ok { color: #2ecc71; }
+  .status-bar.err { color: #e74c3c; }
+
+  .groups-grid { display: flex; flex-direction: column; gap: 16px; }
+  .group-card { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 10px; overflow: hidden; }
+  .group-header { padding: 14px 16px; display: flex; justify-content: space-between; align-items: flex-start; cursor: pointer; }
+  .group-header:hover { background: #1f1f1f; }
+  .group-title { font-size: 14px; font-weight: 600; color: #fff; }
+  .group-meta { font-size: 11px; color: #666; margin-top: 3px; }
+  .group-meta span { margin-right: 10px; }
+  .group-badges { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+  .badge { padding: 2px 8px; border-radius: 20px; font-size: 11px; font-weight: 500; }
+  .badge-active { background: #1a3a2a; color: #2ecc71; border: 1px solid #2ecc71; }
+  .badge-checked-in { background: #1a2a3a; color: #3498db; border: 1px solid #3498db; }
+  .badge-past { background: #2a2a2a; color: #888; border: 1px solid #444; }
+  .badge-warn { background: #3a2a1a; color: #e67e22; border: 1px solid #e67e22; }
+  .total-pill { background: #FFE812; color: #000; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+  .group-body { padding: 0 16px 16px; display: none; }
+  .group-body.open { display: block; }
+  .section-label { font-size: 11px; color: #555; text-transform: uppercase; letter-spacing: 0.5px; margin: 12px 0 6px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  th { text-align: left; color: #555; font-weight: 500; padding: 4px 8px; border-bottom: 1px solid #2a2a2a; }
+  td { padding: 5px 8px; border-bottom: 1px solid #1e1e1e; color: #ccc; }
+  tr:last-child td { border-bottom: none; }
+  .amount-col { text-align: right; font-variant-numeric: tabular-nums; color: #FFE812; font-weight: 600; }
+  .card-tag { display: inline-block; background: #2a2a2a; border-radius: 4px; padding: 1px 6px; font-size: 10px; color: #aaa; }
+  .settled-row td { opacity: 0.4; text-decoration: line-through; }
+  .new-row td { background: #1a2a1a; }
+
+  .totals-row { margin-top: 10px; background: #111; border-radius: 6px; padding: 10px 12px; font-size: 12px; }
+  .totals-row .line { display: flex; justify-content: space-between; padding: 2px 0; }
+  .totals-row .line .label { color: #666; }
+  .totals-row .line .val { color: #FFE812; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .totals-row .line.main .val { font-size: 15px; color: #fff; }
+
+  .scan-result { margin-top: 10px; padding: 8px 12px; background: #0d1f0d; border: 1px solid #1a3a1a; border-radius: 6px; font-size: 12px; color: #2ecc71; }
+  .scan-result.warn { background: #1f1a0d; border-color: #3a2a1a; color: #e67e22; }
+  .scan-result.none { background: #1a1a1a; border-color: #2a2a2a; color: #666; }
+
+  .buffer-msgs { max-height: 200px; overflow-y: auto; background: #111; border-radius: 6px; padding: 8px; font-size: 11px; font-family: monospace; color: #888; }
+  .buffer-msgs .exp-msg { color: #FFE812; }
+
+  .loading { text-align: center; padding: 40px; color: #555; font-size: 13px; }
+  .empty-state { text-align: center; padding: 30px; color: #555; font-size: 13px; }
+
+  .dry-run-toggle { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #888; }
+  .dry-run-toggle input { cursor: pointer; }
+</style>
+</head>
+<body>
+
+<h1>🟡 KakaoTalk Expense Recovery</h1>
+<p class="subtitle">Scan message buffer for missed /exp commands → write to Google Sheets</p>
+
+<div class="toolbar">
+  <button class="btn-primary" id="btnScanAll">⚡ Scan All Groups</button>
+  <button class="btn-secondary" id="btnRefresh">↺ Refresh</button>
+  <label class="dry-run-toggle">
+    <input type="checkbox" id="dryRunCheck" /> Dry run (preview only, no Sheets write)
+  </label>
+</div>
+<div class="status-bar" id="statusBar">Loading groups...</div>
+
+<div id="groupsContainer" class="groups-grid">
+  <div class="loading">Fetching groups...</div>
+</div>
+
+<script>
+const API = '';  // same origin
+
+let groupsData = [];
+
+function fmt(n) {
+  return Number(n).toLocaleString('en-US');
+}
+
+function statusBadge(booking) {
+  if (!booking) return '<span class="badge badge-past">No Booking</span>';
+  const s = booking.status;
+  if (s === 'CHECKED_IN') return '<span class="badge badge-checked-in">Checked In</span>';
+  if (s === 'BOOKED' || s === 'PAID_IN_FULL') return '<span class="badge badge-active">Active</span>';
+  return `<span class="badge badge-past">${s}</span>`;
+}
+
+function renderGroup(g, scanResult) {
+  const b = g.booking;
+  const title = g.chatName || (b ? `${b.property} · ${b.guestName}` : g.groupKey);
+  const meta = b
+    ? `${b.property} · ${b.checkIn} → ${b.checkOut} · ${b.guestName}`
+    : `lead: ${g.leadUid.slice(0, 8)}...`;
+  const groupId = g.groupKey.replace('kakao:', '');
+
+  const unsettled = g.sheetExpenses.filter(e => !e.settled);
+  const settled = g.sheetExpenses.filter(e => e.settled);
+
+  let expRows = '';
+  for (const e of g.sheetExpenses) {
+    const cls = e.settled ? 'settled-row' : '';
+    expRows += `<tr class="${cls}">
+      <td>${new Date(e.createdAt).toLocaleDateString('ko-KR', {month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'})}</td>
+      <td>${e.item}</td>
+      <td><span class="card-tag">${e.cardName || e.card}</span></td>
+      <td class="amount-col">₩${fmt(e.amount)}</td>
+      <td>${e.loggedBy}</td>
+    </tr>`;
+  }
+
+  let scanHtml = '';
+  if (scanResult) {
+    const r = scanResult;
+    if (r.newCount > 0) {
+      scanHtml = `<div class="scan-result">✅ Recovered ${r.newCount} missing expense(s) → written to Sheets</div>`;
+    } else if (r.skippedCount > 0) {
+      scanHtml = `<div class="scan-result none">✓ ${r.skippedCount} expense(s) found in buffer — all already in Sheets</div>`;
+    } else {
+      scanHtml = `<div class="scan-result none">No /exp commands found in buffer for this group</div>`;
+    }
+  }
+
+  // Buffer exp messages preview
+  let bufferHtml = '';
+  if (g.bufferedExpCount > 0) {
+    bufferHtml = `<div class="section-label">Buffer: ${g.bufferedExpCount} /exp command(s) detected (last 4h / 100 msgs)</div>`;
+  }
+
+  const warnBadge = g.bufferedExpCount > unsettled.length
+    ? `<span class="badge badge-warn">⚠ ${g.bufferedExpCount} in buffer</span>`
+    : '';
+
+  return `
+  <div class="group-card" id="card-${groupId}">
+    <div class="group-header" onclick="toggleCard('${groupId}')">
+      <div>
+        <div class="group-title">${title}</div>
+        <div class="group-meta">
+          <span>${meta}</span>
+          <span>📨 ${g.bufferedMsgCount} buffered</span>
+        </div>
+      </div>
+      <div class="group-badges">
+        ${statusBadge(b)}
+        ${warnBadge}
+        ${unsettled.length > 0 ? `<span class="total-pill">₩${fmt(g.total)}</span>` : ''}
+        <button class="btn-secondary btn-sm" onclick="event.stopPropagation(); scanGroup('${g.groupKey}')">Scan</button>
+      </div>
+    </div>
+    <div class="group-body" id="body-${groupId}">
+      ${scanHtml}
+      ${bufferHtml}
+      ${g.sheetExpenses.length > 0 ? `
+        <div class="section-label">Expenses in Sheets (${g.sheetExpenses.length} total, ${unsettled.length} unsettled)</div>
+        <table>
+          <thead><tr><th>Time</th><th>Item</th><th>Card</th><th style="text-align:right">Amount</th><th>By</th></tr></thead>
+          <tbody>${expRows}</tbody>
+        </table>
+        <div class="totals-row">
+          <div class="line main"><span class="label">Subtotal (unsettled)</span><span class="val">₩${fmt(g.total)}</span></div>
+          <div class="line"><span class="label">+10% VAT (bank/WISE)</span><span class="val">₩${fmt(g.totalVat10)}</span></div>
+          <div class="line"><span class="label">+14.5% VAT (card)</span><span class="val">₩${fmt(g.totalVat145)}</span></div>
+        </div>
+      ` : '<div class="empty-state">No expenses in Sheets for this group</div>'}
+    </div>
+  </div>`;
+}
+
+function toggleCard(groupId) {
+  const body = document.getElementById(`body-${groupId}`);
+  if (body) body.classList.toggle('open');
+}
+
+async function loadGroups() {
+  document.getElementById('statusBar').textContent = 'Fetching groups...';
+  document.getElementById('statusBar').className = 'status-bar';
+  try {
+    const res = await fetch(`${API}/admin/kakao/groups`);
+    const data = await res.json();
+    if (!data.ok) throw new Error(data.error);
+    groupsData = data.groups;
+    renderAll();
+    document.getElementById('statusBar').textContent = `${groupsData.length} linked KakaoTalk group(s) · ${new Date().toLocaleTimeString()}`;
+    document.getElementById('statusBar').className = 'status-bar ok';
+  } catch (e) {
+    document.getElementById('statusBar').textContent = `Error: ${e.message}`;
+    document.getElementById('statusBar').className = 'status-bar err';
+    document.getElementById('groupsContainer').innerHTML = `<div class="empty-state">Failed to load groups: ${e.message}</div>`;
+  }
+}
+
+function renderAll(scanResults) {
+  const container = document.getElementById('groupsContainer');
+  if (!groupsData.length) {
+    container.innerHTML = '<div class="empty-state">No linked KakaoTalk groups found.</div>';
+    return;
+  }
+  // Sort: checked-in first, then active, then others
+  const order = { CHECKED_IN: 0, BOOKED: 1, PAID_IN_FULL: 1 };
+  const sorted = [...groupsData].sort((a, b) => {
+    const oa = order[a.booking?.status] ?? 9;
+    const ob = order[b.booking?.status] ?? 9;
+    return oa - ob;
+  });
+  const resultMap = {};
+  if (scanResults) {
+    for (const r of scanResults) resultMap[r.groupKey] = r;
+  }
+  container.innerHTML = sorted.map(g => renderGroup(g, resultMap[g.groupKey] || null)).join('');
+}
+
+async function scanGroup(groupKey) {
+  const dryRun = document.getElementById('dryRunCheck').checked;
+  const groupId = groupKey.replace('kakao:', '');
+  const card = document.getElementById(`card-${groupId}`);
+  const body = document.getElementById(`body-${groupId}`);
+  if (body) body.classList.add('open');
+
+  document.getElementById('statusBar').textContent = `Scanning ${groupKey}...`;
+  document.getElementById('statusBar').className = 'status-bar';
+
+  try {
+    const res = await fetch(`${API}/admin/kakao/scan-expenses`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ groupKey, dryRun }),
+    });
+    const data = await res.json();
+    if (!data.ok) throw new Error(data.error);
+
+    // Reload groups to get updated sheet data
+    const groupsRes = await fetch(`${API}/admin/kakao/groups`);
+    const groupsData2 = await groupsRes.json();
+    if (groupsData2.ok) groupsData = groupsData2.groups;
+
+    renderAll(data.results);
+    // Re-open the card
+    const body2 = document.getElementById(`body-${groupId}`);
+    if (body2) body2.classList.add('open');
+
+    const r = data.results.find(r => r.groupKey === groupKey);
+    const msg = r
+      ? `Scan done: ${r.newCount} new, ${r.skippedCount} already in Sheets`
+      : 'Scan done: no /exp commands found';
+    document.getElementById('statusBar').textContent = msg + (dryRun ? ' [DRY RUN]' : '');
+    document.getElementById('statusBar').className = 'status-bar ok';
+  } catch (e) {
+    document.getElementById('statusBar').textContent = `Scan error: ${e.message}`;
+    document.getElementById('statusBar').className = 'status-bar err';
+  }
+}
+
+async function scanAll() {
+  const dryRun = document.getElementById('dryRunCheck').checked;
+  const btn = document.getElementById('btnScanAll');
+  btn.disabled = true;
+  btn.textContent = '⏳ Scanning...';
+  document.getElementById('statusBar').textContent = 'Scanning all groups...';
+  document.getElementById('statusBar').className = 'status-bar';
+
+  try {
+    const res = await fetch(`${API}/admin/kakao/scan-expenses`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ dryRun }),
+    });
+    const data = await res.json();
+    if (!data.ok) throw new Error(data.error);
+
+    // Reload groups
+    const groupsRes = await fetch(`${API}/admin/kakao/groups`);
+    const groupsData2 = await groupsRes.json();
+    if (groupsData2.ok) groupsData = groupsData2.groups;
+
+    renderAll(data.results);
+
+    const msg = `Scan complete: ${data.totalNew} new expense(s) recovered, ${data.totalSkipped} already in Sheets` + (dryRun ? ' [DRY RUN]' : '');
+    document.getElementById('statusBar').textContent = msg;
+    document.getElementById('statusBar').className = 'status-bar ok';
+  } catch (e) {
+    document.getElementById('statusBar').textContent = `Scan error: ${e.message}`;
+    document.getElementById('statusBar').className = 'status-bar err';
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '⚡ Scan All Groups';
+  }
+}
+
+document.getElementById('btnScanAll').addEventListener('click', scanAll);
+document.getElementById('btnRefresh').addEventListener('click', loadGroups);
+
+loadGroups();
+</script>
+</body>
+</html>

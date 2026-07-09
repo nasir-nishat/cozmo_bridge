@@ -1,0 +1,2494 @@
+{
+  "generatedAt": "2026-06-22T08:34:19.716Z",
+  "source": "admin-ui/lib/wa-chat-data.json",
+  "policy": {
+    "purpose": "Reusable local-AI retrieval facts distilled from WhatsApp exports.",
+    "excludes": [
+      "raw chat transcripts",
+      "door codes",
+      "key-box pins",
+      "gate codes",
+      "Wi-Fi passwords",
+      "API keys"
+    ],
+    "useRule": "Use as retrieval context only. Guest-facing wording must still follow the project message policy."
+  },
+  "entryCount": 16,
+  "categories": [
+    "checkout",
+    "experiences",
+    "food",
+    "house-rules",
+    "neighborhood",
+    "payment",
+    "property",
+    "safety",
+    "services",
+    "transport"
+  ],
+  "entries": [
+    {
+      "id": "private-van-tour",
+      "category": "services",
+      "title": "Private van tour",
+      "triggers": [
+        "private tour",
+        "van tour",
+        "staria",
+        "county",
+        "driver",
+        "tour host"
+      ],
+      "facts": [
+        "Private van tours are quoted as a 10-hour charter.",
+        "Hyundai Staria supports up to 10 guests and is listed at KRW 500,000.",
+        "Hyundai County supports up to 23 guests and is listed at KRW 800,000.",
+        "The base rate includes fuel, parking, and tolls.",
+        "The base rate excludes 10% VAT, meals, and admission tickets.",
+        "Overtime is listed as KRW 50,000/hour for Staria and KRW 100,000/hour for County.",
+        "Tour hosts can support Korean, English, Japanese, and Chinese.",
+        "On-board comforts mentioned in exports include Wi-Fi, bottled water, chargers, wheelchair by advance request, stroller rental/storage, and child or booster seats."
+      ],
+      "links": [
+        "https://purple-variraptor-26e.notion.site/COZE-PRIVATE-TOUR-2b58919e326f80209482f45bc01cd968?pvs=149"
+      ],
+      "sourceCount": 12,
+      "propertiesSeen": [
+        "BS",
+        "FB",
+        "JT",
+        "L9",
+        "SG",
+        "SJ"
+      ],
+      "sources": [
+        {
+          "chatId": "coze-bs-24thapr-ryan-sumal-10a",
+          "title": "COZE BS 24thApr Ryan Sumal 10A",
+          "propertyCode": "BS",
+          "guestName": "Ryan Sumal",
+          "messageId": "23",
+          "timestamp": "2026-04-20T10:49:00"
+        },
+        {
+          "chatId": "coze-bs-24thapr-ryan-sumal-10a",
+          "title": "COZE BS 24thApr Ryan Sumal 10A",
+          "propertyCode": "BS",
+          "guestName": "Ryan Sumal",
+          "messageId": "26",
+          "timestamp": "2026-04-20T10:51:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "51",
+          "timestamp": "2026-04-17T00:23:00"
+        },
+        {
+          "chatId": "coze-fb-8thmay-long-chen-16a",
+          "title": "COZE FB 8thMay Long Chen 16A",
+          "propertyCode": "FB",
+          "guestName": "Long Chen",
+          "messageId": "8",
+          "timestamp": "2026-04-16T00:40:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "25",
+          "timestamp": "2026-04-17T15:59:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "24",
+          "timestamp": "2026-04-17T18:02:00"
+        },
+        {
+          "chatId": "coze-sg-26thmay-diyana-anuar-8a2k1b",
+          "title": "COZE SG 26thMay Diyana Anuar 8A2K1B",
+          "propertyCode": "SG",
+          "guestName": "Diyana Anuar",
+          "messageId": "24",
+          "timestamp": "2026-04-19T17:49:00"
+        },
+        {
+          "chatId": "coze-sg-26thmay-diyana-anuar-8a2k1b",
+          "title": "COZE SG 26thMay Diyana Anuar 8A2K1B",
+          "propertyCode": "SG",
+          "guestName": "Diyana Anuar",
+          "messageId": "28",
+          "timestamp": "2026-04-19T17:50:00"
+        },
+        {
+          "chatId": "coze-sj-26thapr-nishchal-mittal-4a2k",
+          "title": "COZE SJ 26thApr Nishchal Mittal 4A2K",
+          "propertyCode": "SJ",
+          "guestName": "Nishchal Mittal",
+          "messageId": "27",
+          "timestamp": "2026-04-19T22:09:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "17",
+          "timestamp": "2026-04-17T22:29:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "29",
+          "timestamp": "2026-04-18T00:32:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "132",
+          "timestamp": "2026-04-22T22:55:00"
+        }
+      ]
+    },
+    {
+      "id": "airport-van",
+      "category": "transport",
+      "title": "Airport van service",
+      "triggers": [
+        "airport pickup",
+        "airport van",
+        "incheon",
+        "gimpo",
+        "luggage transport"
+      ],
+      "facts": [
+        "Guests should provide travel date, arrival time, airline, and flight number to reserve airport transport.",
+        "After confirmation, COZE sends pickup instructions and driver contact details.",
+        "Listed extra rates: Gimpo Airport to accommodation is KRW 70,000 for 4-seater and KRW 90,000 for 7-seater.",
+        "Listed extra rates: Incheon Airport to accommodation is KRW 100,000 for 4-seater and KRW 120,000 for 7-seater.",
+        "Seoul city luggage transport is listed as a flat KRW 60,000.",
+        "Seven guests plus luggage can feel tight in a 7-seater; two 4-seaters are recommended for more space."
+      ],
+      "links": [],
+      "sourceCount": 11,
+      "propertiesSeen": [
+        "BS",
+        "FB",
+        "HT",
+        "JT",
+        "L9",
+        "SG",
+        "SJ"
+      ],
+      "sources": [
+        {
+          "chatId": "coze-bs-24thapr-ryan-sumal-10a",
+          "title": "COZE BS 24thApr Ryan Sumal 10A",
+          "propertyCode": "BS",
+          "guestName": "Ryan Sumal",
+          "messageId": "25",
+          "timestamp": "2026-04-20T10:51:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "50",
+          "timestamp": "2026-04-17T00:23:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "28",
+          "timestamp": "2026-04-16T01:40:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "39",
+          "timestamp": "2026-04-17T17:46:00"
+        },
+        {
+          "chatId": "coze-jt-17thmay-nina-lee-9a",
+          "title": "COZE JT 17thMay Nina Lee 9A",
+          "propertyCode": "JT",
+          "guestName": "Nina Lee",
+          "messageId": "7",
+          "timestamp": "2026-04-17T22:48:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "23",
+          "timestamp": "2026-04-17T18:02:00"
+        },
+        {
+          "chatId": "coze-l9-22ndapr-jack-barber-4a",
+          "title": "COZE L9 22ndApr Jack Barber 4A",
+          "propertyCode": "L9",
+          "guestName": "Jack Barber",
+          "messageId": "11",
+          "timestamp": "2026-04-20T18:06:00"
+        },
+        {
+          "chatId": "coze-sg-26thmay-diyana-anuar-8a2k1b",
+          "title": "COZE SG 26thMay Diyana Anuar 8A2K1B",
+          "propertyCode": "SG",
+          "guestName": "Diyana Anuar",
+          "messageId": "27",
+          "timestamp": "2026-04-19T17:50:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "24",
+          "timestamp": "2026-04-14T22:18:00"
+        },
+        {
+          "chatId": "coze-sj-26thapr-nishchal-mittal-4a2k",
+          "title": "COZE SJ 26thApr Nishchal Mittal 4A2K",
+          "propertyCode": "SJ",
+          "guestName": "Nishchal Mittal",
+          "messageId": "26",
+          "timestamp": "2026-04-19T22:09:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "28",
+          "timestamp": "2026-04-18T00:32:00"
+        }
+      ]
+    },
+    {
+      "id": "guest-smartphone",
+      "category": "property",
+      "title": "Guest smartphone",
+      "triggers": [
+        "guest phone",
+        "smartphone",
+        "hotspot",
+        "korean phone",
+        "apps"
+      ],
+      "facts": [
+        "Several property manuals mention a guest smartphone with a Korean number, unlimited data/calls, and essential apps.",
+        "The guest smartphone can be used as a Wi-Fi hotspot.",
+        "Common apps mentioned include Coupang Eats, KakaoTaxi, Naver Maps, and local navigation tools."
+      ],
+      "links": [],
+      "sourceCount": 10,
+      "propertiesSeen": [
+        "BS",
+        "FB",
+        "HT",
+        "JT",
+        "L9",
+        "SG",
+        "SJ"
+      ],
+      "sources": [
+        {
+          "chatId": "coze-bs-24thapr-ryan-sumal-10a",
+          "title": "COZE BS 24thApr Ryan Sumal 10A",
+          "propertyCode": "BS",
+          "guestName": "Ryan Sumal",
+          "messageId": "23",
+          "timestamp": "2026-04-20T10:49:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "45",
+          "timestamp": "2026-04-17T00:21:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "48",
+          "timestamp": "2026-04-17T00:21:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "24",
+          "timestamp": "2026-04-16T01:37:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "25",
+          "timestamp": "2026-04-17T15:59:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "20",
+          "timestamp": "2026-04-17T18:00:00"
+        },
+        {
+          "chatId": "coze-sg-26thmay-diyana-anuar-8a2k1b",
+          "title": "COZE SG 26thMay Diyana Anuar 8A2K1B",
+          "propertyCode": "SG",
+          "guestName": "Diyana Anuar",
+          "messageId": "24",
+          "timestamp": "2026-04-19T17:49:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "20",
+          "timestamp": "2026-04-14T22:15:00"
+        },
+        {
+          "chatId": "coze-sj-26thapr-nishchal-mittal-4a2k",
+          "title": "COZE SJ 26thApr Nishchal Mittal 4A2K",
+          "propertyCode": "SJ",
+          "guestName": "Nishchal Mittal",
+          "messageId": "22",
+          "timestamp": "2026-04-19T22:08:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "17",
+          "timestamp": "2026-04-17T22:29:00"
+        }
+      ]
+    },
+    {
+      "id": "food-delivery-coupang",
+      "category": "food",
+      "title": "Food delivery via Coupang Eats",
+      "triggers": [
+        "food delivery",
+        "coupang",
+        "order food",
+        "delivery app"
+      ],
+      "facts": [
+        "Guests can use the guest smartphone to open Coupang Eats.",
+        "Guests add items to the cart and send COZE a screenshot of the final order summary.",
+        "COZE places and pays for the order, then guests reimburse COZE at checkout.",
+        "Cash or crypto reimbursement is repeatedly mentioned; card or bank transfer can add fees."
+      ],
+      "links": [],
+      "sourceCount": 15,
+      "propertiesSeen": [
+        "BS",
+        "FB",
+        "HT",
+        "JT",
+        "L9",
+        "SG",
+        "SJ"
+      ],
+      "sources": [
+        {
+          "chatId": "coze-bs-24thapr-ryan-sumal-10a",
+          "title": "COZE BS 24thApr Ryan Sumal 10A",
+          "propertyCode": "BS",
+          "guestName": "Ryan Sumal",
+          "messageId": "23",
+          "timestamp": "2026-04-20T10:49:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "45",
+          "timestamp": "2026-04-17T00:21:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "48",
+          "timestamp": "2026-04-17T00:21:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "82",
+          "timestamp": "2026-04-17T23:26:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "49",
+          "timestamp": "2026-04-16T13:23:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "25",
+          "timestamp": "2026-04-17T15:59:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "33",
+          "timestamp": "2026-04-17T16:01:00"
+        },
+        {
+          "chatId": "coze-l9-13thapr-phang-jongshing-5a2k1b",
+          "title": "COZE L9 13thApr Phang Jongshing 5A2K1B",
+          "propertyCode": "L9",
+          "guestName": "Phang Jongshing",
+          "messageId": "11",
+          "timestamp": "2026-04-13T16:04:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "20",
+          "timestamp": "2026-04-17T18:00:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "66",
+          "timestamp": "2026-04-19T15:25:00"
+        },
+        {
+          "chatId": "coze-l9-22ndapr-jack-barber-4a",
+          "title": "COZE L9 22ndApr Jack Barber 4A",
+          "propertyCode": "L9",
+          "guestName": "Jack Barber",
+          "messageId": "40",
+          "timestamp": "2026-04-22T16:15:00"
+        },
+        {
+          "chatId": "coze-sg-26thmay-diyana-anuar-8a2k1b",
+          "title": "COZE SG 26thMay Diyana Anuar 8A2K1B",
+          "propertyCode": "SG",
+          "guestName": "Diyana Anuar",
+          "messageId": "24",
+          "timestamp": "2026-04-19T17:49:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "50",
+          "timestamp": "2026-04-16T00:19:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "17",
+          "timestamp": "2026-04-17T22:29:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "87",
+          "timestamp": "2026-04-21T07:15:00"
+        }
+      ]
+    },
+    {
+      "id": "breakfast-grocery",
+      "category": "food",
+      "title": "Breakfast grocery option",
+      "triggers": [
+        "breakfast",
+        "groceries",
+        "grocery refill",
+        "morning delivery"
+      ],
+      "facts": [
+        "For early or regular check-ins, breakfast groceries may be prepared inside the home before arrival.",
+        "For late check-ins, breakfast groceries may be delivered to the main gate at 6 AM the next morning.",
+        "Guests should place the empty delivery bag back outside the gate after unpacking.",
+        "Daily breakfast refill orders close at 9 PM for next-morning arrangement."
+      ],
+      "links": [],
+      "sourceCount": 6,
+      "propertiesSeen": [
+        "FB",
+        "HT",
+        "L9",
+        "SG",
+        "SJ"
+      ],
+      "sources": [
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "84",
+          "timestamp": "2026-04-17T23:26:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "53",
+          "timestamp": "2026-04-16T13:26:00"
+        },
+        {
+          "chatId": "coze-l9-13thapr-phang-jongshing-5a2k1b",
+          "title": "COZE L9 13thApr Phang Jongshing 5A2K1B",
+          "propertyCode": "L9",
+          "guestName": "Phang Jongshing",
+          "messageId": "13",
+          "timestamp": "2026-04-13T16:04:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "52",
+          "timestamp": "2026-04-16T00:19:00"
+        },
+        {
+          "chatId": "coze-sj-26thapr-nishchal-mittal-4a2k",
+          "title": "COZE SJ 26thApr Nishchal Mittal 4A2K",
+          "propertyCode": "SJ",
+          "guestName": "Nishchal Mittal",
+          "messageId": "50",
+          "timestamp": "2026-04-19T23:35:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "86",
+          "timestamp": "2026-04-21T07:14:00"
+        }
+      ]
+    },
+    {
+      "id": "payment-settlement",
+      "category": "payment",
+      "title": "Expense and payment settlement",
+      "triggers": [
+        "payment",
+        "settlement",
+        "expenses",
+        "cash",
+        "card",
+        "bank transfer",
+        "vat"
+      ],
+      "facts": [
+        "COZE may cover expenses upfront for airport vans, food deliveries, shopping orders, or tours.",
+        "Expenses are summarized one day before checkout and settled together.",
+        "Cash is repeatedly recommended because it avoids the non-refundable 10% VAT charge.",
+        "Card or bank transfer may incur additional fees, including VAT or foreign-card surcharges.",
+        "Local bank transfer in the guest currency is mentioned as available for some currencies, with 10% VAT added."
+      ],
+      "links": [],
+      "sourceCount": 4,
+      "propertiesSeen": [
+        "FB",
+        "HT",
+        "L9",
+        "SJ"
+      ],
+      "sources": [
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "52",
+          "timestamp": "2026-04-17T00:23:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "111",
+          "timestamp": "2026-04-24T09:40:00"
+        },
+        {
+          "chatId": "coze-l9-22ndapr-jack-barber-4a",
+          "title": "COZE L9 22ndApr Jack Barber 4A",
+          "propertyCode": "L9",
+          "guestName": "Jack Barber",
+          "messageId": "15",
+          "timestamp": "2026-04-20T18:06:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "28",
+          "timestamp": "2026-04-14T22:18:00"
+        }
+      ]
+    },
+    {
+      "id": "waste-disposal",
+      "category": "house-rules",
+      "title": "Waste disposal",
+      "triggers": [
+        "trash",
+        "garbage",
+        "waste",
+        "recycling",
+        "food waste"
+      ],
+      "facts": [
+        "Seoul waste disposal is strict and separated by type.",
+        "Exports repeatedly include guidance for regular trash, recycling, food waste, and large-item disposal.",
+        "One operational note says if trash is full, guests may leave it by the front door and COZE will clear it in the morning.",
+        "Property-specific disposal details should be checked before responding because rules can differ by building."
+      ],
+      "links": [],
+      "sourceCount": 23,
+      "propertiesSeen": [
+        "BS",
+        "FB",
+        "HT",
+        "JT",
+        "L9",
+        "SG",
+        "SJ",
+        "YT"
+      ],
+      "sources": [
+        {
+          "chatId": "coze-bs-24thapr-ryan-sumal-10a",
+          "title": "COZE BS 24thApr Ryan Sumal 10A",
+          "propertyCode": "BS",
+          "guestName": "Ryan Sumal",
+          "messageId": "23",
+          "timestamp": "2026-04-20T10:49:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "45",
+          "timestamp": "2026-04-17T00:21:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "48",
+          "timestamp": "2026-04-17T00:21:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "83",
+          "timestamp": "2026-04-17T23:26:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "84",
+          "timestamp": "2026-04-17T23:26:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "24",
+          "timestamp": "2026-04-16T01:37:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "50",
+          "timestamp": "2026-04-16T13:23:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "53",
+          "timestamp": "2026-04-16T13:26:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "25",
+          "timestamp": "2026-04-17T15:59:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "34",
+          "timestamp": "2026-04-17T16:01:00"
+        },
+        {
+          "chatId": "coze-l9-13thapr-phang-jongshing-5a2k1b",
+          "title": "COZE L9 13thApr Phang Jongshing 5A2K1B",
+          "propertyCode": "L9",
+          "guestName": "Phang Jongshing",
+          "messageId": "12",
+          "timestamp": "2026-04-13T16:04:00"
+        },
+        {
+          "chatId": "coze-l9-13thapr-phang-jongshing-5a2k1b",
+          "title": "COZE L9 13thApr Phang Jongshing 5A2K1B",
+          "propertyCode": "L9",
+          "guestName": "Phang Jongshing",
+          "messageId": "13",
+          "timestamp": "2026-04-13T16:04:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "20",
+          "timestamp": "2026-04-17T18:00:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "68",
+          "timestamp": "2026-04-19T15:25:00"
+        },
+        {
+          "chatId": "coze-l9-22ndapr-jack-barber-4a",
+          "title": "COZE L9 22ndApr Jack Barber 4A",
+          "propertyCode": "L9",
+          "guestName": "Jack Barber",
+          "messageId": "41",
+          "timestamp": "2026-04-22T16:16:00"
+        },
+        {
+          "chatId": "coze-sg-26thmay-diyana-anuar-8a2k1b",
+          "title": "COZE SG 26thMay Diyana Anuar 8A2K1B",
+          "propertyCode": "SG",
+          "guestName": "Diyana Anuar",
+          "messageId": "24",
+          "timestamp": "2026-04-19T17:49:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "51",
+          "timestamp": "2026-04-16T00:19:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "52",
+          "timestamp": "2026-04-16T00:19:00"
+        },
+        {
+          "chatId": "coze-sj-26thapr-nishchal-mittal-4a2k",
+          "title": "COZE SJ 26thApr Nishchal Mittal 4A2K",
+          "propertyCode": "SJ",
+          "guestName": "Nishchal Mittal",
+          "messageId": "50",
+          "timestamp": "2026-04-19T23:35:00"
+        },
+        {
+          "chatId": "coze-yt-29thapr-minji-kim-26a",
+          "title": "COZE YT 29thApr MinJi Kim 26A",
+          "propertyCode": "YT",
+          "guestName": "MinJi Kim",
+          "messageId": "62",
+          "timestamp": "2026-04-20T15:39:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "17",
+          "timestamp": "2026-04-17T22:29:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "84",
+          "timestamp": "2026-04-21T07:13:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "86",
+          "timestamp": "2026-04-21T07:14:00"
+        }
+      ]
+    },
+    {
+      "id": "checkout",
+      "category": "checkout",
+      "title": "Checkout instructions",
+      "triggers": [
+        "checkout",
+        "leave",
+        "departure",
+        "airport transfer"
+      ],
+      "facts": [
+        "Checkout time is repeatedly listed as 11:00 AM.",
+        "Guests needing transportation support should book at least 12 hours in advance.",
+        "Guests are asked to gather belongings, avoid leaving items behind, and place trash in designated bins.",
+        "Payment settlement can be handled during checkout.",
+        "Bank transfer or credit-card settlement may add 10% tax according to the exported instructions."
+      ],
+      "links": [],
+      "sourceCount": 6,
+      "propertiesSeen": [
+        "FB",
+        "HT",
+        "JT",
+        "L9",
+        "SJ"
+      ],
+      "sources": [
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "247",
+          "timestamp": "2026-04-23T19:00:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "109",
+          "timestamp": "2026-04-23T21:01:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "43",
+          "timestamp": "2026-04-19T18:22:00"
+        },
+        {
+          "chatId": "coze-l9-13thapr-phang-jongshing-5a2k1b",
+          "title": "COZE L9 13thApr Phang Jongshing 5A2K1B",
+          "propertyCode": "L9",
+          "guestName": "Phang Jongshing",
+          "messageId": "234",
+          "timestamp": "2026-04-17T19:57:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "75",
+          "timestamp": "2026-04-21T20:22:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "198",
+          "timestamp": "2026-04-21T08:35:00"
+        }
+      ]
+    },
+    {
+      "id": "taxi-matching",
+      "category": "transport",
+      "title": "Taxi and MPV matching",
+      "triggers": [
+        "taxi",
+        "mpv",
+        "call a ride",
+        "current location",
+        "naver pin"
+      ],
+      "facts": [
+        "COZE can assist with real-time taxi or MPV bookings.",
+        "Guests away from the property can open Naver Map, enable GPS, screenshot their current pin, and send it to COZE.",
+        "MPV or large-family transport is positioned for groups that need to travel together."
+      ],
+      "links": [],
+      "sourceCount": 11,
+      "propertiesSeen": [
+        "BS",
+        "FB",
+        "HT",
+        "JT",
+        "L9",
+        "SG",
+        "SJ"
+      ],
+      "sources": [
+        {
+          "chatId": "coze-bs-24thapr-ryan-sumal-10a",
+          "title": "COZE BS 24thApr Ryan Sumal 10A",
+          "propertyCode": "BS",
+          "guestName": "Ryan Sumal",
+          "messageId": "23",
+          "timestamp": "2026-04-20T10:49:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "81",
+          "timestamp": "2026-04-17T23:26:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "48",
+          "timestamp": "2026-04-16T13:23:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "25",
+          "timestamp": "2026-04-17T15:59:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "32",
+          "timestamp": "2026-04-17T16:01:00"
+        },
+        {
+          "chatId": "coze-l9-13thapr-phang-jongshing-5a2k1b",
+          "title": "COZE L9 13thApr Phang Jongshing 5A2K1B",
+          "propertyCode": "L9",
+          "guestName": "Phang Jongshing",
+          "messageId": "10",
+          "timestamp": "2026-04-13T16:04:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "20",
+          "timestamp": "2026-04-17T18:00:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "67",
+          "timestamp": "2026-04-19T15:25:00"
+        },
+        {
+          "chatId": "coze-l9-22ndapr-jack-barber-4a",
+          "title": "COZE L9 22ndApr Jack Barber 4A",
+          "propertyCode": "L9",
+          "guestName": "Jack Barber",
+          "messageId": "39",
+          "timestamp": "2026-04-22T16:15:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "49",
+          "timestamp": "2026-04-16T00:19:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "83",
+          "timestamp": "2026-04-21T07:13:00"
+        }
+      ]
+    },
+    {
+      "id": "naver-map-local-guide",
+      "category": "neighborhood",
+      "title": "Naver Map local guide",
+      "triggers": [
+        "naver map",
+        "restaurant",
+        "nearby",
+        "local guide",
+        "atm",
+        "clinic"
+      ],
+      "facts": [
+        "Property manuals repeatedly direct guests to Naver Map bookmarks for local recommendations.",
+        "Common bookmark categories include restaurants, supermarkets, convenience stores, hospitals, clinics, ATMs, and banks.",
+        "Guests may need to install or sign up for Naver Map to use the neighborhood guides."
+      ],
+      "links": [],
+      "sourceCount": 39,
+      "propertiesSeen": [
+        "BS",
+        "FB",
+        "HT",
+        "JT",
+        "L9",
+        "SG",
+        "SJ"
+      ],
+      "sources": [
+        {
+          "chatId": "coze-bs-24thapr-ryan-sumal-10a",
+          "title": "COZE BS 24thApr Ryan Sumal 10A",
+          "propertyCode": "BS",
+          "guestName": "Ryan Sumal",
+          "messageId": "21",
+          "timestamp": "2026-04-20T10:49:00"
+        },
+        {
+          "chatId": "coze-bs-24thapr-ryan-sumal-10a",
+          "title": "COZE BS 24thApr Ryan Sumal 10A",
+          "propertyCode": "BS",
+          "guestName": "Ryan Sumal",
+          "messageId": "23",
+          "timestamp": "2026-04-20T10:49:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "43",
+          "timestamp": "2026-04-17T00:21:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "45",
+          "timestamp": "2026-04-17T00:21:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "48",
+          "timestamp": "2026-04-17T00:21:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "81",
+          "timestamp": "2026-04-17T23:26:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "82",
+          "timestamp": "2026-04-17T23:26:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "210",
+          "timestamp": "2026-04-21T07:53:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "22",
+          "timestamp": "2026-04-16T01:37:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "24",
+          "timestamp": "2026-04-16T01:37:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "48",
+          "timestamp": "2026-04-16T13:23:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "49",
+          "timestamp": "2026-04-16T13:23:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "25",
+          "timestamp": "2026-04-17T15:59:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "32",
+          "timestamp": "2026-04-17T16:01:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "33",
+          "timestamp": "2026-04-17T16:01:00"
+        },
+        {
+          "chatId": "coze-l9-13thapr-phang-jongshing-5a2k1b",
+          "title": "COZE L9 13thApr Phang Jongshing 5A2K1B",
+          "propertyCode": "L9",
+          "guestName": "Phang Jongshing",
+          "messageId": "10",
+          "timestamp": "2026-04-13T16:04:00"
+        },
+        {
+          "chatId": "coze-l9-13thapr-phang-jongshing-5a2k1b",
+          "title": "COZE L9 13thApr Phang Jongshing 5A2K1B",
+          "propertyCode": "L9",
+          "guestName": "Phang Jongshing",
+          "messageId": "11",
+          "timestamp": "2026-04-13T16:04:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "17",
+          "timestamp": "2026-04-17T18:00:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "19",
+          "timestamp": "2026-04-17T18:00:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "20",
+          "timestamp": "2026-04-17T18:00:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "67",
+          "timestamp": "2026-04-19T15:25:00"
+        },
+        {
+          "chatId": "coze-l9-22ndapr-jack-barber-4a",
+          "title": "COZE L9 22ndApr Jack Barber 4A",
+          "propertyCode": "L9",
+          "guestName": "Jack Barber",
+          "messageId": "39",
+          "timestamp": "2026-04-22T16:15:00"
+        },
+        {
+          "chatId": "coze-l9-22ndapr-jack-barber-4a",
+          "title": "COZE L9 22ndApr Jack Barber 4A",
+          "propertyCode": "L9",
+          "guestName": "Jack Barber",
+          "messageId": "40",
+          "timestamp": "2026-04-22T16:15:00"
+        },
+        {
+          "chatId": "coze-sg-26thmay-diyana-anuar-8a2k1b",
+          "title": "COZE SG 26thMay Diyana Anuar 8A2K1B",
+          "propertyCode": "SG",
+          "guestName": "Diyana Anuar",
+          "messageId": "22",
+          "timestamp": "2026-04-19T17:49:00"
+        },
+        {
+          "chatId": "coze-sg-26thmay-diyana-anuar-8a2k1b",
+          "title": "COZE SG 26thMay Diyana Anuar 8A2K1B",
+          "propertyCode": "SG",
+          "guestName": "Diyana Anuar",
+          "messageId": "24",
+          "timestamp": "2026-04-19T17:49:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "18",
+          "timestamp": "2026-04-14T22:15:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "19",
+          "timestamp": "2026-04-14T22:15:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "20",
+          "timestamp": "2026-04-14T22:15:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "49",
+          "timestamp": "2026-04-16T00:19:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "50",
+          "timestamp": "2026-04-16T00:19:00"
+        },
+        {
+          "chatId": "coze-sj-26thapr-nishchal-mittal-4a2k",
+          "title": "COZE SJ 26thApr Nishchal Mittal 4A2K",
+          "propertyCode": "SJ",
+          "guestName": "Nishchal Mittal",
+          "messageId": "20",
+          "timestamp": "2026-04-19T22:08:00"
+        },
+        {
+          "chatId": "coze-sj-26thapr-nishchal-mittal-4a2k",
+          "title": "COZE SJ 26thApr Nishchal Mittal 4A2K",
+          "propertyCode": "SJ",
+          "guestName": "Nishchal Mittal",
+          "messageId": "21",
+          "timestamp": "2026-04-19T22:08:00"
+        },
+        {
+          "chatId": "coze-sj-26thapr-nishchal-mittal-4a2k",
+          "title": "COZE SJ 26thApr Nishchal Mittal 4A2K",
+          "propertyCode": "SJ",
+          "guestName": "Nishchal Mittal",
+          "messageId": "22",
+          "timestamp": "2026-04-19T22:08:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "16",
+          "timestamp": "2026-04-17T22:29:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "17",
+          "timestamp": "2026-04-17T22:29:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "83",
+          "timestamp": "2026-04-21T07:13:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "87",
+          "timestamp": "2026-04-21T07:15:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "99",
+          "timestamp": "2026-04-21T17:35:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "100",
+          "timestamp": "2026-04-21T17:35:00"
+        }
+      ]
+    },
+    {
+      "id": "hanbok-photo-shoot",
+      "category": "experiences",
+      "title": "Hanbok photo shoot",
+      "triggers": [
+        "hanbok",
+        "photo shoot",
+        "palace photos",
+        "photographer"
+      ],
+      "facts": [
+        "COZE offers a Hanbok photo shoot experience with a professional photographer.",
+        "The experience mentions palace backdrops and hanbok styling for guests, couples, friends, or families."
+      ],
+      "links": [
+        "https://hanbok-photo-shoot-famil-4ugms5e.gamma.site/"
+      ],
+      "sourceCount": 10,
+      "propertiesSeen": [
+        "BS",
+        "FB",
+        "HT",
+        "JT",
+        "L9",
+        "SG",
+        "SJ"
+      ],
+      "sources": [
+        {
+          "chatId": "coze-bs-24thapr-ryan-sumal-10a",
+          "title": "COZE BS 24thApr Ryan Sumal 10A",
+          "propertyCode": "BS",
+          "guestName": "Ryan Sumal",
+          "messageId": "28",
+          "timestamp": "2026-04-20T10:51:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "53",
+          "timestamp": "2026-04-17T00:23:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "27",
+          "timestamp": "2026-04-16T01:40:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "40",
+          "timestamp": "2026-04-17T17:46:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "26",
+          "timestamp": "2026-04-17T18:02:00"
+        },
+        {
+          "chatId": "coze-l9-22ndapr-jack-barber-4a",
+          "title": "COZE L9 22ndApr Jack Barber 4A",
+          "propertyCode": "L9",
+          "guestName": "Jack Barber",
+          "messageId": "12",
+          "timestamp": "2026-04-20T18:06:00"
+        },
+        {
+          "chatId": "coze-sg-26thmay-diyana-anuar-8a2k1b",
+          "title": "COZE SG 26thMay Diyana Anuar 8A2K1B",
+          "propertyCode": "SG",
+          "guestName": "Diyana Anuar",
+          "messageId": "30",
+          "timestamp": "2026-04-19T17:50:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "25",
+          "timestamp": "2026-04-14T22:18:00"
+        },
+        {
+          "chatId": "coze-sj-26thapr-nishchal-mittal-4a2k",
+          "title": "COZE SJ 26thApr Nishchal Mittal 4A2K",
+          "propertyCode": "SJ",
+          "guestName": "Nishchal Mittal",
+          "messageId": "29",
+          "timestamp": "2026-04-19T22:09:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "31",
+          "timestamp": "2026-04-18T00:32:00"
+        }
+      ]
+    },
+    {
+      "id": "cooking-class",
+      "category": "experiences",
+      "title": "Korean cooking class",
+      "triggers": [
+        "cooking class",
+        "kimchi class",
+        "korean food class",
+        "market tour"
+      ],
+      "facts": [
+        "COZE offers a Korean cooking class experience.",
+        "The class mentions visiting a local market, discovering Korean ingredients, and learning Korean dishes with hosts."
+      ],
+      "links": [
+        "https://purple-variraptor-26e.notion.site/Seasonal-Korean-Cooking-Class-Chop-mix-sizzle-and-feast-your-way-through-a-Korean-home-style-meal-33a8919e326f80b09076e6823e8e9ea8?pvs=143"
+      ],
+      "sourceCount": 11,
+      "propertiesSeen": [
+        "BS",
+        "HT",
+        "JT",
+        "L9",
+        "SG",
+        "SJ"
+      ],
+      "sources": [
+        {
+          "chatId": "coze-bs-24thapr-ryan-sumal-10a",
+          "title": "COZE BS 24thApr Ryan Sumal 10A",
+          "propertyCode": "BS",
+          "guestName": "Ryan Sumal",
+          "messageId": "27",
+          "timestamp": "2026-04-20T10:51:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "29",
+          "timestamp": "2026-04-16T01:40:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "41",
+          "timestamp": "2026-04-17T17:46:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "25",
+          "timestamp": "2026-04-17T18:02:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "67",
+          "timestamp": "2026-04-19T15:25:00"
+        },
+        {
+          "chatId": "coze-l9-22ndapr-jack-barber-4a",
+          "title": "COZE L9 22ndApr Jack Barber 4A",
+          "propertyCode": "L9",
+          "guestName": "Jack Barber",
+          "messageId": "13",
+          "timestamp": "2026-04-20T18:06:00"
+        },
+        {
+          "chatId": "coze-sg-26thmay-diyana-anuar-8a2k1b",
+          "title": "COZE SG 26thMay Diyana Anuar 8A2K1B",
+          "propertyCode": "SG",
+          "guestName": "Diyana Anuar",
+          "messageId": "29",
+          "timestamp": "2026-04-19T17:50:00"
+        },
+        {
+          "chatId": "coze-sg-30thapr-mitch-almojuela-10a3k",
+          "title": "COZE SG 30thApr Mitch Almojuela 10A3K",
+          "propertyCode": "SG",
+          "guestName": "Mitch Almojuela",
+          "messageId": "40",
+          "timestamp": "2026-04-22T10:59:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "26",
+          "timestamp": "2026-04-14T22:18:00"
+        },
+        {
+          "chatId": "coze-sj-26thapr-nishchal-mittal-4a2k",
+          "title": "COZE SJ 26thApr Nishchal Mittal 4A2K",
+          "propertyCode": "SJ",
+          "guestName": "Nishchal Mittal",
+          "messageId": "28",
+          "timestamp": "2026-04-19T22:09:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "30",
+          "timestamp": "2026-04-18T00:32:00"
+        }
+      ]
+    },
+    {
+      "id": "property-sg",
+      "category": "property",
+      "title": "SG property facts",
+      "propertyCodes": [
+        "SG"
+      ],
+      "triggers": [
+        "sg address",
+        "sg parking",
+        "seongbuk",
+        "our village"
+      ],
+      "facts": [
+        "SG address: 178-60, Seongbuk-dong, Seongbuk-gu, Seoul, Republic of Korea.",
+        "SG car/taxi navigation address: 178-23, Seongbuk-dong, Seongbuk-gu, Seoul.",
+        "SG has one free parking space in front of the house.",
+        "No idling in front of SG because neighbors are sensitive to exhaust fumes.",
+        "SG parking is on an uphill driveway; vehicles up to Hyundai Staria size can fit.",
+        "Low EVs or sports sedans may scrape on the SG driveway.",
+        "Nearby paid parking mentioned: Seongbuk-donggil Public Parking Lot."
+      ],
+      "links": [
+        "https://naver.me/xs3GCRVs",
+        "https://naver.me/xyjnW8t8"
+      ],
+      "sourceCount": 3,
+      "propertiesSeen": [
+        "SG"
+      ],
+      "sources": [
+        {
+          "chatId": "coze-sg-26thmay-diyana-anuar-8a2k1b",
+          "title": "COZE SG 26thMay Diyana Anuar 8A2K1B",
+          "propertyCode": "SG",
+          "guestName": "Diyana Anuar",
+          "messageId": "24",
+          "timestamp": "2026-04-19T17:49:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "17",
+          "timestamp": "2026-04-17T22:29:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "59",
+          "timestamp": "2026-04-18T19:18:00"
+        }
+      ]
+    },
+    {
+      "id": "property-sj",
+      "category": "property",
+      "title": "SJ property facts",
+      "propertyCodes": [
+        "SJ"
+      ],
+      "triggers": [
+        "sj address",
+        "seoul station",
+        "sunwha",
+        "chilpae"
+      ],
+      "facts": [
+        "SJ address: #1207, APT B, Sunwha The Sharp APT, 27 Chilpae-ro, Jung-gu, Seoul, Republic of Korea 04511.",
+        "SJ is described as a serviced apartment near Seoul Station.",
+        "SJ building rules emphasize quiet hallways and no personal items or luggage left in shared corridors."
+      ],
+      "links": [
+        "https://naver.me/xkqJwrTc"
+      ],
+      "sourceCount": 2,
+      "propertiesSeen": [
+        "SJ"
+      ],
+      "sources": [
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "20",
+          "timestamp": "2026-04-14T22:15:00"
+        },
+        {
+          "chatId": "coze-sj-26thapr-nishchal-mittal-4a2k",
+          "title": "COZE SJ 26thApr Nishchal Mittal 4A2K",
+          "propertyCode": "SJ",
+          "guestName": "Nishchal Mittal",
+          "messageId": "22",
+          "timestamp": "2026-04-19T22:08:00"
+        }
+      ]
+    },
+    {
+      "id": "property-yeonnam",
+      "category": "property",
+      "title": "Yeonnam 09 property facts",
+      "propertyCodes": [
+        "FB",
+        "L9",
+        "YT"
+      ],
+      "triggers": [
+        "l9 address",
+        "f9 address",
+        "b9 address",
+        "yeonnam",
+        "fish bird lotus"
+      ],
+      "facts": [
+        "B9, F9, L9, FB, and YT exports point to 16-5, Seongmisan-ro 23-gil, Mapo-gu, Seoul, Republic of Korea.",
+        "Yeonnam 09 manuals mention Naver Map bookmarks for restaurants, stores, banks, hospitals, and hidden gems.",
+        "Some Yeonnam units mention curbside parking nearby, but guests should ask the team to check the latest local parking situation."
+      ],
+      "links": [
+        "https://naver.me/5JpRM6v7"
+      ],
+      "sourceCount": 7,
+      "propertiesSeen": [
+        "FB",
+        "L9"
+      ],
+      "sources": [
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "40",
+          "timestamp": "2026-04-17T00:21:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "44",
+          "timestamp": "2026-04-17T00:21:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "45",
+          "timestamp": "2026-04-17T00:21:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "47",
+          "timestamp": "2026-04-17T00:21:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "48",
+          "timestamp": "2026-04-17T00:21:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "15",
+          "timestamp": "2026-04-17T18:00:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "20",
+          "timestamp": "2026-04-17T18:00:00"
+        }
+      ]
+    },
+    {
+      "id": "sensitive-access-policy",
+      "category": "safety",
+      "title": "Sensitive access information policy",
+      "triggers": [
+        "door code",
+        "gate code",
+        "wifi password",
+        "pin",
+        "key box"
+      ],
+      "facts": [
+        "Door codes, key-box pins, gate codes, and Wi-Fi passwords are sensitive and must not be answered from this reusable KB.",
+        "If a guest asks for access credentials, route to the authorized message source or a staff-approved property manual workflow.",
+        "Do not expose credentials in admin previews intended for broad team visibility."
+      ],
+      "links": [],
+      "sensitive": true,
+      "sourceCount": 76,
+      "propertiesSeen": [
+        "BS",
+        "FB",
+        "HT",
+        "JT",
+        "L9",
+        "SG",
+        "SJ",
+        "YT"
+      ],
+      "sources": [
+        {
+          "chatId": "coze-bs-24thapr-ryan-sumal-10a",
+          "title": "COZE BS 24thApr Ryan Sumal 10A",
+          "propertyCode": "BS",
+          "guestName": "Ryan Sumal",
+          "messageId": "19",
+          "timestamp": "2026-04-20T10:49:00"
+        },
+        {
+          "chatId": "coze-bs-24thapr-ryan-sumal-10a",
+          "title": "COZE BS 24thApr Ryan Sumal 10A",
+          "propertyCode": "BS",
+          "guestName": "Ryan Sumal",
+          "messageId": "20",
+          "timestamp": "2026-04-20T10:49:00"
+        },
+        {
+          "chatId": "coze-bs-24thapr-ryan-sumal-10a",
+          "title": "COZE BS 24thApr Ryan Sumal 10A",
+          "propertyCode": "BS",
+          "guestName": "Ryan Sumal",
+          "messageId": "23",
+          "timestamp": "2026-04-20T10:49:00"
+        },
+        {
+          "chatId": "coze-bs-24thapr-ryan-sumal-10a",
+          "title": "COZE BS 24thApr Ryan Sumal 10A",
+          "propertyCode": "BS",
+          "guestName": "Ryan Sumal",
+          "messageId": "26",
+          "timestamp": "2026-04-20T10:51:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "41",
+          "timestamp": "2026-04-17T00:21:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "45",
+          "timestamp": "2026-04-17T00:21:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "48",
+          "timestamp": "2026-04-17T00:21:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "51",
+          "timestamp": "2026-04-17T00:23:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "52",
+          "timestamp": "2026-04-17T00:23:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "81",
+          "timestamp": "2026-04-17T23:26:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "82",
+          "timestamp": "2026-04-17T23:26:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "83",
+          "timestamp": "2026-04-17T23:26:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "84",
+          "timestamp": "2026-04-17T23:26:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "95",
+          "timestamp": "2026-04-20T10:16:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "243",
+          "timestamp": "2026-04-23T14:40:00"
+        },
+        {
+          "chatId": "coze-fb-17thapr-erin-ng-12a",
+          "title": "COZE FB 17thApr Erin Ng 12A",
+          "propertyCode": "FB",
+          "guestName": "Erin Ng",
+          "messageId": "247",
+          "timestamp": "2026-04-23T19:00:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "20",
+          "timestamp": "2026-04-16T01:37:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "24",
+          "timestamp": "2026-04-16T01:37:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "48",
+          "timestamp": "2026-04-16T13:23:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "49",
+          "timestamp": "2026-04-16T13:23:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "50",
+          "timestamp": "2026-04-16T13:23:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "52",
+          "timestamp": "2026-04-16T13:25:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "53",
+          "timestamp": "2026-04-16T13:26:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "109",
+          "timestamp": "2026-04-23T21:01:00"
+        },
+        {
+          "chatId": "coze-ht-16thapr-eric-chu-10a",
+          "title": "COZE HT 16thApr Eric Chu 10A",
+          "propertyCode": "HT",
+          "guestName": "Eric Chu",
+          "messageId": "111",
+          "timestamp": "2026-04-24T09:40:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "18",
+          "timestamp": "2026-04-17T15:59:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "20",
+          "timestamp": "2026-04-17T15:59:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "25",
+          "timestamp": "2026-04-17T15:59:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "32",
+          "timestamp": "2026-04-17T16:01:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "33",
+          "timestamp": "2026-04-17T16:01:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "34",
+          "timestamp": "2026-04-17T16:01:00"
+        },
+        {
+          "chatId": "coze-jt-17thapr-lore-martin-6a1k",
+          "title": "COZE JT 17thApr Lore Martin 6A1K",
+          "propertyCode": "JT",
+          "guestName": "Lore Martin",
+          "messageId": "43",
+          "timestamp": "2026-04-19T18:22:00"
+        },
+        {
+          "chatId": "coze-l9-13thapr-phang-jongshing-5a2k1b",
+          "title": "COZE L9 13thApr Phang Jongshing 5A2K1B",
+          "propertyCode": "L9",
+          "guestName": "Phang Jongshing",
+          "messageId": "10",
+          "timestamp": "2026-04-13T16:04:00"
+        },
+        {
+          "chatId": "coze-l9-13thapr-phang-jongshing-5a2k1b",
+          "title": "COZE L9 13thApr Phang Jongshing 5A2K1B",
+          "propertyCode": "L9",
+          "guestName": "Phang Jongshing",
+          "messageId": "11",
+          "timestamp": "2026-04-13T16:04:00"
+        },
+        {
+          "chatId": "coze-l9-13thapr-phang-jongshing-5a2k1b",
+          "title": "COZE L9 13thApr Phang Jongshing 5A2K1B",
+          "propertyCode": "L9",
+          "guestName": "Phang Jongshing",
+          "messageId": "12",
+          "timestamp": "2026-04-13T16:04:00"
+        },
+        {
+          "chatId": "coze-l9-13thapr-phang-jongshing-5a2k1b",
+          "title": "COZE L9 13thApr Phang Jongshing 5A2K1B",
+          "propertyCode": "L9",
+          "guestName": "Phang Jongshing",
+          "messageId": "13",
+          "timestamp": "2026-04-13T16:04:00"
+        },
+        {
+          "chatId": "coze-l9-13thapr-phang-jongshing-5a2k1b",
+          "title": "COZE L9 13thApr Phang Jongshing 5A2K1B",
+          "propertyCode": "L9",
+          "guestName": "Phang Jongshing",
+          "messageId": "187",
+          "timestamp": "2026-04-17T11:20:00"
+        },
+        {
+          "chatId": "coze-l9-13thapr-phang-jongshing-5a2k1b",
+          "title": "COZE L9 13thApr Phang Jongshing 5A2K1B",
+          "propertyCode": "L9",
+          "guestName": "Phang Jongshing",
+          "messageId": "234",
+          "timestamp": "2026-04-17T19:57:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "16",
+          "timestamp": "2026-04-17T18:00:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "20",
+          "timestamp": "2026-04-17T18:00:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "24",
+          "timestamp": "2026-04-17T18:02:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "67",
+          "timestamp": "2026-04-19T15:25:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "68",
+          "timestamp": "2026-04-19T15:25:00"
+        },
+        {
+          "chatId": "coze-l9-19thapr-wen-yang-4a",
+          "title": "COZE L9 19thApr Wen Yang 4A",
+          "propertyCode": "L9",
+          "guestName": "Wen Yang",
+          "messageId": "75",
+          "timestamp": "2026-04-21T20:22:00"
+        },
+        {
+          "chatId": "coze-l9-22ndapr-jack-barber-4a",
+          "title": "COZE L9 22ndApr Jack Barber 4A",
+          "propertyCode": "L9",
+          "guestName": "Jack Barber",
+          "messageId": "15",
+          "timestamp": "2026-04-20T18:06:00"
+        },
+        {
+          "chatId": "coze-l9-22ndapr-jack-barber-4a",
+          "title": "COZE L9 22ndApr Jack Barber 4A",
+          "propertyCode": "L9",
+          "guestName": "Jack Barber",
+          "messageId": "40",
+          "timestamp": "2026-04-22T16:15:00"
+        },
+        {
+          "chatId": "coze-l9-22ndapr-jack-barber-4a",
+          "title": "COZE L9 22ndApr Jack Barber 4A",
+          "propertyCode": "L9",
+          "guestName": "Jack Barber",
+          "messageId": "41",
+          "timestamp": "2026-04-22T16:16:00"
+        },
+        {
+          "chatId": "coze-sg-26thmay-diyana-anuar-8a2k1b",
+          "title": "COZE SG 26thMay Diyana Anuar 8A2K1B",
+          "propertyCode": "SG",
+          "guestName": "Diyana Anuar",
+          "messageId": "18",
+          "timestamp": "2026-04-19T17:49:00"
+        },
+        {
+          "chatId": "coze-sg-26thmay-diyana-anuar-8a2k1b",
+          "title": "COZE SG 26thMay Diyana Anuar 8A2K1B",
+          "propertyCode": "SG",
+          "guestName": "Diyana Anuar",
+          "messageId": "19",
+          "timestamp": "2026-04-19T17:49:00"
+        },
+        {
+          "chatId": "coze-sg-26thmay-diyana-anuar-8a2k1b",
+          "title": "COZE SG 26thMay Diyana Anuar 8A2K1B",
+          "propertyCode": "SG",
+          "guestName": "Diyana Anuar",
+          "messageId": "24",
+          "timestamp": "2026-04-19T17:49:00"
+        },
+        {
+          "chatId": "coze-sg-26thmay-diyana-anuar-8a2k1b",
+          "title": "COZE SG 26thMay Diyana Anuar 8A2K1B",
+          "propertyCode": "SG",
+          "guestName": "Diyana Anuar",
+          "messageId": "28",
+          "timestamp": "2026-04-19T17:50:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "16",
+          "timestamp": "2026-04-14T22:15:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "20",
+          "timestamp": "2026-04-14T22:15:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "23",
+          "timestamp": "2026-04-14T22:16:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "28",
+          "timestamp": "2026-04-14T22:18:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "49",
+          "timestamp": "2026-04-16T00:19:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "50",
+          "timestamp": "2026-04-16T00:19:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "51",
+          "timestamp": "2026-04-16T00:19:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "52",
+          "timestamp": "2026-04-16T00:19:00"
+        },
+        {
+          "chatId": "coze-sj-15thapr-alex-vasilyev-2a2k",
+          "title": "COZE SJ 15thApr Alex Vasilyev 2A2K",
+          "propertyCode": "SJ",
+          "guestName": "Alex Vasilyev",
+          "messageId": "198",
+          "timestamp": "2026-04-21T08:35:00"
+        },
+        {
+          "chatId": "coze-sj-26thapr-nishchal-mittal-4a2k",
+          "title": "COZE SJ 26thApr Nishchal Mittal 4A2K",
+          "propertyCode": "SJ",
+          "guestName": "Nishchal Mittal",
+          "messageId": "18",
+          "timestamp": "2026-04-19T22:08:00"
+        },
+        {
+          "chatId": "coze-sj-26thapr-nishchal-mittal-4a2k",
+          "title": "COZE SJ 26thApr Nishchal Mittal 4A2K",
+          "propertyCode": "SJ",
+          "guestName": "Nishchal Mittal",
+          "messageId": "19",
+          "timestamp": "2026-04-19T22:08:00"
+        },
+        {
+          "chatId": "coze-sj-26thapr-nishchal-mittal-4a2k",
+          "title": "COZE SJ 26thApr Nishchal Mittal 4A2K",
+          "propertyCode": "SJ",
+          "guestName": "Nishchal Mittal",
+          "messageId": "22",
+          "timestamp": "2026-04-19T22:08:00"
+        },
+        {
+          "chatId": "coze-sj-26thapr-nishchal-mittal-4a2k",
+          "title": "COZE SJ 26thApr Nishchal Mittal 4A2K",
+          "propertyCode": "SJ",
+          "guestName": "Nishchal Mittal",
+          "messageId": "27",
+          "timestamp": "2026-04-19T22:09:00"
+        },
+        {
+          "chatId": "coze-sj-26thapr-nishchal-mittal-4a2k",
+          "title": "COZE SJ 26thApr Nishchal Mittal 4A2K",
+          "propertyCode": "SJ",
+          "guestName": "Nishchal Mittal",
+          "messageId": "32",
+          "timestamp": "2026-04-19T22:29:00"
+        },
+        {
+          "chatId": "coze-sj-26thapr-nishchal-mittal-4a2k",
+          "title": "COZE SJ 26thApr Nishchal Mittal 4A2K",
+          "propertyCode": "SJ",
+          "guestName": "Nishchal Mittal",
+          "messageId": "50",
+          "timestamp": "2026-04-19T23:35:00"
+        },
+        {
+          "chatId": "coze-yt-29thapr-minji-kim-26a",
+          "title": "COZE YT 29thApr MinJi Kim 26A",
+          "propertyCode": "YT",
+          "guestName": "MinJi Kim",
+          "messageId": "62",
+          "timestamp": "2026-04-20T15:39:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "12",
+          "timestamp": "2026-04-17T22:26:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "13",
+          "timestamp": "2026-04-17T22:27:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "17",
+          "timestamp": "2026-04-17T22:29:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "29",
+          "timestamp": "2026-04-18T00:32:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "79",
+          "timestamp": "2026-04-21T00:51:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "83",
+          "timestamp": "2026-04-21T07:13:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "84",
+          "timestamp": "2026-04-21T07:13:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "86",
+          "timestamp": "2026-04-21T07:14:00"
+        },
+        {
+          "chatId": "sg-20thapr-irene-toh-9a",
+          "title": "SG 20thApr Irene Toh 9A",
+          "propertyCode": "SG",
+          "guestName": "Irene Toh",
+          "messageId": "87",
+          "timestamp": "2026-04-21T07:15:00"
+        }
+      ]
+    }
+  ]
+}

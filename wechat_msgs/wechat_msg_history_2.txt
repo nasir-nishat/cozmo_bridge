@@ -1,0 +1,1793 @@
+COZE Guest Care:
+hello
+
+COZE Guest Care:
+@COZE_Ricky please set up the group channel
+
+COZE Guest Care:
+@COZE_Ricky 
+
+COZE Guest Care:
+/link 51ffd77f-ac71-445b-9f1f-d922700356b6
+
+COZMO_COZE AI:
+✅ Linked!
+
+COZE Guest Care:
+/trans cn
+
+COZMO_COZE AI:
+🌐 Translation set: ZH-CN
+
+COZE_Ricky:
+COZE Hospitality 3.0
+
+All You Need. All in One. All Yours.
+
+
+🇰🇷✨ Welcome to Korea! And Welcome to COZE.
+
+Jet-lagged? Phone not working? Hungry but can’t read the menu?
+We get it. And we’ve built a stay just for you.
+
+COZE is where your trip begins with care — not confusion.
+We don’t just rent homes. We curate your entire Korean experience around you.
+
+> Think: a home in Korea, powered by local friends who do everything for you.
+
+COZE_Ricky:
+[Photo]
+
+COZE_Ricky:
+My name is Ricky, Experience Lead and the Team Member of guest care team!
+
+COZE_Ricky:
+Not just me—Our Coze team will also be taking care of you, including our team leader Gaya, coordinator Cyrus, and operator Jin.
+
+COZE_Ricky:
+Address (in Korean)
+
+COZE_Ricky:
+서울시 성북구 성북로8길 35-20
+
+COZMO_COZE AI:
+🌐 [EN] 35-20 Seongbuk-ro 8-gil, Seongbuk-gu, Seoul
+
+COZE_Ricky:
+When you navigate the car, please input the address below
+
+COZE_Ricky:
+서울시 성북구 성북동 178-22
+
+COZMO_COZE AI:
+🌐 [EN] 178-22 Seongbuk-dong, Seongbuk-gu, Seoul
+
+COZE_Ricky:
+Main Gate Key Box 0 8 0 5
+ (*please keep the key inside after use*)
+
+1.场安静:
+OK
+
+COZE_Ricky:
+Front Door Pin 2 6 0 5 1 0 *
+
+COZE_Ricky:
+Neighborhood information !
+
+COZE_Ricky:
+you can find all of info about our neighborhood  here!
+(please sign up Naver and install Naver map !!!)
+
+COZE_Ricky:
+[Naver Map]
+COSE SG_OUR VILLAGE
+https://naver.me/xyjnW8t8
+
+COZE_Ricky:
+WIFI
+
+1F
+joyhasla_sg_1f
+Ps joyjoyjoy1f 
+
+2F
+
+joyhasla_sg_2f
+Ps joyjoyjoy2f
+
+COZE_Ricky:
+🌟 *COZE SG STAY MANUAL* 
+
+Hello and welcome to COZE Hospitality 3.0!
+
+We’re your Guest Care Team — thrilled to have you with us!
+
+Here are some fun and useful tips to help you make the most of your stay. 😊
+
+
+📌 Essential Information
+
+
+Address — 178-60, Seongbuk-dong, Seoungbuk-gu, Seoul, Republic of Korea 
+
+
+Address for Car(Taxi) Navigation
+
+178-23, Seongbuk-dong, Seoungbuk-gu, Seoul
+
+
+
+Main Gate Key Box Pin 0 8 0 5 
+(please keep the key inside after use)
+
+
+Your Suite Door Code 
+
+— Check‑in date in the format YYMMDD + *
+
+Example: 10 May 2025 → 250510* (remains the same throughout your stay)
+
+
+Wi‑Fi Networks
+
+
+1F 
+
+SSID  joyhasla_sg_1f 
+PIN  joyjoyjoy1f
+
+2F 
+
+SSID joyhasla_sg_2f 
+PIN joyjoyjoy2f 
+
+
+
+🚗 Parking Information
+1 free parking space is available in front of the house.
+
+
+❌ No idling in front of the house — neighbors are very sensitive to exhaust fumes.
+
+Parking is on the uphill driveway. Vehicles up to Hyundai Staria size can fit.
+
+
+⚠️ EVs with under-floor batteries or low sports sedans may scrape the bottom.
+
+
+If parking is not possible here, or if you have more than 1 car, please use the nearby 
+
+paid parking lot (5 minutes by car):
+ 
+
+👉 Seongbuk-donggil Public Parking Lot
+ https://naver.me/xs3GCRVs
+
+
+To minimize inconvenience, we provide 2 complimentary transfers per stay between the house and the parking lot with an I.M Van (up to 7 passengers).
+
+
+📱 Guest Smartphone Provided
+
+
+A smartphone with a Korean phone number and unlimited data & calls is provided free of charge during your stay!
+All essential apps are pre-installed, and the phone can be used as a portable Wi-Fi hotspot.
+
+Use it to:
+🍽️ Order food
+🚕 Call taxis
+🌐 Browse the internet
+🗺️ Navigate the neighborhood
+
+💡 Local Tip:
+Open the Naver Map app — we’ve bookmarked a detailed local guide with:
+
+Hidden gem restaurants 🍜
+
+Supermarkets & convenience stores 🏪
+
+Hospitals & clinics 🏥
+
+ATMs & banks 💳
+
+Everything you might need nearby!
+It’s like having a local guide in your pocket 📍😉
+
+🍽️ Food Delivery Made Easy
+
+Use the smartphone to open Coupang Eats, add items to your cart, and send a screenshot to us via WhatsApp.
+We’ll place the order using our card, and you can pay us in cash (or crypto) when you check out!
+
+🚐 Need an MPV Van Taxi?
+
+Let us know — we can arrange a spacious ride using local ride-sharing apps.
+
+☕ Capsule Coffee Time
+
+Find the coffee capsules in the drawer under the coffee machine. Enjoy freely!
+
+🍳 Kitchen & Appliances
+
+A full kitchen includes: dishwasher, oven, water purifier.
+
+💧 Water Purifier (EVERPURE)
+Brand: EVERPURE (USA) — Starbucks official partner
+
+Type: Direct-flow purified water system
+
+Maintenance: Professionally serviced monthly
+
+How to use: Use the small faucet on the left side of the sink labeled “정수기 / Purified Water.”
+
+Benefit: Very safe, great-tasting water for drinking & cooking
+
+Feel free to cook like home!
+
+illy Coffee Machine Guide:
+
+Quick Start: https://youtu.be/XEDAXZY50FM?si=uOfwquZXC6WCis_G
+
+Steam Milk: https://youtu.be/bTzG7iM4dMA?si=aiEWUseiOT0as-Jo
+
+Volume Settings: https://youtu.be/h2X5gLYpf_4?si=eaDtARcyGQTjddFz
+
+♻️ Food Waste Disposal
+
+Use the built-in garbage disposal in the sink.
+Turn on the water, press the foot pedal, and grind away!
+⚠️ No bones or shells, please.
+
+📺 TV & Streaming
+
+Select Google TV to watch Netflix, Disney+, YouTube, and more.
+
+🧻 Supplies
+
+Extra tissues are in the closet next to the dining table.
+
+🧴 Towels
+
+You’ll find body, face, and foot towels:
+
+Behind the mirror closet
+
+In the laundry room
+
+In the masterroom closet
+
+🎁 Amenity Box
+
+Under the stairs to the 2nd floor, you’ll find a closet with a full box of amenities.
+Please help yourself!
+
+
+🔥 BBQ Guide
+
+Enjoy outdoor cooking and cozy moments with a garden 🌲
+
+Here’s everything you need to know:
+
+⚠️ Important Notice
+
+Please turn on the BBQ exhaust fan above the Weber kettle to avoid smoke complaints from neighbors.
+
+The exhaust fan has a gray cord. Plug it into the outlet to the right of the fan to activate.
+
+
+After 7PM, please keep noise to a minimum.
+
+Our neighbors are right next door, and your cooperation helps maintain a peaceful environment for everyone.
+
+🍖 BBQ Setup
+
+Our BBQ gear is stored next to the Weber Kettle BBQs — right in the deck containers.
+
+Included:
+
+1 x 57cm Weber Kettle Charcoal BBQ
+
+Charcoal
+
+Fire starters
+
+Torch, gloves & BBQ tools
+
+Disposable grill 
+
+
+Please always use the provided disposable grill for a cleaner and more hygienic BBQ experience.
+
+BBQ Fee: ₩30,000
+
+🪟 Year-Round BBQ Friendly!
+
+🌿 Summer Tips
+
+Our garden is surrounded by a beautiful forest 🌳
+
+🦟 Be sure to spray on the provided mosquito repellent before going outside.
+
+❄️ Winter Tips
+
+4 patio heaters are provided
+
+Outdoor blankets are in the 2F master bedroom
+
+Note: Patio heaters use portable propane gas. Please make sure to turn them off when not in use.
+
+
+How to use the patio heater:
+▶️ https://www.youtube.com/watch?v=M-9XitUWr0s
+
+
+🛒 Need Meat or Groceries?
+
+We recommend this nearby store for quality meat and essentials:
+
+*Tumin Discount Mart*
+
+132-3 Seongbuk-dong, Seongbuk-gu, Seoul
+
+NAVER Map: 
+https://naver.me/xw9q3D8d
+
+Just 5 minutes on foot from the house!
+They sell premium meats and offer quick home delivery (within 30 minutes via motorbike)
+
+After payment, simply request delivery to our house — super convenient!
+
+
+💬 Inquiries & Assistance
+
+Need help or have any questions?
+Just message us anytime via Messenger!
+
+Our team will reply promptly to support you.
+
+We’re just one tap away — happy to help!
+
+Enjoy your stay with COZE and make yourself at home!
+
+COZMO_COZE AI:
+🌐 [EN] 🌟 *COZE SG STAY MANUAL* 
+
+Hello and welcome to COZE Hospitality 3.0!
+
+We’re your Guest Care Team — thrilled to have you with us!
+
+Here are some fun and useful tips to help you make the most of your stay. 😊
+
+
+📌 Essential Information
+
+
+Address — 178-60, Seongbuk-dong, Seoungbuk-gu, Seoul, Republic of Korea 
+
+
+Address for Car(Taxi) Navigation
+
+178-23, Seongbuk-dong, Seoungbuk-gu, Seoul
+
+
+
+Main Gate Key Box Pin 0 8 0 5 
+(please keep the key inside after use)
+
+
+Your Suite Door Code 
+
+— Check‑in date in the format YYMMDD + *
+
+Example: 10 May 2025 → 250510* (remains the same throughout your stay)
+
+
+Wi‑Fi Networks
+
+
+1F 
+
+SSID  joyhasla_sg_1f 
+PIN  joyjoyjoy1f
+
+2F 
+
+SSID joyhasla_sg_2f 
+PIN joyjoyjoy2f 
+
+
+
+🚗 Parking Information
+1 free parking space is available in front of the house.
+
+
+❌ No idling in front of the house — neighbors are very sensitive to exhaust fumes.
+
+Parking is on the uphill driveway. Vehicles up to Hyundai Staria size can fit.
+
+
+⚠️ EVs with under-floor batteries or low sports sedans may scrape the bottom.
+
+
+If parking is not possible here, or if you have more than 1 car, please use the nearby 
+
+paid parking lot (5 minutes by car):
+ 
+
+👉 Seongbuk-donggil Public Parking Lot
+ https://naver.me/xs3GCRVs
+
+
+To minimize inconvenience, we provide 2 complimentary transfers per stay between the house and the parking lot with an I.M Van (up to 7 passengers).
+
+
+📱 Guest Smartphone Provided
+
+
+A smartphone with a Korean phone number and unlimited data & calls is provided free of charge during your stay!
+All essential apps are pre-installed, and the phone can be used as a portable Wi-Fi hotspot.
+
+Use it to:
+🍽️ Order food
+🚕 Call taxis
+🌐 Browse the internet
+🗺️ Navigate the neighborhood
+
+💡 Local Tip:
+Open the Naver Map app — we’ve bookmarked a detailed local guide with:
+
+Hidden gem restaurants 🍜
+
+Supermarkets & convenience stores 🏪
+
+Hospitals & clinics 🏥
+
+ATMs & banks 💳
+
+Everything you might need nearby!
+It’s like having a local guide in your pocket 📍😉
+
+🍽️ Food Delivery Made Easy
+
+Use the smartphone to open Coupang Eats, add items to your cart, and send a screenshot to us via WhatsApp.
+We’ll place the order using our card, and you can pay us in cash (or crypto) when you check out!
+
+🚐 Need an MPV Van Taxi?
+
+Let us know — we can arrange a spacious ride using local ride-sharing apps.
+
+☕ Capsule Coffee Time
+
+Find the coffee capsules in the drawer under the coffee machine. Enjoy freely!
+
+🍳 Kitchen & Appliances
+
+A full kitchen includes: dishwasher, oven, water purifier.
+
+💧 Water Purifier (EVERPURE)
+Brand: EVERPURE (USA) — Starbucks official partner
+
+Type: Direct-flow purified water system
+
+Maintenance: Professionally serviced monthly
+
+How to use: Use the small faucet on the left side of the sink labeled “정수기 / Purified Water.”
+
+Benefit: Very safe, great-tasting water for drinking & cooking
+
+Feel free to cook like home!
+
+illy Coffee Machine Guide:
+
+Quick Start: https://youtu.be/XEDAXZY50FM?si=uOfwquZXC6WCis_G
+
+Steam Milk: https://youtu.be/bTzG7iM4dMA?si=aiEWUseiOT0as-Jo
+
+Volume Settings: https://youtu.be/h2X5gLYpf_4?si=eaDtARcyGQTjddFz
+
+♻️ Food Waste Disposal
+
+Use the built-in garbage disposal in the sink.
+Turn on the water, press the foot pedal, and grind away!
+⚠️ No bones or shells, please.
+
+📺 TV & Streaming
+
+Select Google TV to watch Netflix, Disney+, YouTube, and more.
+
+🧻 Supplies
+
+Extra tissues are in the closet next to the dining table.
+
+🧴 Towels
+
+You’ll find body, face, and foot towels:
+
+Behind the mirror closet
+
+In the laundry room
+
+In the masterroom closet
+
+🎁 Amenity Box
+
+Under the stairs to the 2nd floor, you’ll find a closet with a full box of amenities.
+Please help yourself!
+
+
+🔥 BBQ Guide
+
+Enjoy outdoor cooking and cozy moments with a garden 🌲
+
+Here’s everything you need to know:
+
+⚠️ Important Notice
+
+Please turn on the BBQ exhaust fan above the Weber kettle to avoid smoke complaints from neighbors.
+
+The exhaust fan has a gray cord. Plug it into the outlet to the right of the fan to activate.
+
+
+After 7PM, please keep noise to a minimum.
+
+Our neighbors are right next door, and your cooperation helps maintain a peaceful environment for everyone.
+
+🍖 BBQ Setup
+
+Our BBQ gear is stored next to the Weber Kettle BBQs — right in the deck containers.
+
+Included:
+
+1 x 57cm Weber Kettle Charcoal BBQ
+
+Charcoal
+
+Fire starters
+
+Torch, gloves & BBQ tools
+
+Disposable grill 
+
+
+Please always use the provided disposable grill for a cleaner and more hygienic BBQ experience.
+
+BBQ Fee: ₩30,000
+
+🪟 Year-Round BBQ Friendly!
+
+🌿 Summer Tips
+
+Our garden is surrounded by a beautiful forest 🌳
+
+🦟 Be sure to spray on the provided mosquito repellent before going outside.
+
+❄️ Winter Tips
+
+4 patio heaters are provided
+
+Outdoor blankets are in the 2F master bedroom
+
+Note: Patio heaters use portable propane gas. Please make sure to turn them off when not in use.
+
+
+How to use the patio heater:
+▶️ https://www.youtube.com/watch?v=M-9XitUWr0s
+
+
+🛒 Need Meat or Groceries?
+
+We recommend this nearby store for quality meat and essentials:
+
+*Tumin Discount Mart*
+
+132-3 Seongbuk-dong, Seongbuk-gu, Seoul
+
+NAVER Map: 
+https://naver.me/xw9q3D8d
+
+Just 5 minutes on foot from the house!
+They sell premium meats and offer quick home delivery (within 30 minutes via motorbike)
+
+After payment, simply request delivery to our house — super convenient!
+
+
+💬 Inquiries & Assistance
+
+Need help or have any questions?
+Just message us anytime via Messenger!
+
+Our team will reply promptly to support you.
+
+We’re just one tap away — happy to help!
+
+Enjoy your stay with COZE and make yourself at home!
+
+COZE_Ricky:
+[Photo]
+
+COZE Guest Care:
+/trans off
+
+COZMO_COZE AI:
+🌐 Translation paused. /trans on to resume.
+
+COZE Guest Care:
+/trans en
+
+COZMO_COZE AI:
+🌐 Translation set: EN
+
+COZE_Ricky:
+SG_CHECK_IN_MANUAL_2024_Tourist.pdf
+
+COZE_Ricky:
+🚐📚 The Complete Guidebook about Airport Vans!
+
+1️⃣ Reservation Method
+
+Tell us your travel date , arrival time , airline , and flight number
+After confirmation, we’ll send detailed pickup instructions & driver contact.
+
+2️⃣ Van Service Rates & Promotions
+
+🎁 Promotions
+
+4-night stay → 1 × 7-seater van FREE 
+6-night stay → 2 × 7-seater vans FREE 
+
+💰 Extra Rates
+
+Gimpo Airport ↔ Accommodation — 🚗 4-seater ₩70 000 / 🚐 7-seater ₩90 000
+
+Incheon Airport ↔ Accommodation — 🚗 4-seater ₩100 000 / 🚐 7-seater ₩120 000
+
+Seoul city luggage transport — 🚗/🚐 flat ₩60 000
+
+
+🛋️ Comfort Tip
+
+Seven people plus luggage can feel tight in a 7-seater. For more space, book two 4-seaters. 😌
+
+
+3️⃣ Meeting Your Driver
+
+Your driver tracks your flight and waits at the arrival gate with a name sign.
+
+⏳ Wait time up to 60 minutes after landing.
+
+🤝 Once you meet, head straight to the vehicle.
+
+💡 Tips required
+
+Currency exchange or SIM?  The driver introduce you to find /  ₩10 000 
+
+Early & Late Work Time (21PM-06AM) /  ₩20 000
+
+ Baby Car Seat  / ₩20 000 per seat
+
+Move between termina /l ₩30 000 
+
+
+We look forward to welcoming you soon! 🌷
+
+Warm regards,
+Gaya, Guest Care Team 
+
+COZE Hospitality 3.0
+All you want, ALL-IN-ONE, All yours
+
+COZE_Ricky:
+Beyond travel agencies lies COZE — a band of hosts transforming Korean roads into your own curated adventure.
+
+
+COZE Private Van Tour 
+
+
+
+🚐 Vehicles & Base Rates (10 hours)  
+
+
+• Hyundai Staria (up to 10 guests) — ₩500,000  
+
+• • Hyundai County (up to 23 guests) — ₩800,000   
+
+• 
+Includes: ⛽ Fuel + 🅿 Parking + 🚧 Tolls   
+
+• 
+Not included: 10 % VAT + 🍽 Meals + 🎟 Admission Fees
+
+
+👤 Tour Host | Speaking Korean English Japanese Chinese
+
+✨ Complimentary Comforts on Board 
+
+
+
+📶 High-speed Wi-Fi 
+🥤 Unlimited chilled bottled water 
+🔌 USB-C / USB-A chargers 
+♿ Loaner wheelchair (reserve ahead) 
+👶 Free stroller rental & secure storage
+ 🍼 Child & booster seats
+
+*Extra Charges
+*
+
+• Overtime — Staria ₩50,000/hr | County ₩100,000/hr 
+
+
+• Distance Surcharge — +₩100,000 if total travel exceeds 150 km or extends beyond the Gyeonggi-area radius
+
+*Why COZE?
+*
+
+✅ Hosts who are passionate cultural interpreters, not just drivers 
+
+✅ Fully personalized itineraries—hidden gems & authentic moments 
+
+✅ Zero tourist traps or forced shopping stops 
+
+✅ Honest, transparent pricing with no platform mark-ups
+
+
+Plus full concierge support for itinerary planning, restaurant bookings, special activities and more—everything tuned to your travel style.
+
+
+Let COZE take you beyond sightseeing and straight into the true heart of Korea!
+
+COZE_Ricky:
+Step into your own K-drama moment in Seoul with our COZE Hanbok Photo Shoot 👘✨
+
+A professional photographer, stunning palace backdrops, and beautiful hanbok styling come together to create timeless photos for you, your partner, friends, or family.
+Check details, sample images, and booking info here:
+
+https://hanbok-photo-shoot-famil-4ugms5e.gamma.site/
+
+COZE_Ricky:
+参加 COZE 的烹饪课堂，开启一场真正美味的韩国体验吧 🍳🇰🇷
+这不只是一堂课程，更是一场轻松有趣的美食小冒险！和我们亲切的主人一起逛本地市场，认识新鲜的韩国食材，并学习制作深受喜爱的韩国家常料理。这里有美味的食物、满满的欢笑，说不定衣服上还会沾上一点面粉呢 😆🥬🍜
+空着肚子来，带着满足离开，把来自首尔的美味回忆一起带回家吧 💛
+https://www.notion.so/34e8919e326f8001aca5f6c9061c632d?source=copy_link
+
+COZMO_COZE AI:
+🌐 [EN] Join COZE's cooking class for a truly delicious Korean experience 🍳🇰🇷  
+It's not just a class, but a fun little food adventure! Stroll through the local market with our friendly host, discover fresh Korean ingredients, and learn to make beloved Korean home dishes. There will be tasty food, lots of laughter, and maybe a little flour on your clothes too 😆🥬🍜  
+Come with an empty stomach and leave satisfied, taking home delicious memories from Seoul 💛  
+https://www.notion.so/34e8919e326f8001aca5f6c9061c632d?source=copy_link
+
+COZE_Ricky:
+COZE 不只是提供一张床而已。
+我们希望带您感受最真实的首尔氛围，帮助您创造难忘的回忆 🇰🇷💖
+
+现在为您介绍 COZE 的本地体验内容！🗺🤩
+
+https://www.notion.so/COZE-3108919e326f809a90e8cb99006af5b5?source=copy_link
+
+COZMO_COZE AI:
+🌐 [EN] COZE is not just about providing a bed.  
+We want to help you experience the true atmosphere of Seoul and create unforgettable memories 🇰🇷💖  
+
+Now, let me introduce you to COZE's local experiences! 🗺🤩  
+
+https://www.notion.so/COZE-3108919e326f809a90e8cb99006af5b5?source=copy_link
+
+COZE_Ricky:
+Hi! 🎉 Celebrating something special during your stay? Let us do the decorating, so you can skip the balloon drama 😄
+
+COZE Celebration is our in-room party styling service created with LEENPARTY, with options like balloons, flowers, candles, cake, finger food, catering, and more.
+Just send us your preferred date and time, number of guests, concept or color theme, and whether you’d like finger food or catering, and we’ll take care of the rest 💛
+
+https://coze-celebration-hwjxrle.gamma.site/
+
+Gaya, Guest Care Team of COZE Hospitality 3.0
+
+COZE_Ricky:
+🌟 Expense & Payment 🌟
+
+During your stay, you might incur various expenses such as airport van pick-ups 🚐, food deliveries 🍕, shopping orders 📦, or exciting tours 🎡! Our COZE team usually covers these expenses upfront or provides these services directly to make your stay more convenient and comfortable. 😊
+
+💳 Here's how our payment settlement system works:
+
+📌 Settlement Timing:
+We'll summarize your expenses and inform you about the total cost one day before your check-out. You can conveniently settle all charges at once. You can pay directly to our team when you check out :)
+
+💡 Payment Methods & Tips:
+
+1️⃣ Cash (Recommended) 💵 Cash payment is the most economical option as it avoids the non-refundable 10% VAT charge.
+
+2️⃣ Cryptocurrency (e.g., USDT) 🪙 You can easily pay with cryptocurrency, which is becoming increasingly popular among our guests!
+
+3️⃣ WISE APP https://wise.com/us/money-transfer-app/
+
+*WISE uses the real exchange rate with transparent fees, helping you save money. very cheap!!*
+
+However, please note this will incur an additional 10% VAT.
+
+4️⃣ Local Bank Transfer 🏦 
+
+You can also transfer the amount using your currency from your local bank to our bank in your country(*It's like local bank transfer) However  these below currency are available. Also 10% VAT should be added  
+
+USD / KRW / EUR / AUD / CNY / GBP / HKD / JPY / SGD
+
+
+5️⃣  Credit Card 💳 (Least Recommended) 
+
+Paying by credit card involves extra fees:
+
+Approximately 4.5% credit card service fee.
+
+Payment is charged in Korean Won (KRW), leading to double currency conversion rates.
+
+Potential overseas transaction fees imposed by your card issuer.
+
+Due to these factors, credit card payments can become significantly more expensive. 😥
+
+We highly recommend using cash or cryptocurrency for convenience and cost-effectiveness. ✨
+
+Thank you for your understanding and cooperation! Enjoy your lovely stay with COZE. 💖
+
+Warm regards,
+
+Gaya, Guest Care Team of COZE Hospitality 3.0
+
+COZE_Ricky:
+🏠🇰🇷 Korean Climate Comfort
+
+Why “Cool” & “Warm” Live in Different Worlds — And Why AC Isn’t Used in Winter
+
+Korean homes are designed with two completely separate systems: a fast cooling machine for summer and a gentle floor-heating system for winter. Because the outdoor air is extremely cold during winter, just opening a window instantly cools the room, so there’s no need to run air-conditioning at all.
+
+Below is the full guide for guests to understand how everything works and how to stay comfortable year-round in Korea.
+
+
+---
+
+1. Two Totally Separate Systems
+
+❄️ Room-by-Room Cooling (Summer A/C)
+
+Each bedroom or living room has its own wall-mounted air-conditioner.
+
+Controlled with an individual remote (look for the ❄️ snowflake).
+
+Korea doesn’t use central HVAC ducts—so AC is local and quick.
+
+In winter, AC is almost never used; the outside air is already freezing, so simply opening a window cools the space in seconds.
+
+
+🔥 Ondol Radiant Floor Heating (Winter Heating)
+
+A gas or electric boiler pumps warmth underneath the floor (called 온돌).
+
+Heat rises slowly but stays warm for a long time—perfect for floor-focused living.
+
+Controlled by a separate wall panel labeled 보일러 / 난방.
+
+Ideal for cold seasons when cozy floors matter more than warm blowing air.
+
+
+Think of them as two different appliances living in the same home:
+A “cold-air blower” for hot, humid summers, and a “warm-floor maker” for Korea’s freezing winters.
+
+
+---
+
+2. Why AC Isn’t Used in Korean Winters ❄️➡️🪟
+
+Korean winter temperatures often drop below freezing.
+So instead of turning on AC:
+
+Open a window → indoor temperature drops immediately.
+
+Korean buildings are designed to retain heat, not to cool in winter.
+
+All energy use focuses on heating, not cooling.
+
+Running AC in winter is unnecessary and uncommon.
+
+
+Most locals simply ventilate briefly, and the room becomes cool right away.
+
+
+---
+
+3. How This Differs from Western Homes
+
+🎛️ Many Controls vs. One Thermostat
+
+U.S./Europe: one thermostat for entire home.
+Korea:
+
+AC remote per room
+
+One boiler panel for floor heat
+
+
+🌬️ No Ducts → No Central HVAC
+
+Western homes push hot/cold air through vents.
+Korean homes rely on:
+
+direct air from AC units
+
+floor-based radiant heat for winter
+
+
+⏱️ Different Speeds
+
+AC cools quickly.
+
+Ondol heats slowly (30–60 min) but stays warm for hours.
+
+
+🧦 Different Feeling of Warmth
+
+Western heat = warm air blowing.
+Korean heat = warm floors that gently warm your body from the feet up.
+
+
+---
+
+4. Travel Tips for Using Korean Heating & Cooling
+
+1. Find both controls first
+AC remotes → under each indoor unit
+Boiler panel → near entrance or kitchen
+
+
+2. Start Ondol early
+Turn it on 30–60 min before sleep.
+
+
+3. Shut doors when cooling
+Bathrooms/hallways rarely have AC.
+
+
+4. Mix systems freely
+It’s normal to have one room cooling while another uses floor heating—it won’t damage anything.
+
+
+5. Take photos of panels
+Brands differ; a photo helps your host guide you instantly.
+
+
+
+
+---
+
+5. Why Korea Uses This Split System
+
+🏢 High-rise apartment design – slim water pipes fit better than big HVAC ducts
+🧘‍♂️ Floor-centric lifestyle – warmth underfoot feels natural and luxurious
+💸 Energy efficiency – cool only the rooms you use, heat only the floor zones you need
+❄️ Free winter cooling – the outdoor air keeps homes cool without AC
+
+
+---
+
+✨ In Short
+
+Korea’s climate control works like two friendly roommates:
+One blasts cool air where you point, and the other wraps your feet in gentle warmth.
+And in winter, nature itself becomes the cooling system—just crack open a window and the room refreshes instantly.
+
+Stay cozy and comfortable in any season! 🧡
+
+
+---
+
+Gaya, Guest Care Team of COZE Hospitality 3.0
+
+COZMO_COZE AI:
+🌐 [EN] 🏠🇰🇷 Korean Climate Comfort
+
+Why “Cool” & “Warm” Live in Different Worlds — And Why AC Isn’t Used in Winter
+
+Korean homes are designed with two completely separate systems: a fast cooling machine for summer and a gentle floor-heating system for winter. Because the outdoor air is extremely cold during winter, just opening a window instantly cools the room, so there’s no need to run air-conditioning at all.
+
+Below is the full guide for guests to understand how everything works and how to stay comfortable year-round in Korea.
+
+---
+
+1. Two Totally Separate Systems
+
+❄️ Room-by-Room Cooling (Summer A/C)
+
+Each bedroom or living room has its own wall-mounted air-conditioner.
+
+Controlled with an individual remote (look for the ❄️ snowflake).
+
+Korea doesn’t use central HVAC ducts—so AC is local and quick.
+
+In winter, AC is almost never used; the outside air is already freezing, so simply opening a window cools the space in seconds.
+
+🔥 Ondol Radiant Floor Heating (Winter Heating)
+
+A gas or electric boiler pumps warmth underneath the floor (called 온돌).
+
+Heat rises slowly but stays warm for a long time—perfect for floor-focused living.
+
+Controlled by a separate wall panel labeled 보일러 / 난방.
+
+Ideal for cold seasons when cozy floors matter more than warm blowing air.
+
+Think of them as two different appliances living in the same home:
+A “cold-air blower” for hot, humid summers, and a “warm-floor maker” for Korea’s freezing winters.
+
+---
+
+2. Why AC Isn’t Used in Korean Winters ❄️➡️🪟
+
+Korean winter temperatures often drop below freezing.
+So instead of turning on AC:
+
+Open a window → indoor temperature drops immediately.
+
+Korean buildings are designed to retain heat, not to cool in winter.
+
+All energy use focuses on heating, not cooling.
+
+Running AC in winter is unnecessary and uncommon.
+
+Most locals simply ventilate briefly, and the room becomes cool right away.
+
+---
+
+3. How This Differs from Western Homes
+
+🎛️ Many Controls vs. One Thermostat
+
+U.S./Europe: one thermostat for entire home.
+Korea:
+
+AC remote per room
+
+One boiler panel for floor heat
+
+🌬️ No Ducts → No Central HVAC
+
+Western homes push hot/cold air through vents.
+Korean homes rely on:
+
+direct air from AC units
+
+floor-based radiant heat for winter
+
+⏱️ Different Speeds
+
+AC cools quickly.
+
+Ondol heats slowly (30–60 min) but stays warm for hours.
+
+🧦 Different Feeling of Warmth
+
+Western heat = warm air blowing.
+Korean heat = warm floors that gently warm your body from the feet up.
+
+---
+
+4. Travel Tips for Using Korean Heating & Cooling
+
+1. Find both controls first
+AC remotes → under each indoor unit
+Boiler panel → near entrance or kitchen
+
+2. Start Ondol early
+Turn it on 30–60 min before sleep.
+
+3. Shut doors when cooling
+Bathrooms/hallways rarely have AC.
+
+4. Mix systems freely
+It’s normal to have one room cooling while another uses floor heating—it won’t damage anything.
+
+5. Take photos of panels
+Brands differ; a photo helps your host guide you instantly.
+
+---
+
+5. Why Korea Uses This Split System
+
+🏢 High-rise apartment design – slim water pipes fit better than big HVAC ducts
+🧘‍♂️ Floor-centric lifestyle – warmth underfoot feels natural and luxurious
+💸 Energy efficiency – cool only the rooms you use, heat only the floor zones you need
+❄️ Free winter cooling – the outdoor air keeps homes cool without AC
+
+---
+
+✨ In Short
+
+Korea’s climate control works like two friendly roommates:
+One blasts cool air where you point, and the other wraps your feet in gentle warmth.
+And in winter, nature itself becomes the cooling system—just crack open a window and the room refreshes instantly.
+
+Stay cozy and comfortable in any season! 🧡
+
+---
+
+Gaya, Guest Care Team of COZE Hospitality 3.0
+
+COZE_Ricky:
+*Think getting a taxi in Korea is hard? Not anymore!*
+
+No more waving at random cars or struggling with Korean apps. Whether you’re off to the airport, exploring palaces, or just chasing K-drama filming spots — there’s finally an easy way to ride like a local (without being one)!
+
+
+🚖 Meet K-RIDE: The Taxi App for International Visitors
+K-RIDE is a new app by Kakao Mobility, Korea’s most trusted taxi platform — built just for travelers like you.
+
+✨ Why K-RIDE is awesome:
+
+No Korean phone number or Kakao account needed
+
+Sign up with Google, Apple, or email
+
+Available in English, Japanese, Simplified & Traditional Chinese
+
+Chat with drivers using 100+ language auto-translation
+
+Pay easily with international credit cards
+
+
+📲 Download K-RIDE here:
+
+Android:
+ https://play.google.com/store/apps/details?id=com.kakaomobility.kride
+
+iOS:
+ https://apps.apple.com/kr/app/k-ride-taxi-cab-travel/id6474654222
+
+
+---
+
+🚐 Need a Bigger Ride?
+
+Kakao T Venti
+
+Up to 5 passengers
+
+Pre-booking required (may take 30+ minutes, not always guaranteed)
+
+
+I.M Van Taxi
+
+Up to 7 passengers
+
+Real-time booking available
+
+App is in Korean only, works in Seoul area
+
+
+Android: https://play.google.com/store/apps/details?id=com.implanning.imtaxi
+
+iOS: https://apps.apple.com/app/id6477152428
+
+
+---
+
+🆘 Need Help?
+If K-RIDE confuses you, don’t panic — just message the COZE service team through the app or talk to our front desk.
+We’ll help you book, translate, and even summon a van like a taxi wizard.
+
+
+---
+
+⚠️ Pro Tip: Always pay by credit card
+Cash might be king, but not when you lose your stuff.
+
+Cash rides = harder to track lost items
+
+Risk of being overcharged
+
+We can't do much about cash problems
+
+
+Credit cards = safer, trackable, refund-friendly.
+
+
+---
+
+Still got questions?
+We’ve got answers. Message the COZE team or ask your friendly concierge.
+Ride smart, ride COZE. Welcome to Seoul!
+
+✈️🛺📱
+
+COZE_Ricky:
+🚕✨ *COZE 1-to-1 Taxi Matching—Big-Fam Transport* ✨🚕
+
+
+Got a squad bigger than your group chat? 📱👨‍👩‍👧‍👦 Forget “taxi Tetris.” With our 1-to-1 Taxi Matching Service your whole crew rolls together—smoothly, cheaply, and zero stress.
+
+💡 Why It’s a Vibe
+
+
+💸 ₩0 service fee
+Like, literally zero. Pay only what’s on the meter—no cap.
+
+🚐 Van-taxi + cab combos
+Up to 7 seats per van, mixed with regular taxis so everyone (and every suitcase) has legroom.
+
+🛵 Local rates
+We haggle so you don’t have to—same fare locals score.
+
+🔔 Live updates.
+We slide into your chat with plate number & ETA the moment your ride’s locked in.
+
+🕹️ How to Play
+
+
+🏠 Leaving home? Drop the destination. We’ll spawn the perfect fleet.
+
+📍 Out and about? • Pop open Naver Map → turn on GPS → screenshot your pin. • DM us the pic. • Boom—ride confirmed, ETA incoming.
+
+💳 Pay & go. Swipe any major card or tap that T-money. Done.
+
+Our pledge 🤝: Seoul’s transit maze shouldn’t wreck family vibes. We fix it—totally free—so you focus on K-food hunts, palace pics, and TikTok memories.
+
+
+COZE has your back. Travel happy, fam! 🎉
+
+COZE_Ricky:
+🍽️ *How to Order Food with the Guest Smartphone* (Coupang Eats)
+
+Welcome to COZE Hospitality 3.0! Here’s the easy way to get your favorite dishes delivered — even if your own credit card won’t work in Korea. 👇
+
+
+---
+
+1️⃣ Grab the fully-set guest phone 📱
+
+Open Coupang Eats (already logged in and location-ready).
+
+2️⃣ Fill your cart with deliciousness 🍕🍜🥟
+
+Browse local restaurants, add everything you’d like, mix and match freely!
+
+3️⃣ Take a full scroll screenshot 🖼️
+
+Before tapping “Pay,” swipe through the entire cart and capture it (most phones: Power + Vol-Down → “Scroll Capture”).
+
+4️⃣ Send the screenshot to the Concierge chat 💬
+
+Drop the image into your dedicated channel — we’ll check and confirm right away.
+
+5️⃣ We pay for you 💳✨
+
+Our team places the order using a Korean card so your food heads straight to your door.
+
+6️⃣ Settle up at checkout 💵
+
+Simply reimburse us in cash when you check out.
+Card or bank transfer is possible, but please note they trigger extra fees (double VAT on transfers and foreign-card surcharges). Cash is easiest and cheapest!
+
+
+Why this system?
+
+Korean apps require local authentication, so overseas cards are blocked. The guest phone lets you shop, but cannot charge your own card. Think of our card as a friendly loan — the exact food cost is passed back to you, not treated as COZE revenue.
+
+Enjoy your meal and your stay! 🍽️🏠😊
+
+COZE_Ricky:
+Hey there, shopaholics! 
+
+Get ready for some lightning-fast shopping with Coupang—Korea’s one-stop online marketplace for everything from groceries to gadgets. Here’s a quick look at how to make the most of Coupang’s Rocket Delivery (로켓배송) and our convenient concierge service!
+
+🚀 Rocket Delivery (로켓배송) 101
+Coupang’s signature Rocket Delivery comes in several colors, each offering a different shipping speed or service type:
+
+💙 Light Blue Rocket: Delivered within 24 hours
+
+🏙 Ultramarine Rocket: Early Morning (Dawn) Delivery, arriving before sunrise
+
+💜 Purple Rocket: Overseas Direct Import, usually taking about 1 week
+
+💚 Green Rocket: Grocery Delivery, often arriving on the same day or by next-day dawn for fresh produce
+
+🛒 How to Shop with Our Concierge
+Search for Products: Open the Coupang app or website and enter your desired product name or category.
+
+Filter by “로켓배송”: Pick items marked with a Rocket icon (💙, 🏙, 💜, or 💚) for speedy or specialized delivery.
+
+Share the Item: Instead of adding to your cart, simply tap the “Share” button for each product you want and send it to our Concierge channel.
+
+We’ll Handle the Rest: Once we have your shared links, we’ll complete the purchase on your behalf—no Korean payment method or account needed!
+
+💰 Payment Options & Additional Fees
+Cash: You can settle your bill with us in any major currency, or even pay with USDT or other cryptocurrencies. This is generally the most cost-effective option.
+
+Local Bank Transfer: We can accept transfers in your currency via a local bank account, though please note there’s a 10% VAT added.
+
+Credit Card: Using a credit card incurs an additional 4.5% transaction fee, so we recommend other methods if possible.
+
+Enjoy hassle-free shopping in Korea with Coupang’s fast and flexible Rocket Delivery! If you have any questions or need help, just let us know. Happy shopping!
+
+COZMO_COZE AI:
+🌐 [EN] Hey there, shopaholics!
+
+Get ready for some lightning-fast shopping with Coupang—Korea’s one-stop online marketplace for everything from groceries to gadgets. Here’s a quick look at how to make the most of Coupang’s Rocket Delivery and our convenient concierge service!
+
+🚀 Rocket Delivery 101
+Coupang’s signature Rocket Delivery comes in several colors, each offering a different shipping speed or service type:
+
+💙 Light Blue Rocket: Delivered within 24 hours
+
+🏙 Ultramarine Rocket: Early Morning (Dawn) Delivery, arriving before sunrise
+
+💜 Purple Rocket: Overseas Direct Import, usually taking about 1 week
+
+💚 Green Rocket: Grocery Delivery, often arriving on the same day or by next-day dawn for fresh produce
+
+🛒 How to Shop with Our Concierge
+Search for Products: Open the Coupang app or website and enter your desired product name or category.
+
+Filter by “로켓배송”: Pick items marked with a Rocket icon (💙, 🏙, 💜, or 💚) for speedy or specialized delivery.
+
+Share the Item: Instead of adding to your cart, simply tap the “Share” button for each product you want and send it to our Concierge channel.
+
+We’ll Handle the Rest: Once we have your shared links, we’ll complete the purchase on your behalf—no Korean payment method or account needed!
+
+💰 Payment Options & Additional Fees
+Cash: You can settle your bill with us in any major currency, or even pay with USDT or other cryptocurrencies. This is generally the most cost-effective option.
+
+Local Bank Transfer: We can accept transfers in your currency via a local bank account, though please note there’s a 10% VAT added.
+
+Credit Card: Using a credit card incurs an additional 4.5% transaction fee, so we recommend other methods if possible.
+
+Enjoy hassle-free shopping in Korea with Coupang’s fast and flexible Rocket Delivery! If you have any questions or need help, just let us know. Happy shopping!
+
+COZE_Ricky:
+🗑️ Waste Disposal Guide in Seoul
+(For Foreign Residents in Our Accommodation)
+
+Welcome to Seoul! 🌆 Korea has a very organized (and strict!) waste disposal system. We’ve made it super simple for you during your stay — just follow the steps below, and let us take care of the rest. ♻️😊
+
+1️⃣ General Waste (일반 쓰레기 – Non-Recyclables)
+
+🧻 What goes in:
+Small plastic wrappers, dirty packaging
+Used tissues, cotton swabs, sanitary items
+Chicken bones, large fish bones 🐔🐟
+Rubber gloves, sponges, toothbrushes
+
+🚫 Please DON’T take your trash outside yourself — Seoul’s system can be tricky. 
+
+✅ DO THIS INSTEAD:
+
+Use the indoor trash bins for non-recyclables
+Separate this from recyclables
+
+🛎️ Let our staff know when it’s full — we’ll collect it for you!
+
+2️⃣ Food Waste (음식물 쓰레기 – Organic Waste)
+
+🥕 What goes in:
+Leftover rice, noodles, bread, fruits & veggies
+Eggshells, coffee grounds ☕
+Small fish bones
+
+🧯 How to dispose:
+
+Use the sink garbage disposer in the kitchen
+
+Turn on the water 💧, drop in soft food scraps, and grind 
+
+⚠️ DON’T put in hard or fibrous waste (like bones, shells, onion peels or corn husks) — they can break the system!
+
+Chicken bones & large scraps → go in general waste
+
+3️⃣ Recyclables (재활용 – Clean & Sorted Only!)
+
+♻️ What can be recycled? 
+
+Plastics 🧴
+Bottles, takeout containers — rinse before disposal 
+
+Glass 🍾
+Wine bottles, jars — no food inside! 
+
+Paper & Cardboard 📦
+Newspapers, flattened boxes, clean cartons 
+
+Cans & Metals 🥫
+Soda & food cans — rinse thoroughly 
+
+Styrofoam 🧊
+Must be clean & dry
+
+🗂️ How to Dispose:
+
+🤢 If it's dirty or has food? → That’s general waste, not recycling!
+🛎️ Full bins? Let us know, and we’ll take care of it.
+
+4️⃣ Large Waste (대형 폐기물 – Bulky Items)
+
+🧳 Includes:
+Travel suitcases, furniture, mattresses, electronics
+
+📞 Before you throw away anything big: Contact our accommodation manager first — we’ll help you handle it the right way. 
+
+🚫 Dumping large items in public is not allowed and can result in a fine.
+
+⚠️ Important Reminders
+
+🚯 Illegal dumping = fines 🧾 
+🚫 Never mix recyclables, general waste, and food waste 
+♻️ Use correct bins inside the house 
+🙋‍♀️ Not sure what to do? Just ask us!
+
+🌱 Thank you for helping us keep Seoul clean and green! Enjoy your stay — and let us handle the trash! 😄♻️
+
+COZMO_COZE AI:
+🌐 [EN] 🗑️ Waste Disposal Guide in Seoul  
+(For Foreign Residents in Our Accommodation)  
+Welcome to Seoul! 🌆 Korea has a very organized (and strict!) waste disposal system. We’ve made it super simple for you during your stay — just follow the steps below, and let us take care of the rest. ♻️😊  
+
+1️⃣ General Waste (일반 쓰레기 – Non-Recyclables)  
+🧻 What goes in:  
+Small plastic wrappers, dirty packaging  
+Used tissues, cotton swabs, sanitary items  
+Chicken bones, large fish bones 🐔🐟  
+Rubber gloves, sponges, toothbrushes  
+🚫 Please DON’T take your trash outside yourself — Seoul’s system can be tricky.  
+
+✅ DO THIS INSTEAD:  
+Use the indoor trash bins for non-recyclables  
+Separate this from recyclables  
+🛎️ Let our staff know when it’s full — we’ll collect it for you!  
+
+2️⃣ Food Waste (음식물 쓰레기 – Organic Waste)  
+🥕 What goes in:  
+Leftover rice, noodles, bread, fruits & veggies  
+Eggshells, coffee grounds ☕  
+Small fish bones  
+🧯 How to dispose:  
+Use the sink garbage disposer in the kitchen  
+Turn on the water 💧, drop in soft food scraps, and grind  
+
+⚠️ DON’T put in hard or fibrous waste (like bones, shells, onion peels or corn husks) — they can break the system!  
+Chicken bones & large scraps → go in general waste  
+
+3️⃣ Recyclables (재활용 – Clean & Sorted Only!)  
+♻️ What can be recycled?  
+
+Plastics 🧴  
+Bottles, takeout containers — rinse before disposal  
+
+Glass 🍾  
+Wine bottles, jars — no food inside!  
+
+Paper & Cardboard 📦  
+Newspapers, flattened boxes, clean cartons  
+
+Cans & Metals 🥫  
+Soda & food cans — rinse thoroughly  
+
+Styrofoam 🧊  
+Must be clean & dry  
+🗂️ How to Dispose:  
+🤢 If it's dirty or has food? → That’s general waste, not recycling!  
+🛎️ Full bins? Let us know, and we’ll take care of it.  
+
+4️⃣ Large Waste (대형 폐기물 – Bulky Items)  
+🧳 Includes:  
+Travel suitcases, furniture, mattresses, electronics  
+📞 Before you throw away anything big: Contact our accommodation manager first — we’ll help you handle it the right way.  
+
+🚫 Dumping large items in public is not allowed and can result in a fine.  
+
+⚠️ Important Reminders  
+🚯 Illegal dumping = fines 🧾  
+🚫 Never mix recyclables, general waste, and food waste  
+♻️ Use correct bins inside the house  
+🙋‍♀️ Not sure what to do? Just ask us!  
+
+🌱 Thank you for helping us keep Seoul clean and green! Enjoy your stay — and let us handle the trash! 😄♻️
+
+COZE_Ricky:
+Also, what time are you planning to check in?
+I will come to the accommodation to assist you with check-in according to your arrival time. Please send me a message.
+
+COZE_Ricky:
+另外，您预计什么时候办理入住呢？
+我会根据您的到达时间前往住宿，协助您办理入住。
+请给我留言，谢谢。
+
+COZMO_COZE AI:
+🌐 [EN] Also, when do you expect to check in? I will head to the accommodation to assist you with the check-in based on your arrival time. Please leave me a message, thank you.
+
+COZE_Ricky:
+我们听说您将乘坐小巴前来。
+请告诉我们您大约几点到达，我会协助您办理入住 😊
+
+COZMO_COZE AI:
+🌐 [EN] We heard that you will be taking the shuttle bus here. Please let us know what time you expect to arrive, and I will assist you with the check-in 😊
+
+COZE_Ricky:
+[Photo]
+
+COZE_Ricky:
+Main Gate Key Box 0 8 0 5
+ (*please keep the key inside after use*)
+
+COZE_Ricky:
+Front Door Pin 2 6 0 5 1 0 *
+
+COZE Guest Care:
+/trans off
+
+COZMO_COZE AI:
+🌐 Translation paused. /trans on to resume.
+
+COZE Guest Care:
+[Photo]
+
+COZE Guest Care:
+if that's not convenient to park, the alternatives nearby home at main road
+
+COZE Guest Care:
+[Photo]
+
+COZE_Ricky:
+I came by to help with your check-in, but I noticed that your luggage was already inside the house, so it seems you have already checked in.
+
+If you have any questions or need anything, please feel free to leave us a message, and we’ll be happy to assist you.
+
+Have a wonderful time in Korea!
+
+COZE_Ricky:
+您好，我过来想帮您办理入住，但我看到屋内已经有行李了，所以看起来您已经完成入住了。
+如果您有任何疑问或需要帮助，请随时给我们留言，我们会尽快为您提供协助。
+祝您在韩国度过愉快的时光！
+
+1.场安静:
+好的，谢谢了🙏
+
+1.场安静:
+
+
+COZE Guest Care:
+
+
+1.场安静:
+明天有人来换毛巾吗？
+
+COZE_Ricky:
+浴室里面的抽屉和镜子旁边的抽屉里有很多毛巾，应该足够使用了 😊
+如果还是不够的话，请随时告诉我们。
+
+1.场安静:
+OK
+
+COZE_Ricky:
+
+
+COZE Guest Care:
+🧺 入住期间的自助整理选项
+ 
+
+
+即使不额外加订中途清洁服务，大多数客人也能住得非常舒适，因为：
+
+每一层都配有 洗衣机和烘干机
+
+备有 扫地机器人，方便您轻松打扫地面
+
+我们提供 每日垃圾清理服务
+
+是否需要加订中途清洁服务，完全由您决定 🌿
+ 
+
+
+如果您希望安排中途清洁，请告诉我您希望的日期和时间段，
+我会帮您为全团安排好这一服务。✨
+
+
+致以诚挚的问候，
+Gaya, Guest Care Team of COZE Hospitality 3.0
+
+1.场安静:
+好的
+
+1.场安静:
+[Photo]
+
+1.场安静:
+[Photo]
+
+1.场安静:
+晚上下大雨，一楼房间有点漏水
+
+1.场安静:
+我们刚出门
+
+1.场安静:
+有时间去看下谢谢
+
+COZE Guest Care:
+okay. we will fix that
+
+COZE Guest Care:
+sorry for trouble
+
+1.场安静:
+好的
+
+COZE Guest Care:
+
+
+June_COZE:
+[Photo]
+
+June_COZE:
+Hello 😊 This is the Coze Facilities Management Team.
+
+We are scheduled to visit within 1 hour to help resolve the issue.  
+We would appreciate your patience. 🙏
+
+COZE Guest Care:
+/trans cn
+
+June_COZE:
+We sincerely apologize for the inconvenience caused.
+The issue related to the water leakage has now been resolved. 💧🔧
+We hope you have a comfortable and pleasant day ahead. Thank you for your understanding! 🙏
+
+June_COZE:
+对于漏水问题给您带来的不便，我们深感抱歉。
+相关问题现已处理完成。💧🔧
+祝您今天生活愉快、舒适安心！感谢您的理解与配合 🙏
+
+COZE_Ricky:
+您好，我是 COZE Housecare 团队的 Ricky。
+提醒您，您的退房时间安排在明天上午11点。
+
+请问您是否需要前往机场，或者前往其他地点的接送面包车服务呢？
+如果需要的话，请随时给我们留言哦！🚐✨
+
+COZMO_COZE AI:
+[EN] Hello, this is Ricky from the COZE Housecare team.  
+Just a reminder that your checkout time is scheduled for tomorrow at 11 AM.  
+
+Do you need a shuttle service to the airport or any other location?  
+If you do, feel free to message us anytime! 🚐✨
+
+COZE_Ricky:
+退房须知 – 感谢您选择入住我们！
+
+亲爱的客人，
+
+我们希望您在此度过了一个愉快的时光！随着您离店日期的临近，我们想为您提供一些退房须知，让您的退房过程顺利、轻松。
+
+⏰ 退房时间：
+请您务必在 上午11:00 前 完成退房，以便我们有充足的时间为下一位客人准备。
+
+我们始终为您的退房提供支持。
+如需 机场接送等交通服务，请至少提前 12 小时预约。
+
+
+📌 离开前请注意：
+
+整理物品：请收拾好随身物品，确保没有遗落。
+
+垃圾处理：请将所有垃圾投入指定垃圾桶。特别提醒，您可以在厨房水槽的垃圾处理器中粉碎所有食物垃圾。
+
+餐具：请清洗使用过的餐具，或将其放入洗碗机并启动清洗程序。
+
+毛巾：请在离开前将使用过的毛巾放入洗衣机运行清洗。
+
+设备归还：请将提供的客人专用手机、随身 Wi-Fi（如有使用）放回客厅桌上。
+
+
+
+🔑 钥匙：
+如果您的房源有大门及钥匙盒，请将大门钥匙放回钥匙盒中。
+
+
+
+💳 额外费用支付：
+若您在住宿期间产生了额外费用（如旅行团费、餐饮外送费等），并已事先告知，请准备好现金并放在客厅桌上。
+
+如您希望通过 银行转账或信用卡支付，请注意需额外收取 10% 增值税（VAT）。感谢您的理解与配合。
+
+
+
+📢 告知事项：
+若房间有任何损坏或需要我们注意的问题，请在退房前告知我们。
+
+
+
+感谢您成为如此可爱的客人！我们真诚期待再次为您服务。祝您旅途平安！如有任何问题或需要协助，请随时与我们联系。
+
+温馨问候，
+Gaya, Guest Care Team of COZE Hospitality 3.0
+
+COZMO_COZE AI:
+[EN] Checkout Information – Thank you for choosing to stay with us!
+
+Dear Guest,
+
+We hope you had a wonderful time here! As your checkout date approaches, we’d like to provide you with some important information to make your checkout process smooth and easy.
+
+⏰ Checkout Time:
+Please ensure to check out by 11:00 AM so we have enough time to prepare for the next guest.
+
+We are always here to support you during your checkout. If you need transportation services like airport transfers, please make a reservation at least 12 hours in advance.
+
+📌 Please Note Before You Leave:
+
+Gather Your Belongings: Please make sure to collect all your personal items and ensure nothing is left behind.
+
+Trash Disposal: Please dispose of all trash in the designated bins. A special reminder, you can use the garbage disposal in the kitchen sink for all food waste.
+
+Dishes: Please wash any used dishes or place them in the dishwasher and start the cleaning cycle.
+
+Towels: Please place any used towels in the washing machine before you leave.
+
+Return Equipment: Please return the guest-use phone and portable Wi-Fi (if used) to the living room table.
+
+🔑 Keys:
+If your property has a main door and key box, please return the main door key to the key box.
+
+💳 Additional Charges Payment:
+If you incurred any additional charges during your stay (like tour fees, food delivery fees, etc.) and informed us in advance, please prepare cash and leave it on the living room table.
+
+If you wish to pay via bank transfer or credit card, please note that an additional 10% VAT will be charged. Thank you for your understanding and cooperation.
+
+📢 Important Notice:
+If there are any damages or issues in the room that we need to be aware of, please let us know before checkout.
+
+Thank you for being such a lovely guest! We sincerely look forward to serving you again. Safe travels! If you have any questions or need assistance, please feel free to contact us.
+
+Warm regards,  
+Gaya, Guest Care Team of COZE Hospitality 3.0
+
+COZE Guest Care:
+Can you please update your check out plan tomorrow? :(
+
+COZE_Ricky:
+Tomorrow, another team is scheduled to check in at 3:00 PM, so house cleaning will begin right after check-out at 11:00 AM.
+We appreciate your kind understanding.
+
+1.场安静:
+好的
+
+COZE_Cyrus:
+Hello! 😊
+
+ 
+
+We hope you’ve had a wonderful stay and created some beautiful memories during your time here. 🏡✨
+
+ 
+
+Every place—just like life—comes with a mix of comforts and little inconveniences. Although we’re not a traditional hotel, we strive to offer something warmer—a home filled with genuine care, comfort, and heart. 🌿✨
+
+
+Our greatest hope is that you felt at ease and enjoyed both the charm of local living and the cozy comfort we always aim to provide.
+
+ 
+
+Thank you from the bottom of our hearts for staying with us. Wishing you safe travels, and we genuinely look forward to welcoming you back again soon! ✈️🌎
+
+
+With warmest regards,
+ 
+Cyrus, Guest Care Team
+ COZE Hospitality 3.0 🌿
+
+COZMO_COZE AI:
+[EN] Hello! 😊
+
+We hope you’ve had a wonderful stay and created some beautiful memories during your time here. 🏡✨
+
+Every place—just like life—comes with a mix of comforts and little inconveniences. Although we’re not a traditional hotel, we strive to offer something warmer—a home filled with genuine care, comfort, and heart. 🌿✨
+
+Our greatest hope is that you felt at ease and enjoyed both the charm of local living and the cozy comfort we always aim to provide.
+
+Thank you from the bottom of our hearts for staying with us. Wishing you safe travels, and we genuinely look forward to welcoming you back again soon! ✈️🌎
+
+With warmest regards,  
+Cyrus, Guest Care Team  
+COZE Hospitality 3.0 🌿

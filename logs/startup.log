@@ -1,0 +1,500 @@
+﻿PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+WARNING: [gateway] failed: RPC probe: failed
+=== COZMO startup complete ===
+**********************
+Windows PowerShell transcript end
+End time: 20260429125146
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260429152649
+Username: COZE_AI\cozmo
+RunAs User: COZE_AI\cozmo
+Configuration Name: 
+Machine: COZE_AI (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File C:\Users\cozmo\.openclaw\workspace\scripts\start-services.ps1 -FromStartup
+Process ID: 19652
+PSVersion: 5.1.26100.8115
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8115
+BuildVersion: 10.0.26100.8115
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== COZMO startup ===
+Timestamp: 2026-04-29 15:26:49
+Root: C:\Users\cozmo\.openclaw\workspace
+[pm2] starting cozmo-bridge
+[PM2][WARN] Applications cozmo-bridge not running, starting...
+[PM2] App [cozmo-bridge] launched (1 instances)
+ΓöîΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé id Γöé name            Γöé namespace   Γöé version Γöé mode    Γöé pid      Γöé uptime Γöé Γå║    Γöé status    Γöé cpu      Γöé mem      Γöé user     Γöé watching Γöé
+Γö£ΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöñ
+Γöé 0  Γöé cozmo-bridge    Γöé default     Γöé N/A     Γöé fork    Γöé 19360    Γöé 0s     Γöé 0    Γöé online    Γöé 0%       Γöé 0b       Γöé cozmo    Γöé disabled Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+[tunnel] already running (pid 4828)
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+WARNING: [gateway] failed: RPC probe: failed
+=== COZMO startup complete ===
+**********************
+Windows PowerShell transcript end
+End time: 20260429152701
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260429153303
+Username: COZE_AI\cozmo
+RunAs User: COZE_AI\cozmo
+Configuration Name: 
+Machine: COZE_AI (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File C:\Users\cozmo\.openclaw\workspace\scripts\start-services.ps1 -FromStartup
+Process ID: 16148
+PSVersion: 5.1.26100.8115
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8115
+BuildVersion: 10.0.26100.8115
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== COZMO startup ===
+Timestamp: 2026-04-29 15:33:03
+Root: C:\Users\cozmo\.openclaw\workspace
+[pm2] starting cozmo-bridge
+[PM2][WARN] Applications cozmo-bridge not running, starting...
+[PM2] App [cozmo-bridge] launched (1 instances)
+ΓöîΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé id Γöé name            Γöé namespace   Γöé version Γöé mode    Γöé pid      Γöé uptime Γöé Γå║    Γöé status    Γöé cpu      Γöé mem      Γöé user     Γöé watching Γöé
+Γö£ΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöñ
+Γöé 0  Γöé cozmo-bridge    Γöé default     Γöé N/A     Γöé fork    Γöé 20260    Γöé 0s     Γöé 0    Γöé online    Γöé 0%       Γöé 0b       Γöé cozmo    Γöé disabled Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+[tunnel] already running (pid 4684)
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+WARNING: [gateway] failed: RPC probe: failed
+=== COZMO startup complete ===
+**********************
+Windows PowerShell transcript end
+End time: 20260429153315
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260518094230
+Username: COZE_AI\cozmo
+RunAs User: COZE_AI\cozmo
+Configuration Name: 
+Machine: COZE_AI (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File C:\Users\cozmo\.openclaw\workspace\scripts\start-services.ps1 -FromStartup
+Process ID: 15984
+PSVersion: 5.1.26100.8457
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8457
+BuildVersion: 10.0.26100.8457
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== COZMO startup ===
+Timestamp: 2026-05-18 09:42:30
+Root: C:\Users\cozmo\.openclaw\workspace
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: connect EPERM //./pipe/rpc.sock"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: connect EPERM //./pipe/rpc.sock"
+WARNING: [pm2] failed: connect EPERM //./pipe/rpc.sock
+[tunnel] already running (pid 4692)
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+WARNING: [gateway] failed: RPC probe: failed
+=== COZMO startup complete ===
+**********************
+Windows PowerShell transcript end
+End time: 20260518094242
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260604172427
+Username: COZE_AI\cozmo
+RunAs User: COZE_AI\cozmo
+Configuration Name: 
+Machine: COZE_AI (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File C:\Users\cozmo\.openclaw\workspace\scripts\start-services.ps1 -FromStartup
+Process ID: 19404
+PSVersion: 5.1.26100.8457
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8457
+BuildVersion: 10.0.26100.8457
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== COZMO startup ===
+Timestamp: 2026-06-04 17:24:27
+Root: C:\Users\cozmo\.openclaw\workspace
+[pm2] starting cozmo-bridge
+[PM2][WARN] Applications cozmo-bridge not running, starting...
+[PM2] App [cozmo-bridge] launched (1 instances)
+ΓöîΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé id Γöé name            Γöé namespace   Γöé version Γöé mode    Γöé pid      Γöé uptime Γöé Γå║    Γöé status    Γöé cpu      Γöé mem      Γöé user     Γöé watching Γöé
+Γö£ΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöñ
+Γöé 0  Γöé cozmo-bridge    Γöé default     Γöé N/A     Γöé fork    Γöé 20832    Γöé 0s     Γöé 0    Γöé online    Γöé 0%       Γöé 0b       Γöé cozmo    Γöé disabled Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+[tunnel] already running (pid 4752)
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+WARNING: [gateway] failed: RPC probe: failed
+=== COZMO startup complete ===
+**********************
+Windows PowerShell transcript end
+End time: 20260604172440
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260604173337
+Username: COZE_AI\cozmo
+RunAs User: COZE_AI\cozmo
+Configuration Name: 
+Machine: COZE_AI (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File C:\Users\cozmo\.openclaw\workspace\scripts\start-services.ps1 -FromStartup
+Process ID: 21948
+PSVersion: 5.1.26100.8457
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8457
+BuildVersion: 10.0.26100.8457
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== COZMO startup ===
+Timestamp: 2026-06-04 17:33:37
+Root: C:\Users\cozmo\.openclaw\workspace
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: connect EPERM //./pipe/rpc.sock"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: connect EPERM //./pipe/rpc.sock"
+WARNING: [pm2] failed: connect EPERM //./pipe/rpc.sock
+[tunnel] starting cloudflared tunnel in background
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+WARNING: [gateway] failed: RPC probe: failed
+=== COZMO startup complete ===
+**********************
+Windows PowerShell transcript end
+End time: 20260604173348
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260604174618
+Username: COZE_AI\cozmo
+RunAs User: COZE_AI\cozmo
+Configuration Name: 
+Machine: COZE_AI (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File C:\Users\cozmo\.openclaw\workspace\scripts\start-services.ps1 -FromStartup
+Process ID: 26096
+PSVersion: 5.1.26100.8457
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8457
+BuildVersion: 10.0.26100.8457
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== COZMO startup ===
+Timestamp: 2026-06-04 17:46:18
+Root: C:\Users\cozmo\.openclaw\workspace
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: connect EPERM //./pipe/rpc.sock"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: connect EPERM //./pipe/rpc.sock"
+WARNING: [pm2] failed: connect EPERM //./pipe/rpc.sock
+[tunnel] starting cloudflared tunnel in background
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+WARNING: [gateway] failed: RPC probe: failed
+=== COZMO startup complete ===
+**********************
+Windows PowerShell transcript end
+End time: 20260604174628
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260604175945
+Username: COZE_AI\cozmo
+RunAs User: COZE_AI\cozmo
+Configuration Name: 
+Machine: COZE_AI (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File C:\Users\cozmo\.openclaw\workspace\scripts\start-services.ps1 -FromStartup
+Process ID: 12052
+PSVersion: 5.1.26100.8457
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8457
+BuildVersion: 10.0.26100.8457
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== COZMO startup ===
+Timestamp: 2026-06-04 17:59:45
+Root: C:\Users\cozmo\.openclaw\workspace
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: connect EPERM //./pipe/rpc.sock"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: connect EPERM //./pipe/rpc.sock"
+WARNING: [pm2] failed: connect EPERM //./pipe/rpc.sock
+[tunnel] starting cloudflared tunnel in background
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+WARNING: [gateway] failed: RPC probe: failed
+=== COZMO startup complete ===
+**********************
+Windows PowerShell transcript end
+End time: 20260604175956
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260604181029
+Username: COZE_AI\cozmo
+RunAs User: COZE_AI\cozmo
+Configuration Name: 
+Machine: COZE_AI (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File C:\Users\cozmo\.openclaw\workspace\scripts\start-services.ps1 -FromStartup
+Process ID: 23424
+PSVersion: 5.1.26100.8457
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8457
+BuildVersion: 10.0.26100.8457
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== COZMO startup ===
+Timestamp: 2026-06-04 18:10:29
+Root: C:\Users\cozmo\.openclaw\workspace
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: connect EPERM //./pipe/rpc.sock"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: connect EPERM //./pipe/rpc.sock"
+WARNING: [pm2] failed: connect EPERM //./pipe/rpc.sock
+[tunnel] starting cloudflared tunnel in background
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+WARNING: [gateway] failed: RPC probe: failed
+=== COZMO startup complete ===
+**********************
+Windows PowerShell transcript end
+End time: 20260604181040
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260604182613
+Username: COZE_AI\cozmo
+RunAs User: COZE_AI\cozmo
+Configuration Name: 
+Machine: COZE_AI (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File C:\Users\cozmo\.openclaw\workspace\scripts\start-services.ps1 -FromStartup
+Process ID: 22200
+PSVersion: 5.1.26100.8457
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8457
+BuildVersion: 10.0.26100.8457
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== COZMO startup ===
+Timestamp: 2026-06-04 18:26:13
+Root: C:\Users\cozmo\.openclaw\workspace
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: connect EPERM //./pipe/rpc.sock"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: connect EPERM //./pipe/rpc.sock"
+WARNING: [pm2] failed: connect EPERM //./pipe/rpc.sock
+[tunnel] already running (pid 5008)
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+WARNING: [gateway] failed: RPC probe: failed
+=== COZMO startup complete ===
+**********************
+Windows PowerShell transcript end
+End time: 20260604182624
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260614201828
+Username: COZE_AI\cozmo
+RunAs User: COZE_AI\cozmo
+Configuration Name: 
+Machine: COZE_AI (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File C:\Users\cozmo\.openclaw\workspace\scripts\start-services.ps1 -FromStartup
+Process ID: 22612
+PSVersion: 5.1.26100.8457
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8457
+BuildVersion: 10.0.26100.8457
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== COZMO startup ===
+Timestamp: 2026-06-14 20:18:28
+Root: C:\Users\cozmo\.openclaw\workspace
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: connect EPERM //./pipe/rpc.sock"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: connect EPERM //./pipe/rpc.sock"
+WARNING: [pm2] failed: connect EPERM //./pipe/rpc.sock
+[tunnel] already running (pid 5364)
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+WARNING: [gateway] failed: RPC probe: failed
+=== COZMO startup complete ===
+**********************
+Windows PowerShell transcript end
+End time: 20260614201839
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260615114136
+Username: COZE_AI\cozmo
+RunAs User: COZE_AI\cozmo
+Configuration Name: 
+Machine: COZE_AI (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File C:\Users\cozmo\.openclaw\workspace\scripts\start-services.ps1 -FromStartup
+Process ID: 21700
+PSVersion: 5.1.26100.8457
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8457
+BuildVersion: 10.0.26100.8457
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== COZMO startup ===
+Timestamp: 2026-06-15 11:41:36
+Root: C:\Users\cozmo\.openclaw\workspace
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: connect EPERM //./pipe/rpc.sock"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: connect EPERM //./pipe/rpc.sock"
+WARNING: [pm2] failed: connect EPERM //./pipe/rpc.sock
+[tunnel] already running (pid 3956)
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+WARNING: [gateway] failed: RPC probe: failed
+=== COZMO startup complete ===
+**********************
+Windows PowerShell transcript end
+End time: 20260615114147
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260618104802
+Username: COZE_AI\cozmo
+RunAs User: COZE_AI\cozmo
+Configuration Name: 
+Machine: COZE_AI (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File C:\Users\cozmo\.openclaw\workspace\scripts\start-services.ps1 -FromStartup
+Process ID: 21216
+PSVersion: 5.1.26100.8457
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8457
+BuildVersion: 10.0.26100.8457
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== COZMO startup ===
+Timestamp: 2026-06-18 10:48:02
+Root: C:\Users\cozmo\.openclaw\workspace
+[pm2] starting cozmo-bridge
+[PM2][WARN] Applications cozmo-bridge not running, starting...
+[PM2] App [cozmo-bridge] launched (1 instances)
+ΓöîΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé id Γöé name            Γöé namespace   Γöé version Γöé mode    Γöé pid      Γöé uptime Γöé Γå║    Γöé status    Γöé cpu      Γöé mem      Γöé user     Γöé watching Γöé
+Γö£ΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöñ
+Γöé 0  Γöé cozmo-bridge    Γöé default     Γöé N/A     Γöé fork    Γöé 21680    Γöé 0s     Γöé 0    Γöé online    Γöé 0%       Γöé 0b       Γöé cozmo    Γöé disabled Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+[tunnel] already running (pid 5016)
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+WARNING: [gateway] failed: RPC probe: failed
+=== COZMO startup complete ===
+**********************
+Windows PowerShell transcript end
+End time: 20260618104814
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260624105631
+Username: COZE_AI\cozmo
+RunAs User: COZE_AI\cozmo
+Configuration Name: 
+Machine: COZE_AI (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File C:\Users\cozmo\.openclaw\workspace\scripts\start-services.ps1 -FromStartup
+Process ID: 22988
+PSVersion: 5.1.26100.8457
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8457
+BuildVersion: 10.0.26100.8457
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== COZMO startup ===
+Timestamp: 2026-06-24 10:56:31
+Root: C:\Users\cozmo\.openclaw\workspace
+[pm2] starting cozmo-bridge
+[PM2][WARN] Applications cozmo-bridge not running, starting...
+[PM2] App [cozmo-bridge] launched (1 instances)
+ΓöîΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé id Γöé name            Γöé namespace   Γöé version Γöé mode    Γöé pid      Γöé uptime Γöé Γå║    Γöé status    Γöé cpu      Γöé mem      Γöé user     Γöé watching Γöé
+Γö£ΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöñ
+Γöé 0  Γöé cozmo-bridge    Γöé default     Γöé N/A     Γöé fork    Γöé 22236    Γöé 0s     Γöé 0    Γöé online    Γöé 0%       Γöé 0b       Γöé cozmo    Γöé disabled Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+[tunnel] already running (pid 5312)
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+WARNING: [gateway] failed: RPC probe: failed
+=== COZMO startup complete ===
+**********************
+Windows PowerShell transcript end
+End time: 20260624105645
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260626105349
+Username: COZE_AI\cozmo
+RunAs User: COZE_AI\cozmo
+Configuration Name: 
+Machine: COZE_AI (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File C:\Users\cozmo\.openclaw\workspace\scripts\start-services.ps1 -FromStartup
+Process ID: 22560
+PSVersion: 5.1.26100.8457
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8457
+BuildVersion: 10.0.26100.8457
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== COZMO startup ===
+Timestamp: 2026-06-26 10:53:49
+Root: C:\Users\cozmo\.openclaw\workspace
+[pm2] starting cozmo-bridge
+[PM2][WARN] Applications cozmo-bridge not running, starting...
+[PM2] App [cozmo-bridge] launched (1 instances)
+ΓöîΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé id Γöé name            Γöé namespace   Γöé version Γöé mode    Γöé pid      Γöé uptime Γöé Γå║    Γöé status    Γöé cpu      Γöé mem      Γöé user     Γöé watching Γöé
+Γö£ΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöñ
+Γöé 0  Γöé cozmo-bridge    Γöé default     Γöé N/A     Γöé fork    Γöé 19604    Γöé 0s     Γöé 0    Γöé online    Γöé 0%       Γöé 0b       Γöé cozmo    Γöé disabled Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+[tunnel] already running (pid 5152)
+PS>TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+>> TerminatingError(node.exe): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: RPC probe: failed"
+WARNING: [gateway] failed: RPC probe: failed
+=== COZMO startup complete ===
+**********************
+Windows PowerShell transcript end
+End time: 20260626105401
+**********************
