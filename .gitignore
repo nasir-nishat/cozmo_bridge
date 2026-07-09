@@ -7,3 +7,7 @@ logs/
 *.webp
 *.tgz
 .env
+
+src/config/google-credentials.json
+src/config/google-token.json
+src/config/
