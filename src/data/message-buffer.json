@@ -635,6 +635,21 @@
       "sender": "Kim JuYeon",
       "text": "넵 감사합니다",
       "ts": 1783562458293
+    },
+    {
+      "sender": "COZE_CYRUS",
+      "text": "2시부터 체크인 가능합니다.\n도착 예정시간 부탁드립니다.",
+      "ts": 1783570594207
+    },
+    {
+      "sender": "Kim JuYeon",
+      "text": "손님께서 지금 롯데월드에서 놀고 계십니다. 조금 후에 숙소로 돌아가는 길에 손님께 여쭤보고 체크인 시간을 사장님께 말씀드리겠습니다.",
+      "ts": 1783570951400
+    },
+    {
+      "sender": "COZE_CYRUS",
+      "text": "넵. 1시간 전에 부탁드려요.",
+      "ts": 1783571210919
     }
   ],
   "kakao:471998394909214": [
@@ -730,6 +745,16 @@
       "sender": "nickssem",
       "text": "156다 9923",
       "ts": 1783568781500
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "Sure. we will register this. It costs 20K KRW daily. Do you plan to use that van for 4 nights entirely? :)",
+      "ts": 1783570752568
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "Sure. we will register this. It costs 20K KRW daily. Do you plan to use that van for 4 nights entirely? :)",
+      "ts": 1783570752820
     }
   ],
   "821097802701@c.us": [
@@ -737,6 +762,11 @@
       "sender": "😁",
       "text": "Hey can you help me",
       "ts": 1783569040469
+    },
+    {
+      "sender": "😁",
+      "text": "Hey can you help me?",
+      "ts": 1783570277372
     }
   ],
   "wechat:28080309692@chatroom": [

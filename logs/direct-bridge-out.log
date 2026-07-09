@@ -1,0 +1,59 @@
+🌍 ENV: production
+🔗 API URL: platform
+📦 Translation cache loaded: 886 entries
+🔍 ENABLE_WHATSAPP: true | raw env: true
+✨ WhatsApp via Evolution API (http://localhost:8081, instance: cozmo)
+🔧 Group creation ENABLED (default)
+⏰ Checkout reminders scheduled: 21:00 | Final bill: 07:00 | AM instructions (Kakao): 09:00 | Farewell: 15:00 KST daily
+⏰ Check-in reminders scheduled: Tips 15:00 KST | Rules 19:00 KST daily
+🚀 COZE Bridge on http://localhost:3001
+🧭 App mode: prod (TG + JANDI alerts)
+🕒 Hostfully note poll interval: 480s
+⏰ Booking store daily sync scheduled: 15:00 KST
+⏰ Expense cleanup + buffer prune scheduled: 03:00 KST daily
+💚 WeChat auto-connecting in 5s...
+👥 Staff LINE IDs: 8 | WeChat IDs: 9 | Kakao IDs: 11
+[90m[[90mwechatferry:agent[90m][39m [35m◐[39m Starting WechatferryAgent...
+[90m[[90mwechatferry:core[90m][39m [35m◐[39m Starting WechatferryCore...
+[90m[[90mwechatferry:core[90m][39m [35m◐[39m Stopping WechatferryCore...
+[90m[[90mwechatferry:core[90m][39m [32m✔[39m WechatferryCore stopped!
+[90m[[90mwechatferry:agent[90m][39m [32m✔[39m WechatferryAgent started
+🤖 WeChat agent started — connected to WeChat PC
+🔍 Polling Hostfully notes...
+📋 bookingStore sync (last 2 pages)...
+📋 Active leads fetched: 40
+🌱 Seeding cache for lead: d795c3b5-b10d-4c1a-afda-2322dfe41b6b
+🌱 Seeding cache for lead: 429342c9-ae34-4b65-a3b2-917b223fc2a3
+🌱 Seeding cache for lead: ab1216a7-a9e6-4389-b91c-9ba4c0740284
+🌱 Seeding cache for lead: a052b54a-62ec-4257-89db-ba05bc6297b0
+🌱 Seeding cache for lead: a6de00ea-194d-40c9-ad0c-60bcf5056242
+🌱 Seeding cache for lead: aac84e61-9d3c-459d-aac2-1e321de10bc2
+🌱 Seeding cache for lead: cde72c82-4b0c-4b0c-92cb-262d524780e3
+🌱 Seeding cache for lead: 798cabfd-e967-4022-9a24-8f2ab18c512d
+🌱 Seeding cache for lead: 37cfdef8-ca59-4205-9c4a-98ddb234101b
+🌱 Seeding cache for lead: 73032021-9e28-41a8-9015-b2db8daf7376
+🌱 Seeding cache for lead: 4f818e9f-7353-41b0-a59d-0ed1968160fd
+🌱 Seeding cache for lead: 87727d2e-bec8-420d-9e63-55fc3cf40379
+🌱 Seeding cache for lead: dd440a0b-657e-4350-85e5-5600c742e7f6
+🌱 Seeding cache for lead: 80cdcb09-1ba9-45d2-a0a9-1d6b4d4b8c42
+🌱 Seeding cache for lead: d72b0a57-8f99-49d0-8011-0652f23e1509
+🌱 Seeding cache for lead: c2624a96-3aba-4e9c-8264-22a4c01940ac
+🌱 Seeding cache for lead: 16fa8d59-0cd9-4cbb-80a5-a5c6a731a7a2
+🌱 Seeding cache for lead: 266e6652-6fea-4903-a7be-be014f5c50bb
+🌱 Seeding cache for lead: 0eea4903-7ff4-4027-b3f7-a72461ea70a3
+🌱 Seeding cache for lead: 97047ac4-6329-41c6-9053-5e5e82e51d49
+📋 bookingStore upserted: Anmol Sondhi @ JT_TEVA (2026-09-21 → 2026-09-30)
+📋 bookingStore upserted: Su Young Jung @ SG_JOYHASLA (2026-10-14 → 2026-10-19)
+📋 bookingStore upserted: Arianne Panganiban @ HT_TEVA RETREAT (2026-09-15 → 2026-09-21)
+📋 bookingStore upserted: Amy Jones @ GKA_Kelly Ananda (2026-08-11 → 2026-08-27)
+📋 bookingStore upserted: 혜인 박 @ HTB_TEVA AERIS GARDEN (2026-07-11 → 2026-07-12)
+✅ Jandi watcher: logged in
+👁️ Jandi watcher started — polling every 10s
+📋 bookingStore upserted: Min 차 @ HTA_TEVA WELLNESS (2026-07-11 → 2026-07-12)
+📋 bookingStore upserted: Jenny Lee @ GKB_Kelly Prana (2026-07-14 → 2026-07-16)
+📋 bookingStore upserted: Meg Huang @ SA_ACHAE (2026-08-28 → 2026-08-31)
+📋 bookingStore sync complete: scanned 40 leads, upserted 8
+⏭️ alertMissed(Final Bill): no expenses for Scott Walker — skipped
+📡 Incoming: POST /kakao/heartbeat
+📡 Incoming: GET /admin/health
+📡 Incoming: POST /admin/web-search

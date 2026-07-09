@@ -1,0 +1,20 @@
+⚠️ Google credentials missing at C:\COZE_CORP\cozmo_bridge\src\config\google-credentials.json - Google Calendar/Sheets features will be unavailable
+⚠️ Google token missing at C:\COZE_CORP\cozmo_bridge\src\config\google-token.json - Google Calendar/Sheets features will be unavailable
+⚠️ staffCache: could not load from Sheets, using fallback names: No access, refresh token, API key or refresh handler callback is set.
+
+[90m[[90mwechatferry:core[90m][39m [41m[30m ERROR [39m[49m Error in start: Recv rpc failed: Timed out
+
+  [90mat [39mWechatferry.send ([36mnode_modules\@wechatferry\core\dist\client.cjs:116:31[39m)
+  [90mat [39mWechatferry.startRecvMessage ([36mnode_modules\@wechatferry\core\dist\client.cjs:85:29[39m)
+  [90mat [39mWechatferry.start ([36mnode_modules\@wechatferry\core\dist\client.cjs:45:12[39m)
+  [90mat [39mWechatferryAgent.start ([36mnode_modules\@wechatferry\agent\dist\index.cjs:96:14[39m)
+  [90mat [39mtryStart ([36msrc\platforms\wechat\bot.ts:297:19[39m)
+  [90mat [39minitWeChat ([36msrc\platforms\wechat\bot.ts:343:5[39m)
+  [90mat [39mTimeout._onTimeout ([36msrc\index.ts:176:27[39m)
+  [90mat [39mlistOnTimeout ([36mnode:internal/timers:605:17[39m)
+  [90mat [39mprocessTimers ([36mnode:internal/timers:541:7[39m)
+
+(node:17752) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 51 error listeners added to [TLSSocket]. MaxListeners is 50. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+⚠️ WeChat disconnected — sending alert
+⚠️ SERPER_API_KEY not set — falling back to DDG instant answers (limited coverage)

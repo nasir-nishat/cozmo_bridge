@@ -5,6 +5,8 @@ import path from 'path'
 const OPENAI_URL = 'https://api.openai.com/v1'
 const OPENAI_MODEL = 'gpt-4o'
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY ?? ''
+const LM_STUDIO_URL = process.env.LM_STUDIO_URL || 'http://localhost:1234/v1/chat/completions'
+const LM_STUDIO_MODEL = process.env.LM_STUDIO_MODEL || 'google/gemma-4-e4b'
 const DATA_DIR = path.join(process.cwd(), '..', 'src', 'data')
 const ROOT_DIR = path.join(process.cwd(), '..')
 const AI_LEARNING_INBOX = path.join(ROOT_DIR, 'docs', 'ai-learning-inbox.md')
@@ -97,6 +99,8 @@ interface ChatHistoryMessage {
   role: 'user' | 'assistant'
   content: string
 }
+
+type ChatMessage = { role: 'system' | 'user' | 'assistant'; content: string }
 
 const PROPERTY_OPTIONS = [
   { code: 'BS', name: 'Joyhasla Bukchon' },
@@ -368,13 +372,16 @@ function buildClarificationContext(
   const lower = message.toLowerCase()
   const shortQuestion = tokenize(message).length <= 3
   const asksAboutLiveGroup = /\b(this|that|guest|group|chat|conversation|happened|do next)\b/.test(lower)
+  const asksAirportVan = /\b(airport|van|transfer|pickup|pick.?up|incheon|gimpo)\b/.test(lower)
   const missingProperty = !propertyCode && /\b(property|house|stay|check.?in|checkout|parking|bbq|trash|food|taxi|airport|van)\b/.test(lower)
 
   const reasons: string[] = []
   if (shortQuestion && matchCount === 0) reasons.push('question is too short and no source matched')
   if (role === 'team' && asksAboutLiveGroup && !hasGroupContext) reasons.push('team question appears to need a selected group')
   if (role === 'guest_draft' && matchCount === 0) reasons.push('guest draft has no matching guest-safe KB facts')
-  if (missingProperty) reasons.push('property may be needed for an accurate answer')
+  if (missingProperty && !(role === 'guest_draft' && asksAirportVan && matchCount > 0)) {
+    reasons.push('property may be needed for an accurate answer')
+  }
 
   if (!reasons.length) return 'Clarification need: none detected.'
 
@@ -463,13 +470,15 @@ function buildGuestDraftPrompt(kbContext: string, clarificationContext: string):
     '',
     `CLARIFICATION CHECK:\n${clarificationContext}`,
     '',
-    'If the clarification check says clarification is needed, ask the follow-up question first instead of drafting.',
+    'If KB facts directly answer part of the guest request, answer the known part first, then ask only the missing follow-up detail.',
+    'Only ask the follow-up question first when there are no directly useful KB facts.',
     'CLARIFY FORMAT: Start with "Quick check:" and ask at most 2 questions.',
     '',
     'FORMAT RULES (mandatory):',
     '- Line 1 exactly: "DRAFT ONLY — Needs staff review before sending."',
     '- Line 2: blank line.',
     '- Line 3+: the draft reply. Maximum 80 words.',
+    '- Do not add separators such as "***", "---", or decorative divider lines.',
     '- Prefer 2-4 short natural sentences. Use bullets only if the guest asks for a list.',
     '- Directly answer the guest first, then add only the most useful next step.',
     '- Personalize with one concrete detail from the guest question when available.',
@@ -519,6 +528,43 @@ function streamText(content: string): Response {
       'X-Accel-Buffering': 'no',
     },
   })
+}
+
+async function generateLocalChat(messages: ChatMessage[]): Promise<string> {
+  const res = await fetch(LM_STUDIO_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      model: LM_STUDIO_MODEL,
+      messages,
+      stream: false,
+      temperature: 0.35,
+      max_tokens: 1500,
+    }),
+    signal: AbortSignal.timeout(60000),
+  })
+
+  if (!res.ok) {
+    const text = await res.text().catch(() => '')
+    throw new Error(`Local LLM returned ${res.status}${text ? `: ${text.slice(0, 200)}` : ''}`)
+  }
+
+  const json = await res.json() as any
+  const content = json?.choices?.[0]?.message?.content
+  if (!content || typeof content !== 'string') throw new Error('Local LLM returned an empty response')
+  return content.trim()
+}
+
+async function streamLocalFallback(messages: ChatMessage[], role: string, message: string, propertyCode?: string): Promise<Response> {
+  const reply = await generateLocalChat(messages)
+  if (role === 'guest_draft' && needsHumanEscalation(reply)) {
+    fetch(`${BRIDGE_URL}/admin/chat-alert`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ guestMessage: message, draft: reply, propertyCode }),
+    }).catch(() => {})
+  }
+  return streamText(reply)
 }
 
 function getLearningCommand(message: string): string | null {
@@ -659,13 +705,17 @@ export async function POST(req: NextRequest) {
     systemPrompt = buildTeamPrompt(chatContext, groupKey, kbContext + livePricingFacts, clarificationContext)
   }
 
-  const messages = [
+  const messages: ChatMessage[] = [
     { role: 'system', content: systemPrompt },
     ...history.slice(-4),
     { role: 'user', content: message },
   ]
 
   try {
+    if (!OPENAI_API_KEY) {
+      return await streamLocalFallback(messages, role, message, propertyCode)
+    }
+
     const res = await fetch(`${OPENAI_URL}/chat/completions`, {
       method: 'POST',
       headers: {
@@ -673,10 +723,12 @@ export async function POST(req: NextRequest) {
         'Authorization': `Bearer ${OPENAI_API_KEY}`,
       },
       body: JSON.stringify({ model: OPENAI_MODEL, messages, stream: true, temperature: 0.4, max_tokens: 1500 }),
+      signal: AbortSignal.timeout(30000),
     })
 
     if (!res.ok || !res.body) {
-      return new Response(JSON.stringify({ error: `OpenAI returned ${res.status}` }), { status: 502 })
+      console.warn(`Admin chat OpenAI failed with ${res.status}; trying local LLM`)
+      return await streamLocalFallback(messages, role, message, propertyCode)
     }
 
     const encoder = new TextEncoder()
@@ -701,7 +753,7 @@ export async function POST(req: NextRequest) {
             if (data === '[DONE]') {
               await writer.write(encoder.encode('data: [DONE]\n\n'))
               if (role === 'guest_draft' && needsHumanEscalation(fullDraft)) {
-                fetch('http://localhost:3001/admin/chat-alert', {
+                fetch(`${BRIDGE_URL}/admin/chat-alert`, {
                   method: 'POST',
                   headers: { 'Content-Type': 'application/json' },
                   body: JSON.stringify({ guestMessage: message, draft: fullDraft, propertyCode }),
@@ -732,9 +784,13 @@ export async function POST(req: NextRequest) {
       },
     })
   } catch (err: any) {
-    return new Response(
-      JSON.stringify({ error: err.message ?? 'OpenAI request failed' }),
-      { status: 502 },
-    )
+    try {
+      return await streamLocalFallback(messages, role, message, propertyCode)
+    } catch (fallbackErr: any) {
+      return new Response(
+        JSON.stringify({ error: fallbackErr?.message || err?.message || 'AI request failed' }),
+        { status: 502 },
+      )
+    }
   }
 }

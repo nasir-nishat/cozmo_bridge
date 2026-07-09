@@ -198,7 +198,9 @@ export default function ChatPage() {
       })
 
       if (!res.ok || !res.body) {
-        const err = await res.json().catch(() => ({ error: 'Unknown error' }))
+        const err = await res.json().catch(async () => ({
+          error: (await res.text().catch(() => '')).trim() || `Chat API returned ${res.status}`,
+        }))
         setMessages(m => [...m.slice(0, -1), { role: 'assistant', content: `⚠️ ${err.error}` }])
         return
       }
