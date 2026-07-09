@@ -101,7 +101,7 @@ async function callOpenAI(system: string, user: string, maxTokens = 1000): Promi
     let lastErr: any;
     for (let attempt = 0; attempt < maxAttempts; attempt++) {
         try {
-            const res = await axios.post('https://api.openai.com/v1/chat/completions', payload, { headers });
+            const res = await axios.post('https://api.openai.com/v1/chat/completions', payload, { headers, timeout: 15000 });
             return (res.data.choices[0].message.content || '').trim();
         } catch (e: any) {
             lastErr = e;
@@ -186,11 +186,20 @@ export async function translateMessage(
         'EN': 'English — warm hospitality tone',
     };
 
-    const result = await callOpenAI(
-        TRANSLATION_SYSTEM,
-        `Translate the following message to ${langLabel[targetLang]}:\n\n${text}`,
-        16000
-    );
+    const prompt = `Translate the following message to ${langLabel[targetLang]}:\n\n${text}`;
+    let result: string;
+    try {
+        result = await callOpenAI(TRANSLATION_SYSTEM, prompt, 16000);
+    } catch (e: any) {
+        const status = e?.response?.status;
+        console.warn(`⚠️ OpenAI translation failed${status ? ` (${status})` : ''}, trying local LLM: ${e?.message}`);
+        try {
+            result = await callLLM(TRANSLATION_SYSTEM, prompt, 4000);
+        } catch (localErr: any) {
+            console.error(`Local translation fallback failed: ${localErr?.message}`);
+            return text;
+        }
+    }
     const translated = result.trim();
     translationCache.set(cacheKey, translated);
     saveCache(translationCache);
@@ -198,10 +207,21 @@ export async function translateMessage(
 }
 
 export async function detectLanguage(text: string): Promise<SupportedLang | 'KO' | 'OTHER'> {
-    const result = await callOpenAI(
-        'You are a language detector. Respond with ONLY one of these codes: ZH-TW, ZH-CN, JA, TH, EN, KO, OTHER. No explanation.',
-        `Detect the language of this text: "${text.slice(0, 200)}"`
-    );
+    const system = 'You are a language detector. Respond with ONLY one of these codes: ZH-TW, ZH-CN, JA, TH, EN, KO, OTHER. No explanation.';
+    const user = `Detect the language of this text: "${text.slice(0, 200)}"`;
+    let result: string;
+    try {
+        result = await callOpenAI(system, user);
+    } catch (e: any) {
+        const status = e?.response?.status;
+        console.warn(`⚠️ OpenAI language detection failed${status ? ` (${status})` : ''}, trying local LLM: ${e?.message}`);
+        try {
+            result = await callLLM(system, user, 20);
+        } catch (localErr: any) {
+            console.error(`Local language detection fallback failed: ${localErr?.message}`);
+            return 'OTHER';
+        }
+    }
     const code = result.trim().toUpperCase();
     const valid = ['ZH-TW', 'ZH-CN', 'JA', 'TH', 'EN', 'KO', 'OTHER'];
     return valid.includes(code) ? (code as SupportedLang | 'KO' | 'OTHER') : 'OTHER';
@@ -310,14 +330,21 @@ Respond ONLY with YES or NO.`,
 // ─── CORE LLM CALL WITH OPENAI FALLBACK ─────────────────────────────────────
 // Tries local Gemma first. Falls back to OpenAI if local returns null or throws.
 async function callLLMWithFallback(system: string, user: string, maxTokens?: number): Promise<string> {
+    let localResult = '';
     try {
-        const result = await callLLM(system, user, maxTokens);
-        if (result && result.toLowerCase() !== 'null') return result;
+        localResult = await callLLM(system, user, maxTokens);
+        if (localResult && localResult.toLowerCase() !== 'null') return localResult;
         console.log('🔄 LLM fallback: local returned null — retrying with OpenAI');
     } catch (e: any) {
         console.log(`🔄 LLM fallback: local failed (${e?.message}) — retrying with OpenAI`);
     }
-    return callOpenAI(system, user, maxTokens ?? 1000);
+    try {
+        return await callOpenAI(system, user, maxTokens ?? 1000);
+    } catch (e: any) {
+        const status = e?.response?.status;
+        console.warn(`OpenAI fallback failed${status ? ` (${status})` : ''}: ${e?.message}`);
+        return localResult || 'null';
+    }
 }
 
 // Returns true if any recent message in the group matches the template at ~70%+ similarity.
@@ -344,7 +371,7 @@ async function callLLM(system: string, user: string, maxTokens?: number): Promis
         ],
         max_tokens: maxTokens ?? CONFIG.LLM_MAX_TOKENS,
         temperature: CONFIG.LLM_TEMPERATURE,
-    });
+    }, { timeout: 60000 });
     const raw = res.data.choices[0].message;
     return (raw.content || '').trim();
 }

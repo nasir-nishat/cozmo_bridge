@@ -5,11 +5,52 @@ export const LINE_API = 'https://api.line.me/v2/bot';
 
 export const lineGroupKey = (id: string) => `line:${id}`;
 
+type LineAuthStatus = {
+    connected: boolean;
+    checkedAt: number;
+    error?: string;
+};
+
+let cachedAuthStatus: LineAuthStatus | null = null;
+const LINE_AUTH_CACHE_MS = 60_000;
+
 function authHeader() {
     return { Authorization: `Bearer ${CONFIG.LINE_CHANNEL_ACCESS_TOKEN}`, 'Content-Type': 'application/json' };
 }
 
 const groupNameCache = new Map<string, string>();
+
+export async function checkLineAuth(): Promise<LineAuthStatus> {
+    const now = Date.now();
+    if (cachedAuthStatus && now - cachedAuthStatus.checkedAt < LINE_AUTH_CACHE_MS) {
+        return cachedAuthStatus;
+    }
+
+    if (!CONFIG.LINE_CHANNEL_ACCESS_TOKEN) {
+        cachedAuthStatus = {
+            connected: false,
+            checkedAt: now,
+            error: 'LINE_CHANNEL_ACCESS_TOKEN is not configured',
+        };
+        return cachedAuthStatus;
+    }
+
+    try {
+        await axios.get(`${LINE_API}/info`, {
+            headers: authHeader(),
+            timeout: 5000,
+        });
+        cachedAuthStatus = { connected: true, checkedAt: now };
+    } catch (e: any) {
+        const status = e?.response?.status;
+        cachedAuthStatus = {
+            connected: false,
+            checkedAt: now,
+            error: status ? `LINE API returned ${status}` : e?.message || 'LINE API check failed',
+        };
+    }
+    return cachedAuthStatus;
+}
 
 export async function getGroupName(groupId: string): Promise<string> {
     if (groupNameCache.has(groupId)) return groupNameCache.get(groupId)!;

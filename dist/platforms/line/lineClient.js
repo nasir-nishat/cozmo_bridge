@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.lineGroupKey = exports.LINE_API = void 0;
+exports.checkLineAuth = checkLineAuth;
 exports.getGroupName = getGroupName;
 exports.pushMessage = pushMessage;
 exports.pushImage = pushImage;
@@ -15,10 +16,42 @@ const constants_1 = require("../../config/constants");
 exports.LINE_API = 'https://api.line.me/v2/bot';
 const lineGroupKey = (id) => `line:${id}`;
 exports.lineGroupKey = lineGroupKey;
+let cachedAuthStatus = null;
+const LINE_AUTH_CACHE_MS = 60000;
 function authHeader() {
     return { Authorization: `Bearer ${constants_1.CONFIG.LINE_CHANNEL_ACCESS_TOKEN}`, 'Content-Type': 'application/json' };
 }
 const groupNameCache = new Map();
+async function checkLineAuth() {
+    const now = Date.now();
+    if (cachedAuthStatus && now - cachedAuthStatus.checkedAt < LINE_AUTH_CACHE_MS) {
+        return cachedAuthStatus;
+    }
+    if (!constants_1.CONFIG.LINE_CHANNEL_ACCESS_TOKEN) {
+        cachedAuthStatus = {
+            connected: false,
+            checkedAt: now,
+            error: 'LINE_CHANNEL_ACCESS_TOKEN is not configured',
+        };
+        return cachedAuthStatus;
+    }
+    try {
+        await axios_1.default.get(`${exports.LINE_API}/info`, {
+            headers: authHeader(),
+            timeout: 5000,
+        });
+        cachedAuthStatus = { connected: true, checkedAt: now };
+    }
+    catch (e) {
+        const status = e?.response?.status;
+        cachedAuthStatus = {
+            connected: false,
+            checkedAt: now,
+            error: status ? `LINE API returned ${status}` : e?.message || 'LINE API check failed',
+        };
+    }
+    return cachedAuthStatus;
+}
 async function getGroupName(groupId) {
     if (groupNameCache.has(groupId))
         return groupNameCache.get(groupId);

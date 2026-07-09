@@ -3,6 +3,7 @@ import path from 'path';
 import { Router } from 'express';
 import { CONFIG } from '../config/constants';
 import { isWaReady } from '../platforms/whatsapp/evoClient';
+import { checkLineAuth } from '../platforms/line/lineClient';
 import { getLastKakaoHeartbeat } from '../services/kakaoWatchdog';
 import { isWeChatInitialized } from '../platforms/wechat/bot';
 import { getAllBookings } from '../services/bookingStore';
@@ -13,15 +14,29 @@ import { getLeadUid } from '../services/groupLeads';
 import { getLivePropertyPricingEntry } from '../knowledge/livePricing';
 import { webSearch } from '../knowledge/webSearch';
 import { getExpenseSummary } from '../services/expenses';
+import { getGoogleAuthStatus, isGoogleAuthAvailable } from '../services/google-auth';
 
 const router = Router();
 
 const startedAt = Date.now();
 
+function googleUnavailableResponse() {
+    const status = getGoogleAuthStatus();
+    const missing = status.missing.length ? status.missing.join(', ') : 'Google auth';
+    return {
+        degraded: true,
+        google: status,
+        error: status.error || `Google Sheets unavailable: missing ${missing}`,
+    };
+}
+
 // GET /admin/health
-router.get('/admin/health', (_req, res) => {
+router.get('/admin/health', async (_req, res) => {
     const kakaoLastSeen = getLastKakaoHeartbeat();
     const kakaoAgeMs = kakaoLastSeen ? Date.now() - kakaoLastSeen : null;
+    const lineStatus: { connected: boolean; checkedAt: number; error?: string } = CONFIG.ENABLE_LINE
+        ? await checkLineAuth()
+        : { connected: false, checkedAt: Date.now() };
 
     res.json({
         ok: true,
@@ -37,7 +52,9 @@ router.get('/admin/health', (_req, res) => {
             },
             line: {
                 enabled: CONFIG.ENABLE_LINE,
-                connected: CONFIG.ENABLE_LINE,
+                connected: CONFIG.ENABLE_LINE && lineStatus.connected,
+                checkedAt: lineStatus.checkedAt,
+                error: lineStatus.error || null,
             },
             kakao: {
                 enabled: CONFIG.ENABLE_KAKAO,
@@ -50,6 +67,7 @@ router.get('/admin/health', (_req, res) => {
                 connected: CONFIG.ENABLE_WECHAT && isWeChatInitialized(),
             },
         },
+        google: getGoogleAuthStatus(),
         ts: Date.now(),
     });
 });
@@ -128,11 +146,15 @@ router.get('/admin/groups', (_req, res) => {
 
 // GET /admin/staff
 router.get('/admin/staff', async (_req, res) => {
+    if (!isGoogleAuthAvailable()) {
+        return res.json({ ok: true, staff: [], ...googleUnavailableResponse() });
+    }
+
     try {
         const staff = await getAllTeamMembers();
         res.json({ ok: true, staff });
     } catch (e: any) {
-        res.status(500).json({ ok: false, error: e?.message });
+        res.json({ ok: true, staff: [], degraded: true, error: e?.message });
     }
 });
 
@@ -168,11 +190,15 @@ router.post('/admin/web-search', async (req, res) => {
 
 // GET /admin/expenses/summary — unsettled expense totals per group (hits Google Sheets)
 router.get('/admin/expenses/summary', async (_req, res) => {
+    if (!isGoogleAuthAvailable()) {
+        return res.json({ ok: true, summary: [], ...googleUnavailableResponse() });
+    }
+
     try {
         const summary = await getExpenseSummary();
         res.json({ ok: true, summary });
     } catch (e: any) {
-        res.status(500).json({ ok: false, error: e?.message });
+        res.json({ ok: true, summary: [], degraded: true, error: e?.message });
     }
 });
 

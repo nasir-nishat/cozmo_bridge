@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { google } from 'googleapis';
-import oAuth2Client from './google-auth';
+import oAuth2Client, { assertGoogleAuthAvailable, isGoogleAuthAvailable } from './google-auth';
 import { CONFIG } from '../config/constants';
 import { sendJandi } from './jandi';
 import { fetchLead } from './hostfully';
@@ -78,6 +78,7 @@ export function getStaffName(platform: string, senderId: string, fallbackName?: 
 }
 
 async function getAllRows(): Promise<ExpenseRow[]> {
+    assertGoogleAuthAvailable('Google Sheets expenses');
     const res = await sheets.spreadsheets.values.get({
         spreadsheetId: CONFIG.SHEET_ID,
         range: 'expenses!A2:M',
@@ -113,6 +114,7 @@ async function appendExpense(
     id: string, leadUid: string, groupId: string, groupName: string,
     platform: string, item: string, amountKrw: number, loggedBy: string, card: string
 ): Promise<void> {
+    assertGoogleAuthAvailable('Google Sheets expenses');
     const vat10 = Math.round(amountKrw * 1.10);
     const vat145 = Math.round(amountKrw * 1.145);
     const now = new Date();
@@ -177,8 +179,18 @@ function buildGuestMessage(expenses: ExpenseRow[]): string {
     ].join('\n');
 }
 
+async function getRowsOrReply(replyInGroup: (msg: string) => Promise<void>): Promise<ExpenseRow[] | null> {
+    try {
+        return await getAllRows();
+    } catch (e: any) {
+        console.error('Expense sheet unavailable:', e?.message);
+        await replyInGroup('Expense sheet is unavailable right now. Please try again later or log it manually.').catch(() => { });
+        return null;
+    }
+}
 
 export async function hasUnsettledExpenses(leadUid: string, groupId?: string): Promise<boolean> {
+    if (!isGoogleAuthAvailable()) return false;
     const rows = await getAllRows();
     return rows.some(r =>
         (r.lead_uid === leadUid || (!!groupId && r.group_id === groupId)) && !r.settled
@@ -186,6 +198,7 @@ export async function hasUnsettledExpenses(leadUid: string, groupId?: string): P
 }
 
 export async function hasAnyExpenses(leadUid: string): Promise<boolean> {
+    if (!isGoogleAuthAvailable()) return false;
     const rows = await getAllRows();
     return rows.some(r => r.lead_uid === leadUid);
 }
@@ -195,6 +208,7 @@ export async function sendExpenseSummary(
     sendFn: (msg: string) => Promise<void>,
     groupId?: string
 ): Promise<boolean> {
+    if (!isGoogleAuthAvailable()) return false;
     const rows = await getAllRows();
     const unsettled = rows.filter(r =>
         (r.lead_uid === leadUid || (!!groupId && r.group_id === groupId)) && !r.settled
@@ -276,7 +290,8 @@ export async function handleExpCommand(
     if (cmd === '/exp total') {
         if (!leadUid) { await replyInGroup('❌ This group is not linked to a booking.').catch(() => { }); return; }
         if (!getStaffName(platform, staffId, senderName)) return;
-        const rows = await getAllRows();
+        const rows = await getRowsOrReply(replyInGroup);
+        if (!rows) return;
         const unsettled = rows.filter(r => r.group_id === groupId && !r.settled);
         if (!unsettled.length) { await replyInGroup('No pending expenses for this group.').catch(() => { }); return; }
         await replyInGroup(buildGuestMessage(unsettled)).catch(() => { });
@@ -286,7 +301,8 @@ export async function handleExpCommand(
     if (cmd === '/exp done') {
         if (!leadUid) { await replyInGroup('❌ This group is not linked to a booking.').catch(() => { }); return; }
         if (!getStaffName(platform, staffId, senderName)) return;
-        const rows = await getAllRows();
+        const rows = await getRowsOrReply(replyInGroup);
+        if (!rows) return;
         const unsettled = rows.filter(r => r.group_id === groupId && !r.settled);
         if (!unsettled.length) { await replyInGroup('No pending expenses to settle.').catch(() => { }); return; }
         await markSettled(unsettled.map(r => r.id));
@@ -308,7 +324,8 @@ export async function handleExpCommand(
     if (cmd === '/exp list') {
         if (!getStaffName(platform, staffId, senderName)) return;
         if (!leadUid) { await replyInGroup('❌ This group is not linked to a booking.').catch(() => { }); return; }
-        const rows = await getAllRows();
+        const rows = await getRowsOrReply(replyInGroup);
+        if (!rows) return;
         const unsettled = rows.filter(r => r.group_id === groupId && !r.settled);
         if (!unsettled.length) { await replyInGroup('No expenses logged yet.').catch(() => { }); return; }
         const total = unsettled.reduce((s, e) => s + e.amount_krw, 0);

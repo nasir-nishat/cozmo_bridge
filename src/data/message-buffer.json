@@ -54,11 +54,6 @@
   "kakao:18294946740114616": [
     {
       "sender": "Unknown",
-      "text": "❌ 뉴비기사 키우기 RPG에서 명령어를 입력해주세요",
-      "ts": 1783520038554
-    },
-    {
-      "sender": "Unknown",
       "text": "방장봇",
       "ts": 1783520042926
     },
@@ -551,6 +546,11 @@
       "sender": "‮",
       "text": ".",
       "ts": 1783541312602
+    },
+    {
+      "sender": "Unknown",
+      "text": "{\"feedType\":2,\"member\":{\"userId\":5005469382841747055,\"nickName\":\"박스에 들어간 춘식이\"}}",
+      "ts": 1783570089971
     }
   ],
   "120363426391030936@g.us": [
@@ -737,6 +737,45 @@
       "sender": "😁",
       "text": "Hey can you help me",
       "ts": 1783569040469
+    }
+  ],
+  "wechat:28080309692@chatroom": [
+    {
+      "sender": "Nishat",
+      "text": "Hello there",
+      "ts": 1783569140104
+    },
+    {
+      "sender": "Nishat",
+      "text": "I need some help.",
+      "ts": 1783569146971
+    },
+    {
+      "sender": "Nishat",
+      "text": "Can you help?",
+      "ts": 1783569156182
+    },
+    {
+      "sender": "Nishat",
+      "text": "Hello there",
+      "ts": 1783569200826
+    },
+    {
+      "sender": "Nishat",
+      "text": "Can you help me?",
+      "ts": 1783569205010
+    }
+  ],
+  "120363408234192852@g.us": [
+    {
+      "sender": "😁",
+      "text": "Hello",
+      "ts": 1783569320206
+    },
+    {
+      "sender": "😁",
+      "text": "Can you help me with the taxi??",
+      "ts": 1783569326729
     }
   ]
 }
