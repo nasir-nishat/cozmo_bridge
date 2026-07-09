@@ -3054,10 +3054,10 @@
     "adults": 0,
     "children": 0,
     "infants": 0,
-    "status": "NEW",
+    "status": "CLOSED",
     "source": "INQUIRY",
     "phone": "",
-    "updatedAt": "2026-07-08T05:34:23.821Z"
+    "updatedAt": "2026-07-09T05:34:12.097Z"
   },
   {
     "leadUid": "a6de00ea-194d-40c9-ad0c-60bcf5056242",
@@ -3069,10 +3069,10 @@
     "adults": 0,
     "children": 0,
     "infants": 0,
-    "status": "NEW",
+    "status": "CLOSED",
     "source": "INQUIRY",
     "phone": "",
-    "updatedAt": "2026-07-08T05:36:48.555Z"
+    "updatedAt": "2026-07-09T05:36:36.817Z"
   },
   {
     "leadUid": "4eb00d9b-eaa7-447e-8bed-7f9e71e0ca60",
