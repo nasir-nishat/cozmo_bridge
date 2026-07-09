@@ -680,6 +680,11 @@
       "sender": "COZE_CYRUS",
       "text": "네, 지금 보내드린 주소로 오시면 됩니다.\n\n도착하시면 아까 짐 맡기셨던 아파트 입구가 보이실 거예요.\n근처에 도착하시면 말씀해 주세요. 제가 아래로 내려가겠습니다.",
       "ts": 1783576891798
+    },
+    {
+      "sender": "COZE_CYRUS",
+      "text": "체크인 안내는 모두 완료되었습니다.\n\n머무시는 동안 편하게 지내실 수 있도록 COZE 팀이 함께 케어해드릴게요.\n\n궁금한 점/불편한 점이 생기면 이 단체 채팅방에 편하게 남겨주세요. 각 파트 담당자가 확인 후 신속히 도와드리겠습니다.",
+      "ts": 1783578962348
     }
   ],
   "kakao:471998394909214": [
@@ -991,6 +996,20 @@
       "sender": "😁",
       "text": "Can you help me with the taxi??",
       "ts": 1783569326729
+    }
+  ],
+  "120363426846640888@g.us": [
+    {
+      "sender": "COZE_CYRUS",
+      "text": "Hello, this is Cyrus from the COZE Guest Care Team \n\nI just wanted to check in and see if everything has been comfortable during your stay.\n\nIf there is anything you need help with, or if you would like me to stop by to collect any trash, please feel free to let me know.\n\nI’ll be happy to assist you",
+      "ts": 1783579519374
+    }
+  ],
+  "821066906935@c.us": [
+    {
+      "sender": "COZE_Gaya",
+      "text": "/group 429342c9-ae34-4b65-a3b2-917b223fc2a3",
+      "ts": 1783580089593
     }
   ]
 }
