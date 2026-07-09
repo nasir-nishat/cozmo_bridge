@@ -1,0 +1,602 @@
+[
+  {
+    "groupId": "120363409584322673@g.us",
+    "leadUid": "ea498247-74da-4742-81d8-51c38a33de23",
+    "fireAt": 1779373590798,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363426555889540@g.us",
+    "leadUid": "cb53d14a-f292-4888-80be-99fd91fede66",
+    "fireAt": 1779418190566,
+    "cancelled": true,
+    "fired": false,
+    "cancelReason": "team member active in group"
+  },
+  {
+    "groupId": "120363409603086144@g.us",
+    "leadUid": "bd665eaf-f2c7-490b-af7c-f570767cea44",
+    "fireAt": 1779440954847,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363408934091269@g.us",
+    "leadUid": "faa60718-7d15-4437-a0e2-5bd5eb96a1a3",
+    "fireAt": 1779532333306,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363426912723161@g.us",
+    "leadUid": "793b30f7-0a9c-430c-86c4-ff37ec8db205",
+    "fireAt": 1779532934037,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363428387321372@g.us",
+    "leadUid": "2669cb75-5293-48c2-9e1a-4434487c19d4",
+    "fireAt": 1779540350070,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363426821244010@g.us",
+    "leadUid": "a75f46d4-7663-458e-815c-688d42f57495",
+    "fireAt": 1779540949499,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363426391030936@g.us",
+    "leadUid": "82d0af3d-3b2c-439e-af30-a1daff275a9d",
+    "fireAt": 1779541758557,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363429055836995@g.us",
+    "leadUid": "4680d9ed-33e9-474b-bd04-9d593e830b0a",
+    "fireAt": 1779545993694,
+    "cancelled": true,
+    "fired": false,
+    "cancelReason": "team member active in group"
+  },
+  {
+    "groupId": "120363409481894621@g.us",
+    "leadUid": "1ae4be72-b549-4712-805f-0073908c24d6",
+    "fireAt": 1779546593171,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363426846640888@g.us",
+    "leadUid": "48c4a380-9e14-4a82-843b-d786dd0bffff",
+    "fireAt": 1779547193963,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363407384623871@g.us",
+    "leadUid": "a0758a27-64e2-469c-9f83-d98bab2a2a05",
+    "fireAt": 1779620141387,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363408251492888@g.us",
+    "leadUid": "78d5dddc-ede4-4eb1-b2e6-fc0e1e5bfe68",
+    "fireAt": 1779623318213,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363426716329675@g.us",
+    "leadUid": "70778c3a-d60b-4473-a597-a5d6292628f5",
+    "fireAt": 1779674515764,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363427397514238@g.us",
+    "leadUid": "a6fbf658-7e68-474c-89be-6a383c02df71",
+    "fireAt": 1779695146072,
+    "cancelled": true,
+    "fired": false,
+    "cancelReason": "team member active in group"
+  },
+  {
+    "groupId": "120363409035497507@g.us",
+    "leadUid": "5edd81f3-2a3a-4cc9-983a-f1f12257d05e",
+    "fireAt": 1779775705360,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363411372022405@g.us",
+    "leadUid": "91f60910-ed54-40fe-9bd5-53b02af83ca0",
+    "fireAt": 1779879643636,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363409288308137@g.us",
+    "leadUid": "9ad033f5-4d8f-4738-a170-8a567d0ccf4d",
+    "fireAt": 1779881761719,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363428178246904@g.us",
+    "leadUid": "62282c56-6d44-4812-a85a-54ed83637685",
+    "fireAt": 1779882758784,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363409102583750@g.us",
+    "leadUid": "7703e172-bc04-4b13-9285-22d79933cf43",
+    "fireAt": 1779883961799,
+    "cancelled": true,
+    "fired": false,
+    "cancelReason": "team member active in group"
+  },
+  {
+    "groupId": "120363427791687863@g.us",
+    "leadUid": "6e4533ac-7522-4b98-86c8-f61555da3727",
+    "fireAt": 1779885672870,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363425775015826@g.us",
+    "leadUid": "13cf9d24-6892-46f3-9624-4e712b6eced4",
+    "fireAt": 1779897263060,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363407793200138@g.us",
+    "leadUid": "1e916def-3f2c-4b2d-a616-322cdd76aedd",
+    "fireAt": 1779976466967,
+    "cancelled": true,
+    "fired": false,
+    "cancelReason": "new participant added to group"
+  },
+  {
+    "groupId": "120363426070401941@g.us",
+    "leadUid": "687b5e16-c5b4-4d04-92f1-950f6753cd98",
+    "fireAt": 1779977068670,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363409260116628@g.us",
+    "leadUid": "279595c8-684c-4ed0-925d-ec80f8420e8d",
+    "fireAt": 1780083626610,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363426643162347@g.us",
+    "leadUid": "373b5874-6cb0-4694-b66e-4ea8637efeb8",
+    "fireAt": 1780190017946,
+    "cancelled": true,
+    "fired": false,
+    "cancelReason": "new participant added to group"
+  },
+  {
+    "groupId": "120363426417190534@g.us",
+    "leadUid": "9caba12c-1681-4608-8296-010a63853147",
+    "fireAt": 1780202783600,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363408921154760@g.us",
+    "leadUid": "e947d52c-74fb-4735-931a-cdb52a4a9f7d",
+    "fireAt": 1780306115538,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363425583280471@g.us",
+    "leadUid": "a479c1af-4009-4630-a826-0e2beaa98902",
+    "fireAt": 1780328263817,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363426469818034@g.us",
+    "leadUid": "f40e8e46-ba95-479f-9846-38756a91b3e9",
+    "fireAt": 1780349217309,
+    "cancelled": true,
+    "fired": false,
+    "cancelReason": "new participant added to group"
+  },
+  {
+    "groupId": "120363428659332530@g.us",
+    "leadUid": "48e11656-156b-4a08-8a9f-3dfdfbea5c5a",
+    "fireAt": 1780419220243,
+    "cancelled": true,
+    "fired": false,
+    "cancelReason": "new participant added to group"
+  },
+  {
+    "groupId": "120363425781931613@g.us",
+    "leadUid": "8d9a5c4a-01cf-4be4-ba59-48ff69507129",
+    "fireAt": 1780433507863,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363412104410607@g.us",
+    "leadUid": "ef9cfea9-4872-4e59-983c-e0ae5cfe75c5",
+    "fireAt": 1780559485850,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363409863337770@g.us",
+    "leadUid": "fca656a7-af0c-487e-b659-4051e5f9cc80",
+    "fireAt": 1780574519960,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363429233303977@g.us",
+    "leadUid": "b8410385-8f4b-4a9b-af2f-2b88050c30d0",
+    "fireAt": 1780627409752,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363426664945810@g.us",
+    "leadUid": "ce51a0a5-d1b9-4a91-9adb-0d0d21efcffe",
+    "fireAt": 1780654765275,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363424946951801@g.us",
+    "leadUid": "74bee820-10c7-4058-82a1-04dabff5d584",
+    "fireAt": 1780669491408,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363410023843816@g.us",
+    "leadUid": "70884366-eb00-4c5c-8ddd-265d4eefdcc5",
+    "fireAt": 1780679386172,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363426113377197@g.us",
+    "leadUid": "f72e40a1-0f67-4b26-8100-97b28067e39d",
+    "fireAt": 1780685790480,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363426534722265@g.us",
+    "leadUid": "6bac0d61-29fa-4a9e-b28f-4d20e3886365",
+    "fireAt": 1780701081481,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363409384771267@g.us",
+    "leadUid": "dcb52752-c2b4-4792-ae4b-204287f7ead0",
+    "fireAt": 1780717041860,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363409986147036@g.us",
+    "leadUid": "ca3b8d33-79b3-4734-ae7b-a0035dae5942",
+    "fireAt": 1780729665459,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363428539886519@g.us",
+    "leadUid": "c6058f45-6831-421c-b8f4-e3631e5be77c",
+    "fireAt": 1780807162865,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363425116744021@g.us",
+    "leadUid": "7e3f772c-2351-4967-9658-cee04597e2f0",
+    "fireAt": 1780829742542,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363427651504347@g.us",
+    "leadUid": "f0a5258f-b089-47b8-b3ab-7b0b4734945c",
+    "fireAt": 1780894082956,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363408824881629@g.us",
+    "leadUid": "fd33ef6d-536b-49ca-90d6-97361b9e38bb",
+    "fireAt": 1780927877364,
+    "cancelled": true,
+    "fired": false,
+    "cancelReason": "team member active in group"
+  },
+  {
+    "groupId": "120363425340752548@g.us",
+    "leadUid": "787c2c37-6fa1-4f1f-ac52-45a59528fbd9",
+    "fireAt": 1780949240442,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363410344195669@g.us",
+    "leadUid": "015eac6d-7936-422c-a8e2-e60d2d2332a0",
+    "fireAt": 1780987546026,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363427781868638@g.us",
+    "leadUid": "024c8e59-219e-4d72-9c24-90a02e51ab95",
+    "fireAt": 1781002849358,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363426825811539@g.us",
+    "leadUid": "330c3424-36fd-45e9-ba59-408db5ba740f",
+    "fireAt": 1781016184915,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363425741750567@g.us",
+    "leadUid": "407a8cee-b825-435f-ab3c-548be9033dd6",
+    "fireAt": 1781027579840,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363429981300503@g.us",
+    "leadUid": "9e4c486f-ab31-4341-9a90-1b5a064dae65",
+    "fireAt": 1781049182050,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363428134771890@g.us",
+    "leadUid": "e7c3c92d-521e-4af5-b6ff-18a73acd44be",
+    "fireAt": 1781111881602,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363409204133943@g.us",
+    "leadUid": "90531ab1-7b9a-453a-b273-00d34cbfd7a8",
+    "fireAt": 1781155192810,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363428150995373@g.us",
+    "leadUid": "2ee7a582-4374-4528-9fc2-687a76ac4c1c",
+    "fireAt": 1781174129408,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363428371587422@g.us",
+    "leadUid": "800c0b99-513a-459d-9bde-56911ec8f391",
+    "fireAt": 1781215655552,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363427116323955@g.us",
+    "leadUid": "935c94cf-a99b-4e55-8b14-4e89f9d81929",
+    "fireAt": 1781240507037,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363410235018383@g.us",
+    "leadUid": "18c21b8c-5735-4934-b1d7-5e7c42b6eb91",
+    "fireAt": 1781241754534,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363427478496801@g.us",
+    "leadUid": "a8ca0403-3655-4236-8257-a09a0dca0ced",
+    "fireAt": 1781270918930,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363410894604143@g.us",
+    "leadUid": "14ff67c2-6c44-48a0-8131-a4fccb731d34",
+    "fireAt": 1781293492496,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363429035986967@g.us",
+    "leadUid": "41827fde-1f8a-4ecc-a925-9c2da9f10919",
+    "fireAt": 1781416724745,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363426794772304@g.us",
+    "leadUid": "0b821e9d-0178-48ca-8df0-c10a18b1daba",
+    "fireAt": 1781479863046,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363427591564695@g.us",
+    "leadUid": "f4ead3d5-320f-408e-9353-85d3de985eb8",
+    "fireAt": 1781532128955,
+    "cancelled": true,
+    "fired": false,
+    "cancelReason": "new participant added to group"
+  },
+  {
+    "groupId": "120363409367717142@g.us",
+    "leadUid": "d55aec30-6142-409b-9365-50d430cc1786",
+    "fireAt": 1781551929273,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363424525973492@g.us",
+    "leadUid": "14d7cf25-f885-47e1-ae5c-c2fb33f1422b",
+    "fireAt": 1781620819525,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363428084259624@g.us",
+    "leadUid": "79771899-a2d1-4ee8-a265-597bae0331f0",
+    "fireAt": 1781766187820,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363409227708353@g.us",
+    "leadUid": "9f29e6c2-100f-47ca-82a3-28290dd77923",
+    "fireAt": 1781805482894,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363429818634888@g.us",
+    "leadUid": "6c2c83be-e06a-4784-8a25-92e5cc13e330",
+    "fireAt": 1781838955273,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363427141316994@g.us",
+    "leadUid": "cf3fe203-7876-4c54-b47c-feffff5094dd",
+    "fireAt": 1782175036394,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363409387810686@g.us",
+    "leadUid": "f324328f-210b-435b-b56e-77bbb88d2080",
+    "fireAt": 1782302211952,
+    "cancelled": true,
+    "fired": false,
+    "cancelReason": "guest replied"
+  },
+  {
+    "groupId": "120363410309127618@g.us",
+    "leadUid": "0308b75f-e577-46a8-b593-028e4f3b4078",
+    "fireAt": 1782522980174,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363426310868292@g.us",
+    "leadUid": "5203274e-bb60-4839-bc37-3a974becd4a8",
+    "fireAt": 1782732412388,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363410195679160@g.us",
+    "leadUid": "6c0aa199-b08f-47d6-9bb1-1c72acf5e3b4",
+    "fireAt": 1782824876930,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363409270801116@g.us",
+    "leadUid": "3779d8d1-98ff-4ec8-8a91-885aa975683d",
+    "fireAt": 1782835309495,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363410279865987@g.us",
+    "leadUid": "ce910946-7429-48ed-b3a2-65251fa442a3",
+    "fireAt": 1782875523792,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363409160041485@g.us",
+    "leadUid": "d957c166-6db6-4417-b3cd-4eb8cf7eeb8f",
+    "fireAt": 1782978799207,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363426515881970@g.us",
+    "leadUid": "6eac1218-4056-49d4-9af5-802410348a4c",
+    "fireAt": 1783081276495,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363428975413778@g.us",
+    "leadUid": "bddcfc15-060d-4f93-a71e-9d3b00ab4e26",
+    "fireAt": 1783090265686,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363426632162671@g.us",
+    "leadUid": "ce6437b9-103d-452a-b4e7-f47a8467c6ec",
+    "fireAt": 1783137800596,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363408697666437@g.us",
+    "leadUid": "266e6652-6fea-4903-a7be-be014f5c50bb",
+    "fireAt": 1783371079667,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363411036797238@g.us",
+    "leadUid": "dd440a0b-657e-4350-85e5-5600c742e7f6",
+    "fireAt": 1783439000615,
+    "cancelled": true,
+    "fired": false,
+    "cancelReason": "guest replied"
+  },
+  {
+    "groupId": "120363409370463698@g.us",
+    "leadUid": "cde72c82-4b0c-4b0c-92cb-262d524780e3",
+    "fireAt": 1783465013762,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363409934989698@g.us",
+    "leadUid": "a052b54a-62ec-4257-89db-ba05bc6297b0",
+    "fireAt": 1783539819901,
+    "cancelled": false,
+    "fired": true
+  },
+  {
+    "groupId": "120363427888807384@g.us",
+    "leadUid": "429342c9-ae34-4b65-a3b2-917b223fc2a3",
+    "fireAt": 1783543659407,
+    "cancelled": false,
+    "fired": true
+  }
+]
