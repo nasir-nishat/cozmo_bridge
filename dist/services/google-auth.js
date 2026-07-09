@@ -6,8 +6,25 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const googleapis_1 = require("googleapis");
 const fs_1 = __importDefault(require("fs"));
 const path_1 = __importDefault(require("path"));
-const credentials = JSON.parse(fs_1.default.readFileSync(path_1.default.join(__dirname, '../config/google-credentials.json'), 'utf-8'));
-const { client_id, client_secret } = credentials.installed;
+const credentialsPath = path_1.default.join(__dirname, '../config/google-credentials.json');
+const tokenPath = path_1.default.join(__dirname, '../config/google-token.json');
+function readJsonIfExists(filePath) {
+    if (!fs_1.default.existsSync(filePath))
+        return null;
+    return JSON.parse(fs_1.default.readFileSync(filePath, 'utf-8'));
+}
+const credentials = readJsonIfExists(credentialsPath);
+const client_id = credentials?.installed?.client_id ?? '';
+const client_secret = credentials?.installed?.client_secret ?? '';
+if (!credentials) {
+    console.warn(`⚠️ Google credentials missing at ${credentialsPath} - Google Calendar/Sheets features will be unavailable`);
+}
 const oAuth2Client = new googleapis_1.google.auth.OAuth2(client_id, client_secret, 'http://localhost:3333');
-oAuth2Client.setCredentials(JSON.parse(fs_1.default.readFileSync(path_1.default.join(__dirname, '../config/google-token.json'), 'utf-8')));
+const token = readJsonIfExists(tokenPath);
+if (token) {
+    oAuth2Client.setCredentials(token);
+}
+else {
+    console.warn(`⚠️ Google token missing at ${tokenPath} - Google Calendar/Sheets features will be unavailable`);
+}
 exports.default = oAuth2Client;
