@@ -1,0 +1,503 @@
+﻿[2026-06-04 20:13:42.310] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-04 20:24:31.529] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-04 20:24:31.529] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC æœåŠ¡å·²åœ¨è¿è¡Œ
+[2026-06-04 20:25:23.063] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-04 20:25:23.063] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-04 20:25:23.064] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-05 13:48:32.662] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-05 13:48:32.663] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-05 13:48:32.666] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-05 13:49:33.334] [error] [WCF] [rpc_server.cpp::355::RpcServer::run_rpc_server] Unknown exception.
+[2026-06-05 13:53:16.957] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-05 13:53:16.957] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-05 13:53:16.961] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-05 13:54:15.401] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-05 13:54:15.401] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-05 13:54:15.403] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-05 17:29:41.605] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-05 17:29:41.605] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC æœåŠ¡å·²åœ¨è¿è¡Œ
+[2026-06-05 17:30:21.352] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-05 17:30:21.352] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-05 17:30:21.354] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-05 17:35:33.902] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-05 17:35:33.902] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC æœåŠ¡å·²åœ¨è¿è¡Œ
+[2026-06-05 17:36:28.995] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-05 17:36:28.995] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-05 17:36:28.997] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-05 17:40:50.370] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-05 17:40:50.370] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC æœåŠ¡å·²åœ¨è¿è¡Œ
+[2026-06-05 17:41:29.135] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-05 17:41:29.135] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-05 17:41:29.136] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-05 17:46:03.775] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-05 17:46:03.775] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC æœåŠ¡å·²åœ¨è¿è¡Œ
+[2026-06-05 17:46:40.442] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-05 17:46:40.442] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-05 17:46:40.443] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-05 17:50:03.036] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-05 17:50:03.036] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC æœåŠ¡å·²åœ¨è¿è¡Œ
+[2026-06-05 17:50:39.175] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-05 17:50:39.175] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-05 17:50:39.177] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-05 17:52:40.266] [error] [WCF] [database_executor.cpp::143::db::exec_db_query] SQL prepare failed for 'MicroMsg.db': error code 21
+[2026-06-05 17:54:51.431] [error] [WCF] [database_executor.cpp::143::db::exec_db_query] SQL prepare failed for 'MicroMsg.db': error code 21
+[2026-06-05 17:54:51.442] [error] [WCF] [database_executor.cpp::143::db::exec_db_query] SQL prepare failed for 'MicroMsg.db': error code 21
+[2026-06-05 17:54:51.452] [error] [WCF] [database_executor.cpp::143::db::exec_db_query] SQL prepare failed for 'MicroMsg.db': error code 21
+[2026-06-05 17:54:51.455] [error] [WCF] [database_executor.cpp::143::db::exec_db_query] SQL prepare failed for 'MicroMsg.db': error code 21
+[2026-06-05 17:55:06.447] [error] [WCF] [database_executor.cpp::143::db::exec_db_query] SQL prepare failed for 'MicroMsg.db': error code 21
+[2026-06-05 17:55:06.448] [error] [WCF] [database_executor.cpp::143::db::exec_db_query] SQL prepare failed for 'MicroMsg.db': error code 21
+[2026-06-05 17:55:17.821] [error] [WCF] [database_executor.cpp::143::db::exec_db_query] SQL prepare failed for 'MicroMsg.db': error code 21
+[2026-06-05 17:55:17.822] [error] [WCF] [database_executor.cpp::143::db::exec_db_query] SQL prepare failed for 'MicroMsg.db': error code 21
+[2026-06-05 18:49:14.502] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-05 18:49:14.502] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC æœåŠ¡å·²åœ¨è¿è¡Œ
+[2026-06-05 18:49:52.596] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-05 18:49:52.596] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-05 18:49:52.599] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-05 18:54:29.208] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-05 18:54:29.208] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC æœåŠ¡å·²åœ¨è¿è¡Œ
+[2026-06-05 18:55:02.438] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-05 18:55:02.438] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-05 18:55:02.440] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-07 13:51:21.027] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-07 13:51:21.028] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC æœåŠ¡å·²åœ¨è¿è¡Œ
+[2026-06-08 09:56:51.326] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-08 09:56:51.326] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-08 09:56:51.329] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-08 10:19:14.317] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-08 10:19:14.318] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC æœåŠ¡å·²åœ¨è¿è¡Œ
+[2026-06-08 10:20:59.507] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-08 10:20:59.507] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-08 10:20:59.509] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-08 10:23:20.550] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-08 10:23:20.550] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC æœåŠ¡å·²åœ¨è¿è¡Œ
+[2026-06-08 10:23:25.334] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-08 10:23:25.334] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-08 10:23:25.335] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-08 10:23:56.503] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-08 10:23:56.503] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-08 10:23:56.504] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-08 10:39:48.294] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-08 10:39:48.294] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-08 10:39:48.295] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-08 10:41:43.073] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-08 10:41:43.074] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC æœåŠ¡å·²åœ¨è¿è¡Œ
+[2026-06-08 10:43:28.844] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-08 10:43:28.845] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-08 10:43:28.846] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-08 10:45:48.791] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-08 10:45:48.791] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-08 10:45:48.792] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-08 10:51:08.706] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-08 10:51:08.706] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-08 10:51:08.707] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-08 11:08:29.932] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-08 11:08:29.932] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-08 11:08:29.934] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-08 11:35:41.936] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-08 11:35:41.936] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-08 11:35:41.938] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-08 14:31:22.253] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-08 14:31:22.253] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-08 14:31:22.255] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-08 15:09:58.104] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-08 15:09:58.104] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-08 15:09:58.105] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-08 18:13:22.928] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-08 18:13:22.928] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-08 18:13:22.929] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-08 18:20:58.203] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-08 18:20:58.203] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-08 18:20:58.204] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-09 10:23:19.997] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-09 10:23:19.997] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-09 10:23:20.012] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-09 13:51:25.451] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-09 13:51:25.451] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-09 13:51:25.454] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-09 14:51:32.988] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-09 14:51:32.988] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-09 14:51:32.990] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-09 16:44:55.302] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-09 16:44:55.302] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-09 16:44:55.304] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-09 16:53:59.505] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-09 16:53:59.505] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-09 16:53:59.507] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-09 18:22:27.100] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-09 18:22:27.100] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-09 18:22:27.101] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-09 18:49:43.305] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-09 18:49:43.305] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-09 18:49:43.307] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-10 14:04:25.628] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-10 14:04:25.628] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-10 14:04:25.630] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-10 14:17:57.454] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-10 14:17:57.454] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-10 14:17:57.467] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-10 16:53:23.846] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-10 16:53:23.846] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-10 16:53:23.849] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-11 16:13:27.745] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-11 16:13:27.746] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-11 16:13:27.749] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-11 17:01:49.719] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-11 17:01:49.719] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-11 17:01:49.720] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-11 17:13:19.743] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-11 17:13:19.743] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-11 17:13:19.745] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-11 17:13:24.635] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-11 17:13:24.635] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC æœåŠ¡å·²åœ¨è¿è¡Œ
+[2026-06-11 17:13:30.174] [error] [WCF] [rpc_server.cpp::333::RpcServer::run_rpc_server] cmdSock-nng_recv error: Object closed
+[2026-06-11 17:13:30.340] [info] [WCF] [rpc_server.cpp::122::RpcServer::stop] RPC æœåŠ¡å·²åœæ­¢
+[2026-06-11 17:13:30.340] [warning] [WCF] [rpc_server.cpp::100::RpcServer::stop] RPC æœåŠ¡æœªè¿è¡Œ
+[2026-06-11 17:15:16.324] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-11 17:15:16.325] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-11 17:15:16.326] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-11 17:21:05.337] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-11 17:21:05.337] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-11 17:21:05.339] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-11 17:36:19.091] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-11 17:36:19.091] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-11 17:36:19.094] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-11 18:24:59.924] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-11 18:24:59.925] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-11 18:24:59.927] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-12 12:07:04.362] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-12 12:07:04.362] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-12 12:07:04.364] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-12 12:08:05.459] [error] [WCF] [rpc_server.cpp::355::RpcServer::run_rpc_server] Unknown exception.
+[2026-06-12 14:55:29.398] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-12 14:55:29.398] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-12 14:55:29.400] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-12 19:26:22.237] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-12 19:26:22.237] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-12 19:26:22.239] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-12 19:50:10.561] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-12 19:50:10.561] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-12 19:50:10.564] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-14 20:18:41.933] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-14 20:18:41.936] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-14 20:18:41.954] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-15 09:56:29.961] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-15 09:56:29.961] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-15 09:56:29.963] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-15 10:42:15.942] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+[2026-06-15 10:42:15.942] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
+[2026-06-15 10:42:15.944] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-15 11:41:49.936] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-15 11:41:49.937] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-15 11:41:49.940] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-15 11:50:04.570] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-15 11:50:04.570] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-15 11:50:04.573] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-15 11:57:31.343] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-15 11:57:31.343] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC 服务已在运行
+[2026-06-15 12:00:07.955] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-15 12:00:07.955] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-15 12:00:07.957] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-15 13:19:32.241] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-15 13:19:32.241] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-15 13:19:32.243] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-15 13:34:39.291] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-15 13:34:39.291] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-15 13:34:39.292] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-15 13:54:53.248] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-15 13:54:53.248] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-15 13:54:53.249] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-15 15:09:08.219] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-15 15:09:08.219] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-15 15:09:08.220] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-15 15:11:53.544] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-15 15:11:53.544] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-15 15:11:53.545] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-15 15:43:41.401] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-15 15:43:41.401] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-15 15:43:41.403] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-15 15:49:47.106] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-15 15:49:47.106] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-15 15:49:47.108] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-15 17:29:38.875] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-15 17:29:38.875] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-15 17:29:38.876] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-16 17:04:53.915] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-16 17:04:53.915] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-16 17:04:53.916] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-16 17:13:39.988] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-16 17:13:39.988] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-16 17:13:39.989] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-16 17:22:10.787] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-16 17:22:10.787] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-16 17:22:10.788] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-16 17:26:19.979] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-16 17:26:19.979] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-16 17:26:19.980] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-16 17:31:52.480] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-16 17:31:52.480] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-16 17:31:52.481] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-16 17:38:37.607] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-16 17:38:37.607] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-16 17:38:37.609] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-16 19:13:30.590] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-16 19:13:30.590] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-16 19:13:30.591] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-16 19:31:57.527] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-16 19:31:57.527] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-16 19:31:57.528] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-16 19:48:27.378] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-16 19:48:27.378] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-16 19:48:27.380] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-16 19:53:44.013] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-16 19:53:44.013] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-16 19:53:44.015] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-17 15:55:36.770] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-17 15:55:36.770] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-17 15:55:36.772] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-17 18:38:36.930] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-17 18:38:36.930] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-17 18:38:36.933] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-17 18:43:16.760] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-17 18:43:16.760] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-17 18:43:16.762] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-17 18:58:26.730] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-17 18:58:26.730] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-17 18:58:26.731] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-18 10:54:54.777] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-18 10:54:54.777] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-18 10:54:54.779] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-18 14:02:21.693] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-18 14:02:21.693] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-18 14:02:21.694] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-18 15:21:53.625] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-18 15:21:53.625] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-18 15:21:53.627] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-18 15:57:29.872] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-18 15:57:29.872] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-18 15:57:29.873] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-18 16:03:24.381] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-18 16:03:24.381] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-18 16:03:24.384] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-18 16:04:25.462] [error] [WCF] [rpc_server.cpp::355::RpcServer::run_rpc_server] Unknown exception.
+[2026-06-18 17:58:59.129] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-18 17:58:59.130] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-18 17:58:59.132] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-18 18:53:18.392] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-18 18:53:18.393] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-18 18:53:18.395] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-22 16:06:40.730] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-22 16:06:40.730] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-22 16:06:40.732] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-22 16:07:41.829] [error] [WCF] [rpc_server.cpp::355::RpcServer::run_rpc_server] Unknown exception.
+[2026-06-23 10:44:58.240] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-23 10:44:58.240] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-23 10:44:58.242] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-23 18:43:27.556] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-23 18:43:27.556] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-23 18:43:27.559] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-23 19:12:09.242] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-23 19:12:09.242] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-23 19:12:09.243] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-24 10:57:30.173] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-24 10:57:30.173] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-24 10:57:30.176] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-24 11:34:26.128] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-24 11:34:26.129] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-24 11:34:26.130] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-24 16:14:23.753] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-24 16:14:23.753] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-24 16:14:23.754] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-24 16:22:50.622] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-24 16:22:50.622] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-24 16:22:50.623] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-24 16:31:29.248] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-24 16:31:29.248] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-24 16:31:29.249] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-24 16:36:24.905] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-24 16:36:24.906] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-24 16:36:24.907] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-24 16:48:50.997] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-24 16:48:50.998] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-24 16:48:50.999] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-24 17:24:23.852] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-24 17:24:23.853] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-24 17:24:23.854] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-24 17:32:12.876] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-24 17:32:12.876] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-24 17:32:12.878] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-24 18:00:03.816] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-24 18:00:03.816] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-24 18:00:03.817] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-24 18:14:44.831] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-24 18:14:44.831] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-24 18:14:44.832] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-24 18:37:07.122] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-24 18:37:07.122] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-24 18:37:07.123] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-24 18:47:43.187] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-24 18:47:43.187] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-24 18:47:43.188] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-24 18:55:59.435] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-24 18:55:59.435] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-24 18:55:59.436] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-25 14:02:43.695] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-25 14:02:43.695] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-25 14:02:43.696] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-25 18:56:23.992] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-25 18:56:23.992] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-25 18:56:23.993] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 10:54:08.917] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 10:54:08.917] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 10:54:08.919] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 10:54:10.515] [error] [WCF] [rpc_server.cpp::333::RpcServer::run_rpc_server] cmdSock-nng_recv error: Object closed
+[2026-06-26 10:54:10.519] [info] [WCF] [rpc_server.cpp::122::RpcServer::stop] RPC 服务已停止
+[2026-06-26 10:54:10.519] [warning] [WCF] [rpc_server.cpp::100::RpcServer::stop] RPC 服务未运行
+[2026-06-26 10:54:23.256] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 10:54:23.256] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 10:54:23.257] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 12:33:52.257] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 12:33:52.257] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 12:33:52.259] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 12:39:17.335] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 12:39:17.335] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 12:39:17.336] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 14:28:47.212] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 14:28:47.212] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 14:28:47.213] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 14:29:48.291] [error] [WCF] [rpc_server.cpp::355::RpcServer::run_rpc_server] Unknown exception.
+[2026-06-26 14:32:43.039] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 14:32:43.040] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 14:32:43.041] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 14:39:06.666] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 14:39:06.667] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 14:39:06.668] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 14:45:05.808] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 14:45:05.808] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 14:45:05.810] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 14:58:46.781] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 14:58:46.781] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 14:58:46.782] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 15:19:29.738] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 15:19:29.738] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 15:19:29.740] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 15:28:51.249] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 15:28:51.249] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 15:28:51.250] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 15:34:54.883] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 15:34:54.883] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 15:34:54.884] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 15:43:07.703] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 15:43:07.703] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 15:43:07.704] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 15:56:18.658] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 15:56:18.658] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 15:56:18.659] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 16:02:31.645] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 16:02:31.646] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 16:02:31.646] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 16:24:44.958] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 16:24:44.958] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 16:24:44.959] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 16:36:40.863] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 16:36:40.863] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 16:36:40.864] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 16:47:23.682] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 16:47:23.682] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 16:47:23.684] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 16:48:24.767] [error] [WCF] [rpc_server.cpp::355::RpcServer::run_rpc_server] Unknown exception.
+[2026-06-26 16:49:39.145] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 16:49:39.145] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 16:49:39.146] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 17:12:14.206] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 17:12:14.207] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 17:12:14.208] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 17:29:57.533] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 17:29:57.533] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 17:29:57.534] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 18:04:40.592] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 18:04:40.592] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 18:04:40.594] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-26 18:23:31.207] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-26 18:23:31.208] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-26 18:23:31.209] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-29 11:32:36.765] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-29 11:32:36.766] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-29 11:32:36.768] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-29 13:42:31.845] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-29 13:42:31.845] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-29 13:42:31.848] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-29 18:02:33.033] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-29 18:02:33.033] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-29 18:02:33.034] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-29 18:49:36.499] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-29 18:49:36.499] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC 服务已在运行
+[2026-06-29 18:51:52.144] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-29 18:51:52.144] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-29 18:51:52.146] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-29 18:51:55.037] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-29 18:51:55.037] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC 服务已在运行
+[2026-06-29 18:52:00.832] [error] [WCF] [rpc_server.cpp::333::RpcServer::run_rpc_server] cmdSock-nng_recv error: Object closed
+[2026-06-29 18:52:01.731] [info] [WCF] [rpc_server.cpp::122::RpcServer::stop] RPC 服务已停止
+[2026-06-29 18:52:01.731] [warning] [WCF] [rpc_server.cpp::100::RpcServer::stop] RPC 服务未运行
+[2026-06-29 18:55:11.469] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-29 18:55:11.469] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-29 18:55:11.470] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-29 18:55:15.014] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-29 18:55:15.014] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC 服务已在运行
+[2026-06-29 18:55:59.674] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-29 18:57:49.573] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-29 18:57:49.574] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-29 18:57:49.575] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-30 14:49:36.135] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-30 14:49:36.136] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-30 14:49:36.139] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-30 18:38:40.957] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-30 18:38:40.957] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-30 18:38:40.958] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-30 18:42:49.758] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-30 18:42:49.758] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-30 18:42:49.760] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-06-30 18:48:25.982] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-30 18:48:25.982] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC 服务已在运行
+[2026-06-30 18:50:56.701] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-06-30 18:50:56.702] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-06-30 18:50:56.703] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-07-01 13:36:10.943] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-07-01 13:36:10.943] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-07-01 13:36:10.945] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-07-01 16:18:23.456] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-07-01 16:18:23.456] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-07-01 16:18:23.458] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-07-01 16:33:33.807] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-07-01 16:33:33.807] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-07-01 16:33:33.809] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-07-01 17:06:20.168] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-07-01 17:06:20.168] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-07-01 17:06:20.169] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-07-08 12:10:37.369] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-07-08 12:10:37.369] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-07-08 12:10:37.371] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-07-08 15:40:13.956] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-07-08 15:40:13.956] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-07-08 15:40:13.957] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-07-08 15:41:15.073] [error] [WCF] [rpc_server.cpp::355::RpcServer::run_rpc_server] Unknown exception.
+[2026-07-08 15:43:33.932] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-07-08 15:43:33.932] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-07-08 15:43:33.933] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-07-08 15:44:21.051] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-07-08 15:44:21.051] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-07-08 15:44:21.052] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-07-08 15:51:46.507] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-07-08 15:51:46.507] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-07-08 15:51:46.508] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-07-08 16:52:05.924] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-07-08 16:52:05.924] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-07-08 16:52:05.926] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-07-08 17:07:24.711] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-07-08 17:07:24.711] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-07-08 17:07:24.714] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-07-08 22:52:40.866] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-07-08 22:52:40.866] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC 服务已在运行
+[2026-07-09 10:06:42.501] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-07-09 10:06:42.502] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-07-09 10:06:42.504] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086

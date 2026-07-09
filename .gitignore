@@ -1,10 +1,4 @@
 ﻿node_modules/
-wa_msgs/
-logs/
-*.mp4
-*.jpg
-*.jpeg
-*.webp
 *.tgz
 .env
 
