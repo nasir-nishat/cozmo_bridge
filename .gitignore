@@ -11,3 +11,5 @@ logs/
 src/config/google-credentials.json
 src/config/google-token.json
 src/config/
+
+src/config/
