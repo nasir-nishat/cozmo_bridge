@@ -2022,7 +2022,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+821085700168",
-    "updatedAt": "2026-07-09T06:15:22.608Z"
+    "updatedAt": "2026-07-09T13:39:21.122Z"
   },
   {
     "leadUid": "28918ae2-d88c-4bd3-88ea-46079d30e4bf",
@@ -2037,7 +2037,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+821066000454",
-    "updatedAt": "2026-07-09T06:15:21.261Z"
+    "updatedAt": "2026-07-09T13:39:19.615Z"
   },
   {
     "leadUid": "b14289f2-50ba-4262-be09-7548a646dbdb",
@@ -2187,7 +2187,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+18582151577",
-    "updatedAt": "2026-07-09T06:15:23.948Z"
+    "updatedAt": "2026-07-09T13:39:22.510Z"
   },
   {
     "leadUid": "9bcd0617-554e-42e2-80b5-ab0889409f4c",
@@ -2487,7 +2487,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+77773988007",
-    "updatedAt": "2026-07-07T06:00:13.129Z"
+    "updatedAt": "2026-07-09T10:25:45.219Z"
   },
   {
     "leadUid": "fca656a7-af0c-487e-b659-4051e5f9cc80",
@@ -2940,6 +2940,21 @@
     "updatedAt": "2026-05-25T07:11:19.547Z"
   },
   {
+    "leadUid": "e01180c9-cced-4c6f-8018-69986354433e",
+    "guestName": "可依",
+    "property": "SG_JOYHASLA",
+    "checkIn": "2026-08-09",
+    "checkOut": "2026-08-12",
+    "nationality": "",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "NEW",
+    "source": "INQUIRY",
+    "phone": "",
+    "updatedAt": "2026-07-09T11:06:24.362Z"
+  },
+  {
     "leadUid": "cde80392-3be1-4b4f-a566-548a2600cd66",
     "guestName": "Kit Ying Stephanie Ng",
     "property": "YT_FISH_BIRD",
@@ -2997,7 +3012,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+13107407535",
-    "updatedAt": "2026-07-09T06:15:19.188Z"
+    "updatedAt": "2026-07-09T13:39:17.178Z"
   },
   {
     "leadUid": "5599ca12-7b2b-4171-a636-daacb5e99c04",
@@ -3282,7 +3297,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+447874944051",
-    "updatedAt": "2026-07-09T06:15:25.067Z"
+    "updatedAt": "2026-07-09T13:39:23.715Z"
   },
   {
     "leadUid": "43ecdc76-9604-4ef1-bd10-ca0dbfd108fe",
@@ -3343,6 +3358,21 @@
     "source": "BOOKING",
     "phone": "+393473815067",
     "updatedAt": "2026-05-25T07:12:17.047Z"
+  },
+  {
+    "leadUid": "cf4a7045-bb31-4bcf-9db8-37a621c13bea",
+    "guestName": "Hsin-Wei Wang",
+    "property": "HTA_TEVA WELLNESS",
+    "checkIn": "2026-09-01",
+    "checkOut": "2026-09-06",
+    "nationality": "TW",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "BOOKED",
+    "source": "BOOKING",
+    "phone": "+8862035640799",
+    "updatedAt": "2026-07-09T15:08:33.981Z"
   },
   {
     "leadUid": "18c21b8c-5735-4934-b1d7-5e7c42b6eb91",
@@ -3507,7 +3537,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+639173519421",
-    "updatedAt": "2026-07-09T06:15:17.849Z"
+    "updatedAt": "2026-07-09T13:39:15.812Z"
   },
   {
     "leadUid": "9d692fdf-3c0b-4238-bb30-40a877fca564",
@@ -3537,7 +3567,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+447740874115",
-    "updatedAt": "2026-07-09T06:15:14.906Z"
+    "updatedAt": "2026-07-09T13:39:12.782Z"
   },
   {
     "leadUid": "4714100b-fc7b-4817-a0b0-8a57fbc6f959",
@@ -3777,7 +3807,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+15122816936",
-    "updatedAt": "2026-07-09T06:15:15.610Z"
+    "updatedAt": "2026-07-09T13:39:13.489Z"
   },
   {
     "leadUid": "9e4c486f-ab31-4341-9a90-1b5a064dae65",
