@@ -313,6 +313,11 @@
       "sender": "Ricky, Tour Host",
       "text": "[네이버지도]\nCOZE Jeju Island\nhttps://naver.me/FNtz68xJ",
       "ts": 1783921245794
+    },
+    {
+      "sender": "Ricky, Tour Host",
+      "text": "[네이버지도]\n생활맥주 명동점\n서울 중구 명동7길 21 제1층 제116\nhttps://naver.me/GlRZFw1A",
+      "ts": 1783931803209
     }
   ],
   "kakao:4973436371878553": [
@@ -606,6 +611,16 @@
       "sender": "Elisha Li",
       "text": "Ok thank you",
       "ts": 1783925078093
+    },
+    {
+      "sender": "COZE BS GUEST",
+      "text": "Please and thank you.",
+      "ts": 1783931706896
+    },
+    {
+      "sender": "COZE_Jin",
+      "text": "Ok I order now",
+      "ts": 1783931825708
     }
   ],
   "kakao:471998394909214": [
