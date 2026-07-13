@@ -169,6 +169,26 @@
       "sender": "강해지리",
       "text": "그냥 이 화면 상단에 필독!으로 시작하는게 기본적으로는 떠있",
       "ts": 1783919435288
+    },
+    {
+      "sender": "Unknown",
+      "text": "kakao",
+      "ts": 1783924265435
+    },
+    {
+      "sender": "🟢 Mongeonbot",
+      "text": "kakao",
+      "ts": 1783924267060
+    },
+    {
+      "sender": "Unknown",
+      "text": "{\"feedType\":14,\"logId\":3883816989022904321,\"hidden\":true}",
+      "ts": 1783924267780
+    },
+    {
+      "sender": "Unknown",
+      "text": "{\"feedType\":2,\"member\":{\"userId\":7354183716688623130,\"nickName\":\"얼굴 부비는 라이언\"}}",
+      "ts": 1783925444895
     }
   ],
   "120363423605030782@g.us": [
@@ -541,6 +561,51 @@
       "sender": "Elisha Li",
       "text": "Thank you. Can you let us know if we can pay USD cash tomorrow to settle services?",
       "ts": 1783922318091
+    },
+    {
+      "sender": "COZE_Jin",
+      "text": "I will total up all the expenses for the airport van and food delivery and update you this evening. \n\nI will also provide the final amount converted into US dollars",
+      "ts": 1783922795045
+    },
+    {
+      "sender": "Elisha Li",
+      "text": "Thanks. To make things easier, we will pay in KRW",
+      "ts": 1783923278554
+    },
+    {
+      "sender": "Elisha Li",
+      "text": "We plan to order breakfast tomorrow morning.",
+      "ts": 1783923315887
+    },
+    {
+      "sender": "COZE_Jin",
+      "text": "I'll add tomorrow's breakfast costs and update the total balance for you tomorrow",
+      "ts": 1783923411191
+    },
+    {
+      "sender": "Elisha Li",
+      "text": "Thank you so much",
+      "ts": 1783924367828
+    },
+    {
+      "sender": "Elisha Li",
+      "text": "Can we use soap in the jacuzzi?",
+      "ts": 1783924375013
+    },
+    {
+      "sender": "COZE_CYRUS",
+      "text": "Yes, you can use soap or body wash in the jacuzzi 😊 Please be careful when getting in and out, as the surface may become slippery.",
+      "ts": 1783924736556
+    },
+    {
+      "sender": "COZE_CYRUS",
+      "text": "Also, please use only a small amount, as too much soap may make the bathtub surface very slippery 😊",
+      "ts": 1783924858370
+    },
+    {
+      "sender": "Elisha Li",
+      "text": "Ok thank you",
+      "ts": 1783925078093
     }
   ],
   "kakao:471998394909214": [
