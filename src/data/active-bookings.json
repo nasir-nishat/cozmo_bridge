@@ -2100,6 +2100,21 @@
     "updatedAt": "2026-06-21T10:00:55.614Z"
   },
   {
+    "leadUid": "18f07ec3-7779-41b0-bce9-b377900a0756",
+    "guestName": "Mohammed Khan",
+    "property": "HTA_TEVA WELLNESS",
+    "checkIn": "2026-07-13",
+    "checkOut": "2026-07-17",
+    "nationality": "GB",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "BOOKED",
+    "source": "BOOKING",
+    "phone": "+447949918193",
+    "updatedAt": "2026-07-13T03:25:46.322Z"
+  },
+  {
     "leadUid": "498a1a7a-2d78-4d08-bce8-76451fde6c95",
     "guestName": "Stanley Young",
     "property": "BS_JOYHASLA",
@@ -3549,10 +3564,10 @@
     "adults": 0,
     "children": 0,
     "infants": 0,
-    "status": "NEW",
+    "status": "CLOSED",
     "source": "INQUIRY",
     "phone": "",
-    "updatedAt": "2026-07-12T03:24:07.102Z"
+    "updatedAt": "2026-07-13T03:23:53.267Z"
   },
   {
     "leadUid": "5c239fbf-996e-46de-87de-a0ebec698d78",

@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "leadUid": "18f07ec3-7779-41b0-bce9-b377900a0756",
+    "propertyUid": "7092db94-a92b-4164-b7bd-bdd2036cd3c1",
+    "guestName": "Mohammed Khan",
+    "phone": "+447949918193",
+    "property": "HTA_TEVA WELLNESS",
+    "checkIn": "2026-07-13T15:00:00",
+    "checkOut": "2026-07-17T11:00:00",
+    "nationality": "GB",
+    "leadStatus": "BOOKED",
+    "leadType": "BOOKING",
+    "groupName": "COZE HTA 13thJul Mohammed Khan 4A1K",
+    "onWhatsApp": true,
+    "fireAt": "2026-07-13T03:55:49.643Z",
+    "createdAt": "2026-07-13T03:25:49.643Z"
+  }
+]
