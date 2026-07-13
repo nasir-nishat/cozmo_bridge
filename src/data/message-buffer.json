@@ -262,6 +262,81 @@
       "sender": "unknown",
       "text": "Breakfast delivery for tomorrow\nThanks",
       "ts": 1783902735801
+    },
+    {
+      "sender": "unknown",
+      "text": "Hello, would you please help call a van-taxi for us?",
+      "ts": 1783910662061
+    },
+    {
+      "sender": "unknown",
+      "text": "[NAVER Maps]\n경복궁\n서울 종로구 세종로 1-1\nhttps://naver.me/G0pEgf6P",
+      "ts": 1783910671090
+    },
+    {
+      "sender": "unknown",
+      "text": "This is where we’re heading to.",
+      "ts": 1783910688007
+    },
+    {
+      "sender": "COZE JIN",
+      "text": "How many people will be traveling?",
+      "ts": 1783910733563
+    },
+    {
+      "sender": "unknown",
+      "text": "6 people",
+      "ts": 1783910840019
+    },
+    {
+      "sender": "COZE JIN",
+      "text": "It’s difficult to find a 6-passenger van, so I’ll call two regular taxis instead. It would be best if you could split into two groups of three.",
+      "ts": 1783911029821
+    },
+    {
+      "sender": "unknown",
+      "text": "Ok",
+      "ts": 1783911095829
+    },
+    {
+      "sender": "COZE JIN",
+      "text": "Are you ready to go now?",
+      "ts": 1783911139184
+    },
+    {
+      "sender": "unknown",
+      "text": "Yes, ready to go",
+      "ts": 1783911160665
+    },
+    {
+      "sender": "COZE JIN",
+      "text": "1. Plate number 1007/2min",
+      "ts": 1783911201463
+    },
+    {
+      "sender": "unknown",
+      "text": "Ok",
+      "ts": 1783911230539
+    },
+    {
+      "sender": "COZE JIN",
+      "text": "2748/soon",
+      "ts": 1783911265021
+    },
+    {
+      "sender": "COZE JIN",
+      "text": "You can wait in front of seven eleven",
+      "ts": 1783911305992
+    },
+    {
+      "sender": "unknown",
+      "text": "We already got into the taxi, thanks!",
+      "ts": 1783911402979
+    },
+    {
+      "sender": "COZE JIN",
+      "text": "You can pay the driver directly with cash or a credit card",
+      "ts": 1783911430437
     }
   ],
   "kakao:473752629388972": [
@@ -391,6 +466,21 @@
       "sender": "COZE_Jin",
       "text": "I'll turn off the 1st floor remotely. \nIt looks like the heater control panel on the wall down there was accidentally pressed and turned on. \n\nI'll turn it off remotely.",
       "ts": 1783910279341
+    },
+    {
+      "sender": "Fred",
+      "text": "Thanks",
+      "ts": 1783910383425
+    },
+    {
+      "sender": "Fred",
+      "text": "What is the pin for the key box?",
+      "ts": 1783912119265
+    },
+    {
+      "sender": "COZE_Jin",
+      "text": "0805",
+      "ts": 1783912135571
     }
   ],
   "kakao:471998394909214": [
@@ -520,6 +610,16 @@
       "sender": "COZE_CYRUS",
       "text": "Early check-in is available tomorrow. Please let us know what time your mother will arrive at the accommodation, and we’ll be there to meet her and assist her with check-in. 😊",
       "ts": 1783909855808
+    },
+    {
+      "sender": "COZE_CYRUS",
+      "text": "I spoke with your mother, and she plans to arrive tomorrow at around 11:00 AM. If she comes between 11:00 and 11:30 AM, I’ll be waiting at the accommodation to help her check in and explain everything slowly and carefully, step by step. 😊",
+      "ts": 1783910416590
+    },
+    {
+      "sender": "Jenny Lee",
+      "text": "Thank you thank you!!!!",
+      "ts": 1783911315807
     }
   ],
   "kakao:301321483004194": [
@@ -532,6 +632,18 @@
       "sender": "이규진",
       "text": "26년 7월14일 화요일 11AM\n\nBS -> 인천\n\n성인5 소아5/ 점보1 일반1 / 20만원 / 후불",
       "ts": 1783909408172
+    }
+  ],
+  "120363410279865987@g.us": [
+    {
+      "sender": "COZE_Gaya",
+      "text": "Dear @151432628060212 @44513577975967 @68629651554531 \n\n\n\nJust a friendly nudge from your COZE crew—our records show the payment for your upcoming stay was due a little while ago 🔔. To keep your room happily reserved and ready, could you please settle the balance soon?\n\n\n\nOnce that’s done, you’ll be all set to breeze through check-in 🏨🎉. If you have any questions (or need a different payment method), just hit reply and I’ll take care of you 💌.\n\n\n\nCan’t wait to welcome you!\n\n\n\nWarm regards and big thanks,\n\nGaya, Guest Care Team of COZE Hospitality 3.0",
+      "ts": 1783912158589
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "You can either wire USD to our bank account in US if the credit card does matter! So please reach us ASAP 😃",
+      "ts": 1783912219562
     }
   ]
 }
