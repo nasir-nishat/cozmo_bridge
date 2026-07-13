@@ -2,447 +2,536 @@
   "kakao:18294946740114616": [
     {
       "sender": "Unknown",
-      "text": "{\"feedType\":4,\"members\":[{\"userId\":5826283020012517948,\"nickName\":\"피스메이커 프로도\"}]}",
-      "ts": 1783612089467
+      "text": "{\"feedType\":4,\"members\":[{\"userId\":6685199324733292330,\"nickName\":\"한상진\"}]}",
+      "ts": 1783864909156
     },
     {
       "sender": "Unknown",
       "text": "공지사항을 읽어주세요",
-      "ts": 1783612089471
-    },
-    {
-      "sender": "방장봇",
-      "text": "공지사항을 읽어주세요",
-      "ts": 1783612090173
+      "ts": 1783864909158
     },
     {
       "sender": "Unknown",
-      "text": "{\"feedType\":2,\"member\":{\"userId\":5826283020012517948,\"nickName\":\"피스메이커 프로도\"}}",
-      "ts": 1783612126566
+      "text": "출근",
+      "ts": 1783864927829
     },
     {
       "sender": "Unknown",
-      "text": "{\"feedType\":2,\"member\":{\"userId\":5823924791156844922,\"nickName\":\"축하하는 춘식이\"}}",
-      "ts": 1783617920061
+      "text": "{\"feedType\":2,\"member\":{\"userId\":6685199324733292330,\"nickName\":\"한상진\"}}",
+      "ts": 1783864960823
     },
     {
       "sender": "Unknown",
-      "text": "{\"feedType\":4,\"members\":[{\"userId\":5084366322217025598,\"nickName\":\"박스에 들어간 춘식이\"}]}",
-      "ts": 1783652974461
+      "text": "{\"feedType\":4,\"members\":[{\"userId\":6532835570830074739,\"nickName\":\"우는 라이언\"}]}",
+      "ts": 1783866653456
     },
     {
       "sender": "Unknown",
       "text": "공지사항을 읽어주세요",
-      "ts": 1783652974464
-    },
-    {
-      "sender": "방장봇",
-      "text": "공지사항을 읽어주세요",
-      "ts": 1783652975231
+      "ts": 1783866653458
     },
     {
       "sender": "Unknown",
-      "text": "안녕하십니까!  \n얼마전부터 메신저봇이 동작하지 않는데 카톡업데이트 이슈가 있을까요?\n아니면 한동안 사용하지 않아서 생긴 제 문제 인지 여쭤봅니다.",
-      "ts": 1783653160511
+      "text": "{\"feedType\":4,\"members\":[{\"userId\":6079476234351364852,\"nickName\":\"𝐀𝐏𝐄𝐗 터드 ✨ ⚚ ᵗᵘʳᵈ\"}]}",
+      "ts": 1783897946393
     },
     {
-      "sender": "박스에 들어간 춘식이",
-      "text": "안녕하십니까!  \n얼마전부터 메신저봇이 동작하지 않는데 카톡업데이트 이슈가 있을까요?\n아니면 한동안 사용하지 않아서 생긴 제 문제 인지 여쭤봅니다.",
-      "ts": 1783653161402
+      "sender": "Unknown",
+      "text": "공지사항을 읽어주세요",
+      "ts": 1783897946394
+    },
+    {
+      "sender": "Unknown",
+      "text": "{\"feedType\":2,\"member\":{\"userId\":8505017973753702874,\"nickName\":\"KTK클랜장『KOREA』👑\"}}",
+      "ts": 1783897958940
+    },
+    {
+      "sender": "Unknown",
+      "text": "여기 돈 거래도 되나",
+      "ts": 1783898020794
+    },
+    {
+      "sender": "Unknown",
+      "text": "공지사항을 읽어주세요",
+      "ts": 1783898303464
+    },
+    {
+      "sender": "Unknown",
+      "text": "진짜",
+      "ts": 1783899050015
+    },
+    {
+      "sender": "Unknown",
+      "text": "ㅏ",
+      "ts": 1783899050016
+    },
+    {
+      "sender": "Unknown",
+      "text": "~~ 되나",
+      "ts": 1783899054391
+    },
+    {
+      "sender": "Unknown",
+      "text": "찐따특",
+      "ts": 1783899058761
+    },
+    {
+      "sender": "Unknown",
+      "text": "말투",
+      "ts": 1783899061085
+    },
+    {
+      "sender": "Unknown",
+      "text": "?",
+      "ts": 1783899075697
+    },
+    {
+      "sender": "Unknown",
+      "text": "넥슨감?",
+      "ts": 1783899379485
+    },
+    {
+      "sender": "Unknown",
+      "text": "스팀감?",
+      "ts": 1783899383847
+    },
+    {
+      "sender": "Unknown",
+      "text": "넥슨보내고",
+      "ts": 1783899394627
+    },
+    {
+      "sender": "Unknown",
+      "text": "스팀감",
+      "ts": 1783899396949
+    },
+    {
+      "sender": "Unknown",
+      "text": "스팀보내고 넥슨감",
+      "ts": 1783899430202
+    },
+    {
+      "sender": "Unknown",
+      "text": "(이모티콘)",
+      "ts": 1783899447094
+    },
+    {
+      "sender": "Unknown",
+      "text": "걍",
+      "ts": 1783899856519
+    },
+    {
+      "sender": "Unknown",
+      "text": "접음",
+      "ts": 1783899859125
+    },
+    {
+      "sender": "Unknown",
+      "text": "우문현답",
+      "ts": 1783900313786
+    },
+    {
+      "sender": "Unknown",
+      "text": "아니요.",
+      "ts": 1783900361068
+    },
+    {
+      "sender": "Unknown",
+      "text": "{\"feedType\":2,\"member\":{\"userId\":7992611235809283320,\"nickName\":\"닉네임\"}}",
+      "ts": 1783906268780
     }
   ],
-  "kakao:473751328666188": [
+  "120363423605030782@g.us": [
     {
-      "sender": "차 범 걸",
-      "text": "감사합니다.\n1. 차 2대로 갑니다.\n주차는 1대라고 하셔서, 1대는 주변에 주차예정입니다.\n2. 체크인 4~5시에 일행 1명이 먼저 할것 같습니다.",
-      "ts": 1783606095735
+      "sender": "Anh",
+      "text": "Thru immigration",
+      "ts": 1783895205503
     },
     {
-      "sender": "차 범 걸",
-      "text": "감사합니다.\n1. 차 2대로 갑니다.\n주차는 1대라고 하셔서, 1대는 주변에 주차예정입니다.\n2. 체크인 4~5시에 일행 1명이 먼저 할것 같습니다.",
-      "ts": 1783606096566
+      "sender": "COZE_CYRUS",
+      "text": "Hello! 🇰🇷 @42490296008848 \n\nMy name is Cyrus Noh, and I’ll be your check-in host today.\n\nI’m here to help make your arrival smooth and comfortable, and to guide you through anything you may need for your check-in. 🏠✨\n\nCOZE Hospitality 3.0",
+      "ts": 1783895211797
     },
     {
-      "sender": "GAYA | GUEST CARE",
-      "text": "차량이 어떻게 되세요?",
-      "ts": 1783608339469
+      "sender": "COZE_CYRUS",
+      "text": "When you go out to arrival hall, please find out your name board.",
+      "ts": 1783895251563
     },
     {
-      "sender": "GAYA | GUEST CARE",
-      "text": "차량이 어떻게 되세요?",
-      "ts": 1783608340020
+      "sender": "COZE_CYRUS",
+      "text": "I’ll be waiting at the accommodation to help you with check-in. Please meet the driver safely, and I’ll see you shortly 😊",
+      "ts": 1783895299318
     },
     {
-      "sender": "GAYA | GUEST CARE",
-      "text": "차량 종류",
-      "ts": 1783608343834
+      "sender": "Anh",
+      "text": "We are at E",
+      "ts": 1783895380786
     },
     {
-      "sender": "GAYA | GUEST CARE",
-      "text": "차량 종류",
-      "ts": 1783608344639
+      "sender": "Anh",
+      "text": "Exit",
+      "ts": 1783895384173
     },
     {
-      "sender": "차 범 걸",
-      "text": "GV80, G70 or 아반데가 될것 같습니다.",
-      "ts": 1783609134798
+      "sender": "Anh",
+      "text": "Where are u?",
+      "ts": 1783895559775
     },
     {
-      "sender": "차 범 걸",
-      "text": "GV80, G70 or 아반데가 될것 같습니다.",
-      "ts": 1783609135027
-    }
-  ],
-  "120363409270801116@g.us": [
-    {
-      "sender": "Ricky, Tour Host",
-      "text": "Please take a picture of the nearby household and send it to me. The address you sent is Street",
-      "ts": 1783605695798
-    },
-    {
-      "sender": "Ricky, Tour Host",
-      "text": "For example, restaurants",
-      "ts": 1783605715818
-    },
-    {
-      "sender": "Ricky, Tour Host",
-      "text": "Please wait at With Coffee plz",
-      "ts": 1783605861055
-    },
-    {
-      "sender": "Lai",
-      "text": "Ok",
-      "ts": 1783605883238
-    },
-    {
-      "sender": "Ricky, Tour Host",
-      "text": "1700 / van taxi/13min",
-      "ts": 1783606124184
-    },
-    {
-      "sender": "Ricky, Tour Host",
-      "text": "I just spoke with the driver. He is expected to arrive at 11:25 AM.\n\nPlease pay the fare directly to the driver. Once you're in the taxi, could you send us a quick message? Thank you! 😊\n\nRicky, Guest Care Team of COZE Hospitality 3.0",
-      "ts": 1783606216458
-    },
-    {
-      "sender": "Ricky, Tour Host",
-      "text": "number is 70자1700",
-      "ts": 1783606243901
-    },
-    {
-      "sender": "Lai",
-      "text": "👍",
-      "ts": 1783606282413
-    },
-    {
-      "sender": "Ricky, Tour Host",
-      "text": "It's currently a busy time for taxis, so it took a little longer than usual to find one.\n\nWe appreciate your patience, and it should arrive soon. Thank you for waiting! 😊",
-      "ts": 1783606284921
-    },
-    {
-      "sender": "Ricky, Tour Host",
+      "sender": "AirportVan",
       "text": "5min",
-      "ts": 1783606685580
+      "ts": 1783895571599
     },
     {
-      "sender": "Ricky, Tour Host",
-      "text": "Arrived",
-      "ts": 1783606860255
+      "sender": "Anh",
+      "text": "Ok no problem",
+      "ts": 1783895577857
     },
     {
-      "sender": "Lai",
-      "text": "Yes we just got in",
-      "ts": 1783606902648
+      "sender": "COZE_CYRUS",
+      "text": "You came out much faster than expected 😊 The driver is parking now and will be with you shortly. Please wait just a moment.",
+      "ts": 1783895608603
     },
     {
-      "sender": "Ricky, Tour Host",
-      "text": "Good!!!",
-      "ts": 1783606905435
+      "sender": "Anh",
+      "text": "It’s ok. We can wait",
+      "ts": 1783895659704
     },
     {
-      "sender": "Lai",
-      "text": "Thank you very much for your help",
-      "ts": 1783606996670
+      "sender": "AirportVan",
+      "text": "!출발합니다",
+      "ts": 1783896095553
     },
     {
-      "sender": "Ricky, Tour Host",
-      "text": "I'm glad you were able to catch a taxi safely! 😊\n\nJust a quick heads-up—heavy rain is expected tomorrow, so please bring an umbrella and take care. Have a wonderful time, and stay safe!\n\nRicky, Guest Care Team of COZE Hospitality 3.0",
-      "ts": 1783607117530
+      "sender": "COZE_CYRUS",
+      "text": "Check-in complete ✅\n\nIf you need anything, just message us here — the COZE team will help you. 😊",
+      "ts": 1783903409865
     },
     {
-      "sender": "Dave",
-      "text": "Many thanks, Ricky 👍🏼",
-      "ts": 1783607682867
-    },
-    {
-      "sender": "Ricky, Tour Host",
-      "text": "Any time!!!!",
-      "ts": 1783607696179
-    }
-  ],
-  "120363429055836995@g.us": [
-    {
-      "sender": "Christoph Gebhard",
-      "text": "I just leave it there, right?",
-      "ts": 1783630644420
-    },
-    {
-      "sender": "COZE_Gaya",
-      "text": "@91272551370961 did you smoothly move to airport? 🤔",
-      "ts": 1783648447110
-    },
-    {
-      "sender": "COZE_Gaya",
-      "text": "even not efforless",
-      "ts": 1783648459254
-    },
-    {
-      "sender": "Tobias Wagner",
-      "text": "Yes, thank you very much. We had a great time.",
-      "ts": 1783648526053
-    },
-    {
-      "sender": "Christoph Gebhard",
-      "text": "Everything was fine. Transport 👍",
-      "ts": 1783649188360
-    },
-    {
-      "sender": "COZE_Gaya",
-      "text": "I wish your flight back comfortable!!",
-      "ts": 1783650658381
+      "sender": "Anh",
+      "text": "Thank you so much",
+      "ts": 1783903727096
     }
   ],
   "120363422965145348@g.us": [
     {
+      "sender": "LK",
+      "text": "Good morning - are there any dressing requirements for the temples?",
+      "ts": 1783897877624
+    },
+    {
+      "sender": "Ricky, Tour Host",
+      "text": "No, there's no dress code at all. Just wear whatever you're comfortable in. 😊\n\nIt's going to be quite hot today, so I highly recommend wearing a hat and bringing some water to stay cool. See you soon!\n\nRicky, Guest Care Team of COZE Hospitality 3.0",
+      "ts": 1783900762771
+    },
+    {
+      "sender": "LK",
+      "text": "Ok thank you!",
+      "ts": 1783900798673
+    },
+    {
+      "sender": "Ricky, Tour Host",
+      "text": "-Gilsangsa Temple (special place)\n\nGilsangsa Temple is a beautiful temple located in Seongbuk-gu, Seoul, where visitors can find peace of mind in a quiet and tranquil atmosphere. Originally a luxurious restaurant, it was transformed into a temple when Kim Young-han, a devoted Buddhist, donated it to the monk Beopjeong. Harmonizing with nature, the temple features scenic walking paths and traditional architecture, offering visitors a place for meditation and relaxation.",
+      "ts": 1783900982919
+    },
+    {
+      "sender": "Ricky, Tour Host",
+      "text": "What would you like to have for lunch?\n\nIn Korea, we have a saying: \"Fight heat with heat.\" During the hot summer, many Koreans enjoy Samgyetang (Korean ginseng chicken soup) because it's considered a nourishing meal that helps restore your energy and keep you healthy.\n\nAfter visiting Gyeongbokgung Palace, we usually head to a famous Samgyetang restaurant nearby. I highly recommend trying it! It's so well known that it has been featured in the Michelin Guide, and it's one of Seoul's most popular places for this traditional dish.\n\nRicky, Guest Care Team of COZE Hospitality 3.0",
+      "ts": 1783901158393
+    },
+    {
       "sender": "Julia Halualani",
-      "text": "Thank you for breakfast! The fruit was great! What do we do with the delivery container?",
-      "ts": 1783640805409
+      "text": "Great! Thank you!",
+      "ts": 1783902664237
+    },
+    {
+      "sender": "Ricky, Tour Host",
+      "text": "Hello! 😊\n\nthe bus have already arrived, and I’m here waiting as well.\n\nPlease take your time and arrive by 10:00 AM, then simply board the bus when you get here.\n\nOne important reminder: Please make sure to bring your passport, as you will need it for today's trip.\n\nSee you soon!\n\nRicky, Guest Care Team of COZE Hospitality 3.0",
+      "ts": 1783903472082
+    }
+  ],
+  "kakao:4973436371878553": [
+    {
+      "sender": "ChatGPT for Kakao",
+      "text": "(광고)내 사진이 키링이라면?✨",
+      "ts": 1783901336489
+    }
+  ],
+  "line:C38a1632b3aa395d3ca4a6677c1a41a6c": [
+    {
+      "sender": "unknown",
+      "text": "Breakfast delivery for tomorrow\nThanks",
+      "ts": 1783902735801
+    }
+  ],
+  "kakao:473752629388972": [
+    {
+      "sender": "COZE _ Jin",
+      "text": "아직구청에데이터가 안넘어와서 목요일정도 자진납부하도록 하겠습니다",
+      "ts": 1783903182354
+    }
+  ],
+  "120363427146984063@g.us": [
+    {
+      "sender": "COZE BS GUEST",
+      "text": "Hi, please place bagel order:",
+      "ts": 1783904096449
+    },
+    {
+      "sender": "COZE BS GUEST",
+      "text": "Isaac toast:",
+      "ts": 1783904309173
     },
     {
       "sender": "COZE_Jin",
-      "text": "Please just leave it by the door. We'll take care of it.",
-      "ts": 1783640953616
+      "text": "Okay",
+      "ts": 1783904311789
     },
     {
-      "sender": "Julia Halualani",
-      "text": "Thank you",
-      "ts": 1783640981318
+      "sender": "COZE BS GUEST",
+      "text": "Please. And thank you.",
+      "ts": 1783904428819
     },
     {
-      "sender": "Julia Halualani",
-      "text": "Where do you recommend buying a Sim card to use in an iPhone?",
-      "ts": 1783648273038
+      "sender": "COZE_Jin",
+      "text": "ETA 10:34~49",
+      "ts": 1783904732330
     },
     {
-      "sender": "COZE_Gaya",
-      "text": "*COZE eSIM 10% OFF 📱✨*\n\nLand in Korea, go online instantly!\n\nNo airport lines, no SIM-card hunting, no recharge stress.\nJust set up your eSIM before arrival and stay connected the moment you land 😊\n\nApply & pay easily through the Google Form below.\n\n🔗 https://docs.google.com/forms/d/e/1FAIpQLSdXQoDPivSiUw0Ryvk8nJFaUOAwJZdZak69BYErkJHkSSCz_A/viewform?pli=1⁠�\n\nGaya, Guest Care Team of COZE Hospitality 3.0",
-      "ts": 1783648357382
+      "sender": "COZE_Jin",
+      "text": "ETA 10:44~59",
+      "ts": 1783905032997
     },
     {
-      "sender": "Jeff M",
-      "text": "Filled out the form. What is the next step to setting up the esim on the phone?",
-      "ts": 1783649212423
+      "sender": "Deborah",
+      "text": "great, thanks.",
+      "ts": 1783905064783
     },
     {
-      "sender": "COZE_Gaya",
-      "text": "They will send you the email with instruction!",
-      "ts": 1783649287608
+      "sender": "COZE_Jin",
+      "text": "/exp jn 72300 Delivery food",
+      "ts": 1783905123471
     },
     {
-      "sender": "COZE_Gaya",
-      "text": "please check your email for this :)",
-      "ts": 1783649298636
+      "sender": "Elisha Li",
+      "text": "Hi is there a service for using your concierge services?",
+      "ts": 1783905841875
     },
     {
-      "sender": "Jeff M",
-      "text": "Thank you",
-      "ts": 1783649309420
+      "sender": "Deborah",
+      "text": "we also will need airport transportation tomorrow at check out time 11am..",
+      "ts": 1783906153074
     },
     {
-      "sender": "Jeff M",
-      "text": "About how long does it usually take to go through?",
-      "ts": 1783649564469
+      "sender": "Deborah",
+      "text": "there are 5 adults and 5 kids with all of our luggage/bags..",
+      "ts": 1783906184955
     },
     {
-      "sender": "COZE_Gaya",
-      "text": "they will send you the feedback within a hour mostly",
-      "ts": 1783650348036
+      "sender": "COZE_Jin",
+      "text": "There are no extra fees. We only charge the actual cost, with no service fee added.😀",
+      "ts": 1783906210059
     },
     {
-      "sender": "Jeff M",
-      "text": "Perfect, thank you",
-      "ts": 1783650397512
+      "sender": "COZE_Jin",
+      "text": "Sure, We will book one 7-seater van and one 4-seater van for you. That's two vans in total. \n\nThe total cost is 220,000 won.",
+      "ts": 1783906562188
+    },
+    {
+      "sender": "COZE_Jin",
+      "text": "Toast delivered",
+      "ts": 1783906590707
+    },
+    {
+      "sender": "COZE_Jin",
+      "text": "TYou're going to Incheon Airport, correct?",
+      "ts": 1783906679586
+    },
+    {
+      "sender": "Deborah",
+      "text": "yes, we got the toast . thank you.",
+      "ts": 1783906716242
+    },
+    {
+      "sender": "Deborah",
+      "text": "now waiting for bagels..",
+      "ts": 1783906723405
+    },
+    {
+      "sender": "Jen R",
+      "text": "Yes, Incheon airport",
+      "ts": 1783906822445
+    },
+    {
+      "sender": "COZE_Jin",
+      "text": "Bagle delivered",
+      "ts": 1783906883501
+    },
+    {
+      "sender": "Deborah",
+      "text": "yes, incheon airport..",
+      "ts": 1783906929745
+    },
+    {
+      "sender": "COZE_Jin",
+      "text": "Then, should I book the two vans for tomorrow 11AM?",
+      "ts": 1783907154106
+    },
+    {
+      "sender": "Deborah",
+      "text": "yes, please book it.",
+      "ts": 1783908162007
+    },
+    {
+      "sender": "Fred",
+      "text": "Is there a way to turn the floor heating off?",
+      "ts": 1783910118740
+    },
+    {
+      "sender": "COZE_Jin",
+      "text": "I'll turn off the 1st floor remotely. \nIt looks like the heater control panel on the wall down there was accidentally pressed and turned on. \n\nI'll turn it off remotely.",
+      "ts": 1783910279341
     }
   ],
-  "120363426846640888@g.us": [
+  "kakao:471998394909214": [
     {
-      "sender": "Tom",
-      "text": "Thanks Cyrus.",
-      "ts": 1783642896496
+      "sender": "COZE _ Jin",
+      "text": "안녕하세요 @신지환 님\n오늘 오후 2시부터 중간청소 시작하겠습니다.개인용품들만 간단히 정리해주시면 청소하는데 많은 도움이 될거같습니다.감사합니다",
+      "ts": 1783905584714
     },
     {
-      "sender": "Tom",
-      "text": "We put some garbage in the garage.",
-      "ts": 1783643034868
+      "sender": "COZE _ Jin",
+      "text": "안녕하세요 @신지환 님\n오늘 오후 2시부터 중간청소 시작하겠습니다.개인용품들만 간단히 정리해주시면 청소하는데 많은 도움이 될거같습니다.감사합니다",
+      "ts": 1783905586087
     },
     {
-      "sender": "Tom",
-      "text": "Also check out is 11am tomorrow, right?",
-      "ts": 1783643048282
+      "sender": "신지환",
+      "text": "넵! 알겠습니다 감사합니다~!",
+      "ts": 1783908945041
     },
     {
-      "sender": "Tom",
-      "text": "Our flight is not until 7pm so would it be ok to leave our luggage here until 3pm?",
-      "ts": 1783643087130
+      "sender": "신지환",
+      "text": "넵! 알겠습니다 감사합니다~!",
+      "ts": 1783908947059
+    }
+  ],
+  "120363426632162671@g.us": [
+    {
+      "sender": "Jenny Lee",
+      "text": "Hello! My Korean speaking mother will check in by herself. She is not good with technology. Can someone meet her to let her inside the apartment tomorrow and show her how to enter and exit?",
+      "ts": 1783908017779
     },
     {
-      "sender": "COZE_CYRUS",
-      "text": "Sure",
-      "ts": 1783643208752
-    },
-    {
-      "sender": "COZE_CYRUS",
-      "text": "Checkout time is 11:00 AM 😊\n\nSince we have the next guest checking in tomorrow, please leave your luggage in the living room and send us a photo once it is ready.\n\nWe will move and keep it safely, so you can pick it up at 3:00 PM. Thank you!",
-      "ts": 1783643574484
-    },
-    {
-      "sender": "Tom",
-      "text": "Great",
-      "ts": 1783643675661
-    },
-    {
-      "sender": "Tom",
-      "text": "Living room which floor?",
-      "ts": 1783643688511
+      "sender": "Jenny Lee",
+      "text": "She can meet outside the building 3pm or can she call you when she arrives for someone to meet her??",
+      "ts": 1783908048671
     },
     {
       "sender": "COZE_CYRUS",
-      "text": "You can leave the luggage on the same floor where you are staying.",
-      "ts": 1783643767963
+      "text": "Thank you for letting us know 😊 We’ve noted the requested time of 3:00 PM tomorrow. \n\nWe’ll double-check our schedule and confirm the meeting time with you shortly.",
+      "ts": 1783908279503
+    },
+    {
+      "sender": "Jenny Lee",
+      "text": "What phone number can she call if she’s lost or delayed?",
+      "ts": 1783908371860
     },
     {
       "sender": "COZE_CYRUS",
-      "text": "we’ll do the luggage workout and bring everything down to the 1st floor for you.\n\nPlease enjoy your time outside and come back at 3:00 PM to pick it up. Thank you!",
-      "ts": 1783643861403
-    },
-    {
-      "sender": "Tom",
-      "text": "Also can u arrange transport to the airport for us?",
-      "ts": 1783644834782
-    },
-    {
-      "sender": "Tom",
-      "text": "Leaving at 3pm?",
-      "ts": 1783644857233
+      "text": "📞 Cyrus: 010-5837-6935",
+      "ts": 1783908424022
     },
     {
       "sender": "COZE_CYRUS",
-      "text": "Sure.",
-      "ts": 1783645180789
+      "text": "Could you please also share your mother’s phone number?",
+      "ts": 1783908497597
     },
     {
-      "sender": "Tom",
-      "text": "The you there are 9 of us.",
-      "ts": 1783645198078
-    },
-    {
-      "sender": "COZE_CYRUS",
-      "text": "Perfect",
-      "ts": 1783645313018
+      "sender": "Jenny Lee",
+      "text": "Yes. Her name is Young Hee Lee and her number is 010-5577-8959",
+      "ts": 1783908549621
     },
     {
       "sender": "COZE_CYRUS",
-      "text": "As previously mentioned, your ICN airport drop-off tomorrow will be arranged with 2 vans complimentary.\n\nWe will proceed with the van arrangement for you. Thank you!",
-      "ts": 1783646309937
+      "text": "Would you mind asking your mother if she might be able to visit today instead, at any time that is convenient for her? I’ll be at the unit all day today.\nTomorrow’s schedule is quite busy, so it may be difficult for us to meet her at exactly 3:00 PM. 😊",
+      "ts": 1783908583521
+    },
+    {
+      "sender": "Jenny Lee",
+      "text": "She is staying far away and can’t come today",
+      "ts": 1783908644707
+    },
+    {
+      "sender": "Jenny Lee",
+      "text": "Can she check in earlier?",
+      "ts": 1783908663029
+    },
+    {
+      "sender": "COZE_CYRUS",
+      "text": "Can I call her?",
+      "ts": 1783908686692
+    },
+    {
+      "sender": "Jenny Lee",
+      "text": "Yes",
+      "ts": 1783908811683
+    },
+    {
+      "sender": "COZE_CYRUS",
+      "text": "Yes.",
+      "ts": 1783908895738
+    },
+    {
+      "sender": "COZE_CYRUS",
+      "text": "I tried calling your mother, but her phone was unavailable. Could you please ask her to call me when she has time? Otherwise, I’ll try calling her again later.\n\nEarly check-in is available.",
+      "ts": 1783908992555
+    },
+    {
+      "sender": "Jenny Lee",
+      "text": "Please don’t ask her to come the day before just to learn how to use the keys. She is 80 years old and doesn’t know how to use taxis very well.",
+      "ts": 1783909007301
+    },
+    {
+      "sender": "Jenny Lee",
+      "text": "What’s your number? I’ll ask her to call you",
+      "ts": 1783909031555
+    },
+    {
+      "sender": "Jenny Lee",
+      "text": "She is on Kakao if you want to text her",
+      "ts": 1783909046774
+    },
+    {
+      "sender": "COZE_CYRUS",
+      "text": "Of course, I completely understand. Please don’t worry—we won’t ask her to make an extra trip today.",
+      "ts": 1783909067635
+    },
+    {
+      "sender": "COZE_CYRUS",
+      "text": "010-5837-6935",
+      "ts": 1783909074979
+    },
+    {
+      "sender": "COZE_CYRUS",
+      "text": "Now that we understand your mother is 80 years old, we completely understand that she may need a little extra assistance. \n\nWe’ll make time to meet her at the accommodation tomorrow and help her check in comfortably and safely. 😊",
+      "ts": 1783909736695
+    },
+    {
+      "sender": "COZE_CYRUS",
+      "text": "Early check-in is available tomorrow. Please let us know what time your mother will arrive at the accommodation, and we’ll be there to meet her and assist her with check-in. 😊",
+      "ts": 1783909855808
     }
   ],
   "kakao:301321483004194": [
     {
-      "sender": "COZE_Cyrus",
-      "text": "26년 7월11일 토요일 3PM\n\nHT -> 인천\n\n성인8 소아1 / 점보1 일반1 / 20만원 / 후불",
-      "ts": 1783645892311
+      "sender": "이규진",
+      "text": "26년 7월14일 화요일 11AM\n\nBS -> 인천\n\n성인5 소아5/ 점보1 일반1 / 20만원 / 후불",
+      "ts": 1783909408151
     },
     {
-      "sender": "COZE_Cyrus",
-      "text": "26년 7월11일 토요일 3PM\n\nHT -> 인천\n\n성인8 소아1 / 점보1 일반1 / 20만원 / 후불",
-      "ts": 1783645892934
-    }
-  ],
-  "kakao:473132404010783": [
-    {
-      "sender": "COZE_Cyrus",
-      "text": "✈️ 안녕하세요. 체크인 담당 / Guest Care Team (Cyrus)사이러스입니다.\n\n오늘 주차는 총5대로 알고 있습니다.\u000b \n숙소 주차 1대, \n외부 유료 주차 4대가 맞으실까요?\n\n차량 번호는 아래 4대로 확인하고 있습니다.\n\n8736 / 코나 / 5시\n8540 / GLE / 5시\n6166 / 6GT / 5시\n8735 / 재규어 / 5시\n\n그리고 오늘 입실은 오후 3시 30분 예정이 맞으실까요?\n\n⏰ 도착 10분 전쯤 메시지 또는 전화 연락 부탁드립니다.\u000b \n\n연락처: 010-5837-6935",
-      "ts": 1783652020025
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "✈️ 안녕하세요. 체크인 담당 / Guest Care Team (Cyrus)사이러스입니다.\n\n오늘 주차는 총5대로 알고 있습니다.\u000b \n숙소 주차 1대, \n외부 유료 주차 4대가 맞으실까요?\n\n차량 번호는 아래 4대로 확인하고 있습니다.\n\n8736 / 코나 / 5시\n8540 / GLE / 5시\n6166 / 6GT / 5시\n8735 / 재규어 / 5시\n\n그리고 오늘 입실은 오후 3시 30분 예정이 맞으실까요?\n\n⏰ 도착 10분 전쯤 메시지 또는 전화 연락 부탁드립니다.\u000b \n\n연락처: 010-5837-6935",
-      "ts": 1783652021187
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "사진",
-      "ts": 1783652079508
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "Photo",
-      "ts": 1783652080442
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "해당 주차장은 일반 무인 주차장이 아니라 주차장 어르신께서 직접 운영하시는 곳이라, 현장에 어르신이 안 계실 수도 있습니다.\n\n혹시 도착하셨을 때 입구에 차단봉/가드가 놓여 있으면,\n잠시 옆으로 치우신 뒤 주차장 안에 주차해주시면 됩니다 🙏\n\n그리고 차량을 빼고 나오실 때는\n다른 차량이 무단으로 들어오지 않도록 차단봉/가드를 다시 원래 위치에 놓아주시면 감사하겠습니다 😊",
-      "ts": 1783652116566
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "해당 주차장은 일반 무인 주차장이 아니라 주차장 어르신께서 직접 운영하시는 곳이라, 현장에 어르신이 안 계실 수도 있습니다.\n\n혹시 도착하셨을 때 입구에 차단봉/가드가 놓여 있으면,\n잠시 옆으로 치우신 뒤 주차장 안에 주차해주시면 됩니다 🙏\n\n그리고 차량을 빼고 나오실 때는\n다른 차량이 무단으로 들어오지 않도록 차단봉/가드를 다시 원래 위치에 놓아주시면 감사하겠습니다 😊",
-      "ts": 1783652117910
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "사진",
-      "ts": 1783652151544
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "🏡 COZE BS 맞춤형 숙소 매뉴얼 (KO)\u000b\n안녕하세요! COZE Hospitality 3.0 게스트 케어팀입니다 👋\u000b 세검정의 평온한 산 전망 하우스에 오신 것을 환영합니다 🌿\n편안한 투숙을 위한 필수 안내를 확인해 주세요.\u000b\n\n📌 숙소 필수정보\u000b\n주소\n 서울시 종로구 세검정로 227-5\u000b\n대문 열쇠함 비밀번호 0 8 0 5\u000b (사용 후 열쇠는 반드시 열쇠함에 다시 넣어주세요)\u000b\n객실 도어 코드 — 체크인 날짜(YYMMDD) + *\u000b 예: 2025년 5월 10일 → 250510* (체류 내내 동일)\u000b\n\nWi-Fi 네트워크\u000b\n\n1F\u000b ID KT_GIGA_7FE8\u000b PW 57fj23ee33 \n\n3F\u000b ID JOYHASLA_BS\u000b PW joyjoyjoy\u000b\u000b\n\n🚗 주차\n\n현대 스타리아 크기까지 1대 주차 가능\n후면주차 권장\n출차 시 좌측으로 진출 뒤 후진하여 공로 진입\u000b\n\n추가 주차가 필요하면 하루 전 알려주시면 인근 유료주차장 등록을 도와드립니다(최대 3-4대 가능) \u000b\u000b\n\n대당 종일 주차 2만원(*원래 3만원인데 저희가 1만원 지원드립니다. 주차비는 체크아웃 시 저희 팀에 직접 지불하시면 되세요) \u000b\u000b\n\n유료주차장 / 홍지 주차장 (숙소에서 도보 2분)\u000b\u000b\n서울시 종로구 홍지문길 2\u000b\n\nhttps://naver.me/FQyi60EA \u000b\n\n🌿 Horizon Spa ‘SUNRISE’ (ROOFTOP) — 먼저 읽어주세요\n\n⚠️ 안전한 사용은 게스트의 책임입니다.\n\n🔥 핀란드 사우나 — 사용 방법\n\n게스트 스마트폰으로\nDiooist 앱을 엽니다.\nPower ON을 탭합니다.\n우측 하단 컨트롤 버튼을 탭합니다.\n목표 온도와 가동 시간을 설정합니다.\u000b권장 온도: 어린이 60 °C · 성인 90 °C\n\n사우나 좌측 컨트롤 패널로\nPower ON 버튼을 누릅니다.\n우측 상단 Settings를 탭합니다.\nTarget에서 온도와 시간을 입력합니다.\n\n에티켓 & 안전 수칙\n예열 1시간 이상(목표 80–90 °C).\n타월 위에 앉거나 눕기; 땀은 여분 타월로 닦기.\n충분한 수분 섭취; 음주/과식 금지.\n1회 15분 이내; 라운드 사이 5–10분 쿨다운.\n돌에는 라들 소량만 물을 끼얹기 — 과다 시 히터 손상.\n어린이는 보호자 동반 필수, 60–70 °C, 5분 이내.\n수면 금지; 안전을 위해 문을 잠그지 말고 살짝 열어두세요.\n종료 후 히터 전원 OFF, 문을 살짝 열어 건조.\n\n썬베드 & 온열담요\n호라이즌 스파 썬베드에 전기 온열담요 2조가 제공됩니다.\n한겨울에도 따뜻하게 스파를 즐길 수 있으며, 담요는 젖지 않게 사용하고 사용 후 전원 OFF해 주세요.\n\n🛀 자쿠지 — 안전 안내\n먼저 샤워하여 수질 유지.\n성인 최대 4명(또는 아동 6명).\n1회 약 20분 이내, 세션 간 휴식.\n로션/오일 금지.\n아동·노약자 상시 감독; 해당 인원은 수온 38 °C 이하 유지.\n임신 중, 졸림 유발 약 복용, 심장 질환이 있으면 이용을 피하세요.\n\n🌿 Urban Garden ‘Breeze’ — BBQ & 파이어핏\n\n위치 & 구성\nBBQ 장비는 1층 Urban Garden ‘Breeze’ 앞 데크(웨버 케틀 옆)에 비치되어 있습니다.\u000b구성: 웨버 케틀 57 cm × 2, 숯, 착화제, 토치, 장갑 & 도구 세트\n파이어핏은 아래 정원에 있습니다. 점화도구·장갑은 파이어핏 옆 수납박스에 비치.\u000b장작 1세트 기본 비치(스타터 번들)\n\n이용요금\nBBQ: 케틀 1대 ₩30,000 / 2대 ₩60,000\n파이어핏: ₩30,000(장작 1세트 포함)\u000b추가 장작: ₩20,000(사전 요청)\n\n사계절 BBQ 팁\u000b사계절 BBQ 이용 가능합니다.\n\n여름 팁\u000b숲과 맞닿은 가든입니다 🌳 — 제공되는 모기기피제를 뿌리고 나가세요.\n\n겨울 팁\n\nBBQ 테이블 상부에 강력한 원적외선 천장 히터가 설치되어 있습니다.\n컨트롤 패널은 현관을 들어와 거실 오른편 벽면에 있습니다.\n\n전원 🔛 : 전원 버튼을 눌러 켭니다.\u000b온도 🌡 : 온도 레벨을 10 (최강) 으로 맞춰주세요.\u000b종료 ⛔ : 사용 후에는 반드시 전원 버튼을 다시 눌러 전원을 꺼주세요.\u000b\n⚠ 주의\u000b 이 히터는 고열량 전기기기입니다. 오래 켜 두면 과전압으로 숙소 전체 전원이 차단될 수 있습니다.\u000b 사용이 끝나면 바로 OFF 해 주세요.\n\n안전\u000b소화기가 파이어핏 바로 옆에 비치되어 있습니다.\n\n🔇 소음 & 야외 이용 규칙\n20시 이후 BBQ 구역 정숙 유지\u000b\n불꽃놀이·노출 화기 금지\n야간 실내 대화가 크면 창문을 닫아 소음 최소화\n\n\u000b🚬 흡연\n지정 야외 구역만 가능, 재떨이 사용\n\n🛒 BBQ 그로서리 & 배달\n₩30,000 이상 주문 시 오토바이 무료 배송(매우 빠름)\n\n럭키 할인 마트 — 서울 종로구 평창동 323-4\u000b NAVER Map: https://naver.me/xiww0hKr\n\nGS 더 프레시(종로구 포인트) — 서울 종로구 구기동 94\u000b NAVER Map: https://naver.me/5pEsSqgJ\n\n또는 컨시어지 팀에 요청하시면 쿠팡 앱 온라인 주문을 하루 전에 대행해드립니다.\n\n📱 게스트 스마트폰 제공\u000b\n한국 번호와 무제한 데이터·통화가 가능한 스마트폰 1대 무료 제공\u000b 필수 앱 사전 설치, 포켓 핫스팟(테더링) 가능\u000b\n\n활용 예시\u000b\u000b 🍽️ 배달 주문 · 🚕 택시 호출 · 🌐 인터넷 · 🗺️ 길찾기\nLocal Tip\u000b 네이버지도를 열면 저희가 저장해 둔 로컬 가이드를 볼 수 있어요:\u000b 🍜 맛집 · 🏪 마트/편의점 · 🏥 병원/클리닉 · 💳 ATM/은행\n\n🍽️ 음식 배달 간편 이용\n게스트폰에서 쿠팡이츠 → 장바구니 담기 → WhatsApp으로 스크린샷 전송\u000b 저희 카드로 주문, 결제는 체크아웃 시 현금(또는 크립토) 정산\n\n🚐 MPV 밴 택시\nIM TAXI를 통해 7인승 MPV 밴 예약 가능\u000b 4–7인에 적합, 일반 택시 대비 약 30% 비쌈\u000b 2대 이상 필요 시 미리 요청해 주세요\n\n🍳 주방 & 가전\n식기세척기, 오븐, 정수기 구비\n\n💧 정수기 (EVERPURE)\n브랜드: EVERPURE(미국) — 스타벅스 공식 파트너\n타입: 직수형 정수 시스템\n관리: 매월 전문 관리\n사용법: 싱크대 왼편 ‘정수기/Purified Water’ 라벨이 있는 작은 파우셋 사용\n특징: 음용·조리에 적합한, 매우 안전하고 맛있는 물\n집처럼 편하게 조리하세요!\n\n☕ 캡슐 커피 & 티\nilly 캡슐 커피 & 티 무료 이용\u000b 추가 캡슐은 전자레인지 하부 서랍에 보관\n\nilly 머신 가이드 \n\nQuick Start: https://youtu.be/XEDAXZY50FM?si=uOfwquZXC6WCis_G \n\nSteam Milk: https://youtu.be/bTzG7iM4dMA?si=aiEWUseiOT0as-Jo \n\nVolume Settings: https://youtu.be/h2X5gLYpf_4?si=eaDtARcyGQTjddFz\n\n♻️ 음식물 & 일반 쓰레기\u000b\n음식물(싱크 디스포저)\u000b 수도 켜기 → 풋 페달 밟기 → 음식물 분쇄\u000b ⚠️ 뼈, 조개껍질, 과일 씨 등 단단한 물질 금지\n\n일반 & 재활용\u000b 세탁실 쓰레기통 이용 + 분리배출\u000b 가득 차면 벽장 새 봉투로 교체, 현관 근처에 두고 메시지 주세요(수거해 드림)\n\n📺 스마트 TV & 스트리밍\n거실 TV는 Google TV 내장\u000b 한국 케이블, Netflix, Disney+, YouTube 이용 가능\u000b 로그인 도움 필요 시 메시지 주세요\u000b\n\n🧴 타월 & 어메니티\n타월 약 40장(페이스/바디/풋): 욕실 거울장 & 2F 드레스룸\n호텔 어메니티(칫솔, 면도기 등): 2F 드레스룸\u000b\n\n👶 베이비 스테이 킷\n1F 마스터룸 클로젯의 라벨된 서랍에: 아기침대, 하이체어, 베이비모니터, 변기 보조좌, 젖병 소독기\u000b\n\n🔥 난방 팁\n본 주택은 온도조절기 1세트 공유(층별 체감차 가능)\n1F: 23 °C 초과 설정 금지(주방 과열 방지)\u000b\n마스터룸: 걸레받이 히터 약 25 °C 권장\u000b 추울/더울 경우 언제든 도와드릴게요\u000b\n\n📩 문의\n언제든 게스트 케어팀에 연락해 주세요!\n\n✨ COZE Hospitality 3.0\u000b All you need, All-in-one, All for you.",
-      "ts": 1783652280502
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "🏡 COZE BS 맞춤형 숙소 매뉴얼 (KO)\u000b\n안녕하세요! COZE Hospitality 3.0 게스트 케어팀입니다 👋\u000b 세검정의 평온한 산 전망 하우스에 오신 것을 환영합니다 🌿\n편안한 투숙을 위한 필수 안내를 확인해 주세요.\u000b\n\n📌 숙소 필수정보\u000b\n주소\n 서울시 종로구 세검정로 227-5\u000b\n대문 열쇠함 비밀번호 0 8 0 5\u000b (사용 후 열쇠는 반드시 열쇠함에 다시 넣어주세요)\u000b\n객실 도어 코드 — 체크인 날짜(YYMMDD) + *\u000b 예: 2025년 5월 10일 → 250510* (체류 내내 동일)\u000b\n\nWi-Fi 네트워크\u000b\n\n1F\u000b ID KT_GIGA_7FE8\u000b PW 57fj23ee33 \n\n3F\u000b ID JOYHASLA_BS\u000b PW joyjoyjoy\u000b\u000b\n\n🚗 주차\n\n현대 스타리아 크기까지 1대 주차 가능\n후면주차 권장\n출차 시 좌측으로 진출 뒤 후진하여 공로 진입\u000b\n\n추가 주차가 필요하면 하루 전 알려주시면 인근 유료주차장 등록을 도와드립니다(최대 3-4대 가능)",
-      "ts": 1783652280596
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "https://naver.me/I5ch6f05",
-      "ts": 1783652309300
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "https://naver.me/I5ch6f05",
-      "ts": 1783652309601
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "백사실 계곡 꼭 가보세요 ! 도심 내 완전 힐링되는 숲 체험 꼭 놓치지 말고 하고 가세요!!",
-      "ts": 1783652315704
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "백사실 계곡 꼭 가보세요 ! 도심 내 완전 힐링되는 숲 체험 꼭 놓치지 말고 하고 가세요!!",
-      "ts": 1783652317859
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "COSE_BS_CHECK_IN_MANUAL_내국인.pdf",
-      "ts": 1783652442438
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "File: COSE_BS_CHECK_IN_MANUAL_내국인.pdf",
-      "ts": 1783652443472
+      "sender": "이규진",
+      "text": "26년 7월14일 화요일 11AM\n\nBS -> 인천\n\n성인5 소아5/ 점보1 일반1 / 20만원 / 후불",
+      "ts": 1783909408172
     }
   ]
 }

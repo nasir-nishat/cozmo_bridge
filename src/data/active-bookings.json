@@ -1737,7 +1737,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+18478782226",
-    "updatedAt": "2026-07-06T06:00:08.888Z"
+    "updatedAt": "2026-07-11T02:00:10.107Z"
   },
   {
     "leadUid": "a0120b71-ea7d-456b-a974-94bb704253b6",
@@ -1827,7 +1827,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+31643943819",
-    "updatedAt": "2026-07-07T06:00:10.195Z"
+    "updatedAt": "2026-07-12T02:00:19.324Z"
   },
   {
     "leadUid": "0430559e-1e9a-4e4b-86c5-7a0ef8bbd7ab",
@@ -1887,7 +1887,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+79160284516",
-    "updatedAt": "2026-07-08T06:00:15.105Z"
+    "updatedAt": "2026-07-11T02:00:10.555Z"
   },
   {
     "leadUid": "11f77255-b1cd-41f2-98eb-0aab5f741dec",
@@ -1917,7 +1917,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+84943626996",
-    "updatedAt": "2026-07-09T06:00:08.332Z"
+    "updatedAt": "2026-07-12T02:00:13.264Z"
   },
   {
     "leadUid": "33b2934f-83b9-45fa-9aa4-f08176866902",
@@ -1962,7 +1962,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+821020879860",
-    "updatedAt": "2026-06-30T09:51:13.317Z"
+    "updatedAt": "2026-07-11T02:00:12.749Z"
   },
   {
     "leadUid": "691e9ada-a43c-43b6-b05d-dd21f31c5e8d",
@@ -1977,7 +1977,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+19176553837",
-    "updatedAt": "2026-05-26T06:17:51.225Z"
+    "updatedAt": "2026-07-11T06:00:08.911Z"
   },
   {
     "leadUid": "9e3f293f-6ee3-4eac-bc0d-d37a4b415779",
@@ -2007,7 +2007,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+821092301520",
-    "updatedAt": "2026-06-29T09:55:29.977Z"
+    "updatedAt": "2026-07-12T02:00:14.879Z"
   },
   {
     "leadUid": "596d1115-f7f9-4ec1-a740-4192743e5c18",
@@ -2022,7 +2022,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+821085700168",
-    "updatedAt": "2026-07-09T13:39:21.122Z"
+    "updatedAt": "2026-07-12T02:00:15.973Z"
   },
   {
     "leadUid": "28918ae2-d88c-4bd3-88ea-46079d30e4bf",
@@ -2037,7 +2037,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+821066000454",
-    "updatedAt": "2026-07-09T13:39:19.615Z"
+    "updatedAt": "2026-07-12T02:00:18.035Z"
   },
   {
     "leadUid": "b14289f2-50ba-4262-be09-7548a646dbdb",
@@ -2052,7 +2052,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+886936035948",
-    "updatedAt": "2026-06-21T08:59:08.286Z"
+    "updatedAt": "2026-07-12T06:00:09.379Z"
   },
   {
     "leadUid": "7f2951cf-dde0-4104-a4a5-afc82554067a",
@@ -2187,7 +2187,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+18582151577",
-    "updatedAt": "2026-07-09T13:39:22.510Z"
+    "updatedAt": "2026-07-13T02:09:23.821Z"
   },
   {
     "leadUid": "9bcd0617-554e-42e2-80b5-ab0889409f4c",
@@ -2293,6 +2293,21 @@
     "source": "BOOKING",
     "phone": "+85261107279",
     "updatedAt": "2026-07-06T06:00:15.832Z"
+  },
+  {
+    "leadUid": "adb20434-44b9-4461-a143-cd1837e50e06",
+    "guestName": "Ekthanin Akharaphathanakit",
+    "property": "GKA_Kelly Ananda",
+    "checkIn": "2026-07-17",
+    "checkOut": "2026-07-21",
+    "nationality": "",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "BOOKED",
+    "source": "BOOKING",
+    "phone": "+66928514382",
+    "updatedAt": "2026-07-13T01:20:36.703Z"
   },
   {
     "leadUid": "500164b3-2705-40da-9caf-d4d2b19dcb97",
@@ -2503,6 +2518,21 @@
     "source": "BOOKING",
     "phone": "+41798510522",
     "updatedAt": "2026-06-05T09:55:18.536Z"
+  },
+  {
+    "leadUid": "6462ff0e-9640-4082-9a30-26f6d08a6e09",
+    "guestName": "현주",
+    "property": "SG_JOYHASLA",
+    "checkIn": "2026-07-24",
+    "checkOut": "2026-07-29",
+    "nationality": "",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "CLOSED",
+    "source": "INQUIRY",
+    "phone": "",
+    "updatedAt": "2026-07-11T23:42:32.925Z"
   },
   {
     "leadUid": "1e916def-3f2c-4b2d-a616-322cdd76aedd",
@@ -2922,7 +2952,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+818011057709",
-    "updatedAt": "2026-07-06T11:33:27.423Z"
+    "updatedAt": "2026-07-12T13:48:38.330Z"
   },
   {
     "leadUid": "03d2f37a-9fdd-402d-b1db-8d25f826caaa",
@@ -2949,10 +2979,10 @@
     "adults": 0,
     "children": 0,
     "infants": 0,
-    "status": "NEW",
+    "status": "CLOSED",
     "source": "INQUIRY",
     "phone": "",
-    "updatedAt": "2026-07-09T11:06:24.362Z"
+    "updatedAt": "2026-07-10T11:06:11.286Z"
   },
   {
     "leadUid": "cde80392-3be1-4b4f-a566-548a2600cd66",
@@ -3012,7 +3042,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+13107407535",
-    "updatedAt": "2026-07-09T13:39:17.178Z"
+    "updatedAt": "2026-07-13T01:20:43.719Z"
   },
   {
     "leadUid": "5599ca12-7b2b-4171-a636-daacb5e99c04",
@@ -3372,7 +3402,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+8862035640799",
-    "updatedAt": "2026-07-09T15:08:33.981Z"
+    "updatedAt": "2026-07-13T01:20:38.134Z"
   },
   {
     "leadUid": "18c21b8c-5735-4934-b1d7-5e7c42b6eb91",
@@ -3510,6 +3540,21 @@
     "updatedAt": "2026-06-04T06:00:15.075Z"
   },
   {
+    "leadUid": "9135b690-fb31-44b9-9ab4-4b5a7cc2e0e4",
+    "guestName": "Wai Ting",
+    "property": "YT_LOTUS_09",
+    "checkIn": "2026-09-13",
+    "checkOut": "2026-09-19",
+    "nationality": "",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "NEW",
+    "source": "INQUIRY",
+    "phone": "",
+    "updatedAt": "2026-07-12T03:24:07.102Z"
+  },
+  {
     "leadUid": "5c239fbf-996e-46de-87de-a0ebec698d78",
     "guestName": "Arianne",
     "property": "HT_TEVA RETREAT",
@@ -3537,7 +3582,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+639173519421",
-    "updatedAt": "2026-07-09T13:39:15.812Z"
+    "updatedAt": "2026-07-13T01:20:42.301Z"
   },
   {
     "leadUid": "9d692fdf-3c0b-4238-bb30-40a877fca564",
@@ -3567,7 +3612,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+447740874115",
-    "updatedAt": "2026-07-09T13:39:12.782Z"
+    "updatedAt": "2026-07-13T01:20:39.348Z"
   },
   {
     "leadUid": "4714100b-fc7b-4817-a0b0-8a57fbc6f959",
@@ -3735,6 +3780,21 @@
     "updatedAt": "2026-06-27T02:51:19.404Z"
   },
   {
+    "leadUid": "4ae7edfc-57d6-4ca1-97aa-4c5ce82f63d3",
+    "guestName": "Andy",
+    "property": "YT_LOTUS_09",
+    "checkIn": "2026-10-08",
+    "checkOut": "2026-10-12",
+    "nationality": "",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "NEW",
+    "source": "INQUIRY",
+    "phone": "",
+    "updatedAt": "2026-07-12T18:34:40.483Z"
+  },
+  {
     "leadUid": "f72e40a1-0f67-4b26-8100-97b28067e39d",
     "guestName": "Martina Wegrostek",
     "property": "SJ_JOYHASLA",
@@ -3807,7 +3867,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+15122816936",
-    "updatedAt": "2026-07-09T13:39:13.489Z"
+    "updatedAt": "2026-07-13T01:20:40.072Z"
   },
   {
     "leadUid": "9e4c486f-ab31-4341-9a90-1b5a064dae65",
@@ -4155,6 +4215,21 @@
     "updatedAt": "2026-05-25T07:12:45.740Z"
   },
   {
+    "leadUid": "b0a94628-9687-41d9-a8cf-971f644af04d",
+    "guestName": "Dylan",
+    "property": "YT_LOTUS_FISH_BIRD",
+    "checkIn": "2026-11-11",
+    "checkOut": "2026-11-17",
+    "nationality": "",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "CLOSED",
+    "source": "INQUIRY",
+    "phone": "",
+    "updatedAt": "2026-07-11T07:50:06.299Z"
+  },
+  {
     "leadUid": "787c2c37-6fa1-4f1f-ac52-45a59528fbd9",
     "guestName": "Alyssa Cheung",
     "property": "SJ_JOYHASLA",
@@ -4378,21 +4453,6 @@
     "source": "BOOKING",
     "phone": "+886966558839",
     "updatedAt": "2026-05-25T07:11:25.193Z"
-  },
-  {
-    "leadUid": "b640f5e0-7a94-4a74-b0a5-f4a9eaf73666",
-    "guestName": "Adrien Van",
-    "property": "SJ_JOYHASLA",
-    "checkIn": "2026-12-30",
-    "checkOut": "2027-01-02",
-    "nationality": "US",
-    "adults": 0,
-    "children": 0,
-    "infants": 0,
-    "status": "BOOKED",
-    "source": "BOOKING",
-    "phone": "+18045436998",
-    "updatedAt": "2026-05-25T07:11:20.506Z"
   },
   {
     "leadUid": "839e85d3-103d-41db-a9df-05382852c275",
