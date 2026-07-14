@@ -1977,7 +1977,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+19176553837",
-    "updatedAt": "2026-07-11T06:00:08.911Z"
+    "updatedAt": "2026-07-14T02:00:14.753Z"
   },
   {
     "leadUid": "9e3f293f-6ee3-4eac-bc0d-d37a4b415779",
@@ -2112,7 +2112,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+447949918193",
-    "updatedAt": "2026-07-13T06:00:07.531Z"
+    "updatedAt": "2026-07-13T18:51:33.700Z"
   },
   {
     "leadUid": "498a1a7a-2d78-4d08-bce8-76451fde6c95",
@@ -2322,7 +2322,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+66928514382",
-    "updatedAt": "2026-07-13T06:00:07.038Z"
+    "updatedAt": "2026-07-13T18:51:37.909Z"
   },
   {
     "leadUid": "500164b3-2705-40da-9caf-d4d2b19dcb97",
@@ -2353,6 +2353,21 @@
     "source": "INQUIRY",
     "phone": "",
     "updatedAt": "2026-07-07T13:32:21.901Z"
+  },
+  {
+    "leadUid": "8ebd6fd0-0360-4ab5-8f25-efa1a86c13c0",
+    "guestName": "Tian Tian",
+    "property": "YT_LOTUS_09",
+    "checkIn": "2026-07-18",
+    "checkOut": "2026-07-23",
+    "nationality": "",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "NEW",
+    "source": "INQUIRY",
+    "phone": "",
+    "updatedAt": "2026-07-14T01:15:17.544Z"
   },
   {
     "leadUid": "6bac0d61-29fa-4a9e-b28f-4d20e3886365",
@@ -3417,7 +3432,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+8862035640799",
-    "updatedAt": "2026-07-13T06:00:09.051Z"
+    "updatedAt": "2026-07-13T18:51:39.002Z"
   },
   {
     "leadUid": "18c21b8c-5735-4934-b1d7-5e7c42b6eb91",
@@ -3597,7 +3612,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+639173519421",
-    "updatedAt": "2026-07-13T06:00:14.364Z"
+    "updatedAt": "2026-07-13T15:31:25.167Z"
   },
   {
     "leadUid": "9d692fdf-3c0b-4238-bb30-40a877fca564",
@@ -3627,7 +3642,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+447740874115",
-    "updatedAt": "2026-07-13T06:00:10.568Z"
+    "updatedAt": "2026-07-13T18:51:40.008Z"
   },
   {
     "leadUid": "4714100b-fc7b-4817-a0b0-8a57fbc6f959",
@@ -3804,10 +3819,10 @@
     "adults": 0,
     "children": 0,
     "infants": 0,
-    "status": "NEW",
+    "status": "CLOSED",
     "source": "INQUIRY",
     "phone": "",
-    "updatedAt": "2026-07-12T18:34:40.483Z"
+    "updatedAt": "2026-07-13T18:34:29.826Z"
   },
   {
     "leadUid": "f72e40a1-0f67-4b26-8100-97b28067e39d",
@@ -3882,7 +3897,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+15122816936",
-    "updatedAt": "2026-07-13T06:00:11.389Z"
+    "updatedAt": "2026-07-13T18:51:40.695Z"
   },
   {
     "leadUid": "9e4c486f-ab31-4341-9a90-1b5a064dae65",
@@ -4048,6 +4063,21 @@
     "source": "BOOKING",
     "phone": "+19169904174",
     "updatedAt": "2026-05-25T07:11:29.364Z"
+  },
+  {
+    "leadUid": "8b8d384c-d4fe-4f15-a3aa-a523a7777256",
+    "guestName": "Eun-Koo Kim",
+    "property": "YT_FISH_BIRD",
+    "checkIn": "2026-10-25",
+    "checkOut": "2026-10-30",
+    "nationality": "",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "BOOKED",
+    "source": "BOOKING",
+    "phone": "+491726830588",
+    "updatedAt": "2026-07-13T18:51:32.392Z"
   },
   {
     "leadUid": "ee82dd3a-b7a8-436c-8536-7a5e70b06d68",

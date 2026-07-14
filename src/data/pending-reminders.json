@@ -612,5 +612,12 @@
     "fireAt": 1783919225056,
     "cancelled": false,
     "fired": true
+  },
+  {
+    "groupId": "120363411999486148@g.us",
+    "leadUid": "8b8d384c-d4fe-4f15-a3aa-a523a7777256",
+    "fireAt": 1783965972648,
+    "cancelled": false,
+    "fired": true
   }
 ]
