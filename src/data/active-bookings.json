@@ -2790,6 +2790,21 @@
     "updatedAt": "2026-06-23T17:45:58.830Z"
   },
   {
+    "leadUid": "d61a454e-4ff8-4452-9467-1ce270fb018f",
+    "guestName": "丽丽",
+    "property": "SA_ACHAE",
+    "checkIn": "2026-07-31",
+    "checkOut": "2026-08-05",
+    "nationality": "",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "NEW",
+    "source": "INQUIRY",
+    "phone": "",
+    "updatedAt": "2026-07-14T07:39:30.226Z"
+  },
+  {
     "leadUid": "25039dee-7216-4d8a-9484-76ec511d83bb",
     "guestName": "Elise Jean",
     "property": "SJ_JOYHASLA",
