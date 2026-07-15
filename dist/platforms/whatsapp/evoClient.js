@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.waClient = exports.setWaReady = exports.isWaReady = exports.evoApi = exports.INSTANCE = void 0;
+exports.waClient = exports.setWaReady = exports.waReadyDurationMs = exports.isWaReady = exports.evoApi = exports.INSTANCE = void 0;
 exports.evoSendText = evoSendText;
 exports.evoSendTyping = evoSendTyping;
 exports.fetchGroupName = fetchGroupName;
@@ -31,9 +31,19 @@ async function evoSendTyping(number) {
     }
 }
 let waReady = false;
+let waReadySince = 0;
 const isWaReady = () => waReady;
 exports.isWaReady = isWaReady;
-const setWaReady = (val) => { waReady = val; };
+// How long the current session has been continuously open (0 when down) — used for post-reconnect warm-up
+const waReadyDurationMs = () => (waReady && waReadySince ? Date.now() - waReadySince : 0);
+exports.waReadyDurationMs = waReadyDurationMs;
+const setWaReady = (val) => {
+    if (val && !waReady)
+        waReadySince = Date.now();
+    else if (!val)
+        waReadySince = 0;
+    waReady = val;
+};
 exports.setWaReady = setWaReady;
 exports.waClient = {
     isRegisteredUser: async (jidOrPhone) => {

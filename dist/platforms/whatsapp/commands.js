@@ -297,7 +297,7 @@ async function handleGroupCommand(from, uid, senderJid, pushName) {
         const starterName = pushName || 'a team member';
         groupCreationInProgress.set(uid, { startedBy: starterName, replyJids: [replyTo] });
         await (0, evoClient_1.evoSendText)(replyTo, `⏳ Creating group for ${guest_name}...\n\n` +
-            `Everything is handled. Welcome messages will arrive in the group within 10 minutes.\n\n` +
+            `Everything is handled. Welcome messages will arrive in the group within 30–40 minutes (slow-paced on purpose).\n\n` +
             `No action needed.`).catch(() => { });
         const phone = info?.phoneNumber || info?.cellPhoneNumber || '';
         const nationality = (info?.countryCode || 'US').toUpperCase();

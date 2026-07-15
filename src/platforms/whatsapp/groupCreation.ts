@@ -557,6 +557,12 @@ async function _doCreateBookingGroup({
             `─────────────────\n` +
             `⏱️ Welcome messages will arrive in the group within ~30 min (slow-paced on purpose)\n` +
             `💬 Please send a message in the group today to keep it active\n` +
+            `─────────────────\n` +
+            (staffNotAdmin.length === 0
+                ? `👑 <b>Admin access: ACTIVE</b> — staff are admins & "all members can add others" is on.\n` +
+                  `🤝 You can now <b>manually add the guest's family/friends</b> — human touch encouraged!\n`
+                : `⚠️ <b>Admin access: ${staffLids.length - staffNotAdmin.length}/${staffLids.length} staff</b> — some still pending, check Group Info.\n`) +
+            `🤖 <i>COZMO stays in the group and keeps monitoring updates</i>\n` +
             `─────────────────\n<i>via COZMO · COZE Hospitality</i>`,
             { useTestJandi: CONFIG.IS_APP_DEV, propertyCode: propertyCodeFromName(property) || undefined }
         );

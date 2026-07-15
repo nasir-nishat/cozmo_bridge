@@ -56,12 +56,17 @@ export const CONFIG = {
     BOOKING_FALLBACK_LOOKBACK_MS: parseNum(process.env.BOOKING_FALLBACK_LOOKBACK_MS, 8 * 60 * 60 * 1000),
     GROUP_CREATION_DELAY_MS: 600000,
     // Pacing added 2026-07-15 after WA suspended 2 groups + logged out the Evolution device.
-    // Auto-creation stays on but slow: spaced out, capped per day, human hours only, warm-up after reconnect.
-    GROUP_CREATION_MIN_GAP_MS: parseNum(process.env.GROUP_CREATION_MIN_GAP_MS, 60 * 60 * 1000),
-    GROUP_CREATION_DAILY_CAP: parseNum(process.env.GROUP_CREATION_DAILY_CAP, 5),
-    GROUP_CREATION_HOUR_START: parseNum(process.env.GROUP_CREATION_HOUR_START, 10),
+    // Tightened to MAX-SAFETY defaults: this is an interim unofficial-client (Baileys) pipe kept
+    // alive only until the official Groups API migration lands — survival >> throughput.
+    // Every value is env-overridable, so speed can be dialled back up later without a code change.
+    GROUP_CREATION_MIN_GAP_MS: parseNum(process.env.GROUP_CREATION_MIN_GAP_MS, 2 * 60 * 60 * 1000), // 2h between groups
+    GROUP_CREATION_DAILY_CAP: parseNum(process.env.GROUP_CREATION_DAILY_CAP, 6),                    // ≤6 groups/day (fits 6 at 2h gaps in a 10–21 window)
+    GROUP_CREATION_HOUR_START: parseNum(process.env.GROUP_CREATION_HOUR_START, 10),                 // 10:00–21:00 KST
     GROUP_CREATION_HOUR_END: parseNum(process.env.GROUP_CREATION_HOUR_END, 21),
-    GROUP_CREATION_WARMUP_MS: parseNum(process.env.GROUP_CREATION_WARMUP_MS, 30 * 60 * 1000),
+    GROUP_CREATION_WARMUP_MS: parseNum(process.env.GROUP_CREATION_WARMUP_MS, 60 * 60 * 1000),       // 60min after reconnect
+    // Invite-only: never force-add the guest by number. They receive a join link and opt in.
+    // Kills the biggest ban trigger — failed/forced adds of unsaved & privacy-restricted (esp. US) numbers.
+    GROUP_CREATION_GUEST_INVITE_ONLY: parseBool(process.env.GROUP_CREATION_GUEST_INVITE_ONLY, true),
     GROUP_CREATION_REQUIRE_ALLOWLIST: parseBool(process.env.GROUP_CREATION_REQUIRE_ALLOWLIST, true),
     GROUP_CREATION_LEAD_ALLOWLIST: parseCsv(process.env.GROUP_CREATION_LEAD_ALLOWLIST),
     GROUP_CREATION_PROPERTY_ALLOWLIST: parseCsv(process.env.GROUP_CREATION_PROPERTY_ALLOWLIST),

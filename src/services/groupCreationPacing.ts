@@ -61,3 +61,43 @@ export function canAutoCreateGroup(): { ok: boolean; reason?: string } {
     }
     return { ok: true };
 }
+
+// Roll a candidate epoch forward into the next allowed KST active-hours window
+function clampToActiveHours(epoch: number): number {
+    let d = new Date(epoch + 9 * 3600_000); // shift to KST wall-clock
+    const h = d.getUTCHours();
+    if (h < CONFIG.GROUP_CREATION_HOUR_START) {
+        d.setUTCHours(CONFIG.GROUP_CREATION_HOUR_START, 0, 0, 0);
+    } else if (h >= CONFIG.GROUP_CREATION_HOUR_END) {
+        d.setUTCDate(d.getUTCDate() + 1);
+        d.setUTCHours(CONFIG.GROUP_CREATION_HOUR_START, 0, 0, 0);
+    }
+    return d.getTime() - 9 * 3600_000; // shift back to real epoch
+}
+
+// Best estimate of when the NEXT queued group will actually be created,
+// accounting for warm-up, daily cap (rolls to tomorrow), min gap, and active hours.
+export function nextEligibleAt(): Date {
+    const now = Date.now();
+    let candidate = now;
+
+    const readyFor = waReadyDurationMs();
+    if (readyFor < CONFIG.GROUP_CREATION_WARMUP_MS) {
+        candidate = Math.max(candidate, now + (CONFIG.GROUP_CREATION_WARMUP_MS - readyFor));
+    }
+
+    const s = load();
+    if (s.lastCreatedAt) {
+        candidate = Math.max(candidate, s.lastCreatedAt + CONFIG.GROUP_CREATION_MIN_GAP_MS);
+    }
+
+    // Daily cap reached today → earliest is tomorrow's window opening
+    if (s.day === kstDay() && s.count >= CONFIG.GROUP_CREATION_DAILY_CAP) {
+        const t = new Date(now + 9 * 3600_000);
+        t.setUTCDate(t.getUTCDate() + 1);
+        t.setUTCHours(CONFIG.GROUP_CREATION_HOUR_START, 0, 0, 0);
+        candidate = Math.max(candidate, t.getTime() - 9 * 3600_000);
+    }
+
+    return new Date(clampToActiveHours(candidate));
+}

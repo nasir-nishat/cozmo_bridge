@@ -1,10 +1,12 @@
 import fs from 'fs';
 import path from 'path';
+import { CONFIG } from '../config/constants';
 import { isSent } from './sentMessages';
 import { getGroupIdByLeadUid } from './groupLeads';
 import { sendAlert } from './notify';
-import { canAutoCreateGroup } from './groupCreationPacing';
+import { canAutoCreateGroup, nextEligibleAt } from './groupCreationPacing';
 import { propertyCodeFromName } from '../platforms/whatsapp/groupNaming';
+import { formatSeoulDateTime } from '../utils/format';
 
 const FILE = path.join(process.cwd(), 'src/data/pending-group-creation.json');
 
@@ -49,6 +51,7 @@ export function hasQueuedGroupCreation(leadUid: string): boolean {
 
 function dequeue(leadUid: string): void {
     save(load().filter(m => m.leadUid !== leadUid));
+    scheduleAlerted.delete(leadUid);
 }
 
 const stuckAlertedAt = new Map<string, number>();
@@ -77,16 +80,44 @@ export async function checkForStuckGroupCreations(): Promise<void> {
     }
 }
 
+// Team gets ONE "scheduled" heads-up per booking (guard prevents the every-cycle spam we hit before)
+const scheduleAlerted = new Set<string>();
+
 let flushing = false;
 export async function flushPendingGroupCreations(): Promise<void> {
     if (flushing) return;
     const now = Date.now();
-    const due = load().filter(m => new Date(m.fireAt).getTime() <= now);
+    const due = load()
+        .filter(m => new Date(m.fireAt).getTime() <= now)
+        // Soonest check-in first — imminent arrivals get their group before far-future bookings
+        .sort((a, b) => new Date(a.checkIn || '2999-01-01').getTime() - new Date(b.checkIn || '2999-01-01').getTime());
     if (!due.length) return;
 
     const pacing = canAutoCreateGroup();
     if (!pacing.ok) {
         console.log(`🐢 Auto group creation held: ${pacing.reason} — ${due.length} job(s) stay queued`);
+        // Tell the team, once per booking, when each queued group is expected to be created
+        const baseEta = nextEligibleAt().getTime();
+        let i = 0;
+        for (const job of due) {
+            if (scheduleAlerted.has(job.leadUid)) { i++; continue; }
+            scheduleAlerted.add(job.leadUid);
+            // Each subsequent group is ~one min-gap later than the one ahead of it in the queue
+            const eta = baseEta + i * CONFIG.GROUP_CREATION_MIN_GAP_MS;
+            i++;
+            await sendAlert(
+                `🗓️ <b>WA Group Scheduled</b>\n─────────────────\n` +
+                `👤 <b>Guest:</b> ${job.guestName}\n` +
+                `🏠 <b>Property:</b> ${job.property}\n` +
+                `📅 <b>Check-in:</b> ${job.checkIn || 'TBD'}\n` +
+                `⏰ <b>Group will be created:</b> ~${formatSeoulDateTime(eta)}\n` +
+                `👑 <b>Admin access + "add family/friends" ready:</b> ~15–20 min after creation\n` +
+                `─────────────────\n` +
+                `🤝 Once you see admins, please add the guest's family manually — human touch!\n` +
+                `🤖 <i>COZMO paces creation to protect the number · COZE Hospitality</i>`,
+                { propertyCode: propertyCodeFromName(job.property) || undefined }
+            ).catch(() => {});
+        }
         return;
     }
 

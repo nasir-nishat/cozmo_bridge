@@ -53,6 +53,13 @@ exports.CONFIG = {
     BOOKING_FALLBACK_ENABLED: parseBool(process.env.BOOKING_FALLBACK_ENABLED, false),
     BOOKING_FALLBACK_LOOKBACK_MS: parseNum(process.env.BOOKING_FALLBACK_LOOKBACK_MS, 8 * 60 * 60 * 1000),
     GROUP_CREATION_DELAY_MS: 600000,
+    // Pacing added 2026-07-15 after WA suspended 2 groups + logged out the Evolution device.
+    // Auto-creation stays on but slow: spaced out, capped per day, human hours only, warm-up after reconnect.
+    GROUP_CREATION_MIN_GAP_MS: parseNum(process.env.GROUP_CREATION_MIN_GAP_MS, 60 * 60 * 1000),
+    GROUP_CREATION_DAILY_CAP: parseNum(process.env.GROUP_CREATION_DAILY_CAP, 5),
+    GROUP_CREATION_HOUR_START: parseNum(process.env.GROUP_CREATION_HOUR_START, 10),
+    GROUP_CREATION_HOUR_END: parseNum(process.env.GROUP_CREATION_HOUR_END, 21),
+    GROUP_CREATION_WARMUP_MS: parseNum(process.env.GROUP_CREATION_WARMUP_MS, 30 * 60 * 1000),
     GROUP_CREATION_REQUIRE_ALLOWLIST: parseBool(process.env.GROUP_CREATION_REQUIRE_ALLOWLIST, true),
     GROUP_CREATION_LEAD_ALLOWLIST: parseCsv(process.env.GROUP_CREATION_LEAD_ALLOWLIST),
     GROUP_CREATION_PROPERTY_ALLOWLIST: parseCsv(process.env.GROUP_CREATION_PROPERTY_ALLOWLIST),
