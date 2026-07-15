@@ -103,6 +103,9 @@ Platform flags (all in `ecosystem.config.js`): `ENABLE_WHATSAPP`, `ENABLE_LINE`,
 - WA chat history backfill not possible (E2E encryption) — COZMO only reads post-/link messages
 - **NEVER send bulk messages to any platform without a kill switch.** Any loop-send feature MUST have a boolean flag in `ecosystem.config.js`. No exceptions.
 - **NEVER modify `scripts/restart.ps1`** — it is locked. If restart behavior needs changing, update `ecosystem.config.js` or the relevant source file instead.
+- **This system is LIVE and stable — every change must be blast-radius checked.** Before modifying any shared service (`src/services/*`), grep for ALL callers and verify each one still behaves correctly (does it catch? is it in a route with try/catch?). Prefer additive changes (new exports, new files) over rewriting existing functions. No drive-by refactors.
+- **NEVER `catch { return {} }` around a state-file read that precedes a save.** A transient read failure then saves an empty store — this wiped all 228 group links on 2026-07-15 (`/link` + locked `group-leads.json`). Pattern to follow: `readStrict`/`readLenient`/`writeAtomic` in `src/services/groupLeads.ts` — mutations abort on read failure, getters stay lenient, saves are atomic with a `.backup.json`.
+- **Never test against live `src/data`.** Verify risky logic in a sandbox dir (chdir + fake data files) with outbound sends stubbed.
 
 ---
 
