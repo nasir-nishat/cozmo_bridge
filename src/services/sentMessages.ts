@@ -46,3 +46,16 @@ export function markSent(groupKey: string, type: MessageType): void {
 export function isSent(groupKey: string, type: MessageType): boolean {
     return !!load()[key(groupKey, type)];
 }
+
+export function clearSentForGroup(groupKey: string): number {
+    const data = load();
+    let removed = 0;
+    for (const k of Object.keys(data)) {
+        if (k.startsWith(`${groupKey}:`)) {
+            delete data[k];
+            removed++;
+        }
+    }
+    if (removed > 0) save(data);
+    return removed;
+}

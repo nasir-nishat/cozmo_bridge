@@ -24,6 +24,26 @@
       "sender": "COZE HOSPITALITY 3.0",
       "text": "Which item do you need? :)",
       "ts": 1784076700111
+    },
+    {
+      "sender": "unknown",
+      "text": "Breakfast delivery for tomorrow please.\nThank you!",
+      "ts": 1784077803773
+    },
+    {
+      "sender": "COZE HOSPITALITY 3.0",
+      "text": "🥖 Bread • 🥛 Milk • 🥚 Eggs • 🧃 Juice • 🍎 Fruit •",
+      "ts": 1784077877467
+    },
+    {
+      "sender": "COZE HOSPITALITY 3.0",
+      "text": "Do you need the upper item everything?",
+      "ts": 1784077892941
+    },
+    {
+      "sender": "unknown",
+      "text": "Eggs, juice, and more fruits-bananas and one more kind if possible",
+      "ts": 1784078254535
     }
   ],
   "120363410881167904@g.us": [
@@ -76,6 +96,16 @@
       "sender": "COZE_June",
       "text": "To pick up the currency, we will visit the accommodation at 10:30 AM, which is the wake-up time you mentioned.😀",
       "ts": 1784075890329
+    },
+    {
+      "sender": "Shabaz Khan",
+      "text": "Hi good morning",
+      "ts": 1784078099611
+    },
+    {
+      "sender": "Shabaz Khan",
+      "text": "I’m waiting, thanks",
+      "ts": 1784078114825
     }
   ],
   "120363410279865987@g.us": [
@@ -107,6 +137,109 @@
       "sender": "COZE_Gaya",
       "text": "Safe drive to home :)",
       "ts": 1784077270476
+    }
+  ],
+  "120363423605030782@g.us": [
+    {
+      "sender": "Anh",
+      "text": "How to fix?",
+      "ts": 1784080867546
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "hold on",
+      "ts": 1784080895812
+    },
+    {
+      "sender": "Anh",
+      "text": "Off now. Thanks Gaya",
+      "ts": 1784080969963
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "no problem!",
+      "ts": 1784080981004
+    }
+  ],
+  "120363407122736550@g.us": [
+    {
+      "sender": "202104064999610@lid",
+      "text": "Wise로 잔금 보내드리고 싶은데 이메일 받으셨나요?",
+      "ts": 1784083013230
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "네. 잠시만 기다려 주세요!",
+      "ts": 1784083018509
+    }
+  ],
+  "821066906935@c.us": [
+    {
+      "sender": "COZE_Gaya",
+      "text": "/group 159747fe-ee61-4ae4-852d-2169cb3f99f0",
+      "ts": 1784083583155
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "/group 159747fe-ee61-4ae4-852d-2169cb3f99f0",
+      "ts": 1784083982498
+    }
+  ],
+  "120363427266060390@g.us": [
+    {
+      "sender": "Ryan Thompson",
+      "text": "Hello!",
+      "ts": 1784084350639
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "/link 159747fe-ee61-4ae4-852d-2169cb3f99f0",
+      "ts": 1784084365410
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "/welcome",
+      "ts": 1784084371004
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "Welcome to COZE!\nHere we share the check in manual!\n\ncoze.care/ananda",
+      "ts": 1784084484838
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "@127024362442991 Our team June is waiting for you to check in :)",
+      "ts": 1784084504113
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "Once you arrive home, please message to us!",
+      "ts": 1784084511358
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "@81016437891073 Hello, Ryan :)\n\nETA, please? 🤔",
+      "ts": 1784085062136
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "if there is some delay, you can do self check in too!",
+      "ts": 1784085087829
+    },
+    {
+      "sender": "Ryan Thompson",
+      "text": "We just come up from the Seonleung Station exit 8",
+      "ts": 1784085153993
+    },
+    {
+      "sender": "Ryan Thompson",
+      "text": "So we should be there in a few minutes",
+      "ts": 1784085196262
+    },
+    {
+      "sender": "COZE_June",
+      "text": "Nice to meet you. I’m JUNE, the check-in manager at COZE.\n\nI’m waiting for you on the first floor.\nSee you in a moment. 😊",
+      "ts": 1784085287446
     }
   ]
 }

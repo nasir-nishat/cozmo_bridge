@@ -10,6 +10,7 @@ import { detectGuestIntentWithContext } from '../../services/requestDetection';
 import { isWaReady, fetchGroupName } from './evoClient';
 import { guestName } from '../../utils/format';
 import { handleLinkCommand, handleWelcomeCommand, handleGroupCommand, handleCkoutCommand, handleCkinCommand } from './commands';
+import { handleUngroupCommand } from './groupCleanup';
 import { handleExpCommand } from '../../services/expenses';
 import { getStoredGroupName } from '../../services/groupLeads';
 import { evoSendText, evoSendTyping } from './evoClient';
@@ -126,6 +127,13 @@ export async function handleIncomingMessage(data: any) {
     // /welcome command — team members only
     if (text.startsWith('/welcome')) {
         await handleWelcomeCommand(from, senderJid, data.pushName || '');
+        return;
+    }
+
+    // /ungroup command — team members only, wipe local state for a group so /group can recreate
+    if (text.startsWith('/ungroup')) {
+        const arg = text.split(/\s+/)[1]?.trim() || '';
+        await handleUngroupCommand(from, arg, senderJid);
         return;
     }
 

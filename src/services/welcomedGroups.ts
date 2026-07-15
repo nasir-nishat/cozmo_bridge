@@ -24,3 +24,10 @@ export function markWelcomed(groupId: string): void {
 export function isWelcomed(groupId: string): boolean {
     return !!load()[groupId];
 }
+
+export function clearWelcomed(groupId: string): void {
+    const data = load();
+    if (!data[groupId]) return;
+    delete data[groupId];
+    save(data);
+}

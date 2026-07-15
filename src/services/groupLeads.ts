@@ -101,6 +101,13 @@ export function getGroupLang(groupId: string): string | null {
     return loadLangs()[groupId] || null;
 }
 
+export function deleteGroupLang(groupId: string): void {
+    const data = loadLangs();
+    if (!(groupId in data)) return;
+    delete data[groupId];
+    saveLangs(data);
+}
+
 // ─── Kakao chat name persistence ─────────────────────────────────────────────
 const KAKAO_NAMES_FILE = path.join(ROOT, 'src/data/kakao-chat-names.json');
 
@@ -149,4 +156,11 @@ export function saveGroupName(groupId: string, name: string): void {
 
 export function getStoredGroupName(groupId: string): string | null {
     return loadGroupNames()[groupId] || null;
+}
+
+export function deleteGroupName(groupId: string): void {
+    const data = loadGroupNames();
+    if (!(groupId in data)) return;
+    delete data[groupId];
+    saveGroupNames(data);
 }

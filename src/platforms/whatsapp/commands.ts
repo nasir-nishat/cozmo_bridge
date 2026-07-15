@@ -17,7 +17,7 @@ import { guestName, formatSeoulDate } from '../../utils/format';
 
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
 
-function isStaffLid(lid: string): boolean {
+export function isStaffLid(lid: string): boolean {
     try {
         const staffIds = JSON.parse(fs.readFileSync(path.join(__dirname, '../../data/staff-ids.json'), 'utf8'));
         const lidNum = lid.replace(/@.*$/, '');
