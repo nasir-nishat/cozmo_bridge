@@ -2385,6 +2385,21 @@
     "updatedAt": "2026-07-15T01:23:37.610Z"
   },
   {
+    "leadUid": "dd938490-8c74-473d-9763-4798c518a2e7",
+    "guestName": "Сева",
+    "property": "YT_LOTUS_09",
+    "checkIn": "2026-07-18",
+    "checkOut": "2026-07-21",
+    "nationality": "",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "NEW",
+    "source": "INQUIRY",
+    "phone": "",
+    "updatedAt": "2026-07-15T10:23:49.524Z"
+  },
+  {
     "leadUid": "6bac0d61-29fa-4a9e-b28f-4d20e3886365",
     "guestName": "Alice Im",
     "property": "SA_ACHAE",

@@ -11,6 +11,7 @@ import { getRecentAlerts, subscribeSSE } from '../services/alertStore';
 import { getAllTeamMembers } from '../services/sheets';
 import { sendAlert } from '../services/notify';
 import { getLeadUid } from '../services/groupLeads';
+import { getGroupSteps, MessageType } from '../services/sentMessages';
 import { getLivePropertyPricingEntry } from '../knowledge/livePricing';
 import { webSearch } from '../knowledge/webSearch';
 import { getExpenseSummary } from '../services/expenses';
@@ -139,6 +140,47 @@ router.get('/admin/groups', (_req, res) => {
             const name = platform === 'kakao' ? (kakaoNames[groupId] || null) : (groupNames[groupId] || null);
             const booking = bookings.find(b => b.leadUid === leadUid) || null;
             return { groupId, leadUid, platform, name, booking };
+        });
+
+    res.json({ ok: true, groups });
+});
+
+// GET /admin/group-steps — per-group guest-lifecycle checklist (done / by whom / when)
+// Powers the admin-ui checklist so the team can see what COZMO did vs what they handled manually.
+router.get('/admin/group-steps', (_req, res) => {
+    const root = process.cwd();
+    const groupLeads = readJson(path.join(root, 'src/data/group-leads.json'));
+    const groupNames = readJson(path.join(root, 'src/data/group-names.json'));
+
+    // Ordered guest lifecycle — labels are what the team sees in the UI
+    const STEPS: Array<{ type: MessageType; label: string }> = [
+        { type: 'welcome', label: 'Welcome' },
+        { type: 'checkin_tips', label: 'Check-in tips' },
+        { type: 'checkin_rules', label: 'Check-in rules' },
+        { type: 'checkout_reminder', label: 'Checkout reminder' },
+        { type: 'farewell', label: 'Farewell' },
+        { type: 'final_bill', label: 'Final bill' },
+    ];
+    const types = STEPS.map(s => s.type);
+
+    const groups = Object.entries(groupLeads)
+        .filter(([id]) => detectPlatform(id) === 'whatsapp')
+        .map(([groupId, leadUid]) => {
+            const steps = getGroupSteps(groupId, types).map((s, i) => ({
+                type: s.type,
+                label: STEPS[i].label,
+                done: s.done,
+                by: s.by,       // 'cozmo' | 'team' | null
+                at: s.at,
+            }));
+            const doneCount = steps.filter(s => s.done).length;
+            return {
+                groupId,
+                leadUid,
+                name: groupNames[groupId] || null,
+                steps,
+                progress: `${doneCount}/${steps.length}`,
+            };
         });
 
     res.json({ ok: true, groups });

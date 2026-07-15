@@ -11,6 +11,7 @@ import { CONFIG } from '../config/constants';
 import { markSent, isSent, MessageType } from './sentMessages';
 import { wasAlreadySent } from './llm';
 import { getGroupLang } from './groupLeads';
+import { renderMessage } from '../utils/messageVariation';
 
 type Lang = 'EN' | 'KR' | 'JA' | 'ZH';
 
@@ -132,7 +133,10 @@ async function sendCheckinTips(): Promise<void> {
                 const msg = await getTipsMessage(key, lang);
                 if (!msg) { console.warn(`⚠️ No tips message for: ${key}/${lang}`); continue; }
                 try {
-                    await sendToGroup(platform, groupKey, chatName, msg);
+                    // WA: prepend a name greeting to the FIRST tip only (body stays the Sheet text verbatim),
+                    // so the 3-message tip batch isn't 3 greetings but the group's messages are still unique.
+                    const waMsg = renderMessage(msg, { name: lead.guestName }, { withOpener: groupSent === 0 });
+                    await sendToGroup(platform, groupKey, chatName, platform === 'wa' ? waMsg : msg);
                     groupSent++;
                     if (groupSent < tipKeys.length) await sleep(3000);
                 } catch (e: any) {
@@ -198,7 +202,7 @@ async function sendCheckinRules(): Promise<void> {
             if (!msg) { console.warn(`⚠️ No guest_rules for lang: ${lang}`); continue; }
 
             try {
-                await sendToGroup(platform, groupKey, null, msg);
+                await sendToGroup(platform, groupKey, null, platform === 'wa' ? renderMessage(msg, { name: lead.guestName }, { withOpener: true }) : msg);
                 markSent(groupKey, 'checkin_rules');
                 console.log(`✅ Guest rules sent [${platform}/${lang}] → ${lead.guestName}`);
                 sent++;

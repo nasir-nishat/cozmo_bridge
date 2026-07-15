@@ -13,6 +13,7 @@ import { CONFIG } from '../config/constants';
 import { markSent, isSent, MessageType } from './sentMessages';
 import { wasAlreadySent } from './llm';
 import { getGroupLang } from './groupLeads';
+import { renderMessage } from '../utils/messageVariation';
 
 
 type Lang = 'EN' | 'KR' | 'JA' | 'ZH';
@@ -135,7 +136,9 @@ async function sendCheckoutReminders(): Promise<void> {
             try {
                 if (platform === 'wa') {
                     sendFn = async (msg) => evoSendText(groupKey, msg);
-                    await evoSendText(groupKey, message);
+                    // Prepend a personalized greeting (guest name) so no two groups get byte-identical
+                    // text. The BODY is the Google Sheet message verbatim — greeting only, no AI/generated copy.
+                    await evoSendText(groupKey, renderMessage(message, { name }, { withOpener: true }));
                 } else if (platform === 'line') {
                     const lineId = groupKey.replace('line:', '');
                     sendFn = async (msg) => pushMessage(lineId, msg);
@@ -251,7 +254,7 @@ async function sendFarewellMessages(): Promise<void> {
             if (!msg) continue;
 
             try {
-                if (platform === 'wa') await evoSendText(groupKey, msg);
+                if (platform === 'wa') await evoSendText(groupKey, renderMessage(msg, { name: lead.guestName }, { withOpener: true }));
                 else if (platform === 'line') await pushMessage(groupKey.replace('line:', ''), msg);
                 else if (platform === 'wechat') await wechatSendText(groupKey.replace('wechat:', ''), msg);
                 markSent(groupKey, 'farewell');
@@ -328,7 +331,7 @@ async function sendFinalBill(): Promise<void> {
 
             try {
                 const billMsg = await getScheduledMessage('final_bill', lang);
-                if (billMsg) await sendFn(billMsg);
+                if (billMsg) await sendFn(platform === 'wa' ? renderMessage(billMsg, { name: lead.guestName }, { withOpener: true }) : billMsg);
                 if (CONFIG.ENABLE_EXPENSE_AUTO_SEND) await sendExpenseSummary(uid, sendFn, groupKey);
                 markSent(groupKey, 'final_bill');
                 console.log(`💳 Final bill sent [${platform}/${lang}] → ${lead.guestName}`);

@@ -48,10 +48,11 @@ Persists to `src/data/group-creation-pacing.json` (survives restarts). Gates `fl
 
 | Rule | Default | Env override |
 |---|---|---|
-| Min gap between groups | 1 h | `GROUP_CREATION_MIN_GAP_MS` |
-| Daily cap (KST, counts manual + auto) | 5 | `GROUP_CREATION_DAILY_CAP` |
+| Min gap between groups | 2 h | `GROUP_CREATION_MIN_GAP_MS` |
+| Daily cap (KST, counts manual + auto) | 6 | `GROUP_CREATION_DAILY_CAP` |
 | Active hours (KST) | 10:00–21:00 | `GROUP_CREATION_HOUR_START` / `_HOUR_END` |
-| Warm-up after WA reconnect | 30 min | `GROUP_CREATION_WARMUP_MS` |
+| Warm-up after WA reconnect | 60 min | `GROUP_CREATION_WARMUP_MS` |
+| Queue order | soonest check-in first | — |
 
 The warm-up is measured via `evoClient.waReadyDurationMs()` and directly prevents the "blast right after re-linking the QR" ban pattern.
 
@@ -68,15 +69,28 @@ Makes every group's welcome text unique → defeats the identical-template signa
 - `spin("{a|b|c}")` → random option (author-controlled variety)
 - `{{name}}` / `{{property}}` placeholder fill
 - Rotating personalized opener (`Hey Layton! 🙌` / `Welcome, Dylan! 🌿` …)
-- Applied to `brand_msg` + `intro_msg` in `sendBookingMessages`. Plain text (no spintax) passes through unchanged — nothing breaks.
+- Applied to `brand_msg` + `intro_msg` in `sendBookingMessages`, **and** to the scheduled messages (check-in tips/rules, checkout reminder, farewell, final bill) on WhatsApp — each gets a personalized name greeting on top; the Google-Sheet body is sent verbatim (no AI). Plain text passes through unchanged.
+
+### 3.4 Guest add: force-add by default, invite-link fallback — `GROUP_CREATION_GUEST_INVITE_ONLY` (default **false**)
+**Decided behavior (2026-07-15): keep BOTH, force-add by default.**
+- **Default (flag false):** guests are **force-added** to the group normally.
+- **Fallback (automatic):** a guest who **can't** be added — WhatsApp **privacy setting** blocks group-adds, or the guest has **no WhatsApp** and isn't CN/JP/KR — is detected after creation and gets the **invite link via WhatsApp DM + Hostfully inbox** instead.
+- **CN/JP/KR routing is upstream and untouched** (KR → KakaoTalk only, etc.).
+- Flip `GROUP_CREATION_GUEST_INVITE_ONLY=true` only to make **all** guests invite-link (e.g. during an active ban scare). Trade-off: guests must tap to join; some won't.
+
+### 3.5 Other hardening shipped same day
+- **Queue reliability** (`pendingGroupCreation.ts`): a job is dequeued **only on real success** — transient failures (WA drop, cooldown) keep it queued and retry every 2 min. Nothing is silently dropped; the stuck-alert (12h overdue) backstops genuine hangs.
+- **Team schedule alerts (Jandi)**: "🗓️ Group Scheduled" (creation ETA + when admins ready) and an enhanced "Group Created" (admin access active → team can add family). One-time per booking.
+- **Step watcher** (`stepWatcher.ts`): watches groups; when a **human** completes a lifecycle step manually it auto-checkmarks it (`markSent(..., 'team')`) so COZMO won't re-send, and logs it. Surfaced in the admin-ui **Guest Checklist** page. Hybrid trigger: debounced on inbound message + 10-min sweep.
+- **Alert record persistence** (`alertStore.ts`): the Telegram alert feed now persists to `alerts-log.json` (500 history) and streams live to the admin-ui **Alerts** page via SSE.
 
 ---
 
 ## 4. Still TODO (needs a human decision)
 
-- [ ] **Add spintax variants to the Google-Sheet welcome bodies.** Code supports `{We don't just rent homes|We curate your entire stay}`, but the sheet still holds one fixed string — so today only the *opener* varies. Varying the body is the bigger anti-detection win. (Copy owner: Nishat/Gaya.)
-- [ ] **Guest joins via invite link instead of being force-added.** Strongest structural fix — kills the "added an unsaved contact" signal *and* raises reply ratio (a link-tapper is far likelier to say hello). Product change: guest might not click. Needs Nishat's call.
+- [ ] **Add spintax variants to the Google-Sheet message bodies.** Code supports `{We don't just rent homes|We curate your entire stay}`; today only the *opener* varies. Varying the body is the bigger anti-detection win. (Copy owner: Nishat/Gaya.)
 - [ ] **Fixed staff member `8210-2862-1620`** fails admin promotion in every group → triggers the retry loop every time (pure bot noise). Fix their LID mapping or drop them from auto-promote.
+- [ ] **Migrate to the official Groups API** — the permanent fix. See [whatsapp-groups-api-migration.md](whatsapp-groups-api-migration.md).
 
 ---
 

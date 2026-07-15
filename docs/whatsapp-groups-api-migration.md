@@ -85,7 +85,7 @@ Until the Groups API is live, the current unofficial number must survive. Defaul
 
 **Team visibility (Jandi):** when a group is queued/deferred, the team gets a one-time **"🗓️ WA Group Scheduled"** alert with the estimated creation time and when admin access will be ready. When the group is created, the **"👥 Group Created"** alert confirms **admin access is active** and prompts staff to **manually add the guest's family/friends** (the human touch) — COZMO stays in the group and keeps monitoring. Alerts are guarded to fire once per booking (no repeat spam).
 
-**Biggest remaining lever (recommended):** switch the Baileys guest flow from **force-add → invite-link join**, mirroring the Groups API. Force-adding an unsaved guest number is the single most ban-prone action we still do. Trade-off: a guest who ignores the link never joins, so it needs a good invite message + reminder. Worth doing given survival is the priority.
+**Guest add (decided 2026-07-15):** keep **both** paths, force-add by default. Normal guests are force-added; guests who *can't* be added (privacy setting blocks group-adds, or no WhatsApp and not CN/JP/KR) fall back to the **invite link via WA DM + Hostfully**. Controlled by `GROUP_CREATION_GUEST_INVITE_ONLY` (default false; flip true to make all guests invite-link during a ban scare). This mirrors where the Groups API is headed (invite-only) while keeping force-add convenience for now.
 
 ## 5. Cost model (favorable for concierge)
 

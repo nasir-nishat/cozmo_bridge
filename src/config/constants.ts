@@ -64,9 +64,11 @@ export const CONFIG = {
     GROUP_CREATION_HOUR_START: parseNum(process.env.GROUP_CREATION_HOUR_START, 10),                 // 10:00–21:00 KST
     GROUP_CREATION_HOUR_END: parseNum(process.env.GROUP_CREATION_HOUR_END, 21),
     GROUP_CREATION_WARMUP_MS: parseNum(process.env.GROUP_CREATION_WARMUP_MS, 60 * 60 * 1000),       // 60min after reconnect
-    // Invite-only: never force-add the guest by number. They receive a join link and opt in.
-    // Kills the biggest ban trigger — failed/forced adds of unsaved & privacy-restricted (esp. US) numbers.
-    GROUP_CREATION_GUEST_INVITE_ONLY: parseBool(process.env.GROUP_CREATION_GUEST_INVITE_ONLY, true),
+    // Default OFF: force-add guests normally. Guests who CAN'T be added (privacy setting blocks
+    // group-adds, or no WhatsApp) are detected after creation and get the invite link via WhatsApp
+    // DM + Hostfully inbox instead. CN/JP/KR routing is handled upstream and untouched.
+    // Flip true only to make ALL guests invite-link (e.g. during a ban scare).
+    GROUP_CREATION_GUEST_INVITE_ONLY: parseBool(process.env.GROUP_CREATION_GUEST_INVITE_ONLY, false),
     GROUP_CREATION_REQUIRE_ALLOWLIST: parseBool(process.env.GROUP_CREATION_REQUIRE_ALLOWLIST, true),
     GROUP_CREATION_LEAD_ALLOWLIST: parseCsv(process.env.GROUP_CREATION_LEAD_ALLOWLIST),
     GROUP_CREATION_PROPERTY_ALLOWLIST: parseCsv(process.env.GROUP_CREATION_PROPERTY_ALLOWLIST),

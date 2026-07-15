@@ -312,16 +312,20 @@ async function _doCreateBookingGroup({
         return '';
     }
 
-    // Always include guest — if not on WA, Evolution API skips them silently; we check after creation
+    // Invite-only mode: the guest is NOT force-added; they join via link (respects "who can add me
+    // to groups" privacy and avoids the failed/forced-add spam signal that triggers suspensions).
+    const guestInviteOnly = CONFIG.GROUP_CREATION_GUEST_INVITE_ONLY;
+
+    // Still check WA registration — decides whether we DM the join link or use HF inbox only
     let guestOnWA = false;
     if (guestPhone) {
         try {
             guestOnWA = await waClient.isRegisteredUser(guestPhone);
         } catch {
-            guestOnWA = true; // assume on WA if check fails — better to try than miss the guest
+            guestOnWA = true; // assume on WA if check fails
         }
         if (!guestOnWA) {
-            console.warn(`⚠️ Guest phone +${guestPhone} not confirmed on WhatsApp — will attempt to add anyway`);
+            console.warn(`⚠️ Guest phone +${guestPhone} not confirmed on WhatsApp`);
         }
     }
 
@@ -333,7 +337,10 @@ async function _doCreateBookingGroup({
         );
     }
 
-    const allParticipants = [...new Set([...(guestPhone ? [guestPhone] : []), ...teamPhones])].filter(Boolean);
+    const allParticipants = [...new Set([
+        ...(!guestInviteOnly && guestPhone ? [guestPhone] : []),
+        ...teamPhones,
+    ])].filter(Boolean);
 
     const propertyImageBase64 = await getPropertyImageBase64(property || '');
     const warnings: string[] = [];
@@ -468,11 +475,13 @@ async function _doCreateBookingGroup({
     }
     await sleep(5000);
 
-    // PRIORITY 2: Promote guest to admin — retry loop mirrors staff pattern
+    // PRIORITY 2: Promote guest to admin — retry loop mirrors staff pattern.
+    // Skipped in invite-only mode: the guest isn't in the group yet (they join via link later),
+    // so there's nobody to promote here. Their admin rights are handled on join (see below).
     const GUEST_MAX_ATTEMPTS = 2;
     let guestPromoted = false;
 
-    for (let attempt = 1; attempt <= GUEST_MAX_ATTEMPTS && !guestPromoted; attempt++) {
+    for (let attempt = 1; !guestInviteOnly && attempt <= GUEST_MAX_ATTEMPTS && !guestPromoted; attempt++) {
         if (attempt > 1) {
             const delay = attempt === 2 ? randSleep(30000, 40000) : randSleep(45000, 60000);
             console.log(`⏳ Guest promote attempt ${attempt} — backing off before retry...`);
@@ -639,24 +648,31 @@ async function _doCreateBookingGroup({
 
     if (guestPhone && !guestInGroup) {
         const phone = `+${guestPhone}`;
-        console.warn(`⚠️ Guest not in group: ${guest_name} (${phone})`);
+        console.log(guestInviteOnly
+            ? `🔗 Invite-only: sending join link to guest ${guest_name} (${phone})`
+            : `⚠️ Guest not in group: ${guest_name} (${phone})`);
 
         // Fetch invite link once — reused for DM, alert, and HF inbox
         const inviteLink = await getGroupInviteLink(groupId).catch(() => null);
 
         if (CONFIG.SEND_GUEST_INVITE_DM && inviteLink) {
             await evoSendText(guestPhone,
-                `Hi ${guest_name}! 👋 Your COZE Hospitality guest group is ready.\n\nPlease join here:\n${inviteLink}\n\n— COZMO AI | Guest Care Team | COZE Hospitality 3.0`
+                `Hi ${guest_name}! 👋 Your private COZE Hospitality concierge channel is ready.\n\nTap to join us here:\n${inviteLink}\n\nOnce you're in, just say hello and our team will take care of everything for your stay. 🌿\n\n— COZMO AI | Guest Care Team | COZE Hospitality 3.0`
             ).catch((e: any) => console.warn('⚠️ Could not send invite link to guest:', e?.message));
         }
 
         await sendAlert(
-            `⚠️ <b>Guest Not Added to Group</b>\n─────────────────\n` +
+            (guestInviteOnly ? `🔗 <b>Guest Invite Link Sent</b>` : `⚠️ <b>Guest Not Added to Group</b>`) +
+            `\n─────────────────\n` +
             `👤 <b>Guest:</b> ${guest_name} (${phone})\n` +
             `🏠 <b>Property:</b> ${property}\n` +
             `🆔 <b>Group ID:</b> <code>${groupId}</code>\n` +
-            (inviteLink && CONFIG.SEND_GUEST_INVITE_DM ? `🔗 <b>Invite link sent to guest</b>\n` : `📋 <b>Action needed:</b> Add guest manually\n`) +
-            `─────────────────\n<i>via COZMO · COZE Hospitality</i>`
+            (inviteLink && CONFIG.SEND_GUEST_INVITE_DM
+                ? `🔗 <b>Join link sent</b> — guest opts in (privacy-safe, no force-add)\n` +
+                  `🤝 If they haven't joined in a while, a quick personal nudge helps\n`
+                : `📋 <b>Action needed:</b> send guest the group invite link manually\n`) +
+            `─────────────────\n<i>via COZMO · COZE Hospitality</i>`,
+            { propertyCode: propertyCodeFromName(property) || undefined }
         ).catch(() => {});
 
         // Send invite link via HF inbox — with actual link if available, template-only otherwise

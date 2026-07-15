@@ -55,15 +55,18 @@ function dequeue(leadUid: string): void {
 }
 
 const stuckAlertedAt = new Map<string, number>();
-const STUCK_THRESHOLD_MS = 2 * 60 * 60 * 1000;
+// Raised for the paced era: a full active-hours day can legitimately drain up to ~10h of backlog
+// (cap groups × 2h gaps). Only a job overdue beyond that is genuinely stuck (WA down all day,
+// Step 2 never sent, etc.). Normal pacing waits must NOT false-alarm — but a real miss MUST surface.
+const STUCK_THRESHOLD_MS = 12 * 60 * 60 * 1000;
 const STUCK_ALERT_COOLDOWN_MS = 60 * 60 * 1000;
 
 export async function checkForStuckGroupCreations(): Promise<void> {
     const now = Date.now();
-    const queue = load();
-    if (queue.length && !canAutoCreateGroup().ok) return; // held by pacing — waiting is expected, not stuck
-    for (const job of queue) {
-        const ageMs = now - new Date(job.createdAt).getTime();
+    // Only jobs that are actually due (fireAt reached) can be "stuck"; measure lateness from fireAt.
+    const due = load().filter(m => new Date(m.fireAt).getTime() <= now);
+    for (const job of due) {
+        const ageMs = now - new Date(job.fireAt).getTime();
         if (ageMs < STUCK_THRESHOLD_MS) continue;
         const lastAlert = stuckAlertedAt.get(job.leadUid) ?? 0;
         if (now - lastAlert < STUCK_ALERT_COOLDOWN_MS) continue;
@@ -153,10 +156,17 @@ export async function flushPendingGroupCreations(): Promise<void> {
                     lead_type: job.leadType,
                     group_name: job.groupName,
                 });
+                // CRITICAL: only remove from the queue on a real success. An empty groupId means the
+                // group was NOT created (transient: WA dropped mid-cycle, per-lead cooldown, etc.) —
+                // keep it queued so the next 2-min cycle retries. Pending is fine; dropping it is not.
+                if (!groupId) {
+                    console.warn(`⏳ Group not created for ${job.guestName} (${job.leadUid}) — kept in queue for retry`);
+                    continue;
+                }
                 dequeue(job.leadUid);
 
                 // For no-WA guests: send invite link via HF inbox only (no WA DM — guest has no WA)
-                if (!job.onWhatsApp && groupId) {
+                if (!job.onWhatsApp) {
                     const { getGroupInviteLink } = await import('../platforms/whatsapp/evoClient');
                     const { sendHfInviteLink } = await import('./hostfully');
                     const inviteLink = await getGroupInviteLink(groupId).catch(() => null);
@@ -168,9 +178,10 @@ export async function flushPendingGroupCreations(): Promise<void> {
                     }
                 }
                 // One auto-created group per flush cycle — the pacing gate decides when the next one runs
-                if (groupId) break;
+                break;
             } catch (e: any) {
-                console.error(`❌ Group creation failed (${job.leadUid}):`, e?.message);
+                // Left in queue (not dequeued) — retried next cycle; stuck-check backstops a genuine hang
+                console.error(`❌ Group creation failed (${job.leadUid}) — kept in queue:`, e?.message);
             }
         }
     } finally {

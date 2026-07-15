@@ -41,6 +41,13 @@ export function getRecentMessages(groupKey: string, sinceMinutes: number): Buffe
     return (buf[groupKey] ?? []).filter(m => m.ts >= cutoff);
 }
 
+// Group keys that received at least one message within the last `sinceMinutes` — for periodic sweeps
+export function getActiveGroupKeys(sinceMinutes: number): string[] {
+    const buf = load();
+    const cutoff = Date.now() - sinceMinutes * 60 * 1000;
+    return Object.keys(buf).filter(k => (buf[k] ?? []).some(m => m.ts >= cutoff));
+}
+
 // Prune entries older than BUFFER_WINDOW_MS from all groups — call periodically
 export function pruneBuffer(): void {
     const buf = load();

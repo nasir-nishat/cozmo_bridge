@@ -23,6 +23,7 @@ import { deleteOldExpenses } from './services/expenses';
 import { flushPendingHfMessages, checkForStuckHfMessages } from './services/pendingHfMessages';
 import { flushPendingGroupCreations, checkForStuckGroupCreations } from './services/pendingGroupCreation';
 import { flushPendingMessages } from './platforms/whatsapp/groupCreation';
+import { sweepStepWatcher } from './services/stepWatcher';
 import cron from 'node-cron';
 import { pruneBuffer } from './services/messageBuffer';
 import { checkKakaoHeartbeat } from './services/kakaoWatchdog';
@@ -146,6 +147,8 @@ app.listen(CONFIG.PORT, () => {
     setInterval(() => checkForStuckHfMessages().catch(e => console.error('❌ checkForStuckHfMessages:', e?.message)), 30 * 60 * 1000);
     setInterval(() => checkForStuckGroupCreations().catch(e => console.error('❌ checkForStuckGroupCreations:', e?.message)), 30 * 60 * 1000);
     setInterval(() => flushPendingMessages().catch(e => console.error('❌ flushPendingMessages:', e?.message)), 5 * 60 * 1000);
+    // Step watcher backstop sweep — catches human-completed steps the real-time trigger may have missed
+    setInterval(() => sweepStepWatcher().catch(e => console.error('❌ sweepStepWatcher:', e?.message)), 10 * 60 * 1000);
 
     // Light sync on startup — scans only the 2 most recent pages (~40 leads)
     // Full backfill is done manually via scripts/backfill-bookings.mjs when needed

@@ -103,6 +103,14 @@ export async function handleIncomingMessage(data: any) {
 
     addToBuffer(isGroup ? from : dmJid, data.pushName || senderJid, text);
 
+    // Human posted in a group → let the step watcher check (debounced) whether a team member
+    // just completed a lifecycle step manually, so COZMO can checkmark it and not re-send.
+    if (isGroup && !isOwnerMessage) {
+        import('../../services/stepWatcher')
+            .then(m => m.noteGroupActivity(from))
+            .catch(() => {});
+    }
+
     // /link command
     if (text.startsWith('/link ')) {
         const parts = text.trim().split(/\s+/);
