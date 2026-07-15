@@ -92,5 +92,18 @@
     "property": "GKA_Kelly Ananda ",
     "groupName": "COZE GKA 17thJul Ekthanin Akharaphathanakit 3A",
     "alerted": true
+  },
+  "120363406996249811@g.us": {
+    "sentAt": "2026-07-14T10:54:19.943Z",
+    "guestName": "Layton Liew",
+    "property": "YT_FISH_BIRD",
+    "groupName": "COZE FB 30thOct Layton Liew 12A",
+    "alerted": false
+  },
+  "120363428130052283@g.us": {
+    "sentAt": "2026-07-14T18:37:36.684Z",
+    "guestName": "Ryan Thompson",
+    "property": "GKA_Kelly Ananda ",
+    "alerted": false
   }
 }

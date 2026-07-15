@@ -2250,6 +2250,21 @@
     "updatedAt": "2026-07-01T09:28:59.975Z"
   },
   {
+    "leadUid": "159747fe-ee61-4ae4-852d-2169cb3f99f0",
+    "guestName": "Ryan Thompson",
+    "property": "GKA_Kelly Ananda",
+    "checkIn": "2026-07-15",
+    "checkOut": "2026-07-17",
+    "nationality": "US",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "BOOKED",
+    "source": "BOOKING",
+    "phone": "+19706409613",
+    "updatedAt": "2026-07-14T17:53:41.141Z"
+  },
+  {
     "leadUid": "a561cf3a-48cb-476a-ace7-735f5019f9ba",
     "guestName": "Hiroaki Hasegawa",
     "property": "HT_TEVA RETREAT",
@@ -3132,7 +3147,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+15202511575",
-    "updatedAt": "2026-07-04T06:00:14.994Z"
+    "updatedAt": "2026-07-14T23:29:46.095Z"
   },
   {
     "leadUid": "aac84e61-9d3c-459d-aac2-1e321de10bc2",
@@ -3510,21 +3525,6 @@
     "updatedAt": "2026-05-25T07:11:43.615Z"
   },
   {
-    "leadUid": "120d3a91-c93c-42c9-bbff-586ea715e462",
-    "guestName": "Yiu Kwan Ho",
-    "property": "YT_FISH_BIRD",
-    "checkIn": "2026-09-11",
-    "checkOut": "2026-09-14",
-    "nationality": "",
-    "adults": 0,
-    "children": 0,
-    "infants": 0,
-    "status": "BOOKED",
-    "source": "BOOKING",
-    "phone": "+85260103536",
-    "updatedAt": "2026-05-25T07:11:54.940Z"
-  },
-  {
     "leadUid": "2ee7a582-4374-4528-9fc2-687a76ac4c1c",
     "guestName": "Ali Aldhamen",
     "property": "SG_JOYHASLA",
@@ -3628,21 +3628,6 @@
     "source": "BOOKING",
     "phone": "+639173519421",
     "updatedAt": "2026-07-13T15:31:25.167Z"
-  },
-  {
-    "leadUid": "9d692fdf-3c0b-4238-bb30-40a877fca564",
-    "guestName": "Yiu Kwan Ho",
-    "property": "YT_FISH_BIRD",
-    "checkIn": "2026-09-18",
-    "checkOut": "2026-09-21",
-    "nationality": "",
-    "adults": 0,
-    "children": 0,
-    "infants": 0,
-    "status": "BOOKED",
-    "source": "BOOKING",
-    "phone": "+85260103536",
-    "updatedAt": "2026-05-25T07:11:57.982Z"
   },
   {
     "leadUid": "429342c9-ae34-4b65-a3b2-917b223fc2a3",
