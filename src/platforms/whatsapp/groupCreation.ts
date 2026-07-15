@@ -18,6 +18,8 @@ import { formatSeoulDate } from '../../utils/format';
 import { scheduleReminder } from '../../services/groupReminders';
 import { getStaffWhatsAppLids } from '../../services/staffCache';
 import { addToReplyWatchdog } from '../../services/replyWatchdog';
+import { recordGroupCreated } from '../../services/groupCreationPacing';
+import { renderMessage } from '../../utils/messageVariation';
 
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
 
@@ -112,9 +114,11 @@ interface BookingMeta {
 // Returns false if connection was not available (caller should enqueue for retry)
 export async function sendBookingMessages(
     groupId: string,
-    { nationality, skipInitialDelay }: { nationality: string; skipInitialDelay?: boolean },
+    { nationality, skipInitialDelay, guestName, property }:
+        { nationality: string; skipInitialDelay?: boolean; guestName?: string; property?: string },
     warnings: string[]
 ): Promise<boolean> {
+    const varyCtx = { name: guestName, property };
     let sessionLost = false;
     const safeSend = async (label: string, fn: () => Promise<void>, sentStep?: MessageType) => {
         if (sessionLost) return;
@@ -189,10 +193,10 @@ export async function sendBookingMessages(
         return false;
     }
 
-    // 3-minute cooldown after group creation before sending any messages
+    // 8–15 min cooldown after group creation before sending any messages
     if (!skipInitialDelay) {
-        console.log(`⏳ Waiting 3 min before sending messages to ${groupId}...`);
-        await sleep(180000);
+        console.log(`⏳ Waiting 8–15 min before sending messages to ${groupId}...`);
+        await randSleep(480000, 900000);
     }
     const ready = await waitForEvoConnection(90000);
     if (!ready) {
@@ -202,16 +206,16 @@ export async function sendBookingMessages(
 
     if (msgs['brand_msg']) {
         await safeSend('brand message', () =>
-            evoSendText(groupId, msgs['brand_msg'].replace(/\\n/g, '\n')),
+            evoSendText(groupId, renderMessage(msgs['brand_msg'].replace(/\\n/g, '\n'), varyCtx, { withOpener: true })),
         'welcome_brand');
-        await randSleep(35000, 45000);
+        await randSleep(120000, 300000);
     }
 
     if (msgs['intro_msg']) {
         await safeSend('intro message', () =>
-            evoSendText(groupId, msgs['intro_msg'].replace(/\\n/g, '\n')),
+            evoSendText(groupId, renderMessage(msgs['intro_msg'].replace(/\\n/g, '\n'), varyCtx)),
         'welcome_intro');
-        await randSleep(35000, 45000);
+        await randSleep(120000, 300000);
     }
 
     const cardUrl = msgs['business_card_url'];
@@ -351,17 +355,18 @@ async function _doCreateBookingGroup({
         console.error('❌ groupCreate failed:', e?.message);
         throw e;
     }
+    recordGroupCreated();
 
-    // 30s: let WA register the new group before any settings changes
-    console.log(`⏳ Waiting 30s before group settings (${lead_uid})...`);
-    await sleep(30000);
+    // 1–2 min: let WA register the new group before any settings changes
+    console.log(`⏳ Waiting 1–2 min before group settings (${lead_uid})...`);
+    await randSleep(60000, 120000);
 
     try {
         await evoApi.post(`/group/updateSetting/${INSTANCE}`,
             { groupJid: groupId, action: 'not_announcement' }
         );
         console.log(`✅ Group set to non-announcement`);
-        await sleep(3000);
+        await randSleep(25000, 50000);
     } catch (e: any) {
         console.warn('⚠️ Could not set group to non-announcement:', e?.message);
         warnings.push(`non-announcement: ${e?.message || 'unknown error'}`);
@@ -372,7 +377,7 @@ async function _doCreateBookingGroup({
             { groupJid: groupId, action: 'unlocked' }
         );
         console.log(`✅ Group invite link enabled for all participants`);
-        await sleep(3000);
+        await randSleep(25000, 50000);
     } catch (e: any) {
         console.warn('⚠️ Could not enable invite link for all participants:', e?.message);
         warnings.push(`invite-link: ${e?.message || 'unknown error'}`);
@@ -383,7 +388,7 @@ async function _doCreateBookingGroup({
             { groupJid: groupId, action: 'member_add_all' }
         );
         console.log(`✅ All members can add others`);
-        await sleep(3000);
+        await randSleep(25000, 50000);
     } catch (e: any) {
         console.warn('⚠️ Could not set member_add_all:', e?.message);
         warnings.push(`member-add-all: ${e?.message || 'unknown error'}`);
@@ -394,21 +399,21 @@ async function _doCreateBookingGroup({
             { groupJid: groupId, action: 'join_approval_off' }
         );
         console.log(`✅ Invite link joins do not require admin approval`);
-        await sleep(3000);
+        await randSleep(25000, 50000);
     } catch (e: any) {
         console.warn('⚠️ Could not disable join approval:', e?.message);
         warnings.push(`join-approval: ${e?.message || 'unknown error'}`);
     }
 
-    // 90s more: let the group fully stabilize before any participant writes
-    console.log(`⏳ Waiting 90s before admin promotion (${lead_uid})...`);
-    await sleep(90000);
+    // 3–5 min more: let the group fully stabilize before any participant writes
+    console.log(`⏳ Waiting 3–5 min before admin promotion (${lead_uid})...`);
+    await randSleep(180000, 300000);
 
     // PRIORITY 1: Promote staff to admin — verify after each attempt, retry until confirmed
     const staffLids = getStaffWhatsAppLids();
     const staffLidBases = new Set(staffLids.map(l => l.replace(/@.*$/, '')));
     let staffNotAdmin = [...staffLids];
-    const STAFF_MAX_ATTEMPTS = 3;
+    const STAFF_MAX_ATTEMPTS = 2;
 
     for (let attempt = 1; attempt <= STAFF_MAX_ATTEMPTS && staffNotAdmin.length > 0; attempt++) {
         if (attempt > 1) {
@@ -464,7 +469,7 @@ async function _doCreateBookingGroup({
     await sleep(5000);
 
     // PRIORITY 2: Promote guest to admin — retry loop mirrors staff pattern
-    const GUEST_MAX_ATTEMPTS = 3;
+    const GUEST_MAX_ATTEMPTS = 2;
     let guestPromoted = false;
 
     for (let attempt = 1; attempt <= GUEST_MAX_ATTEMPTS && !guestPromoted; attempt++) {
@@ -518,10 +523,10 @@ async function _doCreateBookingGroup({
     await sleep(5000);
 
     if (propertyImageBase64) {
-        // Fully deferred — fires 8 minutes after group creation, well after all messages are sent
+        // Fully deferred — fires 30–45 minutes after group creation, well after all messages are sent
         const capturedGroupId = groupId;
         const capturedImage = propertyImageBase64;
-        sleep(480000).then(() =>
+        sleep(1800000 + Math.floor(Math.random() * 900000)).then(() =>
             evoApi.post(`/group/updateGroupPicture/${INSTANCE}`,
                 { groupJid: capturedGroupId, image: capturedImage },
                 { timeout: 30000 }
@@ -550,7 +555,7 @@ async function _doCreateBookingGroup({
             `🔑 <b>Lead UID:</b> <code>${lead_uid}</code>\n` +
             `🆔 <b>Group ID:</b> <code>${groupId}</code>\n` +
             `─────────────────\n` +
-            `⏱️ Welcome messages will arrive in the group within 10 min\n` +
+            `⏱️ Welcome messages will arrive in the group within ~30 min (slow-paced on purpose)\n` +
             `💬 Please send a message in the group today to keep it active\n` +
             `─────────────────\n<i>via COZMO · COZE Hospitality</i>`,
             { useTestJandi: CONFIG.IS_APP_DEV, propertyCode: propertyCodeFromName(property) || undefined }
@@ -568,7 +573,7 @@ async function _doCreateBookingGroup({
     };
     enqueue(groupId, nationality, `${guest_name} @ ${property}`, pendingMeta);
 
-    const sent = await sendBookingMessages(groupId, { nationality }, warnings);
+    const sent = await sendBookingMessages(groupId, { nationality, guestName: guest_name, property }, warnings);
     if (sent) {
         dequeue(groupId);
         markSent(groupId, 'welcome');
@@ -709,6 +714,8 @@ export async function flushPendingMessages(): Promise<void> {
             const sent = await sendBookingMessages(job.groupId, {
                 nationality: job.nationality,
                 skipInitialDelay: true,
+                guestName: job.meta?.guestName,
+                property: job.meta?.property,
             }, warnings);
             if (sent) {
                 dequeue(job.groupId);

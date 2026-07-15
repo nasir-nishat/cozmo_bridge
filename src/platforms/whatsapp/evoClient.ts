@@ -25,9 +25,16 @@ export async function evoSendTyping(number: string): Promise<void> {
 }
 
 let waReady = false;
+let waReadySince = 0;
 
 export const isWaReady = () => waReady;
-export const setWaReady = (val: boolean) => { waReady = val; };
+// How long the current session has been continuously open (0 when down) — used for post-reconnect warm-up
+export const waReadyDurationMs = () => (waReady && waReadySince ? Date.now() - waReadySince : 0);
+export const setWaReady = (val: boolean) => {
+    if (val && !waReady) waReadySince = Date.now();
+    else if (!val) waReadySince = 0;
+    waReady = val;
+};
 
 export const waClient = {
     isRegisteredUser: async (jidOrPhone: string): Promise<boolean> => {

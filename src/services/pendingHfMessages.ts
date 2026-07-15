@@ -113,6 +113,16 @@ export async function flushPendingHfMessages(): Promise<void> {
                 if (status && status >= 400 && status < 500) {
                     dequeue(msg.leadUid, msg.step);
                     console.error(`❌ HF inbox step${msg.step} permanent failure (${status}) — dequeued: ${msg.leadUid}`);
+                    const reason = e?.response?.data?.apiErrorMessage || e?.message || 'unknown';
+                    await sendAlert(
+                        `🚨 <b>HF Inbox Message Dropped</b>\n─────────────────\n` +
+                        `👤 <b>Guest:</b> ${msg.guestName}\n` +
+                        `📋 <b>Step:</b> ${msg.step}\n` +
+                        `❌ <b>HTTP:</b> ${status}\n` +
+                        `📝 <b>Reason:</b> ${reason}\n` +
+                        `─────────────────\n<i>Send manually via Hostfully · COZMO</i>`,
+                        { useTestJandi: true }
+                    ).catch(() => { });
                 } else {
                     console.error(`❌ HF inbox step${msg.step} failed (${msg.leadUid}):`, e?.message);
                 }

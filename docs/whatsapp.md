@@ -1,5 +1,8 @@
 # WhatsApp — Safety Rules & Quirks
 
+> ⚠️ **2026-07-15 enforcement incident + anti-ban engineering:** see [whatsapp-anti-ban.md](whatsapp-anti-ban.md).
+> Two groups were suspended and the Evolution device was logged out (401). Auto group creation is now pacing-gated and messages are varied per guest.
+
 ## Safety Rules
 
 - COZMO uses a **dedicated business WA number** — anti-ban is priority over speed

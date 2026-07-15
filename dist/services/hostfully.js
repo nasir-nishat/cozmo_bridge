@@ -148,10 +148,40 @@ async function resolvePropertyNameForLead(lead) {
         return 'Unknown';
     }
 }
-async function sendHfInboxMessage(leadUid, text, label) {
+const HF_EMAIL_FALLBACK_SUBJECT = 'A Message from COZE Hospitality — Guest Care';
+async function sendHfInboxMessage(leadUid, text, label, emailSubject = HF_EMAIL_FALLBACK_SUBJECT) {
     const msgUrl = constants_1.CONFIG.HOSTFULLY_API_URL.replace(/\/api\/v3.*$/, '/api/v3.3/messages');
-    const res = await axios_1.default.post(msgUrl, { type: 'DIRECT_MESSAGE', leadUid, content: { text } }, { headers: { ...headers, 'Content-Type': 'application/json' }, timeout: 15000 });
-    console.log(`✅ HF inbox [${label}] → lead ${leadUid} (status: ${res.data?.message?.status})`);
+    const post = (body) => axios_1.default.post(msgUrl, body, { headers: { ...headers, 'Content-Type': 'application/json' }, timeout: 15000 });
+    try {
+        const res = await post({ type: 'DIRECT_MESSAGE', leadUid, content: { text } });
+        console.log(`✅ HF inbox [${label}] → lead ${leadUid} (status: ${res.data?.message?.status})`);
+        return;
+    }
+    catch (e) {
+        // Manually-created leads (source HOSTFULLY_UI) reject DIRECT_MESSAGE — fall back to EMAIL
+        const apiMsg = e?.response?.data?.apiErrorMessage || '';
+        const sourceBlocked = e?.response?.status === 400 && /not supported for this lead due to its source/i.test(apiMsg);
+        if (!sourceBlocked)
+            throw e;
+        const lead = await fetchLead(leadUid);
+        const email = lead?.guestInformation?.email;
+        if (!email) {
+            await (0, notify_1.sendAlert)(`🚨 <b>HF Message Undeliverable</b>\n─────────────────\n` +
+                `👤 <b>Lead:</b> ${leadUid}\n` +
+                `📋 <b>Message:</b> ${label}\n` +
+                `📝 <b>Reason:</b> lead source blocks DIRECT_MESSAGE and guest has no email\n` +
+                `─────────────────\n<i>Send manually via Hostfully · COZMO</i>`, { useTestJandi: true }).catch(() => { });
+            throw e;
+        }
+        const res = await post({ type: 'EMAIL', leadUid, content: { subject: emailSubject, text } });
+        console.log(`✅ HF inbox [${label}] → lead ${leadUid} via EMAIL fallback (status: ${res.data?.message?.status})`);
+        await (0, notify_1.sendAlert)(`🚨 <b>HF Inbox → EMAIL Fallback Used</b>\n─────────────────\n` +
+            `👤 <b>Lead:</b> ${leadUid}\n` +
+            `📋 <b>Message:</b> ${label}\n` +
+            `📧 <b>Sent to:</b> ${email}\n` +
+            `📝 <b>Reason:</b> lead source blocks DIRECT_MESSAGE (manual booking)\n` +
+            `─────────────────\n<i>via COZMO · Hostfully</i>`, { useTestJandi: true }).catch(() => { });
+    }
 }
 function applyGuestName(template, guestFullName) {
     const firstName = guestFullName.split(/\s+/)[0] || guestFullName;
@@ -177,7 +207,7 @@ async function sendInboxMessage(leadUid, guestFullName, langCode = 'EN', leadTyp
         console.warn(`⚠️ No booking_confirmation template (lang=${langCode}, property=${propertyCode})`);
         return;
     }
-    await sendHfInboxMessage(leadUid, applyGuestName(template, guestFullName), `step1 ${langCode}`);
+    await sendHfInboxMessage(leadUid, applyGuestName(template, guestFullName), `step1 ${langCode}`, 'Your Booking Confirmation — COZE Hospitality');
 }
 const STEP2_KEY = {
     CN: { key: 'request_contact_point_wechat', lang: 'ZH-CN' },
@@ -197,7 +227,7 @@ async function sendStep2Message(leadUid, guestFullName, country, leadType) {
         console.warn(`⚠️ No step2 template (key=${key}, lang=${lang})`);
         return;
     }
-    await sendHfInboxMessage(leadUid, applyGuestName(template, guestFullName), `step2 ${country}`);
+    await sendHfInboxMessage(leadUid, applyGuestName(template, guestFullName), `step2 ${country}`, 'Your COZE Concierge Group Chat — COZE Hospitality');
 }
 async function sendWaInviteFallbackMessage(leadUid, guestFullName) {
     const template = await (0, sheets_1.getBookingMsg)('request_wa_invitaion_en', 'EN');
@@ -205,13 +235,13 @@ async function sendWaInviteFallbackMessage(leadUid, guestFullName) {
         console.warn('⚠️ No request_wa_invitaion_en template in sheet');
         return;
     }
-    await sendHfInboxMessage(leadUid, applyGuestName(template, guestFullName), 'fallback 3.1 wa-invite');
+    await sendHfInboxMessage(leadUid, applyGuestName(template, guestFullName), 'fallback 3.1 wa-invite', 'Your WhatsApp Concierge Channel — COZE Hospitality');
 }
 // Sends the actual WA group invite link via HF inbox — used for both privacy-blocked and no-WA guests
 async function sendHfInviteLink(leadUid, guestFullName, inviteLink) {
     const template = await (0, sheets_1.getBookingMsg)('request_wa_invitaion_en', 'EN');
     const base = template ? applyGuestName(template, guestFullName) : `Hi ${guestFullName}, your WhatsApp group is ready.`;
-    await sendHfInboxMessage(leadUid, `${base}\n\n${inviteLink}`, 'wa-invite-link');
+    await sendHfInboxMessage(leadUid, `${base}\n\n${inviteLink}`, 'wa-invite-link', 'Your WhatsApp Group Invite — COZE Hospitality');
 }
 async function sendNoWaFallbackMessage(leadUid, guestFullName) {
     const template = await (0, sheets_1.getBookingMsg)('request_contact_point_messenger_en', 'EN');
@@ -219,7 +249,7 @@ async function sendNoWaFallbackMessage(leadUid, guestFullName) {
         console.warn('⚠️ No request_contact_point_messenger_en template in sheet');
         return;
     }
-    await sendHfInboxMessage(leadUid, applyGuestName(template, guestFullName), 'fallback 3.2 no-wa');
+    await sendHfInboxMessage(leadUid, applyGuestName(template, guestFullName), 'fallback 3.2 no-wa', 'Stay Connected with COZE — COZE Hospitality');
 }
 const PRE_PAYMENT_KEY = {
     BOOKING_COM: 'pre_payment_msg_notice_booking',
@@ -237,7 +267,7 @@ async function sendPrePaymentMessage(leadUid, guestFullName, langCode, leadType)
         console.warn(`⚠️ No pre_payment template (key=${key}, lang=${langCode})`);
         return;
     }
-    await sendHfInboxMessage(leadUid, applyGuestName(template, guestFullName), `pre_payment ${leadType} ${langCode}`);
+    await sendHfInboxMessage(leadUid, applyGuestName(template, guestFullName), `pre_payment ${leadType} ${langCode}`, 'Payment Notice — COZE Hospitality');
 }
 async function pollLeadNotes() {
     console.log('🔍 Polling Hostfully notes...');

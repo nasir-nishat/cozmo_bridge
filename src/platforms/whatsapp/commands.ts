@@ -314,7 +314,7 @@ export async function handleGroupCommand(
 
         await evoSendText(replyTo,
             `⏳ Creating group for ${guest_name}...\n\n` +
-            `Everything is handled. Welcome messages will arrive in the group within 10 minutes.\n\n` +
+            `Everything is handled. Welcome messages will arrive in the group within 30–40 minutes (slow-paced on purpose).\n\n` +
             `No action needed.`
         ).catch(() => { });
 

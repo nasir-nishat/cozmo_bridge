@@ -3,6 +3,7 @@ import path from 'path';
 import { isSent } from './sentMessages';
 import { getGroupIdByLeadUid } from './groupLeads';
 import { sendAlert } from './notify';
+import { canAutoCreateGroup } from './groupCreationPacing';
 import { propertyCodeFromName } from '../platforms/whatsapp/groupNaming';
 
 const FILE = path.join(process.cwd(), 'src/data/pending-group-creation.json');
@@ -57,6 +58,7 @@ const STUCK_ALERT_COOLDOWN_MS = 60 * 60 * 1000;
 export async function checkForStuckGroupCreations(): Promise<void> {
     const now = Date.now();
     const queue = load();
+    if (queue.length && !canAutoCreateGroup().ok) return; // held by pacing — waiting is expected, not stuck
     for (const job of queue) {
         const ageMs = now - new Date(job.createdAt).getTime();
         if (ageMs < STUCK_THRESHOLD_MS) continue;
@@ -81,6 +83,12 @@ export async function flushPendingGroupCreations(): Promise<void> {
     const now = Date.now();
     const due = load().filter(m => new Date(m.fireAt).getTime() <= now);
     if (!due.length) return;
+
+    const pacing = canAutoCreateGroup();
+    if (!pacing.ok) {
+        console.log(`🐢 Auto group creation held: ${pacing.reason} — ${due.length} job(s) stay queued`);
+        return;
+    }
 
     flushing = true;
     try {
@@ -128,6 +136,8 @@ export async function flushPendingGroupCreations(): Promise<void> {
                         console.log(`🔗 Invite link sent via HF inbox (no WA): ${job.guestName}`);
                     }
                 }
+                // One auto-created group per flush cycle — the pacing gate decides when the next one runs
+                if (groupId) break;
             } catch (e: any) {
                 console.error(`❌ Group creation failed (${job.leadUid}):`, e?.message);
             }

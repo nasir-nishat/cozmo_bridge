@@ -16,6 +16,7 @@ const requestDetection_1 = require("../../services/requestDetection");
 const evoClient_1 = require("./evoClient");
 const format_1 = require("../../utils/format");
 const commands_1 = require("./commands");
+const groupCleanup_1 = require("./groupCleanup");
 const expenses_1 = require("../../services/expenses");
 const groupLeads_2 = require("../../services/groupLeads");
 const evoClient_2 = require("./evoClient");
@@ -116,6 +117,12 @@ async function handleIncomingMessage(data) {
     // /welcome command — team members only
     if (text.startsWith('/welcome')) {
         await (0, commands_1.handleWelcomeCommand)(from, senderJid, data.pushName || '');
+        return;
+    }
+    // /ungroup command — team members only, wipe local state for a group so /group can recreate
+    if (text.startsWith('/ungroup')) {
+        const arg = text.split(/\s+/)[1]?.trim() || '';
+        await (0, groupCleanup_1.handleUngroupCommand)(from, arg, senderJid);
         return;
     }
     // /group command — team members only, manual group creation for existing bookings

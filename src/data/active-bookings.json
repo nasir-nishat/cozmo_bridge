@@ -2112,7 +2112,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+447949918193",
-    "updatedAt": "2026-07-14T06:00:04.777Z"
+    "updatedAt": "2026-07-15T07:47:00.886Z"
   },
   {
     "leadUid": "498a1a7a-2d78-4d08-bce8-76451fde6c95",
@@ -2262,7 +2262,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+19706409613",
-    "updatedAt": "2026-07-14T17:53:41.141Z"
+    "updatedAt": "2026-07-15T07:46:57.176Z"
   },
   {
     "leadUid": "a561cf3a-48cb-476a-ace7-735f5019f9ba",
@@ -2337,7 +2337,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+66928514382",
-    "updatedAt": "2026-07-14T06:00:10.148Z"
+    "updatedAt": "2026-07-15T07:47:02.433Z"
   },
   {
     "leadUid": "500164b3-2705-40da-9caf-d4d2b19dcb97",
@@ -2814,10 +2814,10 @@
     "adults": 0,
     "children": 0,
     "infants": 0,
-    "status": "NEW",
+    "status": "CLOSED",
     "source": "INQUIRY",
     "phone": "",
-    "updatedAt": "2026-07-14T07:39:30.226Z"
+    "updatedAt": "2026-07-15T07:39:16.174Z"
   },
   {
     "leadUid": "25039dee-7216-4d8a-9484-76ec511d83bb",
@@ -3102,7 +3102,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+13107407535",
-    "updatedAt": "2026-07-13T01:20:43.719Z"
+    "updatedAt": "2026-07-15T05:50:09.792Z"
   },
   {
     "leadUid": "5599ca12-7b2b-4171-a636-daacb5e99c04",
@@ -3147,7 +3147,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+15202511575",
-    "updatedAt": "2026-07-14T23:29:46.095Z"
+    "updatedAt": "2026-07-15T05:29:21.986Z"
   },
   {
     "leadUid": "aac84e61-9d3c-459d-aac2-1e321de10bc2",
@@ -3462,7 +3462,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+8862035640799",
-    "updatedAt": "2026-07-14T06:00:11.514Z"
+    "updatedAt": "2026-07-15T06:00:15.315Z"
   },
   {
     "leadUid": "18c21b8c-5735-4934-b1d7-5e7c42b6eb91",
@@ -3642,7 +3642,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+447740874115",
-    "updatedAt": "2026-07-14T06:00:12.556Z"
+    "updatedAt": "2026-07-15T06:00:16.668Z"
   },
   {
     "leadUid": "4714100b-fc7b-4817-a0b0-8a57fbc6f959",
@@ -4077,7 +4077,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+491726830588",
-    "updatedAt": "2026-07-14T06:00:03.107Z"
+    "updatedAt": "2026-07-15T07:46:59.708Z"
   },
   {
     "leadUid": "ee82dd3a-b7a8-436c-8536-7a5e70b06d68",
@@ -4123,6 +4123,21 @@
     "source": "BOOKING",
     "phone": "+4740493082",
     "updatedAt": "2026-05-26T06:17:49.697Z"
+  },
+  {
+    "leadUid": "8c00bf34-a376-4d89-a44f-384ee9157831",
+    "guestName": "Layton Liew",
+    "property": "YT_FISH_BIRD",
+    "checkIn": "2026-10-31",
+    "checkOut": "2026-11-05",
+    "nationality": "",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "BOOKED",
+    "source": "BOOKING",
+    "phone": "+6596313132",
+    "updatedAt": "2026-07-15T07:46:56.077Z"
   },
   {
     "leadUid": "baa99d03-ebae-4239-9f50-316850734036",
@@ -4273,6 +4288,21 @@
     "source": "INQUIRY",
     "phone": "",
     "updatedAt": "2026-07-11T07:50:06.299Z"
+  },
+  {
+    "leadUid": "460efdfb-e266-4582-a975-25663b06cbd8",
+    "guestName": "Dylan Teh",
+    "property": "YT_LOTUS_FISH_BIRD",
+    "checkIn": "2026-11-11",
+    "checkOut": "2026-11-17",
+    "nationality": "MY",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "BOOKED",
+    "source": "BOOKING",
+    "phone": "+60167200440",
+    "updatedAt": "2026-07-15T07:46:54.520Z"
   },
   {
     "leadUid": "787c2c37-6fa1-4f1f-ac52-45a59528fbd9",
