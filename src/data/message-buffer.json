@@ -549,6 +549,26 @@
       "sender": "unknown",
       "text": "Good morning, it seems that the breakfast delivery is not yet delivered. Could you please check again?\nThanks!",
       "ts": 1784156932650
+    },
+    {
+      "sender": "unknown",
+      "text": "Good afternoon, we’d like to have regular breakfast delivery for tomorrow, thank you. ☺️",
+      "ts": 1784178997020
+    },
+    {
+      "sender": "COZE HOSPITALITY 3.0",
+      "text": "🥖 Bread • 🥛 Milk • 🥚 Eggs • 🧃 Juice • 🍎 Fruit •",
+      "ts": 1784180892857
+    },
+    {
+      "sender": "COZE HOSPITALITY 3.0",
+      "text": "please select the item. sorry for your bothered",
+      "ts": 1784180913120
+    },
+    {
+      "sender": "unknown",
+      "text": "🥖 Bread • 🥛 Milk • 🥚 Eggs • 🧃 Juice • 🍎 Fruit • \nEverything needed thank you.",
+      "ts": 1784180977325
     }
   ],
   "120363422965145348@g.us": [
@@ -568,6 +588,11 @@
       "sender": "COZE_Gaya",
       "text": "Hello @81016437891073 \n\nGood sleep at home? :)",
       "ts": 1784167340047
+    },
+    {
+      "sender": "Ryan Thompson",
+      "text": "Yes it was amazing! We love this home",
+      "ts": 1784173448445
     }
   ],
   "120363426632162671@g.us": [
@@ -605,6 +630,234 @@
       "sender": "Jenny Lee",
       "text": "Public taxi is ok. Will they pick us up when I request and drop in front of house?",
       "ts": 1784171688084
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "yes. but you need to wait for its booking like Uber van. So let us know in advance before 15 min",
+      "ts": 1784172742179
+    },
+    {
+      "sender": "Jenny Lee",
+      "text": "Perfect thank you",
+      "ts": 1784172780188
+    },
+    {
+      "sender": "Jenny Lee",
+      "text": "Ok we are ready to head out. Would you order a van taxi please? We are going to: 431-34 Mangwongil",
+      "ts": 1784180337401
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "great hold on",
+      "ts": 1784180364211
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "the address is not correct",
+      "ts": 1784180407708
+    },
+    {
+      "sender": "Jenny Lee",
+      "text": "Just a moment",
+      "ts": 1784180507133
+    },
+    {
+      "sender": "Jenny Lee",
+      "text": "35-1 mangwondo 3 gil",
+      "ts": 1784180573592
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "okay that works",
+      "ts": 1784180629242
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "it surges the demand. it costs now 58200KRW :(",
+      "ts": 1784180716160
+    },
+    {
+      "sender": "Jenny Lee",
+      "text": "Ok no choice please order",
+      "ts": 1784180730727
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "plate number 2587 / 9 min to arrive",
+      "ts": 1784180789969
+    },
+    {
+      "sender": "Jenny Lee",
+      "text": "Thank you!",
+      "ts": 1784180796696
+    },
+    {
+      "sender": "Jenny Lee",
+      "text": "Thank you! I pay driver directly right?",
+      "ts": 1784181673464
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "yes! Due to traffic jam, it will take a hour to arrive there",
+      "ts": 1784181709711
+    },
+    {
+      "sender": "Jenny Lee",
+      "text": "Ok",
+      "ts": 1784181719964
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "if you need any support from us even after your check out, you are always welcome 😀",
+      "ts": 1784181761586
+    },
+    {
+      "sender": "Jenny Lee",
+      "text": "Thank you! Do I pay the driver directly?",
+      "ts": 1784181778630
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "yes. by your credit card",
+      "ts": 1784181803386
+    },
+    {
+      "sender": "Jenny Lee",
+      "text": "Thanks for everything! I will put a 5 star review",
+      "ts": 1784181829827
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "thank you!",
+      "ts": 1784183730856
+    }
+  ],
+  "kakao:473235144423012": [
+    {
+      "sender": "박진심",
+      "text": "혹시 묵는것에 욕조가 있나요",
+      "ts": 1784176304611
+    },
+    {
+      "sender": "박진심",
+      "text": "혹시 묵는것에 욕조가 있나요",
+      "ts": 1784176305742
+    },
+    {
+      "sender": "박진심",
+      "text": "낼 cx410 14:05분 도착예정입니다",
+      "ts": 1784176323276
+    },
+    {
+      "sender": "박진심",
+      "text": "낼 cx410 14:05분 도착예정입니다",
+      "ts": 1784176325247
+    },
+    {
+      "sender": "박진심",
+      "text": "공항 픽업에 또 필요하신것 있음 열락주세요. 휴대용 카시트가 있으나 더 단단한 카시트가 있으면 정보 부탁드립니다",
+      "ts": 1784176409193
+    },
+    {
+      "sender": "박진심",
+      "text": "공항 픽업에 또 필요하신것 있음 열락주세요. 휴대용 카시트가 있으나 더 단단한 카시트가 있으면 정보 부탁드립니다",
+      "ts": 1784176409280
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "욕조는 없고 아기욕조만 따로 준비했어요!",
+      "ts": 1784180032010
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "욕조는 없고 아기욕조만 따로 준비했어요!",
+      "ts": 1784180032831
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "저희 기사님도 휴대용만 들고다니셔서 아마 동일한 수준인거 같아요!",
+      "ts": 1784180069030
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "저희 기사님도 휴대용만 들고다니셔서 아마 동일한 수준인거 같아요!",
+      "ts": 1784180069671
+    },
+    {
+      "sender": "박진심",
+      "text": "그럼 저희 껄로 하겠습니다. 아기와 동반이라 짐이 진짜 많습니다. 성인 2, 스트롤러, 카시트, 캐리언 4, 수화물 3-4",
+      "ts": 1784184887656
+    },
+    {
+      "sender": "박진심",
+      "text": "그럼 저희 껄로 하겠습니다. 아기와 동반이라 짐이 진짜 많습니다. 성인 2, 스트롤러, 카시트, 캐리언 4, 수화물 3-4",
+      "ts": 1784184888865
+    }
+  ],
+  "kakao:4948670999600370": [
+    {
+      "sender": "카카오",
+      "text": "(광고)요즘 대세 보고, 선물받기🎁",
+      "ts": 1784179758426
+    }
+  ],
+  "120363428084259624@g.us": [
+    {
+      "sender": "Cinira Yang",
+      "text": "There will be 7 of us total",
+      "ts": 1784183437386
+    }
+  ],
+  "kakao:472770182351696": [
+    {
+      "sender": "nickssem",
+      "text": "Can we get this breakfast tomorrow?",
+      "ts": 1784184405176
+    },
+    {
+      "sender": "nickssem",
+      "text": "Can we get this breakfast tomorrow?",
+      "ts": 1784184407058
+    },
+    {
+      "sender": "Stany98",
+      "text": "Please reply to above?",
+      "ts": 1784184440078
+    },
+    {
+      "sender": "Stany98",
+      "text": "Please reply to above?",
+      "ts": 1784184441054
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "oops",
+      "ts": 1784184489235
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "oops",
+      "ts": 1784184489913
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "Our team might miss this order",
+      "ts": 1784184499697
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "Our team might miss this order",
+      "ts": 1784184500344
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "I will order this today!",
+      "ts": 1784184509995
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "I will order this today!",
+      "ts": 1784184510168
     }
   ]
 }

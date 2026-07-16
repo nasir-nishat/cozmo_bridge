@@ -2262,7 +2262,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+19706409613",
-    "updatedAt": "2026-07-15T08:20:45.240Z"
+    "updatedAt": "2026-07-16T06:00:13.901Z"
   },
   {
     "leadUid": "a561cf3a-48cb-476a-ace7-735f5019f9ba",
@@ -2428,6 +2428,21 @@
     "source": "INQUIRY",
     "phone": "",
     "updatedAt": "2026-06-07T11:47:45.464Z"
+  },
+  {
+    "leadUid": "ff93cc33-c0b4-45b0-b03e-2eff220629e0",
+    "guestName": "Fang Yuan",
+    "property": "YT_LOTUS_09",
+    "checkIn": "2026-07-19",
+    "checkOut": "2026-07-23",
+    "nationality": "",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "NEW",
+    "source": "INQUIRY",
+    "phone": "",
+    "updatedAt": "2026-07-16T04:55:38.268Z"
   },
   {
     "leadUid": "55e6393f-5e27-4827-9729-05f92ea358d7",
@@ -3012,7 +3027,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+16126366527",
-    "updatedAt": "2026-07-06T15:23:16.974Z"
+    "updatedAt": "2026-07-16T06:31:04.568Z"
   },
   {
     "leadUid": "9966de2b-57be-428e-b9f8-f550b6c35c21",
@@ -3222,7 +3237,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+886980601000",
-    "updatedAt": "2026-07-16T01:46:59.207Z"
+    "updatedAt": "2026-07-16T06:00:04.989Z"
   },
   {
     "leadUid": "a8616838-a725-4377-abfe-330a54d582e9",
@@ -3732,7 +3747,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+353862172418",
-    "updatedAt": "2026-07-16T02:59:58.747Z"
+    "updatedAt": "2026-07-16T06:00:02.552Z"
   },
   {
     "leadUid": "7c894cd5-5c17-47f2-a38e-51a5a10c7ce6",
@@ -4137,7 +4152,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+491726830588",
-    "updatedAt": "2026-07-15T08:20:47.568Z"
+    "updatedAt": "2026-07-16T06:00:16.637Z"
   },
   {
     "leadUid": "ee82dd3a-b7a8-436c-8536-7a5e70b06d68",
@@ -4197,7 +4212,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+6596313132",
-    "updatedAt": "2026-07-15T08:20:43.991Z"
+    "updatedAt": "2026-07-16T06:00:11.932Z"
   },
   {
     "leadUid": "baa99d03-ebae-4239-9f50-316850734036",
@@ -4362,7 +4377,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+60167200440",
-    "updatedAt": "2026-07-15T08:20:42.356Z"
+    "updatedAt": "2026-07-16T06:00:08.928Z"
   },
   {
     "leadUid": "787c2c37-6fa1-4f1f-ac52-45a59528fbd9",
