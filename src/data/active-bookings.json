@@ -2307,7 +2307,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+14074086697",
-    "updatedAt": "2026-06-12T10:50:29.334Z"
+    "updatedAt": "2026-07-15T18:36:44.239Z"
   },
   {
     "leadUid": "d957c166-6db6-4417-b3cd-4eb8cf7eeb8f",
@@ -2622,7 +2622,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+818024400298",
-    "updatedAt": "2026-06-09T16:00:21.614Z"
+    "updatedAt": "2026-07-15T11:27:04.633Z"
   },
   {
     "leadUid": "9cc61dc5-5649-47e0-b135-a34eee40e6b1",
@@ -3210,6 +3210,21 @@
     "updatedAt": "2026-06-07T14:56:12.537Z"
   },
   {
+    "leadUid": "e2166bcf-2257-485f-837d-162ba3fd460e",
+    "guestName": "Yang 楊",
+    "property": "YT_BIRD_09",
+    "checkIn": "2026-08-17",
+    "checkOut": "2026-08-21",
+    "nationality": "TW",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "BOOKED",
+    "source": "BOOKING",
+    "phone": "+886980601000",
+    "updatedAt": "2026-07-16T01:46:59.207Z"
+  },
+  {
     "leadUid": "a8616838-a725-4377-abfe-330a54d582e9",
     "guestName": "Gemma Chainey",
     "property": "HTB_TEVA AERIS GARDEN",
@@ -3523,6 +3538,21 @@
     "source": "BOOKING",
     "phone": "+82852450020422",
     "updatedAt": "2026-06-20T06:00:11.709Z"
+  },
+  {
+    "leadUid": "bd175307-c722-4c4d-8d2b-aa743d38012d",
+    "guestName": "Fiona",
+    "property": "BS_JOYHASLA",
+    "checkIn": "2026-09-08",
+    "checkOut": "2026-09-11",
+    "nationality": "",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "NEW",
+    "source": "INQUIRY",
+    "phone": "",
+    "updatedAt": "2026-07-15T12:07:53.702Z"
   },
   {
     "leadUid": "8ebf6a2a-fdf6-42e8-826c-2edd691fdd55",
