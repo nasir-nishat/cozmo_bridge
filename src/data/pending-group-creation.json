@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "leadUid": "2629c248-379f-4b91-95de-586bf5429d5c",
+    "propertyUid": "9a679f6d-fe7f-460d-bdeb-a1a973b595ae",
+    "guestName": "Evangeline Fuertes",
+    "phone": "+353862172418",
+    "property": "SJ_JOYHASLA",
+    "checkIn": "2026-09-27T15:00:00",
+    "checkOut": "2026-10-03T11:00:00",
+    "nationality": "IE",
+    "leadStatus": "BOOKED",
+    "leadType": "BOOKING",
+    "groupName": "COZE SJ 27thSept Evangeline Fuertes 7A",
+    "onWhatsApp": true,
+    "fireAt": "2026-07-16T03:30:02.200Z",
+    "createdAt": "2026-07-16T03:00:02.201Z"
+  }
+]

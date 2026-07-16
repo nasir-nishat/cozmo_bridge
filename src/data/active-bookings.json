@@ -2202,7 +2202,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+18582151577",
-    "updatedAt": "2026-07-14T06:00:13.038Z"
+    "updatedAt": "2026-07-16T02:00:11.919Z"
   },
   {
     "leadUid": "9bcd0617-554e-42e2-80b5-ab0889409f4c",
@@ -3718,6 +3718,21 @@
     "source": "BOOKING",
     "phone": "+41765043191",
     "updatedAt": "2026-06-04T11:25:39.915Z"
+  },
+  {
+    "leadUid": "2629c248-379f-4b91-95de-586bf5429d5c",
+    "guestName": "Evangeline Fuertes",
+    "property": "SJ_JOYHASLA",
+    "checkIn": "2026-09-27",
+    "checkOut": "2026-10-03",
+    "nationality": "IE",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "BOOKED",
+    "source": "BOOKING",
+    "phone": "+353862172418",
+    "updatedAt": "2026-07-16T02:59:58.747Z"
   },
   {
     "leadUid": "7c894cd5-5c17-47f2-a38e-51a5a10c7ce6",
