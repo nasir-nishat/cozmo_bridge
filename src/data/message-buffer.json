@@ -2,862 +2,177 @@
   "120363423605030782@g.us": [
     {
       "sender": "Em",
-      "text": "Ok cool, thanks for all the information Gaya.",
-      "ts": 1784124828364
+      "text": "Thanks",
+      "ts": 1784210421749
     }
   ],
   "kakao:18294946740114616": [
     {
       "sender": "Unknown",
-      "text": "그러니 자바에서 let은 못쓰고 var을 쓸 수 있다는 것은 틀린 말은 아니다",
-      "ts": 1784166778162
-    },
-    {
-      "sender": "DarkTornado.js",
-      "text": "그러니 자바에서 let은 못쓰고 var을 쓸 수 있다는 것은 틀린 말은 아니다",
-      "ts": 1784166778688
-    },
-    {
-      "sender": "Unknown",
-      "text": "자바는 21이상 쓰세요",
-      "ts": 1784166786611
-    },
-    {
-      "sender": "SU",
-      "text": "자바는 21이상 쓰세요",
-      "ts": 1784166786960
-    },
-    {
-      "sender": "Unknown",
-      "text": "가상 스레드 있음",
-      "ts": 1784166790977
-    },
-    {
-      "sender": "SU",
-      "text": "가상 스레드 있음",
-      "ts": 1784166792647
-    },
-    {
-      "sender": "Unknown",
-      "text": "자바 말고 라이노 쓰세요",
-      "ts": 1784166831986
-    },
-    {
-      "sender": "DarkTornado.js",
-      "text": "자바 말고 라이노 쓰세요",
-      "ts": 1784166832139
-    },
-    {
-      "sender": "DarkTornado.js",
-      "text": "사실 라이노는 서버용이거든요",
-      "ts": 1784166844418
-    },
-    {
-      "sender": "Unknown",
-      "text": "사실 라이노는 서버용이거든요",
-      "ts": 1784166844502
-    },
-    {
-      "sender": "Unknown",
-      "text": "서버 백엔드로 노드 말고 라이노 추천하겠읍니다",
-      "ts": 1784166856998
-    },
-    {
-      "sender": "DarkTornado.js",
-      "text": "서버 백엔드로 노드 말고 라이노 추천하겠읍니다",
-      "ts": 1784166858391
-    },
-    {
-      "sender": "Unknown",
-      "text": "라이노 3d요",
-      "ts": 1784166861356
-    },
-    {
-      "sender": "SU",
-      "text": "라이노 3d요",
-      "ts": 1784166863578
-    },
-    {
-      "sender": "Unknown",
-      "text": "푸하하",
-      "ts": 1784166863679
-    },
-    {
-      "sender": "SU",
-      "text": "푸하하",
-      "ts": 1784166864363
-    },
-    {
-      "sender": "Unknown",
-      "text": "않이;;",
-      "ts": 1784166868024
-    },
-    {
-      "sender": "DarkTornado.js",
-      "text": "않이;;",
-      "ts": 1784166868218
-    },
-    {
-      "sender": "Unknown",
-      "text": "빨리",
-      "ts": 1784166898805
-    },
-    {
-      "sender": "졸리다",
-      "text": "빨리",
-      "ts": 1784166899827
-    },
-    {
-      "sender": "Unknown",
-      "text": "깃 초대",
-      "ts": 1784166901132
-    },
-    {
-      "sender": "졸리다",
-      "text": "깃 초대",
-      "ts": 1784166901396
-    },
-    {
-      "sender": "DarkTornado.js",
-      "text": "깃허브 맞팔 받아줄 사로로 구함",
-      "ts": 1784167095712
-    },
-    {
-      "sender": "Unknown",
-      "text": "깃허브 맞팔 받아줄 사로로 구함",
-      "ts": 1784167095715
-    },
-    {
-      "sender": "Unknown",
-      "text": "안받아주면 군복사로로로 프사 바꾸겟스빈다",
-      "ts": 1784167106207
-    },
-    {
-      "sender": "DarkTornado.js",
-      "text": "안받아주면 군복사로로로 프사 바꾸겟스빈다",
-      "ts": 1784167107495
-    },
-    {
-      "sender": "Unknown",
-      "text": "DarkTornado님 프사는",
-      "ts": 1784167188234
-    },
-    {
-      "sender": "임정윤",
-      "text": "DarkTornado님 프사는",
-      "ts": 1784167189817
-    },
-    {
-      "sender": "Unknown",
-      "text": "우정잉인가요?",
-      "ts": 1784167192601
-    },
-    {
-      "sender": "임정윤",
-      "text": "우정잉인가요?",
-      "ts": 1784167193209
-    },
-    {
-      "sender": "Unknown",
-      "text": "우엉징이라니",
-      "ts": 1784167227514
-    },
-    {
-      "sender": "DarkTornado.js",
-      "text": "우엉징이라니",
-      "ts": 1784167228849
-    },
-    {
-      "sender": "Unknown",
-      "text": "대체",
-      "ts": 1784167229847
+      "text": "동영상",
+      "ts": 1784216469972
     },
     {
       "sender": "Americium",
-      "text": "대체",
-      "ts": 1784167230423
+      "text": "Video",
+      "ts": 1784216470084
     },
     {
       "sender": "Unknown",
-      "text": "/리유",
-      "ts": 1784167236267
+      "text": "동영상",
+      "ts": 1784216895254
     },
     {
       "sender": "Unknown",
-      "text": "닼토는 머슨일이 일어난걸까",
-      "ts": 1784167236268
-    },
-    {
-      "sender": "DarkTornado.js",
-      "text": "/리유",
-      "ts": 1784167236616
-    },
-    {
-      "sender": "Americium",
-      "text": "닼토는 머슨일이 일어난걸까",
-      "ts": 1784167236906
-    },
-    {
-      "sender": "[AI] Skynet",
-      "text": "https://dtjs.io/Liyuu/?id=801",
-      "ts": 1784167238484
-    },
-    {
-      "sender": "Unknown",
-      "text": "https://dtjs.io/Liyuu/?id=801",
-      "ts": 1784167238594
-    },
-    {
-      "sender": "Americium",
-      "text": "차원이 늘어나다니",
-      "ts": 1784167240573
-    },
-    {
-      "sender": "Unknown",
-      "text": "차원이 늘어나다니",
-      "ts": 1784167240920
-    },
-    {
-      "sender": "Americium",
-      "text": "Emoticon",
-      "ts": 1784167245238
-    },
-    {
-      "sender": "Unknown",
-      "text": "지금 프사는 일본인같이 생긴 중국인이다 이말입니다",
-      "ts": 1784167245297
-    },
-    {
-      "sender": "DarkTornado.js",
-      "text": "지금 프사는 일본인같이 생긴 중국인이다 이말입니다",
-      "ts": 1784167246842
-    },
-    {
-      "sender": "Unknown",
-      "text": "아하",
-      "ts": 1784167255779
-    },
-    {
-      "sender": "Unknown",
-      "text": "감사합니다",
-      "ts": 1784167255780
-    },
-    {
-      "sender": "임정윤",
-      "text": "감사합니다",
-      "ts": 1784167256637
-    },
-    {
-      "sender": "DarkTornado.js",
-      "text": "덕질하고 다니다가 성우가 되어버린",
-      "ts": 1784167329160
-    },
-    {
-      "sender": "Unknown",
-      "text": "덕질하고 다니다가 성우가 되어버린",
-      "ts": 1784167329649
-    },
-    {
-      "sender": "Unknown",
-      "text": "전 원래 건전한 일반이이었다 이말입니다",
-      "ts": 1784167338114
-    },
-    {
-      "sender": "DarkTornado.js",
-      "text": "전 원래 건전한 일반이이었다 이말입니다",
-      "ts": 1784167338403
-    },
-    {
-      "sender": "Unknown",
-      "text": "?",
-      "ts": 1784167479192
-    },
-    {
-      "sender": "Unknown",
-      "text": "사진",
-      "ts": 1784167995566
-    },
-    {
-      "sender": "Unknown",
-      "text": "아무튼 리유 귀여움",
-      "ts": 1784168004007
-    },
-    {
-      "sender": "DarkTornado.js",
-      "text": "아무튼 리유 귀여움",
-      "ts": 1784168004532
-    },
-    {
-      "sender": "Unknown",
-      "text": "?",
-      "ts": 1784168073826
-    },
-    {
-      "sender": "Unknown",
-      "text": "닭토는 유명한 리유사랑꾼임ㅇㅇ...",
-      "ts": 1784168084299
-    },
-    {
-      "sender": "누군가의 부계",
-      "text": "닭토는 유명한 리유사랑꾼임ㅇㅇ...",
-      "ts": 1784168085167
-    },
-    {
-      "sender": "Unknown",
-      "text": "사나이처럼",
-      "ts": 1784168100887
-    },
-    {
-      "sender": "김힘돌",
-      "text": "사나이처럼",
-      "ts": 1784168101020
-    },
-    {
-      "sender": "Unknown",
-      "text": "프본박으면",
-      "ts": 1784168105261
-    },
-    {
-      "sender": "김힘돌",
-      "text": "프본박으면",
-      "ts": 1784168106672
-    },
-    {
-      "sender": "Unknown",
-      "text": "되는부분",
-      "ts": 1784168107585
-    },
-    {
-      "sender": "김힘돌",
-      "text": "되는부분",
-      "ts": 1784168107745
-    },
-    {
-      "sender": "Unknown",
-      "text": "아쎄이 진정한 사나이라면",
-      "ts": 1784168128252
-    },
-    {
-      "sender": "누군가의 부계",
-      "text": "아쎄이 진정한 사나이라면",
-      "ts": 1784168128746
-    },
-    {
-      "sender": "Unknown",
-      "text": "기열땅개라",
-      "ts": 1784168138732
-    },
-    {
-      "sender": "김힘돌",
-      "text": "기열땅개라",
-      "ts": 1784168139747
-    },
-    {
-      "sender": "Unknown",
-      "text": "진성한 사나이는 아니라네요",
-      "ts": 1784168143090
-    },
-    {
-      "sender": "김힘돌",
-      "text": "진성한 사나이는 아니라네요",
-      "ts": 1784168144392
-    },
-    {
-      "sender": "Unknown",
-      "text": "감사합니다",
-      "ts": 1784168147445
-    },
-    {
-      "sender": "Unknown",
-      "text": "땡큐",
-      "ts": 1784168159969
-    },
-    {
-      "sender": "김힘돌",
-      "text": "땡큐",
-      "ts": 1784168160276
-    },
-    {
-      "sender": "Unknown",
-      "text": "헉",
-      "ts": 1784168186752
-    },
-    {
-      "sender": "라임",
-      "text": "헉",
-      "ts": 1784168186868
-    },
-    {
-      "sender": "라임",
-      "text": "/ㅇㅊ",
-      "ts": 1784168193031
-    },
-    {
-      "sender": "Unknown",
-      "text": "/ㅇㅊ",
-      "ts": 1784168193158
-    },
-    {
-      "sender": "Unknown",
-      "text": "https://dtjs.io/GFRIEND/?id=238",
-      "ts": 1784168193160
-    },
-    {
-      "sender": "[AI] Skynet",
-      "text": "https://dtjs.io/GFRIEND/?id=238",
-      "ts": 1784168194618
-    },
-    {
-      "sender": "Unknown",
-      "text": "말뚝ㄱ?",
-      "ts": 1784168211788
-    },
-    {
-      "sender": "누군가의 부계",
-      "text": "말뚝ㄱ?",
-      "ts": 1784168213569
-    },
-    {
-      "sender": "Unknown",
-      "text": "그대의 심장에",
-      "ts": 1784168224289
-    },
-    {
-      "sender": "김힘돌",
-      "text": "그대의 심장에",
-      "ts": 1784168225081
-    },
-    {
-      "sender": "Unknown",
-      "text": "말뚝",
-      "ts": 1784168226611
-    },
-    {
-      "sender": "Unknown",
-      "text": "그거이미 닼토님이",
-      "ts": 1784168226613
-    },
-    {
-      "sender": "김힘돌",
-      "text": "말뚝",
-      "ts": 1784168226651
-    },
-    {
-      "sender": "라임",
-      "text": "그거이미 닼토님이",
-      "ts": 1784168227712
-    },
-    {
-      "sender": "Unknown",
-      "text": "하고있으시다는얘기가",
-      "ts": 1784168228935
-    },
-    {
-      "sender": "라임",
-      "text": "하고있으시다는얘기가",
-      "ts": 1784168231068
-    },
-    {
-      "sender": "Unknown",
-      "text": "헋",
-      "ts": 1784168235340
-    },
-    {
-      "sender": "김힘돌",
-      "text": "헋",
-      "ts": 1784168236217
-    },
-    {
-      "sender": "Unknown",
-      "text": "헉",
-      "ts": 1784168237663
-    },
-    {
-      "sender": "DarkTornado.js",
-      "text": "다음 주에 콘서트하는 예린이네요",
-      "ts": 1784168466192
-    },
-    {
-      "sender": "Unknown",
-      "text": "다음 주에 콘서트하는 예린이네요",
-      "ts": 1784168466462
-    },
-    {
-      "sender": "Unknown",
-      "text": "당장예매해야겠지??",
-      "ts": 1784168478970
-    },
-    {
-      "sender": "DarkTornado.js",
-      "text": "당장예매해야겠지??",
-      "ts": 1784168479748
-    },
-    {
-      "sender": "Unknown",
-      "text": "예린이 뭐지",
-      "ts": 1784168503698
-    },
-    {
-      "sender": "임정윤",
-      "text": "예린이 뭐지",
-      "ts": 1784168504491
-    },
-    {
-      "sender": "Unknown",
-      "text": "않이;;",
-      "ts": 1784168540726
+      "text": "{\"feedType\":2,\"member\":{\"userId\":5148862257484743627,\"nickName\":\"생각이 많은 스카피\",\"userType\":9}}",
+      "ts": 1784253326432
     }
   ],
-  "120363427141316994@g.us": [
+  "120363408921154760@g.us": [
     {
-      "sender": "COZE_Gaya",
-      "text": "House Manual\ncoze.care/gk",
-      "ts": 1784124334061
+      "sender": "Ami",
+      "text": "Thank you! Would we be able to stay until 3pm on November 14th, or when is the latest we can stay until?",
+      "ts": 1784224276221
     },
     {
       "sender": "COZE_Gaya",
-      "text": "Experience Program coze.care",
-      "ts": 1784124401423
+      "text": "11AM is your check out! then you can keep your luggage at home :)",
+      "ts": 1784224314532
     }
   ],
-  "120363427728007455@g.us": [
+  "821066906935@c.us": [
     {
-      "sender": "Ricky, Tour Host",
-      "text": "COZE Hospitality 3.0\n\nAll You Need. All in One. All Yours.\n\n\n🇰🇷✨ Welcome to Korea! And Welcome to COZE.\n\nJet-lagged? Phone not working? Hungry but can’t read the menu?\nWe get it. And we’ve built a stay just for you.\n\nCOZE is where your trip begins with care — not confusion.\nWe don’t just rent homes. We curate your entire Korean experience around you.\n\n> Think: a home in Korea, powered by local friends who do everything for you.",
-      "ts": 1784124187541
-    },
-    {
-      "sender": "Ricky, Tour Host",
-      "text": "My name is Ricky, The Team Member of guest care team!",
-      "ts": 1784124223433
-    },
-    {
-      "sender": "Ricky, Tour Host",
-      "text": "Now, we're launching a personalized service just for you on this channel! Before we begin, we'd love for you to invite your family to join us too! ❤️🎉",
-      "ts": 1784124232204
-    }
-  ],
-  "120363409204133943@g.us": [
-    {
-      "sender": "Monica",
-      "text": "Hello!\nI’ll include the flight details below:\nAirline: Air Canada\nFlight number: AC67\nArrival date: Friday 17/07\nArrival time: 16:25\nThank you so much! 😊",
-      "ts": 1784140546927
-    }
-  ],
-  "line:C38a1632b3aa395d3ca4a6677c1a41a6c": [
-    {
-      "sender": "unknown",
-      "text": "Good morning, it seems that the breakfast delivery is not yet delivered. Could you please check again?\nThanks!",
-      "ts": 1784156932650
-    },
-    {
-      "sender": "unknown",
-      "text": "Good afternoon, we’d like to have regular breakfast delivery for tomorrow, thank you. ☺️",
-      "ts": 1784178997020
-    },
-    {
-      "sender": "COZE HOSPITALITY 3.0",
-      "text": "🥖 Bread • 🥛 Milk • 🥚 Eggs • 🧃 Juice • 🍎 Fruit •",
-      "ts": 1784180892857
-    },
-    {
-      "sender": "COZE HOSPITALITY 3.0",
-      "text": "please select the item. sorry for your bothered",
-      "ts": 1784180913120
-    },
-    {
-      "sender": "unknown",
-      "text": "🥖 Bread • 🥛 Milk • 🥚 Eggs • 🧃 Juice • 🍎 Fruit • \nEverything needed thank you.",
-      "ts": 1784180977325
-    }
-  ],
-  "120363422965145348@g.us": [
-    {
-      "sender": "COZE_Jin",
-      "text": "I noticed the fruit box in the F9 living room was left open yesterday, \n\nso I've tidied it up and moved it to the B9 refrigerator for you 🙏",
-      "ts": 1784167060527
-    },
-    {
-      "sender": "Julia Halualani",
-      "text": "Thank you!",
-      "ts": 1784167115464
+      "sender": "COZE_Gaya",
+      "text": "hi",
+      "ts": 1784221283193
     }
   ],
   "120363427266060390@g.us": [
     {
-      "sender": "COZE_Gaya",
-      "text": "Hello @81016437891073 \n\nGood sleep at home? :)",
-      "ts": 1784167340047
+      "sender": "Ryan Thompson",
+      "text": "Good morning! We will be checking out around 9:15 am and heading to a different house. Would you be able to help us getting a taxi? We have three people with three large suitcases",
+      "ts": 1784241416512
+    },
+    {
+      "sender": "COZE_Jin",
+      "text": "Goodmorning @81016437891073 \n\nCould you please provide me with the exact address of the house?",
+      "ts": 1784243438405
     },
     {
       "sender": "Ryan Thompson",
-      "text": "Yes it was amazing! We love this home",
-      "ts": 1784173448445
-    }
-  ],
-  "120363426632162671@g.us": [
-    {
-      "sender": "Jenny Lee",
-      "text": "Hello! How much would it cost to order a big taxi to go to mangwondong?",
-      "ts": 1784171160515
+      "text": "Address :  Bukchang-dong 111-1\nBuilding name : BRILLANTE toksungung palace\nkorea address : 브릴란테덕수궁 북창동 111-1",
+      "ts": 1784243566858
     },
     {
-      "sender": "COZE_Gaya",
-      "text": "private van / 70K\n\nVAN TAXI : approx. 35K",
-      "ts": 1784171216302
+      "sender": "COZE_Jin",
+      "text": "Okay noted",
+      "ts": 1784243622523
     },
     {
-      "sender": "Jenny Lee",
-      "text": "So 35k for van taxi for 3 luggage and 3 people?",
-      "ts": 1784171256332
+      "sender": "COZE_Jin",
+      "text": "I will search on the taxi app starting at 9 AM and let you know the results",
+      "ts": 1784243778534
     },
     {
-      "sender": "COZE_Gaya",
-      "text": "yes. Kia Carnival taxi",
-      "ts": 1784171286795
-    },
-    {
-      "sender": "Jenny Lee",
-      "text": "Great. I will let you know once the room at the next guest house is ready",
-      "ts": 1784171338062
-    },
-    {
-      "sender": "COZE_Gaya",
-      "text": "privare is only for yours. van taxi is for public",
-      "ts": 1784171362657
-    },
-    {
-      "sender": "Jenny Lee",
-      "text": "Public taxi is ok. Will they pick us up when I request and drop in front of house?",
-      "ts": 1784171688084
-    },
-    {
-      "sender": "COZE_Gaya",
-      "text": "yes. but you need to wait for its booking like Uber van. So let us know in advance before 15 min",
-      "ts": 1784172742179
-    },
-    {
-      "sender": "Jenny Lee",
-      "text": "Perfect thank you",
-      "ts": 1784172780188
-    },
-    {
-      "sender": "Jenny Lee",
-      "text": "Ok we are ready to head out. Would you order a van taxi please? We are going to: 431-34 Mangwongil",
-      "ts": 1784180337401
-    },
-    {
-      "sender": "COZE_Gaya",
-      "text": "great hold on",
-      "ts": 1784180364211
-    },
-    {
-      "sender": "COZE_Gaya",
-      "text": "the address is not correct",
-      "ts": 1784180407708
-    },
-    {
-      "sender": "Jenny Lee",
-      "text": "Just a moment",
-      "ts": 1784180507133
-    },
-    {
-      "sender": "Jenny Lee",
-      "text": "35-1 mangwondo 3 gil",
-      "ts": 1784180573592
-    },
-    {
-      "sender": "COZE_Gaya",
-      "text": "okay that works",
-      "ts": 1784180629242
-    },
-    {
-      "sender": "COZE_Gaya",
-      "text": "it surges the demand. it costs now 58200KRW :(",
-      "ts": 1784180716160
-    },
-    {
-      "sender": "Jenny Lee",
-      "text": "Ok no choice please order",
-      "ts": 1784180730727
-    },
-    {
-      "sender": "COZE_Gaya",
-      "text": "plate number 2587 / 9 min to arrive",
-      "ts": 1784180789969
-    },
-    {
-      "sender": "Jenny Lee",
+      "sender": "Ryan Thompson",
       "text": "Thank you!",
-      "ts": 1784180796696
+      "ts": 1784243860516
     },
     {
-      "sender": "Jenny Lee",
-      "text": "Thank you! I pay driver directly right?",
-      "ts": 1784181673464
+      "sender": "COZE_Jin",
+      "text": "Plate number: 1685 Staria\nEta 9:10AM",
+      "ts": 1784246642499
     },
     {
-      "sender": "COZE_Gaya",
-      "text": "yes! Due to traffic jam, it will take a hour to arrive there",
-      "ts": 1784181709711
+      "sender": "Ryan Thompson",
+      "text": "Perfect!",
+      "ts": 1784246650968
     },
     {
-      "sender": "Jenny Lee",
-      "text": "Ok",
-      "ts": 1784181719964
+      "sender": "COZE_Jin",
+      "text": "You can pay the driver directly. Card or cash is fine.",
+      "ts": 1784246695707
     },
     {
-      "sender": "COZE_Gaya",
-      "text": "if you need any support from us even after your check out, you are always welcome 😀",
-      "ts": 1784181761586
+      "sender": "COZE_Jin",
+      "text": "Soon arrive",
+      "ts": 1784246937955
     },
     {
-      "sender": "Jenny Lee",
-      "text": "Thank you! Do I pay the driver directly?",
-      "ts": 1784181778630
+      "sender": "Ryan Thompson",
+      "text": "We are in the taxi and all checked out. Thank you so much for the wonderful stay we wish we could have extended, you guys are awesome!",
+      "ts": 1784247311115
     },
     {
-      "sender": "COZE_Gaya",
-      "text": "yes. by your credit card",
-      "ts": 1784181803386
-    },
-    {
-      "sender": "Jenny Lee",
-      "text": "Thanks for everything! I will put a 5 star review",
-      "ts": 1784181829827
-    },
-    {
-      "sender": "COZE_Gaya",
-      "text": "thank you!",
-      "ts": 1784183730856
+      "sender": "COZE_Jin",
+      "text": "Thank you so much for your warm words! It really means a lot to us. \nWe actually run several different accommodations, so if you ever plan to visit Korea again, please let us know. \n\nWe’d love to host you again! Take care!",
+      "ts": 1784247381568
     }
   ],
   "kakao:473235144423012": [
     {
       "sender": "박진심",
-      "text": "혹시 묵는것에 욕조가 있나요",
-      "ts": 1784176304611
+      "text": "오늘 접수된 차 한대가 주차할 예정인것 알려드립니다",
+      "ts": 1784242607633
     },
     {
       "sender": "박진심",
-      "text": "혹시 묵는것에 욕조가 있나요",
-      "ts": 1784176305742
+      "text": "오늘 접수된 차 한대가 주차할 예정인것 알려드립니다",
+      "ts": 1784242609342
     },
     {
-      "sender": "박진심",
-      "text": "낼 cx410 14:05분 도착예정입니다",
-      "ts": 1784176323276
+      "sender": "COZE _ Jin",
+      "text": "네 알겠습니다",
+      "ts": 1784244499154
     },
     {
-      "sender": "박진심",
-      "text": "낼 cx410 14:05분 도착예정입니다",
-      "ts": 1784176325247
-    },
-    {
-      "sender": "박진심",
-      "text": "공항 픽업에 또 필요하신것 있음 열락주세요. 휴대용 카시트가 있으나 더 단단한 카시트가 있으면 정보 부탁드립니다",
-      "ts": 1784176409193
-    },
-    {
-      "sender": "박진심",
-      "text": "공항 픽업에 또 필요하신것 있음 열락주세요. 휴대용 카시트가 있으나 더 단단한 카시트가 있으면 정보 부탁드립니다",
-      "ts": 1784176409280
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "욕조는 없고 아기욕조만 따로 준비했어요!",
-      "ts": 1784180032010
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "욕조는 없고 아기욕조만 따로 준비했어요!",
-      "ts": 1784180032831
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "저희 기사님도 휴대용만 들고다니셔서 아마 동일한 수준인거 같아요!",
-      "ts": 1784180069030
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "저희 기사님도 휴대용만 들고다니셔서 아마 동일한 수준인거 같아요!",
-      "ts": 1784180069671
-    },
-    {
-      "sender": "박진심",
-      "text": "그럼 저희 껄로 하겠습니다. 아기와 동반이라 짐이 진짜 많습니다. 성인 2, 스트롤러, 카시트, 캐리언 4, 수화물 3-4",
-      "ts": 1784184887656
-    },
-    {
-      "sender": "박진심",
-      "text": "그럼 저희 껄로 하겠습니다. 아기와 동반이라 짐이 진짜 많습니다. 성인 2, 스트롤러, 카시트, 캐리언 4, 수화물 3-4",
-      "ts": 1784184888865
+      "sender": "COZE _ Jin",
+      "text": "네 알겠습니다",
+      "ts": 1784244499443
     }
   ],
-  "kakao:4948670999600370": [
+  "120363422965145348@g.us": [
     {
-      "sender": "카카오",
-      "text": "(광고)요즘 대세 보고, 선물받기🎁",
-      "ts": 1784179758426
+      "sender": "Julia Halualani",
+      "text": "Hello. Is there a salon in Mapo area that you recommend for Gomo to get a perm?",
+      "ts": 1784250201820
+    },
+    {
+      "sender": "COZE_CYRUS",
+      "text": "[네이버지도]\n희희\n서울 마포구 성미산로23길 16-5 2층\nhttps://naver.me/Ghwk2JyD",
+      "ts": 1784250443462
+    },
+    {
+      "sender": "COZE_CYRUS",
+      "text": "There is a hair salon on the second floor of the accommodation building, and our guests have been very satisfied with their service.",
+      "ts": 1784250468258
+    },
+    {
+      "sender": "Julia Halualani",
+      "text": "Thank you!",
+      "ts": 1784250511466
+    },
+    {
+      "sender": "COZE_CYRUS",
+      "text": "[네이버지도]\n포트 연남점\n서울 마포구 성미산로29길 17-10 3층\nhttps://naver.me/FBM9piGT",
+      "ts": 1784250519763
     }
   ],
-  "120363428084259624@g.us": [
+  "120363427651504347@g.us": [
     {
-      "sender": "Cinira Yang",
-      "text": "There will be 7 of us total",
-      "ts": 1784183437386
-    }
-  ],
-  "kakao:472770182351696": [
-    {
-      "sender": "nickssem",
-      "text": "Can we get this breakfast tomorrow?",
-      "ts": 1784184405176
+      "sender": "Sophia HWANG",
+      "text": "Hello Gaya.\nI'm just following up on refund status & make sure it has processed.  I know it will take 7-10 business days, so just checking.",
+      "ts": 1784251713177
     },
     {
-      "sender": "nickssem",
-      "text": "Can we get this breakfast tomorrow?",
-      "ts": 1784184407058
+      "sender": "COZE_Gaya",
+      "text": "yes. we do today :)",
+      "ts": 1784252127616
     },
     {
-      "sender": "Stany98",
-      "text": "Please reply to above?",
-      "ts": 1784184440078
-    },
-    {
-      "sender": "Stany98",
-      "text": "Please reply to above?",
-      "ts": 1784184441054
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "oops",
-      "ts": 1784184489235
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "oops",
-      "ts": 1784184489913
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "Our team might miss this order",
-      "ts": 1784184499697
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "Our team might miss this order",
-      "ts": 1784184500344
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "I will order this today!",
-      "ts": 1784184509995
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "I will order this today!",
-      "ts": 1784184510168
+      "sender": "Sophia HWANG",
+      "text": "Perfect!!  I hope refund arrives in time.  I gotta pay off credit card 😅\nThank you!!",
+      "ts": 1784252306619
     }
   ]
 }
