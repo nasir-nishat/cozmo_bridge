@@ -26,6 +26,21 @@
       "sender": "Unknown",
       "text": "{\"feedType\":2,\"member\":{\"userId\":5148862257484743627,\"nickName\":\"생각이 많은 스카피\",\"userType\":9}}",
       "ts": 1784253326432
+    },
+    {
+      "sender": "Unknown",
+      "text": "{\"feedType\":4,\"members\":[{\"userId\":6079795065507518899,\"nickName\":\"예민한 팬더주니어\"}]}",
+      "ts": 1784256726408
+    },
+    {
+      "sender": "Unknown",
+      "text": "공지사항을 읽어주세요",
+      "ts": 1784256726410
+    },
+    {
+      "sender": "방장봇",
+      "text": "공지사항을 읽어주세요",
+      "ts": 1784256727576
     }
   ],
   "120363408921154760@g.us": [
@@ -173,6 +188,75 @@
       "sender": "Sophia HWANG",
       "text": "Perfect!!  I hope refund arrives in time.  I gotta pay off credit card 😅\nThank you!!",
       "ts": 1784252306619
+    }
+  ],
+  "120363410881167904@g.us": [
+    {
+      "sender": "COZE_CYRUS",
+      "text": "When you check out, please gather all your luggage together in one place on the floor where you are staying. Just send me a photo afterward, and I’ll move it to our luggage storage area and keep it safe for you. 😊",
+      "ts": 1784255450070
+    }
+  ],
+  "kakao:473132585883172": [
+    {
+      "sender": "구동현",
+      "text": "158나 9492 차량 추가 주차 등록 부탁드립니다",
+      "ts": 1784256348332
+    },
+    {
+      "sender": "구동현",
+      "text": "158나 9492 차량 추가 주차 등록 부탁드립니다",
+      "ts": 1784256349067
+    },
+    {
+      "sender": "구동현",
+      "text": "BBQ장은 비가와도 사용이 가능한것 맞을까요?",
+      "ts": 1784256364904
+    },
+    {
+      "sender": "구동현",
+      "text": "BBQ장은 비가와도 사용이 가능한것 맞을까요?",
+      "ts": 1784256365569
+    },
+    {
+      "sender": "구동현",
+      "text": "천막이나 지붕이 있는지 궁금합니다!",
+      "ts": 1784256373332
+    },
+    {
+      "sender": "구동현",
+      "text": "천막이나 지붕이 있는지 궁금합니다!",
+      "ts": 1784256374328
+    },
+    {
+      "sender": "COZE_Cyrus",
+      "text": "✈️안녕하세요. 체크인 담당 / 게스트 케어팀 (Cyrus)사이러스입니다.",
+      "ts": 1784256777653
+    },
+    {
+      "sender": "COZE_Cyrus",
+      "text": "✈️안녕하세요. 체크인 담당 / 게스트 케어팀 (Cyrus)사이러스입니다.",
+      "ts": 1784256777900
+    },
+    {
+      "sender": "COZE_Cyrus",
+      "text": "BBQ 공간은 비가 와도 이용 가능하며, 약 12명 정도 함께 사용하실 수 있습니다 😊\n옆쪽에 파라솔도 마련되어 있어 소나기처럼 비가 아주 강하게 내리는 경우가 아니라면 BBQ를 이용하시는 데 큰 문제는 없습니다. ☔🔥",
+      "ts": 1784256884180
+    },
+    {
+      "sender": "COZE_Cyrus",
+      "text": "BBQ 공간은 비가 와도 이용 가능하며, 약 12명 정도 함께 사용하실 수 있습니다 😊\n옆쪽에 파라솔도 마련되어 있어 소나기처럼 비가 아주 강하게 내리는 경우가 아니라면 BBQ를 이용하시는 데 큰 문제는 없습니다. ☔🔥",
+      "ts": 1784256884898
+    },
+    {
+      "sender": "구동현",
+      "text": "감사합니다~",
+      "ts": 1784256919092
+    },
+    {
+      "sender": "구동현",
+      "text": "감사합니다~",
+      "ts": 1784256920233
     }
   ]
 }

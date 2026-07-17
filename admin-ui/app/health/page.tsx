@@ -28,7 +28,8 @@ interface ServiceStatus {
   target: string
   online: boolean
   statusCode: number | null
-  latencyMs: number
+  latencyMs: number | null
+  managed?: boolean
   error?: string
 }
 
@@ -118,11 +119,13 @@ export default function HealthPage() {
                   <div className="flex items-center gap-1.5 shrink-0">
                     <div className={cn('w-2 h-2 rounded-full', svc.online ? 'bg-[#34c759]' : 'bg-[#ff3b30]')} />
                     <span className={cn('text-[12px]', svc.online ? 'text-[#34c759]' : 'text-[#ff3b30]')}>
-                      {svc.online ? 'Online' : 'Offline'}
+                      {svc.managed ? 'Active' : svc.online ? 'Online' : 'Offline'}
                     </span>
-                    <span className="hidden sm:inline text-[11px] text-[#8e8e93] tabular-nums">
-                      {svc.statusCode ?? 'ERR'} · {svc.latencyMs}ms
-                    </span>
+                    {!svc.managed && (
+                      <span className="hidden sm:inline text-[11px] text-[#8e8e93] tabular-nums">
+                        {svc.statusCode ?? 'ERR'} · {svc.latencyMs}ms
+                      </span>
+                    )}
                   </div>
                 </div>
               </div>

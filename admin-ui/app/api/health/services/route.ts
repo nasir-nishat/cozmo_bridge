@@ -5,6 +5,7 @@ type ServiceConfig = {
   checkUrl: string
   publicUrl: string
   target: string
+  managed?: boolean // hosted on Vercel — always active, no health ping
 }
 
 const SERVICES: ServiceConfig[] = [
@@ -39,6 +40,7 @@ const SERVICES: ServiceConfig[] = [
     checkUrl: 'https://www.coze.care',
     publicUrl: 'https://coze.care',
     target: 'Vercel',
+    managed: true,
   },
   {
     name: 'cms',
@@ -47,10 +49,20 @@ const SERVICES: ServiceConfig[] = [
     checkUrl: 'https://cms.coze.care',
     publicUrl: 'https://cms.coze.care',
     target: 'Vercel',
+    managed: true,
   },
 ]
 
 async function checkService(service: ServiceConfig) {
+  if (service.managed) {
+    return {
+      ...service,
+      online: true,
+      statusCode: null,
+      latencyMs: null,
+    }
+  }
+
   const startedAt = Date.now()
 
   try {
