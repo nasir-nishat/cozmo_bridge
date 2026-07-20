@@ -498,3 +498,6 @@
 [2026-07-20 18:38:11.565] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
 [2026-07-20 18:38:11.565] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
 [2026-07-20 18:38:11.567] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-07-20 18:40:21.619] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-07-20 18:40:21.619] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-07-20 18:40:21.620] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
