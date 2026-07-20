@@ -5,7 +5,7 @@ import { usePathname, useRouter } from 'next/navigation'
 import {
   LayoutDashboard, Sparkles, CheckSquare, CalendarDays, ListTodo,
   Bell, Activity, BookOpen, Users, User, MessageCircle, MessageSquare, LogOut, LineChart,
-  Sun, Moon, ClipboardCheck,
+  Sun, Moon, ClipboardCheck, Hammer,
   type LucideIcon,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -28,6 +28,7 @@ const NAV: NavItem[] = [
   { href: '/alerts',   Icon: Bell,            label: 'Alerts',         group: 'ops' },
   { href: '/health',   Icon: Activity,        label: 'Health',         group: 'ops' },
   { href: '/kb',       Icon: BookOpen,        label: 'Knowledge Base', group: 'ops' },
+  { href: '/group-builds', Icon: Hammer,      label: 'Group Builds',   group: 'platforms' },
   { href: '/checklist', Icon: ClipboardCheck, label: 'Guest Checklist', group: 'platforms' },
   { href: '/groups',   Icon: Users,           label: 'Groups',         group: 'platforms' },
   { href: '/messages', Icon: MessageSquare,   label: 'Messages',       group: 'platforms' },

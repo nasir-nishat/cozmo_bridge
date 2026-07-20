@@ -154,6 +154,12 @@ export const CONFIG = {
     SERPER_API_KEY:        parseStr(process.env.SERPER_API_KEY),
 } as const;
 
+// Properties that never get the breakfast/grocery service — breakfast_tips must not be sent to their groups.
+export const NO_BREAKFAST_PROPERTIES = ['JTS', 'GKA', 'GKB'];
+export function skipsBreakfast(propertyName: string): boolean {
+    return NO_BREAKFAST_PROPERTIES.some(code => propertyName.includes(code));
+}
+
 export const ALERT_EVENTS: Record<string, string> = {
     NEW_INQUIRY: '🔍 <b>New Inquiry</b>',
     NEW_HOLD: '⏸️ <b>On Hold</b>',

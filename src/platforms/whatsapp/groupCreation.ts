@@ -19,6 +19,7 @@ import { scheduleReminder } from '../../services/groupReminders';
 import { getStaffWhatsAppLids } from '../../services/staffCache';
 import { addToReplyWatchdog } from '../../services/replyWatchdog';
 import { recordGroupCreated } from '../../services/groupCreationPacing';
+import { buildStarted, buildStep, buildStepLate, buildGroupId, buildFinished, buildFailed } from '../../services/groupBuildProgress';
 import { renderMessage } from '../../utils/messageVariation';
 
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
@@ -270,6 +271,7 @@ export async function createBookingGroup(args: any): Promise<string> {
     const myTurn = creationChain.then(async () => {
         groupId = await _doCreateBookingGroup(args).catch((e: any) => {
             console.error(`❌ createBookingGroup error (${lead_uid}):`, e?.message);
+            buildFailed(lead_uid, e?.message);
             return '';
         });
     });
@@ -348,6 +350,7 @@ async function _doCreateBookingGroup({
     await randSleep(1000, 3000);
     console.log(`✅ Execute group creation (${lead_uid})`);
     console.log(`👥 Creating group: ${groupName} (${allParticipants.length} participants)`);
+    buildStarted({ leadUid: lead_uid, guestName: guest_name, property, groupName });
 
     let groupId: string;
     try {
@@ -363,6 +366,9 @@ async function _doCreateBookingGroup({
         throw e;
     }
     recordGroupCreated();
+    buildGroupId(lead_uid, groupId);
+    buildStep(lead_uid, 'create', 'done', `${allParticipants.length} participants`);
+    buildStep(lead_uid, 'settings', 'active');
 
     // 1–2 min: let WA register the new group before any settings changes
     console.log(`⏳ Waiting 1–2 min before group settings (${lead_uid})...`);
@@ -413,8 +419,12 @@ async function _doCreateBookingGroup({
     }
 
     // 3–5 min more: let the group fully stabilize before any participant writes
+    buildStep(lead_uid, 'settings', warnings.length ? 'warn' : 'done', warnings.length ? warnings.join('; ') : undefined);
+    buildStep(lead_uid, 'stabilize', 'active');
     console.log(`⏳ Waiting 3–5 min before admin promotion (${lead_uid})...`);
     await randSleep(180000, 300000);
+    buildStep(lead_uid, 'stabilize', 'done');
+    buildStep(lead_uid, 'admins', 'active');
 
     // PRIORITY 1: Promote staff to admin — verify after each attempt, retry until confirmed
     const staffLids = getStaffWhatsAppLids();
@@ -530,11 +540,15 @@ async function _doCreateBookingGroup({
         }
     }
     await sleep(5000);
+    buildStep(lead_uid, 'admins',
+        staffNotAdmin.length > 0 ? 'warn' : 'done',
+        staffNotAdmin.length > 0 ? `${staffNotAdmin.length} staff still not admin` : undefined);
 
     if (propertyImageBase64) {
         // Fully deferred — fires 30–45 minutes after group creation, well after all messages are sent
         const capturedGroupId = groupId;
         const capturedImage = propertyImageBase64;
+        const capturedLeadUid = lead_uid;
         sleep(1800000 + Math.floor(Math.random() * 900000)).then(() =>
             evoApi.post(`/group/updateGroupPicture/${INSTANCE}`,
                 { groupJid: capturedGroupId, image: capturedImage },
@@ -542,9 +556,13 @@ async function _doCreateBookingGroup({
             )
         ).then(() => {
             console.log(`✅ Group icon set (deferred): ${capturedGroupId}`);
+            buildStepLate(capturedLeadUid, 'icon', 'done');
         }).catch((e: any) => {
             console.warn('⚠️ Could not set group icon (deferred):', e?.message);
+            buildStepLate(capturedLeadUid, 'icon', 'warn', e?.message);
         });
+    } else {
+        buildStep(lead_uid, 'icon', 'warn', 'no property image found — set manually');
     }
 
     if (lead_uid) {
@@ -575,7 +593,9 @@ async function _doCreateBookingGroup({
             `─────────────────\n<i>via COZMO · COZE Hospitality</i>`,
             { useTestJandi: CONFIG.IS_APP_DEV, propertyCode: propertyCodeFromName(property) || undefined }
         );
+        buildStep(lead_uid, 'link', 'done');
     }
+    buildStep(lead_uid, 'welcome', 'active', 'quiet cooldown 8–15 min, then messages 2–5 min apart');
 
     // Enqueue BEFORE sending — if server restarts mid-sleep sequence, messages retry on next reconnect
     const pendingMeta: PendingMeta = {
@@ -592,9 +612,11 @@ async function _doCreateBookingGroup({
     if (sent) {
         dequeue(groupId);
         markSent(groupId, 'welcome');
+        buildStep(lead_uid, 'welcome', 'done');
         addToReplyWatchdog(groupId, guest_name, property, groupName);
         if (lead_uid) scheduleReminder(groupId, lead_uid);
     } else {
+        buildStep(lead_uid, 'welcome', 'warn', 'queued — will send when WA reconnects');
         await sendAlert(
             `⏳ <b>Messages Queued for Retry</b>\n─────────────────\n` +
             `👤 <b>Guest:</b> ${guest_name}\n` +
@@ -712,6 +734,7 @@ async function _doCreateBookingGroup({
     }
 
     console.log(`✅ Group created: ${groupName}`);
+    buildFinished(lead_uid);
     return groupId;
 }
 

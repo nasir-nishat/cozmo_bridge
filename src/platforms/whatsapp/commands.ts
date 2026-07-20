@@ -12,7 +12,7 @@ import { createBookingGroup } from './groupCreation';
 import { dequeue } from '../../services/pendingMessages';
 import { markSent } from '../../services/sentMessages';
 import { buildBookingGroupName, propertyCodeFromName } from './groupNaming';
-import { CONFIG } from '../../config/constants';
+import { CONFIG, skipsBreakfast } from '../../config/constants';
 import { guestName, formatSeoulDate } from '../../utils/format';
 
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
@@ -238,7 +238,7 @@ export async function handleCkinCommand(from: string, senderJid: string): Promis
         const stored = getGroupLang(from);
         const lang = stored || 'EN';
         const propertyName = lead?.propertyName || lead?.unit?.name || '';
-        const tipKeys = propertyName.includes('JTS') ? ['food_tips', 'van_tips'] : ['breakfast_tips', 'food_tips', 'van_tips'];
+        const tipKeys = skipsBreakfast(propertyName) ? ['food_tips', 'van_tips'] : ['breakfast_tips', 'food_tips', 'van_tips'];
         await evoSendText(from, '⏳ Sending check-in messages...').catch(() => {});
         for (const key of tipKeys) {
             const msg = await getTipsMessage(key, lang);

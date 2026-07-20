@@ -7,7 +7,7 @@ import { wechatSendText } from './wechat';
 import { sendAlert } from './notify';
 import { propertyCodeFromName } from '../platforms/whatsapp/groupNaming';
 import { getBookingsCheckingIn } from './bookingStore';
-import { CONFIG } from '../config/constants';
+import { CONFIG, skipsBreakfast } from '../config/constants';
 import { markSent, isSent, MessageType } from './sentMessages';
 import { wasAlreadySent } from './llm';
 import { getGroupLang } from './groupLeads';
@@ -100,7 +100,7 @@ async function sendCheckinTips(): Promise<void> {
             const lang = resolveGroupLang(groupKey, platform, lead.nationality);
 
             const nights = getStayNights(lead.checkIn, lead.checkOut);
-            const tipKeys = (lead.property.includes('JTS') || nights < 4)
+            const tipKeys = (skipsBreakfast(lead.property) || nights < 4)
                 ? TIP_KEYS.filter(k => k !== 'breakfast_tips')
                 : TIP_KEYS;
 

@@ -49,6 +49,12 @@ export function hasQueuedGroupCreation(leadUid: string): boolean {
     return load().some(m => m.leadUid === leadUid);
 }
 
+// Read-only snapshot for the admin-ui Group Builds page — same order the flush uses
+export function getQueuedGroupCreations(): PendingGroupCreation[] {
+    return load().sort((a, b) =>
+        new Date(a.checkIn || '2999-01-01').getTime() - new Date(b.checkIn || '2999-01-01').getTime());
+}
+
 function dequeue(leadUid: string): void {
     save(load().filter(m => m.leadUid !== leadUid));
     scheduleAlerted.delete(leadUid);

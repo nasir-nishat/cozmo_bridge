@@ -16,6 +16,9 @@ import { getLivePropertyPricingEntry } from '../knowledge/livePricing';
 import { webSearch } from '../knowledge/webSearch';
 import { getExpenseSummary } from '../services/expenses';
 import { getGoogleAuthStatus, isGoogleAuthAvailable } from '../services/google-auth';
+import { getBuilds, BUILD_STEP_PLAN } from '../services/groupBuildProgress';
+import { getQueuedGroupCreations } from '../services/pendingGroupCreation';
+import { canAutoCreateGroup, nextEligibleAt, getPacingToday } from '../services/groupCreationPacing';
 
 const router = Router();
 
@@ -184,6 +187,40 @@ router.get('/admin/group-steps', (_req, res) => {
         });
 
     res.json({ ok: true, groups });
+});
+
+// GET /admin/group-builds — live WA group-creation pipeline for the admin-ui:
+// pacing gate state, queued jobs with ETAs, and per-build step progress ("what happens after what")
+router.get('/admin/group-builds', (_req, res) => {
+    const pacing = getPacingToday();
+    const gate = canAutoCreateGroup();
+    const baseEta = nextEligibleAt().getTime();
+
+    const queue = getQueuedGroupCreations().map((job, i) => ({
+        leadUid: job.leadUid,
+        guestName: job.guestName,
+        property: job.property,
+        checkIn: job.checkIn,
+        queuedAt: job.createdAt,
+        // Same estimate the "Group Scheduled" Jandi alert uses: each job ~one min-gap after the previous
+        eta: new Date(Math.max(new Date(job.fireAt).getTime(), baseEta + i * CONFIG.GROUP_CREATION_MIN_GAP_MS)).toISOString(),
+    }));
+
+    res.json({
+        ok: true,
+        pacing: {
+            todayCount: pacing.count,
+            dailyCap: CONFIG.GROUP_CREATION_DAILY_CAP,
+            minGapMinutes: Math.round(CONFIG.GROUP_CREATION_MIN_GAP_MS / 60000),
+            activeHours: `${CONFIG.GROUP_CREATION_HOUR_START}:00–${CONFIG.GROUP_CREATION_HOUR_END}:00 KST`,
+            canCreateNow: gate.ok,
+            holdReason: gate.reason || null,
+            nextEligibleAt: new Date(baseEta).toISOString(),
+        },
+        plan: BUILD_STEP_PLAN,
+        queue,
+        builds: getBuilds(),
+    });
 });
 
 // GET /admin/staff

@@ -10,7 +10,7 @@ import { fetchLead, resolvePropertyNameForLead } from '../services/hostfully';
 import { propertyCodeFromName, buildBookingGroupName } from '../platforms/whatsapp/groupNaming';
 import { guestName, formatSeoulDate } from '../utils/format';
 import { handleExpCommand, getStaffName, sendExpenseSummary } from '../services/expenses';
-import { CONFIG } from '../config/constants';
+import { CONFIG, skipsBreakfast } from '../config/constants';
 import { isLeadExpired } from '../services/bookingStore';
 import { addToBuffer } from '../services/messageBuffer';
 import { recordKakaoHeartbeat, getLastKakaoHeartbeat } from '../services/kakaoWatchdog';
@@ -285,7 +285,7 @@ router.post('/webhook', async (req, res) => {
                 try {
                     const lead = await withTimeout(fetchLead(leadUid), 5000, 'fetchLead');
                     const propertyName = lead?.propertyName || lead?.unit?.name || '';
-                    const tipKeys = propertyName.includes('JTS') ? ['food_tips', 'van_tips'] : ['breakfast_tips', 'food_tips', 'van_tips'];
+                    const tipKeys = skipsBreakfast(propertyName) ? ['food_tips', 'van_tips'] : ['breakfast_tips', 'food_tips', 'van_tips'];
                     const replies: string[] = [];
                     for (const key of tipKeys) {
                         const msg = await getTipsMessage(key, 'KR');

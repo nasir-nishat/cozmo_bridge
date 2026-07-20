@@ -40,6 +40,12 @@ export function recordGroupCreated(): void {
     console.log(`🐢 Pacing: group ${s.count}/${CONFIG.GROUP_CREATION_DAILY_CAP} for ${s.day} (KST)`);
 }
 
+// Read-only snapshot for the admin-ui Group Builds page
+export function getPacingToday(): { day: string; count: number } {
+    const s = load();
+    return s.day === kstDay() ? { day: s.day, count: s.count } : { day: kstDay(), count: 0 };
+}
+
 export function canAutoCreateGroup(): { ok: boolean; reason?: string } {
     const readyFor = waReadyDurationMs();
     if (readyFor < CONFIG.GROUP_CREATION_WARMUP_MS) {

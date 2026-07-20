@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "leadUid": "732ce61a-87a7-432a-8498-87076e6206ef",
+    "guestName": "银 刘",
+    "step": 1,
+    "langCode": "ZH",
+    "propertyCode": "SA",
+    "leadType": "BOOKING",
+    "fireAt": "2026-07-20T02:59:24.679Z",
+    "createdAt": "2026-07-20T02:56:24.681Z"
+  },
+  {
+    "leadUid": "732ce61a-87a7-432a-8498-87076e6206ef",
+    "guestName": "银 刘",
+    "step": "pre_payment",
+    "langCode": "ZH",
+    "leadType": "BOOKING",
+    "fireAt": "2026-07-20T03:00:24.682Z",
+    "createdAt": "2026-07-20T02:56:24.682Z"
+  },
+  {
+    "leadUid": "732ce61a-87a7-432a-8498-87076e6206ef",
+    "guestName": "银 刘",
+    "step": 2,
+    "country": "CN",
+    "leadType": "BOOKING",
+    "fireAt": "2026-07-20T03:26:24.683Z",
+    "createdAt": "2026-07-20T02:56:24.683Z"
+  }
+]

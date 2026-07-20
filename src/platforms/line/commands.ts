@@ -6,7 +6,7 @@ import { getScheduledMessage, getMessages, getTipsMessage } from '../../services
 import { sendExpenseSummary } from '../../services/expenses';
 import { SupportedLang } from '../../services/llm';
 import { replyMessage, pushMessage, pushImage, lineGroupKey } from './lineClient';
-import { CONFIG } from '../../config/constants';
+import { CONFIG, skipsBreakfast } from '../../config/constants';
 import { guestName, formatSeoulDate } from '../../utils/format';
 import { LANG_MAP, groupGuestLang, groupTranslationOn } from './translation';
 import { sendLineWelcome } from './welcome';
@@ -182,7 +182,7 @@ export async function handleLineCkinCommand(sourceId: string, replyToken: string
         const nationality = (lead?.guestInformation?.countryCode || 'US').toUpperCase();
         const lang = nationality === 'KR' ? 'KR' : nationality === 'JP' ? 'JA' : (nationality === 'CN' || nationality === 'TW') ? 'ZH' : 'EN';
         const propertyName = lead?.propertyName || lead?.unit?.name || '';
-        const tipKeys = propertyName.includes('JTS') ? ['food_tips', 'van_tips'] : ['breakfast_tips', 'food_tips', 'van_tips'];
+        const tipKeys = skipsBreakfast(propertyName) ? ['food_tips', 'van_tips'] : ['breakfast_tips', 'food_tips', 'van_tips'];
         await replyMessage(replyToken, '⏳ Sending check-in messages...').catch(() => {});
         for (const key of tipKeys) {
             const msg = await getTipsMessage(key, lang);

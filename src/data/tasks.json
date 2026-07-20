@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "property": "Secret Garden",
+    "title": "Clean very well please",
+    "type": "cleaning",
+    "status": "new",
+    "assignee": "Jisu",
+    "source": "jandi",
+    "notes": "",
+    "id": "task-1784281019577-b9c3",
+    "createdAt": "2026-07-17T09:36:59.577Z",
+    "updatedAt": "2026-07-17T09:37:18.233Z"
+  }
+]
