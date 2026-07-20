@@ -11,7 +11,7 @@ const dayOrdinal = (day: number): string => {
     return `${day}th`;
 };
 
-const formatGroupCheckIn = (raw: string): string => {
+export const formatGroupCheckIn = (raw: string): string => {
     if (!raw) return '';
     const d = new Date(raw);
     if (Number.isNaN(d.getTime())) return '';

@@ -179,7 +179,7 @@ async function handleLineCkinCommand(sourceId, replyToken) {
         const nationality = (lead?.guestInformation?.countryCode || 'US').toUpperCase();
         const lang = nationality === 'KR' ? 'KR' : nationality === 'JP' ? 'JA' : (nationality === 'CN' || nationality === 'TW') ? 'ZH' : 'EN';
         const propertyName = lead?.propertyName || lead?.unit?.name || '';
-        const tipKeys = propertyName.includes('JTS') ? ['food_tips', 'van_tips'] : ['breakfast_tips', 'food_tips', 'van_tips'];
+        const tipKeys = (0, constants_1.skipsBreakfast)(propertyName) ? ['food_tips', 'van_tips'] : ['breakfast_tips', 'food_tips', 'van_tips'];
         await (0, lineClient_1.replyMessage)(replyToken, '⏳ Sending check-in messages...').catch(() => { });
         for (const key of tipKeys) {
             const msg = await (0, sheets_1.getTipsMessage)(key, lang);

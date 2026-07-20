@@ -10,7 +10,7 @@ import { linkGroup, getWaGroupIdByLeadUid, saveGroupName, saveGroupLang, getGrou
 import { detectGuestLanguage } from '../../services/llm';
 import { sendAlert } from '../../services/notify';
 import { isWaReady, setWaReady, evoApi, evoSendText, waClient, INSTANCE, getGroupInviteLink } from './evoClient';
-import { propertyCodeFromName } from './groupNaming';
+import { propertyCodeFromName, formatGroupCheckIn } from './groupNaming';
 import { saveGuestContact } from '../../services/contacts';
 import { enqueue, dequeue, getPending, incrementAttempts, PendingMeta } from '../../services/pendingMessages';
 import { markSent, isSent, MessageType } from '../../services/sentMessages';
@@ -18,7 +18,7 @@ import { formatSeoulDate } from '../../utils/format';
 import { scheduleReminder } from '../../services/groupReminders';
 import { getStaffWhatsAppLids } from '../../services/staffCache';
 import { addToReplyWatchdog } from '../../services/replyWatchdog';
-import { recordGroupCreated } from '../../services/groupCreationPacing';
+import { recordGroupCreated, markAccountRestricted } from '../../services/groupCreationPacing';
 import { buildStarted, buildStep, buildStepLate, buildGroupId, buildFinished, buildFailed } from '../../services/groupBuildProgress';
 import { renderMessage } from '../../utils/messageVariation';
 
@@ -243,6 +243,41 @@ export async function sendBookingMessages(
     return true;
 }
 
+// Auto-creation failures (e.g. Evolution 500s) previously died silently in the error log — this
+// surfaces them to Jandi DEV TEST + Telegram + admin-ui Alerts, throttled per lead so the 2-min
+// retry cycle can't spam. 🚨 prefix on purpose: ⚠️-prefixed alerts are filtered out of Jandi.
+const createFailAlertedAt = new Map<string, number>();
+const CREATE_FAIL_ALERT_COOLDOWN_MS = 6 * 60 * 60 * 1000;
+
+// Last failure per lead — lets the /group command reply with what actually happened and the
+// group name to use, instead of a dead-end "check logs" (createBookingGroup swallows the error
+// down to '' by the time it reaches commands.ts).
+interface CreateFailureInfo { groupName: string; reason: string; restricted: boolean }
+const lastCreateFailure = new Map<string, CreateFailureInfo>();
+export function getLastCreateFailure(leadUid: string): CreateFailureInfo | undefined {
+    return lastCreateFailure.get(leadUid);
+}
+function alertGroupCreateFailure(guestName: string, property: string, leadUid: string, groupName: string, e: any): void {
+    const last = createFailAlertedAt.get(leadUid) ?? 0;
+    if (Date.now() - last < CREATE_FAIL_ALERT_COOLDOWN_MS) return;
+    createFailAlertedAt.set(leadUid, Date.now());
+    const status = e?.response?.status;
+    const detail = e?.response?.data ? JSON.stringify(e.response.data).slice(0, 250) : '';
+    sendAlert(
+        `🚨 <b>WA Auto Group Creation FAILED</b>\n─────────────────\n` +
+        `👤 <b>Guest:</b> ${guestName}\n` +
+        `🏠 <b>Property:</b> ${property}\n` +
+        `🔑 <b>Lead UID:</b> <code>${leadUid}</code>\n` +
+        `📋 <b>Error:</b> ${status ? `Evolution API ${status} — ` : ''}${e?.message || 'unknown'}\n` +
+        (detail ? `🔍 <b>Detail:</b> <code>${detail}</code>\n` : '') +
+        `─────────────────\n` +
+        `♻️ Job stays queued and keeps retrying\n` +
+        `🏷️ <b>If creating manually, use this exact group name:</b>\n<code>${groupName}</code>\n` +
+        `─────────────────\n<i>via COZMO · COZE Hospitality</i>`,
+        { useTestJandi: true }
+    ).catch(() => {});
+}
+
 export async function createBookingGroup(args: any): Promise<string> {
     const { force, lead_uid, lead_status, property } = args;
     if (!isWaReady()) { console.warn(`⏭️ Skip group creation (${lead_uid}): WA not ready`); return ''; }
@@ -292,7 +327,10 @@ async function _doCreateBookingGroup({
 
     await waitForRateLimit();
 
-    const groupName = (group_name || '').toString().trim() || `COZE | ${guest_name} | ${property}`;
+    // Fallback matches the real convention (see groupNaming.ts's buildBookingGroupName) — every
+    // production caller passes group_name already, this only fires for a caller that omits it.
+    const groupName = (group_name || '').toString().trim() ||
+        ['COZE', propertyCodeFromName(property || ''), formatGroupCheckIn(check_in), guest_name].filter(Boolean).join(' ');
     const guestPhone = phone ? phone.replace(/\D/g, '') : '';
 
     const useDevMembers = CONFIG.IS_APP_DEV || CONFIG.FORCE_DEV_GROUP_MEMBERS;
@@ -363,6 +401,36 @@ async function _doCreateBookingGroup({
         if (!groupId) throw new Error('No groupJid in response: ' + JSON.stringify(res.data));
     } catch (e: any) {
         console.error('❌ groupCreate failed:', e?.message);
+        const errStr = e?.response?.data ? JSON.stringify(e.response.data) : '';
+        const restricted = /reachout_restricted/i.test(errStr);
+        lastCreateFailure.set(lead_uid, {
+            groupName,
+            restricted,
+            reason: restricted
+                ? 'WhatsApp is blocking group creation on this number (account_reachout_restricted)'
+                : `${e?.response?.status ? `Evolution API ${e.response.status} — ` : ''}${e?.message || 'unknown error'}`,
+        });
+        if (restricted) {
+            // WhatsApp itself is rejecting group creation for this account — not a transient
+            // Evolution 500. Retrying on the normal 2-min cycle would keep hammering a
+            // restricted number, so pause all auto creation and escalate distinctly.
+            markAccountRestricted('WA rejected group creation: account_reachout_restricted');
+            sendAlert(
+                `⛔ <b>WhatsApp Restricted Group Creation — Auto-Create PAUSED</b>\n─────────────────\n` +
+                `👤 <b>Guest:</b> ${guest_name}\n` +
+                `🏠 <b>Property:</b> ${property}\n` +
+                `🔑 <b>Lead UID:</b> <code>${lead_uid}</code>\n` +
+                `─────────────────\n` +
+                `📋 WhatsApp is blocking new groups on this number (account_reachout_restricted) — this is NOT a retryable API error.\n` +
+                `🚫 Auto group creation is paused account-wide for 24h to avoid compounding the restriction.\n` +
+                `✅ Create this group manually in WhatsApp for the guest now if urgent.\n` +
+                `🏷️ <b>Use this exact group name:</b>\n<code>${groupName}</code>\n` +
+                `🔎 If manual creation also fails, stop all group activity on this number until it clears.\n` +
+                `─────────────────\n<i>via COZMO · COZE Hospitality</i>`
+            ).catch(() => {});
+        } else {
+            alertGroupCreateFailure(guest_name, property, lead_uid, groupName, e);
+        }
         throw e;
     }
     recordGroupCreated();

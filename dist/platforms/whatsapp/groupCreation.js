@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.setGroupCreationEnabled = exports.groupCreationEnabled = void 0;
 exports.getPropertyImageBase64 = getPropertyImageBase64;
 exports.sendBookingMessages = sendBookingMessages;
+exports.getLastCreateFailure = getLastCreateFailure;
 exports.createBookingGroup = createBookingGroup;
 exports.flushPendingMessages = flushPendingMessages;
 const fs_1 = __importDefault(require("fs"));
@@ -28,6 +29,7 @@ const groupReminders_1 = require("../../services/groupReminders");
 const staffCache_1 = require("../../services/staffCache");
 const replyWatchdog_1 = require("../../services/replyWatchdog");
 const groupCreationPacing_1 = require("../../services/groupCreationPacing");
+const groupBuildProgress_1 = require("../../services/groupBuildProgress");
 const messageVariation_1 = require("../../utils/messageVariation");
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 function phoneCountry(phone) {
@@ -226,6 +228,33 @@ async function sendBookingMessages(groupId, { nationality, skipInitialDelay, gue
         return false;
     return true;
 }
+// Auto-creation failures (e.g. Evolution 500s) previously died silently in the error log — this
+// surfaces them to Jandi DEV TEST + Telegram + admin-ui Alerts, throttled per lead so the 2-min
+// retry cycle can't spam. 🚨 prefix on purpose: ⚠️-prefixed alerts are filtered out of Jandi.
+const createFailAlertedAt = new Map();
+const CREATE_FAIL_ALERT_COOLDOWN_MS = 6 * 60 * 60 * 1000;
+const lastCreateFailure = new Map();
+function getLastCreateFailure(leadUid) {
+    return lastCreateFailure.get(leadUid);
+}
+function alertGroupCreateFailure(guestName, property, leadUid, groupName, e) {
+    const last = createFailAlertedAt.get(leadUid) ?? 0;
+    if (Date.now() - last < CREATE_FAIL_ALERT_COOLDOWN_MS)
+        return;
+    createFailAlertedAt.set(leadUid, Date.now());
+    const status = e?.response?.status;
+    const detail = e?.response?.data ? JSON.stringify(e.response.data).slice(0, 250) : '';
+    (0, notify_1.sendAlert)(`🚨 <b>WA Auto Group Creation FAILED</b>\n─────────────────\n` +
+        `👤 <b>Guest:</b> ${guestName}\n` +
+        `🏠 <b>Property:</b> ${property}\n` +
+        `🔑 <b>Lead UID:</b> <code>${leadUid}</code>\n` +
+        `📋 <b>Error:</b> ${status ? `Evolution API ${status} — ` : ''}${e?.message || 'unknown'}\n` +
+        (detail ? `🔍 <b>Detail:</b> <code>${detail}</code>\n` : '') +
+        `─────────────────\n` +
+        `♻️ Job stays queued and keeps retrying\n` +
+        `🏷️ <b>If creating manually, use this exact group name:</b>\n<code>${groupName}</code>\n` +
+        `─────────────────\n<i>via COZMO · COZE Hospitality</i>`, { useTestJandi: true }).catch(() => { });
+}
 async function createBookingGroup(args) {
     const { force, lead_uid, lead_status, property } = args;
     if (!(0, evoClient_1.isWaReady)()) {
@@ -259,6 +288,7 @@ async function createBookingGroup(args) {
     const myTurn = creationChain.then(async () => {
         groupId = await _doCreateBookingGroup(args).catch((e) => {
             console.error(`❌ createBookingGroup error (${lead_uid}):`, e?.message);
+            (0, groupBuildProgress_1.buildFailed)(lead_uid, e?.message);
             return '';
         });
     });
@@ -274,7 +304,10 @@ async function _doCreateBookingGroup({ guest_name, phone, property, check_in, ch
         return existingGroupId;
     }
     await waitForRateLimit();
-    const groupName = (group_name || '').toString().trim() || `COZE | ${guest_name} | ${property}`;
+    // Fallback matches the real convention (see groupNaming.ts's buildBookingGroupName) — every
+    // production caller passes group_name already, this only fires for a caller that omits it.
+    const groupName = (group_name || '').toString().trim() ||
+        ['COZE', (0, groupNaming_1.propertyCodeFromName)(property || ''), (0, groupNaming_1.formatGroupCheckIn)(check_in), guest_name].filter(Boolean).join(' ');
     const guestPhone = phone ? phone.replace(/\D/g, '') : '';
     const useDevMembers = constants_1.CONFIG.IS_APP_DEV || constants_1.CONFIG.FORCE_DEV_GROUP_MEMBERS;
     let teamRaw = useDevMembers ? await (0, sheets_1.getDevTeamMembers)() : await (0, sheets_1.getActiveTeamMembers)();
@@ -292,29 +325,36 @@ async function _doCreateBookingGroup({ guest_name, phone, property, check_in, ch
         console.log(`⏭️ Skipping WA group for KR phone (+${guestPhone}) — KakaoTalk only`);
         return '';
     }
-    // Always include guest — if not on WA, Evolution API skips them silently; we check after creation
+    // Invite-only mode: the guest is NOT force-added; they join via link (respects "who can add me
+    // to groups" privacy and avoids the failed/forced-add spam signal that triggers suspensions).
+    const guestInviteOnly = constants_1.CONFIG.GROUP_CREATION_GUEST_INVITE_ONLY;
+    // Still check WA registration — decides whether we DM the join link or use HF inbox only
     let guestOnWA = false;
     if (guestPhone) {
         try {
             guestOnWA = await evoClient_1.waClient.isRegisteredUser(guestPhone);
         }
         catch {
-            guestOnWA = true; // assume on WA if check fails — better to try than miss the guest
+            guestOnWA = true; // assume on WA if check fails
         }
         if (!guestOnWA) {
-            console.warn(`⚠️ Guest phone +${guestPhone} not confirmed on WhatsApp — will attempt to add anyway`);
+            console.warn(`⚠️ Guest phone +${guestPhone} not confirmed on WhatsApp`);
         }
     }
     if (guestOnWA && lead_uid) {
         const propertyCode = (0, groupNaming_1.propertyCodeFromName)(property || '');
         (0, contacts_1.saveGuestContact)(guest_name, guestPhone, propertyCode).catch((e) => console.warn('⚠️ saveGuestContact failed:', e?.message));
     }
-    const allParticipants = [...new Set([...(guestPhone ? [guestPhone] : []), ...teamPhones])].filter(Boolean);
+    const allParticipants = [...new Set([
+            ...(!guestInviteOnly && guestPhone ? [guestPhone] : []),
+            ...teamPhones,
+        ])].filter(Boolean);
     const propertyImageBase64 = await getPropertyImageBase64(property || '');
     const warnings = [];
     await randSleep(1000, 3000);
     console.log(`✅ Execute group creation (${lead_uid})`);
     console.log(`👥 Creating group: ${groupName} (${allParticipants.length} participants)`);
+    (0, groupBuildProgress_1.buildStarted)({ leadUid: lead_uid, guestName: guest_name, property, groupName });
     let groupId;
     try {
         const res = await evoClient_1.evoApi.post(`/group/create/${evoClient_1.INSTANCE}`, {
@@ -328,9 +368,41 @@ async function _doCreateBookingGroup({ guest_name, phone, property, check_in, ch
     }
     catch (e) {
         console.error('❌ groupCreate failed:', e?.message);
+        const errStr = e?.response?.data ? JSON.stringify(e.response.data) : '';
+        const restricted = /reachout_restricted/i.test(errStr);
+        lastCreateFailure.set(lead_uid, {
+            groupName,
+            restricted,
+            reason: restricted
+                ? 'WhatsApp is blocking group creation on this number (account_reachout_restricted)'
+                : `${e?.response?.status ? `Evolution API ${e.response.status} — ` : ''}${e?.message || 'unknown error'}`,
+        });
+        if (restricted) {
+            // WhatsApp itself is rejecting group creation for this account — not a transient
+            // Evolution 500. Retrying on the normal 2-min cycle would keep hammering a
+            // restricted number, so pause all auto creation and escalate distinctly.
+            (0, groupCreationPacing_1.markAccountRestricted)('WA rejected group creation: account_reachout_restricted');
+            (0, notify_1.sendAlert)(`⛔ <b>WhatsApp Restricted Group Creation — Auto-Create PAUSED</b>\n─────────────────\n` +
+                `👤 <b>Guest:</b> ${guest_name}\n` +
+                `🏠 <b>Property:</b> ${property}\n` +
+                `🔑 <b>Lead UID:</b> <code>${lead_uid}</code>\n` +
+                `─────────────────\n` +
+                `📋 WhatsApp is blocking new groups on this number (account_reachout_restricted) — this is NOT a retryable API error.\n` +
+                `🚫 Auto group creation is paused account-wide for 24h to avoid compounding the restriction.\n` +
+                `✅ Create this group manually in WhatsApp for the guest now if urgent.\n` +
+                `🏷️ <b>Use this exact group name:</b>\n<code>${groupName}</code>\n` +
+                `🔎 If manual creation also fails, stop all group activity on this number until it clears.\n` +
+                `─────────────────\n<i>via COZMO · COZE Hospitality</i>`).catch(() => { });
+        }
+        else {
+            alertGroupCreateFailure(guest_name, property, lead_uid, groupName, e);
+        }
         throw e;
     }
     (0, groupCreationPacing_1.recordGroupCreated)();
+    (0, groupBuildProgress_1.buildGroupId)(lead_uid, groupId);
+    (0, groupBuildProgress_1.buildStep)(lead_uid, 'create', 'done', `${allParticipants.length} participants`);
+    (0, groupBuildProgress_1.buildStep)(lead_uid, 'settings', 'active');
     // 1–2 min: let WA register the new group before any settings changes
     console.log(`⏳ Waiting 1–2 min before group settings (${lead_uid})...`);
     await randSleep(60000, 120000);
@@ -371,8 +443,12 @@ async function _doCreateBookingGroup({ guest_name, phone, property, check_in, ch
         warnings.push(`join-approval: ${e?.message || 'unknown error'}`);
     }
     // 3–5 min more: let the group fully stabilize before any participant writes
+    (0, groupBuildProgress_1.buildStep)(lead_uid, 'settings', warnings.length ? 'warn' : 'done', warnings.length ? warnings.join('; ') : undefined);
+    (0, groupBuildProgress_1.buildStep)(lead_uid, 'stabilize', 'active');
     console.log(`⏳ Waiting 3–5 min before admin promotion (${lead_uid})...`);
     await randSleep(180000, 300000);
+    (0, groupBuildProgress_1.buildStep)(lead_uid, 'stabilize', 'done');
+    (0, groupBuildProgress_1.buildStep)(lead_uid, 'admins', 'active');
     // PRIORITY 1: Promote staff to admin — verify after each attempt, retry until confirmed
     const staffLids = (0, staffCache_1.getStaffWhatsAppLids)();
     const staffLidBases = new Set(staffLids.map(l => l.replace(/@.*$/, '')));
@@ -427,10 +503,12 @@ async function _doCreateBookingGroup({ guest_name, phone, property, check_in, ch
         console.log(`✅ All ${staffLids.length} staff confirmed admin`);
     }
     await sleep(5000);
-    // PRIORITY 2: Promote guest to admin — retry loop mirrors staff pattern
+    // PRIORITY 2: Promote guest to admin — retry loop mirrors staff pattern.
+    // Skipped in invite-only mode: the guest isn't in the group yet (they join via link later),
+    // so there's nobody to promote here. Their admin rights are handled on join (see below).
     const GUEST_MAX_ATTEMPTS = 2;
     let guestPromoted = false;
-    for (let attempt = 1; attempt <= GUEST_MAX_ATTEMPTS && !guestPromoted; attempt++) {
+    for (let attempt = 1; !guestInviteOnly && attempt <= GUEST_MAX_ATTEMPTS && !guestPromoted; attempt++) {
         if (attempt > 1) {
             const delay = attempt === 2 ? randSleep(30000, 40000) : randSleep(45000, 60000);
             console.log(`⏳ Guest promote attempt ${attempt} — backing off before retry...`);
@@ -476,15 +554,22 @@ async function _doCreateBookingGroup({ guest_name, phone, property, check_in, ch
         }
     }
     await sleep(5000);
+    (0, groupBuildProgress_1.buildStep)(lead_uid, 'admins', staffNotAdmin.length > 0 ? 'warn' : 'done', staffNotAdmin.length > 0 ? `${staffNotAdmin.length} staff still not admin` : undefined);
     if (propertyImageBase64) {
         // Fully deferred — fires 30–45 minutes after group creation, well after all messages are sent
         const capturedGroupId = groupId;
         const capturedImage = propertyImageBase64;
+        const capturedLeadUid = lead_uid;
         sleep(1800000 + Math.floor(Math.random() * 900000)).then(() => evoClient_1.evoApi.post(`/group/updateGroupPicture/${evoClient_1.INSTANCE}`, { groupJid: capturedGroupId, image: capturedImage }, { timeout: 30000 })).then(() => {
             console.log(`✅ Group icon set (deferred): ${capturedGroupId}`);
+            (0, groupBuildProgress_1.buildStepLate)(capturedLeadUid, 'icon', 'done');
         }).catch((e) => {
             console.warn('⚠️ Could not set group icon (deferred):', e?.message);
+            (0, groupBuildProgress_1.buildStepLate)(capturedLeadUid, 'icon', 'warn', e?.message);
         });
+    }
+    else {
+        (0, groupBuildProgress_1.buildStep)(lead_uid, 'icon', 'warn', 'no property image found — set manually');
     }
     if (lead_uid) {
         (0, groupLeads_1.linkGroup)(groupId, lead_uid);
@@ -504,8 +589,16 @@ async function _doCreateBookingGroup({ guest_name, phone, property, check_in, ch
             `─────────────────\n` +
             `⏱️ Welcome messages will arrive in the group within ~30 min (slow-paced on purpose)\n` +
             `💬 Please send a message in the group today to keep it active\n` +
+            `─────────────────\n` +
+            (staffNotAdmin.length === 0
+                ? `👑 <b>Admin access: ACTIVE</b> — staff are admins & "all members can add others" is on.\n` +
+                    `🤝 You can now <b>manually add the guest's family/friends</b> — human touch encouraged!\n`
+                : `⚠️ <b>Admin access: ${staffLids.length - staffNotAdmin.length}/${staffLids.length} staff</b> — some still pending, check Group Info.\n`) +
+            `🤖 <i>COZMO stays in the group and keeps monitoring updates</i>\n` +
             `─────────────────\n<i>via COZMO · COZE Hospitality</i>`, { useTestJandi: constants_1.CONFIG.IS_APP_DEV, propertyCode: (0, groupNaming_1.propertyCodeFromName)(property) || undefined });
+        (0, groupBuildProgress_1.buildStep)(lead_uid, 'link', 'done');
     }
+    (0, groupBuildProgress_1.buildStep)(lead_uid, 'welcome', 'active', 'quiet cooldown 8–15 min, then messages 2–5 min apart');
     // Enqueue BEFORE sending — if server restarts mid-sleep sequence, messages retry on next reconnect
     const pendingMeta = {
         guestName: guest_name,
@@ -520,11 +613,13 @@ async function _doCreateBookingGroup({ guest_name, phone, property, check_in, ch
     if (sent) {
         (0, pendingMessages_1.dequeue)(groupId);
         (0, sentMessages_1.markSent)(groupId, 'welcome');
+        (0, groupBuildProgress_1.buildStep)(lead_uid, 'welcome', 'done');
         (0, replyWatchdog_1.addToReplyWatchdog)(groupId, guest_name, property, groupName);
         if (lead_uid)
             (0, groupReminders_1.scheduleReminder)(groupId, lead_uid);
     }
     else {
+        (0, groupBuildProgress_1.buildStep)(lead_uid, 'welcome', 'warn', 'queued — will send when WA reconnects');
         await (0, notify_1.sendAlert)(`⏳ <b>Messages Queued for Retry</b>\n─────────────────\n` +
             `👤 <b>Guest:</b> ${guest_name}\n` +
             `🏠 <b>Property:</b> ${property}\n` +
@@ -571,18 +666,24 @@ async function _doCreateBookingGroup({ guest_name, phone, property, check_in, ch
     }
     if (guestPhone && !guestInGroup) {
         const phone = `+${guestPhone}`;
-        console.warn(`⚠️ Guest not in group: ${guest_name} (${phone})`);
+        console.log(guestInviteOnly
+            ? `🔗 Invite-only: sending join link to guest ${guest_name} (${phone})`
+            : `⚠️ Guest not in group: ${guest_name} (${phone})`);
         // Fetch invite link once — reused for DM, alert, and HF inbox
         const inviteLink = await (0, evoClient_1.getGroupInviteLink)(groupId).catch(() => null);
         if (constants_1.CONFIG.SEND_GUEST_INVITE_DM && inviteLink) {
-            await (0, evoClient_1.evoSendText)(guestPhone, `Hi ${guest_name}! 👋 Your COZE Hospitality guest group is ready.\n\nPlease join here:\n${inviteLink}\n\n— COZMO AI | Guest Care Team | COZE Hospitality 3.0`).catch((e) => console.warn('⚠️ Could not send invite link to guest:', e?.message));
+            await (0, evoClient_1.evoSendText)(guestPhone, `Hi ${guest_name}! 👋 Your private COZE Hospitality concierge channel is ready.\n\nTap to join us here:\n${inviteLink}\n\nOnce you're in, just say hello and our team will take care of everything for your stay. 🌿\n\n— COZMO AI | Guest Care Team | COZE Hospitality 3.0`).catch((e) => console.warn('⚠️ Could not send invite link to guest:', e?.message));
         }
-        await (0, notify_1.sendAlert)(`⚠️ <b>Guest Not Added to Group</b>\n─────────────────\n` +
+        await (0, notify_1.sendAlert)((guestInviteOnly ? `🔗 <b>Guest Invite Link Sent</b>` : `⚠️ <b>Guest Not Added to Group</b>`) +
+            `\n─────────────────\n` +
             `👤 <b>Guest:</b> ${guest_name} (${phone})\n` +
             `🏠 <b>Property:</b> ${property}\n` +
             `🆔 <b>Group ID:</b> <code>${groupId}</code>\n` +
-            (inviteLink && constants_1.CONFIG.SEND_GUEST_INVITE_DM ? `🔗 <b>Invite link sent to guest</b>\n` : `📋 <b>Action needed:</b> Add guest manually\n`) +
-            `─────────────────\n<i>via COZMO · COZE Hospitality</i>`).catch(() => { });
+            (inviteLink && constants_1.CONFIG.SEND_GUEST_INVITE_DM
+                ? `🔗 <b>Join link sent</b> — guest opts in (privacy-safe, no force-add)\n` +
+                    `🤝 If they haven't joined in a while, a quick personal nudge helps\n`
+                : `📋 <b>Action needed:</b> send guest the group invite link manually\n`) +
+            `─────────────────\n<i>via COZMO · COZE Hospitality</i>`, { propertyCode: (0, groupNaming_1.propertyCodeFromName)(property) || undefined }).catch(() => { });
         // Send invite link via HF inbox — with actual link if available, template-only otherwise
         if (lead_uid) {
             if (inviteLink) {
@@ -610,6 +711,7 @@ async function _doCreateBookingGroup({ guest_name, phone, property, check_in, ch
         }
     }
     console.log(`✅ Group created: ${groupName}`);
+    (0, groupBuildProgress_1.buildFinished)(lead_uid);
     return groupId;
 }
 let flushing = false;

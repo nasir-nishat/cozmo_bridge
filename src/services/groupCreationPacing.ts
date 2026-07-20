@@ -9,6 +9,8 @@ interface PacingState {
     day: string;            // KST date the count belongs to
     count: number;          // groups created that day (auto + manual — WA sees them the same)
     lastCreatedAt: number;  // epoch ms of the most recent creation
+    restrictedUntil?: number;  // epoch ms — set when WA itself rejects group creation (account-level, not transient)
+    restrictedReason?: string;
 }
 
 const kstNow = () => new Date(Date.now() + 9 * 3600_000);
@@ -46,7 +48,41 @@ export function getPacingToday(): { day: string; count: number } {
     return s.day === kstDay() ? { day: s.day, count: s.count } : { day: kstDay(), count: 0 };
 }
 
+// Trip when WA/Evolution rejects group creation with an account-level restriction (e.g.
+// account_reachout_restricted) rather than a transient error. That signal means the *account*,
+// not this one job, is being throttled by WhatsApp — retrying every 2-min cycle would keep
+// hammering a restricted number, which is exactly what risks escalating a strike into a ban.
+// Persisted so it survives a pm2 restart; must be cleared manually once staff confirm WA is clear.
+export function markAccountRestricted(reason: string, pauseHours = 24): void {
+    const s = load();
+    s.restrictedUntil = Date.now() + pauseHours * 3600_000;
+    s.restrictedReason = reason;
+    save(s);
+    console.error(`🚫 WA account restriction detected — auto group creation paused ${pauseHours}h: ${reason}`);
+}
+
+export function clearAccountRestriction(): void {
+    const s = load();
+    delete s.restrictedUntil;
+    delete s.restrictedReason;
+    save(s);
+    console.log('✅ WA account restriction cleared — auto group creation resumed');
+}
+
+export function getAccountRestriction(): { restricted: boolean; reason?: string; until?: string } {
+    const s = load();
+    if (s.restrictedUntil && Date.now() < s.restrictedUntil) {
+        return { restricted: true, reason: s.restrictedReason, until: new Date(s.restrictedUntil).toISOString() };
+    }
+    return { restricted: false };
+}
+
 export function canAutoCreateGroup(): { ok: boolean; reason?: string } {
+    const restriction = getAccountRestriction();
+    if (restriction.restricted) {
+        const left = Math.ceil((new Date(restriction.until!).getTime() - Date.now()) / 3600_000);
+        return { ok: false, reason: `⛔ WA account restricted (${restriction.reason || 'rejected by WhatsApp'}) — ${left}h left or manual clear` };
+    }
     const readyFor = waReadyDurationMs();
     if (readyFor < CONFIG.GROUP_CREATION_WARMUP_MS) {
         const left = Math.ceil((CONFIG.GROUP_CREATION_WARMUP_MS - readyFor) / 60000);
@@ -93,6 +129,9 @@ export function nextEligibleAt(): Date {
     }
 
     const s = load();
+    if (s.restrictedUntil && now < s.restrictedUntil) {
+        candidate = Math.max(candidate, s.restrictedUntil);
+    }
     if (s.lastCreatedAt) {
         candidate = Math.max(candidate, s.lastCreatedAt + CONFIG.GROUP_CREATION_MIN_GAP_MS);
     }

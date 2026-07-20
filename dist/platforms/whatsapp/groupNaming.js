@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.extractOccupancyCode = exports.PROPERTY_CODE_MAP = void 0;
+exports.extractOccupancyCode = exports.PROPERTY_CODE_MAP = exports.formatGroupCheckIn = void 0;
 exports.propertyCodeFromName = propertyCodeFromName;
 exports.buildBookingGroupName = buildBookingGroupName;
 const toNum = (value) => {
@@ -28,6 +28,7 @@ const formatGroupCheckIn = (raw) => {
     const month = d.toLocaleDateString('en-GB', { month: 'short', timeZone: 'Asia/Seoul' });
     return `${day}${month}`;
 };
+exports.formatGroupCheckIn = formatGroupCheckIn;
 // Exact Hostfully property name → short display code (used for group name + image lookup)
 // Strip " (USD)" / " (MASTER)" suffixes before matching
 exports.PROPERTY_CODE_MAP = {
@@ -94,7 +95,7 @@ const extractOccupancyCode = (lead) => {
 exports.extractOccupancyCode = extractOccupancyCode;
 function buildBookingGroupName(lead, property, guest_name) {
     const code = extractPropertyCode(lead, property);
-    const checkInToken = formatGroupCheckIn(lead?.checkInLocalDateTime);
+    const checkInToken = (0, exports.formatGroupCheckIn)(lead?.checkInLocalDateTime);
     const occupancy = (0, exports.extractOccupancyCode)(lead);
     const tokens = ['COZE', code, checkInToken, guest_name, occupancy].filter(Boolean);
     return tokens.join(' ');

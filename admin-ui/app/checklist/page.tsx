@@ -18,8 +18,16 @@ type GroupSteps = {
   groupId: string
   leadUid: string
   name: string | null
+  checkIn: string | null
+  checkOut: string | null
   steps: Step[]
   progress: string
+}
+
+function fmtStay(checkIn: string | null, checkOut: string | null) {
+  if (!checkIn) return ''
+  const f = (d: string) => new Date(`${d}T00:00:00`).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })
+  return checkOut ? `${f(checkIn)} – ${f(checkOut)}` : f(checkIn)
 }
 
 function shortName(name: string | null, id: string) {
@@ -91,6 +99,7 @@ export default function ChecklistPage() {
             <thead>
               <tr style={{ textAlign: 'left', background: 'var(--muted, #fafafa)' }}>
                 <th style={{ padding: '0.6rem 0.8rem', position: 'sticky', left: 0, background: 'var(--muted, #fafafa)' }}>Group</th>
+                <th style={{ padding: '0.6rem 0.5rem', whiteSpace: 'nowrap' }}>Stay</th>
                 <th style={{ padding: '0.6rem 0.5rem', textAlign: 'center' }}>Done</th>
                 {labels.map(l => (
                   <th key={l} style={{ padding: '0.6rem 0.5rem', textAlign: 'center', whiteSpace: 'nowrap' }}>{l}</th>
@@ -103,6 +112,7 @@ export default function ChecklistPage() {
                   <td style={{ padding: '0.5rem 0.8rem', position: 'sticky', left: 0, background: 'var(--bg, #fff)', fontWeight: 600, whiteSpace: 'nowrap' }}>
                     {shortName(g.name, g.groupId)}
                   </td>
+                  <td style={{ padding: '0.5rem', whiteSpace: 'nowrap', opacity: 0.7 }}>{fmtStay(g.checkIn, g.checkOut)}</td>
                   <td style={{ padding: '0.5rem', textAlign: 'center', opacity: 0.7, whiteSpace: 'nowrap' }}>{g.progress}</td>
                   {g.steps.map(s => (
                     <td key={s.type} style={{ padding: '0.5rem', textAlign: 'center' }} title={s.done ? `${s.by === 'team' ? 'Team' : 'COZMO'} · ${fmt(s.at)}` : 'Not done yet'}>

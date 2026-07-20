@@ -1,13 +1,4 @@
-﻿[2026-06-05 17:52:40.266] [error] [WCF] [database_executor.cpp::143::db::exec_db_query] SQL prepare failed for 'MicroMsg.db': error code 21
-[2026-06-05 17:54:51.431] [error] [WCF] [database_executor.cpp::143::db::exec_db_query] SQL prepare failed for 'MicroMsg.db': error code 21
-[2026-06-05 17:54:51.442] [error] [WCF] [database_executor.cpp::143::db::exec_db_query] SQL prepare failed for 'MicroMsg.db': error code 21
-[2026-06-05 17:54:51.452] [error] [WCF] [database_executor.cpp::143::db::exec_db_query] SQL prepare failed for 'MicroMsg.db': error code 21
-[2026-06-05 17:54:51.455] [error] [WCF] [database_executor.cpp::143::db::exec_db_query] SQL prepare failed for 'MicroMsg.db': error code 21
-[2026-06-05 17:55:06.447] [error] [WCF] [database_executor.cpp::143::db::exec_db_query] SQL prepare failed for 'MicroMsg.db': error code 21
-[2026-06-05 17:55:06.448] [error] [WCF] [database_executor.cpp::143::db::exec_db_query] SQL prepare failed for 'MicroMsg.db': error code 21
-[2026-06-05 17:55:17.821] [error] [WCF] [database_executor.cpp::143::db::exec_db_query] SQL prepare failed for 'MicroMsg.db': error code 21
-[2026-06-05 17:55:17.822] [error] [WCF] [database_executor.cpp::143::db::exec_db_query] SQL prepare failed for 'MicroMsg.db': error code 21
-[2026-06-05 18:49:14.502] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
+﻿[2026-06-05 18:49:14.502] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
 [2026-06-05 18:49:14.502] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC æœåŠ¡å·²åœ¨è¿è¡Œ
 [2026-06-05 18:49:52.596] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
 [2026-06-05 18:49:52.596] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
@@ -501,3 +492,9 @@
 [2026-07-15 17:20:32.159] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
 [2026-07-15 17:20:32.159] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
 [2026-07-15 17:20:32.160] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-07-20 12:07:51.649] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-07-20 12:07:51.649] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-07-20 12:07:51.651] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-07-20 18:38:11.565] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-07-20 18:38:11.565] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-07-20 18:38:11.567] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086

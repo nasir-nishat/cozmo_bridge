@@ -228,7 +228,7 @@ async function handleCkinCommand(from, senderJid) {
         const stored = (0, groupLeads_1.getGroupLang)(from);
         const lang = stored || 'EN';
         const propertyName = lead?.propertyName || lead?.unit?.name || '';
-        const tipKeys = propertyName.includes('JTS') ? ['food_tips', 'van_tips'] : ['breakfast_tips', 'food_tips', 'van_tips'];
+        const tipKeys = (0, constants_1.skipsBreakfast)(propertyName) ? ['food_tips', 'van_tips'] : ['breakfast_tips', 'food_tips', 'van_tips'];
         await (0, evoClient_1.evoSendText)(from, '⏳ Sending check-in messages...').catch(() => { });
         for (const key of tipKeys) {
             const msg = await (0, sheets_1.getTipsMessage)(key, lang);
@@ -329,8 +329,15 @@ async function handleGroupCommand(from, uid, senderJid, pushName) {
             }
         }
         else {
+            const failure = (0, groupCreation_1.getLastCreateFailure)(uid);
+            const msg = failure
+                ? `❌ Group creation failed\n\n` +
+                    `📋 ${failure.reason}\n` +
+                    (failure.restricted ? `⛔ Auto-create is now paused 24h to avoid making it worse.\n` : '') +
+                    `\n🏷️ Create it manually with this exact name:\n${failure.groupName}`
+                : '❌ Group creation failed — check logs';
             for (const jid of replyJids) {
-                await (0, evoClient_1.evoSendText)(jid, '❌ Group creation failed — check logs').catch(() => { });
+                await (0, evoClient_1.evoSendText)(jid, msg).catch(() => { });
             }
         }
     }

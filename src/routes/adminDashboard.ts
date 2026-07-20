@@ -10,7 +10,7 @@ import { getAllBookings } from '../services/bookingStore';
 import { getRecentAlerts, subscribeSSE } from '../services/alertStore';
 import { getAllTeamMembers } from '../services/sheets';
 import { sendAlert } from '../services/notify';
-import { getLeadUid } from '../services/groupLeads';
+import { getLeadUid, saveGroupName } from '../services/groupLeads';
 import { getGroupSteps, MessageType } from '../services/sentMessages';
 import { getLivePropertyPricingEntry } from '../knowledge/livePricing';
 import { webSearch } from '../knowledge/webSearch';
@@ -18,7 +18,7 @@ import { getExpenseSummary } from '../services/expenses';
 import { getGoogleAuthStatus, isGoogleAuthAvailable } from '../services/google-auth';
 import { getBuilds, BUILD_STEP_PLAN } from '../services/groupBuildProgress';
 import { getQueuedGroupCreations } from '../services/pendingGroupCreation';
-import { canAutoCreateGroup, nextEligibleAt, getPacingToday } from '../services/groupCreationPacing';
+import { canAutoCreateGroup, nextEligibleAt, getPacingToday, getAccountRestriction, clearAccountRestriction } from '../services/groupCreationPacing';
 
 const router = Router();
 
@@ -148,12 +148,33 @@ router.get('/admin/groups', (_req, res) => {
     res.json({ ok: true, groups });
 });
 
+// Cached WA group subjects from Evolution — names for groups created before COZMO saved names.
+// Resolved names are persisted via saveGroupName so this backfills group-names.json over time.
+let waSubjectsCache: { at: number; subjects: Record<string, string> } = { at: 0, subjects: {} };
+async function getWaGroupSubjects(): Promise<Record<string, string>> {
+    if (Date.now() - waSubjectsCache.at < 10 * 60_000) return waSubjectsCache.subjects;
+    waSubjectsCache.at = Date.now(); // set first so a failure doesn't retry on every request
+    try {
+        const { evoApi, INSTANCE } = await import('../platforms/whatsapp/evoClient');
+        const r = await evoApi.get(`/group/fetchAllGroups/${INSTANCE}`, { params: { getParticipants: 'false' }, timeout: 15000 });
+        const arr: any[] = Array.isArray(r.data) ? r.data : (r.data?.groups || []);
+        const subjects: Record<string, string> = {};
+        for (const g of arr) if (g?.id && g?.subject) subjects[g.id] = g.subject;
+        if (Object.keys(subjects).length) waSubjectsCache.subjects = subjects;
+    } catch (e: any) {
+        console.warn('⚠️ fetchAllGroups (checklist names):', e?.message);
+    }
+    return waSubjectsCache.subjects;
+}
+
 // GET /admin/group-steps — per-group guest-lifecycle checklist (done / by whom / when)
 // Powers the admin-ui checklist so the team can see what COZMO did vs what they handled manually.
-router.get('/admin/group-steps', (_req, res) => {
+router.get('/admin/group-steps', async (_req, res) => {
     const root = process.cwd();
     const groupLeads = readJson(path.join(root, 'src/data/group-leads.json'));
     const groupNames = readJson(path.join(root, 'src/data/group-names.json'));
+    const bookings = getAllBookings();
+    const waSubjects = await getWaGroupSubjects();
 
     // Ordered guest lifecycle — labels are what the team sees in the UI
     const STEPS: Array<{ type: MessageType; label: string }> = [
@@ -177,14 +198,40 @@ router.get('/admin/group-steps', (_req, res) => {
                 at: s.at,
             }));
             const doneCount = steps.filter(s => s.done).length;
+            // Name priority: stored name → live WA subject (persisted for next time) →
+            // booking-derived label → raw id as last resort
+            const booking = bookings.find(b => b.leadUid === leadUid);
+            let name: string | null = groupNames[groupId] || null;
+            if (!name && waSubjects[groupId]) {
+                name = waSubjects[groupId];
+                try { saveGroupName(groupId, name); } catch { }
+            }
+            if (!name && booking) name = `${booking.guestName} · ${booking.property}`;
             return {
                 groupId,
                 leadUid,
-                name: groupNames[groupId] || null,
+                name,
+                checkIn: booking?.checkIn || null,
+                checkOut: booking?.checkOut || null,
                 steps,
                 progress: `${doneCount}/${steps.length}`,
             };
         });
+
+    // Relevance order: in-house now → upcoming (soonest first) → departed (latest first) → no booking
+    const today = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Seoul' });
+    const rank = (g: typeof groups[number]) => {
+        if (!g.checkIn || !g.checkOut) return 3;
+        if (g.checkIn <= today && g.checkOut >= today) return 0;
+        return g.checkIn > today ? 1 : 2;
+    };
+    groups.sort((a, b) => {
+        const ra = rank(a), rb = rank(b);
+        if (ra !== rb) return ra - rb;
+        if (ra === 1) return (a.checkIn || '').localeCompare(b.checkIn || '');
+        if (ra === 2) return (b.checkOut || '').localeCompare(a.checkOut || '');
+        return (a.checkIn || '').localeCompare(b.checkIn || '');
+    });
 
     res.json({ ok: true, groups });
 });
@@ -216,11 +263,19 @@ router.get('/admin/group-builds', (_req, res) => {
             canCreateNow: gate.ok,
             holdReason: gate.reason || null,
             nextEligibleAt: new Date(baseEta).toISOString(),
+            accountRestriction: getAccountRestriction(),
         },
         plan: BUILD_STEP_PLAN,
         queue,
         builds: getBuilds(),
     });
+});
+
+// POST /admin/group-builds/clear-restriction — manual override once staff confirm in the WhatsApp
+// app that group creation works again. The restriction otherwise self-clears after 24h.
+router.post('/admin/group-builds/clear-restriction', (_req, res) => {
+    clearAccountRestriction();
+    res.json({ ok: true });
 });
 
 // GET /admin/staff

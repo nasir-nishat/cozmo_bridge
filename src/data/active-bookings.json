@@ -2472,7 +2472,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+8618267547722",
-    "updatedAt": "2026-07-19T06:00:11.939Z"
+    "updatedAt": "2026-07-20T09:40:39.192Z"
   },
   {
     "leadUid": "55e6393f-5e27-4827-9729-05f92ea358d7",
@@ -2487,7 +2487,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+818040158352",
-    "updatedAt": "2026-06-28T06:00:14.105Z"
+    "updatedAt": "2026-07-20T06:00:06.655Z"
   },
   {
     "leadUid": "cf3fe203-7876-4c54-b47c-feffff5094dd",
@@ -2712,7 +2712,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+15038877399",
-    "updatedAt": "2026-07-19T06:00:09.051Z"
+    "updatedAt": "2026-07-20T09:40:37.533Z"
   },
   {
     "leadUid": "687b5e16-c5b4-4d04-92f1-950f6753cd98",
@@ -2847,7 +2847,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+821024227377",
-    "updatedAt": "2026-07-19T06:00:07.305Z"
+    "updatedAt": "2026-07-20T09:40:36.582Z"
   },
   {
     "leadUid": "732ce61a-87a7-432a-8498-87076e6206ef",
@@ -2862,7 +2862,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+8613637844228",
-    "updatedAt": "2026-07-20T02:56:23.035Z"
+    "updatedAt": "2026-07-20T09:40:31.472Z"
   },
   {
     "leadUid": "7e6de135-d05b-4e1b-8654-51f7a06e6cd1",
@@ -3420,6 +3420,21 @@
     "updatedAt": "2026-06-27T07:51:37.924Z"
   },
   {
+    "leadUid": "cfb7e509-056a-49fe-9b8c-4514df796aaf",
+    "guestName": "Karita Loim",
+    "property": "GKB_Kelly Prana",
+    "checkIn": "2026-08-18",
+    "checkOut": "2026-08-28",
+    "nationality": "",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "BOOKED",
+    "source": "BOOKING",
+    "phone": "+37255545464",
+    "updatedAt": "2026-07-20T09:40:30.880Z"
+  },
+  {
     "leadUid": "48e11656-156b-4a08-8a9f-3dfdfbea5c5a",
     "guestName": "Giovanni Cei",
     "property": "SG_JOYHASLA",
@@ -3807,7 +3822,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+819066148284",
-    "updatedAt": "2026-07-19T23:09:41.963Z"
+    "updatedAt": "2026-07-20T09:40:32.161Z"
   },
   {
     "leadUid": "9135b690-fb31-44b9-9ab4-4b5a7cc2e0e4",
@@ -3837,7 +3852,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+85261504302",
-    "updatedAt": "2026-07-19T06:00:02.814Z"
+    "updatedAt": "2026-07-20T09:40:34.678Z"
   },
   {
     "leadUid": "5c239fbf-996e-46de-87de-a0ebec698d78",
@@ -3957,7 +3972,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+886928640702",
-    "updatedAt": "2026-07-19T06:00:05.519Z"
+    "updatedAt": "2026-07-20T09:40:36.186Z"
   },
   {
     "leadUid": "d55aec30-6142-409b-9365-50d430cc1786",
@@ -4362,7 +4377,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+6281212041196",
-    "updatedAt": "2026-07-19T06:00:10.112Z"
+    "updatedAt": "2026-07-20T09:40:37.935Z"
   },
   {
     "leadUid": "d0fa2ffa-5ca7-426f-851c-21e1af1ae438",
@@ -4572,7 +4587,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+6596923954",
-    "updatedAt": "2026-07-19T16:39:02.297Z"
+    "updatedAt": "2026-07-20T09:40:32.907Z"
   },
   {
     "leadUid": "e947d52c-74fb-4735-931a-cdb52a4a9f7d",
@@ -4902,7 +4917,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+6592951602",
-    "updatedAt": "2026-07-19T06:55:49.126Z"
+    "updatedAt": "2026-07-20T09:40:33.650Z"
   },
   {
     "leadUid": "f40e8e46-ba95-479f-9846-38756a91b3e9",
@@ -4932,7 +4947,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+6594525130",
-    "updatedAt": "2026-07-19T06:00:04.000Z"
+    "updatedAt": "2026-07-20T09:40:35.030Z"
   },
   {
     "leadUid": "e6aa41f7-f4ca-43b2-908a-9153c3be4a32",

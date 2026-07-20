@@ -18,6 +18,7 @@ const hostfully_1 = require("../services/hostfully");
 const groupNaming_1 = require("../platforms/whatsapp/groupNaming");
 const format_1 = require("../utils/format");
 const expenses_1 = require("../services/expenses");
+const constants_1 = require("../config/constants");
 const bookingStore_1 = require("../services/bookingStore");
 const messageBuffer_1 = require("../services/messageBuffer");
 const kakaoWatchdog_1 = require("../services/kakaoWatchdog");
@@ -240,7 +241,7 @@ router.post('/webhook', async (req, res) => {
                     try {
                         const lead = await withTimeout((0, hostfully_1.fetchLead)(leadUid), 5000, 'fetchLead');
                         const propertyName = lead?.propertyName || lead?.unit?.name || '';
-                        const tipKeys = propertyName.includes('JTS') ? ['food_tips', 'van_tips'] : ['breakfast_tips', 'food_tips', 'van_tips'];
+                        const tipKeys = (0, constants_1.skipsBreakfast)(propertyName) ? ['food_tips', 'van_tips'] : ['breakfast_tips', 'food_tips', 'van_tips'];
                         const replies = [];
                         for (const key of tipKeys) {
                             const msg = await (0, sheets_1.getTipsMessage)(key, 'KR');

@@ -2,11 +2,11 @@
 
 import { useCallback, useEffect, useState } from 'react'
 import { RefreshCw } from 'lucide-react'
-import type { BookingEntry, GroupEntry, HealthData, KakaoGroup, PropertyTask } from '@/lib/types'
+import type { BookingEntry, GroupEntry, HealthData, KakaoGroup, PropertyTask, ScheduleEvent } from '@/lib/types'
 import { isArrivingBooking, isDepartingBooking, isInHouseBooking } from '@/lib/bookings'
 import ComingToday from '@/components/dashboard/ComingToday'
 import ActiveGroups from '@/components/dashboard/ActiveGroups'
-import TasksCol from '@/components/dashboard/TasksCol'
+import AutomationCol from '@/components/dashboard/AutomationCol'
 import ExpensesCol, { type ExpenseSummaryGroup } from '@/components/dashboard/ExpensesCol'
 import CozmoTodo from '@/components/dashboard/CozmoTodo'
 
@@ -27,19 +27,6 @@ type AlertEntry = {
   platform?: string
   ts: number
 }
-
-type AiOpsSuggestion = {
-  property: string
-  title: string
-  type: PropertyTask['type']
-}
-
-const AI_OPS_PROPERTIES = [
-  'Joy of TEVA', 'Teva Retreat', 'Teva Wellness', 'Teva Aeris Garden',
-  'Seongbuk Achae', 'Secret Garden', 'Breeze & Sunrise', 'Leeha',
-  'Kelly Luxury', 'Kelly Ananda', 'Kelly Prana',
-  'Yeonnam Lotus', 'Yeonnam Fish', 'Yeonnam Bird',
-]
 
 function parseField(text: string, label: string) {
   const re = new RegExp(`${label}:\\s*(.+)`, 'i')
@@ -90,42 +77,6 @@ function deriveExpenseSummary(groups: KakaoGroup[]): ExpenseSummaryGroup[] {
   }).sort((a, b) => b.total - a.total)
 }
 
-function toAiOpsTasks(suggestions: AiOpsSuggestion[]): PropertyTask[] {
-  const now = new Date().toISOString()
-  return suggestions.map((task, index) => ({
-    id: `ai-ops:${task.property}:${task.type}:${index}`,
-    property: task.property,
-    title: task.title,
-    type: task.type,
-    status: 'new',
-    assignee: null,
-    source: 'ai',
-    notes: 'Suggested by COZMO AI operations planner',
-    createdAt: now,
-    updatedAt: now,
-  }))
-}
-
-function buildFallbackAiOpsSuggestions(currentTasks: PropertyTask[]): AiOpsSuggestion[] {
-  const covered = new Set(currentTasks.map(task => task.property))
-  const uncovered = AI_OPS_PROPERTIES.filter(property => !covered.has(property))
-
-  const templates: Array<{ type: PropertyTask['type']; title: (property: string) => string }> = [
-    { type: 'plant_watering', title: property => `Water entry plants at ${property}` },
-    { type: 'pest_control', title: property => `Inspect kitchen drains at ${property}` },
-    { type: 'iot', title: property => `Check smart-lock battery at ${property}` },
-  ]
-
-  return uncovered.slice(0, 3).map((property, index) => {
-    const template = templates[index % templates.length]
-    return {
-      property,
-      title: template.title(property),
-      type: template.type,
-    }
-  })
-}
-
 function getToday() {
   return new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Seoul' })
 }
@@ -145,7 +96,7 @@ export default function DashboardPage() {
   const [groups, setGroups] = useState<GroupEntry[]>([])
   const [tasks, setTasks] = useState<PropertyTask[]>([])
   const [alerts, setAlerts] = useState<AlertEntry[]>([])
-  const [aiOpsTasks, setAiOpsTasks] = useState<PropertyTask[]>([])
+  const [todayEvents, setTodayEvents] = useState<ScheduleEvent[]>([])
   const [kakaoGroups, setKakaoGroups] = useState<KakaoGroup[]>([])
   const [expenses, setExpenses] = useState<ExpenseSummaryGroup[]>([])
   const [expLoading, setExpLoading] = useState(true)
@@ -156,7 +107,7 @@ export default function DashboardPage() {
     setSpinning(true)
     setExpLoading(true)
     try {
-      const [h, b, g, t, a, k, e] = await Promise.all([
+      const [h, b, g, t, a, k, e, s] = await Promise.all([
         fetch(`${BRIDGE}/admin/health`).then(r => r.json()).catch(() => null),
         fetch(`${BRIDGE}/admin/bookings`).then(r => r.json()).catch(() => null),
         fetch(`${BRIDGE}/admin/groups`).then(r => r.json()).catch(() => null),
@@ -164,6 +115,7 @@ export default function DashboardPage() {
         fetch(`${BRIDGE}/admin/alerts/recent`).then(r => r.json()).catch(() => null),
         fetch(`${BRIDGE}/admin/kakao/groups`).then(r => r.json()).catch(() => null),
         fetch(`${BRIDGE}/admin/expenses/summary`).then(r => r.json()).catch(() => null),
+        fetch(`${BRIDGE}/admin/message-schedule`).then(r => r.json()).catch(() => null),
       ])
       if (h?.ok) setHealth(h)
       if (b?.ok) setBookings(Array.isArray(b.bookings) ? b.bookings : [])
@@ -172,19 +124,7 @@ export default function DashboardPage() {
       if (a?.ok) setAlerts(Array.isArray(a.alerts) ? a.alerts : [])
       if (k?.ok) setKakaoGroups(Array.isArray(k.groups) ? k.groups : [])
       if (e?.ok) setExpenses(Array.isArray(e.summary) ? e.summary : [])
-
-      const currentTasks = t?.ok && Array.isArray(t.tasks) ? t.tasks : []
-      const fallbackSuggestions = buildFallbackAiOpsSuggestions(currentTasks)
-
-      const ai = await fetch('/api/ai/ops-tasks', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ currentTasks }),
-        signal: AbortSignal.timeout(5000),
-      }).then(r => r.json()).catch(() => null)
-
-      const suggestions = Array.isArray(ai?.tasks) && ai.tasks.length > 0 ? ai.tasks : fallbackSuggestions
-      setAiOpsTasks(toAiOpsTasks(suggestions))
+      if (s?.ok) setTodayEvents(Array.isArray(s.today?.events) ? s.today.events : [])
     } finally {
       setLoaded(true)
       setSpinning(false)
@@ -203,8 +143,7 @@ export default function DashboardPage() {
   const groupByLead = Object.fromEntries(groups.map(g => [g.leadUid, g]))
   const alertTasks = deriveTasksFromAlerts(alerts)
   const dashboardTasks = [...tasks, ...alertTasks].filter((task, idx, all) => all.findIndex(t => t.id === task.id) === idx)
-  const cozmoAiTasks = [...alertTasks, ...aiOpsTasks].filter((task, idx, all) => all.findIndex(t => t.id === task.id) === idx)
-  const openCozmoAiTasks = cozmoAiTasks.filter(t => t.status !== 'done')
+  const pendingSends = todayEvents.filter(ev => ev.status === 'scheduled' || ev.status === 'queued')
   const expenseSummary = expenses.length > 0 ? expenses : deriveExpenseSummary(kakaoGroups)
 
   const platforms = health
@@ -244,7 +183,7 @@ export default function DashboardPage() {
             { label: 'In-House', value: inHouse.length, color: '#2C8C2C' },
             { label: 'Arriving', value: arriving.length, color: '#B88E23' },
             { label: 'Departing', value: departing.length, color: '#D97706' },
-            { label: 'COZMO AI Tasks', value: openCozmoAiTasks.length, color: '#5C4E3D' },
+            { label: 'Sends Left Today', value: pendingSends.length, color: '#5C4E3D' },
           ].map(s => (
             <div key={s.label} className="bg-white rounded-lg border border-[#E2DCC6] px-4 py-3.5 shadow-sm">
               <p className="text-[32px] font-bold tabular-nums leading-none" style={{ color: s.color }}>{s.value}</p>
@@ -258,7 +197,7 @@ export default function DashboardPage() {
         <div className="grid gap-3 grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 md:flex-1 md:min-h-0">
           <ComingToday arriving={arriving} departing={departing} bookings={bookings} groupByLead={groupByLead} />
           <ActiveGroups groups={groups} />
-          <TasksCol tasks={cozmoAiTasks} label="COZMO AI Tasks" emptyState="No AI tasks" actionHref={null} />
+          <AutomationCol events={todayEvents} />
           <ExpensesCol summary={expenseSummary} loading={expLoading} />
           <CozmoTodo arriving={arriving} groups={groups} tasks={dashboardTasks} health={health} />
         </div>

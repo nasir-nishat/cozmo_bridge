@@ -60,8 +60,6 @@ function saveDmFix(dmJid: string, correction: string, last: { question: string; 
     }
 }
 
-const COZMO_SELF_JID = '821026226935@c.us';
-
 function normalizeWaDmJid(jid: string): string {
     const phone = jid.replace(/@.*$/, '').replace(/\D/g, '');
     return phone ? `${phone}@c.us` : jid;
@@ -79,8 +77,11 @@ export async function handleIncomingMessage(data: any) {
     if (!from) return;
     const remoteJidAlt: string = key.remoteJidAlt || data.remoteJidAlt || '';
 
-    // Skip outgoing messages — except self-DM (COZMO chatting with itself)
-    const isSelfDm = from === COZMO_SELF_JID;
+    // Skip outgoing messages — except self-DM (COZMO chatting with itself).
+    // WhatsApp's LID addressing means remoteJid may be a LID ("...@lid") with the real number only
+    // in remoteJidAlt — match on the normalized phone number, not an exact JID string, so this
+    // still works across @c.us / @s.whatsapp.net / @lid delivery formats.
+    const isSelfDm = (remoteJidAlt || from).replace(/@.*$/, '').replace(/\D/g, '') === INSTANCE_OWNER_PHONE;
     if (data.key?.fromMe && !isSelfDm) return;
 
     const text: string =

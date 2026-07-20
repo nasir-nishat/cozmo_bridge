@@ -1,4 +1,37 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -61,7 +94,6 @@ function saveDmFix(dmJid, correction, last, propertyCode) {
         console.error('❌ saveDmFix failed:', e?.message);
     }
 }
-const COZMO_SELF_JID = '821026226935@c.us';
 function normalizeWaDmJid(jid) {
     const phone = jid.replace(/@.*$/, '').replace(/\D/g, '');
     return phone ? `${phone}@c.us` : jid;
@@ -77,8 +109,11 @@ async function handleIncomingMessage(data) {
     if (!from)
         return;
     const remoteJidAlt = key.remoteJidAlt || data.remoteJidAlt || '';
-    // Skip outgoing messages — except self-DM (COZMO chatting with itself)
-    const isSelfDm = from === COZMO_SELF_JID;
+    // Skip outgoing messages — except self-DM (COZMO chatting with itself).
+    // WhatsApp's LID addressing means remoteJid may be a LID ("...@lid") with the real number only
+    // in remoteJidAlt — match on the normalized phone number, not an exact JID string, so this
+    // still works across @c.us / @s.whatsapp.net / @lid delivery formats.
+    const isSelfDm = (remoteJidAlt || from).replace(/@.*$/, '').replace(/\D/g, '') === INSTANCE_OWNER_PHONE;
     if (data.key?.fromMe && !isSelfDm)
         return;
     const text = data.message?.conversation ||
@@ -96,6 +131,12 @@ async function handleIncomingMessage(data) {
         participantPhone === '234325463273604'; // COZMO's LID
     const senderJid = isGroup ? (data.participant || key.participant || '') : dmJid;
     (0, messageBuffer_1.addToBuffer)(isGroup ? from : dmJid, data.pushName || senderJid, text);
+    // Human posted in a group → let the step watcher check (debounced) whether a team member
+    // just completed a lifecycle step manually, so COZMO can checkmark it and not re-send.
+    if (isGroup && !isOwnerMessage) {
+        Promise.resolve().then(() => __importStar(require('../../services/stepWatcher'))).then(m => m.noteGroupActivity(from))
+            .catch(() => { });
+    }
     // /link command
     if (text.startsWith('/link ')) {
         const parts = text.trim().split(/\s+/);

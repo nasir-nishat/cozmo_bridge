@@ -860,5 +860,39 @@
   "hf:eae312c9-e73f-46be-b89c-a98cc59a9a33:hf_step1": "2026-07-19T23:14:22.457Z",
   "hf:eae312c9-e73f-46be-b89c-a98cc59a9a33:hf_pre_payment": "2026-07-19T23:14:22.461Z",
   "hf:eae312c9-e73f-46be-b89c-a98cc59a9a33:hf_step2": "2026-07-19T23:40:22.721Z",
-  "kakao:473235144423012:checkout_instructions_am": "2026-07-20T00:00:02.398Z"
+  "kakao:473235144423012:checkout_instructions_am": "2026-07-20T00:00:02.398Z",
+  "hf:732ce61a-87a7-432a-8498-87076e6206ef:hf_step1": "2026-07-20T03:00:22.161Z",
+  "hf:732ce61a-87a7-432a-8498-87076e6206ef:hf_pre_payment": "2026-07-20T03:02:20.096Z",
+  "hf:732ce61a-87a7-432a-8498-87076e6206ef:hf_step2": {
+    "at": "2026-07-20T03:27:46.519Z",
+    "by": "cozmo"
+  },
+  "line:C5878368b82b873b3032c21b7979fdae9:farewell": {
+    "at": "2026-07-20T06:00:00.667Z",
+    "by": "cozmo"
+  },
+  "120363409160041485@g.us:farewell": {
+    "at": "2026-07-20T06:00:01.896Z",
+    "by": "cozmo"
+  },
+  "line:C9df8ba070ff89afba505cc55ee8ab9d2:checkin_tips": {
+    "at": "2026-07-20T06:00:04.157Z",
+    "by": "cozmo"
+  },
+  "kakao:473235144423012:farewell": {
+    "at": "2026-07-20T06:00:39.864Z",
+    "by": "cozmo"
+  },
+  "hf:cfb7e509-056a-49fe-9b8c-4514df796aaf:hf_step1": {
+    "at": "2026-07-20T08:39:46.656Z",
+    "by": "cozmo"
+  },
+  "hf:cfb7e509-056a-49fe-9b8c-4514df796aaf:hf_pre_payment": {
+    "at": "2026-07-20T08:39:46.661Z",
+    "by": "cozmo"
+  },
+  "hf:cfb7e509-056a-49fe-9b8c-4514df796aaf:hf_no_wa": {
+    "at": "2026-07-20T09:05:46.976Z",
+    "by": "cozmo"
+  }
 }

@@ -8,7 +8,7 @@ import { sendAlert } from '../../services/notify';
 import { getMessages, getScheduledMessage, getTipsMessage } from '../../services/sheets';
 import { sendExpenseSummary } from '../../services/expenses';
 import { evoSendText, evoApi, INSTANCE, getGroupInviteLink } from './evoClient';
-import { createBookingGroup } from './groupCreation';
+import { createBookingGroup, getLastCreateFailure } from './groupCreation';
 import { dequeue } from '../../services/pendingMessages';
 import { markSent } from '../../services/sentMessages';
 import { buildBookingGroupName, propertyCodeFromName } from './groupNaming';
@@ -351,8 +351,15 @@ export async function handleGroupCommand(
                 ).catch(() => { });
             }
         } else {
+            const failure = getLastCreateFailure(uid);
+            const msg = failure
+                ? `❌ Group creation failed\n\n` +
+                  `📋 ${failure.reason}\n` +
+                  (failure.restricted ? `⛔ Auto-create is now paused 24h to avoid making it worse.\n` : '') +
+                  `\n🏷️ Create it manually with this exact name:\n${failure.groupName}`
+                : '❌ Group creation failed — check logs';
             for (const jid of replyJids) {
-                await evoSendText(jid, '❌ Group creation failed — check logs').catch(() => { });
+                await evoSendText(jid, msg).catch(() => { });
             }
         }
     } catch (e: any) {

@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ALERT_EVENTS = exports.CONFIG = void 0;
+exports.ALERT_EVENTS = exports.NO_BREAKFAST_PROPERTIES = exports.CONFIG = void 0;
+exports.skipsBreakfast = skipsBreakfast;
 const IS_DEV = process.env.NODE_ENV === 'development';
 console.log('🌍 ENV:', process.env.NODE_ENV);
 console.log('🔗 API URL:', IS_DEV ? 'sandbox' : 'platform');
@@ -54,12 +55,19 @@ exports.CONFIG = {
     BOOKING_FALLBACK_LOOKBACK_MS: parseNum(process.env.BOOKING_FALLBACK_LOOKBACK_MS, 8 * 60 * 60 * 1000),
     GROUP_CREATION_DELAY_MS: 600000,
     // Pacing added 2026-07-15 after WA suspended 2 groups + logged out the Evolution device.
-    // Auto-creation stays on but slow: spaced out, capped per day, human hours only, warm-up after reconnect.
-    GROUP_CREATION_MIN_GAP_MS: parseNum(process.env.GROUP_CREATION_MIN_GAP_MS, 60 * 60 * 1000),
-    GROUP_CREATION_DAILY_CAP: parseNum(process.env.GROUP_CREATION_DAILY_CAP, 5),
-    GROUP_CREATION_HOUR_START: parseNum(process.env.GROUP_CREATION_HOUR_START, 10),
+    // Tightened to MAX-SAFETY defaults: this is an interim unofficial-client (Baileys) pipe kept
+    // alive only until the official Groups API migration lands — survival >> throughput.
+    // Every value is env-overridable, so speed can be dialled back up later without a code change.
+    GROUP_CREATION_MIN_GAP_MS: parseNum(process.env.GROUP_CREATION_MIN_GAP_MS, 2 * 60 * 60 * 1000), // 2h between groups
+    GROUP_CREATION_DAILY_CAP: parseNum(process.env.GROUP_CREATION_DAILY_CAP, 6), // ≤6 groups/day (fits 6 at 2h gaps in a 10–21 window)
+    GROUP_CREATION_HOUR_START: parseNum(process.env.GROUP_CREATION_HOUR_START, 10), // 10:00–21:00 KST
     GROUP_CREATION_HOUR_END: parseNum(process.env.GROUP_CREATION_HOUR_END, 21),
-    GROUP_CREATION_WARMUP_MS: parseNum(process.env.GROUP_CREATION_WARMUP_MS, 30 * 60 * 1000),
+    GROUP_CREATION_WARMUP_MS: parseNum(process.env.GROUP_CREATION_WARMUP_MS, 60 * 60 * 1000), // 60min after reconnect
+    // Default OFF: force-add guests normally. Guests who CAN'T be added (privacy setting blocks
+    // group-adds, or no WhatsApp) are detected after creation and get the invite link via WhatsApp
+    // DM + Hostfully inbox instead. CN/JP/KR routing is handled upstream and untouched.
+    // Flip true only to make ALL guests invite-link (e.g. during a ban scare).
+    GROUP_CREATION_GUEST_INVITE_ONLY: parseBool(process.env.GROUP_CREATION_GUEST_INVITE_ONLY, false),
     GROUP_CREATION_REQUIRE_ALLOWLIST: parseBool(process.env.GROUP_CREATION_REQUIRE_ALLOWLIST, true),
     GROUP_CREATION_LEAD_ALLOWLIST: parseCsv(process.env.GROUP_CREATION_LEAD_ALLOWLIST),
     GROUP_CREATION_PROPERTY_ALLOWLIST: parseCsv(process.env.GROUP_CREATION_PROPERTY_ALLOWLIST),
@@ -144,6 +152,11 @@ exports.CONFIG = {
     WA_AUTO_REPLY_MIN_CONFIDENCE: parseNum(process.env.WA_AUTO_REPLY_MIN_CONFIDENCE, 0.75),
     SERPER_API_KEY: parseStr(process.env.SERPER_API_KEY),
 };
+// Properties that never get the breakfast/grocery service — breakfast_tips must not be sent to their groups.
+exports.NO_BREAKFAST_PROPERTIES = ['JTS', 'GKA', 'GKB'];
+function skipsBreakfast(propertyName) {
+    return exports.NO_BREAKFAST_PROPERTIES.some(code => propertyName.includes(code));
+}
 exports.ALERT_EVENTS = {
     NEW_INQUIRY: '🔍 <b>New Inquiry</b>',
     NEW_HOLD: '⏸️ <b>On Hold</b>',
