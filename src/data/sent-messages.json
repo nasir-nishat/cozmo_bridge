@@ -894,5 +894,53 @@
   "hf:cfb7e509-056a-49fe-9b8c-4514df796aaf:hf_no_wa": {
     "at": "2026-07-20T09:05:46.976Z",
     "by": "cozmo"
+  },
+  "line:C9df8ba070ff89afba505cc55ee8ab9d2:checkin_rules": {
+    "at": "2026-07-20T10:00:01.322Z",
+    "by": "cozmo"
+  },
+  "hf:5c8ab2a7-6b40-41e3-b0e4-93df93b63387:hf_step1": {
+    "at": "2026-07-20T11:30:16.869Z",
+    "by": "cozmo"
+  },
+  "hf:5c8ab2a7-6b40-41e3-b0e4-93df93b63387:hf_pre_payment": {
+    "at": "2026-07-20T11:30:16.872Z",
+    "by": "cozmo"
+  },
+  "hf:f245900f-daae-4059-93b3-6764c02b3934:hf_step1": {
+    "at": "2026-07-20T11:32:17.925Z",
+    "by": "cozmo"
+  },
+  "hf:f245900f-daae-4059-93b3-6764c02b3934:hf_pre_payment": {
+    "at": "2026-07-20T11:32:17.928Z",
+    "by": "cozmo"
+  },
+  "hf:5c8ab2a7-6b40-41e3-b0e4-93df93b63387:hf_step2": {
+    "at": "2026-07-20T11:56:16.724Z",
+    "by": "cozmo"
+  },
+  "hf:f245900f-daae-4059-93b3-6764c02b3934:hf_step2": {
+    "at": "2026-07-20T11:58:16.452Z",
+    "by": "cozmo"
+  },
+  "120363407384623871@g.us:checkout_reminder": {
+    "at": "2026-07-20T12:00:01.431Z",
+    "by": "cozmo"
+  },
+  "120363408498035053@g.us:checkout_reminder": {
+    "at": "2026-07-20T12:00:39.982Z",
+    "by": "cozmo"
+  },
+  "line:C27728cd28ae74651717c36568eeb785f:checkout_reminder": {
+    "at": "2026-07-20T12:01:26.719Z",
+    "by": "cozmo"
+  },
+  "120363428979271936@g.us:welcome": {
+    "at": "2026-07-20T15:47:28.829Z",
+    "by": "cozmo"
+  },
+  "120363427263453158@g.us:welcome": {
+    "at": "2026-07-20T16:04:08.001Z",
+    "by": "cozmo"
   }
 }

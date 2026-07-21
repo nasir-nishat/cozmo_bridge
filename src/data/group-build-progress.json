@@ -1,5 +1,22 @@
 [
   {
+    "leadUid": "2629c248-379f-4b91-95de-586bf5429d5c",
+    "guestName": "Evangeline Fuertes",
+    "property": "SJ_JOYHASLA",
+    "groupName": "COZE SJ 27thSept Evangeline Fuertes 7A",
+    "groupId": null,
+    "status": "failed",
+    "startedAt": "2026-07-20T15:42:34.815Z",
+    "finishedAt": "2026-07-20T15:42:35.890Z",
+    "steps": {
+      "create": {
+        "status": "warn",
+        "at": "2026-07-20T15:42:35.890Z",
+        "note": "Request failed with status code 500"
+      }
+    }
+  },
+  {
     "leadUid": "cfb7e509-056a-49fe-9b8c-4514df796aaf",
     "guestName": "Karita Loim",
     "property": "GKB_Kelly Prana",

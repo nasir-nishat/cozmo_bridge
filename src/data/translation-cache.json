@@ -1114,5 +1114,15 @@
   "JA:🏠 Home Address\n97-1, Duteopbawi-ro, Yongsan-gu, Seoul, Republic of Korea 04336\n\n🔑 Main Gate PIN\n0218*\n\n🚪 Access Code – Main Door / 1F / 2F / 3F / Aeries Garden (4F) / Wellness Club ARA (1F)\n260720*": "🏠 ホームアドレス\n97-1, Duteopbawi-ro, Yongsan-gu, Seoul, Republic of Korea 04336\n\n🔑 メインゲートのPIN\n0218*\n\n🚪 アクセスコード – メインドア / 1F / 2F / 3F / Aeries Garden (4F) / Wellness Club ARA (1F)\n260720*",
   "EN:今から空港を出るので15:45前後になりそうです。": "I'm leaving the airport now, so I should arrive around 15:45.",
   "EN:渋滞していて16：15ごろの到着になりそうです！": "It looks like I'll be arriving around 4:15 due to traffic!",
-  "JA:Well noted": "承知いたしました。"
+  "JA:Well noted": "承知いたしました。",
+  "EN:请问是这样吗": "May I ask if this is the case?",
+  "ZH-CN:Would you like to have food delivered?": "您想要外卖吗？",
+  "ZH-CN:Okay I order now": "好的，我现在下单。",
+  "EN:谢谢 我该如何付给你们": "Thank you! How should I pay you?",
+  "ZH-CN:We will calculate the amount at checkout, so you can pay in cash then. There is no need to pay now.": "我们将在退房时计算金额，所以您可以到时候现金支付。现在不需要付款。",
+  "ZH-CN:It will take approximately 30 minutes. I will send you a picture once the food arrives.": "大约需要30分钟。食物到达后我会给您发一张照片。",
+  "EN:請問民宿插座有轉接頭嗎": "Do you have a power adapter at the guesthouse?",
+  "EN:降壓變壓器 不需要\n主要是手機充電\n房間有萬國通用插排應該就可以了": "No need for a voltage transformer. It's mainly for charging my phone. The room has a universal power strip, so that should be fine.",
+  "ZH-TW:Here we go": "我們開始吧",
+  "ZH-CN:If you let us know which makeup studio you prefer, we’ll contact them and see if we can book it for you.": "如果您告诉我们您喜欢哪个化妆工作室，我们会联系他们，看看是否可以为您预订。"
 }

@@ -1857,7 +1857,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+13347037996",
-    "updatedAt": "2026-07-08T06:00:11.082Z"
+    "updatedAt": "2026-07-21T02:00:08.527Z"
   },
   {
     "leadUid": "c6058f45-6831-421c-b8f4-e3631e5be77c",
@@ -2337,7 +2337,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+66928514382",
-    "updatedAt": "2026-07-17T06:00:08.105Z"
+    "updatedAt": "2026-07-21T02:00:10.133Z"
   },
   {
     "leadUid": "500164b3-2705-40da-9caf-d4d2b19dcb97",
@@ -2502,7 +2502,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+19715334280",
-    "updatedAt": "2026-07-20T02:57:06.479Z"
+    "updatedAt": "2026-07-21T01:00:03.661Z"
   },
   {
     "leadUid": "78d5dddc-ede4-4eb1-b2e6-fc0e1e5bfe68",
@@ -2653,6 +2653,21 @@
     "source": "BOOKING",
     "phone": "",
     "updatedAt": "2026-07-17T06:00:14.421Z"
+  },
+  {
+    "leadUid": "520c2440-72a1-435b-a4e7-7ab9c9339e54",
+    "guestName": "卢雨婷",
+    "property": "JTS_TEVA",
+    "checkIn": "2026-07-24",
+    "checkOut": "2026-07-27",
+    "nationality": "",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "NEW",
+    "source": "INQUIRY",
+    "phone": "",
+    "updatedAt": "2026-07-20T13:20:41.479Z"
   },
   {
     "leadUid": "1e916def-3f2c-4b2d-a616-322cdd76aedd",
@@ -2967,7 +2982,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+17326909376",
-    "updatedAt": "2026-05-25T07:12:38.616Z"
+    "updatedAt": "2026-07-20T14:55:36.388Z"
   },
   {
     "leadUid": "432bb54d-35a2-41d7-922a-2358bd92487e",
@@ -3435,6 +3450,21 @@
     "updatedAt": "2026-07-20T09:40:30.880Z"
   },
   {
+    "leadUid": "f245900f-daae-4059-93b3-6764c02b3934",
+    "guestName": "Jingling Li",
+    "property": "HTA_TEVA WELLNESS",
+    "checkIn": "2026-08-18",
+    "checkOut": "2026-08-24",
+    "nationality": "CN",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "BOOKED",
+    "source": "BOOKING",
+    "phone": "+8613829667991",
+    "updatedAt": "2026-07-20T11:27:49.436Z"
+  },
+  {
     "leadUid": "48e11656-156b-4a08-8a9f-3dfdfbea5c5a",
     "guestName": "Giovanni Cei",
     "property": "SG_JOYHASLA",
@@ -3613,6 +3643,21 @@
     "source": "BOOKING",
     "phone": "+447874944051",
     "updatedAt": "2026-07-09T13:39:23.715Z"
+  },
+  {
+    "leadUid": "5c8ab2a7-6b40-41e3-b0e4-93df93b63387",
+    "guestName": "Brigitte Degruffy",
+    "property": "JTS_TEVA",
+    "checkIn": "2026-08-28",
+    "checkOut": "2026-09-30",
+    "nationality": "CH",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "BOOKED",
+    "source": "BOOKING",
+    "phone": "+41796508261",
+    "updatedAt": "2026-07-20T11:26:08.762Z"
   },
   {
     "leadUid": "43ecdc76-9604-4ef1-bd10-ca0dbfd108fe",
@@ -4908,8 +4953,8 @@
     "leadUid": "82df7b17-3ea2-46f9-bcaa-07debd7c6694",
     "guestName": "Munyee Ho",
     "property": "SJ_JOYHASLA",
-    "checkIn": "2027-01-22",
-    "checkOut": "2027-01-30",
+    "checkIn": "2027-01-23",
+    "checkOut": "2027-01-31",
     "nationality": "SG",
     "adults": 0,
     "children": 0,
@@ -4917,7 +4962,22 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+6592951602",
-    "updatedAt": "2026-07-20T09:40:33.650Z"
+    "updatedAt": "2026-07-20T21:44:19.377Z"
+  },
+  {
+    "leadUid": "5439396c-f2cd-47c5-97a3-6eeb7e6646b4",
+    "guestName": "Unknown",
+    "property": "SJ_JOYHASLA",
+    "checkIn": "2027-01-23",
+    "checkOut": "2027-01-31",
+    "nationality": "KR",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "BLOCKED",
+    "source": "BLOCK",
+    "phone": "",
+    "updatedAt": "2026-07-20T21:44:19.763Z"
   },
   {
     "leadUid": "f40e8e46-ba95-479f-9846-38756a91b3e9",

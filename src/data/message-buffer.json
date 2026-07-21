@@ -1,994 +1,688 @@
 {
-  "kakao:473132585883172": [
-    {
-      "sender": "구동현",
-      "text": "입금완료입니다^^",
-      "ts": 1784472360720
-    },
-    {
-      "sender": "구동현",
-      "text": "입금완료입니다^^",
-      "ts": 1784472361635
-    }
-  ],
-  "kakao:473235144423012": [
-    {
-      "sender": "박진심",
-      "text": "송금도 가능한가요",
-      "ts": 1784479421091
-    },
-    {
-      "sender": "박진심",
-      "text": "송금도 가능한가요",
-      "ts": 1784479422668
-    },
-    {
-      "sender": "박진심",
-      "text": "{\"logId\":3888473968551770113,\"targetRevision\":1,\"hidden\":true,\"feedType\":25}",
-      "ts": 1784479501493
-    },
-    {
-      "sender": "박진심",
-      "text": "송금이 4번 옵션10% 추가금 맞나요",
-      "ts": 1784479503326
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "네네 184470원 ^^ 맞습니다!",
-      "ts": 1784499308732
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "네네 184470원 ^^ 맞습니다!",
-      "ts": 1784499309304
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "우리은행1002 945 930695 이혜정",
-      "ts": 1784499448450
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "우리은행1002 945 930695 이혜정",
-      "ts": 1784499449021
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "감사합니다!",
-      "ts": 1784499456919
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "감사합니다!",
-      "ts": 1784499457951
-    },
-    {
-      "sender": "박진심",
-      "text": "네 알겠습니다",
-      "ts": 1784518500140
-    },
-    {
-      "sender": "박진심",
-      "text": "네 알겠습니다",
-      "ts": 1784518501266
-    },
-    {
-      "sender": "문선애",
-      "text": "사진",
-      "ts": 1784518934573
-    },
-    {
-      "sender": "문선애",
-      "text": "Photo",
-      "ts": 1784518936156
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "감사합니다 :)",
-      "ts": 1784518953215
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "감사합니다 :)",
-      "ts": 1784518953795
-    },
-    {
-      "sender": "문선애",
-      "text": "퇴실합니다",
-      "ts": 1784522203790
-    },
-    {
-      "sender": "문선애",
-      "text": "퇴실합니다",
-      "ts": 1784522204877
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "어디로 이동하실까요?",
-      "ts": 1784522896459
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "어디로 이동하실까요?",
-      "ts": 1784522897110
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "비가 많이 오네요. 우산은 있으실까요?",
-      "ts": 1784522902876
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "비가 많이 오네요. 우산은 있으실까요?",
-      "ts": 1784522904577
-    },
-    {
-      "sender": "문선애",
-      "text": "우산 있어요. 아산으로 이동",
-      "ts": 1784522943875
-    },
-    {
-      "sender": "문선애",
-      "text": "우산 있어요. 아산으로 이동",
-      "ts": 1784522945102
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "운전 조심하시고요! 한국에서 행복한 추억 만드시고 안전히 귀국하시길 바랍니다 ^^",
-      "ts": 1784522978764
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "운전 조심하시고요! 한국에서 행복한 추억 만드시고 안전히 귀국하시길 바랍니다 ^^",
-      "ts": 1784522979196
-    },
-    {
-      "sender": "문선애",
-      "text": "잘 있다 갑니다. 감사합니다.",
-      "ts": 1784523011611
-    },
-    {
-      "sender": "문선애",
-      "text": "잘 있다 갑니다. 감사합니다.",
-      "ts": 1784523012514
-    },
-    {
-      "sender": "문선애",
-      "text": "주차장 바 열어주세요",
-      "ts": 1784523667799
-    },
-    {
-      "sender": "문선애",
-      "text": "주차장 바 열어주세요",
-      "ts": 1784523668102
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "주차장 키 로 열고 다시 넣어두시면 감사하겠습니다!",
-      "ts": 1784523702766
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "주차장 키 로 열고 다시 넣어두시면 감사하겠습니다!",
-      "ts": 1784523703859
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "photo",
-      "ts": 1784523766345
-    },
-    {
-      "sender": "문선애",
-      "text": "조차장 키가 어디 있나요?",
-      "ts": 1784523766347
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "Photo",
-      "ts": 1784523767954
-    },
-    {
-      "sender": "문선애",
-      "text": "조차장 키가 어디 있나요?",
-      "ts": 1784523768240
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "https://www.youtube.com/shorts/9mF2Pxxe1Y4",
-      "ts": 1784523774793
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "https://www.youtube.com/shorts/9mF2Pxxe1Y4",
-      "ts": 1784523776977
-    }
-  ],
-  "kakao:301321483004194": [
-    {
-      "sender": "COZE_RICKY",
-      "text": "26년 7월 20일 금요일 13:40PM\n\n인천->HT\n\nMM705\n\n 藪 裕太朗\n\n성인6  / 점보1  / 11만원 / 후불",
-      "ts": 1784492994642
-    },
-    {
-      "sender": "COZE_RICKY",
-      "text": "26년 7월 20일 금요일 13:40PM\n\n인천->HT\n\nMM705\n\n 藪 裕太朗\n\n성인6  / 점보1  / 11만원 / 후불",
-      "ts": 1784492995930
-    },
-    {
-      "sender": "COZE_RICKY",
-      "text": "{\"logId\":3888587832588947457,\"targetRevision\":1,\"hidden\":true,\"feedType\":25}",
-      "ts": 1784493148790
-    },
-    {
-      "sender": "COZE_RICKY",
-      "text": "26년 7월 20일 금요일 13:40PM\n\n인천->HT\n\nMM705\n\n 藪裕太朗 (일본게스트)\n\n성인6  / 점보1  / 11만원 / 후불",
-      "ts": 1784493149293
-    },
-    {
-      "sender": "COZE_RICKY",
-      "text": "{\"logId\":3888587832588947457,\"targetRevision\":2,\"hidden\":true,\"feedType\":25}",
-      "ts": 1784493278219
-    },
-    {
-      "sender": "COZE_RICKY",
-      "text": "26년 7월 20일 금요일 13:40PM\n\n인천->HT\n\nMM705\n\n 藪裕太朗 (일본게스트-Yutaro Yabu)\n \n성인6  / 점보1  / 11만원 / 후불",
-      "ts": 1784493278643
-    },
-    {
-      "sender": "이규진",
-      "text": "게스트거절 사유로 취소입니다",
-      "ts": 1784504577846
-    },
-    {
-      "sender": "이규진",
-      "text": "게스트거절 사유로 취소입니다",
-      "ts": 1784504580213
-    },
-    {
-      "sender": "이규진",
-      "text": "26년7월21일 화요일 430AM\n\nSG=>인천\n\n성인 4 소아 3 /점보 1 /13만원[짐이동팁2만포함]/후불 C\n\n※조기운행팁은 게스트 직접 수령",
-      "ts": 1784513158268
-    },
-    {
-      "sender": "이규진",
-      "text": "26년7월21일 화요일 430AM\n\nSG=>인천\n\n성인 4 소아 3 /점보 1 /13만원[짐이동팁2만포함]/후불 C\n\n※조기운행팁은 게스트 직접 수령",
-      "ts": 1784513158895
-    },
-    {
-      "sender": "변이규",
-      "text": "김문석\n01030905001",
-      "ts": 1784514160048
-    },
-    {
-      "sender": "변이규",
-      "text": "김문석\n01030905001",
-      "ts": 1784514160686
-    },
-    {
-      "sender": "변이규",
-      "text": "{\"logId\":3888765381074536449,\"targetRevision\":1,\"hidden\":true,\"feedType\":25}",
-      "ts": 1784514174616
-    },
-    {
-      "sender": "변이규",
-      "text": "김문석  130\n01030905001",
-      "ts": 1784514174989
-    },
-    {
-      "sender": "이규진",
-      "text": "26년 7월 21일 화요일 1240PM\n\n인천->GK\n\nOZ 111\n\n Sandy Rhee Ross\n \n성인4  / 일반 1  / 10만원 / 후불 C",
-      "ts": 1784516786694
-    },
-    {
-      "sender": "이규진",
-      "text": "26년 7월 21일 화요일 1240PM\n\n인천->GK\n\nOZ 111\n\n Sandy Rhee Ross\n \n성인4  / 일반 1  / 10만원 / 후불 C",
-      "ts": 1784516788131
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "photo",
-      "ts": 1784537845405
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "Photo",
-      "ts": 1784537846409
-    },
-    {
-      "sender": "변이규",
-      "text": "헉~~\n포스터가...",
-      "ts": 1784539021708
-    },
-    {
-      "sender": "변이규",
-      "text": "헉~~\n포스터가...",
-      "ts": 1784539022626
-    }
-  ],
-  "line:Cadba6d5f1cb5b0f8b4843542525143ef": [
-    {
-      "sender": "COZE HOSPITALITY 3.0",
-      "text": "/link e2166bcf-2257-485f-837d-162ba3fd460e tw",
-      "ts": 1784502660977
-    },
-    {
-      "sender": "COZE HOSPITALITY 3.0",
-      "text": "/welcome",
-      "ts": 1784502667257
-    }
-  ],
   "kakao:18294946740114616": [
     {
       "sender": "Unknown",
-      "text": "Ecs로",
-      "ts": 1784504210219
-    },
-    {
-      "sender": "Americium",
-      "text": "Ecs로",
-      "ts": 1784504211347
+      "text": "{\"feedType\":4,\"members\":[{\"userId\":8097961439479324469,\"nickName\":\"사루치\"}]}",
+      "ts": 1784563301245
     },
     {
       "sender": "Unknown",
-      "text": "바꿔야지",
-      "ts": 1784504212573
-    },
-    {
-      "sender": "Americium",
-      "text": "바꿔야지",
-      "ts": 1784504213900
-    },
-    {
-      "sender": "Americium",
-      "text": "Emoticon",
-      "ts": 1784504215956
-    },
-    {
-      "sender": "Unknown",
-      "text": "샵검색: #unity ecs",
-      "ts": 1784504249985
-    },
-    {
-      "sender": "Americium",
-      "text": "샵검색: #unity ecs",
-      "ts": 1784504251337
-    },
-    {
-      "sender": "김힘돌",
-      "text": "ECS대신",
-      "ts": 1784515444355
-    },
-    {
-      "sender": "Unknown",
-      "text": "ECS대신",
-      "ts": 1784515444657
-    },
-    {
-      "sender": "Unknown",
-      "text": "ESC는",
-      "ts": 1784515446995
-    },
-    {
-      "sender": "김힘돌",
-      "text": "ESC는",
-      "ts": 1784515448736
-    },
-    {
-      "sender": "Unknown",
-      "text": "뿌하하",
-      "ts": 1784515457468
-    },
-    {
-      "sender": "SU",
-      "text": "뿌하하",
-      "ts": 1784515459217
+      "text": "공지사항을 읽어주세요",
+      "ts": 1784563301249
     },
     {
       "sender": "방장봇",
       "text": "공지사항을 읽어주세요",
-      "ts": 1784520187268
+      "ts": 1784563303209
     },
     {
       "sender": "Unknown",
-      "text": "{\"feedType\":4,\"members\":[{\"userId\":7750290396585982432,\"nickName\":\"인천/카카오/78/우쭈쭈\"}]}",
-      "ts": 1784520187330
+      "text": "{\"feedType\":4,\"members\":[{\"userId\":8832865092813496433,\"nickName\":\"집 지키는 죠르디\"}]}",
+      "ts": 1784589121418
     },
     {
       "sender": "Unknown",
       "text": "공지사항을 읽어주세요",
-      "ts": 1784520187332
+      "ts": 1784589121420
+    },
+    {
+      "sender": "방장봇",
+      "text": "공지사항을 읽어주세요",
+      "ts": 1784589122425
     },
     {
       "sender": "Unknown",
-      "text": "{\"feedType\":2,\"member\":{\"userId\":7750290396585982432,\"nickName\":\"인천/카카오/78/우쭈쭈\"}}",
-      "ts": 1784520424401
+      "text": "안녕하세요",
+      "ts": 1784589187166
+    },
+    {
+      "sender": "집 지키는 죠르디",
+      "text": "안녕하세요",
+      "ts": 1784589188194
     },
     {
       "sender": "Unknown",
-      "text": "78년생ㄷㄷ",
-      "ts": 1784520512553
+      "text": "혹시 톡방에",
+      "ts": 1784599473455
+    },
+    {
+      "sender": "집 지키는 죠르디",
+      "text": "혹시 톡방에",
+      "ts": 1784599473724
+    },
+    {
+      "sender": "Unknown",
+      "text": "챗봇 어떻게 추가하는지 알수있을까요?",
+      "ts": 1784599498184
+    },
+    {
+      "sender": "집 지키는 죠르디",
+      "text": "챗봇 어떻게 추가하는지 알수있을까요?",
+      "ts": 1784599499061
+    },
+    {
+      "sender": "Unknown",
+      "text": "라는",
+      "ts": 1784599512745
     },
     {
       "sender": "Americium",
-      "text": "78년생ㄷㄷ",
-      "ts": 1784520512973
-    },
-    {
-      "sender": "Unknown",
-      "text": "하는 짓 보면 생년월일이 아니라 IQ 아님?",
-      "ts": 1784530560309
-    },
-    {
-      "sender": "DarkTornado.php",
-      "text": "하는 짓 보면 생년월일이 아니라 IQ 아님?",
-      "ts": 1784530562524
-    },
-    {
-      "sender": "Unknown",
-      "text": "(이모티콘)",
-      "ts": 1784530587076
+      "text": "라는",
+      "ts": 1784599513139
     },
     {
       "sender": "Americium",
-      "text": "Emoticon",
-      "ts": 1784530588964
+      "text": "질문을",
+      "ts": 1784599514718
+    },
+    {
+      "sender": "Unknown",
+      "text": "질문을",
+      "ts": 1784599515073
+    },
+    {
+      "sender": "Unknown",
+      "text": "연속으로 4번 받았을때",
+      "ts": 1784599519434
     },
     {
       "sender": "Americium",
-      "text": "Video",
-      "ts": 1784531792521
+      "text": "연속으로 4번 받았을때",
+      "ts": 1784599521190
     },
     {
       "sender": "Unknown",
-      "text": "동영상",
-      "ts": 1784531792559
-    },
-    {
-      "sender": "Unknown",
-      "text": "산탄!",
-      "ts": 1784531854210
+      "text": "예상되는 답번을",
+      "ts": 1784599631750
     },
     {
       "sender": "Americium",
-      "text": "산탄!",
-      "ts": 1784531855821
-    },
-    {
-      "sender": "Unknown",
-      "text": "돛부터",
-      "ts": 1784533009058
+      "text": "예상되는 답번을",
+      "ts": 1784599633992
     },
     {
       "sender": "Americium",
-      "text": "돛부터",
-      "ts": 1784533010727
+      "text": "기술하시오",
+      "ts": 1784599636054
     },
     {
       "sender": "Unknown",
-      "text": "개선을 해야겠다",
-      "ts": 1784533013422
+      "text": "기술하시오",
+      "ts": 1784599636100
+    },
+    {
+      "sender": "Unknown",
+      "text": "[4점]",
+      "ts": 1784599638421
     },
     {
       "sender": "Americium",
-      "text": "개선을 해야겠다",
-      "ts": 1784533014061
+      "text": "[4점]",
+      "ts": 1784599640720
     },
     {
       "sender": "Unknown",
-      "text": "ㅖ?",
-      "ts": 1784533048354
+      "text": "검색하세요?",
+      "ts": 1784599699800
     },
     {
-      "sender": "🏳 |『♞』수분생크림왕국",
-      "text": "ㅖ?",
-      "ts": 1784533050268
-    },
-    {
-      "sender": "Unknown",
-      "text": "ㅒ",
-      "ts": 1784533068993
-    },
-    {
-      "sender": "Americium",
-      "text": "ㅒ",
-      "ts": 1784533069148
-    },
-    {
-      "sender": "노을",
-      "text": "/날씨 태양",
-      "ts": 1784534713925
+      "sender": "집 지키는 죠르디",
+      "text": "검색하세요?",
+      "ts": 1784599701069
     },
     {
       "sender": "Unknown",
-      "text": "/날씨 태양",
-      "ts": 1784534714066
+      "text": "{\"feedType\":4,\"members\":[{\"userId\":6924891224160359453,\"nickName\":\"에디봇\"}]}",
+      "ts": 1784601504357
     },
     {
       "sender": "Unknown",
-      "text": "해당 위치를 찾을 수 없어요",
-      "ts": 1784534716390
+      "text": "공지사항을 읽어주세요",
+      "ts": 1784601504361
     },
     {
-      "sender": "[AI] Skynet",
-      "text": "해당 위치를 찾을 수 없어요",
-      "ts": 1784534717767
-    },
-    {
-      "sender": "Unknown",
-      "text": "지오코더 작동 안하는데",
-      "ts": 1784534922669
-    },
-    {
-      "sender": "DarkTornado.js",
-      "text": "지오코더 작동 안하는데",
-      "ts": 1784534924169
-    },
-    {
-      "sender": "Unknown",
-      "text": "고치기 귀찮음",
-      "ts": 1784534933125
-    },
-    {
-      "sender": "DarkTornado.js",
-      "text": "고치기 귀찮음",
-      "ts": 1784534933342
-    }
-  ],
-  "120363428134771890@g.us": [
-    {
-      "sender": "Quyen Nguyen",
-      "text": "Can we get a wheelchair for Thursday July 23?",
-      "ts": 1784506926723
-    },
-    {
-      "sender": "COZE_Jin",
-      "text": "Hello! @91070671138949 Yes, absolutely. 😊 \n\nWe will have a wheelchair ready for you on Thursday, July 23rd.\n\n Please let us know if you need anything else to make your stay comfortable!",
-      "ts": 1784507334403
-    }
-  ],
-  "kakao:443379230630620": [
-    {
-      "sender": "Gaya",
-      "text": "오늘 오후 입금 드릴게요",
-      "ts": 1784511162148
-    },
-    {
-      "sender": "Gaya",
-      "text": "오늘 오후 입금 드릴게요",
-      "ts": 1784511164002
-    },
-    {
-      "sender": "팡팡수도설비",
-      "text": "입금 감사합니다",
-      "ts": 1784519257038
-    },
-    {
-      "sender": "팡팡수도설비",
-      "text": "입금 감사합니다",
-      "ts": 1784519257530
+      "sender": "방장봇",
+      "text": "공지사항을 읽어주세요",
+      "ts": 1784601505187
     }
   ],
   "120363407384623871@g.us": [
     {
-      "sender": "Yu Gil",
-      "text": "Good morning Coze team😊\nQuick question, how do we dispose of cardboard materials?",
-      "ts": 1784512274992
-    },
-    {
-      "sender": "COZE_CYRUS",
-      "text": "Please place the cardboard materials next to the outdoor trash bins. Our team will take care of them. Thank you! 😊",
-      "ts": 1784512536910
-    },
-    {
-      "sender": "Yu Gil",
-      "text": "Ok thank you 😊",
-      "ts": 1784512669730
-    },
-    {
-      "sender": "COZE_CYRUS",
-      "text": "Hello 😊 @188584162275518 \n\nYour airport transportation for tomorrow’s 4:30 a.m. departure has been fully arranged, and the driver has already been assigned. The driver will also assist you with moving and loading your luggage into the vehicle.\n\nAs your departure is very early, we hope you can get some comfortable rest as early as possible this evening.\n\nPlease also note that the building is mostly residential, and the neighbors will still be sleeping at that time. We would greatly appreciate it if you could prepare and leave as quietly and carefully as possible. 🙏\n\nThank you so much for your understanding and kind cooperation.\n\nCyrus\nGuest Care Team of COZE Hospitality 3.0",
-      "ts": 1784517548199
-    },
-    {
-      "sender": "Yu Gil",
-      "text": "Awesome!! Thank you Cyrus😊",
-      "ts": 1784518370589
+      "sender": "COZE_Gaya",
+      "text": "Yay! Just leave the trash beside the recycle bin should be great help for us :)",
+      "ts": 1784560280624
     }
   ],
-  "kakao:4948670999698525": [
+  "120363407122736550@g.us": [
     {
-      "sender": "지금플레이",
-      "text": "(광고)카드영수증으로 더 편리하게",
-      "ts": 1784513682877
+      "sender": "COZE_Gaya",
+      "text": "https://coze.invoicely.com/invoice/f5e29f734bd1489aa3cae478b9768d50",
+      "ts": 1784561202936
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "Here we go for paid invoice!",
+      "ts": 1784561208872
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "Home Address :",
+      "ts": 1784561316137
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "서울 마포구 성미산로23길 16-5  2층",
+      "ts": 1784561316813
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "16-5, Seongmisan-ro 23-gil, Mapo-gu, Seoul, Republic of Korea",
+      "ts": 1784561317492
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "Main Door Pin 2 6 0 4 0 8 *",
+      "ts": 1784561318154
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "Neighborhood information !",
+      "ts": 1784561318830
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "you can find all of info about our neighborhood  here!\n(please sign up Naver and install Naver map !!!)",
+      "ts": 1784561319522
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "[NAVER Map]\nCOZE YT \nhttps://naver.me/5JpRM6v7",
+      "ts": 1784561320196
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "🏠 *FISH 09 Guest Manual*\n\n📌 Essential Information\n\n📍 Address\n \n\n서울 마포구 성미산로23길 16-5\n 16-5,\n Seongmisan-ro 23-gil, Mapo-gu, Seoul, Republic of Korea\n\n🔑 Your Suite Door Code\n \n\nCheck-in date in the format YYMMDD + *\n Example: 10 May 2025 → 250510* (remains the same throughout your stay)\n\n📶 Wi-Fi\n \n\nSSID: KT-GiGA_C34B\n \nPIN: eck93gg798\n\n🚗 Parking (Important)\n \n\nWe don’t have a private lot, but many guests park along the curb right beside the building.\n (Technically it isn’t legal, but enforcement is rare.)\n\n✅ Tip: If you plan to park on the curb (street-side), please message our team in advance — we’ll do our best to check the latest local parking situation for you.\n\n🅿️ Nearest official option (3-minute walk):\n\n Yeonnam-dong Public Parking Lot \n\n📍\n Map → https://naver.me/x0UvYEAj\n \n\nAddress: 361-9 Yeonnam-dong, Mapo-gu, Seoul\n \n\nRate: ₩300 per 5 minutes (no all-day pass)\n Discount: 50% off for multi-child families & eco-friendly vehicles\n\n📱 Guest Smartphone Provided\n\nA free smartphone with a Korean number and unlimited data & calls is available on the living room table.\n All essential apps are pre-installed, and it can be used as a portable Wi-Fi hotspot.\n\n💡 Local Tip: Open Naver Map → Bookmarks \n\n— we saved a local guide with\n hidden gem restaurants 🍜 supermarkets & convenience stores 🏪 hospitals & clinics 🏥 ATMs & banks 💳 and more 📍😉\n\n🍽️ Food Delivery Made Easy\n\nUse the guest smartphone to open Coupang Eats, create your cart, then send us a screenshot of your final order via Messenger.\n We’ll place the order using our card — you can pay us in cash (or crypto) at checkout.\n\n🚐 Need an MPV Van Taxi?\n\nLet us know anytime — we can help arrange a spacious ride using local peer-to-peer transport options.\n\n🍳 Kitchen Appliances\n\nA full kitchen is ready for you, including a dishwasher, oven, and water purifier.\n Feel free to cook like home! 🥘✨\n\n💧 Water Purifier (EVERPURE)\nBrand: EVERPURE (USA) — Starbucks official partner\n Type: Direct-flow purified water system\n Maintenance: Professionally serviced monthly\n How to use: Use the small faucet on the left side of the sink labeled “정수기 / Purified Water”\n Benefit: Safe, great-tasting water for drinking & cooking\n\n☕ Capsule Coffee & Tea\n\nExtra tea & coffee capsules are in the drawer under the induction range ☕✨\n\nilly Coffee Machine Guides\n \n\nQuick Start: https://youtu.be/XEDAXZY50FM?si=uOfwquZXC6WCis_G\n \n\nSteam Milk: https://youtu.be/bTzG7iM4dMA?si=aiEWUseiOT0as-Jo\n \n\nVolume Settings: https://youtu.be/h2X5gLYpf_4?si=eaDtARcyGQTjddFz\n\n♻️ Food Waste Disposal\n\nTurn on the sink water and press the foot pedal to use the disposer.\n\n🗑️ General & Recyclable Waste\n\nPlease separate trash into the bins in the kitchen.\n Extra trash bags are in the shoe cabinet — replace bags when full.\n\nWhen bags are full, leave them outside and message us.\n Korea’s trash rules can be tricky, so feel free to ask anytime 💛\n\n📽️ Multimedia Setup\n\nUse the projector connected to Korean TV & Google TV.\n\nSteps\n\nTurn on the projector\n\nTurn on the Yamaha soundbar\n\nUse the soundbar remote to choose input (TV or Google TV)\n\n\n🧴 Amenities & Towels\n\nAbout 20 towel sets (face/body/foot) are in the bathroom.\n Toilet paper: last compartment of the shoe cabinet\n Hotel-style amenities: cabinet beside the induction stove\n\n🔒 Privacy\n\nReflective window film protects your privacy during the day.\n At night, please close the blinds to stay fully private.\n\n❄️ Heating & Ventilation (Winter)\n\n🔥 Please don’t touch the living room heating panel (it controls the whole home + hot water).\n\n🌡️ Bedroom radiators: keep ON 24/7 and set to 23°C.\n\n🌬️ Ventilation (HRV) x2: keep ON (LOW setting) at all times to keep air fresh & prevent condensation.\n\n🧊 Feeling warm? Open a window for a few minutes.\n\n💬 Need help? Message us anytime!\n\n🚭 Smoking\n\nSmoking is allowed on the terrace only. Please use the ashtray 🙏\n\n💬 Need Anything?\n\nMessage us anytime on WhatsApp, KakaoTalk, or LINE — we reply quickly and are always happy to help 💛\n\nAll you need · All-in-one · All for you. — COZE Hospitality 3.0 ✨",
+      "ts": 1784561320869
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "🚐📚 The Complete Guidebook about Airport Vans!\n\n1️⃣ Reservation Method\n\nTell us your travel date , arrival time , airline , and flight number\nAfter confirmation, we’ll send detailed pickup instructions & driver contact.\n\n2️⃣ Van Service Rates & Promotions\n\n🎁 Promotions\n\n4-night stay → 1 × 7-seater van FREE \n6-night stay → 2 × 7-seater vans FREE \n\n💰 Extra Rates\n\nGimpo Airport ↔ Accommodation — 🚗 4-seater ₩70 000 / 🚐 7-seater ₩90 000\n\nIncheon Airport ↔ Accommodation — 🚗 4-seater ₩100 000 / 🚐 7-seater ₩120 000\n\nSeoul city luggage transport — 🚗/🚐 flat ₩60 000\n\n\n🛋️ Comfort Tip\n\nSeven people plus luggage can feel tight in a 7-seater. For more space, book two 4-seaters. 😌\n\n\n3️⃣ Meeting Your Driver\n\nYour driver tracks your flight and waits at the arrival gate with a name sign.\n\n⏳ Wait time up to 60 minutes after landing.\n\n🤝 Once you meet, head straight to the vehicle.\n\n💡 Tips required\n\nCurrency exchange or SIM?  The driver introduce you to find /  ₩10 000 \n\nEarly & Late Work Time (21PM-06AM) /  ₩20 000\n\n Baby Car Seat  / ₩20 000 per seat\n\nMove between termina /l ₩30 000 \n\n\nWe look forward to welcoming you soon! 🌷\n\nWarm regards,\nGaya, Guest Care Team \n\nCOZE Hospitality 3.0\nAll you want, ALL-IN-ONE, All yours",
+      "ts": 1784561423769
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "Beyond travel agencies lies COZE — a band of hosts transforming Korean roads into your own curated adventure.\u000b\n\nCOZE Private Van Tour \u000b\u000b\n\n🚐 Vehicles & Base Rates (10 hours)  \u000b\n\n• Hyundai Staria (up to 10 guests) — ₩500,000  \u000b\n• • Hyundai County (up to 23 guests) — ₩800,000   \u000b\n• \u000bIncludes: ⛽ Fuel + 🅿 Parking + 🚧 Tolls   \u000b\n• \u000bNot included: 10 % VAT + 🍽 Meals + 🎟 Admission Fees\u000b\n\n👤 Tour Host | Speaking Korean English Japanese Chinese\n\n✨ Complimentary Comforts on Board \u000b\u000b\n\n📶 High-speed Wi-Fi \n🥤 Unlimited chilled bottled water \n🔌 USB-C / USB-A chargers \n♿ Loaner wheelchair (reserve ahead) \n👶 Free stroller rental & secure storage\n 🍼 Child & booster seats\n\n*Extra Charges\u000b*\n\n• Overtime — Staria ₩50,000/hr | County ₩100,000/hr \u000b\n\n• Distance Surcharge — +₩100,000 if total travel exceeds 150 km or extends beyond the Gyeonggi-area radius\n\n*Why COZE?\u000b*\n\n✅ Hosts who are passionate cultural interpreters, not just drivers \u000b\n✅ Fully personalized itineraries—hidden gems & authentic moments \u000b\n✅ Zero tourist traps or forced shopping stops \u000b\n✅ Honest, transparent pricing with no platform mark-ups\u000b\n\nPlus full concierge support for itinerary planning, restaurant bookings, special activities and more—everything tuned to your travel style.\u000b\n\nLet COZE take you beyond sightseeing and straight into the true heart of Korea!",
+      "ts": 1784561424426
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "*COZE eSIM 10% OFF 📱✨*\n\nLand in Korea, go online instantly!\n\nNo airport lines, no SIM-card hunting, no recharge stress.\nJust set up your eSIM before arrival and stay connected the moment you land 😊\n\nApply & pay easily through the Google Form below.\n\n🔗 https://docs.google.com/forms/d/e/1FAIpQLSdXQoDPivSiUw0Ryvk8nJFaUOAwJZdZak69BYErkJHkSSCz_A/viewform?pli=1⁠�\n\nGaya, Guest Care Team of COZE Hospitality 3.0",
+      "ts": 1784561425087
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "COZE isn’t just about a bed.\nWe’re here to share the true Seoul vibe and help you create unforgettable memories 🇰🇷💖\n\n Introducing COZE’s LOCAL EXPERIENCE CONTENTS! 🗺🤩\n\nhttps://coze.care",
+      "ts": 1784561461228
     }
   ],
-  "line:C9df8ba070ff89afba505cc55ee8ab9d2": [
-    {
-      "sender": "COZE_Cyrus",
-      "text": "/link 55e6393f-5e27-4827-9729-05f92ea358d7 jp",
-      "ts": 1784515102901
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "/welcome",
-      "ts": 1784515128178
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "HT 게스트 도착 후 초대할 방 생성했습니다.",
-      "ts": 1784515182835
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "hello",
-      "ts": 1784515199696
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "Hello! 🇰🇷 @YABU YUTARO \n\nMy name is Cyrus Noh, and I’ll be your check-in host today.\n\nI’m here to help make your arrival smooth and comfortable, and to guide you through anything you may need for your check-in. 🏠✨\n\nCOZE Hospitality 3.0",
-      "ts": 1784521789440
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "please message me your estimated arrival time. I’ll need to know your arrival time so I can wait for you in front of the accommodation and assist you with check-in.",
-      "ts": 1784521836197
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "[JA] こちらにサービスの指示を共有いたします！",
-      "ts": 1784521954432
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "서울시 용산구 두텁바위로 97-1",
-      "ts": 1784521954547
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "Home Address :\n97-1, Duteopbawi-ro, Yongsan-gu, Seoul, Republic of Korea 04336",
-      "ts": 1784521954592
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "[JA] メインゲートのピン 0 2 1 8 *\n（居住者の安全のために、メインゲートがしっかり閉まっていることを再度ご確認いただけますか 🙏）",
-      "ts": 1784521954970
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "The access code of Main Door / Aeries Garden(4F) /  Wellness Club ARA(1F)\n2 6 0 7 2 0 *",
-      "ts": 1784522074490
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "The neighborhood information (with Naver Map Link)\nPlease sign up Naver, and download Navermap app, and save our list in the app! very useful insight you will have to understand your neighborhood very quickly.\nhttps://naver.me/IFghzbC8",
-      "ts": 1784522185027
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "🏡 COZE HT — TEVA I Urban Retreat in Yongsan HBC\n\n\n(HTA Suite · HTB Suite · Wellness Club ARA · Rooftop AERIES Garden)\n\n\nWelcome to your private wellness sanctuary at the foot of Namsan! All four floors of COZE HT are yours to enjoy—from Finnish sauna and jacuzzi to a leafy roof deck with skyline views. Please read this guide carefully so everything runs smoothly and neighbour‑friendly. Enjoy your stay! ✨\n\n📌 Essential Information\n\n\nAddress — 97‑1 Duteopbawi‑ro, Yongsan‑gu, Seoul 04336\n\nMain Entrance Code — 0 2 1 8 * → Always check that it relocks after every in/out\n\nYour Suite Door Code(HOME & GARDEN & ARA) — Check‑in date in the format YYMMDD + *\n\nExample: 10 May 2025 → 250510* (remains the same throughout your stay)\n\nWi‑Fi Networks\n\n1F ARA — SSID COZE_ARA / PIN joyjoyjoy\n2F HTA — SSID KT_WiFi_5G_F3E6 / PIN fdfd1cc847\n3F HTB — SSID KT_WiFi_5G_F3EB / PIN 0efd1cc848\n4F AERIES Garden — SSID iptime_ring / no password\n\n👶📡 Baby Monitor Available\n\nKeep an eye on little ones or pets on another floor in real time.\n📍 Where to find it\nBaby-amenities cabinet (camera + monitor set)\n\n🔌 Quick Start\nCamera — plug in the USB power (DC 5 V) cable and leave it on.\n\nMonitor — fully charge via USB-C, then use cord-free.\n\nHold the power button to pair; once connected, you’re ready to go.\n\n🌿 Wellness Club ARA — Read Me First (1 F)\n\n⚠️ Guests are responsible for safe usage\n\n\n🔥 Finnish Sauna\n\nHow to Operate\n\nWith the guest smartphone\n\n1. Open the Diooist app.\n2. Tap Power ON.\n3. Tap the control button at bottom-right.\n4. Set Target Temperature & Run Time.\n\nKids 60 °C · Adults 80 °C\n\nOn the control panel inside ARA\n\n1. Press Power ON.\n2. Tap Settings top-right.\n3. Enter temperature & run time under Target.\n\nPre-heat at least 1 hour (80–90 °C)\nSit or lie on a towel; wipe sweat with a spare\nHydrate before and after each round—no alcohol or heavy meals\nStay ≤ 15 min per round; cool down 5–10 min between entries\nAdd only small ladles of water to stones; excess can damage the heater\nChildren only with adults, 60–70 °C, ≤ 5 min\nNever sleep inside; leave the door unlatched for safety\nWhisper only after 20:00, then switch the heater OFF and leave the door ajar to dry\n\n\n🛀 Jacuzzi\n\nShower first to keep water clean.\nMax 2 adults (or 3 kids)\nQuiet hours begin 20:00; voices low, no music.\nLimit each soak to ~20 min; rest between sessions.\nNo lotions, oils\nSupervise children and seniors; keep water ≤ 38 °C for them.\nSkip use if pregnant, on drowsy meds, or with heart issues.\n\n\n🏋️ Smith Gym\n\nWarm-up & stretch at least 5 min.\nWear clean athletic shoes—no sandals or bare feet.\nWipe all equipment with sanitizer after use.\nSpotter needed for bench/overhead lifts > 40 kg.\nRack weights immediately; floor clear at all times.\nHeavy free-weight zone: use with two people( guidance)\nHydrate frequently—water dispenser is in the lounge.\nKids under 16 must stay within arm’s reach.\nNo workouts after alcohol or straight from sauna/jacuzzi.\nReport damage or odd noises via messenger; stop using that gear\n\n\n🛋️ Social Lounge & Motion Beds\n\nDaytime: bright family hang-out.\nNight: sofa converts to two motion beds via remote\nExtra mattresses/blankets in the cabinet behind the sofa\nPrivacy film blocks daytime view at the main door; close blackout curtain at night\nHeating in ARA: no floor heating—use the provided electric radiators (dial 3 ≈ 22 °C)\n\n\n🌳 AERIES Garden (4 F Rooftop)\n\nPerfect for coffee, yoga, or sunset views of Namsan and the city\n\n🔥 BBQ & Firepit\n\nBBQ gear is in the deck containers beside the firepit:\nCharcoal\nFire starters\nTorch, gloves, tools\n\nFirepit Info:\n\nExtra firewood: to the left of the AERIES GARDEN entrance\nFirepit fee: ₩30,000\nExtra firewood: ₩20,000\nFire extinguisher is beside the pit\n\n⚠️ Keep noise low after 8 PM\n⚠️ No fireworks or uncontrolled flames\n\n📱 Guest Smartphone Provided\n\nA smartphone with a Korean number and unlimited data & calls is provided free of charge during your stay! \n\nUse it to: \n\n🍽️ order food \n🚕 call taxis \n🌐 browse the web \n🗺️ navigate the neighborhood\n\n\nLocal Tip — Open the Naver Map app and check our bookmarks for: \n\n🍜 hidden‑gem restaurants\n🏪 convenience stores \n🏥 clinics \n💳 ATMs. \n\nIt’s like having a local guide in your pocket 📍😉\n\n🍽️ Food Delivery Made Easy\n\nOn the guest phone, open Coupang Eats.\nAdd items to your cart.\nScreenshot the cart and send it to us via WhatsApp.\nWe’ll place the order on our card; pay us later in cash or crypto at checkout.\n\n🚐 Need an MPV Van Taxi?\n\nSeats up to 7 passengers; fares ≈ 30 % higher than regular cabs.\nLet us know early if you need multiple vans or have heavy luggage.\n\n🍳 Kitchen & Appliances\n\nA full kitchen includes: dishwasher, oven, water purifier.\n\n💧 Water Purifier (EVERPURE)\nBrand: EVERPURE (USA) — Starbucks official partner\n\nType: Direct-flow purified water system\n\nMaintenance: Professionally serviced monthly\n\nHow to use: Use the small faucet on the left side of the sink labeled “정수기 / Purified Water.”\n\nBenefit: Very safe, great-tasting water for drinking & cooking\n\nFeel free to cook like home! \n\n☕ Capsule Coffee Time\n\nExtra capsules are in the drawer under the coffee machine — help yourself!\n\nilly Coffee Machine Guides\n\nQuick Start ▶ https://youtu.be/XEDAXZY50FM?si=uOfwquZXC6WCis_G\nSteam Milk ▶ https://youtu.be/bTzG7iM4dMA?si=aiEWUseiOT0as-Jo\nVolume Settings ▶ https://youtu.be/h2X5gLYpf_4?si=eaDtARcyGQTjddFz\n\n♻️ Waste & Recycling\n\nTwo categories only: General Waste and Recycling (bins by kitchen)\nFood scraps → sink disposer (run tap + foot pedal; no bones or shells)\nTie full bags and leave them inside the hallway; we handle municipal pick‑up.\n\n🧴 Linens & Amenities\n\n30 sets of premium towels (face · body · foot)\nSauna/shower gowns in ARA vanity room\nHotel‑quality toiletries: toothbrush, toothpaste, razor, cotton pads, etc.\n\n💨 Ventilation & Heating\n\nSuites: 24 / 7 heat‑exchange ventilator for fresh air without opening windows\nHTA & HTB: under‑floor heating (ondol) \n— keep power ON, set ≈ 22 °C; use “Away” if floors feel too warm\n\nARA lounge: electric radiator only; set Dial 3 ≈ 22 °C.\n\n🔇 Quiet Hours\n\nPlease lower voices after 20:00, especially in Wellness Club ARA and on the rooftop.\n\n🚭 Smoking\n\nStrictly no indoor smoking. Use the outdoor ashtray near the entrance.\n\n🚗 Parking\n\nOne shared pad on 1 F.\nCars may park tandem if both HTA and HTB guests have vehicles; message us if you need cars shuffled.\n\n💬 Need Anything?\n\nMessage us anytime on WhatsApp, KakaoTalk, or LINE — we reply quickly and are happy to help!\n\nAll you need · All‑in‑one · All for you. — COZE Hospitality 3.0 ✨",
-      "ts": 1784522185292
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "🏠 Home Address\n97-1, Duteopbawi-ro, Yongsan-gu, Seoul, Republic of Korea 04336\n\n🔑 Main Gate PIN\n0218*\n\n🚪 Access Code – Main Door / 1F / 2F / 3F / Aeries Garden (4F) / Wellness Club ARA (1F)\n260720*",
-      "ts": 1784522441479
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "please message me your estimated arrival time. I’ll need to know your arrival time so I can wait for you in front of the accommodation and assist you with check-in.",
-      "ts": 1784522463424
-    },
+  "line:C6f044afb7b003ca5b2913316884c6986": [
     {
       "sender": "unknown",
-      "text": "今から空港を出るので15:45前後になりそうです。",
-      "ts": 1784526525837
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "See you soon!",
-      "ts": 1784526786460
+      "text": "請問民宿插座有轉接頭嗎",
+      "ts": 1784556778114
     },
     {
       "sender": "COZE HOSPITALITY 3.0",
-      "text": "/link 55e6393f-5e27-4827-9729-05f92ea358d7 jp",
-      "ts": 1784527493945
+      "text": "您好 😊✨\n \n\n关于 110V 插头转换器 / 电压转换器，这里是详细说明：\n • 每间卧室都配有万能插排 🧩\n🔌\n 每个房间都准备了多国通用的电源插排，大多数旅客的充电器都可以直接使用。\n\n\n • 需要“降压变压器”吗？⚡️\n \n大多数情况下不需要。以下这些现代电子产品通常是宽电压（100–240V），在韩国只要插头形状能匹配即可正常使用：\n\n手机充电器\n\n笔记本电脑充电器\n\n相机 / 充电宝充电器\n\n平板电脑充电器\n\n\n ✅ 小提示：请查看适配器标签，如果写着 “Input: 100–240V”，就不需要电压转换器。\n\n\n • 重要：我们不提供降压变压器\n 由于大多数设备都不需要，我们家里不常备电压转换器。\n\n • 什么时候可能需要（很少见）\n 如果您携带的是功率较大、带电机/加热的设备，且仅支持 110V，可能才需要转换器，例如：\n\n吹风机 / 卷发棒 / 直发器（部分型号）\n\n电动剃须刀（较旧型号）\n\n旅行熨斗\n\n非宽电压的 CPAP 呼吸机\n 如不确定，请告诉我们设备名称，并拍一张电源标签（写有电压信息的那一面）发给我们，我们会准确告诉您需要准备什么 🙏✨\n\n\n Gaya｜COZE Hospitality 3.0 客服团队",
+      "ts": 1784556819445
     },
     {
       "sender": "unknown",
-      "text": "渋滞していて16：15ごろの到着になりそうです！",
-      "ts": 1784527588891
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "Well noted",
-      "ts": 1784527611688
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "Check-in complete ✅\n\nIf you need anything, just message us here — the COZE team will help you. 😊",
-      "ts": 1784532691186
+      "text": "降壓變壓器 不需要\n主要是手機充電\n房間有萬國通用插排應該就可以了",
+      "ts": 1784560047016
     }
   ],
-  "120363427141316994@g.us": [
+  "120363423287615064@g.us": [
     {
-      "sender": "Sandy Rhee Ross",
-      "text": "Hello!  I wanted to confirm the airport pickup for tomorrow from ICN to our rental?",
-      "ts": 1784516218860
+      "sender": "Kay Kim",
+      "text": "안녕하세요! 어느새 여행날짜가 다가오네요. 공항픽업 drop off 포함이죠? 😊저희가 도착 시간이 8월 1일 토요일 새벽 5 시 . Air premia flight YP132 입니다~ 어른 4, 아이들 5이요. 감사합니다 . 🙏🏼",
+      "ts": 1784559325993
     },
     {
-      "sender": "COZE_Jin",
-      "text": "Hello! @176412208173203 \n\nYes, absolutely. We are all set for your airport pickup from ICN to your rental tomorrow. \n\nWe look forward to welcoming you!",
-      "ts": 1784516486638
+      "sender": "COZE_Gaya",
+      "text": "yay! 네네! 저희가 픽업 밴 2대 준비하겠습니다 :)",
+      "ts": 1784560172732
     },
     {
-      "sender": "Sandy Rhee Ross",
-      "text": "Great!  Thank you so much!",
-      "ts": 1784517994105
+      "sender": "COZE_Gaya",
+      "text": "그 외 미리 요청하실 사안 있으시면 언제든지 말씀 주세요!",
+      "ts": 1784560182953
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "coze.care",
+      "ts": 1784560197516
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "저희 COZE EXPERIENCE 소개 페이지랍니다! 지내시는동안 필요한 투어 서비스 등이 필요하시면 위 정보 보시면 편리하세요!",
+      "ts": 1784560233186
     }
   ],
-  "120363423605030782@g.us": [
+  "kakao:474751444159250": [
     {
-      "sender": "Anh",
-      "text": "Hi Gaya and COZE team, thanks for your hospitality. We all had an awesome stay and experience. The apartment was much more than what we had expected. Fantastic service and tour from Cyrus. Jin, Ricky with information. You all made our Seoul trip experience a whole lot better.  Clean appartments with everything we needed. Ammenities all there. Thank you all u guys again. Fantastic experience",
-      "ts": 1784520111222
+      "sender": "GAYA | GUEST CARE",
+      "text": "안녕하세요! @PetitAmourFlower 님!",
+      "ts": 1784561695035
     },
     {
-      "sender": "COZE_CYRUS",
-      "text": "Thank you so much for your wonderful message! 😊 It was truly a pleasure hosting you and your family.\n\nWe’re so happy to hear that you enjoyed the accommodation, our service, and your time in Seoul. Cyrus, Jin, Ricky, Gaya, and the entire COZE team sincerely appreciate your kind words.\n\nWe hope you take home many beautiful memories from Korea, and we would love to welcome you again someday.",
-      "ts": 1784522563878
+      "sender": "GAYA | GUEST CARE",
+      "text": "안녕하세요! @PetitAmourFlower 님!",
+      "ts": 1784561696696
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "COZE에 오신것을 환영합니다!",
+      "ts": 1784561705533
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "COZE에 오신것을 환영합니다!",
+      "ts": 1784561706451
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "두번에 걸친 스테이 중 첫번째 스테이, 성북동에 위치한 COZE SG의 숙소 정보 전송 드려요!",
+      "ts": 1784561732329
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "두번에 걸친 스테이 중 첫번째 스테이, 성북동에 위치한 COZE SG의 숙소 정보 전송 드려요!",
+      "ts": 1784561733118
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "🌟 안녕하세요, COZE Hospitality 3.0에 오신 것을 환영합니다! \n\n\n\n저희 게스트 케어 팀이 여러분을 맞이하게 되어 기쁘습니다. 아래 유용하고 재미있는 팁을 참고해 즐거운 숙박 되세요! 😊\n\n📌 숙소 필수 정보\n\n주소 \n\n서울특별시 성북구 성북동 178-60\n\n\n차량(택시) 네비게이션용 주소(아래 주소를 찍고 오셔야 길을 잃지 않아요!(\n \n\n\n서울특별시 성북구 성북동 178-23\n\n\n정문 키박스 비밀번호 \n\n0 8 0 5 (사용 후 키를 반드시 키박스 안에 넣어주세요)\n\n\n객실 현관 비밀번호 \n\n체크인 날짜 6자리 (YYMMDD) + * \n예: 2025년 5월 10일 → 250510* (체류 기간 동안 변경되지 않습니다)\n\n\nWi-Fi 정보\n\n1F\nSSID : joyhasla_sg_1f\nPIN : joyjoyjoy1f\n\n2F\nSSID : joyhasla_sg_2f\nPIN : joyjoyjoy2f\n\n\n\n🚗 주차 안내\n숙소 앞 무료 주차 1대 가능.\n\n❌ 숙소 앞 공회전 금지 (이웃의 매연 불편이 매우 큼).\n\n오르막 진입로에 주차, 현대 스타리아까지 주차 가능.\n\n\n⚠️ 전기차(하부 배터리)나 낮은 스포츠 세단은 바닥 긁힘 가능.\n\n\n주차 불가하거나 차량이 2대 이상일 경우, 숙소에서 차로 5분 거리 유료 주차장을 이용해 주세요:\n \n\n👉 성북동길 공영주차장\n \n\nhttps://naver.me/xs3GCRVs\n\n\n불편을 최소화하기 위해 숙소 ↔ 주차장 구간 I.M 밴 차량(최대 7명) 무료 2회 제공됩니다.\n\n🔥 BBQ 가이드\n\n정원에서 아웃도어 요리와 아늑한 시간을 즐겨보세요! 🌲\n\n⚠️ 중요 안내\n이웃의 연기 민원을 방지하기 위해 Weber 케틀 위 BBQ 환풍기를 반드시 켜주세요.\n환풍기 회색 전원을 우측 콘센트에 꽂으면 작동합니다.\n오후 7시 이후에는 소음을 최소화해주세요.\n\n\n🍖 BBQ 준비물\n데크 컨테이너에 보관\n57 cm Weber 케틀 숯불 그릴 1대\n숯, 착화제, 토치, 장갑, BBQ 도구\n일회용 그릴 꼭 사용 (위생·청결 유지)\nBBQ 이용료: 30,000원\n\n\n🪟 사계절 BBQ OK!\n\n\n여름: 모기 기피제 비치 🦟\n겨울: 파티오 히터 4대 + 2층 마스터룸 야외 담요\n히터는 휴대용 프로판 가스 사용, 미사용 시 반드시 전원 OFF\n사용법: https://www.youtube.com/watch?v=M-9XitUWr0s\n\n\n🛒 고기·식재료 구매 Tip\n\n투민 할인마트 서울 성북구 성북동 132-3 Naver Map: https://naver.me/xw9q3D8d\n\n도보 5분, 프리미엄 고기 & 30분 내 배달 가능!\n\n\n📱 게스트 전용 스마트폰\n\n한국 번호와 무제한 데이터·통화가 제공되는 스마트폰이 숙박 기간 동안 무료로 제공됩니다! \n\n필수 앱이 모두 설치되어 있으며, 휴대용 Wi-Fi 핫스팟으로도 사용할 수 있습니다.\n\n사용 예시 🍽️ 배달 주문 🚕 택시 호출 🌐 인터넷 검색 🗺️ 주변 탐색\n\n💡 로컬 팁 Naver Map 앱을 열면 다음이 북마크되어 있습니다:\n현지 맛집 🍜\n슈퍼·편의점 🏪\n병원·클리닉 🏥\nATM·은행 💳 필요한 모든 정보를 손안의 가이드처럼 활용하세요! 📍😉\n\n🍽️ 음식 배달 간편 주문\n\n스마트폰에서 Coupang Eats 앱 실행\n장바구니 담기 완료 후 스크린샷 촬영\nWhatsApp으로 저희에게 전송\n저희 카드로 결제·주문해 드리며, 체크아웃 시 현금(또는 암호화폐)으로 정산하시면 됩니다!\n\n🚐 MPV 밴 택시가 필요하신가요?\n\n메시지로 알려주시면 현지 모빌리티 앱으로 넓은 밴 택시를 예약해 드립니다.\n\n🍳 주방 & 가전\n\n식기세척기, 오븐, 정수기 구비\n\n💧 정수기 (EVERPURE)\n브랜드: EVERPURE(미국) — 스타벅스 공식 파트너\n\n타입: 직수형 정수 시스템\n\n관리: 매월 전문 관리\n\n사용법: 싱크대 왼편 ‘정수기/Purified Water’ 라벨이 있는 작은 파우셋 사용\n\n특징: 음용·조리에 적합한, 매우 안전하고 맛있는 물\n\n집처럼 편하게 조리하세요!\n\n☕ 캡슐 커피 타임\n\n커피 머신 아래 서랍에 캡슐이 준비되어 있습니다. 자유롭게 이용하세요!\n\nilly 커피머신 사용 가이드\n\n빠른 시작: https://youtu.be/XEDAXZY50FM?si=uOfwquZXC6WCis_G\n스팀 밀크: https://youtu.be/bTzG7iM4dMA?si=aiEWUseiOT0as-Jo\n용량 설정: https://youtu.be/h2X5gLYpf_4?si=eaDtARcyGQTjddFz\n\n♻️ 음식물 쓰레기 처리\n\n싱크대 내장 디스포저 사용\n물을 틀고\n발판을 밟아 작동\n음식물 투입 후 분쇄\n⚠️ 뼈·조개껍데기 등 단단한 것은 넣지 말아주세요.\n\n📺 TV & 스트리밍\n\nGoogle TV 선택 후 Netflix, Disney+, YouTube 등 다양한 서비스를 이용하세요.\n\n🧻 비품\n\n여분 화장지는 식탁 옆 옷장에 있습니다.\n\n🧴 타월\n\n바디·페이스·풋 타월이 위치한 곳\n거울 옷장 뒤\n세탁실\n마스터룸 옷장\n\n🎁 어메니티 박스\n\n2층으로 올라가는 계단 아래 옷장에 풀 사이즈 어메니티 박스가 있습니다. 자유롭게 사용하세요!\n\n\n💬 문의 & 도움\n\n언제든지 메신저로 연락 주세요. 저희 팀이 신속히 답변 드리겠습니다!\n\n즐거운 시간을 보내시고 COZE에서 편안히 지내세요! 🏡",
+      "ts": 1784561761178
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "🌟 안녕하세요, COZE Hospitality 3.0에 오신 것을 환영합니다! \n\n\n\n저희 게스트 케어 팀이 여러분을 맞이하게 되어 기쁘습니다. 아래 유용하고 재미있는 팁을 참고해 즐거운 숙박 되세요! 😊\n\n📌 숙소 필수 정보\n\n주소 \n\n서울특별시 성북구 성북동 178-60\n\n\n차량(택시) 네비게이션용 주소(아래 주소를 찍고 오셔야 길을 잃지 않아요!(\n \n\n\n서울특별시 성북구 성북동 178-23\n\n\n정문 키박스 비밀번호 \n\n0 8 0 5 (사용 후 키를 반드시 키박스 안에 넣어주세요)\n\n\n객실 현관 비밀번호 \n\n체크인 날짜 6자리 (YYMMDD) + * \n예: 2025년 5월 10일 → 250510* (체류 기간 동안 변경되지 않습니다)\n\n\nWi-Fi 정보\n\n1F\nSSID : joyhasla_sg_1f\nPIN : joyjoyjoy1f\n\n2F\nSSID : joyhasla_sg_2f\nPIN : joyjoyjoy2f\n\n\n\n🚗 주차 안내\n숙소 앞 무료 주차 1대 가능.\n\n❌ 숙소",
+      "ts": 1784561763380
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "저희 체크인매뉴얼(PDF파일) 꼭 읽어봐주세요!",
+      "ts": 1784561790020
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "저희 체크인매뉴얼(PDF파일) 꼭 읽어봐주세요!",
+      "ts": 1784561790503
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "SG_CHECK_IN_MANUAL_2024_내국인-8-2-2-1.pdf",
+      "ts": 1784561802559
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "File: SG_CHECK_IN_MANUAL_2024_내국인-8-2-2-1.pdf",
+      "ts": 1784561803151
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "[NAVER Map]\nCOZE_Seongbukdong\nhttps://naver.me/xyjnW8t8",
+      "ts": 1784561810995
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "[NAVER Map]\nCOZE_Seongbukdong\nhttps://naver.me/xyjnW8t8",
+      "ts": 1784561813217
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "저희 숙소 근처 맛집 카페 명소들을 소개하는 네이버맵 기반 동네지도입니다 ^^",
+      "ts": 1784561901068
+    },
+    {
+      "sender": "GAYA | GUEST CARE",
+      "text": "저희 숙소 근처 맛집 카페 명소들을 소개하는 네이버맵 기반 동네지도입니다 ^^",
+      "ts": 1784561902556
     }
   ],
-  "120363409204133943@g.us": [
+  "line:C128b14d271133cba5a125ab4dd562413": [
     {
-      "sender": "COZE_CYRUS",
-      "text": "Hello, this is Cyrus from the COZE Guest Care Team 😊\n\nI just wanted to check in and make sure everything has been comfortable during your stay.\n\nIf there is anything inconvenient, anything you need help with, or if any supplies inside the accommodation are running low, please feel free to let me know.",
-      "ts": 1784533616925
+      "sender": "unknown",
+      "text": "Hello, could you please send this file to me again? The file has expired.",
+      "ts": 1784562087729
     },
     {
-      "sender": "Elisa Monroig",
-      "text": "everything has been great so far, thank you!",
-      "ts": 1784535427189
+      "sender": "COZE HOSPITALITY 3.0",
+      "text": "Here we go",
+      "ts": 1784563084961
     },
     {
-      "sender": "COZE_CYRUS",
-      "text": "That’s wonderful to hear! 😊 Please feel free to message us anytime if you need anything during your stay. We’re always happy to help!",
-      "ts": 1784536178480
+      "sender": "unknown",
+      "text": "감사합니다",
+      "ts": 1784564449783
+    }
+  ],
+  "821066906935@c.us": [
+    {
+      "sender": "COZE_Gaya",
+      "text": "/group 2629c248-379f-4b91-95de-586bf5429d5c",
+      "ts": 1784562149634
+    }
+  ],
+  "120363428979271936@g.us": [
+    {
+      "sender": "COZE_Gaya",
+      "text": "/link 2629c248-379f-4b91-95de-586bf5429d5c",
+      "ts": 1784562398857
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "/welcome",
+      "ts": 1784562421184
+    },
+    {
+      "sender": "Vangie",
+      "text": "Noted, thanks 😊",
+      "ts": 1784562486086
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "Hello, we are interested in these tours. Would you be able to make us an itinerary for each tour. Nothing too strenuous activity because we have an 80yr old with us. She can walk but might tire easily.",
+      "ts": 1784562491146
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "Would you be able to make us an itinerary for each tour. Nothing too strenuous activity because we have an 80yr old with us. from @32040573472770",
+      "ts": 1784562532556
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "We would be delighted to prepare a private itinerary for your group \n\nAs you will be traveling with an 80-year-old family member, we have designed each day to be comfortable and unhurried, with:\n\n✨ Shorter walking sections rather than long continuous walks\n✨ Regular seated breaks at cafés and restaurants\n✨ Vehicle drop-offs as close as reasonably possible\n✨ Minimal hills and stairways\n✨ Flexible timing according to your family member’s energy level\n✨ A complimentary wheelchair available with advance notice\n\nThe schedules below are planned as 10-hour private tours, but your COZE host can shorten, extend, or rearrange individual stops during the day whenever the group needs additional rest.",
+      "ts": 1784563512453
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "🏯 Monday, September 28\n\nPalace & Heritage Seoul\n\n9:00 AM — Hotel pickup\n9:30 AM — Gyeongbokgung Palace, focusing on the main highlights and easiest walking route\n11:45 AM — Local lunch, with three suggested options:\n\n• Baeknyeon Tojong Samgyetang — traditional ginseng chicken soup\n• Maji — Korean temple cuisine with vegan options\n• A trusted local restaurant specializing in saengtae maeuntang, a spicy fresh pollock stew\n\n1:30 PM — Gentle Bukchon and Blue House scenic route\n3:00 PM — Gilsangsa Temple, following the shorter and less strenuous section\n4:00 PM — Traditional hanok tea-house experience in Seongbuk-dong\n6:00 PM — N Seoul Tower for sunset and panoramic city views\nAround 7:00 PM — Return to the hotel",
+      "ts": 1784564315505
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "✨ Tuesday, September 29\n\nSeongsu Uptrend & Modern Seoul\n\n10:00 AM — Hotel pickup\n10:30 AM — Amore Seongsu K-beauty flagship experience\n11:30 AM — Dior Seongsu and Café Dior, subject to access and reservation availability\n12:30 PM — Lunch in Seongsu, with three recommended choices:\n\n• Mealbon — comforting Korean noodles and rice dishes\n• Daesung Galbi — traditional charcoal-grilled pork ribs\n• Nanpo — stylish contemporary Korean cuisine\n\n2:00 PM — Gentle Monster flagship and creative installations\n3:30 PM — COEX Starfield Library and indoor shopping break\n5:30 PM — Relaxed Han River sunset stop\n8:00 PM — Return to the hotel",
+      "ts": 1784564324973
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "🌳 Wednesday, September 30\n\nNami Island, Rail Bike & Forest Healing\n\n8:00 AM — Hotel pickup\n9:30 AM — Nami Island, following a shorter, flatter route with frequent seated breaks\n11:45 AM — Local lunch, with options such as:\n\n• Nami Island Kkokko Chuncheon Dakgalbi\n• Songwon Makguksu, known for local buckwheat noodles\n• Eondeokmaru Gapyeong Pine Nut Tofu House, a lighter senior-friendly option\n\n1:15 PM — Gapyeong Rail Bike experience with advance reservation\n3:15 PM — Jathyanggi Pureun Sup Pine Forest for a short, gentle forest-bathing walk\nAround 6:00 PM — Return to Seoul\n\nThe senior guest may ride while other group members handle the pedaling, or enjoy a nearby rest stop if preferred. The visiting order may change according to the reserved rail-bike time and traffic.",
+      "ts": 1784564334884
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "🏘️ Thursday, October 1\n\nKorean Folk Village & Suwon Hwaseong\n\n9:00 AM — Hotel pickup\n10:15 AM — Korean Folk Village, using a shortened route and including a seated cultural performance when available\n12:45 PM — Lunch choice:\n\n• Traditional Suwon wang-galbi beef ribs\n• Korean hanjeongsik set meal\n\n2:30 PM — Hwaseong Haenggung Palace\n3:30 PM — Suwon Hwaseong Fortress by tourist trolley or private van, avoiding the long fortress-wall walk\n4:45 PM — Café and rest break\n7:00 PM — Return to the hotel",
+      "ts": 1784564343074
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "🥢 Friday, October 2\n\nGwangjang Market, Insadong Shopping & ShopingTour\n\n10:00 AM — Hotel pickup\n10:30 AM — Gwangjang Market food tasting with comfortable seated stops\n12:30 PM — Insadong shopping for Korean crafts, gifts, souvenirs, and traditional products\n1:30 PM — Ssamjigil cultural shopping complex\n2:15 PM — Traditional Korean tea and dessert break\n3:15 PM — Myeongdong shopping\n5:30 PM — Relaxed seated farewell dinner at Myeongdong\n8:00 PM — Return to the hotel\n\nThis will be a van-assisted version of the food tour, with only short walks inside each neighborhood.",
+      "ts": 1784564417947
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "💜 Optional Extra Day\n\nBTS Theme Tour\n\n10:00 AM — Hotel pickup\n10:30 AM — HYBE headquarters exterior and photo stop\n11:30 AM — Yongsan BTS filming-location stop\n12:30 PM — Lunch at Yoojung Sikdang\n2:00 PM — Former BigHit building and trainee-era neighborhood\n3:30 PM — Café Hyuga, located in a former BTS dormitory building\n5:00 PM — Olympic Park or another BTS music-video and filming location\n6:30 PM — ARMY shopping or dinner\n8:00 PM — Return to the hotel",
+      "ts": 1784564437071
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "The BTS route can be personalized according to the group’s favorite members, songs, eras, and filming locations.\n\nWe will keep every day comfortable, personal, and flexible so that everyone—including your senior family member—can enjoy Korea without feeling rushed or overtired. 🌷\n\nGaya, Guest Care Team of COZE Hospitality 3.0",
+      "ts": 1784564683448
+    },
+    {
+      "sender": "Vangie",
+      "text": "Wow, they all look perfect to me. Will let my niece decide about the bts tour according to her preference.",
+      "ts": 1784564751946
+    },
+    {
+      "sender": "Mae Fuertes",
+      "text": "I dont see the iterinary. Just resend it.",
+      "ts": 1784572137560
+    },
+    {
+      "sender": "Vangie",
+      "text": "Just Back read. Its all on top",
+      "ts": 1784572479272
+    },
+    {
+      "sender": "Mae Fuertes",
+      "text": "The convo b4 you added me does not appear.",
+      "ts": 1784572970017
+    },
+    {
+      "sender": "Vangie",
+      "text": "Oh I think they are off line now. Maybe when they add you that’s the time you’ll see all the convo",
+      "ts": 1784573114781
+    },
+    {
+      "sender": "Mae Fuertes",
+      "text": "Ok will wait",
+      "ts": 1784573140943
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "COZE Hospitality 3.0\n\nAll You Need. All in One. All Yours.\n\n\n🇰🇷✨ Welcome to Korea! And Welcome to COZE.\n\nJet-lagged? Phone not working? Hungry but can’t read the menu?\nWe get it. And we’ve built a stay just for you.\n\nCOZE is where your trip begins with care — not confusion.\nWe don’t just rent homes. We curate your entire Korean experience around you.\n\n> Think: a home in Korea, powered by local friends who do everything for you.",
+      "ts": 1784592840529
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "We would be delighted to prepare a private itinerary for your group \n\nAs you will be traveling with an 80-year-old family member, we have designed each day to be comfortable and unhurried, with:\n\n✨ Shorter walking sections rather than long continuous walks\n✨ Regular seated breaks at cafés and restaurants\n✨ Vehicle drop-offs as close as reasonably possible\n✨ Minimal hills and stairways\n✨ Flexible timing according to your family member’s energy level\n✨ A complimentary wheelchair available with advance notice\n\nThe schedules below are planned as 10-hour private tours, but your COZE host can shorten, extend, or rearrange individual stops during the day whenever the group needs additional rest.",
+      "ts": 1784592861342
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "🏯 Monday, September 28\n\nPalace & Heritage Seoul\n\n9:00 AM — Hotel pickup\n9:30 AM — Gyeongbokgung Palace, focusing on the main highlights and easiest walking route\n11:45 AM — Local lunch, with three suggested options:\n\n• Baeknyeon Tojong Samgyetang — traditional ginseng chicken soup\n• Maji — Korean temple cuisine with vegan options\n• A trusted local restaurant specializing in saengtae maeuntang, a spicy fresh pollock stew\n\n1:30 PM — Gentle Bukchon and Blue House scenic route\n3:00 PM — Gilsangsa Temple, following the shorter and less strenuous section\n4:00 PM — Traditional hanok tea-house experience in Seongbuk-dong\n6:00 PM — N Seoul Tower for sunset and panoramic city views\nAround 7:00 PM — Return to the hotel",
+      "ts": 1784592862012
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "✨ Tuesday, September 29\n\nSeongsu Uptrend & Modern Seoul\n\n10:00 AM — Hotel pickup\n10:30 AM — Amore Seongsu K-beauty flagship experience\n11:30 AM — Dior Seongsu and Café Dior, subject to access and reservation availability\n12:30 PM — Lunch in Seongsu, with three recommended choices:\n\n• Mealbon — comforting Korean noodles and rice dishes\n• Daesung Galbi — traditional charcoal-grilled pork ribs\n• Nanpo — stylish contemporary Korean cuisine\n\n2:00 PM — Gentle Monster flagship and creative installations\n3:30 PM — COEX Starfield Library and indoor shopping break\n5:30 PM — Relaxed Han River sunset stop\n8:00 PM — Return to the hotel",
+      "ts": 1784592862661
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "🌳 Wednesday, September 30\n\nNami Island, Rail Bike & Forest Healing\n\n8:00 AM — Hotel pickup\n9:30 AM — Nami Island, following a shorter, flatter route with frequent seated breaks\n11:45 AM — Local lunch, with options such as:\n\n• Nami Island Kkokko Chuncheon Dakgalbi\n• Songwon Makguksu, known for local buckwheat noodles\n• Eondeokmaru Gapyeong Pine Nut Tofu House, a lighter senior-friendly option\n\n1:15 PM — Gapyeong Rail Bike experience with advance reservation\n3:15 PM — Jathyanggi Pureun Sup Pine Forest for a short, gentle forest-bathing walk\nAround 6:00 PM — Return to Seoul\n\nThe senior guest may ride while other group members handle the pedaling, or enjoy a nearby rest stop if preferred. The visiting order may change according to the reserved rail-bike time and traffic.",
+      "ts": 1784592863313
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "🏘️ Thursday, October 1\n\nKorean Folk Village & Suwon Hwaseong\n\n9:00 AM — Hotel pickup\n10:15 AM — Korean Folk Village, using a shortened route and including a seated cultural performance when available\n12:45 PM — Lunch choice:\n\n• Traditional Suwon wang-galbi beef ribs\n• Korean hanjeongsik set meal\n\n2:30 PM — Hwaseong Haenggung Palace\n3:30 PM — Suwon Hwaseong Fortress by tourist trolley or private van, avoiding the long fortress-wall walk\n4:45 PM — Café and rest break\n7:00 PM — Return to the hotel",
+      "ts": 1784592863984
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "🥢 Friday, October 2\n\nGwangjang Market, Insadong Shopping & ShopingTour\n\n10:00 AM — Hotel pickup\n10:30 AM — Gwangjang Market food tasting with comfortable seated stops\n12:30 PM — Insadong shopping for Korean crafts, gifts, souvenirs, and traditional products\n1:30 PM — Ssamjigil cultural shopping complex\n2:15 PM — Traditional Korean tea and dessert break\n3:15 PM — Myeongdong shopping\n5:30 PM — Relaxed seated farewell dinner at Myeongdong\n8:00 PM — Return to the hotel\n\nThis will be a van-assisted version of the food tour, with only short walks inside each neighborhood.",
+      "ts": 1784592864638
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "💜 Optional Extra Day\n\nBTS Theme Tour\n\n10:00 AM — Hotel pickup\n10:30 AM — HYBE headquarters exterior and photo stop\n11:30 AM — Yongsan BTS filming-location stop\n12:30 PM — Lunch at Yoojung Sikdang\n2:00 PM — Former BigHit building and trainee-era neighborhood\n3:30 PM — Café Hyuga, located in a former BTS dormitory building\n5:00 PM — Olympic Park or another BTS music-video and filming location\n6:30 PM — ARMY shopping or dinner\n8:00 PM — Return to the hotel",
+      "ts": 1784592865301
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "The BTS route can be personalized according to the group’s favorite members, songs, eras, and filming locations.\n\nWe will keep every day comfortable, personal, and flexible so that everyone—including your senior family member—can enjoy Korea without feeling rushed or overtired. 🌷\n\nGaya, Guest Care Team of COZE Hospitality 3.0",
+      "ts": 1784592865951
+    }
+  ],
+  "120363427263453158@g.us": [
+    {
+      "sender": "COZE_Gaya",
+      "text": "/link 5c8ab2a7-6b40-41e3-b0e4-93df93b63387",
+      "ts": 1784563416651
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "/welcome",
+      "ts": 1784563423742
+    }
+  ],
+  "120363427728007455@g.us": [
+    {
+      "sender": "LeeM",
+      "text": "London to Incheon International Airport \nFlight VS5502\nArriving Wed 29th July 16.15",
+      "ts": 1784577484016
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "/link 68ad319a-d4a2-4510-935f-346d7cb320a5",
+      "ts": 1784592557021
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "Hello @226091457314978  🌿\n\nThank you for sharing your flight details. We have noted the following airport pickup information:\n\n✈️ Flight: VS5502\n📍 Route: London → Incheon International Airport\n📅 Arrival: Wednesday, July 29\n🕓 Arrival time: 4:15 PM\n👨‍👩‍👧‍👦 Passengers: 6 adults and 3 children\n\nFor your group, we recommend arranging two standard airport vans to ensure everyone can travel comfortably with their luggage.\n\n🚐 One van will be provided complimentary as part of your stay benefit.\n🚐 The additional standard van will be KRW 100,000.\n\nThe airport pickup reservation will be arranged under the name Lee Mulligan. Our team will also provide detailed meeting instructions before your arrival. 😊\n\nWarm regards,\nGaya, Guest Care Team of COZE Hospitality 3.0",
+      "ts": 1784592705010
     }
   ],
   "120363422965145348@g.us": [
     {
       "sender": "Julia Halualani",
-      "text": "Hello. Can we please have juice, bread, kiwi and more coffee for breakfast tomorrow.",
-      "ts": 1784535240179
+      "text": "Hello. There are two leaks in the small bedroom in the fish house.",
+      "ts": 1784586501826
     },
     {
-      "sender": "COZE_CYRUS",
-      "text": "Sure",
-      "ts": 1784535445624
+      "sender": "COZE_Jin",
+      "text": "We sincerely apologize for the inconvenience.\n\n We will take action as quickly as possible.",
+      "ts": 1784587600773
     },
     {
-      "sender": "COZE_CYRUS",
-      "text": "Hello @190061194801246  The complimentary breakfast will be delivered right to your door by 7:00 AM tomorrow morning. 🥞☀️\n\n​Please pick it up and enjoy your delicious breakfast! We truly hope you have a wonderful and bright morning! 🥰🌈\n\n​Warmly,\nCyrus, Guest Care Team of COZE Hospitality 3.0 🧸🎈",
-      "ts": 1784540188047
+      "sender": "Jeff M",
+      "text": "We haven't been able to identify the origin of the leaks. We noticed the leak above the floor yesterday and the drip above the bed this morning. \n\nThis is in the fish 9 apartment in the single bedroom attached to the computer room.",
+      "ts": 1784589799011
+    },
+    {
+      "sender": "COZE_Jin",
+      "text": "Thank you so much for letting us know. We are currently looking into this, and we're currently in talks and arranging for technicians to handle it, so please bear with us. \n\nAlso, we will take care of things like replacing the linens by the end of today",
+      "ts": 1784590022454
+    },
+    {
+      "sender": "Jeff M",
+      "text": "Thank you",
+      "ts": 1784590506773
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "Hello, @135785407856745  🌿\n\nWe are currently contacting the contractor responsible for the roof waterproofing work regarding the rainwater leakage.\n\nAs it is still early in the morning, there may be a slight delay in their response, and we sincerely appreciate your patience and understanding. 🙏\n\nIt appears to be a relatively simple roof drainage issue, and our team expects to have it resolved shortly. We are very sorry for the inconvenience and will continue to keep you updated. 🛠️☔\n\nGaya, guest care team\n\nCOZE Hospitality 3.0\nAll you want, All-In-One, All yours",
+      "ts": 1784590625942
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "Hello, Team\n\nwe might need to replace the duvet and linen for this room, and rain storage bucket during the fix.\n\nSorry again for your inconvenience @135785407856745",
+      "ts": 1784591335690
     },
     {
       "sender": "Julia Halualani",
-      "text": "Thank you!!!",
-      "ts": 1784540286164
+      "text": "Thank you!",
+      "ts": 1784591765162
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "Our facilities team and I will visit the property at 11:00 AM today to inspect and resolve the roof drainage issue. 🛠️☔\nWe are currently coordinating with the contractor responsible for the roof waterproofing work as well. As it is still early in the morning, we sincerely appreciate your patience with the slight delay. 🙏\nThe issue appears to be related to a relatively simple drainage problem, and we will do our best to resolve it promptly during our visit.\nThank you very much for your understanding. 😊\nGaya, guest care team\nCOZE Hospitality 3.0\nAll you want, All-In-One, All yours",
+      "ts": 1784593660918
     }
   ],
-  "kakao:474727795856044": [
+  "kakao:473235144423012": [
     {
-      "sender": "GAYA | GUEST CARE",
-      "text": "photo",
-      "ts": 1784538628350
+      "sender": "박진심",
+      "text": "아하 그렇군요. 마트폰 연세가 드신 어머님과 이번에 함께했는데 역시 나이있으신 분들은 기계보다 프린트된 실물을 선호하십니다. 혹시 50대이상 계스트를 대접하려면 모든 메뉴얼과 정보를 프린트 하는것이 더 쉬울듯 싶습니다",
+      "ts": 1784588643206
     },
     {
-      "sender": "GAYA | GUEST CARE",
-      "text": "Photo",
-      "ts": 1784538628966
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "Welcome to COZE !",
-      "ts": 1784538636780
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "Welcome to COZE !",
-      "ts": 1784538637113
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "COZE Hospitality 3.0\n\nAll You Need. All in One. All Yours.\n\n\n🇰🇷✨ Welcome to Korea! And Welcome to COZE.\n\nJet-lagged? Phone not working? Hungry but can’t read the menu?\nWe get it. And we’ve built a stay just for you.\n\nCOZE is where your trip begins with care — not confusion.\nWe don’t just rent homes. We curate your entire Korean experience around you.\n\n> Think: a home in Korea, powered by local friends who do everything for you.",
-      "ts": 1784538651312
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "COZE Hospitality 3.0\n\nAll You Need. All in One. All Yours.\n\n\n🇰🇷✨ Welcome to Korea! And Welcome to COZE.\n\nJet-lagged? Phone not working? Hungry but can’t read the menu?\nWe get it. And we’ve built a stay just for you.\n\nCOZE is where your trip begins with care — not confusion.\nWe don’t just rent homes. We curate your entire Korean experience around you.\n\n> Think: a home in Korea, powered by local friends who do everything for you.",
-      "ts": 1784538652868
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "For the smoothest experience, please invite your family or travel companions who will actually stay with us into this channel too. That way, everyone can ask questions and receive updates together. ✨\n\nWe’re so happy to welcome you, and we’ll take good care of you from here. 🌿",
-      "ts": 1784538665840
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "For the smoothest experience, please invite your family or travel companions who will actually stay with us into this channel too. That way, everyone can ask questions and receive updates together. ✨\n\nWe’re so happy to welcome you, and we’ll take good care of you from here. 🌿",
-      "ts": 1784538666849
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "Here we share the service manual for your comfortable stay!",
-      "ts": 1784538684414
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "Here we share the service manual for your comfortable stay!",
-      "ts": 1784538684442
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "coze.care/prana",
-      "ts": 1784538690809
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "coze.care/prana",
-      "ts": 1784538691333
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "upper is the check in manual, so you can check everything you need to ask :)",
-      "ts": 1784538711485
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "upper is the check in manual, so you can check everything you need to ask :)",
-      "ts": 1784538713218
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "https://www.coze.care/prana#airport-van",
-      "ts": 1784538748401
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "https://www.coze.care/prana#airport-van",
-      "ts": 1784538749820
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "airport van information!",
-      "ts": 1784538764969
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "airport van information!",
-      "ts": 1784538765591
-    },
-    {
-      "sender": "김진주",
-      "text": "Our flight number is AY041\nArrival date 18.08.2026\nArrival time 11:20\nAirline Finnair",
-      "ts": 1784538922045
-    },
-    {
-      "sender": "김진주",
-      "text": "Our flight number is AY041\nArrival date 18.08.2026\nArrival time 11:20\nAirline Finnair",
-      "ts": 1784538922644
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "sure! 3 people, right?",
-      "ts": 1784538948785
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "sure! 3 people, right?",
-      "ts": 1784538948915
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "it costs 110K KRW!",
-      "ts": 1784538955179
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "it costs 110K KRW!",
-      "ts": 1784538955823
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "*COZE eSIM 10% OFF 📱✨*\n\nLand in Korea, go online instantly!\n\nNo airport lines, no SIM-card hunting, no recharge stress.\nJust set up your eSIM before arrival and stay connected the moment you land 😊\n\nApply & pay easily through the Google Form below.\n\n🔗 https://docs.google.com/forms/d/e/1FAIpQLSdXQoDPivSiUw0Ryvk8nJFaUOAwJZdZak69BYErkJHkSSCz_A/viewform?pli=1⁠ \n\nGaya, Guest Care Team of COZE Hospitality 3.0",
-      "ts": 1784538990043
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "*COZE eSIM 10% OFF 📱✨*\n\nLand in Korea, go online instantly!\n\nNo airport lines, no SIM-card hunting, no recharge stress.\nJust set up your eSIM before arrival and stay connected the moment you land 😊\n\nApply & pay easily through the Google Form below.\n\n🔗 https://docs.google.com/forms/d/e/1FAIpQLSdXQoDPivSiUw0Ryvk8nJFaUOAwJZdZak69BYErkJHkSSCz_A/viewform?pli=1⁠ \n\nGaya, Guest Care Team of COZE Hospitality 3.0",
-      "ts": 1784538990741
-    },
-    {
-      "sender": "김진주",
-      "text": "Also my government name is Jinju Karita Lovie \nMy name has changed so maybe airbnb is slow with updates but I thought I will let you know~~",
-      "ts": 1784538994400
-    },
-    {
-      "sender": "김진주",
-      "text": "Also my government name is Jinju Karita Lovie \nMy name has changed so maybe airbnb is slow with updates but I thought I will let you know~~",
-      "ts": 1784538995083
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "{\"logId\":3888973712757927937,\"byHost\":false,\"hidden\":true,\"feedType\":14}",
-      "ts": 1784538996719
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "*COZE eSIM 10% OFF 📱✨*\n\nLand in Korea, go online instantly!\n\nNo airport lines, no SIM-card hunting, no recharge stress.\nJust set up your eSIM before arrival and stay connected the moment you land 😊\n\nApply & pay easily through the Google Form below.\n\n🔗 https://docs.google.com/forms/d/e/1FAIpQLSdXQoDPivSiUw0Ryvk8nJFaUOAwJZdZak69BYErkJHkSSCz_A/viewform?pli=1⁠ \n\nGaya, Guest Care Team of COZE Hospitality 3.0",
-      "ts": 1784538997576
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "photo",
-      "ts": 1784539005144
-    },
-    {
-      "sender": "김진주",
-      "text": "That is perfect!",
-      "ts": 1784539005147
-    },
-    {
-      "sender": "김진주",
-      "text": "That is perfect!",
-      "ts": 1784539006824
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "Yes. That name might be better to sync with airbnb's one because our team need to find you easily :)",
-      "ts": 1784539062710
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "Yes. That name might be better to sync with airbnb's one because our team need to find you easily :)",
-      "ts": 1784539063343
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "www.coze.care",
-      "ts": 1784539073183
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "www.coze.care",
-      "ts": 1784539074591
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "experience and tour service you can consider :)",
-      "ts": 1784539093816
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "experience and tour service you can consider :)",
-      "ts": 1784539094456
-    },
-    {
-      "sender": "김진주",
-      "text": "Yes 3 people",
-      "ts": 1784539275603
-    },
-    {
-      "sender": "김진주",
-      "text": "Yes 3 people",
-      "ts": 1784539275677
+      "sender": "박진심",
+      "text": "아하 그렇군요. 마트폰 연세가 드신 어머님과 이번에 함께했는데 역시 나이있으신 분들은 기계보다 프린트된 실물을 선호하십니다. 혹시 50대이상 계스트를 대접하려면 모든 메뉴얼과 정보를 프린트 하는것이 더 쉬울듯 싶습니다",
+      "ts": 1784588645396
     }
   ],
-  "821026226935@c.us": [
+  "kakao:301321483004194": [
     {
-      "sender": "COZMO AI",
-      "text": "/group cfb7e509-056a-49fe-9b8c-4514df796aaf",
-      "ts": 1784540511865
+      "sender": "변이규",
+      "text": "변이규100",
+      "ts": 1784595028517
+    },
+    {
+      "sender": "변이규",
+      "text": "변이규100",
+      "ts": 1784595030113
+    }
+  ],
+  "120363427141316994@g.us": [
+    {
+      "sender": "Sandy Rhee Ross",
+      "text": "Good morning!  Would it be possible to check-in at 2pm?  If not, we will adapt.  Thank you!",
+      "ts": 1784595593132
+    },
+    {
+      "sender": "COZE_CYRUS",
+      "text": "Good morning 😊 Since you’ll be coming directly from the airport in our van, we’ll coordinate with your arrival and do our very best to have the accommodation ready as quickly as possible before you get here. We’ll keep you updated along the way. 🙏",
+      "ts": 1784596263370
+    },
+    {
+      "sender": "COZE_Jin",
+      "text": "Here we invited the pickup driver Benjamin @66941494517817",
+      "ts": 1784596740246
+    },
+    {
+      "sender": "Sandy Rhee Ross",
+      "text": "Thank you!",
+      "ts": 1784596761741
+    },
+    {
+      "sender": "COZE_CYRUS",
+      "text": "Hello! 🇰🇷 @176412208173203 \n\nMy name is Cyrus Noh, and I’ll be your check-in host today.\n\nI’m here to help make your arrival smooth and comfortable, and to guide you through anything you may need for your check-in. 🏠✨\n\nCOZE Hospitality 3.0",
+      "ts": 1784596835757
+    },
+    {
+      "sender": "COZE_CYRUS",
+      "text": "when you go out to arrival hall, please find out your name board.",
+      "ts": 1784596841239
+    }
+  ],
+  "wechat:26308516478@chatroom": [
+    {
+      "sender": "amanda342737",
+      "text": "hi， Do u guys know how to make reservation for make up studio?",
+      "ts": 1784597572703
+    },
+    {
+      "sender": "COZE JIN",
+      "text": "If you let us know which makeup studio you prefer, we’ll contact them and see if we can book it for you.",
+      "ts": 1784598195301
+    }
+  ],
+  "551146733492@c.us": [
+    {
+      "sender": "551146733492@c.us",
+      "text": "🎉 Hello from the 360Dialog Direct API sandbox!",
+      "ts": 1784598384599
+    },
+    {
+      "sender": "551146733492@c.us",
+      "text": "🎉 Hello from the 360Dialog Direct API sandbox!",
+      "ts": 1784598394171
+    }
+  ],
+  "4930577140819@c.us": [
+    {
+      "sender": "4930577140819@c.us",
+      "text": "We received your message and the team will get back to you.",
+      "ts": 1784598453455
+    },
+    {
+      "sender": "4930577140819@c.us",
+      "text": "Hello There, Thanks for reaching out. This is Juhi from 360Dialog Support and I will be assisting you today.\n​\nPlease let me know if you have further questions for me, I would be happy to answer them\n\nThank you",
+      "ts": 1784599377889
     }
   ]
 }

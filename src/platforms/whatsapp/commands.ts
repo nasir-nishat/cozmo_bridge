@@ -27,13 +27,36 @@ export function isStaffLid(lid: string): boolean {
     }
 }
 
+// Every command reply goes through here instead of `.catch(() => {})`. If the WhatsApp
+// send itself fails (e.g. the account is reachout-restricted, same as the group-create
+// failures), the sender must not just go silent — fall back to Jandi/Telegram so someone
+// sees it instead of the requester being left hanging with no response at all.
+async function replyOrEscalate(jid: string, text: string, context: string): Promise<void> {
+    try {
+        await evoSendText(jid, text);
+    } catch (e: any) {
+        const detail = e?.response?.data ? JSON.stringify(e.response.data) : (e?.message || 'unknown error');
+        console.error(`❌ Reply send failed [${context}] → ${jid}: ${detail}`);
+        await sendAlert(
+            `📵 <b>WhatsApp Reply Failed to Deliver</b>\n─────────────────\n` +
+            `📍 <b>Command:</b> ${context}\n` +
+            `📱 <b>Intended for:</b> <code>${jid}</code>\n` +
+            `❗ <b>Send error:</b> ${detail}\n` +
+            `─────────────────\n<b>Message that didn't get through:</b>\n${text}\n` +
+            `─────────────────\n<i>via COZMO · COZE Hospitality</i>`
+        ).catch((alertErr: any) => {
+            console.error(`❌ Fallback alert also failed [${context}]:`, alertErr?.message);
+        });
+    }
+}
+
 export async function handleLinkCommand(
     from: string,
     uid: string,
     welcomeOpts?: { senderJid: string; pushName: string }
 ): Promise<void> {
     if (!uid) {
-        await evoSendText(from, '❌ Usage: /link <lead_uid>').catch(() => { });
+        await replyOrEscalate(from, '❌ Usage: /link <lead_uid>', '/link usage');
         return;
     }
     try {
@@ -55,10 +78,7 @@ export async function handleLinkCommand(
                 propertyName = prop?.name || 'N/A';
             } catch { }
         }
-        await evoSendText(from, `✅ Linked with UID\n👤 ${guest_name}\n🏠 ${propertyName}\n🔑 ${uid}\n📅 ${check_in}`).catch((e: any) => {
-            console.error('❌ /link reply send failed:', JSON.stringify(e?.response?.data || e?.message));
-            console.error('❌ /link reply number was:', from);
-        });
+        await replyOrEscalate(from, `✅ Linked with UID\n👤 ${guest_name}\n🏠 ${propertyName}\n🔑 ${uid}\n📅 ${check_in}`, '/link success');
         await sendAlert(
             `🔗 <b>Group Linked</b>\n─────────────────\n` +
             `👤 <b>Guest:</b> ${guest_name}\n` +
@@ -74,10 +94,11 @@ export async function handleLinkCommand(
     } catch (e: any) {
         const is404 = e?.response?.status === 404 || (e as any).status === 404;
         console.error('❌ /link command error:', e?.message);
-        await evoSendText(
+        await replyOrEscalate(
             from,
-            is404 ? '❌ Lead UID not found — check the UID is correct' : '❌ Error linking group'
-        ).catch(() => { });
+            is404 ? '❌ Lead UID not found — check the UID is correct' : '❌ Error linking group',
+            '/link error'
+        );
     }
 }
 
@@ -88,12 +109,12 @@ export async function handleWelcomeCommand(
 ): Promise<void> {
     console.log(`🔍 /welcome check: pushName="${pushName}" senderJid="${senderJid}"`);
     if (!isStaffLid(senderJid)) {
-        await evoSendText(from, '❌ Only team members can send /welcome').catch(() => { });
+        await replyOrEscalate(from, '❌ Only team members can send /welcome', '/welcome staff-check');
         return;
     }
     const lead_uid = getLeadUid(from);
     if (!lead_uid) {
-        await evoSendText(from, '❌ Group not linked. Use /link <lead_uid> first').catch(() => { });
+        await replyOrEscalate(from, '❌ Group not linked. Use /link <lead_uid> first', '/welcome not-linked');
         return;
     }
     try {
@@ -108,7 +129,7 @@ export async function handleWelcomeCommand(
 
         console.log(`📨 /welcome triggered by ${senderJid} for lead ${lead_uid}`);
 
-        await evoSendText(from, '⏳ Sending welcome messages...').catch(() => { });
+        await replyOrEscalate(from, '⏳ Sending welcome messages...', '/welcome progress');
 
         const msgs = await getMessages(langCode);
         console.log(`📋 /welcome messages loaded (${langCode}): ${Object.keys(msgs).join(', ') || 'none'}`);
@@ -162,7 +183,7 @@ export async function handleWelcomeCommand(
         }
 
         if (failures.length > 0) {
-            await evoSendText(from, `⚠️ Some messages failed: ${failures.join(', ')}`).catch(() => { });
+            await replyOrEscalate(from, `⚠️ Some messages failed: ${failures.join(', ')}`, '/welcome partial-failure');
             await sendAlert(
                 `⚠️ <b>Welcome Partial Failure (WA)</b>\n─────────────────\n` +
                 `👤 <b>Guest:</b> ${guest_name}\n` +
@@ -187,18 +208,18 @@ export async function handleWelcomeCommand(
         }
     } catch (e: any) {
         console.error('❌ /welcome error:', e?.message);
-        await evoSendText(from, '❌ Failed to send welcome messages').catch(() => { });
+        await replyOrEscalate(from, '❌ Failed to send welcome messages', '/welcome error');
     }
 }
 
 export async function handleCkoutCommand(from: string, senderJid: string, text = '/ckout'): Promise<void> {
     if (!isStaffLid(senderJid)) {
-        await evoSendText(from, '❌ Only team members can send /ckout').catch(() => {});
+        await replyOrEscalate(from, '❌ Only team members can send /ckout', '/ckout staff-check');
         return;
     }
     const lead_uid = getLeadUid(from);
     if (!lead_uid) {
-        await evoSendText(from, '❌ Group not linked. Use /link <lead_uid> first').catch(() => {});
+        await replyOrEscalate(from, '❌ Group not linked. Use /link <lead_uid> first', '/ckout not-linked');
         return;
     }
     try {
@@ -212,25 +233,25 @@ export async function handleCkoutCommand(from: string, senderJid: string, text =
         }
         const message = await getScheduledMessage('checkout_reminder', 'EN');
         if (!message) {
-            await evoSendText(from, '❌ Checkout message not found in Sheets').catch(() => {});
+            await replyOrEscalate(from, '❌ Checkout message not found in Sheets', '/ckout missing-message');
             return;
         }
         await evoSendText(from, message);
         console.log(`✅ /ckout sent → ${from}`);
     } catch (e: any) {
         console.error('❌ /ckout error:', e?.message);
-        await evoSendText(from, '❌ Failed to send checkout message').catch(() => {});
+        await replyOrEscalate(from, '❌ Failed to send checkout message', '/ckout error');
     }
 }
 
 export async function handleCkinCommand(from: string, senderJid: string): Promise<void> {
     if (!isStaffLid(senderJid)) {
-        await evoSendText(from, '❌ Only team members can send /ckin').catch(() => {});
+        await replyOrEscalate(from, '❌ Only team members can send /ckin', '/ckin staff-check');
         return;
     }
     const lead_uid = getLeadUid(from);
     if (!lead_uid) {
-        await evoSendText(from, '❌ Group not linked. Use /link <lead_uid> first').catch(() => {});
+        await replyOrEscalate(from, '❌ Group not linked. Use /link <lead_uid> first', '/ckin not-linked');
         return;
     }
     try {
@@ -239,7 +260,7 @@ export async function handleCkinCommand(from: string, senderJid: string): Promis
         const lang = stored || 'EN';
         const propertyName = lead?.propertyName || lead?.unit?.name || '';
         const tipKeys = skipsBreakfast(propertyName) ? ['food_tips', 'van_tips'] : ['breakfast_tips', 'food_tips', 'van_tips'];
-        await evoSendText(from, '⏳ Sending check-in messages...').catch(() => {});
+        await replyOrEscalate(from, '⏳ Sending check-in messages...', '/ckin progress');
         for (const key of tipKeys) {
             const msg = await getTipsMessage(key, lang);
             if (msg) { await evoSendText(from, msg); await sleep(3000); }
@@ -249,7 +270,7 @@ export async function handleCkinCommand(from: string, senderJid: string): Promis
         console.log(`✅ /ckin sent → ${from}`);
     } catch (e: any) {
         console.error('❌ /ckin error:', e?.message);
-        await evoSendText(from, '❌ Failed to send check-in messages').catch(() => {});
+        await replyOrEscalate(from, '❌ Failed to send check-in messages', '/ckin error');
     }
 }
 
@@ -266,7 +287,7 @@ export async function handleGroupCommand(
     const replyTo = from.endsWith('@g.us') ? senderJid : from;
 
     if (!uid) {
-        await evoSendText(replyTo, '❌ Usage: /group <lead_uid>').catch(() => { });
+        await replyOrEscalate(replyTo, '❌ Usage: /group <lead_uid>', '/group usage');
         return;
     }
     const isDM = !from.endsWith('@g.us');
@@ -279,7 +300,7 @@ export async function handleGroupCommand(
     if (existingGroupId) {
         const inviteLink = await getGroupInviteLink(existingGroupId).catch(() => null);
         const groupRef = inviteLink ? `🔗 ${inviteLink}` : `🆔 ${existingGroupId}`;
-        await evoSendText(replyTo, `⚠️ Group already exists for this booking\n${groupRef}`).catch(() => { });
+        await replyOrEscalate(replyTo, `⚠️ Group already exists for this booking\n${groupRef}`, '/group already-exists');
         return;
     }
 
@@ -287,10 +308,11 @@ export async function handleGroupCommand(
     if (groupCreationInProgress.has(uid)) {
         const { startedBy } = groupCreationInProgress.get(uid)!;
         groupCreationInProgress.get(uid)!.replyJids.push(replyTo);
-        await evoSendText(replyTo,
+        await replyOrEscalate(replyTo,
             `⏳ Already being set up by ${startedBy}.\n\n` +
-            `You'll be notified when the group is ready.`
-        ).catch(() => { });
+            `You'll be notified when the group is ready.`,
+            '/group already-in-progress'
+        );
         return;
     }
 
@@ -312,11 +334,12 @@ export async function handleGroupCommand(
         const starterName = pushName || 'a team member';
         groupCreationInProgress.set(uid, { startedBy: starterName, replyJids: [replyTo] });
 
-        await evoSendText(replyTo,
+        await replyOrEscalate(replyTo,
             `⏳ Creating group for ${guest_name}...\n\n` +
             `Everything is handled. Welcome messages will arrive in the group within 30–40 minutes (slow-paced on purpose).\n\n` +
-            `No action needed.`
-        ).catch(() => { });
+            `No action needed.`,
+            '/group progress'
+        );
 
         const phone = info?.phoneNumber || info?.cellPhoneNumber || '';
         const nationality = (info?.countryCode || 'US').toUpperCase();
@@ -341,14 +364,15 @@ export async function handleGroupCommand(
 
         if (groupId) {
             for (const jid of replyJids) {
-                await evoSendText(jid,
+                await replyOrEscalate(jid,
                     `✅ Group ready!\n` +
                     `👤 ${guest_name}\n` +
                     `🏠 ${propertyName}\n` +
                     `🆔 ${groupId}\n\n` +
                     `Welcome messages will arrive in the group shortly.\n\n` +
-                    `Please send a message in the group today to keep it active.`
-                ).catch(() => { });
+                    `Please send a message in the group today to keep it active.`,
+                    '/group success'
+                );
             }
         } else {
             const failure = getLastCreateFailure(uid);
@@ -359,16 +383,17 @@ export async function handleGroupCommand(
                   `\n🏷️ Create it manually with this exact name:\n${failure.groupName}`
                 : '❌ Group creation failed — check logs';
             for (const jid of replyJids) {
-                await evoSendText(jid, msg).catch(() => { });
+                await replyOrEscalate(jid, msg, '/group failure');
             }
         }
     } catch (e: any) {
         groupCreationInProgress.delete(uid);
         const is404 = e?.response?.status === 404 || (e as any).status === 404;
         console.error('❌ /group command error:', e?.message);
-        await evoSendText(
+        await replyOrEscalate(
             replyTo,
-            is404 ? '❌ Lead UID not found — check the UID is correct' : '❌ Error creating group'
-        ).catch(() => { });
+            is404 ? '❌ Lead UID not found — check the UID is correct' : '❌ Error creating group',
+            '/group error'
+        );
     }
 }
