@@ -2487,7 +2487,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+818040158352",
-    "updatedAt": "2026-07-20T06:00:06.655Z"
+    "updatedAt": "2026-07-22T02:00:07.533Z"
   },
   {
     "leadUid": "cf3fe203-7876-4c54-b47c-feffff5094dd",
@@ -2502,7 +2502,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+19715334280",
-    "updatedAt": "2026-07-21T01:00:03.661Z"
+    "updatedAt": "2026-07-21T06:00:10.198Z"
   },
   {
     "leadUid": "78d5dddc-ede4-4eb1-b2e6-fc0e1e5bfe68",
@@ -2664,10 +2664,10 @@
     "adults": 0,
     "children": 0,
     "infants": 0,
-    "status": "NEW",
+    "status": "CLOSED",
     "source": "INQUIRY",
     "phone": "",
-    "updatedAt": "2026-07-20T13:20:41.479Z"
+    "updatedAt": "2026-07-21T13:20:27.183Z"
   },
   {
     "leadUid": "1e916def-3f2c-4b2d-a616-322cdd76aedd",
@@ -2727,7 +2727,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+15038877399",
-    "updatedAt": "2026-07-20T09:40:37.533Z"
+    "updatedAt": "2026-07-21T06:00:14.240Z"
   },
   {
     "leadUid": "687b5e16-c5b4-4d04-92f1-950f6753cd98",
@@ -2862,7 +2862,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+821024227377",
-    "updatedAt": "2026-07-20T09:40:36.582Z"
+    "updatedAt": "2026-07-21T06:00:12.586Z"
   },
   {
     "leadUid": "732ce61a-87a7-432a-8498-87076e6206ef",
@@ -2877,7 +2877,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+8613637844228",
-    "updatedAt": "2026-07-20T09:40:31.472Z"
+    "updatedAt": "2026-07-21T06:00:06.318Z"
   },
   {
     "leadUid": "7e6de135-d05b-4e1b-8654-51f7a06e6cd1",
@@ -3195,6 +3195,21 @@
     "updatedAt": "2026-07-12T13:48:38.330Z"
   },
   {
+    "leadUid": "cee9b1e1-7d31-44ce-9bcc-825dd53d3872",
+    "guestName": "다운",
+    "property": "JT_TEVA",
+    "checkIn": "2026-08-07",
+    "checkOut": "2026-08-09",
+    "nationality": "",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "NEW",
+    "source": "INQUIRY",
+    "phone": "",
+    "updatedAt": "2026-07-21T06:23:15.215Z"
+  },
+  {
     "leadUid": "03d2f37a-9fdd-402d-b1db-8d25f826caaa",
     "guestName": "Mayurika Kukul Korala Gamage",
     "property": "JT_TEVA",
@@ -3447,7 +3462,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+37255545464",
-    "updatedAt": "2026-07-20T09:40:30.880Z"
+    "updatedAt": "2026-07-21T06:00:05.553Z"
   },
   {
     "leadUid": "f245900f-daae-4059-93b3-6764c02b3934",
@@ -3462,7 +3477,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+8613829667991",
-    "updatedAt": "2026-07-20T11:27:49.436Z"
+    "updatedAt": "2026-07-21T06:00:02.675Z"
   },
   {
     "leadUid": "48e11656-156b-4a08-8a9f-3dfdfbea5c5a",
@@ -3657,7 +3672,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+41796508261",
-    "updatedAt": "2026-07-20T11:26:08.762Z"
+    "updatedAt": "2026-07-21T06:00:03.851Z"
   },
   {
     "leadUid": "43ecdc76-9604-4ef1-bd10-ca0dbfd108fe",
@@ -3867,7 +3882,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+819066148284",
-    "updatedAt": "2026-07-20T09:40:32.161Z"
+    "updatedAt": "2026-07-21T06:00:07.064Z"
   },
   {
     "leadUid": "9135b690-fb31-44b9-9ab4-4b5a7cc2e0e4",
@@ -3897,7 +3912,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+85261504302",
-    "updatedAt": "2026-07-20T09:40:34.678Z"
+    "updatedAt": "2026-07-21T06:00:10.949Z"
   },
   {
     "leadUid": "5c239fbf-996e-46de-87de-a0ebec698d78",
@@ -4017,7 +4032,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+886928640702",
-    "updatedAt": "2026-07-20T09:40:36.186Z"
+    "updatedAt": "2026-07-21T06:00:12.001Z"
   },
   {
     "leadUid": "d55aec30-6142-409b-9365-50d430cc1786",
@@ -4422,7 +4437,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+6281212041196",
-    "updatedAt": "2026-07-20T09:40:37.935Z"
+    "updatedAt": "2026-07-21T06:00:14.849Z"
   },
   {
     "leadUid": "d0fa2ffa-5ca7-426f-851c-21e1af1ae438",
@@ -4632,7 +4647,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+6596923954",
-    "updatedAt": "2026-07-20T09:40:32.907Z"
+    "updatedAt": "2026-07-21T06:00:08.042Z"
   },
   {
     "leadUid": "e947d52c-74fb-4735-931a-cdb52a4a9f7d",
@@ -4830,6 +4845,21 @@
     "updatedAt": "2026-05-25T07:11:32.257Z"
   },
   {
+    "leadUid": "795ed541-19e8-4751-9f24-2a28e99f64d8",
+    "guestName": "Russell Maglalang",
+    "property": "SJ_JOYHASLA",
+    "checkIn": "2026-12-17",
+    "checkOut": "2026-12-27",
+    "nationality": "AU",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "BOOKED",
+    "source": "BOOKING",
+    "phone": "+61430184665",
+    "updatedAt": "2026-07-21T07:53:15.055Z"
+  },
+  {
     "leadUid": "9fb572bf-f440-42e0-affd-450f3646b576",
     "guestName": "Lloyd Stambaugh",
     "property": "HT_TEVA RETREAT",
@@ -4962,7 +4992,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+6592951602",
-    "updatedAt": "2026-07-20T21:44:19.377Z"
+    "updatedAt": "2026-07-21T06:00:09.024Z"
   },
   {
     "leadUid": "5439396c-f2cd-47c5-97a3-6eeb7e6646b4",
@@ -5007,7 +5037,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+6594525130",
-    "updatedAt": "2026-07-20T09:40:35.030Z"
+    "updatedAt": "2026-07-21T06:00:11.391Z"
   },
   {
     "leadUid": "e6aa41f7-f4ca-43b2-908a-9153c3be4a32",

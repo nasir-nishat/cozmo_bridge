@@ -1,18 +1,4 @@
-﻿[2026-06-05 18:49:14.502] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
-[2026-06-05 18:49:14.502] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC æœåŠ¡å·²åœ¨è¿è¡Œ
-[2026-06-05 18:49:52.596] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
-[2026-06-05 18:49:52.596] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
-[2026-06-05 18:49:52.599] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
-[2026-06-05 18:54:29.208] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
-[2026-06-05 18:54:29.208] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC æœåŠ¡å·²åœ¨è¿è¡Œ
-[2026-06-05 18:55:02.438] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
-[2026-06-05 18:55:02.438] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
-[2026-06-05 18:55:02.440] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
-[2026-06-07 13:51:21.027] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
-[2026-06-07 13:51:21.028] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC æœåŠ¡å·²åœ¨è¿è¡Œ
-[2026-06-08 09:56:51.326] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
-[2026-06-08 09:56:51.326] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC æœåŠ¡å™¨æˆåŠŸå¯åŠ¨ï¼Œç›‘å¬ç«¯å£: 10086
-[2026-06-08 09:56:51.329] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+﻿[2026-06-08 09:56:51.329] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
 [2026-06-08 10:19:14.317] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
 [2026-06-08 10:19:14.318] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC æœåŠ¡å·²åœ¨è¿è¡Œ
 [2026-06-08 10:20:59.507] [info] [WCF] [spy.cpp::32::Spy::Init] WCF æ”¯æŒç‰ˆæœ¬: 3.9.12.51ï¼Œå½“å‰ç‰ˆæœ¬: 3.9.12.51
@@ -501,3 +487,17 @@
 [2026-07-20 18:40:21.619] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
 [2026-07-20 18:40:21.619] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
 [2026-07-20 18:40:21.620] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-07-21 13:41:00.447] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-07-21 13:41:00.447] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-07-21 13:41:00.449] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-07-21 13:41:05.283] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-07-21 13:41:05.283] [warning] [WCF] [rpc_server.cpp::76::RpcServer::start] RPC 服务已在运行
+[2026-07-21 13:41:10.643] [error] [WCF] [rpc_server.cpp::333::RpcServer::run_rpc_server] cmdSock-nng_recv error: Object closed
+[2026-07-21 13:41:11.032] [info] [WCF] [rpc_server.cpp::122::RpcServer::stop] RPC 服务已停止
+[2026-07-21 13:41:11.032] [warning] [WCF] [rpc_server.cpp::100::RpcServer::stop] RPC 服务未运行
+[2026-07-21 13:43:12.907] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-07-21 13:43:12.907] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-07-21 13:43:12.908] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2026-07-21 14:11:46.149] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.51，当前版本: 3.9.12.51
+[2026-07-21 14:11:46.149] [info] [WCF] [rpc_server.cpp::93::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2026-07-21 14:11:46.150] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086

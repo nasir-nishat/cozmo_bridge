@@ -14,5 +14,21 @@
     "onWhatsApp": true,
     "fireAt": "2026-07-20T11:56:12.108Z",
     "createdAt": "2026-07-20T11:26:12.108Z"
+  },
+  {
+    "leadUid": "795ed541-19e8-4751-9f24-2a28e99f64d8",
+    "propertyUid": "9a679f6d-fe7f-460d-bdeb-a1a973b595ae",
+    "guestName": "Russell Maglalang",
+    "phone": "",
+    "property": "SJ_JOYHASLA",
+    "checkIn": "2026-12-17T15:00:00",
+    "checkOut": "2026-12-27T11:00:00",
+    "nationality": "AU",
+    "leadStatus": "BOOKED",
+    "leadType": "BOOKING",
+    "groupName": "COZE SJ 17thDec Russell Maglalang 3A2K",
+    "onWhatsApp": false,
+    "fireAt": "2026-07-21T08:23:18.361Z",
+    "createdAt": "2026-07-21T07:53:18.361Z"
   }
 ]

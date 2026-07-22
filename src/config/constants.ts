@@ -130,6 +130,20 @@ export const CONFIG = {
     EVOLUTION_API_KEY: parseStr(process.env.EVOLUTION_API_KEY),
     EVOLUTION_WEBHOOK_URL: parseStr(process.env.EVOLUTION_WEBHOOK_URL, 'http://host.docker.internal:3001/wa/webhook'),
     GROUP_CREATION_ENABLED: parseBool(process.env.GROUP_CREATION_ENABLED, false),
+    // ─── 360dialog Cloud API — official Groups API (see docs/whatsapp-groups-api-migration.md) ──
+    // Scaffolding only (added 2026-07-21, after a second Evolution/Baileys restriction). This is a
+    // SEPARATE, NEW WA number on 360dialog's Cloud API, run in parallel to the legacy Evolution
+    // number — never wired to replace it. Off by default: no live 360dialog account/credentials
+    // exist yet. Endpoint shapes below are per 360dialog's public docs (docs.360dialog.com) and
+    // Meta's Groups API reference, researched 2026-07-21 — NOT yet verified against a live account.
+    ENABLE_360DIALOG_GROUPS: parseBool(process.env.ENABLE_360DIALOG_GROUPS, false),
+    DIALOG360_API_KEY: parseStr(process.env.DIALOG360_API_KEY),
+    DIALOG360_BASE_URL: parseStr(process.env.DIALOG360_BASE_URL, 'https://waba-v2.360dialog.io'),
+    DIALOG360_WEBHOOK_VERIFY_TOKEN: parseStr(process.env.DIALOG360_WEBHOOK_VERIFY_TOKEN),
+    DIALOG360_GROUP_JOIN_APPROVAL_MODE: parseStr(process.env.DIALOG360_GROUP_JOIN_APPROVAL_MODE, 'auto_approve'),
+    // How long createGuestGroup() waits for the group_lifecycle_update webhook (which carries the
+    // invite_link) before falling back to polling GET /groups/{id}/invite_link directly.
+    DIALOG360_INVITE_LINK_WAIT_MS: parseNum(process.env.DIALOG360_INVITE_LINK_WAIT_MS, 30_000),
     SEND_INBOX_MESSAGE: parseBool(process.env.SEND_INBOX_MESSAGE, true),
     SEND_GUEST_INVITE_DM: parseBool(process.env.SEND_GUEST_INVITE_DM, true),
     OPENAI_API_KEY: parseStr(process.env.OPENAI_API_KEY),

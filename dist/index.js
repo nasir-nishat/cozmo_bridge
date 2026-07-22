@@ -51,6 +51,7 @@ const line_1 = __importDefault(require("./routes/line"));
 const kakao_1 = __importDefault(require("./routes/kakao"));
 const bot_1 = require("./platforms/wechat/bot");
 const wechat_1 = __importDefault(require("./routes/wechat"));
+const whatsapp360_1 = __importDefault(require("./routes/whatsapp360"));
 const hostfully_1 = require("./services/hostfully");
 const staffCache_1 = require("./services/staffCache");
 const notify_1 = require("./services/notify");
@@ -145,6 +146,13 @@ if (constants_1.CONFIG.ENABLE_WECHAT) {
 }
 else {
     console.log('⏸️ WeChat routes disabled by ENABLE_WECHAT=false');
+}
+if (constants_1.CONFIG.ENABLE_360DIALOG_GROUPS) {
+    app.use('/whatsapp360', whatsapp360_1.default);
+    console.log('🆕 360dialog Groups API routes enabled at /whatsapp360 (scaffolding — see docs/whatsapp-groups-api-migration.md)');
+}
+else {
+    console.log('⏸️ 360dialog Groups routes disabled by ENABLE_360DIALOG_GROUPS=false');
 }
 app.listen(constants_1.CONFIG.PORT, () => {
     console.log(`🚀 COZE Bridge on http://localhost:${constants_1.CONFIG.PORT}`);

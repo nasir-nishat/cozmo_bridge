@@ -13,6 +13,7 @@ import lineRouter from './routes/line';
 import kakaoRouter from './routes/kakao';
 import { initWeChat, isWeChatInitialized } from './platforms/wechat/bot';
 import wechatRouter from './routes/wechat';
+import whatsapp360Router from './routes/whatsapp360';
 import { pollLeadNotes } from './services/hostfully';
 import { loadStaffNames } from './services/staffCache';
 import { sendAlert } from './services/notify';
@@ -105,6 +106,12 @@ if (CONFIG.ENABLE_WECHAT) {
     app.use('/wechat', wechatRouter);
 } else {
     console.log('⏸️ WeChat routes disabled by ENABLE_WECHAT=false');
+}
+if (CONFIG.ENABLE_360DIALOG_GROUPS) {
+    app.use('/whatsapp360', whatsapp360Router);
+    console.log('🆕 360dialog Groups API routes enabled at /whatsapp360 (scaffolding — see docs/whatsapp-groups-api-migration.md)');
+} else {
+    console.log('⏸️ 360dialog Groups routes disabled by ENABLE_360DIALOG_GROUPS=false');
 }
 
 app.listen(CONFIG.PORT, () => {

@@ -8,6 +8,7 @@ exports.unlinkGroup = unlinkGroup;
 exports.getLeadUid = getLeadUid;
 exports.getGroupIdByLeadUid = getGroupIdByLeadUid;
 exports.getWaGroupIdByLeadUid = getWaGroupIdByLeadUid;
+exports.getDialog360GroupIdByLeadUid = getDialog360GroupIdByLeadUid;
 exports.getAllGroupsByLeadUid = getAllGroupsByLeadUid;
 exports.saveGroupLang = saveGroupLang;
 exports.getGroupLang = getGroupLang;
@@ -127,6 +128,18 @@ function getWaGroupIdByLeadUid(leadUid) {
     const data = loadLeads();
     for (const [groupId, mappedLeadUid] of Object.entries(data)) {
         if (mappedLeadUid === leadUid && groupId.endsWith('@g.us'))
+            return groupId;
+    }
+    return null;
+}
+// 360dialog Cloud API groups are stored with a "360:" prefix (mirrors the line:/wechat:/kakao:
+// convention above) — their IDs aren't @g.us JIDs, so getWaGroupIdByLeadUid never matches them.
+// detectPlatform()-style helpers elsewhere already skip unrecognized prefixes safely (no
+// misrouting into Evolution API calls) — see checkoutReminder.ts/checkinReminder.ts.
+function getDialog360GroupIdByLeadUid(leadUid) {
+    const data = loadLeads();
+    for (const [groupId, mappedLeadUid] of Object.entries(data)) {
+        if (mappedLeadUid === leadUid && groupId.startsWith('360:'))
             return groupId;
     }
     return null;

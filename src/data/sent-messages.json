@@ -942,5 +942,25 @@
   "120363427263453158@g.us:welcome": {
     "at": "2026-07-20T16:04:08.001Z",
     "by": "cozmo"
+  },
+  "line:C27728cd28ae74651717c36568eeb785f:farewell": {
+    "at": "2026-07-21T06:00:01.928Z",
+    "by": "cozmo"
+  },
+  "hf:795ed541-19e8-4751-9f24-2a28e99f64d8:hf_step1": {
+    "at": "2026-07-21T07:57:43.113Z",
+    "by": "cozmo"
+  },
+  "hf:795ed541-19e8-4751-9f24-2a28e99f64d8:hf_pre_payment": {
+    "at": "2026-07-21T07:57:43.116Z",
+    "by": "cozmo"
+  },
+  "hf:795ed541-19e8-4751-9f24-2a28e99f64d8:hf_no_wa": {
+    "at": "2026-07-21T08:23:40.876Z",
+    "by": "cozmo"
+  },
+  "line:C9df8ba070ff89afba505cc55ee8ab9d2:checkout_reminder": {
+    "at": "2026-07-21T12:00:02.130Z",
+    "by": "cozmo"
   }
 }
