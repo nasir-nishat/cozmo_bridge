@@ -68,6 +68,9 @@ const STUCK_THRESHOLD_MS = 12 * 60 * 60 * 1000;
 const STUCK_ALERT_COOLDOWN_MS = 60 * 60 * 1000;
 
 export async function checkForStuckGroupCreations(): Promise<void> {
+    // Auto-create is off (running on a personal number) — the pending queue is intentionally
+    // dormant, so leftover entries are NOT "stuck". Don't raise false-alarm alerts for them.
+    if (!CONFIG.GROUP_CREATION_ENABLED) return;
     const now = Date.now();
     // Only jobs that are actually due (fireAt reached) can be "stuck"; measure lateness from fireAt.
     const due = load().filter(m => new Date(m.fireAt).getTime() <= now);
@@ -95,6 +98,10 @@ const scheduleAlerted = new Set<string>();
 let flushing = false;
 export async function flushPendingGroupCreations(): Promise<void> {
     if (flushing) return;
+    // Auto-create disabled (personal-number mode): don't process the queue and, importantly,
+    // don't emit the "🗓️ Group Scheduled" heads-up alerts for leftover entries. Groups are
+    // created manually now; staff links them with /link <uid> in the existing group.
+    if (!CONFIG.GROUP_CREATION_ENABLED) return;
     const now = Date.now();
     const due = load()
         .filter(m => new Date(m.fireAt).getTime() <= now)

@@ -2532,7 +2532,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+14084257148",
-    "updatedAt": "2026-07-20T00:22:58.678Z"
+    "updatedAt": "2026-07-22T06:00:07.611Z"
   },
   {
     "leadUid": "92333a25-679c-4db6-bdf7-46232bc1f59d",
@@ -2727,7 +2727,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+15038877399",
-    "updatedAt": "2026-07-21T06:00:14.240Z"
+    "updatedAt": "2026-07-22T09:09:42.253Z"
   },
   {
     "leadUid": "687b5e16-c5b4-4d04-92f1-950f6753cd98",
@@ -2862,7 +2862,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+821024227377",
-    "updatedAt": "2026-07-21T06:00:12.586Z"
+    "updatedAt": "2026-07-22T09:09:41.207Z"
   },
   {
     "leadUid": "732ce61a-87a7-432a-8498-87076e6206ef",
@@ -2877,7 +2877,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+8613637844228",
-    "updatedAt": "2026-07-21T06:00:06.318Z"
+    "updatedAt": "2026-07-22T09:09:36.447Z"
   },
   {
     "leadUid": "7e6de135-d05b-4e1b-8654-51f7a06e6cd1",
@@ -3204,10 +3204,10 @@
     "adults": 0,
     "children": 0,
     "infants": 0,
-    "status": "NEW",
+    "status": "CLOSED",
     "source": "INQUIRY",
     "phone": "",
-    "updatedAt": "2026-07-21T06:23:15.215Z"
+    "updatedAt": "2026-07-22T06:23:01.958Z"
   },
   {
     "leadUid": "03d2f37a-9fdd-402d-b1db-8d25f826caaa",
@@ -3462,7 +3462,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+37255545464",
-    "updatedAt": "2026-07-21T06:00:05.553Z"
+    "updatedAt": "2026-07-22T09:09:35.730Z"
   },
   {
     "leadUid": "f245900f-daae-4059-93b3-6764c02b3934",
@@ -3477,7 +3477,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+8613829667991",
-    "updatedAt": "2026-07-21T06:00:02.675Z"
+    "updatedAt": "2026-07-22T09:09:33.882Z"
   },
   {
     "leadUid": "48e11656-156b-4a08-8a9f-3dfdfbea5c5a",
@@ -3672,7 +3672,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+41796508261",
-    "updatedAt": "2026-07-21T06:00:03.851Z"
+    "updatedAt": "2026-07-22T09:09:34.561Z"
   },
   {
     "leadUid": "43ecdc76-9604-4ef1-bd10-ca0dbfd108fe",
@@ -3882,7 +3882,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+819066148284",
-    "updatedAt": "2026-07-21T06:00:07.064Z"
+    "updatedAt": "2026-07-22T09:09:37.282Z"
   },
   {
     "leadUid": "9135b690-fb31-44b9-9ab4-4b5a7cc2e0e4",
@@ -3912,7 +3912,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+85261504302",
-    "updatedAt": "2026-07-21T06:00:10.949Z"
+    "updatedAt": "2026-07-22T09:09:39.782Z"
   },
   {
     "leadUid": "5c239fbf-996e-46de-87de-a0ebec698d78",
@@ -4032,7 +4032,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+886928640702",
-    "updatedAt": "2026-07-21T06:00:12.001Z"
+    "updatedAt": "2026-07-22T09:09:40.830Z"
   },
   {
     "leadUid": "d55aec30-6142-409b-9365-50d430cc1786",
@@ -4647,7 +4647,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+6596923954",
-    "updatedAt": "2026-07-21T06:00:08.042Z"
+    "updatedAt": "2026-07-22T09:09:38.006Z"
   },
   {
     "leadUid": "e947d52c-74fb-4735-931a-cdb52a4a9f7d",
@@ -4857,7 +4857,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+61430184665",
-    "updatedAt": "2026-07-21T07:53:15.055Z"
+    "updatedAt": "2026-07-22T09:09:32.106Z"
   },
   {
     "leadUid": "9fb572bf-f440-42e0-affd-450f3646b576",
@@ -4992,7 +4992,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+6592951602",
-    "updatedAt": "2026-07-21T06:00:09.024Z"
+    "updatedAt": "2026-07-22T09:09:38.714Z"
   },
   {
     "leadUid": "5439396c-f2cd-47c5-97a3-6eeb7e6646b4",
@@ -5037,7 +5037,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+6594525130",
-    "updatedAt": "2026-07-21T06:00:11.391Z"
+    "updatedAt": "2026-07-22T09:09:40.195Z"
   },
   {
     "leadUid": "e6aa41f7-f4ca-43b2-908a-9153c3be4a32",

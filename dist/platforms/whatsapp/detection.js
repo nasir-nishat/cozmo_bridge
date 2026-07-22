@@ -59,7 +59,10 @@ const messageBuffer_1 = require("../../services/messageBuffer");
 const replyWatchdog_1 = require("../../services/replyWatchdog");
 const translation_1 = require("./translation");
 const autoReplyPipeline_1 = require("../../knowledge/autoReplyPipeline");
-const INSTANCE_OWNER_PHONE = '821026226935';
+// The phone number the Evolution instance is logged in as (COZMO's own number). Used to
+// recognize self-DM ("Message Yourself") test messages and to skip the bot's own messages.
+// Env-driven so it tracks whatever number is linked — MUST match the linked WhatsApp number.
+const INSTANCE_OWNER_PHONE = (process.env.INSTANCE_OWNER_PHONE || '821097802701').replace(/\D/g, '');
 const CANCELLATION_HINT_REGEX = /\b(no need|never mind|cancel|dont need|don't need|no thanks|it'?s okay|we can do it (?:ourselves|ourself)|we'?ll do it ourselves|all good now)\b/i;
 const STAFF_SIGNATURE_REGEX = /guest care team|coze hospitality|cozmo ai/i;
 const DM_GREETING_REGEX = /^\s*(hi|hello|hey|good morning|good afternoon|good evening)\s*[!.?]*\s*$/i;
