@@ -2637,7 +2637,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+8613631637211",
-    "updatedAt": "2026-07-23T06:00:12.290Z"
+    "updatedAt": "2026-07-24T06:00:07.088Z"
   },
   {
     "leadUid": "fca656a7-af0c-487e-b659-4051e5f9cc80",
@@ -2652,7 +2652,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+41798510522",
-    "updatedAt": "2026-06-05T09:55:18.536Z"
+    "updatedAt": "2026-07-24T06:00:09.093Z"
   },
   {
     "leadUid": "6462ff0e-9640-4082-9a30-26f6d08a6e09",
@@ -2682,7 +2682,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "",
-    "updatedAt": "2026-07-23T10:10:51.570Z"
+    "updatedAt": "2026-07-24T06:00:09.534Z"
   },
   {
     "leadUid": "520c2440-72a1-435b-a4e7-7ab9c9339e54",
@@ -2907,7 +2907,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+8613637844228",
-    "updatedAt": "2026-07-23T06:00:10.627Z"
+    "updatedAt": "2026-07-24T06:00:14.268Z"
   },
   {
     "leadUid": "7e6de135-d05b-4e1b-8654-51f7a06e6cd1",
@@ -3420,6 +3420,21 @@
     "updatedAt": "2026-06-07T14:56:12.537Z"
   },
   {
+    "leadUid": "f001f05c-0e8e-465a-b894-e91427d369d8",
+    "guestName": "Sangchul",
+    "property": "SA_ACHAE",
+    "checkIn": "2026-08-16",
+    "checkOut": "2026-08-17",
+    "nationality": "",
+    "adults": 0,
+    "children": 0,
+    "infants": 0,
+    "status": "NEW",
+    "source": "INQUIRY",
+    "phone": "",
+    "updatedAt": "2026-07-24T04:20:26.201Z"
+  },
+  {
     "leadUid": "e2166bcf-2257-485f-837d-162ba3fd460e",
     "guestName": "Yang 楊",
     "property": "YT_BIRD_09",
@@ -3492,7 +3507,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+37255545464",
-    "updatedAt": "2026-07-23T06:00:08.763Z"
+    "updatedAt": "2026-07-24T06:00:13.124Z"
   },
   {
     "leadUid": "f245900f-daae-4059-93b3-6764c02b3934",
@@ -3507,7 +3522,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+8613829667991",
-    "updatedAt": "2026-07-23T06:00:06.268Z"
+    "updatedAt": "2026-07-24T06:00:11.384Z"
   },
   {
     "leadUid": "48e11656-156b-4a08-8a9f-3dfdfbea5c5a",
@@ -3552,7 +3567,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+821036040414",
-    "updatedAt": "2026-07-24T01:18:22.893Z"
+    "updatedAt": "2026-07-24T06:00:05.846Z"
   },
   {
     "leadUid": "a8ca0403-3655-4236-8257-a09a0dca0ced",
@@ -3717,7 +3732,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+41796508261",
-    "updatedAt": "2026-07-23T06:00:06.824Z"
+    "updatedAt": "2026-07-24T06:00:11.870Z"
   },
   {
     "leadUid": "43ecdc76-9604-4ef1-bd10-ca0dbfd108fe",
@@ -3927,7 +3942,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+819066148284",
-    "updatedAt": "2026-07-23T06:00:11.210Z"
+    "updatedAt": "2026-07-24T06:00:15.190Z"
   },
   {
     "leadUid": "9135b690-fb31-44b9-9ab4-4b5a7cc2e0e4",
@@ -4002,7 +4017,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+821053972299",
-    "updatedAt": "2026-07-23T17:48:57.134Z"
+    "updatedAt": "2026-07-24T06:00:03.206Z"
   },
   {
     "leadUid": "429342c9-ae34-4b65-a3b2-917b223fc2a3",
@@ -4062,7 +4077,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+37126469047",
-    "updatedAt": "2026-07-23T10:36:58.400Z"
+    "updatedAt": "2026-07-24T06:00:05.303Z"
   },
   {
     "leadUid": "9caba12c-1681-4608-8296-010a63853147",
@@ -4737,7 +4752,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+6596923954",
-    "updatedAt": "2026-07-23T06:00:12.184Z"
+    "updatedAt": "2026-07-24T06:00:15.761Z"
   },
   {
     "leadUid": "e947d52c-74fb-4735-931a-cdb52a4a9f7d",
@@ -4947,7 +4962,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+61430184665",
-    "updatedAt": "2026-07-23T06:00:04.098Z"
+    "updatedAt": "2026-07-24T06:00:08.251Z"
   },
   {
     "leadUid": "9fb572bf-f440-42e0-affd-450f3646b576",
@@ -5082,7 +5097,7 @@
     "status": "BOOKED",
     "source": "BOOKING",
     "phone": "+6592951602",
-    "updatedAt": "2026-07-23T06:00:12.823Z"
+    "updatedAt": "2026-07-24T06:00:16.423Z"
   },
   {
     "leadUid": "5439396c-f2cd-47c5-97a3-6eeb7e6646b4",

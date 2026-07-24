@@ -11,6 +11,26 @@
       "sender": "Unknown",
       "text": "{\"feedType\":2,\"member\":{\"userId\":4885258113124416783,\"nickName\":\"조하봇\"}}",
       "ts": 1784820077850
+    },
+    {
+      "sender": "Unknown",
+      "text": "{\"feedType\":4,\"members\":[{\"userId\":5221227383823730848,\"nickName\":\"나른한 프렌즈\"}]}",
+      "ts": 1784862266457
+    },
+    {
+      "sender": "Unknown",
+      "text": "공지사항을 읽어주세요",
+      "ts": 1784862266458
+    },
+    {
+      "sender": "방장봇",
+      "text": "공지사항을 읽어주세요",
+      "ts": 1784862266914
+    },
+    {
+      "sender": "Unknown",
+      "text": "{\"feedType\":2,\"member\":{\"userId\":5221227383823730848,\"nickName\":\"나른한 프렌즈\"}}",
+      "ts": 1784862325862
     }
   ],
   "120363425849930714@g.us": [
@@ -119,6 +139,11 @@
       "sender": "Hye Lynn Choi",
       "text": "Hi, we will arrive around 3pm by car. Is there a parking lot?",
       "ts": 1784816887388
+    },
+    {
+      "sender": "Ricky, Tour Host",
+      "text": "Hello! This is Ricky from the COZE Guest Care Team. 😊\n\nI'll be waiting at the property today to assist you with your check-in.\nPlease send me a message as soon as you arrive, and I'll come out to help you right away.\nSee you soon, and have a safe trip! 🌸\n\nRicky, Guest Care Team of COZE Hospitality 3.0",
+      "ts": 1784870977985
     }
   ],
   "821029263061-1559638014@g.us": [
@@ -150,6 +175,16 @@
       "sender": "이규진",
       "text": "{\"logId\":3891180175351273473,\"targetRevision\":1,\"hidden\":true,\"feedType\":25}",
       "ts": 1784860126269
+    },
+    {
+      "sender": "이규진",
+      "text": "4:45 PM 착륙으로 나와요~",
+      "ts": 1784873918886
+    },
+    {
+      "sender": "이규진",
+      "text": "4:45 PM 착륙으로 나와요~",
+      "ts": 1784873919558
     }
   ],
   "kakao:473051276385968": [
@@ -294,6 +329,16 @@
       "sender": "변이규",
       "text": "5분후도착요",
       "ts": 1784859507317
+    },
+    {
+      "sender": "변이규",
+      "text": "출발합니다",
+      "ts": 1784863425327
+    },
+    {
+      "sender": "변이규",
+      "text": "출발합니다",
+      "ts": 1784863425402
     }
   ],
   "120363426515881970@g.us": [
@@ -311,6 +356,156 @@
       "sender": "Sunkar",
       "text": "Good morning!\nIt looks like we have everything.\nThank you.",
       "ts": 1784858958673
+    },
+    {
+      "sender": "Sunkar",
+      "text": "Hello,\nI will need a taxi",
+      "ts": 1784866435678
+    },
+    {
+      "sender": "Sunkar",
+      "text": "7 seater please. To Everland park",
+      "ts": 1784866455789
+    },
+    {
+      "sender": "COZE_Jin",
+      "text": "Are you at Everland right now? Could you tell me the exact location of Everland? Since Everland is huge, please give me the precise location.",
+      "ts": 1784866857493
+    },
+    {
+      "sender": "Sunkar",
+      "text": "No. I’m here",
+      "ts": 1784866900958
+    },
+    {
+      "sender": "COZE_Jin",
+      "text": "Ah okay",
+      "ts": 1784866910750
+    },
+    {
+      "sender": "Sunkar",
+      "text": "Need to go to Everland",
+      "ts": 1784866914380
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "oh",
+      "ts": 1784866958235
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "okay",
+      "ts": 1784866961401
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "how many people",
+      "ts": 1784866974602
+    },
+    {
+      "sender": "Sunkar",
+      "text": "6 people. So 7 seater will be best",
+      "ts": 1784867011194
+    },
+    {
+      "sender": "Sunkar",
+      "text": "Please",
+      "ts": 1784867323283
+    },
+    {
+      "sender": "Sunkar",
+      "text": "I’m waiting",
+      "ts": 1784867820646
+    },
+    {
+      "sender": "Sunkar",
+      "text": "Cancel. Will arrange myself",
+      "ts": 1784868035519
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "sorry for this",
+      "ts": 1784868069269
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "I missed your message for this",
+      "ts": 1784868074051
+    },
+    {
+      "sender": "Sunkar",
+      "text": "Still cannot get a taxi",
+      "ts": 1784868561369
+    },
+    {
+      "sender": "Sunkar",
+      "text": "I’m please help me",
+      "ts": 1784868567981
+    },
+    {
+      "sender": "Sunkar",
+      "text": "6 people",
+      "ts": 1784868588745
+    },
+    {
+      "sender": "Sunkar",
+      "text": "Need a 7 seater",
+      "ts": 1784868597139
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "to everland?",
+      "ts": 1784868766471
+    },
+    {
+      "sender": "Sunkar",
+      "text": "Yes",
+      "ts": 1784868780021
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "searching now",
+      "ts": 1784868787412
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "1733/van/6min",
+      "ts": 1784868850580
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "75K KRW",
+      "ts": 1784868865456
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "Please pay when you get off",
+      "ts": 1784868870271
+    },
+    {
+      "sender": "Sunkar",
+      "text": "Thank you very much",
+      "ts": 1784868889218
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "arrived",
+      "ts": 1784869103621
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "when you return to Seoul, we cannot use that van because it is only available to grab inside of Seoul",
+      "ts": 1784869480422
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "so please use two regular taxi at Everland!!",
+      "ts": 1784869496801
+    },
+    {
+      "sender": "Sunkar",
+      "text": "Ok. Thank you",
+      "ts": 1784869914262
     }
   ],
   "120363429789674074@g.us": [
@@ -552,6 +747,57 @@
       "sender": "4930577140819@c.us",
       "text": "Ticket has been updated - *In progress*",
       "ts": 1784857987593
+    },
+    {
+      "sender": "4930577140819@c.us",
+      "text": "Regarding your questions:\n- *Can we create Group Automation right away?*\n*No*, As your business does not meet the Groups API eligibility requirements. The primary requirement is that your business must be an *Official Business Account (OBA)* .\n​\n- *Will you make this number OBA right away?*\nNo. 360dialog cannot make a number an Official Business Account. OBA status is granted only by *Meta* after reviewing and approving the business.\n​\n- *Will we get the Verified Tick Mark right away?*\nNo. The verified badge (Official Business Account) is only applied after Meta approves your OBA request.\n​\n- *Do we have to wait another 30 days?*\nYes, the business must be an *Official Business Account (OBA)*. Once your business has OBA status, you can start using the Groups API (subject to the documented limitations, such as Groups not being available for Coexistence users or numbers onboarded to Multi-solution Conversations).\n*Please refer the below document:*\n*Messaging Groups*: https://docs.360dialog.com/docs/messaging/groups\n*OBA Creteria:* https://docs.360dialog.com/docs/resources/phone-numbers/official-business-account#criteria\n*For OBA:* The business must be registered on the WhatsApp Business Platform for at least 30 days.\n​",
+      "ts": 1784874224711
+    }
+  ],
+  "923365291347@c.us": [
+    {
+      "sender": "Abc",
+      "text": "Ok im coming",
+      "ts": 1784865670956
+    }
+  ],
+  "kakao:474751444159250": [
+    {
+      "sender": "PetitAmourFlower",
+      "text": "1시간. 30분 뒤 도착입니다",
+      "ts": 1784872740753
+    },
+    {
+      "sender": "PetitAmourFlower",
+      "text": "1시간. 30분 뒤 도착입니다",
+      "ts": 1784872740852
+    }
+  ],
+  "kakao:474382981529301": [
+    {
+      "sender": "하은서",
+      "text": "신경써주셔서 감사히 묵었습니다!\n고생하세요!",
+      "ts": 1784874481278
+    },
+    {
+      "sender": "하은서",
+      "text": "신경써주셔서 감사히 묵었습니다!\n고생하세요!",
+      "ts": 1784874482557
+    },
+    {
+      "sender": "석재연",
+      "text": "감사합니다!",
+      "ts": 1784874699684
+    },
+    {
+      "sender": "석재연",
+      "text": "감사합니다!",
+      "ts": 1784874700565
+    },
+    {
+      "sender": "석재연",
+      "text": "{\"member\":{\"userId\":201241125,\"nickName\":\"석재연\"},\"kicked\":false,\"memorial\":false,\"hidden\":false,\"feedType\":2}",
+      "ts": 1784874797774
     }
   ]
 }
