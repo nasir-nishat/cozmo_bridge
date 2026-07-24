@@ -60,6 +60,25 @@ function dequeue(leadUid: string): void {
     scheduleAlerted.delete(leadUid);
 }
 
+function pruneAlreadyLinked(q = load()): PendingGroupCreation[] {
+    const keep: PendingGroupCreation[] = [];
+    let removed = 0;
+
+    for (const job of q) {
+        const existingGroupId = getGroupIdByLeadUid(job.leadUid);
+        if (existingGroupId) {
+            removed++;
+            scheduleAlerted.delete(job.leadUid);
+            console.log(`⏭️ Group already exists for ${job.leadUid} (${existingGroupId}) — dequeuing stale auto-create job`);
+        } else {
+            keep.push(job);
+        }
+    }
+
+    if (removed > 0) save(keep);
+    return keep;
+}
+
 const stuckAlertedAt = new Map<string, number>();
 // Raised for the paced era: a full active-hours day can legitimately drain up to ~10h of backlog
 // (cap groups × 2h gaps). Only a job overdue beyond that is genuinely stuck (WA down all day,
@@ -68,12 +87,13 @@ const STUCK_THRESHOLD_MS = 12 * 60 * 60 * 1000;
 const STUCK_ALERT_COOLDOWN_MS = 60 * 60 * 1000;
 
 export async function checkForStuckGroupCreations(): Promise<void> {
+    const q = pruneAlreadyLinked();
     // Auto-create is off (running on a personal number) — the pending queue is intentionally
     // dormant, so leftover entries are NOT "stuck". Don't raise false-alarm alerts for them.
     if (!CONFIG.GROUP_CREATION_ENABLED) return;
     const now = Date.now();
     // Only jobs that are actually due (fireAt reached) can be "stuck"; measure lateness from fireAt.
-    const due = load().filter(m => new Date(m.fireAt).getTime() <= now);
+    const due = q.filter(m => new Date(m.fireAt).getTime() <= now);
     for (const job of due) {
         const ageMs = now - new Date(job.fireAt).getTime();
         if (ageMs < STUCK_THRESHOLD_MS) continue;
@@ -98,12 +118,13 @@ const scheduleAlerted = new Set<string>();
 let flushing = false;
 export async function flushPendingGroupCreations(): Promise<void> {
     if (flushing) return;
+    const q = pruneAlreadyLinked();
     // Auto-create disabled (personal-number mode): don't process the queue and, importantly,
     // don't emit the "🗓️ Group Scheduled" heads-up alerts for leftover entries. Groups are
     // created manually now; staff links them with /link <uid> in the existing group.
     if (!CONFIG.GROUP_CREATION_ENABLED) return;
     const now = Date.now();
-    const due = load()
+    const due = q
         .filter(m => new Date(m.fireAt).getTime() <= now)
         // Soonest check-in first — imminent arrivals get their group before far-future bookings
         .sort((a, b) => new Date(a.checkIn || '2999-01-01').getTime() - new Date(b.checkIn || '2999-01-01').getTime());

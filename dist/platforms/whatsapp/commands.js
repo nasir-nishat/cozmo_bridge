@@ -26,6 +26,7 @@ const groupNaming_1 = require("./groupNaming");
 const constants_1 = require("../../config/constants");
 const format_1 = require("../../utils/format");
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+const INSTANCE_OWNER_PHONE = (process.env.INSTANCE_OWNER_PHONE || '821097802701').replace(/\D/g, '');
 function isStaffLid(lid) {
     try {
         const staffIds = JSON.parse(fs_1.default.readFileSync(path_1.default.join(__dirname, '../../data/staff-ids.json'), 'utf8'));
@@ -35,6 +36,13 @@ function isStaffLid(lid) {
     catch {
         return false;
     }
+}
+function isInstanceOwnerSender(jid) {
+    const senderPhone = jid.replace(/@.*$/, '').replace(/\D/g, '');
+    return Boolean(INSTANCE_OWNER_PHONE && senderPhone === INSTANCE_OWNER_PHONE);
+}
+function isStaffSender(jid) {
+    return isStaffLid(jid) || isInstanceOwnerSender(jid);
 }
 // Every command reply goes through here instead of `.catch(() => {})`. If the WhatsApp
 // send itself fails (e.g. the account is reachout-restricted, same as the group-create
@@ -101,7 +109,7 @@ async function handleLinkCommand(from, uid, welcomeOpts) {
 }
 async function handleWelcomeCommand(from, senderJid, pushName) {
     console.log(`🔍 /welcome check: pushName="${pushName}" senderJid="${senderJid}"`);
-    if (!isStaffLid(senderJid)) {
+    if (!isStaffSender(senderJid)) {
         await replyOrEscalate(from, '❌ Only team members can send /welcome', '/welcome staff-check');
         return;
     }
@@ -198,7 +206,7 @@ async function handleWelcomeCommand(from, senderJid, pushName) {
     }
 }
 async function handleCkoutCommand(from, senderJid, text = '/ckout') {
-    if (!isStaffLid(senderJid)) {
+    if (!isStaffSender(senderJid)) {
         await replyOrEscalate(from, '❌ Only team members can send /ckout', '/ckout staff-check');
         return;
     }
@@ -232,7 +240,7 @@ async function handleCkoutCommand(from, senderJid, text = '/ckout') {
     }
 }
 async function handleCkinCommand(from, senderJid) {
-    if (!isStaffLid(senderJid)) {
+    if (!isStaffSender(senderJid)) {
         await replyOrEscalate(from, '❌ Only team members can send /ckin', '/ckin staff-check');
         return;
     }
@@ -277,7 +285,7 @@ async function handleGroupCommand(from, uid, senderJid, pushName) {
         return;
     }
     const isDM = !from.endsWith('@g.us');
-    if (!isDM && !isStaffLid(senderJid)) {
+    if (!isDM && !isStaffSender(senderJid)) {
         return; // silent — non-staff in group, don't expose command exists
     }
     // Already fully created and linked

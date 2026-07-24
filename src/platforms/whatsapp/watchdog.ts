@@ -1,4 +1,4 @@
-import { evoApi, INSTANCE, isWaReady, setWaReady } from './evoClient';
+import { ensureEvolutionWebhook, evoApi, INSTANCE, isWaReady, setWaReady } from './evoClient';
 import { sendAlert } from '../../services/notify';
 import { flushPendingMessages } from './groupCreation';
 import { checkReplyWatchdog } from '../../services/replyWatchdog';
@@ -13,6 +13,7 @@ export async function checkWaConnection(): Promise<void> {
         const isConnected = state === 'open';
 
         if (isConnected) {
+            ensureEvolutionWebhook().catch(e => console.error('❌ ensureEvolutionWebhook (watchdog) error:', e?.message));
             if (!isWaReady()) {
                 setWaReady(true);
                 console.log('✅ WA reconnected — waReady restored');

@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.waClient = exports.setWaReady = exports.waReadyDurationMs = exports.isWaReady = exports.evoApi = exports.INSTANCE = void 0;
+exports.ensureEvolutionWebhook = ensureEvolutionWebhook;
 exports.evoSendText = evoSendText;
 exports.evoSendTyping = evoSendTyping;
 exports.fetchGroupName = fetchGroupName;
@@ -16,6 +17,50 @@ exports.evoApi = axios_1.default.create({
     headers: constants_1.CONFIG.EVOLUTION_API_KEY ? { apikey: constants_1.CONFIG.EVOLUTION_API_KEY } : {},
     timeout: 20000,
 });
+const REQUIRED_WEBHOOK_EVENTS = [
+    'MESSAGES_UPSERT',
+    'MESSAGES_UPDATE',
+    'SEND_MESSAGE',
+    'CONNECTION_UPDATE',
+    'GROUP_PARTICIPANTS_UPDATE',
+    'GROUPS_UPSERT',
+    'CONTACTS_UPSERT',
+];
+let lastWebhookEnsureAt = 0;
+async function ensureEvolutionWebhook(force = false) {
+    if (!constants_1.CONFIG.EVOLUTION_WEBHOOK_URL)
+        return;
+    const now = Date.now();
+    if (!force && now - lastWebhookEnsureAt < 60000)
+        return;
+    lastWebhookEnsureAt = now;
+    try {
+        const existing = await exports.evoApi.get(`/webhook/find/${exports.INSTANCE}`).catch(() => null);
+        const current = existing?.data;
+        const events = Array.isArray(current?.events) ? current.events : [];
+        const hasRequiredEvents = REQUIRED_WEBHOOK_EVENTS.every(event => events.includes(event));
+        const alreadyCorrect = current?.enabled === true &&
+            current?.url === constants_1.CONFIG.EVOLUTION_WEBHOOK_URL &&
+            current?.webhookByEvents === false &&
+            current?.webhookBase64 === false &&
+            hasRequiredEvents;
+        if (alreadyCorrect)
+            return;
+        await exports.evoApi.post(`/webhook/set/${exports.INSTANCE}`, {
+            webhook: {
+                enabled: true,
+                url: constants_1.CONFIG.EVOLUTION_WEBHOOK_URL,
+                webhookByEvents: false,
+                webhookBase64: false,
+                events: REQUIRED_WEBHOOK_EVENTS,
+            },
+        });
+        console.log(`✅ Evolution webhook registered: ${constants_1.CONFIG.EVOLUTION_WEBHOOK_URL}`);
+    }
+    catch (e) {
+        console.error('❌ Evolution webhook registration failed:', e?.response?.data || e?.message);
+    }
+}
 async function evoSendText(number, text) {
     await exports.evoApi.post(`/message/sendText/${exports.INSTANCE}`, { number, text });
 }

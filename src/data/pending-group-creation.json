@@ -1,21 +1,5 @@
 [
   {
-    "leadUid": "5c8ab2a7-6b40-41e3-b0e4-93df93b63387",
-    "propertyUid": "25f618f3-d2ed-4b08-8fee-caf4167c20ca",
-    "guestName": "Brigitte Degruffy",
-    "phone": "+41796508261",
-    "property": "JTS_TEVA",
-    "checkIn": "2026-08-28T15:00:00",
-    "checkOut": "2026-09-30T11:00:00",
-    "nationality": "CH",
-    "leadStatus": "BOOKED",
-    "leadType": "BOOKING",
-    "groupName": "COZE JTS 28thAug Brigitte Degruffy 1A",
-    "onWhatsApp": true,
-    "fireAt": "2026-07-20T11:56:12.108Z",
-    "createdAt": "2026-07-20T11:26:12.108Z"
-  },
-  {
     "leadUid": "795ed541-19e8-4751-9f24-2a28e99f64d8",
     "propertyUid": "9a679f6d-fe7f-460d-bdeb-a1a973b595ae",
     "guestName": "Russell Maglalang",

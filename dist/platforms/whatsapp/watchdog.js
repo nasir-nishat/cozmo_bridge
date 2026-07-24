@@ -13,6 +13,7 @@ async function checkWaConnection() {
         const state = res.data?.instance?.state || res.data?.state || '';
         const isConnected = state === 'open';
         if (isConnected) {
+            (0, evoClient_1.ensureEvolutionWebhook)().catch(e => console.error('❌ ensureEvolutionWebhook (watchdog) error:', e?.message));
             if (!(0, evoClient_1.isWaReady)()) {
                 (0, evoClient_1.setWaReady)(true);
                 console.log('✅ WA reconnected — waReady restored');

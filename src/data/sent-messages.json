@@ -966,5 +966,141 @@
   "line:C9df8ba070ff89afba505cc55ee8ab9d2:farewell": {
     "at": "2026-07-22T06:00:01.705Z",
     "by": "cozmo"
+  },
+  "hf:9193eb00-997b-4a1d-be3a-65afe4abe092:hf_step1": {
+    "at": "2026-07-22T09:27:19.768Z",
+    "by": "cozmo"
+  },
+  "hf:9193eb00-997b-4a1d-be3a-65afe4abe092:hf_pre_payment": {
+    "at": "2026-07-22T09:27:19.770Z",
+    "by": "cozmo"
+  },
+  "177468317122592@lid:welcome": {
+    "at": "2026-07-22T09:47:08.605Z",
+    "by": "cozmo"
+  },
+  "hf:9193eb00-997b-4a1d-be3a-65afe4abe092:hf_step2": {
+    "at": "2026-07-22T09:55:06.746Z",
+    "by": "cozmo"
+  },
+  "120363428134771890@g.us:checkin_rules": {
+    "at": "2026-07-22T10:00:02.493Z",
+    "by": "cozmo"
+  },
+  "120363409204133943@g.us:checkout_reminder": {
+    "at": "2026-07-22T12:00:01.940Z",
+    "by": "cozmo"
+  },
+  "hf:48c2e969-67d3-4576-8d68-cf070875424f:hf_step1": {
+    "at": "2026-07-22T19:11:06.985Z",
+    "by": "cozmo"
+  },
+  "hf:48c2e969-67d3-4576-8d68-cf070875424f:hf_pre_payment": {
+    "at": "2026-07-22T19:11:06.990Z",
+    "by": "cozmo"
+  },
+  "hf:48c2e969-67d3-4576-8d68-cf070875424f:hf_step2": {
+    "at": "2026-07-22T19:37:06.233Z",
+    "by": "cozmo"
+  },
+  "120363409204133943@g.us:final_bill": {
+    "at": "2026-07-22T22:00:02.335Z",
+    "by": "cozmo"
+  },
+  "120363429905138420@g.us:final_bill": {
+    "at": "2026-07-22T22:00:37.119Z",
+    "by": "cozmo"
+  },
+  "120363429905138420@g.us:checkout_reminder": {
+    "at": "2026-07-23T01:25:21.194Z",
+    "by": "team"
+  },
+  "120363409204133943@g.us:farewell": {
+    "at": "2026-07-23T06:00:02.056Z",
+    "by": "cozmo"
+  },
+  "kakao:468994695533534:checkin_tips": {
+    "at": "2026-07-23T06:00:05.565Z",
+    "by": "cozmo"
+  },
+  "kakao:474382981529301:checkin_tips": {
+    "at": "2026-07-23T06:00:06.636Z",
+    "by": "cozmo"
+  },
+  "120363426515881970@g.us:checkin_tips": {
+    "at": "2026-07-23T06:00:07.297Z",
+    "by": "cozmo"
+  },
+  "120363429905138420@g.us:farewell": {
+    "at": "2026-07-23T06:00:36.772Z",
+    "by": "cozmo"
+  },
+  "120363426515881970@g.us:checkin_rules": {
+    "at": "2026-07-23T10:00:01.999Z",
+    "by": "cozmo"
+  },
+  "kakao:468994695533534:checkin_rules": {
+    "at": "2026-07-23T10:00:02.208Z",
+    "by": "cozmo"
+  },
+  "kakao:474382981529301:checkin_rules": {
+    "at": "2026-07-23T10:00:02.366Z",
+    "by": "cozmo"
+  },
+  "wechat:28135217655@chatroom:checkin_rules": {
+    "at": "2026-07-23T10:00:46.654Z",
+    "by": "cozmo"
+  },
+  "hf:570eefec-7701-402e-b211-87e6707a6743:hf_step1": {
+    "at": "2026-07-23T10:41:05.267Z",
+    "by": "cozmo"
+  },
+  "hf:570eefec-7701-402e-b211-87e6707a6743:hf_pre_payment": {
+    "at": "2026-07-23T10:41:05.270Z",
+    "by": "cozmo"
+  },
+  "hf:570eefec-7701-402e-b211-87e6707a6743:hf_step2": {
+    "at": "2026-07-23T11:07:05.587Z",
+    "by": "cozmo"
+  },
+  "120363426534722265@g.us:checkout_reminder": {
+    "at": "2026-07-23T12:00:01.682Z",
+    "by": "cozmo"
+  },
+  "kakao:474382981529301:checkout_reminder": {
+    "at": "2026-07-23T12:00:36.879Z",
+    "by": "cozmo"
+  },
+  "hf:af5e45b9-b481-462f-bf2c-98b5c1cf532d:hf_step1": {
+    "at": "2026-07-23T17:53:05.898Z",
+    "by": "cozmo"
+  },
+  "hf:af5e45b9-b481-462f-bf2c-98b5c1cf532d:hf_pre_payment": {
+    "at": "2026-07-23T17:53:05.900Z",
+    "by": "cozmo"
+  },
+  "hf:af5e45b9-b481-462f-bf2c-98b5c1cf532d:hf_step2": {
+    "at": "2026-07-23T18:19:03.381Z",
+    "by": "cozmo"
+  },
+  "kakao:474382981529301:checkout_instructions_am": {
+    "at": "2026-07-24T00:00:00.949Z",
+    "by": "cozmo"
+  },
+  "120363429789674074@g.us:welcome": {
+    "at": "2026-07-24T01:17:37.867Z",
+    "by": "cozmo"
+  },
+  "hf:737e40d0-6f0e-44d4-acf5-698b8a2e4e80:hf_step1": {
+    "at": "2026-07-24T01:23:04.644Z",
+    "by": "cozmo"
+  },
+  "hf:737e40d0-6f0e-44d4-acf5-698b8a2e4e80:hf_pre_payment": {
+    "at": "2026-07-24T01:23:04.649Z",
+    "by": "cozmo"
+  },
+  "hf:737e40d0-6f0e-44d4-acf5-698b8a2e4e80:hf_step2": {
+    "at": "2026-07-24T01:49:02.965Z",
+    "by": "cozmo"
   }
 }

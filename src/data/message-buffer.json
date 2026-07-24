@@ -1,719 +1,557 @@
 {
+  "120363356076164327@g.us": [
+    {
+      "sender": "Mullah Mamun",
+      "text": "প্রিয় ভাইয়েরা,\nআপনারা নিশ্চয়ই অবগত আছেন 'আবাবিল ফাউন্ডেশন' এর আয়োজনে আগামীকাল শুক্রবার বাদ আসর শহীদ খুশি রেলওয়ে ময়দানে এক প্রীতি ফুটবল ম্যাচের  আয়োজন করা হয়েছে। \n'বিবাহিত বনাম অবিবাহিত'  খেলাটি সবার জন্য উন্মুক্ত থাকবে, যে কেউ চাইলে এই খেলায় অংশগ্রহণ করতে পারবে৷\nখেলা শেষে আবাবিল ফাউন্ডেশনের পক্ষ থেকে যথাসাধ্য মেহমানদারির ব্যবস্থা থাকবে ইনশা আল্লাহ। \nদ্বীনি ভাইদের এই মিলনমেলায় আপনারা স্ববান্ধব আমন্ত্রিত। \n\nপ্রয়োজনে :\nমিজান : ০১৯৯৯-৩৮২০০২ \nশাকিল : ০১৭১৮-২৫১৮৬৬",
+      "ts": 1784828543280
+    }
+  ],
   "kakao:18294946740114616": [
     {
-      "sender": "‮",
-      "text": "Emoticon",
-      "ts": 1784645594205
-    },
-    {
       "sender": "Unknown",
-      "text": "봇 설정에서 레거시 API 사용이 켜져 있나요?\n- API2 사용이 꺼져 있나요? (레거시 API 사용 옵션이 없을 경우)",
-      "ts": 1784657577940
-    },
-    {
-      "sender": "Android R",
-      "text": "봇 설정에서 레거시 API 사용이 켜져 있나요?\n- API2 사용이 꺼져 있나요? (레거시 API 사용 옵션이 없을 경우)",
-      "ts": 1784657579557
-    },
-    {
-      "sender": "Unknown",
-      "text": "레거시 api 켰을 때와 껐을 때 모두 동일하게 답장과 로그 모두 작동하지 않습니다...디버그 룸에서도 마찬가지네요",
-      "ts": 1784698181583
-    },
-    {
-      "sender": "사루치",
-      "text": "레거시 api 켰을 때와 껐을 때 모두 동일하게 답장과 로그 모두 작동하지 않습니다...디버그 룸에서도 마찬가지네요",
-      "ts": 1784698183042
-    },
-    {
-      "sender": "Unknown",
-      "text": "대체 뭐가 문제일까요ㅠㅠ",
-      "ts": 1784698190045
-    },
-    {
-      "sender": "사루치",
-      "text": "대체 뭐가 문제일까요ㅠㅠ",
-      "ts": 1784698190483
-    },
-    {
-      "sender": "Unknown",
-      "text": "저는 구버전이라",
-      "ts": 1784698471410
-    },
-    {
-      "sender": "누군가의 부계",
-      "text": "저는 구버전이라",
-      "ts": 1784698472619
-    },
-    {
-      "sender": "Unknown",
-      "text": "정상작동 되는디",
-      "ts": 1784698475775
-    },
-    {
-      "sender": "누군가의 부계",
-      "text": "정상작동 되는디",
-      "ts": 1784698476996
-    },
-    {
-      "sender": "Unknown",
-      "text": "몰?루",
-      "ts": 1784698478096
-    },
-    {
-      "sender": "누군가의 부계",
-      "text": "몰?루",
-      "ts": 1784698478560
-    },
-    {
-      "sender": "Unknown",
-      "text": "정확한 버전명 알려주실 수 있을까요?",
-      "ts": 1784698500734
-    },
-    {
-      "sender": "사루치",
-      "text": "정확한 버전명 알려주실 수 있을까요?",
-      "ts": 1784698501548
-    },
-    {
-      "sender": "Unknown",
-      "text": "29a에용",
-      "ts": 1784698521360
-    },
-    {
-      "sender": "누군가의 부계",
-      "text": "29a에용",
-      "ts": 1784698522782
-    },
-    {
-      "sender": "Unknown",
-      "text": "어라",
-      "ts": 1784698533865
-    },
-    {
-      "sender": "사루치",
-      "text": "어라",
-      "ts": 1784698534566
-    },
-    {
-      "sender": "Unknown",
-      "text": "29a로도 해봤는데 저는 안되더라구요....",
-      "ts": 1784698544319
-    },
-    {
-      "sender": "사루치",
-      "text": "29a로도 해봤는데 저는 안되더라구요....",
-      "ts": 1784698545060
-    },
-    {
-      "sender": "Unknown",
-      "text": "진짜 왜지",
-      "ts": 1784698546643
-    },
-    {
-      "sender": "사루치",
-      "text": "진짜 왜지",
-      "ts": 1784698547636
-    },
-    {
-      "sender": "Unknown",
-      "text": "엥",
-      "ts": 1784698548963
-    },
-    {
-      "sender": "누군가의 부계",
-      "text": "엥",
-      "ts": 1784698551000
-    },
-    {
-      "sender": "Unknown",
-      "text": "코드 저것만 딱 카피해서 했는데",
-      "ts": 1784698565535
-    },
-    {
-      "sender": "누군가의 부계",
-      "text": "코드 저것만 딱 카피해서 했는데",
-      "ts": 1784698567190
-    },
-    {
-      "sender": "Unknown",
-      "text": "잘되는디",
-      "ts": 1784698569903
-    },
-    {
-      "sender": "누군가의 부계",
-      "text": "잘되는디",
-      "ts": 1784698571820
-    },
-    {
-      "sender": "Unknown",
-      "text": "제가 어디선가 설정을 놓친 게 있으려나요....",
-      "ts": 1784698584439
-    },
-    {
-      "sender": "사루치",
-      "text": "제가 어디선가 설정을 놓친 게 있으려나요....",
-      "ts": 1784698584677
-    },
-    {
-      "sender": "Unknown",
-      "text": "진짜 다 했는데",
-      "ts": 1784698588784
-    },
-    {
-      "sender": "사루치",
-      "text": "진짜 다 했는데",
-      "ts": 1784698589321
-    },
-    {
-      "sender": "Unknown",
-      "text": "사진",
-      "ts": 1784698591098
-    },
-    {
-      "sender": "누군가의 부계",
-      "text": "Photo",
-      "ts": 1784698591392
-    },
-    {
-      "sender": "Unknown",
-      "text": "혹시 인터프리터 모드로 쓰시나요?",
-      "ts": 1784698605613
-    },
-    {
-      "sender": "사루치",
-      "text": "혹시 인터프리터 모드로 쓰시나요?",
-      "ts": 1784698606765
-    },
-    {
-      "sender": "Unknown",
-      "text": "공용로그 보시는것도 아닐거고",
-      "ts": 1784698612021
-    },
-    {
-      "sender": "누군가의 부계",
-      "text": "공용로그 보시는것도 아닐거고",
-      "ts": 1784698613886
-    },
-    {
-      "sender": "Unknown",
-      "text": "1 기본값으로 쓰고있어요",
-      "ts": 1784698634680
-    },
-    {
-      "sender": "누군가의 부계",
-      "text": "1 기본값으로 쓰고있어요",
-      "ts": 1784698635599
-    },
-    {
-      "sender": "누군가의 부계",
-      "text": "인터프리터 아님",
-      "ts": 1784698638963
-    },
+      "text": "{\"feedType\":2,\"member\":{\"userId\":4885258113124416783,\"nickName\":\"조하봇\"}}",
+      "ts": 1784820077850
+    }
+  ],
+  "120363425849930714@g.us": [
     {
-      "sender": "Unknown",
-      "text": "인터프리터 아님",
-      "ts": 1784698639044
+      "sender": "Best community",
+      "text": "Which thumbnail did you like the most?",
+      "ts": 1784822209286
     },
     {
-      "sender": "Unknown",
-      "text": "그렇군요...",
-      "ts": 1784698645430
+      "sender": "Monir Ahmed",
+      "text": "eta aapnar thambel check korar group na bhai .doya kore anno kothao erokom bhabe post koren . ekhane shob productive kothabarta chole",
+      "ts": 1784854037287
     },
     {
-      "sender": "사루치",
-      "text": "그렇군요...",
-      "ts": 1784698647193
+      "sender": "Md Irfatul Alam",
+      "text": "Hmm",
+      "ts": 1784854084617
     },
     {
-      "sender": "Unknown",
-      "text": "뭐지",
-      "ts": 1784698698695
-    },
-    {
-      "sender": "‮",
-      "text": "뭐지",
-      "ts": 1784698700062
-    },
-    {
-      "sender": "Unknown",
-      "text": "네이버 지오코더 박살났나",
-      "ts": 1784698705101
-    },
-    {
-      "sender": "‮",
-      "text": "네이버 지오코더 박살났나",
-      "ts": 1784698705702
-    },
-    {
-      "sender": "Unknown",
-      "text": "왜 상호명 검색이 안되지",
-      "ts": 1784698731860
-    },
-    {
-      "sender": "‮",
-      "text": "왜 상호명 검색이 안되지",
-      "ts": 1784698732281
-    },
-    {
-      "sender": "Unknown",
-      "text": "저렇게 이것저것 해보신분이 컴파일을 안하진 않았을거고ㅋㅋ",
-      "ts": 1784698770815
-    },
-    {
-      "sender": "누군가의 부계",
-      "text": "저렇게 이것저것 해보신분이 컴파일을 안하진 않았을거고ㅋㅋ",
-      "ts": 1784698772634
-    },
-    {
-      "sender": "Unknown",
-      "text": "아",
-      "ts": 1784698773140
-    },
-    {
-      "sender": "‮",
-      "text": "아",
-      "ts": 1784698774706
-    },
-    {
-      "sender": "Unknown",
-      "text": "애드가드 유블록 이게 문제네",
-      "ts": 1784698783615
-    },
-    {
-      "sender": "Unknown",
-      "text": "당연하죠ㅋㅋ",
-      "ts": 1784698783616
-    },
-    {
-      "sender": "‮",
-      "text": "애드가드 유블록 이게 문제네",
-      "ts": 1784698785200
-    },
-    {
-      "sender": "사루치",
-      "text": "당연하죠ㅋㅋ",
-      "ts": 1784698785486
-    },
-    {
-      "sender": "Unknown",
-      "text": "디버그룸이면 알림받기 꺼져있어도 되는데",
-      "ts": 1784698787982
-    },
-    {
-      "sender": "누군가의 부계",
-      "text": "디버그룸이면 알림받기 꺼져있어도 되는데",
-      "ts": 1784698789354
-    },
-    {
-      "sender": "Unknown",
-      "text": "저도 도통 원인을 모르겠습니다",
-      "ts": 1784698800483
-    },
-    {
-      "sender": "사루치",
-      "text": "저도 도통 원인을 모르겠습니다",
-      "ts": 1784698801132
-    },
-    {
-      "sender": "Unknown",
-      "text": "로그만 문제가 아니라 답변도 안오는거니까",
-      "ts": 1784698804840
-    },
-    {
-      "sender": "누군가의 부계",
-      "text": "로그만 문제가 아니라 답변도 안오는거니까",
-      "ts": 1784698806300
-    },
-    {
-      "sender": "누군가의 부계",
-      "text": "흠",
-      "ts": 1784698807082
-    },
-    {
-      "sender": "Unknown",
-      "text": "흠",
-      "ts": 1784698807158
-    },
-    {
-      "sender": "Unknown",
-      "text": "1년 전쯤에 써본 기억이 있는데",
-      "ts": 1784698815586
-    },
-    {
-      "sender": "사루치",
-      "text": "1년 전쯤에 써본 기억이 있는데",
-      "ts": 1784698815587
-    },
-    {
-      "sender": "Unknown",
-      "text": "그따는 됐었거든요???",
-      "ts": 1784698821997
-    },
-    {
-      "sender": "사루치",
-      "text": "그따는 됐었거든요???",
-      "ts": 1784698823798
-    },
-    {
-      "sender": "Unknown",
-      "text": "개념 쉽긴 한데",
-      "ts": 1784698826375
-    },
-    {
-      "sender": "[AI] Skynet",
-      "text": "개념 쉽긴 한데",
-      "ts": 1784698827158
-    },
-    {
-      "sender": "Unknown",
-      "text": "{\"feedType\":25,\"logId\":3890314449597806593,\"hidden\":true,\"targetRevision\":1}",
-      "ts": 1784698830748
-    },
-    {
-      "sender": "Unknown",
-      "text": "/날씨 평양",
-      "ts": 1784698837140
-    },
-    {
-      "sender": "‮",
-      "text": "/날씨 평양",
-      "ts": 1784698838259
-    },
-    {
-      "sender": "Unknown",
-      "text": "해당 위치를 찾을 수 없어요",
-      "ts": 1784698841508
-    },
-    {
-      "sender": "[AI] Skynet",
-      "text": "해당 위치를 찾을 수 없어요",
-      "ts": 1784698842896
-    },
-    {
-      "sender": "Unknown",
-      "text": "스카이넷은 아직 고장나있군",
-      "ts": 1784698845870
-    },
-    {
-      "sender": "‮",
-      "text": "스카이넷은 아직 고장나있군",
-      "ts": 1784698846259
-    },
-    {
-      "sender": "Unknown",
-      "text": "지웠다 깔아도 보셨을거고",
-      "ts": 1784698862454
-    },
-    {
-      "sender": "누군가의 부계",
-      "text": "지웠다 깔아도 보셨을거고",
-      "ts": 1784698863101
-    },
-    {
-      "sender": "Unknown",
-      "text": "네네",
-      "ts": 1784698864770
-    },
-    {
-      "sender": "사루치",
-      "text": "네네",
-      "ts": 1784698866952
-    },
-    {
-      "sender": "Unknown",
-      "text": "폰이 바뀌기는 했는데 그게 문제이려나",
-      "ts": 1784698871192
-    },
-    {
-      "sender": "사루치",
-      "text": "폰이 바뀌기는 했는데 그게 문제이려나",
-      "ts": 1784698872601
-    },
+      "sender": "Biswajit || Content Strategist",
+      "text": "OK Bro 🫂",
+      "ts": 1784860547582
+    }
+  ],
+  "line:Ce7fb92f8d85056790b4bb319db0592b5": [
     {
-      "sender": "Unknown",
-      "text": "근데 옛날 폰 쓸때도 후반부에 작동 안됐었던 거 같아요",
-      "ts": 1784698889816
+      "sender": "COZE HOSPITALITY 3.0",
+      "text": "🌟 Early Check-in & Late Check-out\n\nIf the calendar is open, we’d be delighted to offer them for free!\n\nBut because other guests often check out right before your stay (and in right after), we may not always confirm this in advance.\n\n\nThat said — here are some great alternatives that past guests found super helpful:\n\n\n---\n\nOption 1. 🧳 Luggage Drop at Home\n\nArrive early or fly late? Simply leave your bags at the house between 11:00 AM – 3:00 PM.\n\nYou’ll be free to explore without heavy luggage and return when check-in or airport time comes.\n\nIt’s simple, practical, and lets you start (or end) your day light and happy.\n\n\n\n---\n\nOption 2. ✨ Driver-Assisted Luggage Service\n\nA. Arriving very early (before 10:00 AM)\n\nYour driver collects your luggage straight from the airport and brings it to our office.\n\nGo enjoy Seoul right away, and we’ll place your bags inside your home before 3:00 PM.\n\nFee: ₩30,000 per driver (South of Hanriver 20K KRW extra) \n\n\nB. Leaving late (after 3:00 PM)\n\nYour driver picks up luggage at the house and keeps it safe until your airport departure.\n\nYou can roam freely, and he’ll meet you anywhere in the Gangbuk area before heading to the airport.\n\nFee: ₩30,000 per driver (South of Hanriver 20K KRW extra)\n\n\nPerfect for those who want convenience and comfort without luggage worries.\n\n\n---\n\nOption 3. 🧭 Private Tour with Tour Host(Guide & Storyteller)\n\nTurn arrival or departure day into a sightseeing day!\n\nYour dedicated tour host will guide you through hidden gems and local favorites while handling all the transfers.\n\nThis way, your “waiting hours” transform into one of the best memories of your trip.\n\nGuests often call this the smartest way to make the most of their time.\n\n\n\n---\n\nOption 4. 🛏️ Book an Extra Night\n\nIf you’re traveling with children, elderly family, or simply value total peace of mind, adding one more night is the ultimate comfort.\n\nNo rush, no stress — just rest, unpack, and enjoy your cozy space at your own pace.\n\nSometimes, that extra night is the secret to a smoother and happier journey.\n\n\n\n---\n\n💫 Whichever option you choose, we’ll make sure your stay feels easy, joyful, and tailored just for you. If you’d like us to arrange any of these in advance, simply let us know — we’re always here with a happy heart.\n\nWith warmth & good vibes,\nGaya | Guest Care Team of COZE Hospitality 3.0",
+      "ts": 1784817512667
     },
     {
-      "sender": "사루치",
-      "text": "근데 옛날 폰 쓸때도 후반부에 작동 안됐었던 거 같아요",
-      "ts": 1784698890723
+      "sender": "unknown",
+      "text": "朝の5時に到着します、その場合はお金が発生しますか？",
+      "ts": 1784817915616
     },
     {
-      "sender": "Unknown",
-      "text": "진짜 왜지,,,",
-      "ts": 1784698892144
+      "sender": "COZE HOSPITALITY 3.0",
+      "text": "Flight number please?",
+      "ts": 1784817956565
     },
     {
-      "sender": "사루치",
-      "text": "진짜 왜지,,,",
-      "ts": 1784698893877
+      "sender": "unknown",
+      "text": "LJ734",
+      "ts": 1784819047007
     },
     {
-      "sender": "Unknown",
-      "text": "아 나도 지오코더 터진거 해결해야 하는데",
-      "ts": 1784698929067
+      "sender": "COZE HOSPITALITY 3.0",
+      "text": "Well, it will be landed at 5AM. I recommend for you to use our airport pick up service. \n\nAt this moment, you can stilll be allowed to check in early however, our booking window closes at 10PM today. It is the vacation season, so we don't know someone take this home today",
+      "ts": 1784859330763
     },
     {
-      "sender": "DarkTornado.js",
-      "text": "아 나도 지오코더 터진거 해결해야 하는데",
-      "ts": 1784698929684
+      "sender": "COZE HOSPITALITY 3.0",
+      "text": "Thus please check again to us its avaialbility at 21PM tonight!",
+      "ts": 1784859365427
     },
     {
-      "sender": "Unknown",
-      "text": "채자봇 이야기긴 한데",
-      "ts": 1784698939538
+      "sender": "COZE HOSPITALITY 3.0",
+      "text": "We are glad to provide the early check in service for free if the booking schedle is allowed",
+      "ts": 1784859390881
     },
     {
-      "sender": "DarkTornado.js",
-      "text": "채자봇 이야기긴 한데",
-      "ts": 1784698940167
+      "sender": "unknown",
+      "text": "もう一度確認ですが、この空港送迎サービスは無料なのですか？\n有料の場合仁川空港からそちらのホテルまでの料金は正確にいくらになりますか？",
+      "ts": 1784860696125
     },
     {
-      "sender": "Unknown",
-      "text": "종종 아무 이유 없이 컴파일하면 무조건 팅기는 경우가 있는데",
-      "ts": 1784698956111
+      "sender": "unknown",
+      "text": "そして、本日の22時に最終受付とおっしゃっていましたが、22時に予約がない場合でも、10時にしかホテルへは入れないのでしょうか。",
+      "ts": 1784860782484
     },
     {
-      "sender": "DarkTornado.js",
-      "text": "종종 아무 이유 없이 컴파일하면 무조건 팅기는 경우가 있는데",
-      "ts": 1784698956532
+      "sender": "COZE HOSPITALITY 3.0",
+      "text": "Because you stay here under 4 nights, it is paid service. The standard price is 120K KRW.. If you meet the driver at 06AM, no extra charge",
+      "ts": 1784860792569
     },
     {
-      "sender": "Unknown",
-      "text": "재부팅하면 해결되긴 했어요",
-      "ts": 1784698960478
+      "sender": "COZE HOSPITALITY 3.0",
+      "text": "if you are willing to check in tomorrow 7am, it muut be vacant today in this home. So we can confirm whether this home is vacaant or not at 10PM because the booking request will be close at 10PM todaay",
+      "ts": 1784860876951
     },
     {
-      "sender": "DarkTornado.js",
-      "text": "재부팅하면 해결되긴 했어요",
-      "ts": 1784698962175
+      "sender": "unknown",
+      "text": "通訳が入っているため少し質問と答えがズレているかと思います。\n私の理解ですが、本日22時に予約が入らなければ7時に直接ホテルで向かって大丈夫と言う事ですね？",
+      "ts": 1784861011556
     },
     {
-      "sender": "Unknown",
-      "text": "재부팅 한 번 해보세요",
-      "ts": 1784698987211
+      "sender": "COZE HOSPITALITY 3.0",
+      "text": "yes. correct",
+      "ts": 1784861040317
     },
     {
-      "sender": "DarkTornado.js",
-      "text": "재부팅 한 번 해보세요",
-      "ts": 1784698988250
+      "sender": "unknown",
+      "text": "かしこまりました。\nそれでは本日22時に最終確認のご連絡宜しくお願いします！",
+      "ts": 1784861182399
     }
   ],
   "wechat:26308516478@chatroom": [
     {
-      "sender": "wxid_r3zjex7x4mcv32",
-      "text": "请问睡着了吗",
-      "ts": 1784650986021
-    },
-    {
-      "sender": "wxid_r3zjex7x4mcv32",
-      "text": "没事了 这家餐馆关门了 打扰了",
-      "ts": 1784651124477
-    },
-    {
       "sender": "COZE Guest Care",
-      "text": "sorry!!",
-      "ts": 1784682325468
+      "text": "sorry ! We are fully booked at that date :(",
+      "ts": 1784817366438
+    }
+  ],
+  "120363409863337770@g.us": [
+    {
+      "sender": "Hye Lynn Choi",
+      "text": "Hi, we will arrive around 3pm by car. Is there a parking lot?",
+      "ts": 1784816887388
+    }
+  ],
+  "821029263061-1559638014@g.us": [
+    {
+      "sender": "CHAL MADINAY CHALTAY HN🕋",
+      "text": "Salam today\n\n🕋 Fajar  jamat time 4:55 am\n\nانشاءاللہ الکریم",
+      "ts": 1784835110385
+    }
+  ],
+  "120363424862179686@g.us": [
+    {
+      "sender": "Mahmud Hasan",
+      "text": "আসসালামুয়ালাইকুম, \n\nআপনাদের দেওয়া তথ্য অনুযায়ী অত্যন্ত জরুরী এই সার্ভে রিপোর্টটি প্রকাশ করা হলো। \n\nএই ডক ফাইলে বিস্তারিত -  https://docs.google.com/spreadsheets/d/1VwtCwWORIrY-XKxNNfeqkdhIRf6brm1tFOv5cfgWb_Q/edit?usp=sharing\n\nএক নজরে দেখার ওয়েবসাইট লিংক - https://biniyog-briddhi-inv-survery.netlify.app/\n\nআপনাদের সকলের প্রতি ভালোবাসা, শুভকামনা ও দোয়া রইলো।\n- মোহাইমিন পাটোয়ারী",
+      "ts": 1784844995895
     }
   ],
   "kakao:301321483004194": [
     {
       "sender": "변이규",
-      "text": "서형식80 \n김병구80",
-      "ts": 1784688799693
+      "text": "변이규80",
+      "ts": 1784851225817
     },
     {
       "sender": "변이규",
-      "text": "서형식80 \n김병구80",
-      "ts": 1784688801035
-    },
-    {
-      "sender": "변이규",
-      "text": "서형식\n01053526897",
-      "ts": 1784689007860
-    },
-    {
-      "sender": "변이규",
-      "text": "서형식\n01053526897",
-      "ts": 1784689008937
-    },
-    {
-      "sender": "변이규",
-      "text": "김병구\n01086979114",
-      "ts": 1784689036657
-    },
-    {
-      "sender": "변이규",
-      "text": "김병구\n01086979114",
-      "ts": 1784689038537
+      "text": "변이규80",
+      "ts": 1784851227813
     },
     {
       "sender": "이규진",
-      "text": "26년 7월 23일 목요일  9:40AM \n\n인천->SJ\n\nKC 909\n\nSunkar Ormanov\n\n성인2 소아3 / 점보1  / 11만원 / 후불",
-      "ts": 1784708822449
-    },
-    {
-      "sender": "이규진",
-      "text": "26년 7월 23일 목요일  9:40AM \n\n인천->SJ\n\nKC 909\n\nSunkar Ormanov\n\n성인2 소아3 / 점보1  / 11만원 / 후불",
-      "ts": 1784708822774
+      "text": "{\"logId\":3891180175351273473,\"targetRevision\":1,\"hidden\":true,\"feedType\":25}",
+      "ts": 1784860126269
     }
   ],
-  "kakao:474751444159250": [
+  "kakao:473051276385968": [
     {
-      "sender": "PetitAmourFlower",
-      "text": "안녕하세요.\n숙소 정확한 주소와 공항 픽업 방법 알려주세요",
-      "ts": 1784692528235
+      "sender": "김대훈",
+      "text": "이 방은 나가겠습니다, 감사합니다",
+      "ts": 1784851254758
     },
     {
-      "sender": "PetitAmourFlower",
-      "text": "안녕하세요.\n숙소 정확한 주소와 공항 픽업 방법 알려주세요",
-      "ts": 1784692528563
-    },
-    {
-      "sender": "PetitAmourFlower",
-      "text": "2일종도 부모님이 오가실 수 있어요. 괜찮나요?",
-      "ts": 1784692557352
-    },
-    {
-      "sender": "PetitAmourFlower",
-      "text": "2일종도 부모님이 오가실 수 있어요. 괜찮나요?",
-      "ts": 1784692559419
+      "sender": "김대훈",
+      "text": "이 방은 나가겠습니다, 감사합니다",
+      "ts": 1784851256370
     },
     {
       "sender": "GAYA | GUEST CARE",
-      "text": "안녕하세요! 현주 @PetitAmourFlower 님! \n위 정보 열람 부탁드리겠습니다 ^^",
-      "ts": 1784692575975
+      "text": "네네! 감사합니다 :)",
+      "ts": 1784851713144
     },
     {
       "sender": "GAYA | GUEST CARE",
-      "text": "안녕하세요! 현주 @PetitAmourFlower 님! \n위 정보 열람 부탁드리겠습니다 ^^",
-      "ts": 1784692576309
+      "text": "네네! 감사합니다 :)",
+      "ts": 1784851713770
     },
     {
-      "sender": "GAYA | GUEST CARE",
-      "text": "네 그럼요 ^^",
-      "ts": 1784692584400
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "네 그럼요 ^^",
-      "ts": 1784692586331
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "부모님도 해당 톡방 초대주시면 주차 방법등 다 같이 안내드릴게요!",
-      "ts": 1784692598925
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "부모님도 해당 톡방 초대주시면 주차 방법등 다 같이 안내드릴게요!",
-      "ts": 1784692600442
-    },
-    {
-      "sender": "PetitAmourFlower",
-      "text": "[공지] 서울특별시 성북구 성북동 178-60",
-      "ts": 1784692639864
-    },
-    {
-      "sender": "PetitAmourFlower",
-      "text": "Announcement in Boards: 서울특별시 성북구 성북동 178-60",
-      "ts": 1784692640632
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "🚐📚 공항 밴 이용 완전 가이드북\n\n1️⃣ 예약 방법\n\n• 여행 날짜 / 도착 시간 / 항공사 / 항공편명(Flight No.)을 알려주세요.\n• 확인 후, 픽업 상세 안내 + 기사님 연락처를 보내드립니다.\n\n2️⃣ 밴 서비스 요금 & 프로모션\n\n🎁 프로모션\n• 4박 투숙 → 7인승 밴 1회 FREE\n• 8박 투숙 → 7인승 밴 2회 FREE\n\n💰 추가 요금\n• 김포공항 ↔ 숙소 — 🚗 4인승 ₩70,000 / 🚐 7인승 ₩90,000\n• 인천공항 ↔ 숙소 — 🚗 4인승 ₩100,000 / 🚐 7인승 ₩120,000\n• 서울 시내 짐 운송 — 🚗/🚐 정액 ₩60,000\n\n🛋️ 편안한 이동 팁\n7인 + 짐이 함께라면 7인승 차량이 다소 타이트할 수 있어요. 더 여유롭게 이동하시려면 4인승 2대를 예약하시는 것을 추천드립니다. 😌\n\n3️⃣ 기사님 미팅 안내\n• 기사님이 항공편을 실시간으로 추적하고, 도착 게이트에서 \"성함 피켓\"을 들고 기다립니다.\n• ⏳ 대기 시간: 착륙 후 최대 60분까지 가능합니다.\n• 🤝 기사님을 만나시면 바로 차량으로 이동해 주시면 됩니다.\n💡 추가 서비스 비용(필수 안내)\n• 환전/유심(SIM) 안내: ₩10,000\n• 심야/조조 운행(21:00–06:00): ₩20,000\n• 베이비 카시트: 좌석당 ₩20,000\n• 터미널 간 이동: ₩30,000",
-      "ts": 1784692666592
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "🚐📚 공항 밴 이용 완전 가이드북\n\n1️⃣ 예약 방법\n\n• 여행 날짜 / 도착 시간 / 항공사 / 항공편명(Flight No.)을 알려주세요.\n• 확인 후, 픽업 상세 안내 + 기사님 연락처를 보내드립니다.\n\n2️⃣ 밴 서비스 요금 & 프로모션\n\n🎁 프로모션\n• 4박 투숙 → 7인승 밴 1회 FREE\n• 8박 투숙 → 7인승 밴 2회 FREE\n\n💰 추가 요금\n• 김포공항 ↔ 숙소 — 🚗 4인승 ₩70,000 / 🚐 7인승 ₩90,000\n• 인천공항 ↔ 숙소 — 🚗 4인승 ₩100,000 / 🚐 7인승 ₩120,000\n• 서울 시내 짐 운송 — 🚗/🚐 정액 ₩60,000\n\n🛋️ 편안한 이동 팁\n7인 + 짐이 함께라면 7인승 차량이 다소 타이트할 수 있어요. 더 여유롭게 이동하시려면 4인승 2대를 예약하시는 것을 추천드립니다. 😌\n\n3️⃣ 기사님 미팅 안내\n• 기사님이 항공편을 실시간으로 추적하고, 도착 게이트에서 \"성함 피켓\"을 들고 기다립니다.\n• ⏳ 대기 시간",
-      "ts": 1784692668472
-    },
-    {
-      "sender": "PetitAmourFlower",
-      "text": "저희는 4명이라 괜찮아요. 짐은 갈 때는 거의 없어요^^ 아시겠지만",
-      "ts": 1784692729984
-    },
-    {
-      "sender": "PetitAmourFlower",
-      "text": "저희는 4명이라 괜찮아요. 짐은 갈 때는 거의 없어요^^ 아시겠지만",
-      "ts": 1784692731558
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "네네!",
-      "ts": 1784692746574
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "네네!",
-      "ts": 1784692747955
-    },
-    {
-      "sender": "PetitAmourFlower",
-      "text": "제가 오늘중으로 알려드릴께요",
-      "ts": 1784692791634
-    },
-    {
-      "sender": "PetitAmourFlower",
-      "text": "제가 오늘중으로 알려드릴께요",
-      "ts": 1784692792434
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "넵!",
-      "ts": 1784692798036
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "넵!",
-      "ts": 1784692799141
-    }
-  ],
-  "line:C9df8ba070ff89afba505cc55ee8ab9d2": [
-    {
-      "sender": "unknown",
-      "text": "ありがとうございました！\nおかげさまで最高の旅となりました！\n\n素晴らしいご対応をしていただき誠にありがとうございました。",
-      "ts": 1784706231831
-    },
-    {
-      "sender": "COZE_Cyrus",
-      "text": "Thank you so much for your kind words! 😊\nIt truly means a lot to me and the entire COZE team.\n\nWe’re so happy to hear that you had such a wonderful trip and that we could be part of your special memories in Seoul. 🇰🇷✨\n\nWishing you a safe journey home, and we sincerely hope to welcome you again someday!\n\nCyrus, Guest Care Team of COZE Hospitality 3.0",
-      "ts": 1784706371976
+      "sender": "황진섭",
+      "text": "{\"member\":{\"userId\":160992278,\"nickName\":\"황진섭\"},\"kicked\":false,\"memorial\":false,\"hidden\":false,\"feedType\":2}",
+      "ts": 1784854737247
     }
   ],
   "kakao:474285986859998": [
     {
-      "sender": "GAYA | GUEST CARE",
-      "text": "안녕하세요! @혜윤 님!\n\n인원이 많으신데, 기차로 도착 시 일괄 택시로 이동하실까요?\n\n만약 밴 차량 섭외가 필요하시면 말씀 부탁드려요!\n\n총 몇 분이 서울역에서 이동 예정이실까요?",
-      "ts": 1784707405738
+      "sender": "COZE _ Jin",
+      "text": "{\"inviter\":{\"userId\":405229076,\"nickName\":\"COZE _ Jin\"},\"members\":[{\"userId\":212216679,\"nickName\":\"변이규\"}],\"byLink\":false,\"feedType\":1}",
+      "ts": 1784852124578
     },
     {
-      "sender": "GAYA | GUEST CARE",
-      "text": "안녕하세요! @혜윤 님!\n\n인원이 많으신데, 기차로 도착 시 일괄 택시로 이동하실까요?\n\n만약 밴 차량 섭외가 필요하시면 말씀 부탁드려요!\n\n총 몇 분이 서울역에서 이동 예정이실까요?",
-      "ts": 1784707406342
+      "sender": "COZE _ Jin",
+      "text": "오늘 픽업 도와주실  @변이규 톡방 초대했습니다^^",
+      "ts": 1784852159640
     },
     {
-      "sender": "GAYA | GUEST CARE",
-      "text": "체크인을 더 빠르고 편안하게 도와드리기 위해, 아래 내용을 간단히 알려주실 수 있을까요?\n\n도착 시간 ⏰\n \n숙소에 몇 시쯤 도착하실 예정이신가요?\n\n\n도착 경로 🚗✈️🚆\n \n인천/김포 공항에서 바로 오시나요?\n 아니면 서울/한국 내 다른 숙소 또는 장소에서 이동하시나요?\n\n\n이동 수단 정보 🧳\n \n\n공항 리무진 버스, 공항철도/기차, 택시, 밴, 자차 중 어떤 방법으로 오시나요?\n \n\n저희 공항 픽업(공항 이동)을 예약하신 경우, 항공편명과 도착 시간을 함께 알려주시면 도착 상황을 확인해드릴게요.\n\n\n💡 위 정보를 알려주시면, 저희 팀이 길 안내를 더 정확히 드리고 짐 이동도 도와드릴 수 있으며, 도착 시간에 맞춰 잘 준비하고 기다리겠습니다.\n\n감사합니다 💕",
-      "ts": 1784707440648
-    },
-    {
-      "sender": "GAYA | GUEST CARE",
-      "text": "체크인을 더 빠르고 편안하게 도와드리기 위해, 아래 내용을 간단히 알려주실 수 있을까요?\n\n도착 시간 ⏰\n \n숙소에 몇 시쯤 도착하실 예정이신가요?\n\n\n도착 경로 🚗✈️🚆\n \n인천/김포 공항에서 바로 오시나요?\n 아니면 서울/한국 내 다른 숙소 또는 장소에서 이동하시나요?\n\n\n이동 수단 정보 🧳\n \n\n공항 리무진 버스, 공항철도/기차, 택시, 밴, 자차 중 어떤 방법으로 오시나요?\n \n\n저희 공항 픽업(공항 이동)을 예약하신 경우, 항공편명과 도착 시간을 함께 알려주시면 도착 상황을 확인해드릴게요.\n\n\n💡 위 정보를 알려주시면, 저희 팀이 길 안내를 더 정확히 드리고 짐 이동도 도와드릴 수 있으며, 도착 시간에 맞춰 잘 준비하고 기다리겠습니다.\n\n감사합니다 💕",
-      "ts": 1784707441315
+      "sender": "COZE _ Jin",
+      "text": "오늘 픽업 도와주실  @변이규 톡방 초대했습니다^^",
+      "ts": 1784852162425
     },
     {
       "sender": "혜윤",
-      "text": "23일에는 저 혼자 용산역에 밤에 도착해서 택시로 이동해 24일 아침 김포공항으로 픽업을 갑니다 거기서 3명을 픽업해 점심식사를 하러 갈 예정입니다 공항 픽업을 예약하진 않았습니다",
-      "ts": 1784707852833
+      "text": "안녕하세요~ 10시 40분 도착하는 친구는 그대로 오는데 11시5분 도착 일행들 비행기가 20분정도 연착될수있다고 하네요",
+      "ts": 1784853642460
     },
     {
       "sender": "혜윤",
-      "text": "23일에는 저 혼자 용산역에 밤에 도착해서 택시로 이동해 24일 아침 김포공항으로 픽업을 갑니다 거기서 3명을 픽업해 점심식사를 하러 갈 예정입니다 공항 픽업을 예약하진 않았습니다",
-      "ts": 1784707853797
+      "text": "안녕하세요~ 10시 40분 도착하는 친구는 그대로 오는데 11시5분 도착 일행들 비행기가 20분정도 연착될수있다고 하네요",
+      "ts": 1784853644693
+    },
+    {
+      "sender": "COZE _ Jin",
+      "text": "넵 모니터링 하겠습니다",
+      "ts": 1784854156243
+    },
+    {
+      "sender": "COZE _ Jin",
+      "text": "넵 모니터링 하겠습니다",
+      "ts": 1784854157061
+    },
+    {
+      "sender": "변이규",
+      "text": "사진",
+      "ts": 1784855274975
+    },
+    {
+      "sender": "변이규",
+      "text": "Photo",
+      "ts": 1784855275219
+    },
+    {
+      "sender": "변이규",
+      "text": "현재 이렇게나오네요",
+      "ts": 1784855291581
+    },
+    {
+      "sender": "변이규",
+      "text": "현재 이렇게나오네요",
+      "ts": 1784855292999
+    },
+    {
+      "sender": "변이규",
+      "text": "뒷비행기 스케쥴에맞춰\n들어가겠읍니다",
+      "ts": 1784855314299
+    },
+    {
+      "sender": "변이규",
+      "text": "뒷비행기 스케쥴에맞춰\n들어가겠읍니다",
+      "ts": 1784855314456
+    },
+    {
+      "sender": "혜윤",
+      "text": "네",
+      "ts": 1784855322723
+    },
+    {
+      "sender": "혜윤",
+      "text": "네",
+      "ts": 1784855322746
+    },
+    {
+      "sender": "혜윤",
+      "text": "전 공항도착했습니다",
+      "ts": 1784857539409
+    },
+    {
+      "sender": "혜윤",
+      "text": "전 공항도착했습니다",
+      "ts": 1784857540801
+    },
+    {
+      "sender": "변이규",
+      "text": "네~~",
+      "ts": 1784857631719
+    },
+    {
+      "sender": "변이규",
+      "text": "네~~",
+      "ts": 1784857632235
+    },
+    {
+      "sender": "혜윤",
+      "text": "한분은 나오셔서 앉아있고요 다른분들 기다리는 중입니다",
+      "ts": 1784859471405
+    },
+    {
+      "sender": "혜윤",
+      "text": "한분은 나오셔서 앉아있고요 다른분들 기다리는 중입니다",
+      "ts": 1784859471884
+    },
+    {
+      "sender": "변이규",
+      "text": "5분후도착요",
+      "ts": 1784859506321
+    },
+    {
+      "sender": "변이규",
+      "text": "5분후도착요",
+      "ts": 1784859507317
+    }
+  ],
+  "120363426515881970@g.us": [
+    {
+      "sender": "COZE_Jin",
+      "text": "Good morning! @140132082553028 \n\n​We received a message from the driver asking if you might have left anything in the vehicle on your way from the airport to the accommodation.\n\n​They mentioned finding a black pouch. Could you please check your belongings and let us know if it might be yours?\n​Thank you!",
+      "ts": 1784853090661
+    },
+    {
+      "sender": "COZE_Jin",
+      "text": "The driver had several passengers and is currently checking with each of them.",
+      "ts": 1784853134469
+    },
+    {
+      "sender": "Sunkar",
+      "text": "Good morning!\nIt looks like we have everything.\nThank you.",
+      "ts": 1784858958673
+    }
+  ],
+  "120363429789674074@g.us": [
+    {
+      "sender": "COZE_Gaya",
+      "text": "/link 634dd0f7-f6a6-4bd7-92fc-1e62251a0bef",
+      "ts": 1784855828370
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "/welcome",
+      "ts": 1784855836494
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "COZE Hospitality 3.0\n\nAll You Need. All in One. All Yours.\n\n\n🇰🇷✨ Welcome to Korea! And Welcome to COZE.\n\nJet-lagged? Phone not working? Hungry but can’t read the menu?\nWe get it. And we’ve built a stay just for you.\n\nCOZE is where your trip begins with care — not confusion.\nWe don’t just rent homes. We curate your entire Korean experience around you.\n\n> Think: a home in Korea, powered by local friends who do everything for you.",
+      "ts": 1784856102964
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "Here we share the service instruction!",
+      "ts": 1784856168080
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "Home Address :",
+      "ts": 1784856168660
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "서울시 용산구 두텁바위로 97-1 3층",
+      "ts": 1784856169209
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "3F 97-1, Duteopbawi-ro, Yongsan-gu, Seoul, Republic of Korea 04336",
+      "ts": 1784856169754
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "Main Gate Pin 0 2 1 8 *\n(*Please make sure once again the main gate closed properly for residence security 🙏*)",
+      "ts": 1784856170295
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "Front door(Room & Rooftop) Pin 2 6 1 0 0 4 *",
+      "ts": 1784856170865
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "The neighborhood information (with Naver Map Link)\n*Please sign up Naver, and download Navermap app, and save our list in the app! very useful insight you will have to understand your neighborhood very quickly*",
+      "ts": 1784856171413
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "https://naver.me/IFghzbC8",
+      "ts": 1784856171982
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "📌 Essential Information\n\nAddress — 3F 97‑1 Duteopbawi‑ro, Yongsan‑gu, Seoul 04336\u000b\n\nMain Entrance Code — 0 2 1 8 * → Always check that it relocks after every in/out\u000b\n\nYour Suite Door Code(Including AERIES GARDEN) \n\n— Check‑in date in the format YYMMDD + *\n\nExample: 10 May 2025 → 250510* (remains the same throughout your stay)\u000b\n\nWi‑Fi Networks\u000b\n\n3F HTB — SSID KT_WiFi_5G_F3EB / PIN 0efd1cc848\n\n4F AERIES Garden — SSID iptime_ring / no password\u000b\n\n👶📡 Baby Monitor Available\nKeep an eye on little ones or pets on another floor in real time.\u000b\n📍 Where to find it\nBaby-amenities cabinet (camera + monitor set)\u000b\n🔌 Quick Start\nCamera — plug in the USB power (DC 5 V) cable and leave it on.\u000b\nMonitor — fully charge via USB-C, then use cord-free.\u000b\nHold the power button to pair; once connected, you’re ready to go.\n\n\n📱 Guest Smartphone Provided\u000b\n\nA smartphone with a Korean phone number and unlimited data & calls is provided free of charge during your stay!\nUse it as a Wi-Fi hotspot and access all essential apps like Coupang Eats, KakaoTaxi, Naver Maps, and more.\n\n💡 Local Tip:\u000b\n\nCheck out the Naver Map app — we’ve bookmarked great local spots like restaurants, supermarkets, banks, clinics, and more. It’s like having a local guide in your pocket! 🗺️📍\n\n🍽️ Food Delivery Orders\u000b\n\nUse the guest smartphone to open the Coupang Eats app.\n\nAdd your items to the cart, take a screenshot of the final summary, and send it to us via Messenger.\n\nWe’ll place the order and pay for it. You can reimburse us in cash or cryptocurrency at checkout.\n\n🚖 MPV Taxi Booking\u000b\n\nWe can assist you with real-time bookings via IM TAXI.\n\nMPV taxis seat up to 7 people — ideal for groups of 4–7\n\nFares are about 30% higher than standard taxis\n\nNeed multiple vans? No problem — just expect a short delay\n\n🍳 Kitchen & Appliances\n\nA full kitchen includes: dishwasher, oven, water purifier.\n\n\u000b💧 Water Purifier (EVERPURE)\nBrand: EVERPURE (USA) — Starbucks official partner\u000b\nType: Direct-flow purified water system\u000b\nMaintenance: Professionally serviced monthly\u000b\nHow to use: Use the small faucet on the left side of the sink labeled “정수기 / Purified Water.”\u000b\nBenefit: Very safe, great-tasting water for drinking & cooking\n\nFeel free to cook like home! \n\n\n☕ Capsule Coffee & Tea\u000b\n\nExtra tea and coffee capsules are in the drawer beneath the living room tea cabinet. Feel free to help yourself!\n\nilly Coffee Machine\n\nQuick Guide\nhttps://youtu.be/XEDAXZY50FM?si=uOfwquZXC6WCis_G\n\nSteam Milk\nhttps://youtu.be/bTzG7iM4dMA?si=aiEWUseiOT0as-Jo\n\nProgram the Volume\nhttps://youtu.be/h2X5gLYpf_4?si=eaDtARcyGQTjddFz\n\n♻️ Food Waste Disposal\u000b\n\nThe sink disposer grinds food waste. Turn on the water and press the foot pedal.\n\n⚠️ No bones or shells—these can damage the disposer!\nDispose of hard waste separately.\n\n🗑️ General & Recycling Waste\u000b\n\nThree trash bins in the living room:\n\nGeneral waste\n\nRecyclables\n\nAnother bin (use as needed)\n\nIf they fill up, tie the bag and leave it in the hallway. Let our team know, and we’ll take it out.\n\nKorean garbage rules can be tricky—feel free to ask us first!\n\n📽️ Multimedia Setup\u000b\n\nThere’s a projector connected to Korean TV & Google TV.\n\nTurn on the projector\n\nPower on the Yamaha soundbar\n\nUse the soundbar remote to select TV or Google TV input\n\n🧴 Amenities\u000b\n\nAbout 10 sets of face, body, and foot towels are in the master bedroom storage.\n\nHotel amenities (toothbrushes, razors, etc.) are also stored there.\n\n💨 Ventilation System\u000b\n\nOne heat-exchange ventilator is constantly running.\nLeave it on for fresh air even with windows closed!\n\n🔥 Heating\u000b\n\nThe main bedroom has a floor-heating thermostat (ondol).\n\nSet it to around 22°C for comfortable year-round living.\n\nDo not turn it OFF—it also supplies hot water.\n\nIf you don’t want the floor heating, switch to “Away Mode” but keep it powered on.\n\n🔥 BBQ & Firepit\u000b\n\nBBQ gear is in the deck containers beside the firepit:\n\nCharcoal\n\nFire starters\n\nTorch, gloves, tools\n\nFirepit Info:\n\nExtra firewood: to the left of the AERIES GARDEN entrance\n\nFirepit fee: ₩30,000\n\nExtra firewood: ₩20,000\n\nFire extinguisher is beside the pit\n\n⚠️ Keep noise low after 8 PM\n⚠️ No fireworks or uncontrolled flames\n⚠️ Guests are responsible for safe usage\n\n🔇 Noise Control\n\nAfter 8 PM, please be mindful of neighbors.\n\nIf chatting loudly indoors, close windows to contain noise.\nAbsolutely no fireworks or open-flame activities allowed.\n\n🚭 Smoking\n\nSmoking is allowed on the rooftop garden only.\n\nPlease use the ashtray on the table.\n\nIndoor smoking triggers a carbon monoxide detector—just like on an airplane!\n\n🚗 Parking\n\n1 spot available on the 1st floor parking area.\n\nIf the 2nd-floor guests have a car too, they may park in a line.\n\nLet our concierge team know if you need to move cars around!\n\nWe’ll assist you for smooth parking arrangements.",
+      "ts": 1784856172546
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "Check In Manual",
+      "ts": 1784856234076
+    },
+    {
+      "sender": "Haijing",
+      "text": "Thank you so much!",
+      "ts": 1784857951540
+    }
+  ],
+  "120363426534722265@g.us": [
+    {
+      "sender": "COZE_Gaya",
+      "text": "/link 6bac0d61-29fa-4a9e-b28f-4d20e3886365",
+      "ts": 1784856064792
+    },
+    {
+      "sender": "SA_Guest",
+      "text": "OK we are ready",
+      "ts": 1784857946446
+    },
+    {
+      "sender": "COZE_Jin",
+      "text": "Please @146299521351808",
+      "ts": 1784858021473
+    },
+    {
+      "sender": "COZE_Jin",
+      "text": "I'm driving now",
+      "ts": 1784858031119
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "okay",
+      "ts": 1784858070370
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "normal taxi or van taxi?",
+      "ts": 1784858109534
+    },
+    {
+      "sender": "Alice",
+      "text": "Normal taxi",
+      "ts": 1784858118239
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "Koreana Hotel is not in Myeongdong, but Gwanghwamun",
+      "ts": 1784858205003
+    },
+    {
+      "sender": "Alice",
+      "text": "Yes",
+      "ts": 1784858211618
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "okay. sir",
+      "ts": 1784858215758
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "then please wait",
+      "ts": 1784858218602
+    },
+    {
+      "sender": "Alice",
+      "text": "Ok thanks",
+      "ts": 1784858329637
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "3715/taxi/4min/*paid*",
+      "ts": 1784858350491
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "that's blue taxi(paid service) then we paid in our end",
+      "ts": 1784858377996
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "we will share the receipt when you get off",
+      "ts": 1784858396355
+    },
+    {
+      "sender": "Alice",
+      "text": "Ok.  The taxi to Bundang is paid also or no?",
+      "ts": 1784858469008
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "as long as you didnt get this notification, it might not be the one you paid",
+      "ts": 1784858519378
+    },
+    {
+      "sender": "COZE_Jin",
+      "text": "분당가는택시도 콜해주세요 가야",
+      "ts": 1784858570555
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "okay",
+      "ts": 1784858622388
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "that's the apartment complex",
+      "ts": 1784858719564
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "do you have any detail address?",
+      "ts": 1784858725882
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "then I can set the bulilding number for your convenience",
+      "ts": 1784858738928
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "any update?",
+      "ts": 1784858869559
+    },
+    {
+      "sender": "Alice",
+      "text": "I’m not sure the address let me ask my dad",
+      "ts": 1784858886446
+    },
+    {
+      "sender": "Alice",
+      "text": "It’s the location I sent you",
+      "ts": 1784858891403
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "yes. that's very huge land, you've better to know its detail address. Otherwise you should be get lost",
+      "ts": 1784858916502
+    },
+    {
+      "sender": "Alice",
+      "text": "[NAVER Maps]\nSamter Kindergarten\nGyeonggi-do Seongnam-si Bundang-gu Sunae-dong 36\nhttps://naver.me/F5sBYpJk",
+      "ts": 1784858977773
+    },
+    {
+      "sender": "Alice",
+      "text": "Does this place work? It’s right next door to the building",
+      "ts": 1784858989501
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "yes. it works",
+      "ts": 1784859035591
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "1226/taxi/5min",
+      "ts": 1784859051542
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "not paid",
+      "ts": 1784859056237
+    },
+    {
+      "sender": "COZE_Gaya",
+      "text": "3 min",
+      "ts": 1784859088158
+    }
+  ],
+  "4930577140819@c.us": [
+    {
+      "sender": "4930577140819@c.us",
+      "text": "Ticket has been updated - *In progress*",
+      "ts": 1784857987593
     }
   ]
 }

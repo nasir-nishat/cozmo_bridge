@@ -9,6 +9,54 @@ export const evoApi = axios.create({
     timeout: 20_000,
 });
 
+const REQUIRED_WEBHOOK_EVENTS = [
+    'MESSAGES_UPSERT',
+    'MESSAGES_UPDATE',
+    'SEND_MESSAGE',
+    'CONNECTION_UPDATE',
+    'GROUP_PARTICIPANTS_UPDATE',
+    'GROUPS_UPSERT',
+    'CONTACTS_UPSERT',
+];
+
+let lastWebhookEnsureAt = 0;
+
+export async function ensureEvolutionWebhook(force = false): Promise<void> {
+    if (!CONFIG.EVOLUTION_WEBHOOK_URL) return;
+
+    const now = Date.now();
+    if (!force && now - lastWebhookEnsureAt < 60_000) return;
+    lastWebhookEnsureAt = now;
+
+    try {
+        const existing = await evoApi.get(`/webhook/find/${INSTANCE}`).catch(() => null);
+        const current = existing?.data;
+        const events: string[] = Array.isArray(current?.events) ? current.events : [];
+        const hasRequiredEvents = REQUIRED_WEBHOOK_EVENTS.every(event => events.includes(event));
+        const alreadyCorrect =
+            current?.enabled === true &&
+            current?.url === CONFIG.EVOLUTION_WEBHOOK_URL &&
+            current?.webhookByEvents === false &&
+            current?.webhookBase64 === false &&
+            hasRequiredEvents;
+
+        if (alreadyCorrect) return;
+
+        await evoApi.post(`/webhook/set/${INSTANCE}`, {
+            webhook: {
+                enabled: true,
+                url: CONFIG.EVOLUTION_WEBHOOK_URL,
+                webhookByEvents: false,
+                webhookBase64: false,
+                events: REQUIRED_WEBHOOK_EVENTS,
+            },
+        });
+        console.log(`✅ Evolution webhook registered: ${CONFIG.EVOLUTION_WEBHOOK_URL}`);
+    } catch (e: any) {
+        console.error('❌ Evolution webhook registration failed:', e?.response?.data || e?.message);
+    }
+}
+
 export async function evoSendText(number: string, text: string): Promise<void> {
     await evoApi.post(`/message/sendText/${INSTANCE}`, { number, text });
 }

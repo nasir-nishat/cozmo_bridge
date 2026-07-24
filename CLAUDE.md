@@ -54,6 +54,7 @@ WeChat    → @wechatferry/agent on this Windows machine (WeChat PC must be open
 - `docs/sheets.md` — Google Sheets tabs and columns
 - `docs/supabase.md` — Supabase schema (pending migration)
 - `docs/admin-ui.md` — admin dashboard, auth, deploy
+- `docs/ops-dashboard-ia.md` — internal ops dashboard nav structure (parked reference)
 - `docs/booking-automation.md` — booking confirmation + messenger connect flow
 - `docs/jandi-receipt-scan.md` — Jandi Playwright receipt OCR setup
 - `docs/action-board.md` — unified Action Board spec (guest requests + ops tasks → kanban; supersedes property-ops-dashboard)

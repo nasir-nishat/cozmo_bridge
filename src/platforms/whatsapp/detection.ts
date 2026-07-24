@@ -79,14 +79,6 @@ export async function handleIncomingMessage(data: any) {
     const from: string = key.remoteJid || '';
     if (!from) return;
     const remoteJidAlt: string = key.remoteJidAlt || data.remoteJidAlt || '';
-
-    // Skip outgoing messages — except self-DM (COZMO chatting with itself).
-    // WhatsApp's LID addressing means remoteJid may be a LID ("...@lid") with the real number only
-    // in remoteJidAlt — match on the normalized phone number, not an exact JID string, so this
-    // still works across @c.us / @s.whatsapp.net / @lid delivery formats.
-    const isSelfDm = (remoteJidAlt || from).replace(/@.*$/, '').replace(/\D/g, '') === INSTANCE_OWNER_PHONE;
-    if (data.key?.fromMe && !isSelfDm) return;
-
     const text: string =
         data.message?.conversation ||
         data.message?.extendedTextMessage?.text ||
@@ -95,15 +87,26 @@ export async function handleIncomingMessage(data: any) {
     if (!text) return;
 
     const isGroup = from.endsWith('@g.us');
+    const isCommand = text.trim().startsWith('/');
+
+    // Skip outgoing messages, except self-DM tests and owner-issued group commands.
+    // WhatsApp's LID addressing means remoteJid may be a LID ("...@lid") with the real number only
+    // in remoteJidAlt; match on normalized phone numbers instead of exact JID strings.
+    const isSelfDm = !isGroup && (remoteJidAlt || from).replace(/@.*$/, '').replace(/\D/g, '') === INSTANCE_OWNER_PHONE;
+    const isOwnerGroupCommand = isGroup && isCommand && data.key?.fromMe;
+    if (data.key?.fromMe && !isSelfDm && !isOwnerGroupCommand) return;
+
     const dmJid = !isGroup ? normalizeWaDmJid(remoteJidAlt || from) : from;
     const replyTo = isGroup ? from : waSendTarget(dmJid);
-    const participantPhone = (data.participant || data.key?.participant || (!isGroup ? dmJid : '')).split('@')[0];
+    const ownerSenderJid = data.sender || `${INSTANCE_OWNER_PHONE}@s.whatsapp.net`;
+    const rawSenderJid = data.participant || data.key?.participant || (data.key?.fromMe ? ownerSenderJid : (!isGroup ? dmJid : ''));
+    const participantPhone = rawSenderJid.split('@')[0].replace(/\D/g, '');
     const isOwnerMessage =
         participantPhone === INSTANCE_OWNER_PHONE ||
         data.pushName === 'COZMO AI' ||
         participantPhone === '234325463273604'; // COZMO's LID
 
-    const senderJid: string = isGroup ? (data.participant || key.participant || '') : dmJid;
+    const senderJid: string = isGroup ? rawSenderJid : dmJid;
 
     addToBuffer(isGroup ? from : dmJid, data.pushName || senderJid, text);
 
@@ -234,7 +237,7 @@ export async function handleIncomingMessage(data: any) {
         return;
     }
 
-    if (isOwnerMessage && !isSelfDm) return;
+    if (isOwnerMessage && !isSelfDm && !isCommand) return;
 
     // Any non-COZMO message in a group clears the reply watchdog for that group
     if (isGroup) markReplied(from);

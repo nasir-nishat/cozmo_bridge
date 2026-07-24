@@ -28,35 +28,81 @@ const router = (0, express_1.Router)();
 // Evolution API pushes incoming messages here; configure Evolution webhook to POST /wa/webhook
 // Also registered as /webhook/wa for docker host.docker.internal routing
 const processedIds = new Set();
+const loggedWebhookIds = new Set();
+const IGNORED_EVENTS = new Set([
+    'presence.update', 'chats.update', 'contacts.update',
+    'contacts.upsert', 'chats.upsert', 'chats.delete',
+]);
+const ROUTE_EVENT_ALIASES = {
+    'connection-update': 'connection.update',
+    'group-participants-update': 'group-participants.update',
+    'groups-participants-update': 'groups-participants.update',
+    'groups-upsert': 'groups.upsert',
+    'messages-upsert': 'messages.upsert',
+    'messages-update': 'messages.update',
+    'send-message': 'send.message',
+};
+function rememberRecent(set, key, max = 500) {
+    if (set.has(key))
+        return false;
+    set.add(key);
+    if (set.size > max) {
+        const first = set.values().next().value;
+        set.delete(first);
+    }
+    return true;
+}
+function eventFromPath(value) {
+    if (!value)
+        return '';
+    return ROUTE_EVENT_ALIASES[value] || value.replace(/-/g, '.');
+}
+function normalizeEventName(value) {
+    return value.trim().toLowerCase().replace(/_/g, '.');
+}
+function parseWebhookBody(req) {
+    if (req.body && typeof req.body === 'object' && !Buffer.isBuffer(req.body))
+        return req.body;
+    try {
+        const raw = req.rawBody?.toString?.('utf8') || '';
+        return raw ? JSON.parse(raw) : {};
+    }
+    catch {
+        return {};
+    }
+}
+function extractWebhookMessage(data) {
+    return Array.isArray(data?.messages) ? data.messages[0] : data;
+}
 async function handleEvolutionWebhook(req, res) {
     res.json({ success: true });
-    const body = req.body;
-    const { event, data } = body;
-    // Suppress noisy non-actionable events
-    const IGNORED_EVENTS = [
-        'presence.update', 'chats.update', 'contacts.update',
-        'contacts.upsert', 'chats.upsert', 'chats.delete'
-    ];
-    if (IGNORED_EVENTS.includes(event))
+    const body = parseWebhookBody(req);
+    const event = String(body?.event || eventFromPath(req.params?.eventName) || '');
+    const data = body?.data;
+    const eventKey = normalizeEventName(event);
+    if (!event) {
+        console.warn('⚠️ WA webhook missing event:', JSON.stringify({
+            path: req.path,
+            contentType: req.headers?.['content-type'],
+            bodyKeys: body && typeof body === 'object' ? Object.keys(body).slice(0, 12) : [],
+        }));
         return;
-    // Deduplicate — Evolution API fires webhooks twice (global + instance)
-    const msgId = (Array.isArray(data?.messages) ? data.messages[0] : data)?.key?.id;
-    if (msgId) {
-        if (processedIds.has(msgId))
-            return;
-        processedIds.add(msgId);
-        if (processedIds.size > 500) {
-            const first = processedIds.values().next().value;
-            processedIds.delete(first);
-        }
     }
-    // Log every event so we can see what Evolution is actually sending
-    console.log(`📨 WA webhook event="${event}" raw:`, JSON.stringify(body));
-    if (event === 'connection.update' || event === 'CONNECTION_UPDATE') {
+    if (IGNORED_EVENTS.has(eventKey))
+        return;
+    const msg = extractWebhookMessage(data);
+    const msgId = msg?.key?.id;
+    const logKey = msgId ? `${eventKey}:${msgId}` : '';
+    if (!logKey || rememberRecent(loggedWebhookIds, logKey)) {
+        // Log every non-noisy event once so we can see what Evolution is actually sending.
+        console.log(`📨 WA webhook event="${event}" raw:`, JSON.stringify(body));
+    }
+    if (eventKey === 'connection.update') {
         const state = data?.state || data?.instance?.state;
         console.log(`🔌 WA connection state: "${state}"`);
         if (state === 'open') {
             (0, evoClient_1.setWaReady)(true);
+            (0, evoClient_1.ensureEvolutionWebhook)().catch(e => console.error('❌ ensureEvolutionWebhook error:', e?.message));
             (0, groupCreation_1.flushPendingMessages)().catch(e => console.error('❌ flushPendingMessages error:', e?.message));
         }
         else if (state === 'close') {
@@ -65,7 +111,7 @@ async function handleEvolutionWebhook(req, res) {
         return;
     }
     // New participant added → cancel companion reminder (guest handled it themselves)
-    if (event === 'group-participants.update' || event === 'groups-participants.update' || event === 'GROUP_PARTICIPANTS_UPDATE') {
+    if (eventKey === 'group-participants.update' || eventKey === 'groups-participants.update') {
         const groupId = data?.id || data?.groupJid || data?.group;
         if (groupId && data?.action === 'add') {
             (0, groupReminders_1.cancelReminder)(groupId, 'new participant added to group');
@@ -73,9 +119,10 @@ async function handleEvolutionWebhook(req, res) {
         return;
     }
     // v1.8.2 may send MESSAGES_UPSERT (uppercase) or messages.upsert (lowercase)
-    if (event === 'messages.upsert' || event === 'MESSAGES_UPSERT') {
-        const msg = Array.isArray(data?.messages) ? data.messages[0] : data;
+    if (eventKey === 'messages.upsert') {
         if (msg) {
+            if (msgId && !rememberRecent(processedIds, msgId))
+                return;
             if (!msg.sender)
                 msg.sender = body.sender;
             (0, detection_1.handleIncomingMessage)(msg).catch((e) => console.error('❌ Message handler error:', e?.message || e));
@@ -84,7 +131,9 @@ async function handleEvolutionWebhook(req, res) {
 }
 router.get('/wa/webhook', (_req, res) => res.json({ ok: true, waReady: (0, evoClient_1.isWaReady)() }));
 router.post('/wa/webhook', handleEvolutionWebhook);
+router.post('/wa/webhook/:eventName', handleEvolutionWebhook);
 router.post('/webhook/wa', handleEvolutionWebhook);
+router.post('/webhook/wa/:eventName', handleEvolutionWebhook);
 router.post('/send', async (req, res) => {
     const { to, message } = req.body;
     try {
@@ -241,6 +290,7 @@ router.post('/link', async (req, res) => {
 });
 function initWhatsApp() {
     (0, evoClient_1.setWaReady)(true);
+    (0, evoClient_1.ensureEvolutionWebhook)(true).catch(e => console.error('❌ ensureEvolutionWebhook startup error:', e?.message));
     if (constants_1.CONFIG.GROUP_CREATION_ENABLED) {
         (0, groupCreation_1.setGroupCreationEnabled)(true);
     }

@@ -16,6 +16,7 @@ import { CONFIG, skipsBreakfast } from '../../config/constants';
 import { guestName, formatSeoulDate } from '../../utils/format';
 
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
+const INSTANCE_OWNER_PHONE = (process.env.INSTANCE_OWNER_PHONE || '821097802701').replace(/\D/g, '');
 
 export function isStaffLid(lid: string): boolean {
     try {
@@ -25,6 +26,15 @@ export function isStaffLid(lid: string): boolean {
     } catch {
         return false;
     }
+}
+
+function isInstanceOwnerSender(jid: string): boolean {
+    const senderPhone = jid.replace(/@.*$/, '').replace(/\D/g, '');
+    return Boolean(INSTANCE_OWNER_PHONE && senderPhone === INSTANCE_OWNER_PHONE);
+}
+
+function isStaffSender(jid: string): boolean {
+    return isStaffLid(jid) || isInstanceOwnerSender(jid);
 }
 
 // Every command reply goes through here instead of `.catch(() => {})`. If the WhatsApp
@@ -108,7 +118,7 @@ export async function handleWelcomeCommand(
     pushName: string
 ): Promise<void> {
     console.log(`🔍 /welcome check: pushName="${pushName}" senderJid="${senderJid}"`);
-    if (!isStaffLid(senderJid)) {
+    if (!isStaffSender(senderJid)) {
         await replyOrEscalate(from, '❌ Only team members can send /welcome', '/welcome staff-check');
         return;
     }
@@ -213,7 +223,7 @@ export async function handleWelcomeCommand(
 }
 
 export async function handleCkoutCommand(from: string, senderJid: string, text = '/ckout'): Promise<void> {
-    if (!isStaffLid(senderJid)) {
+    if (!isStaffSender(senderJid)) {
         await replyOrEscalate(from, '❌ Only team members can send /ckout', '/ckout staff-check');
         return;
     }
@@ -245,7 +255,7 @@ export async function handleCkoutCommand(from: string, senderJid: string, text =
 }
 
 export async function handleCkinCommand(from: string, senderJid: string): Promise<void> {
-    if (!isStaffLid(senderJid)) {
+    if (!isStaffSender(senderJid)) {
         await replyOrEscalate(from, '❌ Only team members can send /ckin', '/ckin staff-check');
         return;
     }
@@ -291,7 +301,7 @@ export async function handleGroupCommand(
         return;
     }
     const isDM = !from.endsWith('@g.us');
-    if (!isDM && !isStaffLid(senderJid)) {
+    if (!isDM && !isStaffSender(senderJid)) {
         return; // silent — non-staff in group, don't expose command exists
     }
 
