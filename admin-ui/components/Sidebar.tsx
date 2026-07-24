@@ -5,7 +5,7 @@ import { usePathname, useRouter } from 'next/navigation'
 import {
   LayoutDashboard, Sparkles, CheckSquare, CalendarDays, ListTodo,
   Bell, Activity, BookOpen, Users, User, MessageCircle, MessageSquare, LogOut, LineChart,
-  Sun, Moon, ClipboardCheck, Hammer,
+  Sun, Moon, ClipboardCheck, Hammer, Network,
   type LucideIcon,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -14,7 +14,7 @@ interface NavItem {
   href: string
   Icon: LucideIcon
   label: string
-  group: 'cozmo' | 'ops' | 'platforms'
+  group: 'cozmo' | 'ops' | 'platforms' | 'about'
   exact?: boolean
 }
 
@@ -34,12 +34,14 @@ const NAV: NavItem[] = [
   { href: '/messages', Icon: MessageSquare,   label: 'Messages',       group: 'platforms' },
   { href: '/staff',    Icon: User,            label: 'Staff',          group: 'platforms' },
   { href: '/kakao',    Icon: MessageCircle,   label: 'KakaoTalk',      group: 'platforms' },
+  { href: '/system-map', Icon: Network,       label: 'System Map',     group: 'about' },
 ]
 
 const GROUP_LABELS: Record<string, string> = {
   cozmo: 'COZMO',
   ops: 'Operations',
   platforms: 'Platforms',
+  about: 'About',
 }
 
 interface SidebarProps {
@@ -77,7 +79,7 @@ export default function Sidebar({ theme, onToggleTheme }: SidebarProps) {
 
       {/* Nav */}
       <nav className="flex-1 py-2 overflow-y-auto">
-        {(['cozmo', 'ops', 'platforms'] as const).map(g => (
+        {(['cozmo', 'ops', 'platforms', 'about'] as const).map(g => (
           <div key={g} className="mb-1">
             <p className={cn('px-3.5 pt-3 pb-1.5 text-[10px] font-semibold uppercase tracking-wider', dark ? 'text-[#AD9362]' : 'text-[#B88E23]')}>
               {GROUP_LABELS[g]}
