@@ -144,6 +144,16 @@
       "sender": "Ricky, Tour Host",
       "text": "Hello! This is Ricky from the COZE Guest Care Team. 😊\n\nI'll be waiting at the property today to assist you with your check-in.\nPlease send me a message as soon as you arrive, and I'll come out to help you right away.\nSee you soon, and have a safe trip! 🌸\n\nRicky, Guest Care Team of COZE Hospitality 3.0",
       "ts": 1784870977985
+    },
+    {
+      "sender": "Hye Lynn Choi",
+      "text": "We are here!",
+      "ts": 1784877187626
+    },
+    {
+      "sender": "Ricky, Tour Host",
+      "text": "Hello! 😊 Your check-in is now complete.\n\nWe hope you have a wonderful stay with us! If you have any questions or need any assistance during your stay, please feel free to leave a message in this chat. Our team is always happy to help.\n\nHave a fantastic time in Korea! 🇰🇷✨\n\nRicky, Guest Care Team of COZE Hospitality 3.0",
+      "ts": 1784878150821
     }
   ],
   "821029263061-1559638014@g.us": [
@@ -185,6 +195,26 @@
       "sender": "이규진",
       "text": "4:45 PM 착륙으로 나와요~",
       "ts": 1784873919558
+    },
+    {
+      "sender": "이규진",
+      "text": "사장님이 가십니까?",
+      "ts": 1784875525260
+    },
+    {
+      "sender": "이규진",
+      "text": "사장님이 가십니까?",
+      "ts": 1784875525757
+    },
+    {
+      "sender": "변이규",
+      "text": "김현국90",
+      "ts": 1784875727638
+    },
+    {
+      "sender": "변이규",
+      "text": "김현국90",
+      "ts": 1784875728576
     }
   ],
   "kakao:473051276385968": [
@@ -752,6 +782,26 @@
       "sender": "4930577140819@c.us",
       "text": "Regarding your questions:\n- *Can we create Group Automation right away?*\n*No*, As your business does not meet the Groups API eligibility requirements. The primary requirement is that your business must be an *Official Business Account (OBA)* .\n​\n- *Will you make this number OBA right away?*\nNo. 360dialog cannot make a number an Official Business Account. OBA status is granted only by *Meta* after reviewing and approving the business.\n​\n- *Will we get the Verified Tick Mark right away?*\nNo. The verified badge (Official Business Account) is only applied after Meta approves your OBA request.\n​\n- *Do we have to wait another 30 days?*\nYes, the business must be an *Official Business Account (OBA)*. Once your business has OBA status, you can start using the Groups API (subject to the documented limitations, such as Groups not being available for Coexistence users or numbers onboarded to Multi-solution Conversations).\n*Please refer the below document:*\n*Messaging Groups*: https://docs.360dialog.com/docs/messaging/groups\n*OBA Creteria:* https://docs.360dialog.com/docs/resources/phone-numbers/official-business-account#criteria\n*For OBA:* The business must be registered on the WhatsApp Business Platform for at least 30 days.\n​",
       "ts": 1784874224711
+    },
+    {
+      "sender": "4930577140819@c.us",
+      "text": "Ticket has been updated - *Waiting on you*",
+      "ts": 1784874972733
+    },
+    {
+      "sender": "4930577140819@c.us",
+      "text": "Ticket has been updated - *In progress*",
+      "ts": 1784875312243
+    },
+    {
+      "sender": "4930577140819@c.us",
+      "text": "Thank you! Your request has been resolved.\nIs there anything else we can assist you with? If not, please let us know if we may proceed with closing this ticket.\nWe look forward to your confirmation.",
+      "ts": 1784875510631
+    },
+    {
+      "sender": "4930577140819@c.us",
+      "text": "Ticket has been updated - *Waiting on you*",
+      "ts": 1784875513917
     }
   ],
   "923365291347@c.us": [
@@ -771,6 +821,16 @@
       "sender": "PetitAmourFlower",
       "text": "1시간. 30분 뒤 도착입니다",
       "ts": 1784872740852
+    },
+    {
+      "sender": "COZE_RICKY",
+      "text": "안녕하세요. 게스트 케어팀 리키입니다. 😊\n\n확인해 보니 항공편은 오후 4시 41분 도착 예정입니다. 입국 후 도착홀(Arrival Hall)로 나오시면 저희 밴 기사님이 고객님의 이름이 적힌 피켓을 들고 기다리고 계실 예정입니다.\n\n다만 퇴근 시간대(러시아워)와 겹쳐 공항에서 숙소까지 약 1시간 30분 정도 소요될 것으로 예상됩니다. 따라서 오후 6시 30분경 숙소에 도착하실 것으로 예상하고 있습니다.\n\n저는 숙소에서 체크인을 도와드릴 예정이니, 안전하게 오시고 조금 이따 뵙겠습니다. 😊",
+      "ts": 1784876762993
+    },
+    {
+      "sender": "COZE_RICKY",
+      "text": "안녕하세요. 게스트 케어팀 리키입니다. 😊\n\n확인해 보니 항공편은 오후 4시 41분 도착 예정입니다. 입국 후 도착홀(Arrival Hall)로 나오시면 저희 밴 기사님이 고객님의 이름이 적힌 피켓을 들고 기다리고 계실 예정입니다.\n\n다만 퇴근 시간대(러시아워)와 겹쳐 공항에서 숙소까지 약 1시간 30분 정도 소요될 것으로 예상됩니다. 따라서 오후 6시 30분경 숙소에 도착하실 것으로 예상하고 있습니다.\n\n저는 숙소에서 체크인을 도와드릴 예정이니, 안전하게 오시고 조금 이따 뵙겠습니다. 😊",
+      "ts": 1784876763292
     }
   ],
   "kakao:474382981529301": [
@@ -798,6 +858,18 @@
       "sender": "석재연",
       "text": "{\"member\":{\"userId\":201241125,\"nickName\":\"석재연\"},\"kicked\":false,\"memorial\":false,\"hidden\":false,\"feedType\":2}",
       "ts": 1784874797774
+    },
+    {
+      "sender": "하은서",
+      "text": "{\"member\":{\"userId\":127477441,\"nickName\":\"하은서\"},\"kicked\":false,\"memorial\":false,\"hidden\":false,\"feedType\":2}",
+      "ts": 1784876041859
+    }
+  ],
+  "kakao:1": [
+    {
+      "sender": "test",
+      "text": "ping",
+      "ts": 1784877749729
     }
   ]
 }

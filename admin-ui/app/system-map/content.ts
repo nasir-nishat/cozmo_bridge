@@ -7,16 +7,16 @@ export const LAST_UPDATED = '2026-07-24'
 export const SYSTEM_MAP_MD = `
 ## The big picture
 
-COZE Hospitality (Seoul short-term rentals, 300+ properties) is being transformed with **COZMO**, an AI ops layer. Four codebases: **cozmo_bridge** (AI messaging/ops engine), **pagescms** (content CMS), **coze_client** (public site), **coze_owner** (owner site). Bookings flow from Hostfully → cozmo_bridge routes guest chats (WhatsApp/LINE/KakaoTalk/WeChat) and staff alerts (Jandi/Telegram). Content is edited in pagescms → stored in Supabase → published to coze_client (www.coze.care).
+COZE Hospitality (Seoul short-term rentals, 300+ properties) is being transformed with **COZMO**, an AI ops layer. Four codebases: **cozmo_bridge** (AI messaging/ops engine), **pagescms** (content CMS), **coze_client** (public site), **coze_owner** (owner site). Bookings flow from Hostfully → cozmo_bridge routes guest chats (WhatsApp/LINE/KakaoTalk/WeChat) and staff alerts (Jandi/Telegram). Content is edited in pagescms → stored in Supabase → published to coze_client ([www.coze.care](https://www.coze.care)).
 
 ## Repositories
 
 | Repo | Purpose | Stack | Hosted | Domain |
 |---|---|---|---|---|
-| cozmo_bridge | AI messaging + ops engine | Node/Express, Baileys, PM2 | Self-hosted Windows box | :3001 (webhook.coze.care) |
-| cozmo_bridge/admin-ui | This admin dashboard | Next.js | Vercel / :3002 | admin.coze.care |
-| pagescms | Content CMS | Next.js 16, better-auth, Drizzle | Vercel | cms.coze.care |
-| coze_client | Public site | Astro | Vercel | www.coze.care |
+| cozmo_bridge | AI messaging + ops engine | Node/Express, Baileys, PM2 | Self-hosted Windows box | :3001 ([webhook.coze.care](https://webhook.coze.care)) |
+| cozmo_bridge/admin-ui | This admin dashboard | Next.js | Vercel / :3002 | [admin.coze.care](https://admin.coze.care) |
+| pagescms | Content CMS | Next.js 16, better-auth, Drizzle | Vercel | [cms.coze.care](https://cms.coze.care) |
+| coze_client | Public site | Astro | Vercel | [www.coze.care](https://www.coze.care) |
 | coze_owner | Owner site | — | Vercel | (set) |
 
 *coze_cms (Strapi) is deprecated — replaced by pagescms.*
